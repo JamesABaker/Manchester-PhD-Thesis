@@ -228,7 +228,7 @@ Documentation:
                    your own `examiners page' if you like!)
 
         If you set all these to false, then perhaps you don't want any
-        preface at all, so perhaps you hould leave out both \beforepreface
+        preface at all, so perhaps you should leave out both \beforepreface
         and \afterpreface -).
 
 This style uses interline spacing that is 1.5 times normal (about double
