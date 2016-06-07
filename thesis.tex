@@ -1,11 +1,12 @@
 % The 12pt option is required by the 2001/02 thesis regulations
 % Hacked together from the LaTeX template from the maths department of UoM
 
+
 % Remove the twoside option for single-sided printing
 \documentclass[12pt,PhD,twoside]{muthesis}
 
 %These are the citation styles.
-\usepackage[backend=biber,style=nature,citestyle=nature]{biblatex} %science, nature, alphabetic are common choices.
+\usepackage[backend=bibtex,style=nature,citestyle=nature]{biblatex} %science, nature, alphabetic are common choices.
 % Citations styles = https://www.sharelatex.com/learn/Biblatex_citation_styles
 % Bibliography styles = https://www.sharelatex.com/learn/Biblatex_bibliography_styles
 \usepackage{graphicx} %use [!ht] (which means ignore sensible protocols and place here) not [h] (which means place here-ish) for figures otherwise they end up at the end of the chapter.
@@ -15,7 +16,6 @@
 \usepackage[acronym]{glossaries} %Whilst it's tempting, I've found tinkering with glossary structure and style is a nightmare. Avoid at all costs.
 \addbibresource{references.bib} % This is the folder containing all your "bibtex" references. All reference managers can export to this format.
 \graphicspath{{images/}} %Store all your figures here
-
 
 
 % abbreviations: 1.the code used in the text, 2. the short form, 3. the long form. http://tex.stackexchange.com/questions/86666/how-to-create-both-list-of-abbreviations-and-list-of-nomenclature-using-nomencl

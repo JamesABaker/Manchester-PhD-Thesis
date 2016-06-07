@@ -1,3 +1,5 @@
+%Don't touch anything here unless you know what you're doing!
+
 %% muthesis Class for LaTeX2e.
 %% Last update 12th August 2013: amended evensidemargin for duplex
 
