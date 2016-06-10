@@ -1,26 +1,40 @@
 \chapter{Introduction}
 
 \section{A Brief History of Transmembrane Proteins in Science}
-%Some waffle about Hooke
-%Kyte and doolittle
-%first crystals in the membrane
-%Development of Nanodiscs
+\subsection{Earliest Evidences of Compartmentalisation}
+%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
+%A group linking computational biophycs http://www.ks.uiuc.edu/History/membrane/
 
-\subsection{The Difficulties of Studying Transmembrane Proteins}
-Because of the experimental hinderence, the story of transmembrane proteins has been relatively slow to emerge. In the 1990s and early 2000s the story was seemingly uncomplicated. There were membrane-spanning bundles of non-polar α-helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface. Since the mid-2000s the elucidation of many more intramembrane helix structures implied a far richer variety of transmembrane helices existed than previously thought, with a range of orientations and intra-membrane biophysical variations. Although the simple helices are broadly prevelant, hundreds of high quality membrane structures have elucidated that \gls{tmh}s can adopt a plethora of lengths and orientations within the membrane. \gls{tmh}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface \cite{VonHeijne2006, Elofsson2007} (Figure \ref{fig:helixcartoon1}). %At the time of writing, how many in PDB.
+%Some waffle about Hooke
+
+\subsection{Early Models of the Bilayer}
+%Gorter & Grendel
+%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
+
+\subsection{The Transmembrane Protein Problem}
+%Kyte and doolittle
+Because of the experimental hinderence, the story of transmembrane proteins has been relatively slow to emerge. In the 1990s and early 2000s the story was seemingly uncomplicated. There were membrane-spanning bundles of non-polar α-helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface. Since the mid-2000s the elucidation of many more intramembrane helix structures implied a far richer variety of transmembrane helices existed than previously thought, with a range of orientations and intra-membrane biophysical variations. Although the simple helices are broadly prevelant, hundreds of high quality membrane structures have elucidated that \gls{tmh}s can adopt a plethora of lengths and orientations within the membrane. \gls{tmh}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface \cite{VonHeijne2006, Elofsson2007} (Figure \ref{fig:helixcartoon1}).
 
 The insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibria \cite{Cymer2014}. \gls{tmh}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly simply functioning as anchors \cite{Hessa2011}. The story is not as simple as originally thought. There is a contingency in the field of biological membranes that despite progress over the last decade, there is a still lack of information regarding their structure, assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s \cite{Ladokhin2015, Cymer2014}.
 
-\subsection{The Importance of Membranes for Life}
-The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental prerequisites for life \cite{Koshland2002}. The proteins that allow life to use this biochemical barrier are perhaps equally important.
+\subsection{The Rise of Crystallography}
+%first crystals in the membrane
+%Development of Nanodiscs
+%At the time of writing, how many in PDB.
+
+
 
 \section{Biological Membrane Composition}
 
 %Something about aysmetry, varies through the tree of life. "before we discuss the membrane proteins, one must consider the biological reason as for why they exist."
 %to do:  give specific examples of incredibly useful membrane protiens. Outline that MPs are vital for relaying information and chemistry across the membrane.
-It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways \cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004}. It has been known for some time that the outer membranes of Gram negative bacteria are asymentric in terms of lipid composition. The outer membranes contain lipopolysccharide, whilst the inner is a mixture of approximately 25 phospholipid types. Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human \gls{tmh} regions revealed intra-membrane leaflet composition asymetry in the \gls{er}, but not the Golgi \cite{Sharpe2010}. Furthermore protein\-lipid interactions have been shown to be determinants of membrane curvature \cite{Jensen2004}, and undertake complex orientations and conformations to allow for hydrophobic mismatch \cite{Planque2003}. %the planque reference is messed up. It may need changing with every bib.tex update unless the permannet record is changed.
+The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental prerequisites for life \cite{Koshland2002}. The proteins that allow life to use this biochemical barrier are perhaps equally important.
 
-There is a rich variety of lipid molecules that make up the biological membranes. The majority of lipids in the membrane are phospholipids. These are composed of a glycerol molecule. Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar phosphate group. The polar phosphate group is modeified with an alcohol group. Water entropicly drives the self association of the lipid molecules. In other words the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails. This can be seen even in relatively early \gls{md} simulations \cite{Goetz1998}.
+It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways \cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004}. %Add references about the hydrogen bonds (white2005 and another one...)
+
+It has been known for some time that the outer membranes of Gram negative bacteria are asymentric in terms of lipid composition. The outer membranes contain lipopolysccharide, whilst the inner is a mixture of approximately 25 phospholipid types. Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human \gls{tmh} regions revealed intra-membrane leaflet composition asymetry in the \gls{er}, but not the Golgi \cite{Sharpe2010}. Furthermore protein\-lipid interactions have been shown to be determinants of membrane curvature \cite{Jensen2004}, and undertake complex orientations and conformations to allow for hydrophobic mismatch \cite{Planque2003}. %the planque reference is messed up. It may need changing with every bib.tex update unless the permannet record is changed.
+
+There is a rich variety of lipid molecules that make up the biological membranes. The majority of lipids in the membrane are phospholipids. These are composed of a glycerol molecule. Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar phosphate group. The polar phosphate group is modeified with an alcohol group. Water entropicly drives the self association of the lipid molecules. In other words the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails. Furthermore the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer. This can be seen even in relatively early \gls{md} simulations \cite{Goetz1998}.
 
 \section{$\alpha$ Helices in Membranes }
 \subsection{Transmembrane Helix Sequence Composition}
