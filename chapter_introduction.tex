@@ -1,33 +1,19 @@
 \chapter{Introduction}
 
-\section{A Brief History of Transmembrane Proteins in Science}
-\subsection{Earliest Evidences of Compartmentalisation}
-%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
-%A group linking computational biophycs http://www.ks.uiuc.edu/History/membrane/
 
-%Some waffle about Hooke
-
-\subsection{Early Models of the Bilayer}
-%Gorter & Grendel
-%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
-
-\subsection{The Transmembrane Protein Problem}
+\section{The Transmembrane Protein Problem}
 %Kyte and doolittle
-Because of the experimental hinderence, the story of transmembrane proteins has been relatively slow to emerge. In the 1990s and early 2000s the story was seemingly uncomplicated. There were membrane-spanning bundles of non-polar α-helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface. Since the mid-2000s the elucidation of many more intramembrane helix structures implied a far richer variety of transmembrane helices existed than previously thought, with a range of orientations and intra-membrane biophysical variations. Although the simple helices are broadly prevelant, hundreds of high quality membrane structures have elucidated that \gls{tmh}s can adopt a plethora of lengths and orientations within the membrane. \gls{tmh}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface \cite{VonHeijne2006, Elofsson2007} (Figure \ref{fig:helixcartoon1}).
 
-The insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibria \cite{Cymer2014}. \gls{tmh}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly simply functioning as anchors \cite{Hessa2011}. The story is not as simple as originally thought. There is a contingency in the field of biological membranes that despite progress over the last decade, there is a still lack of information regarding their structure, assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s \cite{Ladokhin2015, Cymer2014}.
-
-\subsection{The Rise of Crystallography}
-%first crystals in the membrane
-%Development of Nanodiscs
-%At the time of writing, how many in PDB.
-
+The insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibria \cite{Cymer2014}. \gls{tmh}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly simply functioning as anchors \cite{Hessa2011}. The story is not as simple as originally thought. There is a contingency in the field of biological membranes that despite progress over the last decade, there is a still lack of information regarding their structure, assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s \cite{Ladokhin2015}.
 
 
 \section{Biological Membrane Composition}
 
 %Something about aysmetry, varies through the tree of life. "before we discuss the membrane proteins, one must consider the biological reason as for why they exist."
 %to do:  give specific examples of incredibly useful membrane protiens. Outline that MPs are vital for relaying information and chemistry across the membrane.
+
+
+%At some point the membrane phases should be discussed. Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
 The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental prerequisites for life \cite{Koshland2002}.  The proteins that allow life to use this biochemical barrier are perhaps equally important. Together, the lipid bilayer and proteins therein allow complex biochemical systems to exist.
 
 It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways \cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004, Henin2014}.%Henin2014. %Add references about the hydrogen bonds (white2005 and another one...)
@@ -37,9 +23,8 @@ It has been known for some time that the outer membranes of Gram negative bacter
 There is a rich variety of lipid molecules that make up the biological membranes. The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols. These are composed of a glycerol molecule. Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar phosphate group. The polar phosphate group is modeified with an alcohol group. Water entropicly drives the self association of the lipid molecules. In other words the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails. Furthermore the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer. This can be seen even in relatively early \gls{md} simulations \cite{Goetz1998}.
 
 \section{$\alpha$ Helices in Membranes }
-\subsection{Transmembrane Helix Sequence Composition}
-
-Membrane bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral \gls{tmp} are encoded by around 30\% of the genes in the human genome which reflects their biological importance \cite{Almen2009}. These proteins allow biochemical pathways that traverse the various biological membranes used in life.
+\subsection{The Importance of Transmembrane Proteins}
+Membrane bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral \gls{tmp} are encoded by around 30\% of the genes in the human genome which reflects their biological importance \cite{Almen2009}. These proteins allow biochemical pathways that traverse the various biological membranes used in life. %citation for drug targets
 
 %This should basically be a summary of Pogozheva, Baeza-delgado, and  Sharpe. Cite examples of direct and indirect accurate prediction methods
 
@@ -48,8 +33,9 @@ Membrane bound proteins underpin almost every biological process directly, or in
 %Function is a result of structure, and here the structure and sequence are supposedly very relatable.
 The relationship between the membrane and \gls{tmp}s is underpinned by complex thermondynamic and electrostatic equilibria. Once inserted the protein doesn't leave the membrane as a result of the transmembrane helix being very hydrophobic. This hydrophobicity, and the hydrophobicity of the lipid tails means that they self associate. A better way of describing it is that they fiercely dissociate from the water. The overall $\Delta$G for a transmembrane helix in the membrane is -12kcal mol−1 \cite{Cymer2014}: the association of the helix in the membrane is typically spontaneous.
 
+\subsection{Transmembrane Helix Sequence Composition}
 
-
+%WALP and KALP peptides as typical peptides
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{Helix_anatomy}
@@ -73,17 +59,17 @@ A study by Baeza-Delgado {\it et al.} from 2013 \cite{Baeza-Delgado2013} looked 
 Two publications by von Heijne coined the ``Positive-Inside'' rule demonstrated the practical value of positively charged residue sequence clustering in topology prediction of \gls{tmh}s in bacteria \cite{VonHeijne1989,VonHeijne1992}. It was clearly defined and shown that positively charged residues more commonly were found on the ``inside'' of the cytoplasm rather than the periplasm of {\it E. coli}. More recently still large scale sequence analysis of \gls{tmh}s from different organelle membrane surfaces in eukaryotic proteomes, show the clustering of positive charge being cytosolic \cite{Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
 
 \subsection{The Aromatic Belt}
+%It is common to find aromatic residues in the interfacial regions of TMHs. This is an interesting example of uneven amino acid distribution in MPs, often referred to as the “aromatic belt” [33,46,54]. Only Tryptophan and Tyrosine (not Phenylalanine) exhibit this preference for the interfacial region [46,89]. The biological relevance of this belt is not entirely understood, but it seems to play an important role in the anchoring and positioning of individual helices, and perhaps also entire MPs, in the lipid bilayer [35,90]. Furthermore, it seems that the Tyrosine and Tryptophan residues are not just loosely, but actually rather tightly anchored to the interface [39]. This can have implications for TMH positioning, tilting and rotamer preferences
+%More than one explanation has been proposed for the physical and/or chemical basis for the strong preference of aromatic residues to reside in the membrane-water interface region. The Tyrosine side chain is a six-membered aromatic ring with an –OH group attached. Tryptophan has two aromatic rings that are fused into one large hydrophobic ring-structure. Phenylalanine, although aromatic, is completely hydrophobic, and is found in the transmembrane part rather than the interfacial parts of MPs. The classical explanation for the preference of Tyrosine and Tryptophan to reside in the interfacial regions is their dipolar character. The side chain must simply seek a compromise. This can be achieved by burying the aromatic ring close to, or within, the hydrophobic core, while the hydrophilic part can interact with the polar lipid head-groups at the interface. Other factors such as the aromaticity, size, rigidity and shape of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference [91]. Perhaps, as suggested by You et al., it is a balance of all these forces that explains the interfacial preference of Tyrosine and Tryptophan [91
 
 \subsection{Snorkeling}
 
-%It is tempting to consider all TMHs as hydrophobic entities. But this is not entirely true. Except for the obligatory hydrophobic amino acids, a TMH might also contain some polar amino acids, or even one or more charged residues. This is possible, at least in part, due to the snorkel effect [86-88]. This means that a side chain of a charged residue that is buried within the hydrophobic membrane core can adjust its conformation such that it reaches, or snorkels, toward the interfacial or aqueous regions. Snorkeling residues thus seem to experience a force that pushes them away from the membrane core. In contrast, some amino acids (in particular the hydrophobic ones) are subject to an anti-snorkeling effect, where the side-chains instead point toward the hydrophobic core. As a consequence, the precise positioning and orientation of a TMH in the membrane is influenced by snorkeling residues, which interact with different parts of the lipid bilayer.
-
-Broadly speaking, transmembrane helices are non-polar. However some contain polar and  charged residues in the helix itself. Whilst this might seem thermodynamically unstable at first glance, a molecular dynamic feature called the ``snorkel'' effect explains in part how this is possible \cite{Chamberlain2004, Strandberg2003}. Simply put, the snorkelling effect involves the long flexible side chain of leucine reaching the water interface region even when the $\alpha$ helix backbone is pulled into the hydrophobic layer. This has also been suggested to allow helices to adapt to varying thicknesses of the membrane \cite{Kandasamy2006}.
+Broadly speaking, transmembrane helices are non-polar. However some contain polar and  charged residues in the helix itself. Whilst this might seem thermodynamically unstable at first glance, a molecular dynamic feature called the ``snorkel'' effect explains in part how this is possible \cite{Chamberlain2004, Strandberg2003}. Simply put, the snorkelling effect involves the long flexible side chain of leucine reaching the water interface region to interact with the polar headgroups of the bilayer even when the $\alpha$ helix backbone is pulled into the hydrophobic layer \cite{Krishnakumar2007}. This has also been suggested to allow helices to adapt to varying thicknesses of the membrane \cite{Kandasamy2006}.
 
 \section{Biogenesis of Transmembrane Proteins}
 %Depth of secretion pathway (talk about translocons in depth here) & outline post-translational insertion
 \subsection{Translocation}
-The ``inside'' was an imprecise term used to indirectly refer to the cytoplasmic space. To understand why the cytoplasm is the key part, one must recall how the membranes are thought to be synthesised.
+The ``inside'' was an imprecise term used to indirectly refer to the cytoplasmic space. To understand why the cytoplasm is the key part, one must recall how the membranes are synthesised and localised throughout the cell.
 
 \subsection{Tail-Anchored Proteins Post Translationally Insert}
 
@@ -98,6 +84,25 @@ Signal anchored proteins, proteins that contain a single hydrophobic segment tha
 It is postulated that there are electrostatic factors in the flanking regions that contribute to this spontaneous membrane insertion. Our experimental collaborators in Stephen High’s group are interested in a small group of tail anchored proteins that have very polar transmembrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion. They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if it’s tail anchor domain is replaced by the transmembrane domains belonging to a protein of known spontaneously inserting domains. Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the biophysicochemical factors of the TMH itself. The idea that \gls{snare} proteins are modular, and capable of spontaneous insertion has significant implications for both biomedical application in liposome based drug delivery and can aid future research for testing complex biological molecular networks \cite{Allen2013, Nordlund2014}.
 
 \section{Measures of Hydrophobicity}
+
+\section{A Brief History of Transmembrane Proteins in Science}
+\subsection{Earliest Evidences of Compartmentalisation}
+%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
+%A group linking computational biophycs http://www.ks.uiuc.edu/History/membrane/
+
+%Some waffle about Hooke
+
+\subsection{Early Models of the Bilayer}
+%Gorter & Grendel
+%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
+
+\subsection{The Rise of Crystallography}
+%first crystals in the membrane
+
+Because of the experimental hinderence, the story of transmembrane proteins has been relatively slow to emerge. In the 1990s and early 2000s the story was seemingly uncomplicated. There were membrane-spanning bundles of non-polar α-helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface. Since the mid-2000s the elucidation of many more intramembrane helix structures implied a far richer variety of transmembrane helices existed than previously thought, with a range of orientations and intra-membrane biophysical variations. Although the simple helices are broadly prevelant, hundreds of high quality membrane structures have elucidated that \gls{tmh}s can adopt a plethora of lengths and orientations within the membrane. \gls{tmh}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface \cite{VonHeijne2006, Elofsson2007} (Figure \ref{fig:helixcartoon1}). Over the last decade, Nanodiscs have been routinely used to much more easily obtain crystal structures. Nanodiscs overcome some of the major challenges caused by the hydrophobic helices, and a more faithful representation of the biological membranes than alternative model membranes like liposomes \cite{Borch2009}. %Figure for Nanodisc
+%Development of Nanodiscs
+
+%At the time of writing, how many in PDB.
 
 \section{Aims of This Thesis.}
 
