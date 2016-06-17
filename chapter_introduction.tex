@@ -31,7 +31,7 @@ Membrane bound proteins underpin almost every biological process directly, or in
 %Wong papers on how the sequences contain nuanced signals.
 
 %Function is a result of structure, and here the structure and sequence are supposedly very relatable.
-The relationship between the membrane and \gls{tmp}s is underpinned by complex thermondynamic and electrostatic equilibria. Once inserted the protein doesn't leave the membrane as a result of the transmembrane helix being very hydrophobic. This hydrophobicity, and the hydrophobicity of the lipid tails means that they self associate. A better way of describing it is that they fiercely dissociate from the water. The overall $\Delta$G for a transmembrane helix in the membrane is -12kcal${mol}^{−-1}$ \cite{Cymer2014}: the association of the helix in the membrane is typically spontaneous.
+The relationship between the membrane and \gls{tmp}s is underpinned by complex thermondynamic and electrostatic equilibria. Once inserted the protein doesn't leave the membrane as a result of the transmembrane helix being very hydrophobic. This hydrophobicity, and the hydrophobicity of the lipid tails means that they self associate. A better way of describing it is that they fiercely dissociate from the water. The overall $\Delta$G for a transmembrane helix in the membrane is -12kcal${mol}^{\--1}$ \cite{Cymer2014}; the association of the helix in the membrane is typically spontaneous.
 
 \subsection{Transmembrane Helix Sequence Composition}
 
@@ -62,7 +62,6 @@ Two publications by von Heijne coined the ``Positive-Inside'' rule demonstrated 
 
  Tyrosine and tryptophan residues commonly are found at the interfacial boundaries of the \gls{tmh} and this feature is called the ``aromatic belt'' \cite{Hessa2005, Granseth2005, Sharpe2010, Baeza-Delgado2013, Nilsson2005}. Not all aromatic residues are not found in the aromatic belt; phenylalanine has no particular preference for this region \cite{Granseth2005, Braun1999}. However it still remains unclear if this is to do with anchorage or translocon recognition \cite{Baeza-Delgado2013}.
 
-%It is common to find aromatic residues in the interfacial regions of TMHs. This is an interesting example of uneven amino acid distribution in MPs, often referred to as the “aromatic belt” [33,46,54]. Only Tryptophan and Tyrosine (not Phenylalanine) exhibit this preference for the interfacial region [46,89]. The biological relevance of this belt is not entirely understood, but it seems to play an important role in the anchoring and positioning of individual helices, and perhaps also entire MPs, in the lipid bilayer [35,90]. Furthermore, it seems that the Tyrosine and Tryptophan residues are not just loosely, but actually rather tightly anchored to the interface [39]. This can have implications for TMH positioning, tilting and rotamer preferences
 %More than one explanation has been proposed for the physical and/or chemical basis for the strong preference of aromatic residues to reside in the membrane-water interface region. The Tyrosine side chain is a six-membered aromatic ring with an –OH group attached. Tryptophan has two aromatic rings that are fused into one large hydrophobic ring-structure. Phenylalanine, although aromatic, is completely hydrophobic, and is found in the transmembrane part rather than the interfacial parts of MPs. The classical explanation for the preference of Tyrosine and Tryptophan to reside in the interfacial regions is their dipolar character. The side chain must simply seek a compromise. This can be achieved by burying the aromatic ring close to, or within, the hydrophobic core, while the hydrophilic part can interact with the polar lipid head-groups at the interface. Other factors such as the aromaticity, size, rigidity and shape of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference [91]. Perhaps, as suggested by You et al., it is a balance of all these forces that explains the interfacial preference of Tyrosine and Tryptophan [91
 
 \subsubsection{Snorkeling}
@@ -86,7 +85,27 @@ Signal anchored proteins, proteins that contain a single hydrophobic segment tha
 
 It is postulated that there are electrostatic factors in the flanking regions that contribute to this spontaneous membrane insertion. Our experimental collaborators in Stephen High’s group are interested in a small group of tail anchored proteins that have very polar transmembrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion. They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if it’s tail anchor domain is replaced by the transmembrane domains belonging to a protein of known spontaneously inserting domains. Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the biophysicochemical factors of the TMH itself. The idea that \gls{snare} proteins are modular, and capable of spontaneous insertion has significant implications for both biomedical application in liposome based drug delivery and can aid future research for testing complex biological molecular networks \cite{Allen2013, Nordlund2014}.
 
-\section{Measures of Hydrophobicity}
+\section{Choice of Hydrophobicity Values}
+\subsection{An Overview of the Different Scales}
+Throughout this thesis several scales are used to evaluate and estimate hydrophobic values of peptides. All the scales aim for quantifying the hydrophobic values of each residue. There are several key differences in their methodology, assumptions, and aims.Crucially this results in slightly different scores for some residues. Because of this, it's preferable, and typical amongst the literature, to use several scales to verify the patterns observable in one scale.
+
+\subsubsection{Kyte \& Doolittle Hydropathy Scale}
+A consensus scale based on the water-vapor transfer free energies and the interior-exterior distribution of amino acid
+
+\subsubsection{Hessa's Biological Hydrophobicity Scale}
+sed on an experimental method where the recognition of artificial helices by the Sec61 translocon was measured. These measurements were then used to calculate a “biological hydrophobicity scale.” Here, we use the non- position dependent version of the scale,2 while in the original development of SCAMPI10 the position specific ver- sion
+
+\subsubsection{White and Wimley Octanol \--- Interface Scale}
+This scale is based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between octanol and water.
+Calculated
+
+\subsubsection{The Eisenberg Consensus Scale}
+This is a consensus scale based on the earlier scales from Tanford,19 Wolfenden,20 Chothia,21 Janin,17 and von Heijne.22 The scales were normalized using serine as the mean
+
+\subsection{The TRANSMEM Annotation in Uniprot}
+
+\subsubsection{Alternative scales}
+
 
 \section{A Brief History of Transmembrane Proteins in Science}
 \subsection{Earliest Evidences of Compartmentalisation}
