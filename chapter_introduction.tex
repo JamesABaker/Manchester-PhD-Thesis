@@ -87,24 +87,23 @@ It is postulated that there are electrostatic factors in the flanking regions th
 
 \section{Choice of Hydrophobicity Values}
 \subsection{An Overview of the Different Scales}
-Throughout this thesis several scales are used to evaluate and estimate hydrophobic values of peptides. All the scales aim for quantifying the hydrophobic values of each residue. There are several key differences in their methodology, assumptions, and aims.Crucially this results in slightly different scores for some residues. Because of this, it's preferable, and typical amongst the literature, to use several scales to verify the patterns observable in one scale.
+Throughout this thesis several scales are used to evaluate and estimate hydrophobic values of peptides. All the scales aim for quantifying the hydrophobic values of each residue. There are several key differences in their methodology, assumptions, and aims. Crucially this results in slightly different scores for some residues. Because of this, it's preferable, and typical amongst the literature, to use several scales to verify the patterns observable in one scale. Notably, one of the classic scale, Kyte \& Doolittle Hydropathy Scale shows striking similarity to the modern Hessa's Biological Hydrophobicity Scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues \cite{Peters2014}. Ultimately, all the scales are attempting to allow estimation of ${\Delta G}_{whf}$; the free energy of a folded helix ({\it f}) from the water ({\it w}) into the membrane core ({\it h}). This free energy measurement is regarded as being currently experimentally inaccessible \cite{Cymer2014}.
+
+%Figure here showing what delta G is on about
+%Also a note on arrest peptides
 
 \subsubsection{Kyte \& Doolittle Hydropathy Scale}
-A consensus scale based on the water-vapor transfer free energies and the interior-exterior distribution of amino acid
+A scale based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids \cite{Kyte1982}.
 
 \subsubsection{Hessa's Biological Hydrophobicity Scale}
-sed on an experimental method where the recognition of artificial helices by the Sec61 translocon was measured. These measurements were then used to calculate a “biological hydrophobicity scale.” Here, we use the non- position dependent version of the scale,2 while in the original development of SCAMPI10 the position specific ver- sion
+This is arguably the most biologically relevent scale \cite{Peters2014}. The scale is based on an experimental method where the free energy exchange during recognition of designed polypeptide helices by the endoplasmic reticulum Sec61 translocon occured \cite{Hessa2005}. These measurements were then used to calculate a “biological hydrophobicity scale.”
 
-\subsubsection{White and Wimley Octanol \--- Interface Scale}
-This scale is based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between octanol and water.
-Calculated
+\subsubsection{White and Wimley Octanol \--- Interface Whole Residue Scale}
+This scale is calculated from two other scales; the octanol scale, and the interface scale \cite{White1999}. This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and octanol, as well as water to \gls{popc} .
 
-\subsubsection{The Eisenberg Consensus Scale}
-This is a consensus scale based on the earlier scales from Tanford,19 Wolfenden,20 Chothia,21 Janin,17 and von Heijne.22 The scales were normalized using serine as the mean
 
-\subsection{The TRANSMEM Annotation in Uniprot}
-
-\subsubsection{Alternative scales}
+\subsubsection{The Eisenberg Hydrophobic Moment Consensus Scale}
+The Eisenberg scale is a consensus scale based on the earlier scales from Tanford \cite{Nozaki1971}, Wolfenden \cite{Rose1993}, Chothia \cite{Chothia1976}, Janin \cite{Janin1979}, and the von Heijne scale \cite{VonHeijne1979}. The scales are normalized according to serine \cite{Eisenberg1984}. The automatic TRANSMEM annotation currently used in Uniprot is according to TMHMM \cite{Krogh2001}, Memsat \cite{Jones2007}, Phobius \cite{Kall2004} and the hydrophobic moment plot method of Eisenberg and coworkers \cite{Eisenberg1984}.
 
 
 \section{A Brief History of Transmembrane Proteins in Science}
