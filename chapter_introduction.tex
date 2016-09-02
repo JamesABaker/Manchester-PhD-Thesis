@@ -27,7 +27,7 @@ It has been known for some time that the outer membranes of Gram negative bacter
 \subsection{Membrane Potential}
 Simply put, membrane potential is the voltage across a membrane. If the membrane is permeable to a certain type of ion, then the ion will experience an electrical pulling force during the diffusion process that will facour the ``preferred'' biological location. This clearly depends on a chemical component involving both the charge and ion concentration gradient.There are various ways of estimating the membrane potential {\it ab initio}.
 
-The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann ditribution, and (ii) a field charge interaction energy {\cite Feiner1994}. It is defined as:
+The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann ditribution, and (ii) a field charge interaction energy \cite{Feiner1994}. It is defined as:
 
 \begin{align*}
 {E}_{m} &= \frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
@@ -35,7 +35,7 @@ The Nernst equation can be derived directly from the simplified thermodynamic pr
 
 Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment.
 
-However, it is rife with caveats caused by the assumptions of the simplified model such as the assumption that ions have point charge, that the potential is not constant throughout the solution and is only measurable at the point of measurement and this can be heavily influenced by, for example, a specific adsorbtion of either part of the redox pair or the competitive adsorption of a supporting ion in solution {\cite Feiner1994}. Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context. Particulalry, the problems in a biological membrane is that the compartments always  involve multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions simultaneously:
+However, it is rife with caveats caused by the assumptions of the simplified model such as the assumption that ions have point charge, that the potential is not constant throughout the solution and is only measurable at the point of measurement and this can be heavily influenced by, for example, a specific adsorbtion of either part of the redox pair or the competitive adsorption of a supporting ion in solution \cite{Feiner1994}. Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context. Particulalry, the problems in a biological membrane is that the compartments always  involve multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions simultaneously:
 
 \begin{align*}
 {E}_{m} &= \frac{RT}{F}\times \ln \left(\frac{p_{K^+}.[K^+]_{out} + p_{Na^+}.[Na^+]_{out} + p_{Cl^-}.[Cl^-]_{in}} {p_{K^+}.[K^+]_{in} + p_{Na^+}.[Na^+]_{in} + p_{Cl^-}.[Cl^-]_{out}}\right)
@@ -43,7 +43,9 @@ However, it is rife with caveats caused by the assumptions of the simplified mod
 
 Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and $p_i$ is the relative membrane permeability for the actual ion
 
+\subsubsection{Organelle Membrane Potential}
 
+Several studies have attempted to quantify the various voltages across the intracellular membranes. Negativity was found in the mitochondrial membrane at 150mV \cite{Perry2011}, and between 75mV to 95mV in the \gls{er} membrane \cite{Qin2011, Worley1994}. No notable membrane potential has been identified in the Golgi \cite{Schapiro2000}.
 
 
 \section{$\alpha$ Helices in Membranes }
