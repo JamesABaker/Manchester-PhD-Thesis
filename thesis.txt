@@ -1,0 +1,1215 @@
+INVESTIGATING THE RECOGNITION
+AND INTERACTIONS OF NON-POLAR
+α HELICES IN BIOLOGY
+
+A thesis submitted to the University of Manchester
+for the degree of Doctor of Philosophy
+in the Faculty of Life Sciences
+
+2016
+
+James Baker
+
+Contents
+
+Abstract
+
+4
+
+Declaration
+
+5
+
+Copyright Statement
+
+6
+
+Acknowledgements
+
+7
+
+List of publications
+
+8
+
+1 Introduction
+
+10
+
+1.1
+
+α Helices; Structure And Function . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+1.2
+
+α Helices In Membranes . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+10
+
+1.2.1
+
+The Trans-membrane Protein Problem . . . . . . . . . . . . . .
+
+10
+
+1.2.2
+
+The Importance Of Trans-membrane Proteins . . . . . . . . . .
+
+12
+
+1.2.3
+
+Trans-membrane Helix Sequence Composition . . . . . . . . . .
+
+12
+
+1.2.4
+
+Hydrophobicity of Trans-membrane Segments . . . . . . . . . .
+
+15
+
+1.2.5
+
+Sequence Complexity . . . . . . . . . . . . . . . . . . . . . . . .
+
+18
+
+Biogenesis of Trans-membrane Proteins . . . . . . . . . . . . . . . . . .
+
+19
+
+1.3.1
+
+Translocation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+19
+
+1.3.2
+
+Translocon Independent Membrane Insertion . . . . . . . . . . .
+
+19
+
+Biological Membrane Composition . . . . . . . . . . . . . . . . . . . . .
+
+20
+
+1.4.1
+
+Lipids of the Membrane . . . . . . . . . . . . . . . . . . . . . .
+
+20
+
+1.4.2
+
+Membrane Potential . . . . . . . . . . . . . . . . . . . . . . . .
+
+21
+
+Aims of This Thesis. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+22
+
+1.3
+
+1.4
+
+1.5
+
+2
+
+2 The “Negative-Outside” Rule
+
+23
+
+2.1
+
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+23
+
+2.2
+
+Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+23
+
+2.3
+
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+24
+
+2.3.1
+
+Normalisation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+24
+
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+24
+
+2.4
+
+2.4.1
+
+Biophysicochemical diﬀerences in multi-pass and single-pass helices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+24
+
+3 Tail-Anchored Proteins Revisited; An Up-To-Date Dataset And Biochemical Insights Into Spontaneous Insertion
+
+25
+
+3.1
+
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+3.2
+
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+3.3
+
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+25
+
+3.3.1
+
+Filtering the Uniprot database . . . . . . . . . . . . . . . . . . .
+
+26
+
+3.3.2
+
+Calculating Hydrophobicity . . . . . . . . . . . . . . . . . . . .
+
+26
+
+3.3.3
+
+Calculating Sequence Complexity . . . . . . . . . . . . . . . . .
+
+26
+
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+26
+
+3.4.1
+
+An Up To Date Tail-Anchor Dataset . . . . . . . . . . . . . . .
+
+26
+
+3.4.2
+
+Potential Tail-Anchored SNARE Protein Discovery . . . . . . .
+
+26
+
+3.4.3
+
+Biology of Spontaneously Inserting Tail Anchored Proteins . . .
+
+26
+
+3.4
+
+4 The Anchors And The Doers
+
+27
+
+4.1
+
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+4.2
+
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+4.3
+
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+4.4
+
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+5 Conclusions
+5.1
+
+28
+
+Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+28
+
+5.1.1
+
+28
+
+The hydrophobicity–sequence complexity continuum . . . . . . .
+
+Word count 7750
+3
+
+The University of Manchester
+James Baker
+Doctor of Philosophy
+Investigating the Recognition and Interactions of Non-Polar α Helices in
+Biology
+October 27, 2016
+Non–polar helices ﬁgure prominently in structural biology, from the ﬁrst protein structure (myoglobin) through trans-membrane segments, to current work on recognition
+of protein traﬃcking and quality control. Trans-membrane α helix containing proteins
+make up around a quarter of all proteins, as well as two thirds of drug targets, and
+contain some of the most critical proteins required for life as we know it. Yet they
+are fundamentally diﬃcult to study experimentally. This is in part due to the very
+features that make them so biologically inﬂuential: their non–polar trans-membrane
+helix regions. What is missing in the current literature is a nuanced understanding
+of the complexities of the helix composition beyond a hydrophobic region of around
+20 residues. Currently it is known that the properties of trans-membrane protein α
+helices underpin membrane protein insertion mechanisms.
+By leveraging large datasets of trans-membrane proteins, this thesis is focused on
+characterizing features of α helices en masse, particularly regarding their topology,
+membrane–protein interactions, and intra-membrane protein interactions.
+
+4
+
+Declaration
+No portion of the work referred to in the thesis has been
+submitted in support of an application for another degree
+or qualiﬁcation of this or any other university or other
+institute of learning.
+
+5
+
+Copyright Statement
+i. The author of this thesis (including any appendices and/or schedules to this thesis)
+owns certain copyright or related rights in it (the “Copyright”) and s/he has given
+The University of Manchester certain rights to use such Copyright, including for
+administrative purposes.
+ii. Copies of this thesis, either in full or in extracts and whether in hard or electronic
+copy, may be made only in accordance with the Copyright, Designs and Patents
+Act 1988 (as amended) and regulations issued under it or, where appropriate, in
+accordance with licensing agreements which the University has from time to time.
+This page must form part of any such copies made.
+iii. The ownership of certain Copyright, patents, designs, trade marks and other intellectual property (the “Intellectual Property”) and any reproductions of copyright
+works in the thesis, for example graphs and tables (“Reproductions”), which may
+be described in this thesis, may not be owned by the author and may be owned by
+third parties. Such Intellectual Property and Reproductions cannot and must not
+be made available for use without the prior written permission of the owner(s) of
+the relevant Intellectual Property and/or Reproductions.
+iv. Further information on the conditions under which disclosure, publication and commercialisation of this thesis, the Copyright and any Intellectual Property and/or
+Reproductions described in it may take place is available in the University IP Policy
+(see http://documents.manchester.ac.uk/DocuInfo.aspx?DocID=487), in any relevant Thesis restriction declarations deposited in the University Library, The University Library’s regulations (see http://www.manchester.ac.uk/library/aboutus/regulations) and in The University’s Policy on Presentation of Theses.
+
+6
+
+Acknowledgements
+I would like to thank all members of both the Eisenhaber research group, as well as
+the the Curtis and Warwicker research group for discussion, but in particular Jim
+Warwicker, Frank Eisenhaber, Birgit Eisenhaber, and Wing-Cheong Wong for supervision and guidance during my research. I would also like to thank The University
+of Manchester and the A*STAR Singapore Bioinformatics Institute for funding the
+project. Furthermore I would like to extend my gratitude to the research group of
+Professor Stephen High.
+
+7
+
+List of publications
+Journal Articles
+Posters
+Baker, J. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE
+Proteins. 40th FEBS Congress Late Breaker (2015)
+
+8
+
+9
+
+List of Abbreviations
+Endoplasmic Reticulum (ER)
+Molecular Dynamics (MD)
+Protein Data Bank (PDB)
+Plasma Membrane (PM)
+Palmitoyloleoylphosphatidylcholine (POPC)
+Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor (SNARE)
+Signal Peptide (SP)
+Tail Anchor (TA)
+Trans-membrane (TM)
+Trans-membrane Helix (TMH)
+Trans-membrane Protein (TMP)
+Trans-membrane Segment (TMS)
+
+Chapter 1
+Introduction
+Trans-membrane (TM) biology is a huge and varied ﬁeld that is ultimately the study
+of the interface between compartments of the cell; one of the fundamental pillars of
+life as we know it. Trans-membrane Protein (TMP)s include some of the most critical
+to life proteins as well as a large number of drug targets. However, the experimental
+inaccessibility of the Trans-membrane Helix (TMH) has hampered progress of study
+compared to their globular structural counterparts. Despite progress over the last
+decade, the understanding of the relationship between the sequence and function of a
+TMH is incomplete.
+In this chapter we will place the TMH problem in context, then describe the important biological aspects of the TMH (the traversing Trans-membrane Segment (TMS)
+as well as the membrane itself), and discuss tools and methods that allow us to analyze
+and describe the nuanced diﬀerences between these TMH sequences.
+
+1.1
+
+α Helices; Structure And Function
+
+1.2
+
+α Helices In Membranes
+
+1.2.1
+
+The Trans-membrane Protein Problem
+
+Because of the experimental hindrance, TMP biology has been relatively slow to
+emerge. Throughout the 1990s the concept of a TMH was simple and fairly assured:
+10
+
+1.2. α HELICES IN MEMBRANES
+
+11
+
+they were greasy peptides of around 30˚ in length, often bundled together and oriA
+ented perpendicularly to the membrane. By 2006, crystallography had elucidated
+more than 60 high resolution structures. Although the classic TMH structures were
+broadly prevalent, these structures contained a plethora of unusual TMHs. TMSs are
+capable of partial spanning of the membrane, spanning using oblique angles, and even
+lying ﬂat on the membrane surface[1, 2]; the classical model was incomplete. Even
+recently, there is a contingency in the membrane biology ﬁeld that despite progress
+over the last decade there is still a lack of information regarding the relationship between TMH sequences and function, TMH structure, intra-membrane TMP assembly,
+and the behavior of TMHs in the lipid bilayer; the native biological environment of
+TMHs[3].
+Furthermore, the insertion and formation of the unusually orientated TMHs and of
+the more traditional TMHs have been shown to be underpinned by complex thermodynamic equilibriums and electrostatic interactions[4–6]. As well as being a biophysically convoluted system, TMHs are biologically functional beyond anchorage in many
+cases. TMSs have been identiﬁed as regulators of protein quality control and traﬃcking mechanisms, shifting the idea away from TMHs broadly exclusively functioning as
+anchors[7], and crucially this function beyond anchorage can be revealed by sensitive,
+careful analysis of the sequence information alone[8].
+When predicting the function of any protein, one follows the dicta that function
+is facilitated by form, and form is determined by the sequence; the more similar the
+sequences, the more likely that the function is similar. For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a
+hydrophobic protein core which requires similarity of non-polar residue patterns. Sequence analysis of non-globular TMPs has not been studied to nearly the same extent
+yet homology paradigms are silently extended and applied to them. In the case of Signal Peptide (SP)s or TMSs the physical constraints are similar for all TMPs, and so
+matching is indeed merely a reﬂection of the physical environment of the bilayer, not
+the common ancestry. Worryingly, because of this oversight it appears that between
+2.1% and 13.6% of Pfam hits for SPs or TMSs are indeed false positive results [9].
+Over the last decade, Nanodiscs have been routinely used to much more easily
+obtain crystal structures. Nanodiscs overcome some of the major challenges caused by
+
+12
+
+CHAPTER 1. INTRODUCTION
+
+the hydrophobic helices, and a more faithful representation of the biological membranes
+than alternative model membranes like liposomes[10].
+However, critical questions remain: How is the TMH oriented in the membrane,
+how is the TMH interacting with the membrane, how is the TMH interacting with
+another TMH in the membrane, does the TMH have functions beyond anchorage and
+if so what are they?
+
+1.2.2
+
+The Importance Of Trans-membrane Proteins
+
+Membrane bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral TMP are encoded by around 30%
+of the genes in the human genome which reﬂects their biological importance[11]. These
+proteins allow biochemical pathways that traverse the various biological membranes
+used in life.
+The relationship between the membrane and TMPs is underpinned by complex
+thermodynamic and electrostatic equilibria. Once inserted the protein doesn’t leave
+the membrane as a result of the TMH being very hydrophobic. This hydrophobicity,
+and the hydrophobicity of the lipid tails means that they self associate and this association is entropically driven by water. Another way of describing it is that they
+ﬁercely dissociate from the water. The overall ∆G for a TMH in the membrane is 12kcalmol−1 [4]; the association of the helix in the membrane is typically spontaneous.
+
+1.2.3
+
+Trans-membrane Helix Sequence Composition
+
+Properties that can be analyzed by bioinformatics, the sequence complexity and hydrophobicity, of the TMH have been used to predict the role of the TMH as either
+functional or structural, and as a discrete cluster from other SCOP annotated helices[8]. Those ﬁndings demonstrated that the sequence of the TMH holds valuable
+information regarding biological roles, and forms the basis of our interest in the link
+between the polarity of a helix and functional activity beyond structural anchorage.
+The language used to describe TMHs varies somewhat across the literature, primarily due to a changing understanding of TMH general structure and relevance to
+function over the last 15 years or so. There is a general composition of a TMH despite
+
+1.2. α HELICES IN MEMBRANES
+
+13
+
+Outer leaflet
+Inner leaflet
+
+Membrane
+
+Outside
+(non-cytosolic)
+
+Hydrophobic
+groups
+
+Polar
+groups
+Positive
+charge
+Inside
+(cytosolic)
+
+Figure 1.1: A cartoon showing the general components of the membrane and a typical
+TMH. The example used here for illustrative purposes is trans-membrane region of
+therein (PDB 2LK9)[12]. Dark gray areas denote the area of lipid head groups. The
+residues found in these areas are often described as ﬂanking regions, and are often
+in contact with the aqueous interface of the membrane. The helix core is mostly
+composed of hydrophobic residues. More recently the hydrophobic group region has
+been associated with cell localization and a broad range of biochemical functions[8,
+13]. Although the regions labeled here generally hold true in terms of the statistical
+distribution of polar, non-polar, and charged groups, it is by no means absolute laws
+and many proteins break these “rules”[14–16]. Note that the deﬁnition of a TM αhelix is not entirely clear; how far the helix rises into the water-interface region to
+qualify as a TMH for example[1].
+
+speciﬁc protein and membrane constraints[14].
+A study by Baeza–Delgado et al. from 2013[15] looked at TMHs in 170 integral membrane proteins from a manually maintained database of experimentally conﬁrmed TMPs; MPTopo[17]. The group examined the distribution of residues along
+the TMHs. As expected, half of the natural amino acids are equally distributed along
+Trans-membrane (TM) helices whereas aromatic, polar, and charged amino acids along
+with proline are biasedly near the ﬂanks of the TM helices[15]. It has been noted that
+transitions between the polar and non-polar groups at the ends of the hydrophobic core
+
+14
+
+CHAPTER 1. INTRODUCTION
+
+occur in a more deﬁned edge on the cytoplasmic side than at the extra-cytoplasmic
+face when counting from the middle of the helix outwards[15]. This is probably reﬂecting the diﬀerent lipid composition of both leaﬂets of biological membranes[15]. A
+larger previous study using 1192 human and 1119 yeast predicted TMHs that were
+not structurally validated further explored the diﬀerence in TMH and leaﬂet structure
+by exploiting the evolutionarily conserved sequence diﬀerences between the TMH in
+the inner and outer leaﬂets[14]. TMHs from vertebrates and invertebrates were found
+to be reasonably similar compositionally. The diﬀerences in consensus TMH structure
+implies that there are general diﬀerences between the membranes of the Golgi and
+Endoplasmic Reticulum (ER). The abundance of serines in the region following the
+lumenal end of Golgi TMSs probably reﬂects the fact that this part of many Golgi
+enzymes forms a ﬂexible linker that tethers the catalytic domain to the membrane[14].
+The “Positive-Inside” Rule
+Two publications by von Heijne coined the “Positive-Inside” rule demonstrated the
+practical value of positively charged residue sequence clustering in topology prediction
+of TMHs in bacteria[18, 19]. It was clearly deﬁned and shown that positively charged
+residues more commonly were found on the “inside” of the cytoplasm rather than the
+periplasm of E. coli. More recently still large scale sequence analysis of TMHs from
+diﬀerent organelle membrane surfaces in eukaryotic proteomes, show the clustering of
+positive charge being cytosolic[14–16].
+The Aromatic Belt
+Tyrosine and tryptophan residues commonly are found at the interface boundaries of
+the TMH and this feature is called the “aromatic belt”[14, 15, 20–22]. Not all aromatic
+residues are not found in the aromatic belt; phenylalanine has no particular preference
+for this region[21, 23]. However it still remains unclear if this is to do with anchorage
+or translocon recognition[15].
+Snorkeling
+Broadly speaking, TMHs are non-polar. However some contain polar and charged
+residues in the helix itself. Whilst this might seem thermodynamically unstable at
+
+1.2. α HELICES IN MEMBRANES
+
+15
+
+ﬁrst glance, a molecular dynamic feature called the “snorkel” eﬀect explains in part
+how this is possible[24, 25]. Simply put, the snorkeling eﬀect involves the long ﬂexible
+side chain of leucine reaching the water interface region to interact with the polar headgroups of the bilayer even when the α helix backbone is pulled into the hydrophobic
+layer[26]. This has also been suggested to allow helices to adapt to varying thicknesses
+of the membrane[27].
+
+1.2.4
+
+Hydrophobicity of Trans-membrane Segments
+
+Over the last 50 years or so, there have been many attempts to use hydrophobicity
+scales of residues to predict structural classiﬁcations of proteins. Due to the vast
+amounts of scales, major eﬀorts have been made to compare them to identify which
+ones are better for which tasks of identifying structural elements[28, 29]. Simm et al.
+2016[28] compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of certain amino
+acids but generally that the methods behind the scales don’t aﬀect the separation
+capacity between β sheets or α helices.
+Throughout this thesis several scales are used to evaluate and estimate hydrophobic
+values of peptide chains. All the scales aim for quantifying the hydrophobic values of
+each residue. There are several key diﬀerences in their methodology, assumptions, and
+aims. Ultimately, all the scales are attempting to allow estimation of ∆Gwhf ; the free
+energy of a folded helix (f ) from the water (w) into the membrane core (h). This free
+energy measurement is regarded as being currently experimentally inaccessible[4].
+
+Kyte & Doolittle Hydropathy Scale
+A scale based on the water–vapor transfer free energy and the interior-exterior distribution of individual amino acids[30].
+
+Hessa’s Biological Hydrophobicity Scale
+This is arguably the most biologically relevant scale[29], and is often called the ∆Gaa
+app
+scale. The scale is based on an experimental method where the free energy exchange
+
+16
+
+CHAPTER 1. INTRODUCTION
+
+during recognition of designed polypeptide TMH by the ER Sec61 translocon occurred[20]. These measurements were then used to calculate a biological hydrophobicity scale. The original study reported positional variance in some residues and is
+strictly valid only for residues in the core of the TMH. A more reﬁned study quantiﬁed
+the positional dependencies of each amino acid type[31].
+White and Wimley Octanol – Interface Whole Residue Scale
+This scale is calculated from two other scales; the octanol scale, and the interface
+scale[32]. This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and
+octanol, as well as water to Palmitoyloleoylphosphatidylcholine (POPC) .
+The Eisenberg Hydrophobic Moment Consensus Scale
+The Eisenberg scale is a consensus scale based on the earlier scales from Tanford[33],
+Wolfenden[34], Chothia[35], Janin[36], and the von Heijne scale[37]. The scales are
+normalized according to serine[38]. The automatic TRANSMEM annotation currently
+used in Uniprot is according to TMHMM[39], Memsat[40], Phobius[41] and the hydrophobic moment plot method of Eisenberg and coworkers[38].
+A Brief Comparison of the Hydrophobicity Scales.
+Even at an overview, the methodologies seem strikingly varied. Crucially this results
+in slightly diﬀerent scores for some residues. To get an idea of how the methodological
+diﬀerences of the scales translate to numerical variations, we can normalize the scales
+so that each residue type is represented as a fraction of the maximum residue type
+value. If we assume each scale is in principle a linear scale, to calculate the normalised
+value for a given scale (xr ) we must look at all values within that scale as a set (a).
+ar + |min|
+xr =
+
+a
+
+|max − min|
+a
+
+a
+
+Where x is the standardized value, r speciﬁes the residue type, and a is the unnormalized hydrophobicity score. This allows us to say, as a fraction, how far between
+the minimum and maximum value is the value in question.
+
+1.2. α HELICES IN MEMBRANES
+
+17
+
+In the case of the Hessa and White and Wimley scale, the numbers should be
+inverted. This is because they count the most hydrophobic residues (isoleucine and
+leucine) as negative values, and more polar residues ascend into the positive numbers.
+Since the normalisation results in a scale between 0-1, to generate the inverted values
+we can simply use:
+ar + |min|
+xr = 1 −
+
+a
+
+|max − min|
+a
+
+a
+
+xr was compared from diﬀerent scales to assess the variability of each of the the
+residue types, r (Figure 1.2).
+
+Figure 1.2: A scatter plot comparing normalized values (x) of diﬀerent hydrophobicity
+scales. Amino acids on the horizontal axis are arranged according to xr taking into
+¯
+account all 4 scales. The points in blue are the White and Wimley scale[32], in red
+is Hessa’s biological scale[20], in orange is the Eisenberg consensus scale[38], and in
+black are the Kyte & Doolittle values[30]. The black line connects xr values, whilst
+¯
+the gray line connects |max − min|, although obviously in both cases the line is only
+xr
+
+xr
+
+for illustrative purposes and does not show a relationship between the residues.
+Although as a trend the scales agree, because of the methodological diﬀerences,
+there are indeed variations of values even after normalization. Due to these discrepancies it is preferable and typical amongst the literature to use several scales to verify the
+
+18
+
+CHAPTER 1. INTRODUCTION
+
+observable trends resulting from an individual scale. Notably, one of the classic scales,
+Kyte & Doolittle Hydropathy Scale shows striking similarity to the modern Hessa’s
+∆Gaa scale, and that generally the “better” scales count proline as hydrophilic, and
+app
+focus on helix recognition rather than amino acid analogues[29]. In α helices from
+soluble proteins, proline is almost always a helix breaker, and α helix prediction scales
+don’t even attempt to quantify a proline scoring penalty.
+
+1.2.5
+
+Sequence Complexity
+
+Sequence complexity, otherwise referred to as sequence entropy, is essentially an estimate of the linguistic entropy of a string. In the context of biology can be thought of
+as an estimation of the non-randomness of a sequence. Sequence complexity can be
+used to analyze DNA sequences[42–44], however here we will focus on the analysis of
+the complexity of a sequence in protein sequences.
+The compositional complexity is measure over sequence windows. If we have an
+amino acid composition {ni }i = min i, ..., max i with a window length of L = Σni ,the
+total number of sequences can be calculated by dividing a factorial of the length by
+the product of the compositions, i.e N = L!/Πni possible sequences. The SEG algorithm[45, 46] identiﬁes subsegments of the raw region which have the lowest probability.
+The algorithm searches for and concatenates sub-threshold segments for the Shannon
+entropy-like term:
+
+K2 = −Σ
+
+ni
+ni
+log
+L
+L
+
+The lowest probability subsegment can be deﬁned as K1 = log N/L. By altering
+the window lengths, and the thresholds SEG can be optimized to search for subtle
+compositional deviations, such as coil-coiled regions.
+
+1.3. BIOGENESIS OF TRANS-MEMBRANE PROTEINS
+
+1.3
+1.3.1
+
+19
+
+Biogenesis of Trans-membrane Proteins
+Translocation
+
+Tail-Anchored Proteins Post Translationally Insert
+Tail anchored proteins are a topologically distinct class of intracellular proteins deﬁned by their single carboxy-terminal trans-membrane domain with a cytosolic facing
+amino-terminus. Tail anchored proteins are involved in a range of key cellular functions
+including protein translocation and apoptosis. Additionally, within the tail anchored
+class of proteins are a set of vesicle fusion proteins called Soluble N-EthylmaleimideSensitive Factor Attachment Receptor (SNARE) proteins. There is biomedical interest
+in SNARE drug delivery mechanisms. SNAREs can fuse liposomes containing various
+drug payloads into the membrane.
+Notably, known SNARE TMHs are highly hydrophobic even compared to other
+tail anchored TMHs.
+
+1.3.2
+
+Translocon Independent Membrane Insertion
+
+Signal anchored proteins, proteins that contain a single hydrophobic segment that
+serves as both a mitochondrial targeting signal and a membrane anchor, as well as
+tail anchored proteins have been shown to be able to spontaneously insert into the
+membrane independently from the translocon[5, 47, 48].
+It is postulated that there are electrostatic factors in the ﬂanking regions that
+contribute to this spontaneous membrane insertion. Our experimental collaborators in
+Stephen Highs group are interested in a small group of tail anchored proteins that have
+very polar trans-membrane domains and are capable of liposome membrane insertion
+without insertion machinery, also known as spontaneous insertion. They have found
+that chimeric synaptobrevin, one of the ﬁrst identiﬁed SNARE proteins, is capable
+of spontaneous insertion if the tail anchor domain is replaced by the TM domains
+belonging to a protein of known spontaneously inserting domains. Their studies have
+moved the focus of spontaneous insertion away from the loop regions and onto the
+biophysicochemical factors of the TMH itself. The idea that SNARE proteins are
+modular, and capable of spontaneous insertion has signiﬁcant implications for both
+
+20
+
+CHAPTER 1. INTRODUCTION
+
+biomedical application in liposome based drug delivery and can aid future research for
+testing complex biological molecular networks[49, 50].
+
+1.4
+1.4.1
+
+Biological Membrane Composition
+Lipids of the Membrane
+
+The compartmentalization of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental
+prerequisites for life[51]. The proteins that allow life to use this biochemical barrier
+are perhaps equally important. Together, the lipid bilayer and proteins therein allow
+complex biochemical systems that facilitate life as we know it.
+It is critical to understand that the lipid bilayer and the trans-membrane α helices are inextricably linked, and often what we observe from the α helices reﬂect the
+properties of the much harder to study membranes. The lipid membranes inﬂuence
+the local structure, dynamics, and activity of proteins in the membrane in non-trivial
+ways[52–59].
+There is a rich variety of lipid molecules that make up the biological membranes.
+The majority of lipids in higher organism membranes are phospholipids, sphingolipids,
+and sterols. These are composed of a glycerol molecule. Bonded to the glycerol
+molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar
+phosphate group. The polar phosphate group is modiﬁed with an alcohol group. Water
+entropically drives the self association of the lipid molecules. In other words the bilayer
+forms from these phospholipid molecules due to the ﬁerce dissociation between the
+polar water and the hydrophobic tails. Furthermore the bilayer maximises van der
+Waals interactions between the closely-packed hydrocarbon chains, which contributes
+to the stability of the bilayer. This can be seen even in relatively early Molecular
+Dynamics (MD) simulations[60].
+
+Diﬀerenes in Membrane Compositions
+It has been known for some time that the outer membranes of Gram negative bacteria are asymmetric in terms of lipid composition. The outer membranes contain
+
+1.4. BIOLOGICAL MEMBRANE COMPOSITION
+
+21
+
+lipopolysccharide, whilst the inner is a mixture of approximately 25 phospholipid
+types. Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human TMH regions revealed intra-membrane
+leaﬂet composition asymmetry in the ER, but not the Golgi[14]. Furthermore proteinlipid interactions have been shown to be determinants of membrane curvature[58],
+and undertake complex orientations and conformations to allow for hydrophobic mismatch[61].
+
+1.4.2
+
+Membrane Potential
+
+Simply put, membrane potential is the voltage across a membrane. If the membrane
+is permeable to a certain type of ion, then the ion will experience an electrical pulling
+force during the diﬀusion process that pull toward the “preferred” biological location.
+This clearly depends on a chemical component involving both the charge and ion
+concentration gradient.There are various ways of estimating the membrane potential
+ab initio.
+The Nernst equation can be derived directly from the simpliﬁed thermodynamic
+principles (i) the Boltzmann distribution, and (ii) a ﬁeld charge interaction energy[62].
+It is deﬁned as:
+
+Em =
+
+RT
+cout
+× ln
+F
+cin
+
+Where charge Em is the membrane potential, z is the ion charge, c is the concentration of an ion in that cell environment.
+One problem in a biological membranes is that the compartments always involve
+multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions that contribute to cout and cin (such as K + , N a+ , and Cl− )
+simultaneously:
+
+Em =
+
+RT
+× ln
+F
+
+pK + .[K + ]out + pN a+ .[N a+ ]out + pCl− .[Cl− ]in
+pK + .[K + ]in + pN a+ .[N a+ ]in + pCl− .[Cl− ]out
+
+Where charge Em is the membrane potential, z is the ion charge, [i] is the ion
+concentration and pi is the relative membrane permeability for the actual ion.
+
+22
+
+CHAPTER 1. INTRODUCTION
+However, it is rife with caveats caused by the assumptions of the simpliﬁed model.
+
+Such assumptions include ions having point charge, that the potential is constant
+throughout the solution. This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily inﬂuenced by,
+for example, a speciﬁc adsorbtion of either part of the redox pair or the competitive
+adsorption of a supporting ion in solution[62]. Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined
+E0 , particularly when using such an idealized model in a biological context.
+Organelle Membrane Potentials
+Several studies have attempted to quantify the various voltages across the intracellular
+membranes.
+Plasma Membrane
+ER
+Negativity was found in the ER, with a voltage between between 75mV to 95mV in
+the ER membrane[63, 64].
+Mitochondrial membranes
+Negativity was found in the mitochondrial matrix with a voltage across the mitochondrial membrane at 150mV[65].
+Golgi
+No notable membrane potential has been identiﬁed in the Golgi[66, 67].
+
+1.5
+
+Aims of This Thesis.
+
+1. Negative not inside rule.
+2. SNARE and Tail Anchor (TA) project.
+3. Good and bad helices.
+
+Chapter 2
+The “Negative-Outside” Rule
+The description of a TMH remains incomplete. The understanding of TMP topology is erroneous, and despite a wealth of structures, the general model of helix-helix
+and helix-lipid interactions remains speculative and requires a great deal of intensive
+analysis to generate a working model of a particular TMP.
+The work presented in this chapter is an expanded version of published work[68].
+We use advanced statistical analysis to analyze large sequence datasets that have rich
+topological annotation. By analyzing these sequences in the context of anchorage,
+we ﬁnd that some TMHs are conﬁned to biological constraints of the membrane,
+whereas others that likely contain function beyond anchorage, are less conforming to
+the membrane. Speciﬁcally, there is further elaboration of statistical deﬁnitions in the
+methods than in the published paper.
+
+2.1
+
+Abstract
+
+2.2
+
+Summary
+
+As the idea of positive residues inside the cytoplasm emerged during the late 1980s,
+so did the idea of negative residues working in concert with TMH orientation. It
+was shown that removing a single lysine residue reversed the topology of a model Escherichia coli protein, whereas much higher numbers of negatively charged residues
+are needed to reverse topology[69]. One would also expect to see a skew in negatively
+charged distribution if a cooperation between oppositely charged residues orientated a
+23
+
+24
+
+CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
+
+TMH, however there is no conclusive evidence in the literature for an opposing negatively charged skew[14–16, 21, 22]. However, in E. coli negative residues do experience
+electrical pulling forces when traveling through the SecYEG translocon indicating that
+negative charges are biologically relevant[6].
+
+2.3
+2.3.1
+
+Methods
+Normalisation
+
+(aK,r +aR,r )−(aD,r +aE,r )
+N
+ai,r
+pi,r = max(ar )
+r
+100a
+qi,r = ai i,r
+
+cr =
+
+2.4
+2.4.1
+
+Results
+Biophysicochemical diﬀerences in multi-pass and singlepass helices
+
+Chapter 3
+Tail-Anchored Proteins Revisited;
+An Up-To-Date Dataset And
+Biochemical Insights Into
+Spontaneous Insertion
+3.1
+
+Abstract
+
+3.2
+
+Introduction
+
+This study aims to identify SNARE proteins in eukaryotic proteomes by ﬁltering
+through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions. The pipeline generates a list
+of singlepass proteins with a transmembrane domain close to the C terminal, that are
+not splice isoforms. A previous study predicted 411 tail anchor proteins[70].
+
+3.3
+
+Methods
+
+The original list UniProt protein database was queried for records containing “TRANSMEM” annotation on June 15, 2016, totaling 75826 records from swissprot, and
+12322000 records from TrEMBL.
+Expression
+25
+
+26CHAPTER 3. TAIL-ANCHORED PROTEINS REVISITED; AN UP-TO-DATE DATASET AND BIOCH
+
+3.3.1
+
+Filtering the Uniprot database
+
+Steps carried out by Kalbﬂeisch et al. published in Traﬃc 2007 (8: 16871694)[70], were
+recreated using up to date tools. The nonredundant human dataset of 145,715 proteins
+from SwissProt and TrEMBL[71]. 2,478 singlepass proteins were programmatically
+extracted according to the TRANSMEM count from that list. Then TMDs not within
+15AA of the C terminal were removed, resulting in 455 proteins. No splice isoforms
+were detected according to searching for NON TER annotation. 195 proteins of the
+411 predicted proteins from the previous study were successfully mapped using the
+Uniprot mapping tools[71]. Duplicate IDs from the previously predicted tail anchored
+protein were removed from the set. The remaining dataset contained XXX proteins.
+
+3.3.2
+
+Calculating Hydrophobicity
+
+3.3.3
+
+Calculating Sequence Complexity
+
+3.4
+
+Results
+
+3.4.1
+
+An Up To Date Tail-Anchor Dataset
+
+3.4.2
+
+Potential Tail-Anchored SNARE Protein Discovery
+
+3.4.3
+
+Biology of Spontaneously Inserting Tail Anchored Proteins
+
+Chapter 4
+The Anchors And The Doers
+4.1
+
+Abstract
+
+4.2
+
+Introduction
+
+4.3
+
+Methods
+
+4.4
+
+Results
+
+27
+
+Chapter 5
+Conclusions
+5.1
+5.1.1
+
+Outlook
+The hydrophobicity–sequence complexity continuum
+
+We hypothesize that the hydrophobicity–sequence complexity continuum contains nuanced codes for diﬀerent functions and that such diﬀerentiation of sequence and structural properties will allow assignment to these varying functions. Additionally, we
+suggest probing functional classiﬁcation of yet uncharacterized membrane proteins by
+similarities of combinations of complex TM sets to well studied membrane proteins and
+ﬁnding those classes of TM proteins where this principle is most directly applicable.
+
+28
+
+Bibliography
+1. Von Heijne, G. Membrane-protein topology. Nature Reviews Molecular Cell Biology 7, 909–918. issn: 1471-0072 (2006).
+2. Elofsson, A & von Heijne, G. Membrane protein structure: prediction versus
+reality. Annu Rev Biochem 76, 125–140. issn: 0066-4154 (2007).
+3. Ladokhin, A. S. Membrane Protein Folding & Lipid Interactions: Theory &
+Experiment. The Journal of Membrane Biology 248, 369–370. issn: 0022-2631
+(2015).
+4. Cymer, F., Von Heijne, G. & White, S. H. Mechanisms of integral membrane
+protein insertion and folding. Journal of Molecular Biology 427, 999–1022. issn:
+10898638 (2015).
+5. Merklinger, E. et al. Membrane integration of a mitochondrial signal-anchored
+protein does not require additional proteinaceous factors. Biochem. J. 442, 381–
+389. issn: 0264-6021 (2012).
+6. Ismail, N., Hedman, R., Lind´n, M. & von Heijne, G. Charge-driven dynamics of
+e
+nascent-chain movement through the SecYEG translocon. en. Nature structural
+& molecular biology 22, 145–9. issn: 1545-9985 (2015).
+7. Hessa, T. et al. Protein targeting and degradation are coupled for elimination of
+mislocalized proteins. Nature 475, 394–7. issn: 1476-4687 (2011).
+8. Wong, W.-C., Maurer-Stroh, S., Schneider, G. & Eisenhaber, F. Transmembrane
+helix: simple or complex. Nucleic acids research 40, W370–5. issn: 1362-4962
+(2012).
+
+29
+
+30
+
+BIBLIOGRAPHY
+
+9. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
+with protein domain databases: Transmembrane regions, signal peptides and the
+issue of sequence homology. PLoS Computational Biology 6 (ed Bourne, P. E.)
+6. issn: 1553734X (2010).
+10. Borch, J. & Hamann, T. The nanodisc: A novel tool for membrane protein studies.
+Biological Chemistry 390, 805–814. issn: 14316730 (2009).
+11. Alm´n, M., Nordstr¨m, K. J., Fredriksson, R. & Schi¨th, H. B. Mapping the
+e
+o
+o
+human membrane proteome: a majority of the human membrane proteins can
+be classiﬁed according to function and evolutionary origin. BMC Biology 7, 50.
+issn: 1741-7007 (2009).
+12. Skasko, M. et al. HIV-1 Vpu protein antagonizes innate restriction factor BST-2
+via lipid-embedded helix-helix interactions. Journal of Biological Chemistry 287,
+58–67. issn: 00219258 (2012).
+13. Junne, T., Kocik, L. & Spiess, M. The hydrophobic core of the Sec61 translocon
+deﬁnes the hydrophobicity threshold for membrane integration. Molecular biology
+of the cell 21, 1662–70. issn: 1939-4586 (2010).
+14. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of Transmembrane Domains Reveals Organelle-Speciﬁc Properties. Cell 142, 158–169.
+issn: 00928674 (2010).
+15. Baeza-Delgado, C., Marti-Renom, M. A. & Mingarro, I. Structure-based statistical analysis of transmembrane helices. European Biophysics Journal 42, 199–207.
+issn: 01757571 (2013).
+16. Pogozheva, I. D., Tristram-Nagle, S., Mosberg, H. I. & Lomize, A. L. Structural
+adaptations of proteins to diﬀerent biological membranes. Biochimica et Biophysica Acta (BBA) - Biomembranes 1828, 2592–2608. issn: 00052736 (2013).
+17. Jayasinghe, S, Hristova, K & White, S. H. MPtopo: A database of membrane
+protein topology. Protein Science 10, 455–458. issn: 0961-8368 (2001).
+18. Von Heijne, G. Control of topology and mode of assembly of a polytopic membrane protein by positively charged residues. en. Nature 341, 456–458. issn:
+0028-0836 (1989).
+
+BIBLIOGRAPHY
+
+31
+
+19. Elofsson, A & von Heijne, G. Membrane protein structure: prediction versus
+reality. Annu Rev Biochem 76, 125–140. issn: 0066-4154 (2007).
+20. Hessa, T. et al. Recognition of transmembrane helices by the endoplasmic reticulum translocon. Nature 433, 377–81. issn: 1476-4687 (2005).
+21. Granseth, E., Von Heijne, G. & Elofsson, A. A study of the membrane-water
+interface region of membrane proteins. Journal of Molecular Biology 346, 377–
+385. issn: 00222836 (2005).
+22. Nilsson, J., Persson, B. & von Heijne, G. Comparative analysis of amino acid
+distributions in integral membrane proteins from 107 genomes. Proteins 60, 606–
+616. issn: 1097-0134 (2005).
+23. Braun, P. & Von Heijne, G. The aromatic residues Trp and phe have diﬀerent
+eﬀects on the positioning of a transmembrane helix in the microsomal membrane.
+Biochemistry 38, 9778–9782. issn: 00062960 (1999).
+24. Chamberlain, A. K., Lee, Y., Kim, S. & Bowie, J. U. Snorkeling preferences foster
+an amino acid composition bias in transmembrane helices. Journal of Molecular
+Biology 339, 471–479. issn: 00222836 (2004).
+25. Strandberg, E. & Killian, J. A. Snorkeling of lysine side chains in transmembrane
+helices: How easy can it get? FEBS Letters 544, 69–73. issn: 00145793 (2003).
+26. Krishnakumar, S. S. & London, E. Eﬀect of Sequence Hydrophobicity and Bilayer Width upon the Minimum Length Required for the Formation of Transmembrane Helices in Membranes. Journal of Molecular Biology 374, 671–687.
+issn: 00222836 (2007).
+27. Kandasamy, S. K. & Larson, R. G. Molecular Dynamics Simulations of Model
+Trans-Membrane Peptides in Lipid Bilayers: A Systematic Investigation of Hydrophobic Mismatch. Biophysical journal 90, 2326–2343. issn: 00063495 (2006).
+28. Simm, S., Einloft, J., Mirus, O. & Schleiﬀ, E. 50Years of Amino Acid Hydrophobicity Scales: Revisiting the Capacity for Peptide Classiﬁcation. Biological Research 49, 31. issn: 0717-6287 (2016).
+
+32
+
+BIBLIOGRAPHY
+
+29. Peters, C. & Elofsson, A. Why is the biological hydrophobicity scale more accurate than earlier experimental hydrophobicity scales? Proteins: Structure, Function and Bioinformatics 82, 2190–2198. issn: 10970134 (2014).
+30. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
+character of a protein. Journal of Molecular Biology 157, 105–132. issn: 00222836
+(1982).
+31. Hessa, T. et al. Molecular code for transmembrane-helix recognition by the Sec61
+translocon. Nature 450, 1026–1030. issn: 0028-0836 (2007).
+32. White, S. H. & Wimley, W. C. MEMBRANE PROTEIN FOLDING AND STABILITY : Physical Principles. Annual Reviews of Biophysics and Biomolecular
+Structure 28, 319–365. issn: 1056-8700 (1999).
+33. Nozaki, Y. & Tanford, C. The solubility of amino acids and two glycine peptides
+in aqueous ethanol and dioxane solutions. Establishment of a hydrophobicity
+scale. Journal of Biological Chemistry 246, 2211–2217. issn: 00219258 (1971).
+34. Rose, G. D. & Wolfenden, R. Hydrogen Bonding, Hydrophobicity, Packing, and
+Protein Folding. Annual Review of Biophysics and Biomolecular Structure 22,
+381–415. issn: 1056-8700 (1993).
+35. Chothia, C. The nature of the accessible and buried surfaces in proteins. Journal
+of Molecular Biology 105, 1–12. issn: 00222836 (1976).
+36. Janin, J. Surface and inside volumes in globular proteins. Nature 277, 491–492.
+issn: 0028-0836 (1979).
+37. Von Heijne, G. & Blomberg, C. Trans-membrane Translocation of Proteins. The
+Direct Transfer Model. European Journal of Biochemistry 97, 175–181. issn:
+0014-2956 (1979).
+38. Eisenberg, D. Three-dimensional structure of membrane and surface proteins.
+Annual review of biochemistry 53, 595–623. issn: 00664154 (1984).
+39. Krogh, A, Larsson, B, von Heijne, G & Sonnhammer, E. L. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of molecular biology 305, 567–580. issn: 0022-2836 (2001).
+
+BIBLIOGRAPHY
+
+33
+
+40. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544. issn: 13674803
+(2007).
+41. K¨ll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology
+a
+and signal peptide prediction method. Journal of Molecular Biology 338, 1027–
+1036. issn: 00222836 (2004).
+42. Pinho, A. J., Garcia, S. P., Pratas, D. & Ferreira, P. J. S. G. DNA sequences at
+a glance. PLoS ONE 8 (ed Gibas, C.) e79922. issn: 19326203 (2013).
+43. Oliver, J. L., Bernaola-Galv´n, P, Guerrero-Garc´ J & Rom´n-Rold´n, R. Ena
+ıa,
+a
+a
+tropic proﬁles of DNA sequences through chaos-game-derived images. Journal of
+theoretical biology 160, 457–470. issn: 0022-5193 (1993).
+44. Troyanskaya, O. G., Arbell, O., Koren, Y., Landau, G. M. & Bolshoy, A. Sequence
+complexity proﬁles of prokaryotic genomic sequences: A fast algorithm for calculating linguistic complexity. Bioinformatics 18, 679–688. issn: 1367-4803 (2002).
+45. Wooton, J. C. Non-globular doamins in protein sequences: automated segmentation using complexity measures. Comput. Chem. 18, 269–285. issn: 0097-8485
+(1994).
+46. Hayete, B. & Bienkowska, J. Gotrees: predicting go associations from protein
+domain composition using decision trees. Methods in Enzymology 1993, 127–
+138. isbn: 9812560467. doi:full _ text. ¡http : / / europepmc . org / abstract /
+MED/15759620¿ (Elsevier, 2005).
+47. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of C-terminally
+anchored proteins to the mitochondrial outer membrane is speciﬁc and saturable
+but does not strictly require ATP or molecular chaperones. The Biochemical
+journal 349, 611–621. issn: 02646021 (2000).
+48. Colombo, S. F., Longhi, R. & Borgese, N. The role of cytosolic proteins in the insertion of tail-anchored proteins into phospholipid bilayers. Journal of cell science
+122, 2383–92. issn: 0021-9533 (2009).
+
+34
+
+BIBLIOGRAPHY
+
+49. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
+clinical applications. Advanced Drug Delivery Reviews 65, 36–48. issn: 0169409X
+(2013).
+50. Nordlund, G., Brzezinski, P. & von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artiﬁcial membranes. Nature Communications 5, 4303. issn: 2041-1723 (2014).
+51. Koshland, D. E. The Seven Pillars of Life. en. Science 295, 2215–2216. issn:
+00368075 (2002).
+52. Bondar, A. N., del Val, C., Freites, J. A., Tobias, D. J. & White, S. H. Dynamics
+of SecY Translocons with Translocation-Defective Mutations. Structure 18, 847–
+857. issn: 09692126 (2010).
+53. Bondar, A. N., del Val, C. & White, S. H. Rhomboid Protease Dynamics and
+Lipid Interactions. Structure 17, 395–405. issn: 09692126 (2009).
+54. Jard´n-Valadez, E., Bondar, A. N. & Tobias, D. J. Coupling of retinal, protein,
+o
+and water dynamics in squid rhodopsin. Biophysical Journal 99, 2200–2207. issn:
+00063495 (2010).
+55. Kalvodova, L. et al. Lipids as modulators of proteolytic activity of BACE: Involvement of cholesterol, glycosphingolipids, and anionic phospholipids in vitro.
+Journal of Biological Chemistry 280, 36815–36823. issn: 00219258 (2005).
+56. Urban, S. & Wolfe, M. S. Reconstitution of intramembrane proteolysis in vitro
+reveals that pure rhomboid is suﬃcient for catalysis and speciﬁcity. eng. Proceedings of the National Academy of Sciences of the United States of America 102,
+1883–8. issn: 0027-8424 (2005).
+57. White, S. H., Ladokhin, A. S., Jayasinghe, S. & Hristova, K. How Membranes
+Shape Protein Structure. Journal of Biological Chemistry 276, 32395–32398.
+issn: 00219258 (2001).
+58. Jensen, M. & Mouritsen, O. G. Lipids do inﬂuence protein function - The hydrophobic matching hypothesis revisited. Biochimica et Biophysica Acta - Biomembranes 1666, 205–226. issn: 00052736 (2004).
+
+BIBLIOGRAPHY
+
+35
+
+59. H´nin, J., Salari, R., Murlidaran, S. & Brannigan, G. A predicted binding site for
+e
+cholesterol on the GABAA receptor. Biophysical Journal 106, 1938–1949. issn:
+15420086 (2014).
+60. Goetz, R & Lipowsky, R. Computer simulations of bilayer membranes: Selfassembly and interfacial tension. Journal Of Chemical Physics 108, 7397–7409.
+issn: 00219606 (1998).
+61. De Planque, M. R. R. & Killian*, J. A. Proteinlipid interactions studied with
+designed transmembrane peptides: role of hydrophobic matching and interfacial
+anchoring (Review). en. Molecular Membrane Biology 20, 271–284. issn: 09687688 (2003).
+62. Feiner, A. & McEvoy, A. The nernst equation. Journal of chemical education 71,
+493–494. issn: 0021-9584 (1994).
+63. Qin, Y., Dittmer, P. J., Park, J. G., Jansen, K. B. & Palmer, A. E. Measuring
+steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences of the
+United States of America 108, 7351–6. issn: 1091-6490 (2011).
+64. Worley, J. F. et al. Endoplasmic reticulum calcium store regulates membrane
+potential in mouse islet ??-cells. Journal of Biological Chemistry 269, 14359–
+14362. issn: 00219258 (1994).
+65. Perry, S. W., Norman, J. P., Barbieri, J., Brown, E. B. & Gelbard, H. A. Mitochondrial membrane potential probes and the proton gradient: A practical usage
+guide. BioTechniques 50, 98–115. issn: 07366205 (2011).
+66. Schapiro, F. B. & Grinstein, S. Determinants of the pH of the Golgi complex.
+Journal of Biological Chemistry 275, 21025–21032. issn: 00219258 (2000).
+67. Llopis, J. et al. Measurement of cytosolic, mitochondrial, and Golgi pH in single
+living cells with green ﬂuorescent proteins. Proceedings of the National Academy
+of Sciences 95, 6803–6808. issn: 0027-8424 (1998).
+68. Baker, J. A., Simkovic, F., Taylor, H. M. C. & Rigden, D. J. Potential DNA binding and nuclease functions of ComEC domains characterized in silico. Proteins:
+
+36
+
+BIBLIOGRAPHY
+Structure, Function and Bioinformatics. issn: 10970134. doi:10 . 1002 / prot .
+25088 (2016).
+
+69. Nilsson, I. & von Heijne, G. Fine-tuning the topology of a polytopic membrane
+protein: Role of positively and negatively charged amino acids. Cell 62, 1135–
+1141. issn: 00928674 (1990).
+70. Kalbﬂeisch, T., Cambon, A. & Wattenberg, B. W. A bioinformatics approach to
+identifying tail-anchored proteins in the human genome. Traﬃc 8, 1687–1694.
+issn: 13989219 (2007).
+71. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212. issn: 13624962 (2015).
+
+

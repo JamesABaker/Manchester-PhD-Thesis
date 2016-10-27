@@ -29,31 +29,29 @@
 % abbreviations: 1.the code used in the text, 2. the short form, 3. the long form. http://tex.stackexchange.com/questions/86666/how-to-create-both-list-of-abbreviations-and-list-of-nomenclature-using-nomencl
 \newacronym{pm}{PM}{Plasma Membrane}
 \newacronym{md}{MD}{Molecular Dynamics}
-\newacronym{tm}{TM}{Transmembrane}
-\newacronym{tmh}{TMH}{Transmembrane Helix}
-\newacronym{tmp}{TMP}{Transmembrane Protein}
+\newacronym{tm}{TM}{Trans-membrane}
+\newacronym{tmh}{TMH}{Trans-membrane Helix}
+\newacronym{tms}{TMS}{Trans-membrane Segment}
+\newacronym{tmp}{TMP}{Trans-membrane Protein}
 \newacronym{er}{ER}{Endoplasmic Reticulum}
 \newacronym{ta}{TA}{Tail Anchor}
 \newacronym{gpi}{GPI}{Glycosylphosphatidylinositol}
 \newacronym{popc}{POPC}{Palmitoyloleoylphosphatidylcholine}
-
 \newacronym{pdb}{PDB}{Protein Data Bank}
+\newacronym{sp}{SP}{Signal Peptide}
 \newacronym{snare}{SNARE}{Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor}
 
-% nomenclature:
-%\newglossaryentry{angelsperarea}{
-  %name = $a$ ,
-%  description = The number of angels per unit area,
-%}
 
 \makeglossaries
 
+
 \begin{document}
+
+
 \title{Investigating the Recognition and Interactions of Non-Polar $\alpha$ Helices in Biology}
 \author{James Baker}
 \faculty{Life Sciences}
-\def\wordcount{xxxxx}
-
+\def\wordcount{7750}
 % Uncomment the line below to suppress the `List of Tables' page (optional)
 \tablespagefalse
 
@@ -63,23 +61,18 @@
 % Uncomment the line below to use a customised Declaration statement
 %\def\declaration{All the work in this thesis has been sourced from Google}
 
+
 \beforeabstract % Don't move the abstract, it doesn't like it.
-Non\---polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through \gls{tm} segments, to current work on recognition of protein trafficking and quality control. \gls{tm} $\alpha$ helix containing proteins make up around a quarter of all proteins, as well as two thirds of drug targets, and contain some of the most critical proteins required for life as we know it. Yet they are fundamentally difficult to study experimentally. This is in part due to the very features that make them so biologically influential: their non\---polar \gls{tmh} regions. What is missing in the current literature is a nuanced understanding of the complexities of the helix composition beyond a hydrophobic region of around 20 residues. Currently it is known that the properties of transmembrane protein $\alpha$ helices underpin membrane protein insertion mechanisms. Studies in Frank Eisenhaber’s group at the A*STAR Bioinformatics Institute have identified types of transmembrane helix, simple are characterised by their hydrophobicity, and complex type by the addition of structural and ancestral features that mediate a role beyond basic membrane insertion and furthermore can be used to predict presence of function in the transmembrane helix itself.
+Non\---polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through trans-membrane segments, to current work on recognition of protein trafficking and quality control. Trans-membrane $\alpha$ helix containing proteins make up around a quarter of all proteins, as well as two thirds of drug targets, and contain some of the most critical proteins required for life as we know it. Yet they are fundamentally difficult to study experimentally. This is in part due to the very features that make them so biologically influential: their non\---polar trans-membrane helix regions. What is missing in the current literature is a nuanced understanding of the complexities of the helix composition beyond a hydrophobic region of around 20 residues. Currently it is known that the properties of trans-membrane protein $\alpha$ helices underpin membrane protein insertion mechanisms.
 
-By leveraging large datasets of transmembrane proteins, this thesis is focussed on characterising features of $\alpha$ helices en masse, particularly regarding their topology, membrane\---protein interactions, and intra-membrane protein interactions.
+By leveraging large datasets of trans-membrane proteins, this thesis is focused on characterizing features of $\alpha$ helices en masse, particularly regarding their topology, membrane\---protein interactions, and intra-membrane protein interactions.
 
-\begin{itemize}
-  \item Herein we expand on the core understanding of the biophysicochemical properties of these helices. We find evidence of a universal ``negative-not-inside'' rule that complements the famous ``positive-inside rule'' as well as intramembrane leucine propensity for the inner leaflet.
-  \item An up-to-date set of potential \gls{ta} proteins (a group of post-translationally inserted proteins) is rebuilt.
-  \item A novel \gls{gpi} lipid anchor is characterised.
-  \item The hydrophobicity\---complexity continuum is investigated in relation to function and recognition.
-\end{itemize}
 \afterabstract
 
 
 %The preface section doesn't like being in a different document for some reason. (I think it's just my compiler, there is no reason why it shouldn't work)
 \prefacesection{Acknowledgements}
-I would like to thank all members of both the Eisenhaber research group, as well as all members from the the Curtis and Warwicker research group and the extended Eisenhaber group including Sebastian Maurer-Stroh's group, and my academic advisor Professor Stephen High for discussion, but in particular Jim Warwicker, Frank Eisenhaber, Birgit Eisenhaber, and Wing-Cheong Wong for supervision and guidance during my research. I would also like to thank The University of Manchester and the A*STAR Singapore Bioinformatics Institute for funding the project. Furthermore I would like to extend my gratitude to the research group of Professor Stephen High.
+I would like to thank all members of both the Eisenhaber research group, as well as the the Curtis and Warwicker research group for discussion, but in particular Jim Warwicker, Frank Eisenhaber, Birgit Eisenhaber, and Wing-Cheong Wong for supervision and guidance during my research. I would also like to thank The University of Manchester and the A*STAR Singapore Bioinformatics Institute for funding the project. Furthermore I would like to extend my gratitude to the research group of Professor Stephen High.
 
 %Shout out to all the Biopython devs that saved my sanity!
 
@@ -87,7 +80,7 @@ I would like to thank all members of both the Eisenhaber research group, as well
 %In the 1950s and 1960s, the field of biological philosophy was still emerging. David Hull writes on the matter in his 1969 article entitled {\it``What Philosophy of Biology is not''}:
 
 %\begin{displayquote}
-%``Periodically through the history of biology, biologists have tried to do a little philosophy...'' \cite{Hull1969}
+%``Periodically through the history of biology, biologists have tried to do a little philosophy...''\cite{Hull1969}
 %\end{displayquote}
 
 %I think this accurately summarises my attempts at applying philosophy to science for my philosophical doctorate.
@@ -102,28 +95,51 @@ I would like to thank all members of both the Eisenhaber research group, as well
 \subsection*{Posters}
 Baker, J. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE Proteins. {\it 40th FEBS Congress} Late Breaker (2015)
 
-\afterpreface % DO NOT DELETE. BAD THINGS HAPPEN.
+\clearpage
+
+
+\afterpreface
+
+\section*{List of Abbreviations}
+%Stick to alphabetical order
+\acrfull{er} \\
+\acrfull{md} \\
+\acrfull{pdb} \\
+\acrfull{pm} \\
+\acrfull{popc} \\
+\acrfull{snare} \\
+\acrfull{sp} \\
+\acrfull{ta} \\
+\acrfull{tm} \\
+\acrfull{tmh} \\
+\acrfull{tmp} \\
+\acrfull{tms} \\
+
+
+
+
+
+
 
 %This is where we call the chapters. No need to include ".tex" The chapters will be printed to the document in this order.
 \input{chapter_introduction}
 \input{chapter_tmcomposition}
 \input{chapter_tailanchor}
-\input{chapter_gpi}
 \input{chapter_predictfunction}
 \input{chapter_conclusions}
 
-% This would be better at the begining so that before we get started, let's print the glossaries.
+% This would be better at the beginning so that before we get started, let's print the glossaries.
 % In order for this to work a special build sequence is needed. http://tex.stackexchange.com/a/46732/42423
-\printglossary[type=\acronymtype,title=Abbreviations]
-\printglossary[title=Nomenclature] % Uncomment this line to use the nomenclature section.
 
 %This line prints the bibliography ;)
-%One of the references has a "-" in the wrong place and screws up the Bibliography. %the planque reference is messed up. It may need changing with every bib.tex update unless the permannet record is changed.
+%One of the references has a "-" in the wrong place and screws up the Bibliography. %the planque reference is messed up. It may need changing with every bib.tex update unless the permanent record is changed.
+\clearpage
 \printbibliography[title={Bibliography}]
 
 % Uncomment the following THREE lines if you do have an Appendix
 %\appendix
 %\chapter{}
 %.........
+
 
 \end{document}

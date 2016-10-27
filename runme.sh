@@ -14,6 +14,7 @@ if [[ $platform == 'linux' ]]; then
   bibtex thesis.aux
   pdflatex thesis.tex
   pdflatex thesis.tex
+
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
   rm thesis.aux
@@ -41,6 +42,12 @@ if [[ $platform == 'linux' ]]; then
   rm thesis.brf
   rm thesis.run.xml
 
+  pdftotext thesis.pdf
+  echo "New lines, Wordcount, Characters"
+  wc thesis.txt
+  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis
+  
+
 
 elif [[ $platform == 'darwin' ]]; then
   #In El Capitan it's not clear exactly what latex commands are available for now
@@ -49,7 +56,7 @@ elif [[ $platform == 'darwin' ]]; then
   xelatex thesis.tex
   xelatex thesis.tex
 
-  
+
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
   rm thesis.aux
