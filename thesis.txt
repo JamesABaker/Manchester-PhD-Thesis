@@ -8,7 +8,7 @@ in the Faculty of Life Sciences
 
 2016
 
-James Baker
+James Alexander Baker
 
 Contents
 
@@ -269,11 +269,11 @@ Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 The hydrophobicity–sequence complexity continuum . . . . . . .
 
-Word count 7750
+Word count 8496
 3
 
 The University of Manchester
-James Baker
+James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
@@ -337,7 +337,7 @@ Professor Stephen High.
 List of publications
 Journal Articles
 Posters
-Baker, J. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE
+Baker, J. A. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE
 Proteins. 40th FEBS Congress Late Breaker (2015)
 
 8
