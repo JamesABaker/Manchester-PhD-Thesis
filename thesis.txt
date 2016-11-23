@@ -275,7 +275,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-November 18, 2016
+November 23, 2016
 Non–polar helices ﬁgure prominently in structural biology, from the ﬁrst protein structure (myoglobin) through trans-membrane segments, to current work on recognition
 of protein traﬃcking and quality control. Trans-membrane α helix containing proteins
 make up around a quarter of all proteins, as well as two thirds of drug targets, and
@@ -436,10 +436,8 @@ The language used to describe TMHs varies somewhat across the literature, pri-
 marily due to a changing understanding of TMH general structure and relevance to
 function over the last 15 years or so. There is a general composition of a TMH despite
 speciﬁc protein and membrane constraints [9].
-A study by Baeza–Delgado et al. from 2013 [5] looked at TMHs in 170 integral
-membrane proteins from a manually maintained database of experimentally conﬁrmed
-TMPs; MPTopo [13]. The group examined the distribution of residues along the
-TMHs. As expected, half of the natural amino acids are equally distributed along
+A study by Baeza–Delgado et al. from 2013 [5] looked at TMHs in 170 integral membrane proteins from a manually maintained database of experimentally conﬁrmed TMPs; MPTopo [13]. The group examined the distribution of residues along
+the TMHs. As expected, half of the natural amino acids are equally distributed along
 Trans-membrane (TM) helices whereas aromatic, polar, and charged amino acids along
 with proline are biasedly near the ﬂanks of the TM helices [5]. It has been noted that
 transitions between the polar and non-polar groups at the ends of the hydrophobic core
@@ -520,7 +518,7 @@ the positional dependencies of each amino acid type [28].
 
 White and Wimley Octanol – Interface Whole Residue Scale
 This scale is calculated from two other scales; the octanol scale, and the interface
-scale [29]. This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and octanol, as well as water to Palmitoyloleoylphosphatidylcholine (POPC) .
+scale [29]. This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and octanol, as well as water to Palmitoyloleoylphosphatidylcholine (POPC).
 
 The Eisenberg Hydrophobic Moment Consensus Scale
 The Eisenberg scale is a consensus scale based on the earlier scales from Tanford [30],
