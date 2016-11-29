@@ -275,7 +275,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-November 23, 2016
+November 29, 2016
 Non–polar helices ﬁgure prominently in structural biology, from the ﬁrst protein structure (myoglobin) through trans-membrane segments, to current work on recognition
 of protein traﬃcking and quality control. Trans-membrane α helix containing proteins
 make up around a quarter of all proteins, as well as two thirds of drug targets, and
@@ -710,7 +710,7 @@ complex biochemical systems that facilitate life as we know it.
 It is critical to understand that the lipid bilayer and the trans-membrane α helices are inextricably linked, and often what we observe from the α helices reﬂect the
 properties of the much harder to study membranes. The lipid membranes inﬂuence
 the local structure, dynamics, and activity of proteins in the membrane in non-trivial
-ways [53–60].
+ways [53–60], as well as protein folding [61].
 There is a rich variety of lipid molecules that make up the biological membranes.
 The majority of lipids in higher organism membranes are phospholipids, sphingolipids,
 and sterols. These are composed of a glycerol molecule. Bonded to the glycerol
@@ -721,7 +721,7 @@ forms from these phospholipid molecules due to the ﬁerce dissociation between 
 polar water and the hydrophobic tails. Furthermore the bilayer maximises van der
 Waals interactions between the closely-packed hydrocarbon chains, which contributes
 to the stability of the bilayer. This can be seen even in relatively early Molecular
-Dynamics (MD) simulations [61].
+Dynamics (MD) simulations [62].
 
 Diﬀerenes in Membrane Compositions
 It has been known for some time that the outer membranes of Gram negative bacteria are asymmetric in terms of lipid composition. The outer membranes contain
@@ -733,7 +733,7 @@ CHAPTER 1. INTRODUCTION
 lipopolysccharide, whilst the inner is a mixture of approximately 25 phospholipid
 types. Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human TMH regions revealed intra-membrane
 leaﬂet composition asymmetry in the ER, but not the Golgi [9]. Furthermore proteinlipid interactions have been shown to be determinants of membrane curvature [59],
-and undertake complex orientations and conformations to allow for hydrophobic mismatch [62].
+and undertake complex orientations and conformations to allow for hydrophobic mismatch [63].
 
 1.3.2
 
@@ -746,7 +746,7 @@ This clearly depends on a chemical component involving both the charge and ion
 concentration gradient.There are various ways of estimating the membrane potential
 ab initio.
 The Nernst equation can be derived directly from the simpliﬁed thermodynamic
-principles (i) the Boltzmann distribution, and (ii) a ﬁeld charge interaction energy [63].
+principles (i) the Boltzmann distribution, and (ii) a ﬁeld charge interaction energy [64].
 It is deﬁned as:
 
 Em =
@@ -782,15 +782,15 @@ However, it is rife with caveats caused by the assumptions of the simpliﬁed mo
 Such assumptions include ions having point charge, that the potential is constant
 throughout the solution. This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily inﬂuenced by,
 for example, a speciﬁc adsorbtion of either part of the redox pair or the competitive
-adsorption of a supporting ion in solution [63]. Therefore one should be cautious to
+adsorption of a supporting ion in solution [64]. Therefore one should be cautious to
 understand the limitations and variability when extrapolating experimentally determined E0 , particularly when using such an idealized model in a biological context.
 
 Organelle Membrane Potentials
 Several studies have attempted to quantify the various voltages across the intracellular
 membranes. Negativity was found in the ER, with a voltage between between 75mV
-to 95mV in the ER membrane [64, 65]. Negativity was found in the mitochondrial
-matrix with a voltage across the mitochondrial membrane at 150mV [66]. No notable
-membrane potential has been identiﬁed in the Golgi [67, 68].
+to 95mV in the ER membrane [65, 66]. Negativity was found in the mitochondrial
+matrix with a voltage across the mitochondrial membrane at 150mV [67]. No notable
+membrane potential has been identiﬁed in the Golgi [68, 69].
 
 1.4
 1.4.1
@@ -819,7 +819,7 @@ Translocon Independent Membrane Insertion
 Signal anchored proteins, proteins that contain a single hydrophobic segment that
 serves as both a mitochondrial targeting signal and a membrane anchor, as well as
 tail anchored proteins have been shown to be able to spontaneously insert into the
-membrane independently from the translocon [46, 69, 70].
+membrane independently from the translocon [46, 70, 71].
 It is postulated that there are electrostatic factors in the ﬂanking regions that
 contribute to this spontaneous membrane insertion. Our experimental collaborators in
 Stephen Highs group are interested in a small group of tail anchored proteins that have
@@ -832,7 +832,7 @@ moved the focus of spontaneous insertion away from the loop regions and onto the
 biophysicochemical factors of the TMH itself. The idea that SNARE proteins are
 modular, and capable of spontaneous insertion has signiﬁcant implications for both
 biomedical application in liposome based drug delivery and can aid future research for
-testing complex biological molecular networks [71, 72].
+testing complex biological molecular networks [72, 73].
 
 1.5
 
@@ -866,7 +866,7 @@ As the idea of positive residues inside the cytoplasm emerged during the late 19
 so did the idea of negative residues working in concert with TMH orientation. It
 was shown that removing a single lysine residue reversed the topology of a model
 Escherichia coli protein, whereas much higher numbers of negatively charged residues
-are needed to reverse topology [73]. One would also expect to see a skew in negatively
+are needed to reverse topology [74]. One would also expect to see a skew in negatively
 charged distribution if a cooperation between oppositely charged residues orientated
 23
 
@@ -917,7 +917,7 @@ Introduction
 This study aims to identify SNARE proteins in eukaryotic proteomes by ﬁltering
 through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions. The pipeline generates a list
 of singlepass proteins with a transmembrane domain close to the C terminal, that are
-not splice isoforms. A previous study predicted 411 tail anchor proteins [74].
+not splice isoforms. A previous study predicted 411 tail anchor proteins [75].
 
 3.3
 
@@ -934,14 +934,14 @@ Expression
 
 Filtering the Uniprot database
 
-Steps carried out by Kalbﬂeisch et al. published in Traﬃc 2007 (8: 16871694) [74], were
+Steps carried out by Kalbﬂeisch et al. published in Traﬃc 2007 (8: 16871694) [75], were
 recreated using up to date tools. The nonredundant human dataset of 145,715 proteins
-from SwissProt and TrEMBL [75]. 2,478 singlepass proteins were programmatically
+from SwissProt and TrEMBL [76]. 2,478 singlepass proteins were programmatically
 extracted according to the TRANSMEM count from that list. Then TMDs not within
 15AA of the C terminal were removed, resulting in 455 proteins. No splice isoforms
 were detected according to searching for NON TER annotation. 195 proteins of the
 411 predicted proteins from the previous study were successfully mapped using the
-Uniprot mapping tools [75]. Duplicate IDs from the previously predicted tail anchored
+Uniprot mapping tools [76]. Duplicate IDs from the previously predicted tail anchored
 protein were removed from the set. The remaining dataset contained XXX proteins.
 
 3.3.2
@@ -1190,47 +1190,49 @@ cholesterol on the GABAA receptor. Biophysical Journal 106, 1938–1949. issn:
 
 35
 
-61. Goetz, R & Lipowsky, R. Computer simulations of bilayer membranes: Selfassembly and interfacial tension. Journal Of Chemical Physics 108, 7397–7409.
+61. Kauko, A. et al. Repositioning of transmembrane alpha-helices during membrane protein folding. Journal of molecular biology 397, 190–201. issn: 1089-8638
+(2010).
+62. Goetz, R & Lipowsky, R. Computer simulations of bilayer membranes: Selfassembly and interfacial tension. Journal Of Chemical Physics 108, 7397–7409.
 issn: 00219606 (1998).
-62. De Planque, M. R. R. & Killian*, J. A. Proteinlipid interactions studied with
+63. De Planque, M. R. R. & Killian*, J. A. Proteinlipid interactions studied with
 designed transmembrane peptides: role of hydrophobic matching and interfacial
 anchoring (Review). en. Molecular Membrane Biology 20, 271–284. issn: 09687688 (2003).
-63. Feiner, A. & McEvoy, A. The nernst equation. Journal of chemical education 71,
+64. Feiner, A. & McEvoy, A. The nernst equation. Journal of chemical education 71,
 493–494. issn: 0021-9584 (1994).
-64. Qin, Y., Dittmer, P. J., Park, J. G., Jansen, K. B. & Palmer, A. E. Measuring
+65. Qin, Y., Dittmer, P. J., Park, J. G., Jansen, K. B. & Palmer, A. E. Measuring
 steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences of the
 United States of America 108, 7351–6. issn: 1091-6490 (2011).
-65. Worley, J. F. et al. Endoplasmic reticulum calcium store regulates membrane
+66. Worley, J. F. et al. Endoplasmic reticulum calcium store regulates membrane
 potential in mouse islet ??-cells. Journal of Biological Chemistry 269, 14359–
 14362. issn: 00219258 (1994).
-66. Perry, S. W., Norman, J. P., Barbieri, J., Brown, E. B. & Gelbard, H. A. Mitochondrial membrane potential probes and the proton gradient: A practical usage
+67. Perry, S. W., Norman, J. P., Barbieri, J., Brown, E. B. & Gelbard, H. A. Mitochondrial membrane potential probes and the proton gradient: A practical usage
 guide. BioTechniques 50, 98–115. issn: 07366205 (2011).
-67. Schapiro, F. B. & Grinstein, S. Determinants of the pH of the Golgi complex.
+68. Schapiro, F. B. & Grinstein, S. Determinants of the pH of the Golgi complex.
 Journal of Biological Chemistry 275, 21025–21032. issn: 00219258 (2000).
-68. Llopis, J. et al. Measurement of cytosolic, mitochondrial, and Golgi pH in single
+69. Llopis, J. et al. Measurement of cytosolic, mitochondrial, and Golgi pH in single
 living cells with green ﬂuorescent proteins. Proceedings of the National Academy
 of Sciences 95, 6803–6808. issn: 0027-8424 (1998).
-69. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of C-terminally
+70. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of C-terminally
 anchored proteins to the mitochondrial outer membrane is speciﬁc and saturable
-but does not strictly require ATP or molecular chaperones. The Biochemical
-journal 349, 611–621. issn: 02646021 (2000).
 
 36
 
 BIBLIOGRAPHY
+but does not strictly require ATP or molecular chaperones. The Biochemical
+journal 349, 611–621. issn: 02646021 (2000).
 
-70. Colombo, S. F., Longhi, R. & Borgese, N. The role of cytosolic proteins in the insertion of tail-anchored proteins into phospholipid bilayers. Journal of cell science
+71. Colombo, S. F., Longhi, R. & Borgese, N. The role of cytosolic proteins in the insertion of tail-anchored proteins into phospholipid bilayers. Journal of cell science
 122, 2383–92. issn: 0021-9533 (2009).
-71. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
+72. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
 clinical applications. Advanced Drug Delivery Reviews 65, 36–48. issn: 0169409X
 (2013).
-72. Nordlund, G., Brzezinski, P. & von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artiﬁcial membranes. Nature Communications 5, 4303. issn: 2041-1723 (2014).
-73. Nilsson, I. & von Heijne, G. Fine-tuning the topology of a polytopic membrane
+73. Nordlund, G., Brzezinski, P. & von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artiﬁcial membranes. Nature Communications 5, 4303. issn: 2041-1723 (2014).
+74. Nilsson, I. & von Heijne, G. Fine-tuning the topology of a polytopic membrane
 protein: Role of positively and negatively charged amino acids. Cell 62, 1135–
 1141. issn: 00928674 (1990).
-74. Kalbﬂeisch, T., Cambon, A. & Wattenberg, B. W. A bioinformatics approach to
+75. Kalbﬂeisch, T., Cambon, A. & Wattenberg, B. W. A bioinformatics approach to
 identifying tail-anchored proteins in the human genome. Traﬃc 8, 1687–1694.
 issn: 13989219 (2007).
-75. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212. issn: 13624962 (2015).
+76. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212. issn: 13624962 (2015).
 
 

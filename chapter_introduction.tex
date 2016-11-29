@@ -45,6 +45,7 @@ Broadly speaking, \gls{tmh}s are non-polar. However some contain polar and  char
 
 
 \subsection{Hydrophobicity of Trans-membrane Segments}
+
 Over the last 50 years or so, there have been many attempts to use hydrophobicity scales of residues to predict structural classifications of proteins. Due to the vast amounts of scales, major efforts have been made to compare them to identify which ones are better for which tasks of identifying structural elements~\cite{Simm2016, Peters2014}. Simm \textit{ et al.} 2016~\cite{Simm2016} compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of certain amino acids but generally that the methods behind the scales don't affect the separation capacity between $ \beta $ sheets or $ \alpha $ helices.
 
 Throughout this thesis several scales are used to evaluate and estimate hydrophobic values of peptide chains. All the scales aim for quantifying the hydrophobic values of each residue. There are several key differences in their methodology, assumptions, and aims. Ultimately, all the scales are attempting to allow estimation of ${\Delta G}_{whf}$; the free energy of a folded helix ($ f $) from the water ($w$) into the membrane core ($h$). This free energy measurement is regarded as being currently experimentally inaccessible~\cite{Cymer2014}.
@@ -52,18 +53,23 @@ Throughout this thesis several scales are used to evaluate and estimate hydropho
 %Also a note on arrest peptides
 
 \subsubsection{Kyte \& Doolittle Hydropathy Scale}
+
 A scale based on the water\---vapor transfer free energy and the interior-exterior distribution of individual amino acids~\cite{Kyte1982}.
 
 \subsubsection{Hessa's Biological Hydrophobicity Scale}
+
 This is arguably the most biologically relevant scale~\cite{Peters2014}, and is often called the ${\Delta G}_{app}^{aa}$ scale. The scale is based on an experimental method where the free energy exchange during recognition of designed polypeptide \gls{tmh} by the \gls{er} Sec61 translocon occurred~\cite{Hessa2005}. These measurements were then used to calculate a “biological hydrophobicity scale.” The original study reported positional variance in some residues and is strictly valid only for residues in the core of the \gls{tmh}. A more refined study quantified the positional dependencies of each amino acid type~\cite{Hessa2007}.
 
 \subsubsection{White and Wimley Octanol \--- Interface Whole Residue Scale}
+
 This scale is calculated from two other scales; the octanol scale, and the interface scale~\cite{White1999}. This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and octanol, as well as water to \gls{popc}.
 
 \subsubsection{The Eisenberg Hydrophobic Moment Consensus Scale}
+
 The Eisenberg scale is a consensus scale based on the earlier scales from Tanford~\cite{Nozaki1971}, Wolfenden~\cite{Rose1993}, Chothia~\cite{Chothia1976}, Janin~\cite{Janin1979}, and the von Heijne scale~\cite{VonHeijne1979}. The scales are normalized according to serine~\cite{Eisenberg1984}. The automatic TRANSMEM annotation currently used in Uniprot is according to TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004} and the hydrophobic moment plot method of Eisenberg and coworkers~\cite{Eisenberg1984}.
 
 \subsubsection{A Brief Comparison of the Hydrophobicity Scales.}
+
 Even at an overview, the methodologies seem strikingly varied. Crucially this results in slightly different scores for some residues. To get an idea of how the methodological differences of the scales translate to numerical variations, we can normalize the scales so that each residue type is represented as a fraction of the maximum residue type value. If we assume each scale is in principle a linear scale, to calculate the normalised value for a given scale ($x_r$) we must look at all values within that scale as a set ($ a $).
 
 \begin{align*}
@@ -112,7 +118,7 @@ Because of the experimental hindrance, \gls{tmp} biology has been relatively slo
 
 Furthermore, the insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibriums and electrostatic interactions~\cite{Cymer2014, Elisa2012, Ismail2015}. As well as being a biophysically convoluted system, \gls{tmh}s are biologically functional beyond anchorage in many cases. \gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchorage can be revealed by sensitive, careful analysis of the sequence information alone~\cite{Wong2012}.
 
-When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar. For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non-polar residue patterns. Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the same extent yet homology paradigms are silently extended and applied to them. In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s, and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry. Worryingly, because of this oversight it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results ~\cite{Wong2010}.
+When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar. For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non-polar residue patterns. Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the same extent yet homology paradigms are silently extended and applied to them. In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s, and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry. Worryingly, because of this oversight it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
 
 
 %\subsection{Earliest Evidences of Compartmentalization}
@@ -149,7 +155,7 @@ The relationship between the membrane and \gls{tmp}s is underpinned by complex t
 %At some point the membrane phases should be discussed. Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
 The compartmentalization of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.  The proteins that allow life to use this biochemical barrier are perhaps equally important. Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
 
-It is critical to understand that the lipid bilayer and the trans-membrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004, Henin2014}.%Henin2014. %Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
+It is critical to understand that the lipid bilayer and the trans-membrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004, Henin2014}, as well as protein folding ~\cite{Kauko2010}. %Henin2014. %Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
 
 There is a rich variety of lipid molecules that make up the biological membranes. The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols. These are composed of a glycerol molecule. Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar phosphate group. The polar phosphate group is modified with an alcohol group. Water entropically drives the self association of the lipid molecules. In other words the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails. Furthermore the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer. This can be seen even in relatively early \gls{md} simulations~\cite{Goetz1998}.
 
