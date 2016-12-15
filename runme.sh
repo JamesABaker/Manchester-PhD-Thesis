@@ -46,7 +46,6 @@ if [[ $platform == 'linux' ]]; then
   echo "New lines, Wordcount, Characters"
   wc thesis.txt
   cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis
-  cp thesis.pdf readme.pdf
 
 
 
