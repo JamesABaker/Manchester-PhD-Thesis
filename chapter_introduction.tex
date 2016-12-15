@@ -50,6 +50,8 @@ Over the last 50 years or so, there have been many attempts to use hydrophobicit
 
 Throughout this thesis several scales are used to evaluate and estimate hydrophobic values of peptide chains. All the scales aim for quantifying the hydrophobic values of each residue. There are several key differences in their methodology, assumptions, and aims. Ultimately, all the scales are attempting to allow estimation of ${\Delta G}_{whf}$; the free energy of a folded helix ($ f $) from the water ($w$) into the membrane core ($h$). This free energy measurement is regarded as being currently experimentally inaccessible~\cite{Cymer2014}.
 
+Although as a trend most of the scales agree, because of the methodological differences, there are indeed variations of values even after normalization. Due to these discrepancies it is preferable and typical amongst the literature to use several scales to verify the observable trends resulting from interpretation from an individual scale. Notably, one of the classic scales, Kyte \& Doolittle Hydropathy Scale shows striking similarity to the modern Hessa's ${\Delta G}_{app}^{aa}$ scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues~\cite{Peters2014}. In $\alpha$ helices from soluble proteins, proline is almost always a helix breaker, and $\alpha$ helix prediction scales don't even attempt to quantify a proline scoring penalty. Several of the scales used throughout this thesis are outlined below.
+
 %Also a note on arrest peptides
 
 \subsubsection{Kyte \& Doolittle Hydropathy Scale}
@@ -68,42 +70,15 @@ This scale is calculated from two other scales; the octanol scale, and the inter
 
 The Eisenberg scale is a consensus scale based on the earlier scales from Tanford~\cite{Nozaki1971}, Wolfenden~\cite{Rose1993}, Chothia~\cite{Chothia1976}, Janin~\cite{Janin1979}, and the von Heijne scale~\cite{VonHeijne1979}. The scales are normalized according to serine~\cite{Eisenberg1984}. The automatic TRANSMEM annotation currently used in Uniprot is according to TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004} and the hydrophobic moment plot method of Eisenberg and coworkers~\cite{Eisenberg1984}.
 
-\subsubsection{A Brief Comparison of the Hydrophobicity Scales.}
 
-Even at an overview, the methodologies seem strikingly varied. Crucially this results in slightly different scores for some residues. To get an idea of how the methodological differences of the scales translate to numerical variations, we can normalize the scales so that each residue type is represented as a fraction of the maximum residue type value. If we assume each scale is in principle a linear scale, to calculate the normalised value for a given scale ($x_r$) we must look at all values within that scale as a set ($ a $).
-
-\begin{equation}
-  x_r= \frac{a_r+|\underset{a}{\min}|}{|\underset{a}{\max}-\underset{a}{\min}|}
-\end{equation}
-
-Where $x$ is the standardized value, $r$ specifies the residue type, and $a$ is the unnormalized hydrophobicity score. This allows us to say, as a fraction, how far between the minimum and maximum value is the value in question.
-
-In the case of the Hessa and White and Wimley scale, the numbers should be inverted. This is because they count the most hydrophobic residues (isoleucine and leucine) as negative values, and more polar residues ascend into the positive numbers. Since the normalisation results in a scale between 0-1, to generate the inverted values we can simply use:
-
-
-\begin{equation}
-  x_r= 1- \frac{a_r+|\underset{a}{\min}|}{|\underset{a}{\max}-\underset{a}{\min}|}
-\end{equation}
-
-
-$x_r$ was compared from different scales to assess the variability of each of the the residue types, $ r $ \ (Figure~\ref{fig:normalisedhydrophobicity1}).
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{Hydrophobicities}
-\caption{A scatter plot comparing normalized values ($x$) of different hydrophobicity scales. Amino acids on the horizontal axis are arranged according to ${\bar{x}}_{r}$ taking into account all 4 scales. The points in blue are the White and Wimley scale~\cite{White1999}, in red is Hessa's biological scale~\cite{Hessa2005}, in orange is the Eisenberg consensus scale~\cite{Eisenberg1984}, and in black are the Kyte \& Doolittle values~\cite{Kyte1982}. The black line connects ${\bar{x}}_{r}$ values, whilst the gray line connects $|\underset{x_r}{\max}-\underset{x_r}{\min}|$, although obviously in both cases the line is only for illustrative purposes and does not show a relationship between the residues.}
-\label{fig:normalisedhydrophobicity1}
-\end{figure}
-
-Although as a trend the scales agree, because of the methodological differences, there are indeed variations of values even after normalization. Due to these discrepancies it is preferable and typical amongst the literature to use several scales to verify the observable trends resulting from an individual scale. Notably, one of the classic scales, Kyte \& Doolittle Hydropathy Scale shows striking similarity to the modern Hessa's ${\Delta G}_{app}^{aa}$ scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues~\cite{Peters2014}. In $\alpha$ helices from soluble proteins, proline is almost always a helix breaker, and $\alpha$ helix prediction scales don't even attempt to quantify a proline scoring penalty.
 
 \subsection{Sequence Complexity}
 
 Sequence complexity, otherwise referred to as sequence entropy, is essentially an estimate of the linguistic entropy of a string. In the context of biology can be thought of as an estimation of the non-randomness of a sequence. Sequence complexity can be used to analyze DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002}, however here we will focus on the analysis of the complexity of a sequence in protein sequences.
 
-The compositional complexity is measure over sequence windows. If we have an amino acid composition $\{{n}_i\}_i=\min{i},...,\max{i} $ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term:
+The compositional complexity is measure over sequence windows. If we have an amino acid composition $\{{n}_i\}_i=\min{i},...,\max{i} $ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term in equation \ref{shannonentropyliketerm}
 
-\begin{equation}
+\begin{equation} \label{shannonentropyliketerm}
 {K}_{2}=-\Sigma\frac{n_i}{L}\log\frac{n_i}{L}
 \end{equation}
 
