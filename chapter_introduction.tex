@@ -72,18 +72,18 @@ The Eisenberg scale is a consensus scale based on the earlier scales from Tanfor
 
 Even at an overview, the methodologies seem strikingly varied. Crucially this results in slightly different scores for some residues. To get an idea of how the methodological differences of the scales translate to numerical variations, we can normalize the scales so that each residue type is represented as a fraction of the maximum residue type value. If we assume each scale is in principle a linear scale, to calculate the normalised value for a given scale ($x_r$) we must look at all values within that scale as a set ($ a $).
 
-\begin{align*}
+\begin{equation}
   x_r= \frac{a_r+|\underset{a}{\min}|}{|\underset{a}{\max}-\underset{a}{\min}|}
-\end{align*}
+\end{equation}
 
 Where $x$ is the standardized value, $r$ specifies the residue type, and $a$ is the unnormalized hydrophobicity score. This allows us to say, as a fraction, how far between the minimum and maximum value is the value in question.
 
 In the case of the Hessa and White and Wimley scale, the numbers should be inverted. This is because they count the most hydrophobic residues (isoleucine and leucine) as negative values, and more polar residues ascend into the positive numbers. Since the normalisation results in a scale between 0-1, to generate the inverted values we can simply use:
 
 
-\begin{align*}
+\begin{equation}
   x_r= 1- \frac{a_r+|\underset{a}{\min}|}{|\underset{a}{\max}-\underset{a}{\min}|}
-\end{align*}
+\end{equation}
 
 
 $x_r$ was compared from different scales to assess the variability of each of the the residue types, $ r $ \ (Figure~\ref{fig:normalisedhydrophobicity1}).
@@ -103,9 +103,9 @@ Sequence complexity, otherwise referred to as sequence entropy, is essentially a
 
 The compositional complexity is measure over sequence windows. If we have an amino acid composition $\{{n}_i\}_i=\min{i},...,\max{i} $ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term:
 
-\begin{align*}
+\begin{equation}
 {K}_{2}=-\Sigma\frac{n_i}{L}\log\frac{n_i}{L}
-\end{align*}
+\end{equation}
 
 The lowest probability subsegment can be defined as $ K_1=\log N/L $. By altering the window lengths, and the thresholds SEG can be optimized to search for subtle compositional deviations, such as coil-coiled regions.
 
@@ -168,17 +168,17 @@ Simply put, membrane potential is the voltage across a membrane. If the membrane
 
 The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann distribution, and (ii) a field charge interaction energy~\cite{Feiner1994}. It is defined as:
 
-\begin{align*}
-{E}_{m} &= \frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
-\end{align*}
+\begin{equation}
+{E}_{m}=\frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
+\end{equation}
 
 Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment.
 
 One problem in a biological membranes is that the compartments always  involve multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions that contribute to $c_{out}$ and $c_{in}$ (such as $K^+$, $Na^+$, and $Cl^-$) simultaneously:
 
-\begin{align*}
-{E}_{m} &= \frac{RT}{F}\times \ln \left(\frac{p_{K^+}.[K^+]_{out} + p_{Na^+}.[Na^+]_{out} + p_{Cl^-}.[Cl^-]_{in}} {p_{K^+}.[K^+]_{in} + p_{Na^+}.[Na^+]_{in} + p_{Cl^-}.[Cl^-]_{out}}\right)
-\end{align*}
+\begin{equation}
+{E}_{m} = \frac{RT}{F}\times \ln \left(\frac{p_{K^+}.[K^+]_{out} + p_{Na^+}.[Na^+]_{out} + p_{Cl^-}.[Cl^-]_{in}} {p_{K^+}.[K^+]_{in} + p_{Na^+}.[Na^+]_{in} + p_{Cl^-}.[Cl^-]_{out}}\right)
+\end{equation}
 
 Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and $p_i$ is the relative membrane permeability for the actual ion.
 
