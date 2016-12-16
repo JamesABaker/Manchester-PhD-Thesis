@@ -1,3 +1,5 @@
+orcid.org/0000–0003–0874–2298
+
 INVESTIGATING THE RECOGNITION
 AND INTERACTIONS OF NON-POLAR
 α HELICES IN BIOLOGY
@@ -714,8 +716,8 @@ RT
 × ln
 F
 
-pK + .[K + ]out + pN a+ .[N a+ ]out + pCl− .[Cl− ]in
-pK + .[K + ]in + pN a+ .[N a+ ]in + pCl− .[Cl− ]out
+pK + · [K + ]out + pN a+ · [N a+ ]out + pCl− · [Cl− ]in
+pK + · [K + ]in + pN a+ · [N a+ ]in + pCl− · [Cl− ]out
 
 (1.3)
 
@@ -844,7 +846,7 @@ max(ar )
 
 (2.2)
 
-100ai,r
+100 · ai,r
 ai
 
 (2.3)

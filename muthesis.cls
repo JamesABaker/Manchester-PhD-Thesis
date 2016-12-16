@@ -298,6 +298,7 @@ acceptable looking results, but it may be omitted to get smaller print.
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
 \def\@title{}
 \def\@author{}
+\def\@orcid{}
 \def\@school{}
 \def\@faculty{}
 \def\@principaladviser{}\def\@firstreader{}\def\@secondreader{}
@@ -341,6 +342,7 @@ acceptable looking results, but it may be omitted to get smaller print.
         \vfill
         \begin{center}
                 {\bf\@author}\\
+                {\texttt{\@orcid}}\\
                 \ifx\@empty\@school
                 \else
                 School of \expandafter{\@school}
