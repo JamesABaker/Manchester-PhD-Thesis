@@ -44,7 +44,7 @@ Two publications by von Heijne coined the ``Positive-Inside'' rule demonstrated 
 Broadly speaking, \gls{tmh}s are non-polar. However some contain polar and  charged residues in the helix itself. Whilst this might seem thermodynamically unstable at first glance, a molecular dynamic feature called the ``snorkel'' effect explains in part how this is possible~\cite{Chamberlain2004, Strandberg2003}. Simply put, the snorkeling effect involves the long flexible side chain of leucine reaching the water interface region to interact with the polar head-groups of the bilayer even when the $\alpha$ helix backbone is pulled into the hydrophobic layer~\cite{Krishnakumar2007}. This has also been suggested to allow helices to adapt to varying thicknesses of the membrane~\cite{Kandasamy2006}.
 
 
-\subsection{Hydrophobicity of Trans-membrane Segments}
+\subsection{Hydrophobicity of Trans-membrane Segments}\label{ssection:hydrophobicityscales}
 
 Over the last 50 years or so, there have been many attempts to use hydrophobicity scales of residues to predict structural classifications of proteins. Due to the vast amounts of scales, major efforts have been made to compare them to identify which ones are better for which tasks of identifying structural elements~\cite{Simm2016, Peters2014}. Simm \textit{ et al.} 2016~\cite{Simm2016} compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of certain amino acids but generally that the methods behind the scales don't affect the separation capacity between $ \beta $ sheets or $ \alpha $ helices.
 
@@ -76,7 +76,7 @@ The Eisenberg scale is a consensus scale based on the earlier scales from Tanfor
 
 Sequence complexity, otherwise referred to as sequence entropy, is essentially an estimate of the linguistic entropy of a string. In the context of biology can be thought of as an estimation of the non-randomness of a sequence. Sequence complexity can be used to analyze DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002}, however here we will focus on the analysis of the complexity of a sequence in protein sequences.
 
-The compositional complexity is measure over sequence windows. If we have an amino acid composition $\{{n}_i\}_i=\min{i},...,\max{i} $ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term in equation \ref{shannonentropyliketerm}
+The compositional complexity is measure over sequence windows. If we have an amino acid composition $$\{{{n}_{i}}{\}}_{i}={\min{i}},\ldots,{\max{i}}$$ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term in equation~\ref{shannonentropyliketerm}
 
 \begin{equation} \label{shannonentropyliketerm}
 {K}_{2}=-\Sigma\frac{n_i}{L}\log\frac{n_i}{L}
@@ -130,7 +130,7 @@ The relationship between the membrane and \gls{tmp}s is underpinned by complex t
 %At some point the membrane phases should be discussed. Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
 The compartmentalization of cellular biochemistry is arguably one of the most significant events to have occurred in evolution, and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.  The proteins that allow life to use this biochemical barrier are perhaps equally important. Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
 
-It is critical to understand that the lipid bilayer and the trans-membrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004, Henin2014}, as well as protein folding ~\cite{Kauko2010}. %Henin2014. %Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
+It is critical to understand that the lipid bilayer and the trans-membrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes. The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001, Jensen2004, Henin2014}, as well as protein folding~\cite{Kauko2010}. %Henin2014. %Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
 
 There is a rich variety of lipid molecules that make up the biological membranes. The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols. These are composed of a glycerol molecule. Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups, and a negatively-charged polar phosphate group. The polar phosphate group is modified with an alcohol group. Water entropically drives the self association of the lipid molecules. In other words the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails. Furthermore the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer. This can be seen even in relatively early \gls{md} simulations~\cite{Goetz1998}.
 
@@ -152,10 +152,14 @@ Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the c
 One problem in a biological membranes is that the compartments always  involve multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions that contribute to $c_{out}$ and $c_{in}$ (such as $K^+$, $Na^+$, and $Cl^-$) simultaneously:
 
 \begin{equation}
-{E}_{m} = \frac{RT}{F}\times \ln \left(\frac{p_{K^+}.[K^+]_{out} + p_{Na^+}.[Na^+]_{out} + p_{Cl^-}.[Cl^-]_{in}} {p_{K^+}.[K^+]_{in} + p_{Na^+}.[Na^+]_{in} + p_{Cl^-}.[Cl^-]_{out}}\right)
+{{E}_{m}}=\frac{RT}{F} \times{\ln}
+  \left(\frac{
+    {p}_{K^+}.{[K^+]}_{out} + {p}_{Na^+}.{[Na^+]}_{out} + {p}_{Cl^-}.{[Cl^-]}_{in}}
+    {{p}_{K^+}.{[K^+]}_{in} + {p}_{Na^+}.{[Na^+]}_{in} + {p}_{Cl^-}.{[Cl^-]}_{out}
+    }\right)
 \end{equation}
 
-Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and $p_i$ is the relative membrane permeability for the actual ion.
+Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and ${p}_{i}$ is the relative membrane permeability for the actual ion.
 
 However, it is rife with caveats caused by the assumptions of the simplified model. Such assumptions include ions having point charge, that the potential is constant throughout the solution. This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by, for example, a specific adsorbtion of either part of the redox pair or the competitive adsorption of a supporting ion in solution~\cite{Feiner1994}. Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealized model in a biological context.
 
