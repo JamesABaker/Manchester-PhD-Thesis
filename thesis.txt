@@ -277,7 +277,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-December 16, 2016
+December 19, 2016
 Non–polar helices ﬁgure prominently in structural biology, from the ﬁrst protein structure (myoglobin) through trans-membrane segments, to current work on recognition
 of protein traﬃcking and quality control. Trans-membrane α helix containing proteins
 make up around a quarter of all proteins, as well as two thirds of drug targets, and
