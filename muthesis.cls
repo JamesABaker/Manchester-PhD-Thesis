@@ -41,6 +41,9 @@
 
 %%    Modified by Chris Paul August 2013 to support duplex printed margins
 
+%%    Modified by James Baker December 2016 to support bibtex, support
+%%    multi-file chapter structure, and include the orcid ID macro.
+
 %% Note that this makes no attempt to deal with multi-volume thesis -
 %% if you do one that long you deserve everything you get.
 %% 1) Page numbering starts on the title page and is arabic (i.e. title
@@ -119,7 +122,6 @@
 %% style which introduces a single spaced environment.
 %%
 %% It is not compatible with the drafthead style.
-
 
 \ProvidesClass{muthesis}[2013/08/12 MU Thesis Class]
 
