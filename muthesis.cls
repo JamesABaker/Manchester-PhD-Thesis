@@ -296,9 +296,10 @@ acceptable looking results, but it may be omitted to get smaller print.
 \def\secondreader#1{\gdef\@secondreader{#1}}
 \def\submitdate#1{\gdef\@submitdate{#1}}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\orcid#1{\gdef\@orcid{#1}}
+\def\@orcid{\@latex@warning@no@line{No \noexpand\orcid given}}
 \def\@title{}
 \def\@author{}
-\def\@orcidid{}
 \def\@school{}
 \def\@faculty{}
 \def\@principaladviser{}\def\@firstreader{}\def\@secondreader{}
@@ -342,7 +343,7 @@ acceptable looking results, but it may be omitted to get smaller print.
         \vfill
         \begin{center}
                 {\bf\@author}\\
-                {\texttt{\@orcidid}}\\
+                {\texttt{\@orcid}}\\
                 \ifx\@empty\@school
                 \else
                 School of \expandafter{\@school}
