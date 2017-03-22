@@ -277,7 +277,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-January 18, 2017
+March 22, 2017
 Non–polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through trans-membrane segments, to current work on recognition
 of protein trafficking and quality control. Trans-membrane α helix containing proteins
 make up around a quarter of all proteins, as well as two thirds of drug targets, and
@@ -291,6 +291,8 @@ helices underpin membrane protein insertion mechanisms.
 By leveraging large datasets of trans-membrane proteins, this thesis is focused on
 characterizing features of α helices en masse, particularly regarding their topology,
 membrane–protein interactions, and intra-membrane protein interactions.
+In this thesis I make the argument that there are different classifications of transmembrane α helices. These have markedly different evolutionary pressures, different
+classes interact differently with the membrane, and serve the protein differently.
 
 4
 
@@ -555,13 +557,12 @@ of as an estimation of the non-randomness of a sequence. Sequence complexity can
 used to analyze DNA sequences [40–42], however here we will focus on the analysis of
 the complexity of a sequence in protein sequences.
 The compositional complexity is measure over sequence windows. If we have an
-amino acid composition
-{ni }i = min i, . . . , max i
-with a window length of L = Σni ,the total number of sequences can be calculated by
-dividing a factorial of the length by the product of the compositions, i.e N = L!/Πni
-possible sequences. The SEG algorithm [43, 44] identifies subsegments of the raw
-region which have the lowest probability. The algorithm searches for and concatenates
-sub-threshold segments for the Shannon entropy-like term in equation 1.1
+amino acid composition {ni }i = min i, . . . , max i with a window length of L = Σni ,
+the total number of sequences can be calculated by dividing a factorial of the length
+by the product of the compositions, i.e N = L!/Πni possible sequences. The SEG
+algorithm [43, 44] identifies subsegments of the raw region which have the lowest
+probability. The algorithm searches for and concatenates sub-threshold segments for
+the Shannon entropy-like term in equation 1.1
 
 K2 = −Σ
 
@@ -575,12 +576,11 @@ L
 
 The lowest probability subsegment can be defined as K1 = log N/L. By altering
 the window lengths, and the thresholds SEG can be optimized to search for subtle
+compositional deviations, such as coil-coiled regions.
 
 16
 
 CHAPTER 1. INTRODUCTION
-
-compositional deviations, such as coil-coiled regions.
 
 1.2
 1.2.1
@@ -610,12 +610,12 @@ When predicting the function of any protein, one follows the dicta that function
 is facilitated by form, and form is determined by the sequence; the more similar the
 sequences, the more likely that the function is similar. For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a
 hydrophobic protein core which requires similarity of non-polar residue patterns. Sequence analysis of non-globular TMPs has not been studied to nearly the same extent
+yet homology paradigms are silently extended and applied to them. In the case of Signal Peptide (SP)s or TMSs the physical constraints are similar for all TMPs, and so
 
 1.2. α HELICES IN MEMBRANES
 
 17
 
-yet homology paradigms are silently extended and applied to them. In the case of Signal Peptide (SP)s or TMSs the physical constraints are similar for all TMPs, and so
 matching is indeed merely a reflection of the physical environment of the bilayer, not
 the common ancestry. Worryingly, because of this oversight it appears that between
 2.1% and 13.6% of Pfam hits for SPs or TMSs are indeed false positive results [49].

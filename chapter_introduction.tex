@@ -80,14 +80,13 @@ Sequence properties that can be analyzed by bioinformatics, the sequence complex
 
 Sequence complexity, otherwise referred to as sequence entropy, is essentially an estimate of the linguistic entropy of a string. In the context of biology can be thought of as an estimation of the non-randomness of a sequence. Sequence complexity can be used to analyze DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002}, however here we will focus on the analysis of the complexity of a sequence in protein sequences.
 
-The compositional complexity is measure over sequence windows. If we have an amino acid composition $$\{{{n}_{i}}{\}}_{i}={\min{i}},\ldots,{\max{i}}$$ with a window length of $L=\Sigma {n}_i $,the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term in equation~\ref{shannonentropyliketerm}
+The compositional complexity is measure over sequence windows. If we have an amino acid composition $\{{{n}_{i}}{\}}_{i}={\min{i}},\ldots,{\max{i}}$ with a window length of $L=\Sigma {n}_i $, the total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences. The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies subsegments of the raw region which have the lowest probability. The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term in equation~\ref{shannonentropyliketerm}
 
 \begin{equation} \label{shannonentropyliketerm}
 {K}_{2}=-\Sigma\frac{n_i}{L}\log\frac{n_i}{L}
 \end{equation}
 
 The lowest probability subsegment can be defined as $ K_1=\log N/L $. By altering the window lengths, and the thresholds SEG can be optimized to search for subtle compositional deviations, such as coil-coiled regions.
-
 
 \section{$\alpha$ Helices In Membranes }
 
