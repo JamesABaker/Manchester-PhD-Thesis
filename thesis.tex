@@ -18,11 +18,14 @@
 \usepackage{amsmath}
 \usepackage{csquotes}
 \usepackage{longtable}
+\usepackage{enumerate}% http://ctan.org/pkg/enumerate
 \usepackage[acronym]{glossaries} %Whilst it's tempting, I've found tinkering with glossary structure and style is a nightmare.
 \addbibresource{references.bib} % This is the file containing all your bibtex references. All reference managers can export to this format.
 \graphicspath{{images/}} %Store all your figures here
 
 % Example abbreviation: {the code used in the text} {the short form} {the long form}. For help on introducing nomenclature, see the sharelatex help page. http://tex.stackexchange.com/questions/86666/how-to-create-both-list-of-abbreviations-and-list-of-nomenclature-using-nomencl
+
+\makeglossaries{}
 \newacronym{pm}{PM}{Plasma Membrane}
 \newacronym{md}{MD}{Molecular Dynamics}
 \newacronym{tm}{TM}{Trans-membrane}
@@ -39,39 +42,89 @@
 \newacronym{ks}{KS}{Kolmogorov-Smirnov}
 \newacronym{kw}{KW}{Kruskal-Wallis}
 
-\makeglossaries{}
+
+
 
 \begin{document}
 
-\title{Investigating the Recognition and Interactions of Non-Polar $\alpha$ Helices in Biology}
+\title{Investigating the Recognition and Interactions of Non-Polar \(\alpha\) Helices in Biology}
 \author{James Alexander Baker}
 \orcid{orcid.org/0000\--0003\--0874\--2298}
 \faculty{Chemistry}
-\def\wordcount{8496}
+\def\wordcount{22,000}
+
+
 % Uncomment the line below to suppress the `List of Tables' page (optional)
 \tablespagefalse{}
 
 % Uncomment the line below to suppress the `List of Figures' page (optional)
 \figurespagefalse{}
+
+% Uncomment the line below to suppress the `Abbreviations' page (optional)
+\glossariespagefalse{}
+
 % Uncomment the line below to use a customised Declaration statement
 %\def\declaration{All the work in this thesis has been sourced from Google}
 
+% Abbreviations must directly follow other lists
+%\section*{List of Abbreviations}
+%Stick to alphabetical order
+%\acrfull{er} \\
+%\acrfull{ks} \\
+%\acrfull{kw} \\
+%\acrfull{md} \\
+%\acrfull{pdb} \\
+%\acrfull{pm} \\
+%\acrfull{popc} \\
+%\acrfull{snare} \\
+%\acrfull{sp} \\
+%\acrfull{ta} \\
+%\acrfull{tm} \\
+%\acrfull{tmh} \\
+%\acrfull{tmp} \\
+%\acrfull{tms} \\
 
-\beforeabstract{} % Don't move the abstract, it doesn't like it.
-Non\---polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through trans-membrane segments, to current work on recognition of protein trafficking and quality control. Trans-membrane $\alpha$ helix containing proteins makep around a quarter of all proteins, as well as two-thirds of drug targets, and contain some of the most critical proteins required for life as we know it. Yet they are fundamentally difficult to study experimentally. This is in part due to the very features that make them so biologically influential: their non\---polar trans-membrane helix regions. What is missing in the current literature is a nuanced understanding of the complexities of the helix composition beyond a hydrophobic region of around 20 residues. Currently, it is known that the properties of trans-membrane protein $\alpha$ helices underpin membrane protein insertion mechanisms.
 
-By leveraging large datasets of trans-membrane proteins, this thesis is focused on characterising features of $\alpha$ helices en masse, particularly regarding their topology, membrane\---protein interactions, and intramembrane protein interactions.
+\beforeabstract{} % Don't move the abstract, it doesn't like it. The \beforeabstract command creates the title page, a copyright page (default), the tables of contents, tables and figures.
 
-In this thesis, I make the argument that there are different classifications of trans-membrane $\alpha$ helices. These have markedly different evolutionary pressures, these different classes interact differently with the membrane, and each class serve the protein differently.
 
-\afterabstract{}
+
+\prefacesection{Abstract}
+Non\---polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through trans-membrane segments, to current work on recognition of protein trafficking and quality control. Trans-membrane \(\alpha\) helix containing proteins makep around a quarter of all proteins, as well as two-thirds of drug targets, and contain some of the most critical proteins required for life as we know it. Yet they are fundamentally difficult to study experimentally. This is in part due to the very features that make them so biologically influential: their non\---polar trans-membrane helix regions. What is missing in the current literature is a nuanced understanding of the complexities of the helix composition beyond a hydrophobic region of around 20 residues. Currently, it is known that the properties of trans-membrane protein \(\alpha\) helices underpin membrane protein insertion mechanisms.
+
+By leveraging large datasets of trans-membrane proteins, this thesis is focused on characterising features of \(\alpha\) helices en masse, particularly regarding their topology, membrane\---protein interactions, and intramembrane protein interactions.
+
+In this thesis, I make the argument that there are different classifications of trans-membrane \(\alpha\) helices. These have markedly different evolutionary pressures, these different classes interact differently with the membrane, and each class serve the protein differently.
+
+\prefacesection{Lay Abstract} %The lay abstract section is optional.
+
+The survival of each of our cells relies on a a cellular barrier to separate themselves from the surrounding environment -- this cellular skin can be thought of as the bag that contains all the important machinery required for normal cell function. The barrier works by being chemically very different to both the outside environment, and to the inside of the cell, which in both cases are mostly water. The membrane is fatty, and repels water.
+
+Proteins are the molecular machinery that power the cells. Around a third of our genome codes for protein that are permanently embedded in the membrane.
+
+In this thesis, we focus particularly on the parts of the protein that are embedded in the water repelling cellular skin. Traditionally, these regions are hard to study, because we must first remove them from the cellular wall, which causes problems since the embedded regions also repel water and this often causes them to stick to one another, making them hard to work with in a laboratory setting.
+
+In this thesis we analyse thousands of proteins to further our understanding of electrical charges in the embedded regions and find that negative charge on the outside of the cell has been evolutionarily selected across bacteria, animals, and plants. This is especially true for regions that specifically anchor the protein into the cellular wall. Where the embedded regions have additional function, for example ferrying something in or out of the cell, the negative charge ``bias'' can no longer be seen.
+
+
+
+\afterabstract{} % \afterabstract command to insert the declaration.
 
 %The preface section doesn't like being in a different document for some reason. (I think it's just my compiler, there is no reason why it shouldn't work)
 \prefacesection{Acknowledgements}
 I would like to thank all members of both the Eisenhaber research group, as well as the Curtis and Warwicker research group for discussion, but in particular Jim Warwicker, Frank Eisenhaber, Birgit Eisenhaber, and Wing-Cheong Wong for supervision and guidance during my research. I would also like to thank The University of Manchester and the A*STAR Singapore Bioinformatics Institute for funding the project. Furthermore, I would like to extend my gratitude to the research group of Professor Stephen High.
 
-%Shout out to all the Biopython devs that saved my sanity!
+\prefacesection{The Author}
 
+The author has previously completed a Masters in Biochemistry from the University of Liverpool, graduating in 2014.
+
+In between the penultimate and final year of Masters study, the  author undertook an internship at Chulalongkorn University under the supervision of Dr. Thanyada Rungrotmongkol. The internship contributed to simulating several compounds that could target a viral protease (\(3C^{pro}\)) of both Cocksackie 16 and Enterovirus 72, of which infect X and kill Y people per year. The results showed that several compounds were more potent inhibitors at a protein level than the currently championed drug candidates.
+
+In the final year of the Masters degree, under the supervision of Dr. Dan Rigden, the author modelled domains of a transmembrane protein involved in bacterial competence (ComEC) in \textit{Bacillus subtilis}. Structural and sequential analysis of the models revealed a cryptic OB fold in a domain of unknown function, and a potential competence nuclease function in the $\beta$ --lactamase--like domain.
+
+During the first year of this PhD studentship, the author presented a part of the work in Berlin at the FEBS annual congress (Baker, J. A. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE Proteins. \textit{ 40th FEBS Congress} Late Breaker (2015))
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsection*{Preamble} %A side note. the "*" hides the section number.
 %In the 1950s and 1960s, the field of biological philosophy was still emerging. David Hull writes on the matter in his 1969 article entitled \textit{``What Philosophy of Biology is not''}:
 
@@ -79,39 +132,22 @@ I would like to thank all members of both the Eisenhaber research group, as well
 %``Periodically through the history of biology, biologists have tried to do a little philosophy...''\cite{Hull1969}
 %\end{displayquote}
 
-%I think this accurately summarises my attempts at applying philosophy to science for my philosophical doctorate.
 %I can't help but wish my thesis title was ``The ins-and-outs of greasy peptides''.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%So long, and thanks for all the fish!
+%%% List of publications not necessary.
+% \prefacesection{List of publications}
 
-\prefacesection{List of publications}
+% \subsection*{Journal Articles} % the * hides the section number
 
-\subsection*{Journal Articles} % the * hides the section number
+% \subsection*{Posters}
+%Baker, J. A. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE Proteins. \textit{ 40th FEBS Congress} Late Breaker (2015)
 
-\subsection*{Posters}
-Baker, J. A. and Warwicker, J. A Bioinformatic Method to Identify Potential SNARE Proteins. \textit{ 40th FEBS Congress} Late Breaker (2015)
-
-\clearpage
-
-
+%\clearpage
 \afterpreface{}
 
-\section*{List of Abbreviations}
-%Stick to alphabetical order
-\acrfull{er} \\
-\acrfull{ks} \\
-\acrfull{kw} \\
-\acrfull{md} \\
-\acrfull{pdb} \\
-\acrfull{pm} \\
-\acrfull{popc} \\
-\acrfull{snare} \\
-\acrfull{sp} \\
-\acrfull{ta} \\
-\acrfull{tm} \\
-\acrfull{tmh} \\
-\acrfull{tmp} \\
-\acrfull{tms} \\
+
+
 
 
 
