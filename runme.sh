@@ -14,6 +14,7 @@ if [[ $platform == 'linux' ]]; then
   bibtex thesis.aux
   pdflatex thesis.tex
   pdflatex thesis.tex
+  pdflatex thesis.tex; makeindex -s liselot2.ist -t liselot2.glg -o liselot2.gls liselot2.glo; pdflatex thesis.tex
 
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
@@ -54,6 +55,7 @@ elif [[ $platform == 'darwin' ]]; then
   xelatex thesis.tex
   bibtex thesis.aux
   xelatex thesis.tex
+  makeglossaries thesis.tex
   xelatex thesis.tex
 
 

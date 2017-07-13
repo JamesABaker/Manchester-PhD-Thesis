@@ -6,7 +6,7 @@
 %%
 %% Time-stamp: <July 23, 1997 11:33:00 BST graham@cs.man.ac.uk>
 %%
-%% This class file has been cobbled together for use of postgraduate
+%% This class file has been cobbled toygether for use of postgraduate
 %% students in the Department of Computer Science at the University of
 %% Manchester. Any comments or problems about its use should be made
 %% via the local newsgroup man.cs.tex.
@@ -314,7 +314,7 @@ acceptable looking results, but it may be omitted to get smaller print.
 \else
     \def\@copyrightyear{\number\the\year}
 \fi
-\newif\ifcopyright \newif\iffigurespage \newif\iftablespage \newif\ifsigpage
+\newif\ifcopyright \newif\iffigurespage \newif\iftablespage \newif\ifglossariespage \newif\ifsigpage
 \copyrighttrue \figurespagetrue \tablespagetrue \sigpagefalse
 
 
@@ -468,6 +468,12 @@ institute of learning.}
         \iffigurespage
                 \addvspace{10pt}
                 \listoffigures
+                \newpage
+        \fi
+        \ifglossariespage %Currently this does not works
+                \addvspace{10pt}
+                \printglossaries
+                \glsaddallunused
                 \newpage
         \fi
         \addcontentsline{toc}{chapter}{Abstract}
