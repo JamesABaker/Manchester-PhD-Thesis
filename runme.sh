@@ -13,10 +13,6 @@ if [[ $platform == 'linux' ]]; then
   pdflatex thesis.tex
   bibtex thesis.aux
   pdflatex thesis.tex
-  pdflatex thesis.tex
-  pdflatex thesis.tex
-  makeglossaries thesis.tex
-  pdflatex thesis.tex
 
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
@@ -57,8 +53,7 @@ elif [[ $platform == 'darwin' ]]; then
   xelatex thesis.tex
   bibtex thesis.aux
   xelatex thesis.tex
-  makeglossaries thesis.tex
-  xelatex thesis.tex
+
 
 
   #Cleaning up the junk files
