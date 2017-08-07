@@ -2,6 +2,9 @@ platform='unknown'
 unamestr=`uname`
 platform='unknown'
 unamestr=`uname`
+
+DATE=$(date +"date-%Y-%m-%d_time-%H-%M-%S")
+
 if [[ "$unamestr" == 'Linux' ]]; then
    platform='linux'
 elif [[ "$unamestr" == 'Darwin' ]]; then
@@ -45,6 +48,7 @@ if [[ $platform == 'linux' ]]; then
   echo "New lines, Wordcount, Characters"
   wc thesis.txt
   cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis
+  cp thesis.pdf pdfs/$DATE.pdf
 
 
 
