@@ -15,6 +15,12 @@ fi
 if [[ $platform == 'linux' ]]; then
   pdflatex thesis.tex
   bibtex thesis.aux
+  makeglossaries thesis
+  makeglossaries chapter_introduction
+  makeglossaries chapter_tmcomposition
+  makeglossaries chapter_tailanchor
+  makeglossaries chapter_predictfunction
+  makeglossaries chapter_conclusions
   pdflatex thesis.tex
 
   #Cleaning up the junk files
@@ -53,10 +59,24 @@ if [[ $platform == 'linux' ]]; then
 
 
 elif [[ $platform == 'darwin' ]]; then
-  #In El Capitan it's not clear exactly what latex commands are available for now
-  xelatex thesis.tex
+  #Based on MacTex. Ensure $PATH has these lines if commands are not found.
+  #export PATH=$PATH:/usr/texbin
+  #export PATH=$PATH:/Library/TeX/texbin
+
+
+
+
+  pdflatex thesis.tex
   bibtex thesis.aux
-  xelatex thesis.tex
+  makeglossaries thesis
+  makeglossaries chapter_introduction
+  makeglossaries chapter_tmcomposition
+  makeglossaries chapter_tailanchor
+  makeglossaries chapter_predictfunction
+  makeglossaries chapter_conclusions
+  pdflatex thesis.tex
+
+
 
 
 
@@ -86,4 +106,11 @@ elif [[ $platform == 'darwin' ]]; then
   rm thesis-blx.bib
   rm thesis.brf
   rm thesis.run.xml
+
+  pdftotext thesis.pdf
+  echo "New lines, Wordcount, Characters"
+  wc thesis.txt
+  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis.pdf
+  cp thesis.pdf pdfs/$DATE.pdf
+
 fi

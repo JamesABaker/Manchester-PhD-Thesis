@@ -314,7 +314,7 @@ acceptable looking results, but it may be omitted to get smaller print.
 \else
     \def\@copyrightyear{\number\the\year}
 \fi
-\newif\ifcopyright \newif\iffigurespage \newif\iftablespage \newif\ifglossariespage \newif\ifsigpage
+\newif\ifcopyright \newif\iffigurespage \newif\iftablespage \newif\ifsigpage
 \copyrighttrue \figurespagetrue \tablespagetrue \sigpagefalse
 
 
@@ -468,12 +468,6 @@ institute of learning.}
         \iffigurespage
                 \addvspace{10pt}
                 \listoffigures
-                \newpage
-        \fi
-        \ifglossariespage %Currently this does not works
-                \addvspace{10pt}
-                \printglossaries
-                \glsaddallunused
                 \newpage
         \fi
         \addcontentsline{toc}{chapter}{Abstract}
