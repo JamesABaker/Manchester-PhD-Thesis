@@ -27,7 +27,6 @@ if [[ $platform == 'linux' ]]; then
   ## Core latex/pdflatex auxiliary files:
   rm thesis.aux
   rm thesis.lof
-  #rm thesis.log
   rm thesis.lot
   rm thesis.fls
   rm thesis.out
@@ -38,8 +37,15 @@ if [[ $platform == 'linux' ]]; then
   rm thesis.cb2rm
   rm thesis.dvi
   rm thesis.acn
+  rm thesis.log
+
+  # Gloassary output logs 
   rm thesis.glo
   rm thesis.ist
+  rm thesis.acr
+  rm thesis.alg
+  rm thesis.glg
+
 
   ## Bibliography auxiliary files (bibtex/biblatex/biber):
   rm thesis.bbl

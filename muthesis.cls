@@ -468,9 +468,13 @@ institute of learning.}
         \iffigurespage
                 \addvspace{10pt}
                 \listoffigures
-                \newpage
+                %\newpage %glossaries prints a newpage before printing making this line redundant.
         \fi
+
+        \printglossaries
+        \newpage
         \addcontentsline{toc}{chapter}{Abstract}
+
         \ifx\degreetitle\@msc
              \chapter*{Abstract}
              \else
