@@ -15,13 +15,13 @@ fi
 if [[ $platform == 'linux' ]]; then
   pdflatex thesis.tex
   bibtex thesis.aux
-  makeglossaries thesis
-  makeglossaries chapter_introduction
-  makeglossaries chapter_tmcomposition
-  makeglossaries chapter_tailanchor
-  makeglossaries chapter_predictfunction
-  makeglossaries chapter_conclusions
   pdflatex thesis.tex
+
+  pdftotext thesis.pdf
+  echo "New lines, Wordcount, Characters"
+  wc thesis.txt
+  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis
+  cp thesis.pdf pdfs/$DATE.pdf
 
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
@@ -39,13 +39,12 @@ if [[ $platform == 'linux' ]]; then
   rm thesis.acn
   rm thesis.log
 
-  # Gloassary output logs 
+  ## Gloassary output logs
   rm thesis.glo
   rm thesis.ist
   rm thesis.acr
   rm thesis.alg
   rm thesis.glg
-
 
   ## Bibliography auxiliary files (bibtex/biblatex/biber):
   rm thesis.bbl
@@ -56,35 +55,25 @@ if [[ $platform == 'linux' ]]; then
   rm thesis.brf
   rm thesis.run.xml
 
-  pdftotext thesis.pdf
-  echo "New lines, Wordcount, Characters"
-  wc thesis.txt
-  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis
-  cp thesis.pdf pdfs/$DATE.pdf
-
-
-
 elif [[ $platform == 'darwin' ]]; then
   #Based on MacTex. Ensure $PATH has these lines if commands are not found.
   #export PATH=$PATH:/usr/texbin
   #export PATH=$PATH:/Library/TeX/texbin
 
-
-
-
   pdflatex thesis.tex
   bibtex thesis.aux
   makeglossaries thesis
-  makeglossaries chapter_introduction
-  makeglossaries chapter_tmcomposition
   makeglossaries chapter_tailanchor
-  makeglossaries chapter_predictfunction
+  makeglossaries chapter_introduction
   makeglossaries chapter_conclusions
+  makeglossaries chapter_predictfunction
   pdflatex thesis.tex
 
-
-
-
+  pdftotext thesis.pdf
+  echo "New lines, Wordcount, Characters"
+  wc thesis.txt
+  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis.pdf
+  cp thesis.pdf pdfs/$DATE.pdf
 
   #Cleaning up the junk files
   ## Core latex/pdflatex auxiliary files:
@@ -104,6 +93,14 @@ elif [[ $platform == 'darwin' ]]; then
   rm thesis.glo
   rm thesis.ist
 
+  ## Gloassary output logs
+  rm thesis.glo
+  rm thesis.ist
+  rm thesis.acr
+  rm thesis.alg
+  rm thesis.glg
+  rm thesis.gls
+
   ## Bibliography auxiliary files (bibtex/biblatex/biber):
   rm thesis.bbl
   rm thesis.bcf
@@ -112,11 +109,5 @@ elif [[ $platform == 'darwin' ]]; then
   rm thesis-blx.bib
   rm thesis.brf
   rm thesis.run.xml
-
-  pdftotext thesis.pdf
-  echo "New lines, Wordcount, Characters"
-  wc thesis.txt
-  cp thesis.pdf ~/Dropbox/Manchester-PhD-Thesis.pdf
-  cp thesis.pdf pdfs/$DATE.pdf
 
 fi

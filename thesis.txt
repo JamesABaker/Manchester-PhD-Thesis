@@ -382,7 +382,7 @@ typical TMH. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 2.1
 
 Negatively charged amino acids are amongst the rarest residues in TMHs
-and 5 flanking residues. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+and ±5 flanking residues. . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.2
 
@@ -466,7 +466,7 @@ KW Kruskal-Wallis. 36, 37, 50, 69, 71
 MD Molecular Dynamics. 21
 PDB Protein Data Bank. 13, 29
 PM Plasma Membrane. 56
-POPC Palmitoyloleoylphosphatidylcholine. 17
+POPC Palmitoyloleoylphosphatidylcholine. 17, 45
 SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 23, 72
 SP Signal Peptide. 19
 TM Trans-membrane. 12, 23, 27, 28, 30, 41, 43, 48, 50, 67
@@ -482,7 +482,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-November 10, 2017
+November 14, 2017
 
 9
 
@@ -512,19 +512,23 @@ from the surrounding environment. This cellular skin can be thought of as the ba
 contains all the important machinery required for normal cell function. The barrier
 works by being chemically very different to both the outside environment, and to the
 inside of the cell, which in both cases are mostly water. The membrane is fatty, and
-repels water.
-Proteins are the molecular machinery that power the cells and carry out the functions that keep the . Around a third of our genome codes for protein that are permanently embedded in the membrane.
+because of that repels water.
+Proteins are the molecular machinery that form much of the cell structure and
+shape as well as carrying out many of the cell’s routine tasks. Around a third of
+our genome codes for proteins that are permanently embedded in the membrane, but
+because these proteins are adapted for a life in the water repelling cell wall, they are
+very hard to study in laboratories which need to look at proteins in water.
 In this thesis, we focus particularly on the parts of the protein that are embedded
 in the water repelling cellular skin. Traditionally, these regions are hard to study,
 because we must first remove them from the cellular wall, which causes problems since
 the embedded regions also repel water and this often causes them to stick to one
 another, making them hard to work with in a laboratory setting.
-In this thesis we analyse thousands of proteins to further our understanding of
-electrical charges in the embedded regions and find that negative charge on the outside
-of the cell has been evolutionarily selected across bacteria, animals, and plants. This
-is especially true for regions that specifically anchor the protein into the cellular wall.
-Where the embedded regions have additional function, for example ferrying something
-in or out of the cell, the negative charge “bias” can no longer be seen.
+We analyse thousands of proteins to further our understanding of electrical charges
+in the embedded regions and find that negative charge on the outside of the cell has
+been evolutionarily selected across bacteria, animals, and plants. This is especially
+true for regions that specifically anchor the protein into the cellular wall. Where the
+embedded regions have additional function, for example ferrying something in or out
+of the cell, the negative charge “bias” can no longer be seen.
 
 11
 
@@ -1360,16 +1364,15 @@ L I A V F G S T Y M P R N K WQ C E D H
 Residue
 
 Figure 2.1: Negatively charged amino acids are amongst the rarest residues in TMHs
-and 5 flanking residues.
+and ±5 flanking residues.
 Bar charts of the abundance of each amino acid type in the TMHs with flank lengths of the
-accompanying 5 residues from the (a) UniHuman single-pass proteins, (b) ExpAll single-pass
-proteins, (c) UniHuman multi-pass proteins, and (d) ExpAll multi-pass proteins. Amino acid
-types on the horizontal axis are listed in descending count. The bars were coloured according
-to categorisations of hydrophobic, neutral and hydrophilic types according to the free energy
-of insertion biological scale [15]. Grey represents hydrophilic amino acids that were found
-to have a positive ∆G app, and blue represents hydrophobic residues with a negative ∆G
-app, purple denotes negative residues and positive residues are coloured in orange. The
-abundances of key residues are labelled.
+accompanying ±5 residues from the (a) UniHuman single-pass proteins, (b) ExpAll singlepass proteins, (c) UniHuman multi-pass proteins, and (d) ExpAll multi-pass proteins. Amino
+acid types on the horizontal axis are listed in descending count. The bars were coloured
+according to categorisations of hydrophobic, neutral and hydrophilic types according to the
+free energy of insertion biological scale [15]. Grey represents hydrophilic amino acids that
+were found to have a positive ∆G app, and blue represents hydrophobic residues with a
+negative ∆G app, purple denotes negative residues and positive residues are coloured in
+orange. The abundances of key residues are labelled.
 
 The effect is most pronounced in single-pass TMPs (Figure 2.1). There are only 666
 glutamates (just 1.24% of all residues) and 560 aspartates (1.05% respectively) among
@@ -2140,8 +2143,8 @@ Figure 2.5: Relative percentage heatmaps from predictive and experimental datase
 corroborate residue distribution differences between TMHs from single-pass and multipass proteins.
 The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type
 is on the vertical axis. Amino acid types are listed in order of decreasing hydrophobicity according
-to the Kyte and Doolittle scale [52]. The flank lengths in the TMH segments were restricted to up
-to 10 residues. The scales for each heatmap are shown beneath the respective subfigure. The darkest
+to the Kyte and Doolittle scale [52]. The flank lengths in the TMH segments were restricted to up to
+±10 residues. The scales for each heatmap are shown beneath the respective subfigure. The darkest
 blue represents 0% distribution, whilst the darkest red represents the maximum relative percentage
 distribution that is denoted by the keys in each subfigure, with white being 50% between cold and hot.
 The central TMH subplots extend from the central TMH residue, whereas the inner and outer flank
@@ -2434,7 +2437,7 @@ UniPM
 Figure 2.8: Comparing charged amino acid distributions in TMHs of multi-pass and
 single-pass proteins across different species and organelles.
 Comparing charged amino acid distributions in TMHs of multi-pass and single-pass proteins across different species and organelles. The relative percentage distribution of charged
-residues and leucine was calculated at each position in the TMH with flank lengths of 20 in
+residues and leucine was calculated at each position in the TMH with flank lengths of ±20 in
 different datasets. The distributions are normalised according to relative percentage distribution. Aspartic acid and glutamic acid are shown in dark purple and light purple respectively.
 Leucine, the most abundant non-polar residue in TMHs, is in blue. Arginine and lysine are
 shown in orange. TMHs from single-pass proteins are on the left and TMHs from multipass proteins are on the right for different taxonomic datasets: a UniCress, b UniFungi, c
