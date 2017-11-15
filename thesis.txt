@@ -14,31 +14,31 @@ orcid.org/0000-0003-0874-2298
 Contents
 Abstract
 
-6
+5
 
 Abstract
 
-7
+6
 
 Lay Abstract
 
-8
+7
 
 Declaration
 
-9
+8
 
 Copyright Statement
 
-10
+9
 
 Acknowledgements
 
-11
+10
 
 1 Introduction
 
-12
+11
 
 1.1
 
@@ -52,107 +52,107 @@ Acknowledgements
 
 α Helices; Structure And Function . . . . . . . . . . . . . . . . . . . . .
 
-12
+11
 
 1.1.1
 
 Trans-membrane Helix Sequence Composition . . . . . . . . . .
 
-12
+11
 
 1.1.2
 
 Hydrophobicity of Trans-membrane Segments . . . . . . . . . .
 
-15
+14
 
 1.1.3
 
 Sequence Complexity . . . . . . . . . . . . . . . . . . . . . . . .
 
-17
+16
 
 α Helices In Membranes . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-18
+17
 
 1.2.1
 
 The Transmembrane Protein Problem . . . . . . . . . . . . . . .
 
-18
+17
 
 1.2.2
 
 The Importance Of Transmembrane Proteins . . . . . . . . . . .
 
-20
+19
 
 Biological Membrane Composition . . . . . . . . . . . . . . . . . . . . .
 
-20
+19
 
 1.3.1
 
 Lipids of the Membrane . . . . . . . . . . . . . . . . . . . . . .
 
-20
+19
 
 1.3.2
 
 Membrane Potential . . . . . . . . . . . . . . . . . . . . . . . .
 
-21
+20
 
 Biogenesis of Trans-membrane Proteins . . . . . . . . . . . . . . . . . .
 
-23
+22
 
 1.4.1
 
 Translocation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-23
+22
 
 1.4.2
 
 Translocon Independent Membrane Insertion . . . . . . . . . . .
 
-23
+22
 
 Aims of This Thesis. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-24
+23
 
 2
 
 2 The “Negative-Outside” Rule
 
-25
+24
 
 2.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-25
+24
 
 2.2
 
 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-25
+24
 
 2.3
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-26
+25
 
 2.4
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-31
+30
 
 2.4.1
 
@@ -165,15 +165,15 @@ Amino acid residue distribution analysis reveals a “negative-notinside/negativ
 
 2.4.3
 
-31
+30
 
-34
+33
 
 Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass TMH segments — the negative outside enrichment rule . . . . . . . . . .
 
 2.4.4
 
-37
+36
 
 Further significant sequence differences between single-pass and
 multi-pass helices: distribution of tryptophan, tyrosine, proline
@@ -186,183 +186,183 @@ multi-pass proteins . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.4.6
 
-43
+42
 
 A negative-outside (or negative-non-inside) signal is present across
 many membrane types . . . . . . . . . . . . . . . . . . . . . . .
 
 2.4.7
 
-41
+40
 
-46
+45
 
 Amino acid compositional skews in relation to TMH complexity
 and anchorage function . . . . . . . . . . . . . . . . . . . . . . .
 
-48
+47
 
 2.5
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-51
+50
 
 2.6
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-60
+59
 
 2.6.1
 
 Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-60
+59
 
 2.6.2
 
 On the determination of flanking regions for TMHs and the
 TMH alignment . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-65
+64
 
 2.6.3
 
 Separating simple and complex single-pass helices. . . . . . . . .
 
-67
+66
 
 2.6.4
 
 Distribution normalisation . . . . . . . . . . . . . . . . . . . . .
 
-68
+67
 
 2.6.5
 
 Hydrophobicity calculations . . . . . . . . . . . . . . . . . . . .
 
-69
+68
 
 2.6.6
 
 Normalised net charge calculations . . . . . . . . . . . . . . . .
 
-69
+68
 
 2.6.7
 
 Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-69
+68
 
 3
 
 3 Tail-Anchored Protein Datasets
 
-72
+71
 
 3.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-72
+71
 
 3.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-72
+71
 
 3.3
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-72
+71
 
 3.3.1
 
 Filtering the Uniprot database . . . . . . . . . . . . . . . . . . .
 
-72
+71
 
 3.3.2
 
 Calculating Hydrophobicity . . . . . . . . . . . . . . . . . . . .
 
-73
+72
 
 3.3.3
 
 Calculating Sequence Complexity . . . . . . . . . . . . . . . . .
 
-73
+72
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+72
 
 3.4.1
 
 An Up To Date Tail-Anchor Dataset . . . . . . . . . . . . . . .
 
-73
+72
 
 3.4.2
 
 Potential Tail-Anchored SNARE Protein Discovery . . . . . . .
 
-73
+72
 
 3.4.3
 
 Biology of Spontaneously Inserting Tail Anchored Proteins . . .
 
-73
+72
 
 3.4
 
 4 Protein Classification Based on Intra-membrane Complexity Arrangement
 
-74
+73
 
 4.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-74
+73
 
 4.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-74
+73
 
 4.3
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-74
+73
 
 4.4
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-74
+73
 
 5 Conclusions
 5.1
 
-75
+74
 
 Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-75
+74
 
 5.1.1
 
-75
+74
 
 The hydrophobicity–sequence complexity continuum . . . . . . .
 
@@ -386,20 +386,20 @@ and ±5 flanking residues. . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.2
 
-13
+12
 
-33
+32
 
 Relative percentage normalisation reveals a negative-outside bias in
 TMHs from single-pass protein datasets. . . . . . . . . . . . . . . . . .
 
-35
+34
 
 2.3
 
 Negative-outside bias is very subtle in TMHs from multi-pass proteins.
 
-38
+37
 
 2.4
 
@@ -408,7 +408,7 @@ positive inside charge in single-pass TMHs than multi-pass TMHs. . . .
 
 2.5
 
-39
+38
 
 Relative percentage heatmaps from predictive and experimental datasets
 corroborate residue distribution differences between TMHs from singlepass and multi-pass proteins. . . . . . . . . . . . . . . . . . . . . . . . .
@@ -419,37 +419,37 @@ There is a difference in the hydrophobic profiles of TMHs from singlepass and mu
 
 2.7
 
-45
+44
 
 Comparing charged amino acid distributions in TMHs of multi-pass and
 single-pass proteins across different species and organelles. . . . . . . .
 
 2.9
 
-44
+43
 
 There is a difference in the hydrophobic profiles of TMHs from singlepass and multi-pass proteins. . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.8
 
-42
+41
 
-46
+45
 
 Comparing the amino acid relative percentage distributions of simple
 and complex TMHs from single-pass proteins and TMHs from multipass proteins. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-49
+48
 
 2.10 Residue distributions of transmembrane anchors. A view showing additional residue distribution features that TMHs with an anchorage function display. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 6
 
-59
+58
 
 2.11 The lengths of flanks and TMHs in multi-pass and single-pass proteins
 in the UniHuman and ExpAll dataset. . . . . . . . . . . . . . . . . . .
 
-67
+66
 
 2.12 Relative percentage heatmaps from the predictive datasets calculated
 by fractions of the absolute maximum and by the relative percentage of
@@ -457,23 +457,23 @@ a given amino acid type. . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 7
 
-70
+69
 
 Acronyms
-ER Endoplasmic Reticulum. 14, 17, 21, 22, 29, 56
-KS Kolmogorov-Smirnov. 50, 71
-KW Kruskal-Wallis. 36, 37, 50, 69, 71
-MD Molecular Dynamics. 21
-PDB Protein Data Bank. 13, 29
-PM Plasma Membrane. 56
-POPC Palmitoyloleoylphosphatidylcholine. 17, 45
-SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 23, 72
-SP Signal Peptide. 19
-TM Trans-membrane. 12, 23, 27, 28, 30, 41, 43, 48, 50, 67
-TMH Trans-membrane Helix. 12–15, 17–21, 23, 25–45, 47, 48, 50–62, 64–69
-TMP Trans-membrane Protein. 12, 14, 18–20, 25, 26, 28–30, 32, 33, 40, 43, 46, 51,
-52, 55, 56
-TMS Trans-membrane Segment. 12, 14, 18, 19
+ER Endoplasmic Reticulum. 13, 16, 20, 21, 28, 55
+KS Kolmogorov-Smirnov. 49, 70
+KW Kruskal-Wallis. 35, 36, 49, 68, 70
+MD Molecular Dynamics. 20
+PDB Protein Data Bank. 12, 28
+PM Plasma Membrane. 55
+POPC Palmitoyloleoylphosphatidylcholine. 16, 44
+SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 22, 71
+SP Signal Peptide. 18
+TM Trans-membrane. 11, 22, 26, 27, 29, 40, 42, 47, 49, 66
+TMH Trans-membrane Helix. 11–14, 16–20, 22, 24–44, 46, 47, 49–61, 63–68
+TMP Trans-membrane Protein. 11, 13, 17–19, 24, 25, 27–29, 31, 32, 39, 42, 45, 50,
+51, 54, 55
+TMS Trans-membrane Segment. 11, 13, 17, 18
 
 8
 
@@ -482,7 +482,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-November 14, 2017
+November 15, 2017
 
 9
 

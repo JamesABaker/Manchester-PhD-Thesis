@@ -57,8 +57,9 @@ if [[ $platform == 'linux' ]]; then
 
 elif [[ $platform == 'darwin' ]]; then
   #Based on MacTex. Ensure $PATH has these lines if commands are not found.
-  #export PATH=$PATH:/usr/texbin
-  #export PATH=$PATH:/Library/TeX/texbin
+  #Adds the latex bins to path. Not sure if there are any negative consequences of doing this repeatedly...
+  export PATH=$PATH:/usr/texbin
+  export PATH=$PATH:/Library/TeX/texbin
 
   pdflatex thesis.tex
   bibtex thesis.aux
