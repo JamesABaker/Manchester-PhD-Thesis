@@ -167,13 +167,13 @@ Amino acid residue distribution analysis reveals a “negative-notinside/negativ
 
 30
 
-34
+33
 
 Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass TMH segments — the negative outside enrichment rule . . . . . . . . . .
 
 2.4.4
 
-37
+36
 
 Further significant sequence differences between single-pass and
 multi-pass helices: distribution of tryptophan, tyrosine, proline
@@ -186,7 +186,7 @@ multi-pass proteins . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.4.6
 
-41
+42
 
 A negative-outside (or negative-non-inside) signal is present across
 many membrane types . . . . . . . . . . . . . . . . . . . . . . .
@@ -195,7 +195,7 @@ many membrane types . . . . . . . . . . . . . . . . . . . . . . .
 
 40
 
-45
+46
 
 Amino acid compositional skews in relation to TMH complexity
 and anchorage function . . . . . . . . . . . . . . . . . . . . . . .
@@ -206,7 +206,7 @@ and anchorage function . . . . . . . . . . . . . . . . . . . . . . .
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-51
+50
 
 2.6
 
@@ -243,13 +243,13 @@ Distribution normalisation . . . . . . . . . . . . . . . . . . . . .
 
 Hydrophobicity calculations . . . . . . . . . . . . . . . . . . . .
 
-68
+69
 
 2.6.6
 
 Normalised net charge calculations . . . . . . . . . . . . . . . .
 
-68
+69
 
 2.6.7
 
@@ -438,9 +438,9 @@ There is a difference in the hydrophobic profiles of TMHs from singlepass and mu
 
 2.8
 
-42
+41
 
-46
+45
 
 Comparing the amino acid relative percentage distributions of simple
 and complex TMHs from single-pass proteins and TMHs from multipass proteins. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -463,22 +463,22 @@ a given amino acid type. . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 7
 
-69
+68
 
 Acronyms
-ER Endoplasmic Reticulum. 13, 16, 20, 21, 28, 56
-KS Kolmogorov-Smirnov. 49, 50, 70
-KW Kruskal-Wallis. 36, 49, 50, 69, 70
+ER Endoplasmic Reticulum. 13, 16, 20, 21, 28, 55, 56
+KS Kolmogorov-Smirnov. 49, 69
+KW Kruskal-Wallis. 36, 49, 69
 MD Molecular Dynamics. 20
 PDB Protein Data Bank. 12, 28
-PM Plasma Membrane. 56
+PM Plasma Membrane. 55, 56
 POPC Palmitoyloleoylphosphatidylcholine. 16, 44
 SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 22, 71
 SP Signal Peptide. 18
 TM Trans-membrane. 11, 22, 26, 27, 29, 40, 43, 49, 66
-TMH Trans-membrane Helix. 11–14, 16–20, 22, 24–47, 49–68, 70
-TMP Trans-membrane Protein. 11, 13, 17–19, 24, 25, 27–29, 32, 33, 40, 43, 45, 51,
-54, 55
+TMH Trans-membrane Helix. 11–14, 16–20, 22, 24–43, 45–47, 49–69
+TMP Trans-membrane Protein. 11, 13, 17–19, 24, 25, 27–29, 32, 33, 40, 43, 46, 50,
+51, 54, 55
 TMS Trans-membrane Segment. 11, 13, 17, 18
 
 8
@@ -488,7 +488,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-November 20, 2017
+November 23, 2017
 
 9
 
@@ -631,15 +631,14 @@ charge
 Inside
 (cytosolic)
 
-Figure 1.1: A cartoon showing the general components of the membrane and a typical TMH.
-
-The example used here for illustrative purposes is the trans-membrane region of therein
-(Protein Data Bank (PDB) 2LK9) [11]. Dark grey areas denote the area of lipid head groups.
-The residues found in these areas are often described as flanking regions and are often in
-contact with the aqueous interface of the membrane. The helix core is mostly composed of
-hydrophobic residues. Although the regions labelled here generally hold true in terms of the
-statistical distribution of polar, non-polar, and charged groups, it is by no means absolute
-laws and many proteins break these “rules” [6, 7, 10].
+Figure 1.1: A cartoon showing the general components of the membrane and a typical
+TMH. The example used here for illustrative purposes is the trans-membrane region of therein
+(Protein Data Bank (PDB) 2LK9) [11]. Dark grey areas denote the area of lipid head groups. The
+residues found in these areas are often described as flanking regions and are often in contact with
+the aqueous interface of the membrane. The helix core is mostly composed of hydrophobic residues.
+Although the regions labelled here generally hold true in terms of the statistical distribution of polar,
+non-polar, and charged groups, it is by no means absolute laws and many proteins break these
+“rules” [6, 7, 10].
 
 The language used to describe TMHs varies somewhat across the literature, primarily due to a changing understanding of TMH general structure and relevance to
 function over the last 15 years or so. There is a general composition of a TMH despite
@@ -648,12 +647,12 @@ A study by Baeza–Delgado et al. from 2013 [6] looked at TMHs in 170 integral
 membrane proteins from a manually maintained database of experimentally confirmed
 TMPs; MPTopo [12]. The group examined the distribution of residues along the
 TMHs. As expected, half of the natural amino acids are equally distributed along
+ransmembrane (TM) helices whereas aromatic, polar, and charged amino acids along
 
 1.1. α HELICES; STRUCTURE AND FUNCTION
 
 17
 
-ransmembrane (TM) helices whereas aromatic, polar, and charged amino acids along
 with proline are biasedly near the flanks of the TM helices [6]. It has been noted that
 transitions between the polar and non-polar groups at the ends of the hydrophobic core
 occur in a more defined edge on the cytoplasmic side than at the extracytoplasmic face
@@ -665,6 +664,7 @@ and invertebrates were found to be reasonably similar compositionally. The diffe
 the membranes of the Golgi and Endoplasmic Reticulum (ER). The abundance of serines in the region following the lumenal end of Golgi TMSs probably reflects the fact
 that this part of many Golgi enzymes forms a flexible linker that tethers the catalytic
 domain to the membrane [10].
+
 The “Positive-Inside” Rule
 Two publications by von Heijne coined the “Positive-Inside” rule demonstrated the
 practical value of positively charged residue sequence clustering in topology prediction
@@ -673,6 +673,7 @@ residues more commonly were found on the “inside” of the cytoplasm rather th
 periplasm of E. coli. More recently still large-scale sequence analysis of TMHs from
 different organelle membrane surfaces in eukaryotic proteomes, show the clustering of
 positive charge being cytosolic [6, 7, 10].
+
 The Aromatic Belt
 Tyrosine and tryptophan residues commonly are found at the interface boundaries of
 the TMH and this feature is called the “aromatic belt” [6, 10, 15–17]. Not all aromatic
@@ -1101,7 +1102,7 @@ of TMHs. The practical value of positively charged residue sequence clustering i
 topology prediction of TMH was first shown for the plasmalemma in bacteria [13,
 94]. As a trend, the “positive-inside rule” has since been confirmed with statistical
 observations for most membrane proteins and biological membrane types [6, 17, 95, 96].
-However, more recent evidence suggests that, in thylakoid membranes, the positiveinside rule is less applicable due to the co-occurrence of aspartic acid and glutamic
+However, more recent evidence suggests that, in thylakoid membranes, the “positiveinside rule” is less applicable due to the co-occurrence of aspartic acid and glutamic
 acid residues together with positively charged residues [7].
 The positive-inside rule also received support from protein engineering experiments
 that revealed conclusive evidence for positive charges as a topological determinant [13,
@@ -1182,13 +1183,12 @@ CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 
 frequency calculations relative to all amino acid types as in previous studies will blur
 possible preferential localisations of negative charges in the sequence. However, the
-outcome changes when we ask where a negative charge occurs in the sequence relative
-to the total amount of negative charges in the respective sequence region. Thus, by accounting for the rarity of acidic residues with sensitive normalisation, the non-negative
-inside rule/negative-outside rule is clearly supported by the statistical data. We find
-that minor changes in the flank definitions such as taking the TMH boundaries from
-the database or by generating flanks by centrally aligning TMHs and applying some
-standardised TMH length does not have a noticeable influence on the charge bias
-detected.
+outcome changes when we ask where a negative charge occurs in the sequence relative to the total amount of negative charges in the respective sequence region. Thus,
+by accounting for the rarity of acidic residues with sensitive normalisation, the “nonnegative inside rule/negative-outside rule” is clearly supported by the statistical data.
+We find that minor changes in the flank definitions such as taking the TMH boundaries
+from the database or by generating flanks by centrally aligning TMHs and applying
+some standardised TMH length does not have a noticeable influence on the charge
+bias detected.
 
 Third, there are significant differences in the distribution of amino acid residues
 between single-pass and multi-pass TM regions in both the intra-membrane helix and
@@ -1250,7 +1250,6 @@ while µMP is the average number of the respective residues per TMH from multi-p
 Kruskal-Wallis test scores (H statistics) were calculated for the numbers of aspartic acid and glutamic
 acid residues in each helix from single-pass and the number of aspartic acid and glutamic acid residues
 in each helix from multi-pass TMHs
-
 Dataset
 
 Acidic residues (D and E)
@@ -1269,14 +1268,18 @@ value
 
 µ MP
 
-Glutamic acid
+Glutamic acid (E only)
 H statistic
 P
 value
 
 µ SP
 
-µ
+µ MP
+
+H statistic
+P
+value
 
 ExpAll
 
@@ -1295,6 +1298,10 @@ ExpAll
 
 0.042
 
+0.161
+
+46.6 8.64E12
+
 UniHuman
 
 0.076
@@ -1312,6 +1319,11 @@ UniHuman
 
 0.042
 
+0.207
+
+100.3
+1.33E-23
+
 UniER
 
 0.106
@@ -1328,6 +1340,10 @@ UniER
 
 0.045
 
+0.268
+
+26.8 2.24E7
+
 UniGolgi
 
 0.097
@@ -1343,6 +1359,10 @@ UniGolgi
 19.4 1.05E5
 
 0.053
+
+0.201
+
+20.2 7.01E6
 
 UniPM
 
@@ -1361,6 +1381,10 @@ UniPM
 
 0.022
 
+0.213
+
+36.9 1.26E9
+
 UniCress
 
 0.062
@@ -1378,6 +1402,10 @@ UniCress
 
 0.025
 
+0.241
+
+66.0 4.59E16
+
 UniFungi
 
 0.177
@@ -1393,6 +1421,10 @@ UniFungi
 24.5 7.60E7
 
 0.133
+
+0.183
+
+4.6 0.033
 
 UniBacilli
 
@@ -1410,6 +1442,10 @@ UniBacilli
 
 0.04
 
+0.176
+
+12.3 4.54E5
+
 UniEcoli
 
 0.148
@@ -1421,6 +1457,14 @@ UniEcoli
 0.111
 
 0.15
+
+0.1 0.729
+
+0.037
+
+0.163
+
+2.2 0.140
 
 UniArch
 
@@ -1434,13 +1478,13 @@ UniArch
 
 0.344
 
-0.1 0.729
-
-0.037
-
 11.2 8.33E4
 
 0.354
+
+0.247
+
+3.5 0.0624
 
 2.4. RESULTS
 
@@ -1649,15 +1693,13 @@ comparison, we indicated background residue occurrences (dashed lines calculated
 averages for positions -25 to -30 and 25 to 30). The respective average occurrences in
 the inside and outside flanks (calculated from an average of the values at positions -20
 to -10 and 10 to 20 respectively) are shown with wide lines.
-The positive-inside rule becomes even more evident in this normalisation: Whereas
-the occurrence of positively charged residues is about the background level at the
-outside flank, it is about two to three times higher both for the UniHuman and the
-ExpAll datasets at the inside flank. To note, the background level was found to be
-1.7% (lysine) and 1.6% (arginine) in UniHuman and 1.4% (lysine and arginine) in
-ExpAll. The inside flank average is 4.3% (lysine) and 4.6% (arginine) in UniHuman
-and 4.2% (lysine) and 4.6% (arginine) in ExpAll. The outside flank is similar to the
-background noise levels: about 1.4% (lysine) and 1.5% (arginine) in UniHuman and
-about 1.5% (lysine) and 1.4% (arginine) in ExpAll.
+The “positive-inside rule” becomes even more evident in this normalisation: Whereas
+the occurrence of positively charged residues is about the background level at the outside flank, it is about two to three times higher both for the UniHuman and the ExpAll
+datasets at the inside flank. To note, the background level was found to be 1.7% (lysine) and 1.6% (arginine) in UniHuman and 1.4% (lysine and arginine) in ExpAll.
+The inside flank average is 4.3% (lysine) and 4.6% (arginine) in UniHuman and 4.2%
+(lysine) and 4.6% (arginine) in ExpAll. The outside flank is similar to the background
+noise levels: about 1.4% (lysine) and 1.5% (arginine) in UniHuman and about 1.5%
+(lysine) and 1.4% (arginine) in ExpAll.
 Most interestingly, a “negativeinside depletion” trend for the negatively charged
 residues is apparent from the distribution bias. The inside flank averages for glutamic
 acid were 1.1% and 1.4% in UniHuman and ExpAll respectively; for aspartic acid,
@@ -1843,8 +1885,8 @@ from the membrane boundary as at position -9 (D) and position -7 (E) on the insi
 but exceed 2% beginning with position 1 (D) and 3 (E) on the outside (Figure 2.2).
 
 The observation of negative charge suppression at the inside flank, herein the
-negative-inside depletion rule, is statistically significant throughout most datasets in
-this study. The inside-outside bias was counted using the Kruskal-Wallis (KW) test
+“negative-inside depletion” rule, is statistically significant throughout most datasets
+in this study. The inside-outside bias was counted using the Kruskal-Wallis (KW) test
 comparing the occurrence of acidic residues within 10 residues of each TMH inside
 and outside the TMH (Table 2). We studied both the database-reported flanks as well
 as those obtained from central alignment of TMHs (see Methods). The null hypothesis (no difference between the two flanks) could be confidently rejected in all cases
@@ -2165,7 +2207,7 @@ for the positively charged residues on the inside flank as well as a distributio
 region showed consistent enrichment hotspots for tryptophan (e.g., 7.1% at position
 -11 in ExpAll, 6.2% at position -10 in UniHuman with flanks after central TMH alignment) and tyrosine (6.4% at -11 in ExpAll, 7.1% at -11 in UniHuman), and some
 preference can also be seen for the outer interfacial region (e.g., 5.2% at position 11
-for tryptophan in ExpAll, and 5.8% at position 10 for tryptophan in UniHuman) albeit the hot cluster of the outer flank covers fewer positions than that of the inner
+for tryptophan in ExpAll, and 5.8% at position 10 for tryptophan in UniHuman) albeit the “hot” cluster of the outer flank covers fewer positions than that of the inner
 flank. Further, there is an apparent bias of cysteine on the inner flank and interfacial
 region (e.g., 5.5% at position -10 in ExpAll, 5.9% at position -11 in UniHuman), and
 a depression in the outer interfacial region and flank (up to a minimum of 0.3% in
@@ -2353,9 +2395,9 @@ In flanks excluding TMH
 Figure 2.5: Relative percentage heatmaps from predictive and experimental datasets
 corroborate residue distribution differences between TMHs from single-pass and multipass proteins. The residue position aligned to the centre of the TMH is on the horizontal axis,
 and the residue type is on the vertical axis. Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale [52]. The flank lengths in the TMH segments
-were restricted to up to ±10 residues. The scales for each heatmap are shown beneath the respective subfigure. The darkest blue represents 0% distribution, whilst the darkest red represents the
-maximum relative percentage distribution that is denoted by the keys in each subfigure, with white
-being 50% between cold and hot. The central TMH subplots extend from the central TMH residue,
+were restricted to up to ±10 residues. The scales for each heatmap are shown beneath the respective
+subfigure. The darkest blue represents 0% distribution, whilst the darkest red represents the maximum relative percentage distribution that is denoted by the keys in each subfigure, with white being
+50% between “cold” and “hot”. The central TMH subplots extend from the central TMH residue,
 whereas the inner and outer flank subplots use the database-defined TMH boundary and extend from
 that position. a TMHs from the single-pass UniHuman dataset. b Single-pass protein TMHs from
 the ExpAll dataset. c TMHs from the proteins of the multi-pass UniHuman dataset. d TMHs from
@@ -2672,7 +2714,7 @@ values close to 0% on the outside. Whilst the difference is statistically signif
 both TMHs (Table 2) from single-pass proteins (P-value=1.83e-12 and P-value=1.43e11 for two versions of flank determination) and multi-pass proteins (P-values 4.72e-3,
 7.81e-3, 1.28e-4 for three versions of flank determination, see Tables 3A and 3B), the
 distribution along the position axis is heavily fluctuating, maybe as a result of the small
-size of the dataset. However, one can assuredly assign a negative-inside tendency to
+size of the dataset. However, one can assuredly assign a “negative-inside” tendency to
 the flanking regions of Archaean TMHs.
 In the human organelle datasets, we see trend shifts at different stages in the
 secretory pathway. In UniER, there is an enrichment of negative charge on the outside
@@ -2820,7 +2862,7 @@ strongest in simple single-pass TMHs.
 To emphasise, tryptophan is essentially not tolerated within the simple TMHs and
 there are higher peaks of tryptophan occurrence at either flank. We also see a strong
 inside skew for leucine clustering within the core of simple TMHs which is not present
-in the flatter distributions of complex single-pass TMHs and TMHs from multi-pass
+in the “flatter” distributions of complex single-pass TMHs and TMHs from multi-pass
 proteins.
 There is obviously a cysteine-inside preference for simple, single-pass TMHs but
 less in complex, multi-pass TMHs (Figure 2.9). This conclusion is contrary to a
@@ -2901,7 +2943,7 @@ Whereas the “negative-outside/negative-not-inside” skew is observed for dist
 related eukaryotic species and it is also present in Gram-negative bacteria such as
 E. coli, this sequence pattern was not observed for the Gram-positive bacteria in
 which there is no observable bias. In contrast, Archaea have a statistically significant
-negative-inside propensity both for single- and multi-pass TM proteins. It is known
+“negative-inside” propensity both for single- and multi-pass TM proteins. It is known
 that Archaea have remarkably different membranes compared to other kingdoms of
 life due to their extremophile adaptations to stress [113]. Whilst it is unclear why negative charge is distributed so differently in UniArch to the other taxonomic datasets,
 one must appreciate that a much more nuanced approach would be needed to draw
@@ -2933,7 +2975,7 @@ most notably leucine. Therefore, the method of normalisation is critical. We hav
 shown that normalising by the total amount of residues of the amino acid type
 studied within the sequence region under consideration is appropriate to answer
 the question where to find a negatively charged residue if there is any at all (called
-relative percentage in this work).
+“relative percentage” in this work).
 ii The alignment of the TMHs is critical. It was common practice to align TMH
 according to the most cytosolic residue [10] although it is known that the membrane/cytosol boundary of the TMH is not well defined (and the exact boundary is
 even less well understood at the non-cytosolic side). Aligning the TM regions and
@@ -2958,7 +3000,7 @@ CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 flank overlaps between neighbouring TMHs.
 
 iv This classification is even more justified in the light of previous reports about the
-missing hydrophobicity in multi-pass TMHs [30, 77, 115, 116]. Otherwise, the
+“missing hydrophobicity” in multi-pass TMHs [30, 77, 115, 116]. Otherwise, the
 distribution bias well observed among the exclusive anchors could be lost to noise.
 This addresses the more biologically contextualised issue that there are different
 evolutionary pressures on different types of TMHs. The negative charge skew is
@@ -3000,14 +3042,15 @@ the ER, but present in both the Golgi [120] and in the PM [121, 122]. The PM is 
 enriched with densely packed sphingolipids and sterols [123]. Another factor influencing the sequence patterns of TMHs and their along the secretory pathway appears to
 be the variation in membrane potentials [67, 68, 70].
 Several sequence features can be assigned to anchor TMHs: Charged-residue flank
-biases, leucine intra-helix asymmetry, and the aromatic belt.
+biases, leucine intra-helix asymmetry, and the “aromatic belt”.
 We investigated the difference between TMHs from single-pass and multi-pass proteins and found significant differences in sequence composition that are reflective of the
 biologically different roles the TMHs play. To emphasise and validate these findings,
 we separated TMHs from single-pass proteins into simple and complex TMHs [25,
 80]; ones that likely contains mostly TMHs that act as exclusive anchors, and another
 that have roles beyond anchorage. This leaves us with “anchors” (simple TMHs from
-single-pass proteins) and non-anchors (complex TMHs from single-pass proteins, and
-TMHs from multi-pass proteins). If there are strong sequence feature differences between anchors and non-anchors, it is likely that the sequence feature has a role in
+single-pass proteins) and “non-anchors” (complex TMHs from single-pass proteins,
+and TMHs from multi-pass proteins). If there are strong sequence feature differences
+between anchors and non-anchors, it is likely that the sequence feature has a role in
 satisfying membrane constraints to act as an energetically optimally stable anchor.
 Future studies in the area would desirably directly include a comprehensive analyses
 of datasets oligomerised TMHs from single-pass proteins and ascertain if they appear
@@ -3026,13 +3069,12 @@ status of a TMH can be easily computed from its sequence with TMSOC whereas
 the oligomerisation state of most membrane proteins still needs to be experimentally
 determined.
 Unsurprisingly, both positively and negatively charged residues can be seen to be
-more strongly distributed with bias in anchors than non-anchors. Both the positiveinside rule as well as the negative-outside/non-negative-inside bias are mostly observable in simple single-pass TMHs (although they are statistically significant elsewhere).
-It is perhaps true that where a bias is clearly present in both non-anchors and anchors
-alike, it is a strong topological determinant, whereas if the residue is only distributed
-with topological bias in exclusively anchoring TMHs, we can attribute these features
-more specifically to biophysical anchorage. This being said, we should not rule out
-that the same features aid topological determination since negative charge has been
-shown to be a weaker topological determinant than positively charged residues (35).
+more strongly distributed with bias in anchors than non-anchors. Both the “positiveinside” rule as well as the “negative-outside/non-negative-inside” bias are mostly observable in simple single-pass TMHs (although they are statistically significant elsewhere). It is perhaps true that where a bias is clearly present in both non-anchors and
+anchors alike, it is a strong topological determinant, whereas if the residue is only distributed with topological bias in exclusively anchoring TMHs, we can attribute these
+features more specifically to biophysical anchorage. This being said, we should not
+rule out that the same features aid topological determination since negative charge has
+been shown to be a weaker topological determinant than positively charged residues
+(35).
 Tyrosine and tryptophan residues commonly are found at the interfacial boundaries
 of the TMH and this feature is called the “aromatic belt” [6, 10, 15–17] and this was
 thought to be caused by their affinity to the carbonyl groups in the lipid bilayer [124].
@@ -3117,11 +3159,11 @@ Greater net
 positive charge
 
 Figure 2.10: Residue distributions of transmembrane anchors. A view showing additional residue distribution features that TMHs with an anchorage function display.a The
-more classic model of a TMH showing the ”positive-inside” rule [13], the hydrophobic core [29], the
+more classic model of a TMH showing the “positive-inside” rule [13], the hydrophobic core [29], the
 polar enrichment that flanks the hydrophobic stretch [6] and the aromatic belt [16]. b Simple anchors
 may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table ??), intra-membrane leucine asymmetry that likely
 causes hydrophobic skew [10] (Table 4, Figure 2.6), a higher preference for cysteine on the inside
-flanking region (Figure 2.9K and L), a higher net ”positive-inside” charge (Figure 2.4), asymmetric
+flanking region (Figure 2.9K and L), a higher net “positive-inside” charge (Figure 2.4), asymmetric
 skew of the hydrophobic belt favouring the inner leaflet interface (Figure 2.9E, F, G, and H) and
 a negative-outside bias via suppression on the inside flanking region or enrichment on the outside
 flanking region (Figure 2.9C and D, Tables 2 and 3)
@@ -3176,17 +3218,16 @@ or subcellular locations.
 UniProt database files were downloaded by querying the server for different taxonomic groups as well as different subcellular membrane locations; UniHuman (human
 representative proteome), UniCress (Arabidopsis thaliana, otherwise known as mouse
 eared cress, representative proteome), UniER (human endoplasmic reticulum representative proteome), UniPM (human plasma membrane representative proteome),
-UniGolgi (human Golgi representative proteome). To enforce a level of quality control, the queries were restricted to manually reviewed records and transmembrane
-proteins with manually asserted TRANSMEM annotation [107]. Proteins were then
-sorted into multi-pass and single-pass groups according to having more than one or
-exactly one TRANSMEM region respectively. TRANSMEM regions are validated by
-either experimental evidence [107], or according to a robust transmembrane consensus
-of the predictors TMHMM [39], Memsat [40], Phobius [41, 87] and the hydrophobic
-moment plot method of Eisenberg and co-workers [38]. TMHs and flanking regions
-were oriented according to UniProt TOPO DOM annotation according to the keyword
-cytoplasmic. If a cytoplasmic TOPO DOM was found in the previous TOPO DOM
-relative to the TRANSMEM region then the sequence remained the same. If cytoplasmic was found in the next TOPO DOM, relative to the TRANSMEM section
-then the sequence was reversed. Proteins without the cytoplasmic keyword in their
+UniGolgi (human Golgi representative proteome). To enforce a level of quality control,
+the queries were restricted to manually reviewed records and transmembrane proteins
+with manually asserted TRANSMEM annotation [107]. Proteins were then sorted
+into multi-pass and single-pass groups according to having more than one or exactly
+one TRANSMEM region respectively. TRANSMEM regions are validated by either
+experimental evidence [107], or according to a robust transmembrane consensus of
+the predictors TMHMM [39], Memsat [40], Phobius [41, 87] and the hydrophobic moment plot method of Eisenberg and co-workers [38]. TMHs and flanking regions were
+oriented according to UniProt TOPO DOM annotation according to the keyword “cytoplasmic”. If a “cytoplasmic” TOPO DOM was found in the previous TOPO DOM
+relative to the TRANSMEM region then the sequence remained the same. If “cytoplasmic” was found in the next TOPO DOM, relative to the TRANSMEM section
+then the sequence was reversed. Proteins without the “cytoplasmic” keyword in their
 TOPO DOM annotation were omitted from further analysis.
 The TOPDB database [108] is a manually curated database composed of experimental records from the literature that allow determination of the protein topology.
 Experiments include fusion proteins, posttranslational modifications, protease experiments, immunolocalization, chemical modifications as well as revertants, sequence
@@ -3217,8 +3258,8 @@ of which were human records, 926 (191) bacterial records, 46 (5) archaea records
 14 (22) viral records.
 UniHuman. This is a set of mostly human TMH-containing proteins or their close
 mammalian homologues. UniProtKB contains 5187 human protein records that are
-manually annotated with TRANSMEM regions (query = annotation:(type:transmem)
-AND reviewed:yes AND organism:”Homo sapiens (Human) [9606]” AND proteome:up000005640.
+manually annotated with TRANSMEM regions (query = “annotation:(type:transmem)
+AND reviewed:yes AND organism:“Homo sapiens (Human) [9606]” AND proteome:up000005640”.
 To reduce sequence redundancy, these sequences were submitted to UniRef90 [127].
 To note, Uniref90 was chosen over Uniref50 to maintain a viable size of datasets for
 statistical analysis of occurrence of negatively charged residue, which are very rare in
@@ -3242,20 +3283,20 @@ UniProtKB entries. 1660 of these were human entries, 63 from rat, 61 from mouse,
 4 from bovine, and 1 from Chinese hamster. This clustered human dataset was then
 queried for subcellular locations to make the UniER, UniGolgi, and UniPM datasets
 (detailed below).
-UniER. The clustered UniHuman dataset was queried using UniProtKB for endoplasmic reticulum subcellular location (locations:(location:”Endoplasmic reticulum
+UniER. The clustered UniHuman dataset was queried using UniProtKB for endoplasmic reticulum subcellular location (locations:(location:“Endoplasmic reticulum
 [SL-0095]” evidence:manual)). This returned 487 protein entries, 457 of which belonged to human, 24 to mouse and 6 to rat. 287 of these records contained sufficient
 annotation for orientation determination. 132 were single-pass entries of which 120
 records were from humans, 11 from mouse, and 1 from rat. 155 were multi-pass entries containing 898 transmembrane helices. 144 were records from human, 8 were
 from mouse and 3 were from rat.
 UniGolgi. The clustered human dataset was queried using UniProtKB for Golgi
-subcellular location (locations:(location:”Golgi apparatus [SL-0132]” evidence:manual)).
+subcellular location (locations:(location:“Golgi apparatus [SL-0132]” evidence:manual)).
 This returned 323 protein entries, 301 of which belonged to human, 19 to mice, 2 to
 rat and 1 to pig. 269 of these records contained sufficient annotation for orientation
 determination. 206 were single-pass entries of which 195 records were from human, 9
 from mouse, and 1 from rat. 61 were multi-pass entries containing 383 transmembrane
 regions. 54 were records from human, 6 were from mouse and 1 was from rat.
 UniPM. The clustered human dataset was queried using UniProtKB for the cell
-membrane subcellular location (locations:(location:”Cell membrane [SL-0039]” evidence:manual)). This returned 1036 protein entries, 948 of which belonged to humans,
+membrane subcellular location (locations:(location:“Cell membrane [SL-0039]” evidence:manual)). This returned 1036 protein entries, 948 of which belonged to humans,
 62 to mice, and 26 to rats. 920 of these records contained sufficient annotation for
 orientation determination. 493 were single-pass entries of which 451 records were from
 human, 37 from mouse, and 5 from rat. 427 were multi-pass entries containing 3079
@@ -3267,7 +3308,7 @@ UniCress. For the mouse ear cress, a representative proteome dataset was acquire
 
 CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 
-with the query annotation:proteomes:(reference:yes) AND reviewed:yes AND organism:”Arabidopsis thaliana (Mouse-ear cress) [3702]” AND proteome:up000006548. This
+with the query annotation:proteomes:(reference:yes) AND reviewed:yes AND organism:“Arabidopsis thaliana (Mouse-ear cress) [3702]” AND proteome:up000006548. This
 returned 3174 records in UniProtKB. UniRef90 identified 3111 clusters. 3110 of the
 representative sequences were mapped back to UniProtKB. Of those, 3090 were from
 Arabidopsis thaliana, 2 from Hornwort, 1 from cucumber, 1 from tall dodder, 1 from
@@ -3277,38 +3318,41 @@ cyanobacteria), 1 from wheat, and 2 from maize. Of those there were 1146 with su
 records were identified as single-pass, all of which were from Arabidopsis thaliana.
 507 protein records were from multi-pass records, which contained 3823 transmembrane helices. 506 of those records were from Arabidopsis thaliana, whilst 1 was from
 Thermosynechococcus elongatus.
-UniFungi. For the Fungi dataset, the query annotation:(type:transmem) taxonomy:”Fungi [4751]” AND reviewed:yes was used. This returned 5628 records that were
-submitted to Uniref90. Uniref90 identified 4934 representative records, all of which
-were successfully mapped back to UniProtKB. Of those, 2070 had suitable annotation
-for orientation. 1990 records belonged to Ascomycota including 1243 Saccharomycetales. 73 were Basidomycota, and 6 were Apansporoblastina. 729 records contained
-a single TMH region, 702 of which belonged to Ascomycota, 26 to Basidomycota and
-one to Encephalitozoon cuniculi, a Microsporidium parasite. 8698 helices were contained in 1338 records of multi-pass proteins. Of these records 1285 were Ascomycota,
-47 were Basidomycota, and 5 were Apansporoblastina. One TMH from UniFungi was
-discounted from P32897 due to an unknown position.
-UniEcoli. This dataset was generated by querying UniProt with reviewed:yes AND
-organism:Escherichia coli (strain K12)[83333] which returned 941 hits. The hits were
-submitted to Uniref90, which returned 935 clusters. The representative IDs were then
-resubmitted to UniProtKB, all of which returned successfully. 934 were from Bacteria, whilst one were from lambdalike viruses. Of the bacterial records, 862 were
-from various Escherichia species of which 565 were from E. coli strain K12, 28 were
-from Salmonella choleraesuis, 25 were from Shigella and the rest all also fell under
-Gammaproteobacteria class. This dataset contains 54 single-pass proteins and 3888
+UniFungi. For the Fungi dataset, the query “annotation:(type:transmem) taxonomy:“Fungi [4751]” AND reviewed:yes” was used. This returned 5628 records that
+were submitted to Uniref90. Uniref90 identified 4934 representative records, all of
+which were successfully mapped back to UniProtKB. Of those, 2070 had suitable
+annotation for orientation. 1990 records belonged to Ascomycota including 1243 Saccharomycetales. 73 were Basidomycota, and 6 were Apansporoblastina. 729 records
+contained a single TMH region, 702 of which belonged to Ascomycota, 26 to Basidomycota and one to Encephalitozoon cuniculi, a Microsporidium parasite. 8698 helices
+were contained in 1338 records of multi-pass proteins. Of these records 1285 were
+Ascomycota, 47 were Basidomycota, and 5 were Apansporoblastina. One TMH from
+UniFungi was discounted from P32897 due to an unknown position.
+UniEcoli. This dataset was generated by querying UniProt with “reviewed:yes
+AND organism:”Escherichia coli (strain K12)[83333]”” which returned 941 hits. The
+hits were submitted to Uniref90, which returned 935 clusters. The representative IDs
+were then resubmitted to UniProtKB, all of which returned successfully. 934 were
+from Bacteria, whilst one were from lambdalike viruses. Of the bacterial records, 862
+were from various Escherichia species of which 565 were from E. coli strain K12, 28
+were from Salmonella choleraesuis, 25 were from Shigella and the rest all also fell
+under Gammaproteobacteria class. This dataset contains 54 single-pass proteins and
 
 2.6. METHODS
 
 67
 
-helices from 529 multi-pass proteins with sufficient annotation for topological determination.
-UniBacilli. The Bacilli dataset was constructed by querying UniProt for reviewed:yes
-AND taxonomy:Bacilli. This returned 5044 records, which were submitted to Uniref90.
-2,591 clusters were found in Uniref from these records. The representative IDs were
-successfully resubmitted to UniProtKB. 2031 of these were of the genus Bacillales
-whilst 560 were also of the genus Lactobacillales. This dataset contains 124 singlepass proteins and 822 helices from 140 multi-pass proteins.
-UnArch. The Archaea dataset was constructed by querying UniProt for reviewed:yes
-AND taxonomy:Archaea [2157]. This returned 1,152 records, which were submitted
-to Uniref90. 1,054 clusters were found in Uniref from these records. The representative IDs were successfully resubmitted to UniProtKB. 946 records belonged to the
-Euyarchaeota, 101 to Thermoprotei, 4 to Thaumarchaeota, and 3 to Korarchaeum
-cryptofilum. This dataset contains 48 single-pass proteins and 59 multi-pass proteins
-containing 327 helices from 59 proteins.
+3888 helices from 529 multi-pass proteins with sufficient annotation for topological
+determination.
+UniBacilli. The Bacilli dataset was constructed by querying UniProt for “reviewed:yes AND taxonomy:”Bacilli””. This returned 5044 records, which were submitted to Uniref90. 2,591 clusters were found in Uniref from these records. The
+representative IDs were successfully resubmitted to UniProtKB. 2031 of these were of
+the genus Bacillales whilst 560 were also of the genus Lactobacillales. This dataset
+contains 124 single-pass proteins and 822 helices from 140 multi-pass proteins.
+UnArch.
+
+The Archaea dataset was constructed by querying UniProt for “re-
+
+viewed:yes AND taxonomy:”Archaea [2157]””. This returned 1,152 records, which
+were submitted to Uniref90. 1,054 clusters were found in Uniref from these records.
+The representative IDs were successfully resubmitted to UniProtKB. 946 records belonged to the Euyarchaeota, 101 to Thermoprotei, 4 to Thaumarchaeota, and 3 to
+Korarchaeum cryptofilum. This dataset contains 48 single-pass proteins and 59 multipass proteins containing 327 helices from 59 proteins.
 To note, we are aware that proteome datasets are a moving target that have dramatically changed over the years and, probably, will continue to do so to some extent
 in the future[83]. Yet, we think that currently available protein sequence sets are sufficiently good for the purpose as we search for statistical properties in the TMH context
 only.
@@ -3359,9 +3403,9 @@ Q01629, A2ANU3 (UniPM) and Q5JRA8 (UniER).
 The second form of boundary point definition for flank determination was achieved
 with gaplessly aligning all TMHs relative to their central residue at the position equal
 to half the length of the TMHs at either side. Though there is some length variation
-among TMHs, most of them are centred around a length of 20-22 residues. In this case,
-flanks are the sequence extensions beyond the standardised-length 21-residues TMHs.
-We define the inside flanking segments as the positions -20 to -10 and the outside
+among TMHs, most of them are centred around a length of 20-22 residues. In this
+case, flanks are the sequence extensions beyond the standardised-length 21-residues
+TMHs. We define the inside flanking segments as the positions -20 to -10 and the
 
 2.6. METHODS
 Outside
@@ -3405,9 +3449,9 @@ the flank of another TMH, the flank length becomes half the number of residues i
 between the two features. Where they are allowed to overlap, flanking residues may include other
 flanks, or indeed other TMHs.
 
-flanking regions to be +10 to +20 from the central TMH residue (with the label
-0). Instead of emphasizing some artificially selected boundary residue, this definition
-allows the average TMH boundary transition to become apparent.
+outside flanking regions to be +10 to +20 from the central TMH residue (with the
+label “0”). Instead of emphasizing some artificially selected boundary residue, this
+definition allows the average TMH boundary transition to become apparent.
 
 2.6.3
 
@@ -3458,8 +3502,8 @@ Here, the denominator is the maximal number of all residues in any alignment col
 mostly dependent on the most abundant residue types. This type of normalization
 reveals the most preferred residue types at given sequence positions.
 Our second normalization method is independent of the abundance of any amino
-acid types other than the studied one; it answers the question: If there is a residue
-of type in the TMH-containing segment, where would it most likely be? This relative
+acid types other than the studied one; it answers the question: “If there is a residue of
+type in the TMH-containing segment, where would it most likely be?” This relative
 occurrence calculated in Equation 2.2 as:
 
 qi,r =
