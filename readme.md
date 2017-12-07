@@ -31,46 +31,4 @@ I have had no problems using the default Latex package to compile it on a few di
 
 ## Automatically compile via shell.
 
-On any UNIX like system run `bash runme.sh` from a terminal in the thesis directory. This essentially makes an attempt to guess your OS and then run an appropriate sequence that was compatible on either OSX or Linux systems.
-
-## Manually compile.
-
-To manually compile, run the following.
-
-```
-pdflatex thesis.tex
-bibtex thesis.aux
-pdflatex thesis.tex
-pdflatex thesis.tex
-```
-
-There are also many files for debugging that are junk 99.9% of the time.
-
-```
-#Cleaning up the junk files
-## Core latex/pdflatex auxiliary files:
-rm thesis.aux
-rm thesis.lof
-#rm thesis.log
-rm thesis.lot
-rm thesis.fls
-rm thesis.out
-rm thesis.toc
-rm thesis.fmt
-rm thesis.fot
-rm thesis.cb
-rm thesis.cb2rm
-rm thesis.dvi
-rm thesis.acn
-rm thesis.glo
-rm thesis.ist
-
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-rm thesis.bbl
-rm thesis.bcf
-rm thesis.blg
-rm thesis-blx.aux
-rm thesis-blx.bib
-rm thesis.brf
-rm thesis.run.xml
-```
+On any UNIX like system run `bash automatic_latex.sh` from a terminal in the thesis directory. This essentially makes an attempt to guess your OS and then run an appropriate sequence that was compatible on either OSX or Linux systems.
