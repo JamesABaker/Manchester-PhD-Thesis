@@ -548,7 +548,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-December 7, 2017
+December 8, 2017
 
 9
 
@@ -1281,7 +1281,7 @@ rare
 
 In order to reliably compare the amino acid sequence properties of TMHs, we assembled datasets of TMH proteins from what are likely to be the best in terms of quality and comprehensiveness of annotation in eukaryotic and prokaryotic representative
 genomes, as well as composite datasets to represent larger taxonomic groups and with
-regard to subcellular locations (see Table ??). In total, 3292 single-pass TMH segments and 29898 multi-pass TMH segments were extracted from various UniProt [107]
+regard to subcellular locations (see Table 2.1). In total, 3292 single-pass TMH segments and 29898 multi-pass TMH segments were extracted from various UniProt [107]
 text files according to TRANSMEM annotation (download dated 20–03–2016). The
 UniProt datasets used only included manually curated records; however, it is still necessary to check for systematic bias due to the prediction methods used by UniProt for
 TMH annotation in the majority of cases without direct experimental evidence. Therefore, a fully experimentally verified dataset was also generated for comparison. The
@@ -1292,7 +1292,7 @@ to UniProt annotation. To ensure reliability, organelles were only analysed from
 representative redundancy-reduced protein dataset of the most well-studied genome:
 Homo sapiens (referred to as UniHuman herein). The several datasets from UniProt
 are subdivided into different human organelles (UniPM, UniER, UniGolgi) and taxonomical groups (UniHuman, UniCress, UniBacilli, UniEcoli, UniArch, UniFungi) as
-described in Table ?? (see also Methods section). As will be shown below, these various datasets allow us to validate our findings for a variety of conditions, namely with
+described in Table 2.1 (see also Methods section). As will be shown below, these various datasets allow us to validate our findings for a variety of conditions, namely with
 regard (i) to experimental verification of TMHs, (ii) to origin from various species and
 taxonomic groups, (iii) to the number of TMHs in the same protein as well as (iv) to
 subcellular localization. Datasets and programs used in this work can be downloaded
@@ -1307,42 +1307,35 @@ CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 
 Table 2.1: Acidic residues are rarer in TMHs of single-pass proteins than in TMHs of
 multi-pass proteinsThe statistical results when comparing the number of acidic residues in singlepass or multi-pass TMHs within their database-defined limits and excluding any flanks. The number
-of helices per dataset can be found in Table 2 for single-pass TMHs and Table 3 for multi-pass helices.
-µSP is the average number of the respective residues per helix in TMHs from single-pass proteins,
-while µMP is the average number of the respective residues per TMH from multi-pass proteins. The
-Kruskal-Wallis test scores (H statistics) were calculated for the numbers of aspartic acid and glutamic
-acid residues in each helix from single-pass and the number of aspartic acid and glutamic acid residues
-in each helix from multi-pass TMHs
+of helices per dataset can be found in Table 2.2 for single-pass TMHs and Table 3 for multi-pass
+helices. µSP is the average number of the respective residues per helix in TMHs from single-pass
+proteins, while µMP is the average number of the respective residues per TMH from multi-pass
+proteins. The Kruskal-Wallis test scores (H statistics) were calculated for the numbers of aspartic
+acid and glutamic acid residues in each helix from single-pass and the number of aspartic acid and
+glutamic acid residues in each helix from multi-pass TMHs
+Acidic residues (D and E)
 Dataset
 
-Acidic residues (D and E)
+µ SP
 
 Aspartic acid (D only)
 
-µ SP
-
-µ SP
-
-µ MP
-
 H statistic
-P
-value
+µ SP
+P value
 
 µ MP
 
 Glutamic acid (E only)
-H statistic
-P
-value
+H statistic µ SP
+P value
 
-µ SP
+µ MP
 
 µ MP
 
 H statistic
-P
-value
+P value
 
 ExpAll
 
@@ -1357,13 +1350,15 @@ ExpAll
 
 0.157
 
-40.3 2.13E10
+40.3
+2.13E-10
 
 0.042
 
 0.161
 
-46.6 8.64E12
+46.6
+8.64E-12
 
 UniHuman
 
@@ -1378,7 +1373,8 @@ UniHuman
 
 0.191
 
-91.6 1.05E21
+91.6
+1.05E-21
 
 0.042
 
@@ -1393,19 +1389,22 @@ UniER
 
 0.43
 
-34.4 4.39E9
+34.4
+4.39E-9
 
 0.061
 
 0.161
 
-8.0 4.72E-3
+8.0
+4.72E-3
 
 0.045
 
 0.268
 
-26.8 2.24E7
+26.8
+2.24E-7
 
 UniGolgi
 
@@ -1413,19 +1412,22 @@ UniGolgi
 
 0.381
 
-39.8 2.88E10
+39.8
+2.88E-10
 
 0.043
 
 0.18
 
-19.4 1.05E5
+19.4
+1.05E-5
 
 0.053
 
 0.201
 
-20.2 7.01E6
+20.2
+7.01E-6
 
 UniPM
 
@@ -1440,13 +1442,15 @@ UniPM
 
 0.187
 
-32.7 1.06E8
+32.7
+1.06E-8
 
 0.022
 
 0.213
 
-36.9 1.26E9
+36.9
+1.26E-9
 
 UniCress
 
@@ -1461,13 +1465,15 @@ UniCress
 
 0.198
 
-32.5 1.20E8
+32.5
+1.20E-8
 
 0.025
 
 0.241
 
-66.0 4.59E16
+66.0
+4.59E-16
 
 UniFungi
 
@@ -1475,19 +1481,22 @@ UniFungi
 
 0.349
 
-43.1 5.14E11
+43.1
+5.14E-11
 
 0.044
 
 0.166
 
-24.5 7.60E7
+24.5
+7.60E-7
 
 0.133
 
 0.183
 
-4.6 0.033
+4.6
+0.033
 
 UniBacilli
 
@@ -1495,19 +1504,22 @@ UniBacilli
 
 0.352
 
-24.1 9.16E7
+24.1
+9.16E-7
 
 0.048
 
 0.185
 
-11.2 8.27E4
+11.2
+8.27E-4
 
 0.04
 
 0.176
 
-12.3 4.54E5
+12.3
+4.54E-5
 
 UniEcoli
 
@@ -1515,19 +1527,22 @@ UniEcoli
 
 0.315
 
-2.7 0.100
+2.7
+0.100
 
 0.111
 
 0.15
 
-0.1 0.729
+0.1
+0.729
 
 0.037
 
 0.163
 
-2.2 0.140
+2.2
+0.140
 
 UniArch
 
@@ -1535,19 +1550,22 @@ UniArch
 
 0.606
 
-1.8 0.183
+1.8
+0.183
 
 0.083
 
 0.344
 
-11.2 8.33E4
+11.2
+8.33E-4
 
 0.354
 
 0.247
 
-3.5 0.0624
+3.5
+0.0624
 
 2.4. RESULTS
 
@@ -1720,11 +1738,11 @@ very rare in TMHs and their ±5 residue flanks (1.94% and 1.92% from the total o
 454700 in the case of ExpAll). Yet, their occurrence is similar to those of histidine and
 tryptophan and, notably, acidic residues are only about ∼1.5 times less frequent than
 positively charged residues. The observation that acidic residues are more suppressed
-in single-pass TMHs compared with the case of multi-pass TMHs is statistically significant. In Table ??, the acidic residues are counted in the helices (excluding flanking
+in single-pass TMHs compared with the case of multi-pass TMHs is statistically significant. In Table 2.1, the acidic residues are counted in the helices (excluding flanking
 regions) belonging to either multi-pass or single-pass helices. Indeed, single-pass helices appear to tolerate negative charge to a far lesser extent than multi-pass helices
-as the data in the top two rows of Table ?? indicates (for datasets UniHuman and
+as the data in the top two rows of Table 2.1 indicates (for datasets UniHuman and
 ExpAll). The trend is strictly observed throughout subcellular localisations (rows 3–5
-in Table ??) and taxa (rows 6–10). Statistical significance (P0.001) is found in all but
+in Table 2.1) and taxa (rows 6–10). Statistical significance (P0.001) is found in all but
 six cases. These are UniEcoli (D+E, D, E), UniArch (D+E, E) and UniFungi (E).
 The problem is, most likely, that the respective datasets are quite small. Notably, the
 difference between single- and multi-pass TMHs is greatest in UniPM; here, TMHs
@@ -1952,8 +1970,8 @@ but exceed 2% beginning with position 1 (D) and 3 (E) on the outside (Figure 2.2
 The observation of negative charge suppression at the inside flank, herein the
 “negative-inside depletion” rule, is statistically significant throughout most datasets
 in this study. The inside-outside bias was counted using the Kruskal-Wallis (KW) test
-comparing the occurrence of acidic residues within 10 residues of each TMH inside
-and outside the TMH (Table 2). We studied both the database-reported flanks as well
+comparing the occurrence of acidic residues within 10 residues of each TMH inside and
+outside the TMH (Table 2.2). We studied both the database-reported flanks as well
 as those obtained from central alignment of TMHs (see Methods). The null hypothesis (no difference between the two flanks) could be confidently rejected in all cases
 (P-value<0.001 except for UniBacilli), the sign of the H-statistic (KW) indicating suppression at the inside and/or preference for the outside flank (except for UniArch).
 Most importantly, acidic residues were found to be distributed with bias in ExpAll (Pvalue<3.47e-58) and in UniHuman (P-value=1.13e-93). Whereas with UniBacilli, the
@@ -1967,48 +1985,58 @@ CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 
 Table 2.2: Statistical significances for negative charge distribution skew on either side
 of the membrane in single-pass TMHsThe Helices column refers to the total TMHs contained
-in each dataset (ExpALL, TMHs from TOPDB [50]; UniHuman, human representative proteome;
+in each dataset (ExpALL, TMHs from TOPDB [108]; UniHuman, human representative proteome;
 UniER, human endoplasmic reticulum representative proteome; UniGolgi, human Golgi representative proteome; UniPM, human plasma membrane representative proteome; UniCress, Arabidopsis thaliana (mouse-ear cress) representative proteome; UniFungi, fungal representative proteome;
 UniBacilli, Bacilli class representative proteome; UniEcoli, Escherichia coli representative proteome;
 UniArch, Archaea representative proteome; see Methods for details). In the Database-defined flanks
 column, the Negative residues column refers to the total number of negative residues found in the
 ±10 flanking residues on either side of the TMH and does not include residues found in the helix
-itself. In the Flanks after central alignment column, the Negative residues column refers to the total
-number of negative residues found in the 20 to 10 residues and the +10 to +20 residues from the
-centrally aligned residues of the TMH. Unlike the other tables, the global averages are derived from
-the ±20 datasets. The Kruskal-Wallis scores were calculated for negative residues by comparing the
-number of negatively charged residues that were within the 10 inside residues and the 10 outside
+itself. In the “Flanks after central alignment” column, the “Negative residues” column refers to the
+total number of negative residues found in the 20 to 10 residues and the +10 to +20 residues from
+the centrally aligned residues of the TMH. Unlike the other tables, the global averages are derived
+from the ±20 datasets. The Kruskal-Wallis scores were calculated for negative residues by comparing
+the number of negatively charged residues that were within the 10 inside residues and the 10 outside
 residues in either case
 Single-pass
+Dataset
+
+Helices
 
 Database-defined flanks
 
 Flanks after central alignment
 
 Negative residues
-Dataset
-
-Helices
-
-ExpAll
-UniHuman
 
 Negative residues
+
+Inside
+
+Outside
+
 H statistic
 
 P value
 
+Inside
+
+Outside
+
 H statistic
 
 P value
+
+ExpAll
+
+1544
+
+848
 
 1648
 
 258.59
 
-1922
-
-421.53
+3.47E-58 735
 
 1541
 
@@ -2016,21 +2044,37 @@ P value
 
 5.44E-59
 
+UniHuman
+
+1705
+
+780
+
+1922
+
+421.53
+
+1.13E-93
+
 1865
 
 501.86
 
 3.74E-111
 
+652
+
+UniER
+
+132
+
 78
 
 156
 
-60
+23.76
 
-240
-
-76
+1.09E-06 76
 
 150
 
@@ -2038,17 +2082,33 @@ P value
 
 3.33E-06
 
-54
+UniGolgi
+
+206
+
+60
+
+240
+
+104.45
+
+1.61E-24
 
 239
 
 107.18
 
+4.06E-25
+
+UniPM
+
 493
 
 197
 
-4.06E-25
+578
+
+177.68
 
 1.56E-40
 
@@ -2058,11 +2118,15 @@ P value
 
 215.18
 
+1.02E-48
+
 UniCress
 
 632
 
-1.02E-48
+314
+
+450
 
 18.23
 
@@ -2077,7 +2141,10 @@ UniCress
 8.01E-14
 
 UniFungi
-UniBacilli
+
+729
+
+449
 
 631
 
@@ -2093,6 +2160,12 @@ UniBacilli
 
 6.79E-10
 
+UniBacilli
+
+124
+
+90
+
 113
 
 3.73
@@ -2106,6 +2179,10 @@ UniBacilli
 2.53
 
 1.12E-01
+
+UniEcoli
+
+54
 
 32
 
@@ -2123,6 +2200,10 @@ UniBacilli
 
 1.24E-04
 
+UniArch
+
+48
+
 113
 
 8
@@ -2139,71 +2220,7 @@ UniBacilli
 
 1.43E-11
 
-Inside
-
-Outside
-
-Inside
-
-Outside
-
-1544
-
-848
-
-1705
-
-780
-
-3.47E-58
-
-735
-
-1.13E-93
-
-652
-
-UniER
-
-132
-
-UniGolgi
-
-206
-
-23.76
-
-1.09E-06
-
-104.45
-
-1.61E-24
-
-UniPM
-
-578
-
-177.68
-
-314
-
-450
-
-729
-
-449
-
-124
-
-90
-
-UniEcoli
-
 54
-
-UniArch
-
-48
 
 2.4. RESULTS
 
@@ -2491,7 +2508,7 @@ soon as the loops reach some critical length, there are differences between sing
 and multi-pass TMHs with regard to occurrence and distribution of negative charges
 and the inside-suppression/outside-enrichment negative charge bias appears. Not only
 are there more negative charges within the multi-pass TMH itself (in fact, negative
-charges are almost not tolerated in single-pass TMHs; see Table ??), but also, there is
+charges are almost not tolerated in single-pass TMHs; see Table 2.1), but also, there is
 a much stronger negative outside skew in the TMHs of single-pass proteins than those
 of multi-pass proteins.
 
@@ -3009,30 +3026,29 @@ skew is more present in TMHs from single-pass proteins than multi-pass proteins 
 Another key observation is that in single-pass TMHs there is a propensity for leucine on the inner
 over the outer leaflet (Table 4)
 
-skew is statistically significant (see Table 2, P<0.001) except for UniBacilli. Despite
+skew is statistically significant (see Table 2.2, P<0.001) except for UniBacilli. Despite
 statistical significance found for UniFungi (P-value=1.12e-7 for database-defined and
-P-value=6.79e-10 for flanks after central alignment; Table 2), however, the trend is
+P-value=6.79e-10 for flanks after central alignment; Table 2.2), however, the trend is
 not very strong in this case (Figure 2.8B). Whereas the skew is just a suppression of
-negatively charged residues at the inside flank for ExpAll and UniHuman (as well as in
+negatively charged residues at the inside flank for ExpAll and UniHuman (as well as
 
 2.4. RESULTS
 
 51
 
-UniCress), the bias observed for UniEcoli involves also a negative charge enrichment at
-the outside flank. In the case of UniArch (Figure 2.8E), we see a negative inside preference that is 6.0% in the case of aspartic acid, and 6.3% for glutamic acid (not shown),
-with much lower values close to 0% on the outside. Whilst the difference is statistically significant for both TMHs (Table 2) from single-pass proteins (P-value=1.83e-12
-and P-value=1.43e-11 for two versions of flank determination) and multi-pass proteins
-(P-values 4.72e-3, 7.81e-3, 1.28e-4 for three versions of flank determination, see Tables
-3A and 3B), the distribution along the position axis is heavily fluctuating, maybe as a
-result of the small size of the dataset. However, one can assuredly assign a “negativeinside” tendency to the flanking regions of Archaean TMHs.
+in UniCress), the bias observed for UniEcoli involves also a negative charge enrichment at the outside flank. In the case of UniArch (Figure 2.8E), we see a negative
+inside preference that is 6.0% in the case of aspartic acid, and 6.3% for glutamic acid
+(not shown), with much lower values close to 0% on the outside. Whilst the difference is statistically significant for both TMHs (Table 2.2) from single-pass proteins
+(P-value=1.83e-12 and P-value=1.43e-11 for two versions of flank determination) and
+multi-pass proteins (P-values 4.72e-3, 7.81e-3, 1.28e-4 for three versions of flank determination, see Tables 3A and 3B), the distribution along the position axis is heavily
+fluctuating, maybe as a result of the small size of the dataset. However, one can assuredly assign a “negative-inside” tendency to the flanking regions of Archaean TMHs.
 In the human organelle datasets, we see trend shifts at different stages in the
 secretory pathway. In UniER, there is an enrichment of negative charge on the outside
 flank of 1–1.5% that is comparable to the magnitude of the positive inside signal. In
 UniGolgi, there is a suppression of negatively charged residues on the inside flank as
 well as an enrichment on the inside flank resulting in ∼2% distribution difference. For
 UniPM, there is a negative-inside suppression (but no outside enrichment) as well as
-a positive-inside signal. All observed trends are statistically significant (see Table 2,
+a positive-inside signal. All observed trends are statistically significant (see Table 2.2,
 P<1.e-5).
 For multi-pass TMH proteins, we see either the same trends but in a weaker form
 or no skews are observed at all as inspection of the graphs in Figure 2.8 shows. For
@@ -3040,7 +3056,7 @@ datasets UniER, UniGolgi, UniCress, UniFungi, and UniBacilli, the hypothesis of 
 distribution of negatively charged residues cannot be rejected (P-value>0.001, see Table 3); thus, a skew is statistically non-significant. Although UniPM has a statistically
 significant bias (P-value<4.30e-12, Table 3), the trends are more subtle and most
 present for aspartic acid of UniPM. We see many more negative and positive charges
-tolerated within the multi-pass TMHs themselves throughout all datasets (Table ??).
+tolerated within the multi-pass TMHs themselves throughout all datasets (Table 2.1).
 To note, there is a positive-inside rule for all multi-pass datasets studied herein.
 To conclude, we find that negative-charge bias distribution is a feature of singlepass protein TMHs that is present across many membrane types and it can have the
 form of a negative charge suppression at the inside flank or an enrichment of those
@@ -3469,9 +3485,9 @@ positive charge
 
 Figure 2.10: Residue distributions of transmembrane anchors. A view showing additional residue distribution features that TMHs with an anchorage function display.a The
 more classic model of a TMH showing the “positive-inside” rule [13], the hydrophobic core [29], the
-polar enrichment that flanks the hydrophobic stretch [6] and the aromatic belt [16]. b Simple anchors
-may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table ??), intra-membrane leucine asymmetry that likely
-causes hydrophobic skew [10] (Table 4, Figure 2.6), a higher preference for cysteine on the inside
+polar enrichment that flanks the hydrophobic stretch [6] and the aromatic belt [16]. b Simple anchors may display additional features that conform to the membrane biophysical constraints: further
+suppression of charge in the hydrophobic core (Table 2.1), intra-membrane leucine asymmetry that
+likely causes hydrophobic skew [10] (Table 4, Figure 2.6), a higher preference for cysteine on the inside
 flanking region (Figure 2.9K and L), a higher net “positive-inside” charge (Figure 2.4), asymmetric
 skew of the hydrophobic belt favouring the inner leaflet interface (Figure 2.9E, F, G, and H) and
 a negative-outside bias via suppression on the inside flanking region or enrichment on the outside
@@ -3509,7 +3525,7 @@ Methods
 Datasets
 
 Databases.
-All datasets used for analysis are listed in Table ??. Transmembrane protein sequences
+All datasets used for analysis are listed in Table 2.1. Transmembrane protein sequences
 and annotations were taken from TOPDB [108] and UniProt [107]. UniProt derived
 datasets are the most comprehensive datasets built with (i) robust transmembrane
 prediction methods providing the limit of todays achievable accuracy with regard to
@@ -3985,7 +4001,7 @@ slope (B) as a measure of distance between two distributions [130, 131]:
 
 B=
 
-| ln(P value)|
+ln(P value)
 N
 
 (2.4)

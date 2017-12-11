@@ -26,6 +26,10 @@
 \usepackage[acronym]{glossaries}
 \usepackage{ragged2e} % allows handling long code lines and words over multiple lines.
 
+%Special commands
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
 \addbibresource{references.bib} % This is the file containing all your bibtex references. All reference managers can export to this format.
 \graphicspath{{images/}} %Store all your figures here
 
