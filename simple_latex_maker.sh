@@ -1,0 +1,8 @@
+tex thesis.tex
+bibtex thesis.aux
+makeglossaries thesis
+makeglossaries chapter_tailanchor
+makeglossaries chapter_introduction
+makeglossaries chapter_conclusions
+makeglossaries chapter_predictfunction
+pdflatex thesis.tex
