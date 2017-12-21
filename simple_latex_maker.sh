@@ -1,4 +1,4 @@
-tex thesis.tex
+pdflatex thesis.tex
 bibtex thesis.aux
 makeglossaries thesis
 makeglossaries chapter_tailanchor
