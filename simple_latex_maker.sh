@@ -1,5 +1,11 @@
 DATE=$(date +"date-%Y-%m-%d_time-%H-%M-%S")
 
+if [[ "$unamestr" == 'Darwin' ]]; then
+    # This sometimes fixes an issue in my Sierra that stops stuff being found.
+    export PATH="$PATH:/Library/TeX/Distributions/Programs/texbin"
+fi
+
+
 pdflatex thesis.tex
 bibtex thesis.aux
 makeglossaries thesis
@@ -49,4 +55,3 @@ rm thesis-blx.aux
 rm thesis-blx.bib
 rm thesis.brf
 rm thesis.run.xml
-
