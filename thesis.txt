@@ -14,31 +14,31 @@ orcid.org/0000-0003-0874-2298
 Contents
 Abstract
 
-5
+9
 
 Abstract
 
-6
+10
 
 Lay Abstract
 
-7
+11
 
 Declaration
 
-8
+12
 
 Copyright Statement
 
-9
+13
 
 Acknowledgements
 
-10
+14
 
 1 Introduction
 
-11
+15
 
 1.1
 
@@ -48,111 +48,131 @@ Acknowledgements
 
 1.4
 
-1.5
-
 α Helices; Structure And Function . . . . . . . . . . . . . . . . . . . . .
 
-11
+15
 
 1.1.1
 
 Trans-membrane Helix Sequence Composition . . . . . . . . . .
 
-11
+15
 
 1.1.2
 
 Hydrophobicity of Trans-membrane Segments . . . . . . . . . .
 
-15
+19
 
 1.1.3
 
 Sequence Complexity . . . . . . . . . . . . . . . . . . . . . . . .
 
-17
+21
 
 α Helices In Membranes . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-18
+22
 
 1.2.1
 
 The Transmembrane Protein Problem . . . . . . . . . . . . . . .
 
-18
+22
 
 1.2.2
 
 The Importance Of Transmembrane Proteins . . . . . . . . . . .
 
-20
+23
 
 Biological Membrane Composition . . . . . . . . . . . . . . . . . . . . .
 
-20
+24
 
 1.3.1
 
 Lipids of the Membrane . . . . . . . . . . . . . . . . . . . . . .
 
-20
+24
 
 1.3.2
 
 Membrane Potential . . . . . . . . . . . . . . . . . . . . . . . .
 
-22
+25
 
 Biogenesis of Trans-membrane Proteins . . . . . . . . . . . . . . . . . .
 
-23
+26
 
 1.4.1
 
-Translocation . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Translocation Overview
 
-23
+. . . . . . . . . . . . . . . . . . . . . .
+
+26
 
 1.4.2
 
-Translocon Independent Membrane Insertion . . . . . . . . . . .
+Post-Translational Translocation in Eukaryotes . . . . . . . . .
 
-23
+27
 
-Aims of This Thesis. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+1.4.3
 
-24
+Post-Translational Translocation in Prokaryotes . . . . . . . . .
+
+27
 
 2
 
-2 The “Negative-Outside” Rule
+1.5
 
-25
+1.4.4
+
+Co-Translational Translocation in Prokaryotes . . . . . . . . . .
+
+27
+
+1.4.5
+
+Translocon Independent Membrane Insertion . . . . . . . . . . .
+
+27
+
+Aims of This Thesis. . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+28
+
+2 The “Negative-Outside” Rule
+
+29
 
 2.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-25
+29
 
 2.2
 
 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-25
+29
 
 2.3
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-26
+30
 
 2.4
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-31
+35
 
 2.4.1
 
@@ -167,15 +187,15 @@ Amino acid residue distribution analysis reveals a “negative-notinside/negativ
 
 2.4.3
 
-31
-
 35
+
+39
 
 Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass TMH segments — the negative outside enrichment rule . . . . . . . . . .
 
 2.4.4
 
-39
+43
 
 Further significant sequence differences between single-pass and
 multi-pass helices: distribution of tryptophan, tyrosine, proline
@@ -188,122 +208,122 @@ multi-pass proteins . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.4.6
 
-43
+49
 
 A negative-outside (or negative-non-inside) signal is present
 across many membrane types . . . . . . . . . . . . . . . . . . .
 
 2.4.7
 
-42
+46
 
-47
+51
 
 Amino acid compositional skews in relation to TMH complexity
 and anchorage function . . . . . . . . . . . . . . . . . . . . . . .
 
-49
+54
 
 2.5
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-53
+57
 
 2.6
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-61
+65
 
 2.6.1
 
 Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-61
+65
 
 2.6.2
 
 On the determination of flanking regions for TMHs and the
 TMH alignment . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-67
+70
 
 2.6.3
 
 Separating simple and complex single-pass helices. . . . . . . . .
 
-69
+72
 
 2.6.4
 
 Distribution normalisation . . . . . . . . . . . . . . . . . . . . .
 
-69
+73
 
-2.6.5
+3
+
+2.6.5
 
 Hydrophobicity calculations . . . . . . . . . . . . . . . . . . . .
 
-70
+75
 
 2.6.6
 
 Normalised net charge calculations . . . . . . . . . . . . . . . .
 
-71
+75
 
 2.6.7
 
 Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-72
+75
 
-3
+3 Identifying Intramembrane Folds Using Sequence Complexity
 
-3 Identifying Intramembrane Folds Using Sequence Complexity
-
-73
+77
 
 3.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.3
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.3.1
 
 Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.3.2
 
 Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.3.3
 
 Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-73
+77
 
 3.4
 
@@ -316,109 +336,111 @@ TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . .
 
 3.5
 
-73
+77
 
 Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . .
 
-74
+78
 
 3.4.3
 
 The pattern is present for GPCR subfamilies . . . . . . . . . . .
 
-74
+78
 
 3.4.4
 
 The prevelance of this amongst all TMPs. . . . . . . . . . . . .
 
-74
+78
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-74
+78
 
 4 Tail-Anchored Protein Datasets
 
-75
+79
 
 4.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-75
+79
 
 4.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-75
+79
 
 4.3
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-76
+80
 
 4.3.1
 
 Filtering the Uniprot database . . . . . . . . . . . . . . . . . . .
 
-76
+80
 
 4.3.2
 
 Calculating Hydrophobicity . . . . . . . . . . . . . . . . . . . .
 
-77
+81
 
 4.3.3
 
 Calculating Sequence Complexity . . . . . . . . . . . . . . . . .
 
-77
+81
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-77
+81
 
 4.4.1
 
 An Up To Date Tail-Anchor Dataset . . . . . . . . . . . . . . .
 
-77
+81
 
 4.4.2
 
 Potential Tail-Anchored SNARE Protein Discovery . . . . . . .
 
-77
+81
 
 4.4.3
 
 Biology of Spontaneously Inserting Tail Anchored Proteins . . .
 
-77
+81
 
 4.4
 
-5 Conclusions
+4
+
+5 Conclusions
 5.1
 
-78
+82
 
 Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-78
+82
 
 5.1.1
 
-78
+82
 
 The hydrophobicity–sequence complexity continuum . . . . . . .
 
 Word count 22,000
-4
+5
 
 List of Tables
 2.1
@@ -428,14 +450,14 @@ of multi-pass proteins . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.2
 
-32
+36
 
 Statistical significances for negative charge distribution skew on either
 side of the membrane in single-pass TMHs . . . . . . . . . . . . . . . .
 
-5
+6
 
-38
+42
 
 List of Figures
 1.1
@@ -450,20 +472,20 @@ TMHs and ±5 flanking residues. . . . . . . . . . . . . . . . . . . . . . .
 
 2.2
 
-12
+16
 
-33
+37
 
 Relative percentage normalisation reveals a negative-outside bias in
 TMHs from single-pass protein datasets. . . . . . . . . . . . . . . . . .
 
-36
+40
 
 2.3
 
 Negative-outside bias is very subtle in TMHs from multi-pass proteins.
 
-40
+44
 
 2.4
 
@@ -472,7 +494,7 @@ positive inside charge in single-pass TMHs than multi-pass TMHs. . . .
 
 2.5
 
-41
+45
 
 Relative percentage heatmaps from predictive and experimental
 datasets corroborate residue distribution differences between TMHs
@@ -484,71 +506,52 @@ There is a difference in the hydrophobic profiles of TMHs from singlepass and mu
 
 2.7
 
-46
+50
 
 Comparing charged amino acid distributions in TMHs of multi-pass and
 single-pass proteins across different species and organelles. . . . . . . .
 
 2.9
 
-46
+50
 
 There is a difference in the hydrophobic profiles of TMHs from singlepass and multi-pass proteins. . . . . . . . . . . . . . . . . . . . . . . . .
 
 2.8
 
-44
-
 48
+
+52
 
 Comparing the amino acid relative percentage distributions of simple
 and complex TMHs from single-pass proteins and TMHs from multipass proteins. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-50
+55
 
 2.10 Residue distributions of transmembrane anchors. A view showing additional residue distribution features that TMHs with an anchorage function display. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-6
+7
 
-60
+64
 
 2.11 The lengths of flanks and TMHs in multi-pass and single-pass proteins
 in the UniHuman and ExpAll dataset. . . . . . . . . . . . . . . . . . .
 
-68
+72
 
 2.12 Relative percentage heatmaps from the predictive datasets calculated
 by fractions of the absolute maximum and by the relative percentage of
 a given amino acid type. . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-7
-
-71
-
-Acronyms
-ER Endoplasmic Reticulum. 13, 16, 21, 23, 29, 58
-KS Kolmogorov-Smirnov. 51, 52, 72
-KW Kruskal-Wallis. 37, 51, 52, 72
-MD Molecular Dynamics. 21
-PDB Protein Data Bank. 12, 30
-PM Plasma Membrane. 58
-POPC Palmitoyloleoylphosphatidylcholine. 16, 46
-SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 23, 24,
-75
-SP Signal Peptide. 19
-TM Trans-membrane. 11, 14, 24, 27–30, 42, 45, 51, 56, 68
-TMH Trans-membrane Helix. 11–21, 23–37, 39–49, 51–64, 66–70, 72
-TMP Trans-membrane Protein. 11, 13, 18–20, 25, 26, 28, 30, 31, 33, 34, 42, 45, 47,
-53–57
-TMS Trans-membrane Segment. 11, 13, 19
-
 8
+
+74
 
 The University of Manchester
 James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-March 2, 2018
+March 29, 2018
 
 9
 
@@ -1077,10 +1080,9 @@ tration of an ion in that cell environment.
 One problem in a biological membranes is that the compartments always involve
 multiple ion channels. The Goldman equation aims to solve this problem by accounting for several ions that contribute to cout and cin (such as K + , N a+ , and Cl− )
 simultaneously:
-
 RT
-× ln
 Em =
+× ln
 F
 
 
@@ -1099,24 +1101,43 @@ throughout the solution. This is compounded because it assumes the constant pote
 for example, a specific adsorption of either part of the redox pair or the competitive
 adsorption of a supporting ion in solution [70]. Therefore one should be cautious to
 understand the limitations and variability when extrapolating experimentally determined E0 , particularly when using such an idealised model in a biological context.
-
 Organelle Membrane Potentials
-
 Several studies have attempted to quantify the various voltages across the intracellular
 membranes. Negativity was found in the ER, with a voltage between between 75mV
 to 95mV in the ER membrane [71, 72]. Negativity was found in the mitochondrial
 matrix with a voltage across the mitochondrial membrane at 150mV [73]. No notable
 membrane potential has been identified in the Golgi [74, 75].
 
-1.4. BIOGENESIS OF TRANS-MEMBRANE PROTEINS
-
 1.4
 1.4.1
 
+Biogenesis of Trans-membrane Proteins
+Translocation Overview
+
+There are, broadly speaking, 3 types of translocation; BiP-mediated eukaryotic posttranslational translocation, bacterial post-translational insertion using the Tat system
+
+1.4. BIOGENESIS OF TRANS-MEMBRANE PROTEINS
+
 27
 
-Biogenesis of Trans-membrane Proteins
-Translocation
+for folded proteins and the Sec system for unfolded proteins, and co-translational insertion in bacteria through the holotranslocon (HTL) protein complex or its individual
+components.
+Translocation is when a ribosome translates the ribonucleic acid (RNA) to a nascent
+peptide chain which is handed directly or indirectly to insertion machinery which
+threads the chain through and, in the case of TMHs, releases the TMH into the
+membrane environment.
+
+1.4.2
+
+Post-Translational Translocation in Eukaryotes
+
+1.4.3
+
+Post-Translational Translocation in Prokaryotes
+
+1.4.4
+
+Co-Translational Translocation in Prokaryotes
 
 Tail-Anchored Proteins Post-Translationally Insert
 Tail-anchored proteins are a topologically distinct class of intracellular proteins defined
@@ -1128,7 +1149,7 @@ drug payloads into the membrane.
 Notably, known SNARE TMHs are highly hydrophobic even compared to other
 tail anchored TMHs.
 
-1.4.2
+1.4.5
 
 Translocon Independent Membrane Insertion
 
@@ -1138,6 +1159,11 @@ tail-anchored proteins have been shown to be able to spontaneously insert into t
 membrane independently from the translocon [50, 76, 77].
 It is postulated that there are electrostatic factors in the flanking regions that
 contribute to this spontaneous membrane insertion. Our experimental collaborators in
+
+28
+
+CHAPTER 1. INTRODUCTION
+
 Stephen Highs group are interested in a small group of tail-anchored proteins that have
 very polar trans-membrane domains and are capable of liposome membrane insertion
 without insertion machinery, also known as spontaneous insertion. They have found
@@ -1147,11 +1173,6 @@ belonging to a protein of known spontaneously inserting domains. Their studies h
 moved the focus of spontaneous insertion away from the loop regions and onto the
 physicochemical factors of the TMH itself. The idea that SNARE proteins are modular
 and capable of spontaneous insertion has significant implications for both biomedical
-
-28
-
-CHAPTER 1. INTRODUCTION
-
 application in liposome-based drug delivery and can aid future research for testing
 complex biological molecular networks [78, 79].
 
@@ -4249,9 +4270,22 @@ An Up To Date Tail-Anchor Dataset
 
 Potential Tail-Anchored SNARE Protein Discovery
 
+Previously, two datasets of experimentally validated tail anchors and SNAREs were
+gathered from the literature and databases. SNARE proteins were noted to have more
+of the most hydrophobic amino acids than the general population of tail anchors [136].
+We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential tail anchored proteins generated in this study onto
+the experimentally validated tail anchored hydrophobicity plot compiled by Kalbfleisch
+et al. published in Traffic 2007 (8: 1687-1694) (Figure 3). This method has revealed
+potential tail anchored SNAREs with SNARE motif domains that may not appear in
+conventional screening.
+
 4.4.3
 
 Biology of Spontaneously Inserting Tail Anchored Proteins
+
+In addition, predicted insertion machinery dependent TAs with TMHs that are more
+polar on average than spontaneously inserting tail anchored protein cytochrome b5
+have been highlighted.
 
 Chapter 5
 Conclusions
