@@ -13,6 +13,7 @@ makeglossaries chapter_introduction
 makeglossaries chapter_conclusions
 makeglossaries chapter_predictfunction
 pdflatex thesis.tex
+pdflatex thesis.tex
 
 pdftotext thesis.pdf
 echo "New lines, Wordcount, Characters"

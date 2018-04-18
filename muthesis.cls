@@ -452,7 +452,8 @@ institute of learning.}
         \vfill}
 
 \def\beforeabstract{
-        \pagenumbering{arabic}
+        %\pagenumbering{arabic}
+        \pagenumbering{roman}
         \pagestyle{plain}
         \titlep
         \ifsigpage\signaturepage\fi
@@ -473,7 +474,8 @@ institute of learning.}
 
         \printglossaries
         \newpage
-        \addcontentsline{toc}{chapter}{Abstract}
+        %\phantomsection
+        %\addcontentsline{toc}{chapter}{Abstract}
 
         \ifx\degreetitle\@msc
              \chapter*{Abstract}
