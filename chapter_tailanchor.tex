@@ -7,20 +7,20 @@ This study aims to identify \gls{snare} proteins in eukaryotic proteomes by filt
 The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
 A previous study predicted 411 tail anchor proteins~\cite{Kalbfleisch2007}.
 
-Tail anchored proteins are a topologically distinct class of intracellular proteins defined by their single carboxy-terminal transmembrane domain with a cytosolic facing amino-terminus.
-Tail anchored proteins are involved in a range of key cellular functions including protein translocation and apoptosis.
-Additionally, within the tail anchored class of proteins are a set of vesicle fusion proteins called SNARE proteins.
-There is biomedical interest in SNARE drug delivery mechanisms.
-SNAREs can fuse liposomes containing various drug payloads into the membrane.
-This study aims to identify SNARE proteins in eukaryotic proteomes by filtering through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions.
+~\gls{ta} proteins are a topologically distinct class of intracellular proteins defined by their single carboxy-terminal \~gls{tmd} with a cytosolic facing amino-terminus.
+~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation and apoptosis.
+Additionally, within the ~\gls{ta} class of proteins are a set of vesicle fusion proteins called ~\gls{snare} proteins.
+There is biomedical interest in ~\gls{snare} drug delivery mechanisms.
+~\gls{snare}s can fuse liposomes containing various drug payloads into the membrane.
+This study aims to identify ~\gls{snare} proteins in eukaryotic proteomes by filtering through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions.
 The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
 A previous study by Kalbfleisch et al.
 published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins.
-This study uses more stringent filtering methods, and a larger dataset, to identify 351 novel predicted tail anchored proteins from a comprehensive human dataset.
+This study uses more stringent filtering methods, and a larger dataset, to identify 351 novel predicted ~\gls{ta} proteins from a comprehensive human dataset.
 The tools developed herein are openly available for re-application to other datasets.
-Notably, known SNARE transmembrane helices are highly hydrophobic even compared to other tail anchored transmembrane helices.
-We compare Kyte and Doolittle hydrophobicity profiles of our filtered human protein list against the profiles of previously known SNARE and tail anchored proteins.
-This provided a list of potential SNARE proteins in addition to potential spontaneously inserting tail anchored proteins similar to cytochrome b5 which have the least hydrophobic transmembrane helices.
+Notably, known ~\gls{snare} transmembrane helices are highly hydrophobic even compared to other ~\gls{ta} transmembrane helices.
+We compare Kyte and Doolittle hydrophobicity profiles of our filtered human protein list against the profiles of previously known ~\gls{snare} and ~\gls{ta} proteins.
+This provided a list of potential ~\gls{snare} proteins in addition to potential spontaneously inserting ~\gls{ta} proteins similar to cytochrome b5 which have the least hydrophobic transmembrane helices.
 
 \section{Methods}
 The original list UniProt protein database was queried for records containing ``TRANSMEM'' annotation on June 15, 2016, totaling 75826 records from swissprot, and 12322000 records from TrEMBL.
@@ -59,7 +59,7 @@ The non\-redundant human dataset of 145,715 proteins from SwissProt and TrEMBL~\
 Then TMDs not within 15AA of the C terminal were removed, resulting in 455 proteins.
 No splice isoforms were detected according to searching for NON\_TER annotation.
 195 proteins of the 411 predicted proteins from the previous study were successfully mapped using the Uniprot mapping tools~\cite{TheUniProtConsortium2014}.
-Duplicate IDs from the previously predicted tail anchored protein were removed from the set.
+Duplicate IDs from the previously predicted ~\gls{ta} protein were removed from the set.
 The remaining dataset contained XXX proteins.
 
 \subsection{Calculating Hydrophobicity}
@@ -70,11 +70,11 @@ The remaining dataset contained XXX proteins.
 
 \subsection{An Up To Date Tail-Anchor Dataset}
 
-\subsection{Potential Tail-Anchored SNARE Protein Discovery}
-Previously, two datasets of experimentally validated tail anchors and SNAREs were gathered from the literature and databases.
-SNARE proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
-We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential tail anchored proteins generated in this study onto the experimentally validated tail anchored hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694) (Figure 3).
-This method has revealed potential tail anchored SNAREs with SNARE motif domains that may not appear in conventional screening.
+\subsection{Potential Tail-Anchored ~\gls{snare} Protein Discovery}
+Previously, two datasets of experimentally validated tail anchors and ~\gls{snare}s were gathered from the literature and databases.
+~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
+We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential ~\gls{ta} proteins generated in this study onto the experimentally validated ~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694) (Figure 3).
+This method has revealed potential ~\gls{ta} ~\gls{snare}s with ~\gls{snare} motif domains that may not appear in conventional screening.
 
-\subsection{Biology of Spontaneously Inserting Tail Anchored Proteins}
-In addition, predicted insertion machinery dependent TAs with TMHs that are more polar on average than spontaneously inserting tail anchored protein cytochrome b5 have been highlighted.
+\subsection{Biology of Spontaneously Inserting ~\gls{ta} Proteins}
+In addition, predicted insertion machinery dependent TAs with TMHs that are more polar on average than spontaneously inserting ~\gls{ta} protein cytochrome b5 have been highlighted.
