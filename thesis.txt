@@ -14,23 +14,23 @@ orcid.org/0000-0003-0874-2298
 Contents
 Abstract
 
-xi
+ix
 
 Lay Abstract
 
-xii
+x
 
 Declaration
 
-xiii
+xi
 
 Copyright Statement
 
-xiv
+xii
 
 Acknowledgements
 
-xv
+xiii
 
 1 Introduction
 1.1
@@ -538,32 +538,6 @@ vii
 
 60
 
-Acronyms
-ER Endoplasmic Reticulum. 3, 6, 11, 13, 20, 49
-HTL Holotranslocon. 13
-KS Kolmogorov-Smirnov. 42, 43, 63
-KW Kruskal-Wallis. 28, 42, 43, 63
-MD Molecular Dynamics. 11
-PDB Protein Data Bank. 2, 21
-PM Plasma Membrane. 49
-POPC Palmitoyloleoylphosphatidylcholine. 6, 37
-RNA Ribonucleic Acid. 13
-SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 14, 15,
-66–68
-SP Signal Peptide. 9
-SR Signal Recognition Particle Receptor. 13
-SRP Signal Recognition Particle. 13, 14
-TA Tail Anchor. 14, 66–68
-TM Trans-membrane. 1, 4, 15, 18–21, 33, 36, 42, 47, 59
-TMH Trans-membrane Helix. 1–11, 13–28, 30–40, 42–55, 57–61, 63
-viii
-
-TMP Trans-membrane Protein. 1, 3, 8–10, 13, 16, 17, 19, 21, 22, 24, 25, 33, 36, 38,
-44–48
-TMS Trans-membrane Segment. 1, 3, 9
-
-ix
-
 The University of Manchester
 James Alexander Baker
 Doctor of Philosophy
@@ -571,7 +545,7 @@ Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
 April 19, 2018
 
-x
+viii
 
 Abstract
 Non–polar helices figure prominently in structural biology, from the first protein structure (myoglobin) through trans-membrane segments, to current work on recognition
@@ -591,7 +565,7 @@ In this thesis, I make the argument that there are different classifications of 
 different classes interact differently with the membrane, and each class serve the protein
 differently.
 
-xi
+ix
 
 Lay Abstract
 The survival of each of our cells relies on a a cellular barrier to separate themselves
@@ -599,12 +573,13 @@ from the surrounding environment. This cellular skin can be thought of as the ba
 contains all the important machinery required for normal cell function. The barrier
 works by being chemically very different to both the outside environment, and to the
 inside of the cell, which in both cases are mostly water. The membrane is fatty, and
-because of that repels water.
+because of that, the membrane repels water.
 Proteins are the molecular machinery that form much of the cell structure and
 shape as well as carrying out many of the cell’s routine tasks. Around a third of
 our genome codes for proteins that are permanently embedded in the membrane, but
 because these proteins are adapted for a life in the water repelling cell wall, they are
-very hard to study in laboratories which need to look at proteins in water.
+very hard to study in laboratories which often rely on methods that hold proteins in
+water based solutions.
 In this thesis, we focus particularly on the parts of the protein that are embedded
 in the water repelling cellular skin. Traditionally, these regions are hard to study,
 because we must first remove them from the cellular wall, which causes problems since
@@ -616,8 +591,10 @@ been evolutionarily selected across bacteria, animals, and plants. This is espec
 true for regions that specifically anchor the protein into the cellular wall. Where the
 embedded regions have additional function, for example ferrying something in or out
 of the cell, the negative charge “bias” can no longer be seen.
+This thesis demonstrates the radically different evolutionary story that transmembrane regions have compared to other proteins; the sacrifices they make for their stability in order to maintain their function, and their optmisation through evolutionary
+timescales to become mould to the membrane as best they can.
 
-xii
+x
 
 Declaration
 No portion of the work referred to in the thesis has been
@@ -625,7 +602,7 @@ submitted in support of an application for another degree
 or qualification of this or any other university or other
 institute of learning.
 
-xiii
+xi
 
 Copyright Statement
 i. The author of this thesis (including any appendices and/or schedules to this thesis)
@@ -650,7 +627,7 @@ IP Policy (see http://documents.manchester.ac.uk/DocuInfo.aspx?DocID=487), in
 any relevant Thesis restriction declarations deposited in the University Library,
 The University Library’s regulations (see http://www.manchester.ac.uk/library/aboutus/regulations) and in The University’s Policy on Presentation of Theses.
 
-xiv
+xii
 
 Acknowledgements
 I would like to thank all members of both the Eisenhaber research group, as well as the
@@ -660,7 +637,7 @@ guidance during my research. I would also like to thank The University of Manche
 and the A*STAR Singapore Bioinformatics Institute for funding the project. Furthermore, I would like to extend my gratitude to the research group of Professor Stephen
 High.
 
-xv
+xiii
 
 Chapter 1
 Introduction
@@ -1432,14 +1409,11 @@ proteins. The Kruskal-Wallis test scores (H statistics) were calculated for the 
 acid and glutamic acid residues in each helix from single-pass and the number of aspartic acid and
 glutamic acid residues in each helix from multi-pass TMHs
 Acidic residues (D and E)
-
-Aspartic acid (D only)
-
-Glutamic acid (E only)
-
 Dataset
 
 µ SP
+
+Aspartic acid (D only)
 
 H statistic
 µ SP
@@ -1447,6 +1421,7 @@ P value
 
 µ MP
 
+Glutamic acid (E only)
 H statistic µ SP
 P value
 
@@ -4354,10 +4329,9 @@ BIBLIOGRAPHY
 10. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of
 Transmembrane Domains Reveals Organelle-Specific Properties. Cell 142, 158–
 169 (2010).
-11. Skasko, M., Wang, Y., Tian, Y., Tokarev, A., Munguia, J., Ruiz, A., Stephens, E.
-B., Opella, S. J. & Guatelli, O. HIV-1 Vpu protein antagonizes innate restriction
-factor BST-2 via lipid-embedded helix-helix interactions. Journal of Biological
-Chemistry 287, 58–67 (2012).
+11. Skasko, M., Wang, Y., Tian, Y., Tokarev, A., Munguia, J., Ruiz, A., Stephens,
+E. B., Opella, S. J. & Guatelli, O. HIV-1 Vpu protein antagonizes innate restriction factor BST-2 via lipid-embedded helix-helix interactions. Journal of
+Biological Chemistry 287, 58–67 (2012).
 12. Jayasinghe, S, Hristova, K & White, S. H. MPtopo: A database of membrane
 protein topology. Protein Science 10, 455–458 (2001).
 13. Von Heijne, G. Control of topology and mode of assembly of a polytopic membrane protein by positively charged residues. en. Nature 341, 456–458 (1989).
@@ -4439,7 +4413,7 @@ Annual review of biochemistry 53, 595–623 (1984).
 1027–1036 (2004).
 43. Wootton, J. C. & Federhen, S. [33] Analysis of compositionally biased regions
 in sequence databases. Elsevier, 554–571 (1996).
-44. Pinho, A. J., Garcia, S. P., Pratas, D. & Ferreira, P. J. S. G. DNA sequences at
+44. Pinho, A. J., Garcia, S. P., Pratas, D. & Ferreira, P. J.S. G. DNA sequences at
 a glance. PLoS ONE 8 (ed Gibas, C.) e79922 (2013).
 45. Oliver, J. L., Bernaola-Galván, P, Guerrero-Garcı́a, J & Román-Roldán, R.
 Entropic profiles of DNA sequences through chaos-game-derived images. Journal
@@ -4525,9 +4499,9 @@ United States of America 108, 7351–6 (2011).
 
 BIBLIOGRAPHY
 
-72. Worley, J. F., McIntyre, M. S., Spencer, B., Mertz, R. J., Roe, M. W. & Dukes, I.
-D. Endoplasmic reticulum calcium store regulates membrane potential in mouse
-islet ??-cells. Journal of Biological Chemistry 269, 14359–14362 (1994).
+72. Worley, J. F., McIntyre, M. S., Spencer, B., Mertz, R. J., Roe, M. W. & Dukes,
+I. D. Endoplasmic reticulum calcium store regulates membrane potential in
+mouse islet ??-cells. Journal of Biological Chemistry 269, 14359–14362 (1994).
 73. Perry, S. W., Norman, J. P., Barbieri, J., Brown, E. B. & Gelbard, H. A. Mitochondrial membrane potential probes and the proton gradient: A practical
 usage guide. BioTechniques 50, 98–115 (2011).
 74. Schapiro, F. B. & Grinstein, S. Determinants of the pH of the Golgi complex.
