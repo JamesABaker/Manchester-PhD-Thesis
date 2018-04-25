@@ -23,7 +23,6 @@ We compare Kyte and Doolittle hydrophobicity profiles of our filtered human prot
 This provided a list of potential ~\gls{snare} proteins in addition to potential spontaneously inserting ~\gls{ta} proteins similar to cytochrome b5 which have the least hydrophobic transmembrane helices.
 
 \section{Methods}
-The original list UniProt protein database was queried for records containing ``TRANSMEM'' annotation on June 15, 2016, totaling 75826 records from swissprot, and 12322000 records from TrEMBL.
 %An executable version of the program TMPRED (for MacOS X) was provided by Dr Laurent Falquet of the Swiss Institute of Bioinformatics.
 %A FASTA sequence for each protein in our original list [NCBI nonredundant protein database (ftp://ftp.ncbi.nih.gov/genomes/H_sapiens/protein/protein.fa.gz) queried on June 21, 2007, totaling 34 180 proteins] was run through the TMPRED software.
 %Those predicted transmembrane regions with a score greater than or equal to our threshold of 1500 were identified.
@@ -52,19 +51,45 @@ The original list UniProt protein database was queried for records containing ``
 %The dot products were then calculated by multiplying each individual amino acid contribution of a specified representative average against each analogous amino acid contribution of a specific protein’s transmembrane region.
 %These values were then summed to produce the representative value reflecting the coincidence of amino acid distributions.
 
-\subsection{Filtering the Uniprot database}
-Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools.
-The non\-redundant human dataset of 145,715 proteins from SwissProt and TrEMBL~\cite{TheUniProtConsortium2014}.
-2,478 singlepass proteins were programmatically extracted according to the TRANSMEM count from that list.
-Then TMDs not within 15AA of the C terminal were removed, resulting in 455 proteins.
-No splice isoforms were detected according to searching for NON\_TER annotation.
+\subsection{Building a list of Tail-Anchors}
+Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools. Whilst their study focussed on the human proteome, here we take into account the entire TrEMBL and Swiss-Prot database and then steratify by organism at the end of te pipeline.
+
+\subsubsection{Swiss-Prot Tail Anchored Dataset According to Filters}
+There were 557012 protein records downloaded from Swiss-Prot via UniProt~\cite{TheUniProtConsortium2014} (Downloaded 24--04--2018).
+106149~\gls{tmh}s (\url{TRANSMEM} annotation) were found between 76953 records (\url{annotation:(type:transmem) AND reviewed:no}).
+This keyword is contained in a record according to either experimental evidence ~\cite{TheUniProtConsortium2014} or a robust metaanalysis of~\gls{tmh} prediction using TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004,Kall2007} and the hydrophobic moment plot method of Eisenberg and co-workers~\cite{Eisenberg1984}.
+11141 of those records had only a single~\gls{tmh}.
+11110 of those ~gls{tmh}s were within the length thresholds of 16 to 30 residues (None of those had annotation for splice isoforms accordint to \url{NON_TER} annotation).
+5548 of those had had no~\gls{sp} annotation (\url{SIGNAL}).
+4332 of those had annotation (based on \url{TOPO_DOM} annotation) that the N terminal was cytoplasmic.
+615 of those had the~\gls{tmh} within 25 residues of the C terminal, the same threshold used by Kalbfleisch and their coworkers~\cite{Kalbfleisch2007}.
+Running CD-Hit 4.5.3 on the WebMGA webserver~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins. This threshold was chosen as a compromise between avoiding over-representation of a certain protein and maintaining a viable sample size.
+From this representative list, 46 were Arhaeal, 66 were bacterial, and 320 were Eukaryotic and 11 came from dsDNA viruses.
+49 belonged to the A. thaliana proteome, 48 to the mouse proteome, 46 to the human proteome, 24 to the rat proteome.
+
+\subsubsection{TrEMBL Tail Anchored Dataset According to Filters}
+111425234 records in the TrEMBL database at time of download.
+22107826 of those contained \url{TRANSMEM} annotation (\url{annotation:(type:transmem) AND reviewed:no}).
+
+
+\subsection{UniProt Curated List}
+A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 463 Swiss-Prot results and 1997 TrEMBL results.
+Running these records through CD-HIT at 90\% redundancy yieldedd 309 Swiss-Prot records and 808 TrEMBL records~\cite{Huang2010, Wu2011}.
+Of those, 987 proteins from 973 records (308 from Swiss-Prot, and 665 from TrEMBL) had the \url{TRANSMEM} annotation indicating a bone fide~\gls{tmh}.
+No further filters were applied to this list.
+60 of the records belonged to \textit{A. thaliana}, 38 to Humans, 37 to mouse, 31 to \textit{S. cereveisiae}, and 20 to Rat.
+
+
+\subsubsection{Remapping Previous Dataset}
 195 proteins of the 411 predicted proteins from the previous study were successfully mapped using the Uniprot mapping tools~\cite{TheUniProtConsortium2014}.
 Duplicate IDs from the previously predicted ~\gls{ta} protein were removed from the set.
 The remaining dataset contained XXX proteins.
 
 \subsection{Calculating Hydrophobicity}
-
-\subsection{Calculating Sequence Complexity}
+Windowed hydrophobicity was calculated using a window length of 5 residues, and half windows were permitted.
+Average hydrophobicity takes the total of the raw amino acid hydrophobicity values and divides them by the number of amino acids in the slice.
+Values reported in the results are based on the Kyte \& Doolittle scale~\cite{Kyte1982} which is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids.
+Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
 
 \section{Results}
 
