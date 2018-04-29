@@ -1,5 +1,6 @@
 \chapter{Tail-Anchored Protein Datasets}
 \sloppy
+% gls refers to a glossary term, cite refers to an entry from the separate bibtex folder. url is a lazy way of forcing monospaced text. textit is italics. sections and subsections are the headers.
 \section{Abstract}
 
 \section{Introduction}
@@ -15,7 +16,7 @@ There is biomedical interest in ~\gls{snare} drug delivery mechanisms.
 This study aims to identify ~\gls{snare} proteins in eukaryotic proteomes by filtering through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions.
 The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
 A previous study by Kalbfleisch et al.
-published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins.
+published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins ~\cite{Kalbfleisch2007}.
 This study uses more stringent filtering methods, and a larger dataset, to identify 351 novel predicted ~\gls{ta} proteins from a comprehensive human dataset.
 The tools developed herein are openly available for re-application to other datasets.
 Notably, known ~\gls{snare} transmembrane helices are highly hydrophobic even compared to other ~\gls{ta} transmembrane helices.
@@ -23,33 +24,6 @@ We compare Kyte and Doolittle hydrophobicity profiles of our filtered human prot
 This provided a list of potential ~\gls{snare} proteins in addition to potential spontaneously inserting ~\gls{ta} proteins similar to cytochrome b5 which have the least hydrophobic transmembrane helices.
 
 \section{Methods}
-%An executable version of the program TMPRED (for MacOS X) was provided by Dr Laurent Falquet of the Swiss Institute of Bioinformatics.
-%A FASTA sequence for each protein in our original list [NCBI nonredundant protein database (ftp://ftp.ncbi.nih.gov/genomes/H_sapiens/protein/protein.fa.gz) queried on June 21, 2007, totaling 34 180 proteins] was run through the TMPRED software.
-%Those predicted transmembrane regions with a score greater than or equal to our threshold of 1500 were identified.
-%From these results, those proteins were collected that had a single predicted trans- membrane segment.
-%This list comprised 5028 proteins.
-%This list was further filtered by identifying those proteins whose predicted transmembrane segment terminated within the final 25 amino acids of the protein.
-%The resulting list had 644 proteins remaining.
-%A FASTA file was created containing the first 70 amino acids for each of these 644 proteins.
-%This file was run through the program SIGNALP (13) to identify those proteins that were predicted to contain a signal sequence for import through the ER translocon.
-%The hidden Markov model prediction was used, and an Sprob threshold of 0.750 was used as a maximum score.
-%This reduced the list to 429 proteins.
-%FASTA sequences were created that contained the first 70 amino acids of these proteins.
-%They were fed into the MITOPROT (15) program where a probability was calculated for the import of each of these proteins into mitochondria.
-%A maximum probability threshold of 0.850 was estab- lished, and 411 proteins remained in the list after filtering.
-%The proteins XP_001125749.1, XP_001133750.1 and XP_001134217.1 each began with an ambiguous X.
-%For the purposes of this search, this was changed to a methionine in order to satisfy the requirements of the MITOPROT program.
-%Thresholds were determined as outlined in Results and Discussion.
-%Total hydrophobicity of each TMPRED-predicted transmembrane segment was calculated by summing the hydrophobicity values, as calculated by Kyte and Doolittle (28).
-%Twenty dimensional vectors were used to represent the amino acid composition of the transmembrane segment of each protein.
-%For each di- mension, the normalized frequency was calculated by counting the number of occurrences of each amino acid within a transmembrane segment (as defined by TMPRED) and dividing each count by the total number of amino acids in the transmembrane segment.
-%The protein ambiguity code ‘X’ was found within some of the transmembrane segments.
-%Its contribution was calculated andwas given the same weight as any of the unambiguous amino acids.
-%For each class of protein (Figure 2 and Tables S2 and S3), a represen- tative average vector was calculated by summing the contributions for each amino acid.
-%The average vector was then reduced to unit length by dividing by the square root of the sumof the squares of all theamino acidscumulative values.
-%Prior to calculation of the dot product, each protein’s amino acid contribution vectorwas reduced to unit length by dividing by the square root of the sum of the squares of each amino acid contribution.
-%The dot products were then calculated by multiplying each individual amino acid contribution of a specified representative average against each analogous amino acid contribution of a specific protein’s transmembrane region.
-%These values were then summed to produce the representative value reflecting the coincidence of amino acid distributions.
 
 \subsection{Building a list of Tail-Anchors}
 Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools. Whilst their study focussed on the human proteome, here we take into account the entire TrEMBL and Swiss-Prot database and then steratify by organism at the end of te pipeline.
@@ -59,11 +33,14 @@ There were 557012 protein records downloaded from Swiss-Prot via UniProt~\cite{T
 106149~\gls{tmh}s (\url{TRANSMEM} annotation) were found between 76953 records (\url{annotation:(type:transmem) AND reviewed:no}).
 This keyword is contained in a record according to either experimental evidence ~\cite{TheUniProtConsortium2014} or a robust metaanalysis of~\gls{tmh} prediction using TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004,Kall2007} and the hydrophobic moment plot method of Eisenberg and co-workers~\cite{Eisenberg1984}.
 11141 of those records had only a single~\gls{tmh}.
-11110 of those ~gls{tmh}s were within the length thresholds of 16 to 30 residues (None of those had annotation for splice isoforms accordint to \url{NON_TER} annotation).
+11110 of those ~gls{tmh}s were within the length thresholds of 16 to 30 residues (None of those had annotation for splice isoforms according to \url{NON_TER} annotation).
 5548 of those had had no~\gls{sp} annotation (\url{SIGNAL}).
 4332 of those had annotation (based on \url{TOPO_DOM} annotation) that the N terminal was cytoplasmic.
 615 of those had the~\gls{tmh} within 25 residues of the C terminal, the same threshold used by Kalbfleisch and their coworkers~\cite{Kalbfleisch2007}.
-Running CD-Hit 4.5.3 on the WebMGA webserver~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins. This threshold was chosen as a compromise between avoiding over-representation of a certain protein and maintaining a viable sample size.
+Running CD-Hit 4.5.3 on the WebMGA webserver~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins.
+This threshold was chosen as a compromise between avoiding over-representation of a certain protein and maintaining a viable sample size.
+%I do not like the next line.
+Even though this allows potentially identical~\gls{tmh}s to be included in analyses, that alone has value providing it is not the same protein.
 From this representative list, 46 were Arhaeal, 66 were bacterial, and 320 were Eukaryotic and 11 came from dsDNA viruses.
 49 belonged to the A. thaliana proteome, 48 to the mouse proteome, 46 to the human proteome, 24 to the rat proteome.
 

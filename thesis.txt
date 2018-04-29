@@ -296,7 +296,7 @@ Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 3.3.1
 
-Filtering the Uniprot database . . . . . . . . . . . . . . . . . . .
+Building a list of Tail-Anchors . . . . . . . . . . . . . . . . . . .
 
 64
 
@@ -310,7 +310,7 @@ UniProt Curated List . . . . . . . . . . . . . . . . . . . . . . . .
 
 Calculating Hydrophobicity . . . . . . . . . . . . . . . . . . . .
 
-66
+65
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
@@ -539,7 +539,7 @@ vii
 60
 
 Acronyms
-ER Endoplasmic Reticulum. 3, 6, 11, 13, 20, 49
+ER Endoplasmic Reticulum. 3, 6, 11, 13, 14, 20, 49
 HTL Holotranslocon. 13
 KS Kolmogorov-Smirnov. 42, 43, 63
 KW Kruskal-Wallis. 28, 42, 43, 63
@@ -550,7 +550,7 @@ POPC Palmitoyloleoylphosphatidylcholine. 6, 37
 RNA Ribonucleic Acid. 13
 SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 14, 15,
 64, 65, 67
-SP Signal Peptide. 9, 66
+SP Signal Peptide. 9, 65
 SR Signal Recognition Particle Receptor. 13
 SRP Signal Recognition Particle. 13, 14
 TA Tail Anchor. 14, 64–67
@@ -569,7 +569,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-April 25, 2018
+April 26, 2018
 
 x
 
@@ -1170,7 +1170,7 @@ Notably, known SNARE TMHs are highly hydrophobic even compared to other tail
 anchored TMHs [79]. This hydrophobicity appears to be a determinate factor in the
 precise delivery mechanistic route that a TA proteins use for insertion [80, 81], for
 which there is evidence demonstrating that are several mechanisms [81, 82].
-Whilst most eukaryotic TA proteins are inserted into the [er].
+Whilst most eukaryotic TA proteins are inserted into the ER.
 
 1.4.4
 
@@ -4156,17 +4156,17 @@ filtering through large datasets using automatically predicted TrEMBL consensus,
 manually annotated SWISS-PROT transmembrane regions. The pipeline generates a
 list of singlepass proteins with a transmembrane domain close to the C terminal, that
 are not splice isoforms. A previous study by Kalbfleisch et al. published in Traffic
-2007 (8: 1687-1694) predicted 411 tail anchor proteins. This study uses more stringent
-filtering methods, and a larger dataset, to identify 351 novel predicted TA proteins
+2007 (8: 1687-1694) predicted 411 tail anchor proteins [79]. This study uses more
+stringent filtering methods, and a larger dataset, to identify 351 novel predicted TA
 63
 
 64
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-from a comprehensive human dataset. The tools developed herein are openly available
-for re-application to other datasets. Notably, known SNARE transmembrane helices
-are highly hydrophobic even compared to other TA transmembrane helices. We
+proteins from a comprehensive human dataset. The tools developed herein are openly
+available for re-application to other datasets. Notably, known SNARE transmembrane
+helices are highly hydrophobic even compared to other TA transmembrane helices. We
 compare Kyte and Doolittle hydrophobicity profiles of our filtered human protein list
 against the profiles of previously known SNARE and TA proteins. This provided a
 list of potential SNARE proteins in addition to potential spontaneously inserting TA
@@ -4174,41 +4174,39 @@ proteins similar to cytochrome b5 which have the least hydrophobic transmembrane
 helices.
 
 3.3
-
-Methods
-
-The original list UniProt protein database was queried for records containing “TRANSMEM” annotation on June 15, 2016, totaling 75826 records from Swiss-Prot, and
-12322000 records from TrEMBL.
-
 3.3.1
 
-Filtering the Uniprot database
+Methods
+Building a list of Tail-Anchors
 
 Steps carried out by Kalbfleisch et al. published in Traffic 2007 (8: 16871694) [79],
 were recreated using up to date tools. Whilst their study focussed on the human
-proteome, here we take into account the entire Swiss-Prot database and then steratify
-by organism at the end of te pipeline.
+proteome, here we take into account the entire TrEMBL and Swiss-Prot database and
+then steratify by organism at the end of te pipeline.
 
 Swiss-Prot Tail Anchored Dataset According to Filters
 There were 557012 protein records downloaded from Swiss-Prot via UniProt [118]
 (Downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between
 76953 records (annotation:(type:transmem)ANDreviewed:no). This keyword is contained in a record according to either experimental evidence [118] or a robust metaanalysis of TMH prediction using TMHMM [40], Memsat [41], Phobius [42, 98] and
 the hydrophobic moment plot method of Eisenberg and co-workers [39]. 11141 of those
-records had only a single TMH. 11110 of those glstmhs were within the length thresholds of 16 to 30 residues (None of those had annotation for splice isoforms accordint
-to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL). 4332 of
+records had only a single TMH. 11110 of those glstmhs were within the length thresholds of 16 to 30 residues (None of those had annotation for splice isoforms according to
+NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL). 4332 of those
+had annotation (based on TOPO_DOM annotation) that the N terminal was cytoplasmic.
+615 of those had the TMH within 25 residues of the C terminal, the same threshold
+used by Kalbfleisch and their coworkers [79]. Running CD-Hit 4.5.3 on the WebMGA
+webserver [137, 143] at 90% identical sequence at 90% coverage thresholds resulted
 
 3.3. METHODS
 
 65
 
-those had annotation (based on TOPO_DOM annotation) that the N terminal was cytoplasmic. 615 of those had the TMH within 25 residues of the C terminal, the same
-threshold used by Kalbfleisch and their coworkers [79]. Running CD-Hit 4.5.3 on the
-WebMGA webserver [137, 143] at 90% identical sequence at 90% coverage thresholds
-resulted in 443 representative proteins.
-From this representative list, 46 were Arhaeal, 66 were bacterial, and 320 were
-Eukaryotic and 11 came from dsDNA viruses. 49 belonged to the A. thaliana proteome,
-48 to the mouse proteome, 46 to the human proteome, 24 to the rat proteome.
-
+in 443 representative proteins. This threshold was chosen as a compromise between
+avoiding over-representation of a certain protein and maintaining a viable sample size.
+Even though this allows potentially identical TMHs to be included in analyses, that
+alone has value providing it is not the same protein. From this representative list, 46
+were Arhaeal, 66 were bacterial, and 320 were Eukaryotic and 11 came from dsDNA
+viruses. 49 belonged to the A. thaliana proteome, 48 to the mouse proteome, 46 to
+the human proteome, 24 to the rat proteome.
 TrEMBL Tail Anchored Dataset According to Filters
 111425234 records in the TrEMBL database at time of download. 22107826 of those
 contained TRANSMEM annotation (annotation:(type:transmem)ANDreviewed:no).
@@ -4228,23 +4226,23 @@ from 973 records (308 from Swiss-Prot, and 665 from TrEMBL) had the TRANSMEM
 annotation indicating a bone fide TMH. No further filters were applied to this list.
 60 of the records belonged to A. thaliana, 38 to Humans, 37 to mouse, 31 to S.
 cereveisiae, and 20 to Rat.
-
 Remapping Previous Dataset
 195 proteins of the 411 predicted proteins from the previous study were successfully
 mapped using the Uniprot mapping tools [118]. Duplicate IDs from the previously
 predicted TA protein were removed from the set. The remaining dataset contained
 XXX proteins.
 
-66
-
 3.3.3
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
 Calculating Hydrophobicity
 
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half
 windows were permitted. Average hydrophobicity takes the total of the raw amino
+
+66
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 acid hydrophobicity values and divides them by the number of amino acids in the slice.
 Values reported in the results are based on the Kyte & Doolittle scale [30] which is
 based on the water–vapour transfer free energy and the interior-exterior distribution
