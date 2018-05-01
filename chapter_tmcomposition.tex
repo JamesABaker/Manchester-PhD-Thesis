@@ -116,10 +116,10 @@ Datasets and programs used in this work can be downloaded from \url{http://mende
 \begin{table}[htbp]
 
   \centering
-  \captionof{table}[Acidic residues are rarer in TMHs of single-pass proteins than in TMHs of multi-pass proteins]{\textbf{Acidic residues are rarer in TMHs of single-pass proteins than in TMHs of multi-pass proteins}The statistical results when comparing the number of acidic residues in single-pass or multi-pass TMHs within their database-defined limits and excluding any flanks.
-  The number of helices per dataset can be found in Table~\ref{table:negativeskewsinglepass} for single-pass TMHs and Table 3 for multi-pass helices.
-  $\mu$ SP is the average number of the respective residues per helix in TMHs from single-pass proteins, while $\mu$ MP is the average number of the respective residues per TMH from multi-pass proteins.
-  The Kruskal-Wallis test scores (H statistics) were calculated for the numbers of aspartic acid and glutamic acid residues in each helix from single-pass and the number of aspartic acid and glutamic acid residues in each helix from multi-pass TMHs}
+  \captionof{table}[Acidic residues are rarer in~\gls{tmh}s of single-pass proteins than in~\gls{tmh}s of multi-pass proteins]{\textbf{Acidic residues are rarer in~\gls{tmh}s of single-pass proteins than in~\gls{tmh}s of multi-pass proteins}The statistical results when comparing the number of acidic residues in single-pass or multi-pass~\gls{tmh}s within their database-defined limits and excluding any flanks.
+  The number of helices per dataset can be found in Table~\ref{table:negativeskewsinglepass} for single-pass~\gls{tmh}s and Table 3 for multi-pass helices.
+  $\mu$ SP is the average number of the respective residues per helix in~\gls{tmh}s from single-pass proteins, while $\mu$ MP is the average number of the respective residues per~\gls{tmh} from multi-pass proteins.
+  The Kruskal-Wallis test scores (H statistics) were calculated for the numbers of aspartic acid and glutamic acid residues in each helix from single-pass and the number of aspartic acid and glutamic acid residues in each helix from multi-pass~\gls{tmh}s}
 
     \resizebox{\textwidth}{!}{
     \begin{tabular}{p{5em}rrp{5em}rrp{5em}rrp{5em}}
@@ -254,11 +254,11 @@ Whereas with UniBacilli, the problem is most likely the dataset size, the except
 \begin{table}[htbp!]
 
     \centering
-    \captionof{table}[Statistical significances for negative charge distribution skew on either side of the membrane in single-pass TMHs]{\textbf{Statistical significances for negative charge distribution skew on either side of the membrane in single-pass TMHs}The “Helices” column refers to the total TMHs contained in each dataset (ExpALL, TMHs from TOPDB~\cite{Dobson2015}; UniHuman, human representative proteome; UniER, human endoplasmic reticulum representative proteome; UniGolgi, human Golgi representative proteome; UniPM, human plasma membrane representative proteome; UniCress, Arabidopsis thaliana (mouse-ear cress) representative proteome; UniFungi, fungal representative proteome; UniBacilli, Bacilli class representative proteome; UniEcoli, Escherichia coli representative proteome; UniArch, Archaea representative proteome; see Methods for details).
-In the “Database-defined flanks” column, the “Negative residues” column refers to the total number of negative residues found in the $\pm$10 flanking residues on either side of the TMH and does not include residues found in the helix itself.
-In the ``Flanks after central alignment'' column, the ``Negative residues'' column refers to the total number of negative residues found in the –20 to –10 residues and the +10 to +20 residues from the centrally aligned residues of the TMH.
+    \captionof{table}[Statistical significances for negative charge distribution skew on either side of the membrane in single-pass~\gls{tmh}s]{\textbf{Statistical significances for negative charge distribution skew on either side of the membrane in single-pass~\gls{tmh}s}The “Helices” column refers to the total~\gls{tmh}s contained in each dataset (ExpALL,~\gls{tmh}s from TOPDB~\cite{Dobson2015}; UniHuman, human representative proteome; UniER, human endoplasmic reticulum representative proteome; UniGolgi, human Golgi representative proteome; UniPM, human plasma membrane representative proteome; UniCress, Arabidopsis thaliana (mouse-ear cress) representative proteome; UniFungi, fungal representative proteome; UniBacilli, Bacilli class representative proteome; UniEcoli, Escherichia coli representative proteome; UniArch, Archaea representative proteome; see Methods for details).
+In the ``Database-defined flanks'' column, the ``Negative residues'' column refers to the total number of negative residues found in the $\pm$10 flanking residues on either side of the~\gls{tmh} and does not include residues found in the helix itself.
+In the ``Flanks after central alignment'' column, the ``Negative residues'' column refers to the total number of negative residues found in the –20 to –10 residues and the +10 to +20 residues from the centrally aligned residues of the~\gls{tmh}.
 Unlike the other tables, the global averages are derived from the $\pm$20 datasets.
-The Kruskal-Wallis scores were calculated for negative residues by comparing the number of negatively charged residues that were within the 10 inside residues and the 10 outside residues in either case}
+The~\gls{kw} scores were calculated for negative residues by comparing the number of negatively charged residues that were within the 10 inside residues and the 10 outside residues in either case}
     \resizebox{\textwidth}{!}{
      \begin{tabular}{p{5em}lllllllll}
      \toprule
@@ -290,7 +290,7 @@ The Kruskal-Wallis scores were calculated for negative residues by comparing the
      \end{tabular}}%
      \label{table:negativeskewsinglepass}
 
-    \end{table}%                                    
+    \end{table}%
 
 \subsection{Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass \gls{tmh} segments --- the negative outside enrichment rule}
 
@@ -339,7 +339,87 @@ We studied the flanks under four conditions: (i) database-defined flanks without
 In UniHuman as calculated under condition (i), aspartic acid is lower on the inside flank (2.3\%) than on the outside flank (3.0\%).
 Glutamic acid is also lower at the inside flank (2.4\%) than the 2.8\% on the outside flank (Figure~\ref{fig:multi_pass_charge_distribution}C).
 Slight variations in defining the membrane boundary point do not influence the trend (compare figures~\ref{fig:multi_pass_charge_distribution}C and~\ref{fig:multi_pass_charge_distribution}E).
-We find that, in all studied conditions, the UniHuman dataset delivers statistical significances (P-values: (i) 6.10e-34, (ii) 5.43e-41, (iii) 3.00e-57, (iv) 5.60e-41) strongly supporting negative charge bias (inside suppression/outside preference; see Table 3).
+We find that, in all studied conditions, the UniHuman dataset delivers statistical significances (P-values: (i) 6.10e-34, (ii) 5.43e-41, (iii) 3.00e-57, (iv) 5.60e-41) strongly supporting negative charge bias (inside suppression/outside preference; see Table~\ref{tab:multipassstats}).
+
+% Table generated by Excel2LaTeX from sheet 'Sheet1'
+
+\begin{table}[htbp]
+  \centering
+  \captionof{table}[Statistical significances for negative charge distribution skew on either side of the membrane in multi-pass~\gls{tmh}s]{\textbf{Statistical significances for negative charge distribution skew on either side of the membrane in multi-pass~\gls{tmh}s}
+The ``Helices'' column refers to the total~\gls{tmh}s contained in each dataset (ExpALL,~\gls{tmh} from TOPDB~\cite{Dobson2015}; UniHuman, human representative proteome; UniER, human endoplasmic reticulum representative proteome; UniGolgi, human Golgi representative proteome; UniPM, human plasma membrane representative proteome; UniCress, Arabidopsis thaliana (mouse-ear cress) representative proteome, UniFungi, fungal representative proteome; UniBacilli, Bacilli class representative proteome; UniEcoli, Escherichia coli representative proteome; UniArch, Archaea representative proteome; see Methods for details).
+In (A) the ``Database-defined flanks'' and in (B) the ``Database-defined viable* flanks'' and the ``Overlapping flanks'' columns, the ``Negative residues'' column refers to the total number of negative residues found in the $\pm$10 flanking residues on either side of the~\gls{tmh} and does not include residues found in the~\gls{tmh} itself.
+(A) In the ``Flanks after central alignment'' column, the ``Negative residues'' column refers to the total number of negative residues found in the –20 to –10 residues and the +10 to +20 residues from the centrally aligned residues with a maximum database defined flank length of 20 residues.
+The total number of proteins is given in the IDs column.
+The ``Helices'' column contains the total number of~\gls{tmh}s in the dataset (n), the average number of~\gls{tmh}s per protein in that population ($\mu$) and the standard deviation of that average ($\sigma$).
+The ~\gls{kw} scores were calculated for negative residues by comparing the number of negatively charged residues that were within 10 residues inside and 10 residues outside the~\gls{tmh}.
+
+*Here, ``viable'' indicates that in each~\gls{tmh} used for both flanks either side of the~\gls{tmh} has a flank length of at least half the maximum allowed flank length, in this case 10 (the viable length is 5)}
+
+\resizebox{\textwidth}{!}{(A)
+    \begin{tabular}{ p{5em} l l l l l l l l l l l l }
+    \toprule
+    \multicolumn{5}{ p{25em} }{Multi-pass} & \multicolumn{4}{p{20em} }{Database-defined flanks} & \multicolumn{4}{p{20em} }{Flanks after central alignment} \\
+    \midrule
+    \multirow{2}[4]{*}{Dataset} & \multicolumn{1}{l }{\multirow{2}[4]{*}{IDs}} & \multicolumn{3}{p{15em} }{Helices} & \multicolumn{2}{p{10em} }{Negative residues} & \multicolumn{1}{l }{\multirow{2}[4]{*}{H statistic}} & \multicolumn{1}{l }{\multirow{2}[4]{*}{P value}} & \multicolumn{2}{p{10em} }{Negative residues} & \multicolumn{1}{l }{\multirow{2}[4]{*}{H statistic}} & \multicolumn{1}{l }{\multirow{2}[4]{*}{P value}} \\
+    \cmidrule{3-7}\cmidrule{10-11}    \multicolumn{1}{ l }{} &       & \multicolumn{1}{p{5em} }{\textit{n}} & \multicolumn{1}{p{5em} }{$\mu$} & \multicolumn{1}{p{5em} }{$\sigma$} & \multicolumn{1}{p{5em} }{Inside} & \multicolumn{1}{p{5em} }{Outside} &       &       & \multicolumn{1}{p{5em} }{Inside} & \multicolumn{1}{p{5em} }{Outside} &       &  \\
+    \midrule
+    ExpAll & 2205  & 15,563 & 7.07  & 3.95  & 9709  & 9598  & 0.04  & 8.43E-01 & 9648  & 9659  & 0.35  & 5.56E-01 \\
+    \midrule
+    UniHuman & 1789  & 12,353 & 6.93  & 3.2   & 7196  & 9164  & 147.5 & 6.10E-34 & 6740  & 8968  & 179.77 & 5.43E-41 \\
+    \midrule
+    UniER & 155   & 898   & 5.85  & 3.2   & 630   & 584   & 0.44  & 5.08E-01 & 578   & 576   & 0.03  & 8.58E-01 \\
+    \midrule
+    UniGolgi & 61    & 383   & 6.28  & 2.97  & 274   & 261   & 0.02  & 8.75E-01 & 266   & 259   & 0.09  & 7.65E-01 \\
+    \midrule
+    UniPM & 427   & 3079  & 7.22  & 3.3   & 1945  & 2499  & 47.98 & 4.30E-12 & 1791  & 2440  & 64.42 & 1.01E-15 \\
+    \midrule
+    UniCress & 507   & 3823  & 7.55  & 3.32  & 2567  & 2426  & 0.73  & 3.93E-01 & 2398  & 2433  & 1.11  & 2.93E-01 \\
+    \midrule
+    UniFungi & 1338  & 8685  & 6.5   & 3.75  & 5560  & 5266  & 5.83  & 1.57E-02 & 5140  & 5214  & 0     & 9.62E-01 \\
+    \midrule
+    UniBacilli & 140   & 822   & 5.94  & 3.98  & 470   & 468   & 0.07  & 7.92E-01 & 450   & 471   & 0.92  & 3.38E-01 \\
+    \midrule
+    UniEcoli & 529   & 3888  & 7.39  & 3.76  & 1990  & 1902  & 0.26  & 6.07E-01 & 1875  & 1887  & 0.18  & 6.71E-01 \\
+    \midrule
+    UniArch & 59    & 327   & 5.97  & 2.73  & 245   & 175   & 7.98  & 4.72E-03 & 235   & 181   & 7.08  & 7.81E-03 \\
+    \bottomrule
+    \end{tabular}
+    }
+    \\
+
+    \resizebox{\textwidth}{!}{(B)
+    % Table generated by Excel2LaTeX from sheet 'Sheet1'
+    \begin{tabular}{ p{5em} l l l l l l l l llll }
+    \toprule
+    Multi-pass & \multicolumn{4}{p{20em} }{Overlapping flanks} & \multicolumn{8}{p{40em} }{Database-defined viable* flanks} \\
+    \midrule
+    \multirow{2}[4]{*}{Dataset} & \multicolumn{2}{p{10em} }{Negative residues} & \multicolumn{1}{l }{\multirow{2}[4]{*}{H statistic}} & \multicolumn{1}{l }{\multirow{2}[4]{*}{P value}} & \multicolumn{1}{l }{\multirow{2}[4]{*}{\textit{N}}} & \multicolumn{2}{p{10em} }{Negative residues} & \multicolumn{1}{l }{\multirow{2}[4]{*}{H statistic}} & \multicolumn{4}{l }{\multirow{2}[4]{*}{P value}} \\
+\cmidrule{2-3}\cmidrule{7-8}    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Inside} & \multicolumn{1}{p{5em} }{Outside} &       &       &       & \multicolumn{1}{p{5em} }{Inside} & \multicolumn{1}{p{5em} }{Outside} &       & \multicolumn{4}{l }{} \\
+    \midrule
+    ExpAll & 11,969 & 12,615 & 22.54 & 2.05E-06 & 8808  & 6082  & 6916  & 59.93 & \multicolumn{4}{l }{9.81E-15} \\
+    \midrule
+    UniHuman & 8645  & 11,181 & 254.3 & 3.00E-57 & 8183  & 5169  & 6915  & 179.71 & \multicolumn{4}{l }{5.60E-41} \\
+    \midrule
+    UniER & 750   & 763   & 1.16  & 2.81E-01 & 516   & 398   & 441   & 3.16  & \multicolumn{4}{l }{7.55E-02} \\
+    \midrule
+    UniGolgi & 333   & 369   & 7.12  & 7.64E-03 & 195   & 162   & 186   & 3     & \multicolumn{4}{l }{8.30E-02} \\
+    \midrule
+    UniPM & 2319  & 3107  & 99.68 & 1.79E-23 & 1977  & 1343  & 1960  & 98.63 & \multicolumn{4}{l }{3.05E-23} \\
+    \midrule
+    UniCress & 3142  & 3298  & 9.21  & 2.41E-03 & 2110  & 1626  & 1741  & 6.4   & \multicolumn{4}{l }{1.14E-02} \\
+    \midrule
+    UniFungi & 6724  & 6814  & 0.46  & 4.96E-01 & 4581  & 3340  & 3411  & 0.41  & \multicolumn{4}{l }{5.22E-01} \\
+    \midrule
+    UniBacilli & 585   & 636   & 2.65  & 1.04E-01 & 382   & 230   & 306   & 12.73 & \multicolumn{4}{l }{3.61E-04} \\
+    \midrule
+    UniEcoli & 2574  & 2800  & 17.88 & 2.35E-05 & 1596  & 951   & 1114  & 16.57 & \multicolumn{4}{l }{4.69E-05} \\
+    \midrule
+    UniArch & 342   & 248   & 14.67 & 1.28E-04 & 132   & 120   & 104   & 0.28  & \multicolumn{4}{l }{5.97E-01} \\
+    \bottomrule
+    \end{tabular}%
+    }
+  \label{tab:multipassstats}
+\end{table}
 
 Surprisingly, the result could not straightforwardly be repeated with the considerably smaller ExpAll.
 Under condition (i), we find with ExpAll that aspartic acid has a background level of 1.0\%, an average of 2.6\% on the inside flank, and of 2.9\% on the outside flank but glutamic acid’s background is 1.2\% but 2.8\% on the inside flank and 2.5\% on the outside flank.
@@ -413,17 +493,17 @@ On the other hand, hydrophobicity differences between \gls{tmh}s from single- an
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/hydrophobicity_single_multi}
-\captionof{figure}[There is a difference in the hydrophobic profiles of TMHs from single-pass and multi-pass proteins.]{\textbf{There is a difference in the hydrophobic profiles of TMHs from single-pass and multi-pass proteins.}
- a The hydrophobicity of single-pass TMHs compared to multi-pass segments from the UniHuman dataset.
-The Kyte and Doolittle scale of hydrophobicity~\cite{Kyte1982} was used with a window length of 3 to compare TMHs from proteins with different numbers of TMHs.
+\captionof{figure}[There is a difference in the hydrophobic profiles of~\gls{tmh}s from single-pass and multi-pass proteins.]{\textbf{There is a difference in the hydrophobic profiles of~\gls{tmh}s from single-pass and multi-pass proteins.}
+ a The hydrophobicity of single-pass~\gls{tmh}s compared to multi-pass segments from the UniHuman dataset.
+The Kyte and Doolittle scale of hydrophobicity~\cite{Kyte1982} was used with a window length of 3 to compare~\gls{tmh}s from proteins with different numbers of~\gls{tmh}s.
 This scale is based on the water-vapour transfer of free energy and the interior-exterior distribution of individual amino acids.
 The same datasets also had different scales applied (Figure~\ref{fig:hydrophobicity_scale_comparison}).
-The vertical axis is the hydrophobicity score, whilst the horizontal axis is the position of the residue relative to the centre of the TMH, with negative values extending into the cytoplasm.
-In black are the average hydrophobicity values of TMHs belonging to single-pass TMHs, whilst in other colours are the average hydrophobicity values of TMHs belonging to multi-pass proteins containing the same numbers of TMHs per protein.
-In purple are the TMHs from proteins with more than 15 TMHs per protein that do not share a typical multi-pass profile, perhaps due to their exceptional nature.
-b The Kruskal-Wallis test (H statistic) was used to compare single-pass windowed hydrophobicity values with the average windowed hydrophobicity value of every TMH from multi-pass proteins at the same position.
+The vertical axis is the hydrophobicity score, whilst the horizontal axis is the position of the residue relative to the centre of the~\gls{tmh}, with negative values extending into the cytoplasm.
+In black are the average hydrophobicity values of~\gls{tmh}s belonging to single-pass~\gls{tmh}s, whilst in other colours are the average hydrophobicity values of~\gls{tmh}s belonging to multi-pass proteins containing the same numbers of~\gls{tmh}s per protein.
+In purple are the~\gls{tmh}s from proteins with more than 15~\gls{tmh}s per protein that do not share a typical multi-pass profile, perhaps due to their exceptional nature.
+b The Kruskal-Wallis test (H statistic) was used to compare single-pass windowed hydrophobicity values with the average windowed hydrophobicity value of every~\gls{tmh} from multi-pass proteins at the same position.
 The vertical axis is the logarithmic scale of the resultant P values.
-We can much more readily reject the hypothesis that hydrophobicity is the same between TMHs from single-pass and multi-pass proteins in the core of the helix and the flanks than the interfacial regions, particularly at the inner leaflet due to leucine asymmetry (Table 4)}
+We can much more readily reject the hypothesis that hydrophobicity is the same between~\gls{tmh}s from single-pass and multi-pass proteins in the core of the helix and the flanks than the interfacial regions, particularly at the inner leaflet due to leucine asymmetry (Table 4)}
 
 \label{fig:hydrophobicity_single_multi}
 \end{figure}
@@ -431,15 +511,15 @@ We can much more readily reject the hypothesis that hydrophobicity is the same b
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/hydrophobicity_scale_comparison}
-\captionof{figure}[There is a difference in the hydrophobic profiles of TMHs from single-pass and multi-pass proteins.]{\textbf{There is a difference in the hydrophobic profiles of TMHs from single-pass and multi-pass proteins.}
-The difference in hydrophobicity between the single-pass and multi-pass datasets stratified by number of TMHs is not due to the choice of scale.
-As with Figure~\ref{fig:hydrophobicity_single_multi}, UniHuman was stratified according to the number of TMHs in each protein.
-The mean amino acid hydrophobicity values of TMHs with a sliding unweighted window of 3 residues from UniHuman proteins at each position were plotted.
+\captionof{figure}[There is a difference in the hydrophobic profiles of~\gls{tmh}s from single-pass and multi-pass proteins.]{\textbf{There is a difference in the hydrophobic profiles of~\gls{tmh}s from single-pass and multi-pass proteins.}
+The difference in hydrophobicity between the single-pass and multi-pass datasets stratified by number of~\gls{tmh}s is not due to the choice of scale.
+As with Figure~\ref{fig:hydrophobicity_single_multi}, UniHuman was stratified according to the number of~\gls{tmh}s in each protein.
+The mean amino acid hydrophobicity values of~\gls{tmh}s with a sliding unweighted window of 3 residues from UniHuman proteins at each position were plotted.
 To validate the findings presented in Figure \ref{fig:hydrophobicity_single_multi}A, several scales of hydrophobicity were used.
 (A) The White and Wimley whole residue scale~\cite{White1999} is based on the partitioning of peptides between water and octanol as well as water to \gls{popc}.
 A positive score indicates a more polar score.
 (B) The Hessa biological scale~\cite{Hessa2005}.
-The hydrophobicity values represent the free energy exchange during recognition of designed peptide TMHs by the endoplasmic reticulum Sec61 translocon and, therefore, negative values indicate an energetic preference for the interior of a lipid bilayer.
+The hydrophobicity values represent the free energy exchange during recognition of designed peptide~\gls{tmh}s by the endoplasmic reticulum Sec61 translocon and, therefore, negative values indicate an energetic preference for the interior of a lipid bilayer.
 (C) The Eisenberg consensus scale~\cite{Eisenberg1984} is a scale based on the earlier scales from Nozaki and Tanford~\cite{Nozaki1971}, Wolfenden \textit{et al.}~\cite{Wolfenden1981}, Chothia~\cite{Chothia1976}, Janin~\cite{Janin1979} and the von Heijne and Blomberg scale~\cite{VonHeijne1979}.
 The scales are normalised according to serine.
 A positive score indicates a generally more hydrophobic score.}
@@ -463,14 +543,14 @@ However, leucine of \gls{tmh}s from UniArch multi-pass proteins have no discerni
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/dataset_distributions}
-\captionof{figure}[Comparing charged amino acid distributions in TMHs of multi-pass and single-pass proteins across different species and organelles.]{\textbf{Comparing charged amino acid distributions in TMHs of multi-pass and single-pass proteins across different species and organelles.} The relative percentage distribution of charged residues and leucine was calculated at each position in the \gls{tmh} with flank lengths of $\pm$20 in different datasets.
+\captionof{figure}[Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.]{\textbf{Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.} The relative percentage distribution of charged residues and leucine was calculated at each position in the \gls{tmh} with flank lengths of $\pm$20 in different datasets.
 The distributions are normalised according to relative percentage distribution.
 Aspartic acid and glutamic acid are shown in dark purple and light purple respectively.
 Leucine, the most abundant non-polar residue in \gls{tmh}s, is in blue.
 Arginine and lysine are shown in orange.
 TMHs from single-pass proteins are on the left and \gls{tmh}s from multi-pass proteins are on the right for different taxonomic datasets: a UniCress, b UniFungi, c UniEcoli, d UniBacilli, e UniArch, and different organelles: f UniER, g UniGolgi, h UniPM.
-As a trend, the negative-outside skew is more present in TMHs from single-pass proteins than multi-pass proteins (Tables 2 and 3).
-Another key observation is that in single-pass TMHs there is a propensity for leucine on the inner over the outer leaflet (Table 4)}
+As a trend, the negative-outside skew is more present in~\gls{tmh}s from single-pass proteins than multi-pass proteins (Tables 2 and 3).
+Another key observation is that in single-pass~\gls{tmh}s there is a propensity for leucine on the inner over the outer leaflet (Table 4)}
 
 
 \label{fig:dataset_distributions}
@@ -508,11 +588,11 @@ To conclude, we find that negative-charge bias distribution is a feature of sing
 \begin{figure}[p]
 \centering
 \includegraphics[height=0.7\textheight]{NNI_chapter/complexity_datasets}
-\captionof{figure}[Comparing the amino acid relative percentage distributions of simple and complex TMHs from single-pass proteins and TMHs from multi-pass proteins.]{\textbf{Comparing the amino acid relative percentage distributions of simple and complex TMHs from single-pass proteins and TMHs from multi-pass proteins.} Comparing the amino acid relative percentage distributions of simple and complex TMHs from single-pass proteins and TMHs from multi-pass proteins.
-TMSOC was used to calculate which single-pass TMHs were complex and which were simple from ExpAll and UniHuman datasets.
-Simple TMHs are typically anchors without necessarily having other functions (Wong \textit{et al.}~\cite{Wong2010}).
-The relative percentages from single-pass simple (shown in light blue), single-pass complex (red), and multi-pass protein TMHs (black) were plotted for (a, c, e, g, i and k) UniHuman and (b, d, f, h, j and l) ExpAll for (a and b) positive residues, (c and d) negative residues, (e and f) tyrosine, (g and h) tryptophan, (i and j) leucine and (k and l) cysteine.
-The slopes are statistically compared in Tables 5 and 6, and as a trend, the profiles of complex TMHs are more similar to multi-pass TMH profiles than simple TMHs are to multi-pass TMHs}
+\captionof{figure}[Comparing the amino acid relative percentage distributions of simple and complex~\gls{tmh}s from single-pass proteins and~\gls{tmh}s from multi-pass proteins.]{\textbf{Comparing the amino acid relative percentage distributions of simple and complex~\gls{tmh}s from single-pass proteins and~\gls{tmh}s from multi-pass proteins.} Comparing the amino acid relative percentage distributions of simple and complex~\gls{tmh}s from single-pass proteins and~\gls{tmh}s from multi-pass proteins.
+TMSOC was used to calculate which single-pass~\gls{tmh}s were complex and which were simple from ExpAll and UniHuman datasets.
+Simple~\gls{tmh}s are typically anchors without necessarily having other functions (Wong \textit{et al.}~\cite{Wong2010}).
+The relative percentages from single-pass simple (shown in light blue), single-pass complex (red), and multi-pass protein~\gls{tmh}s (black) were plotted for (a, c, e, g, i and k) UniHuman and (b, d, f, h, j and l) ExpAll for (a and b) positive residues, (c and d) negative residues, (e and f) tyrosine, (g and h) tryptophan, (i and j) leucine and (k and l) cysteine.
+The slopes are statistically compared in Tables 5 and 6, and as a trend, the profiles of complex~\gls{tmh}s are more similar to multi-pass~\gls{tmh} profiles than simple~\gls{tmh}s are to multi-pass~\gls{tmh}s}
 
 \label{fig:complexity_datasets}
 \end{figure}
@@ -672,8 +752,8 @@ The leucine asymmetry might be linked to the different lipid composition of eith
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/overview}
 \captionof{figure}[Residue distributions of transmembrane anchors.
-A view showing additional residue distribution features that TMHs with an anchorage function display.]{\textbf{Residue distributions of transmembrane anchors.
-A view showing additional residue distribution features that TMHs with an anchorage function display.}a The more classic model of a TMH showing the ``positive-inside'' rule~\cite{VonHeijne1989}, the hydrophobic core~\cite{Kyte1982}, the polar enrichment that flanks the hydrophobic stretch~\cite{Baeza-Delgado2013} and the aromatic belt~\cite{Granseth2005}.
+A view showing additional residue distribution features that~\gls{tmh}s with an anchorage function display.]{\textbf{Residue distributions of transmembrane anchors.
+A view showing additional residue distribution features that~\gls{tmh}s with an anchorage function display.}a The more classic model of a~\gls{tmh} showing the ``positive-inside'' rule~\cite{VonHeijne1989}, the hydrophobic core~\cite{Kyte1982}, the polar enrichment that flanks the hydrophobic stretch~\cite{Baeza-Delgado2013} and the aromatic belt~\cite{Granseth2005}.
 b Simple anchors may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table \ref{table:acidicresiduesarerare}), intra-membrane leucine asymmetry that likely causes hydrophobic skew~\cite{Sharpe2010} (Table 4, Figure~\ref{fig:hydrophobicity_single_multi}), a higher preference for cysteine on the inside flanking region (Figure~\ref{fig:complexity_datasets}K and L), a higher net ``positive-inside'' charge (Figure~\ref{fig:net_charge}), asymmetric skew of the hydrophobic belt favouring the inner leaflet interface (Figure~\ref{fig:complexity_datasets}E, F, G, and H) and a negative-outside bias via suppression on the inside flanking region or enrichment on the outside flanking region (Figure~\ref{fig:complexity_datasets}C and D, Tables 2 and 3)}
 
 \label{fig:overview}
@@ -824,7 +904,7 @@ This dataset contains 48 single-pass proteins and 59 multi-pass proteins contain
 To note, we are aware that proteome datasets are a moving target that have dramatically changed over the years and, probably, will continue to do so to some extent in the future[83].
 Yet, we think that currently available protein sequence sets are sufficiently good for the purpose as we search for statistical properties in the \gls{tmh} context only.
 
-\subsection{On the determination of flanking regions for TMHs and the TMH alignment}
+\subsection{On the determination of flanking regions for~\gls{tmh}s and the~\gls{tmh} alignment}
 
 The determination of the boundary point at the sequence between the \gls{tmh} in a membrane and the sequence immersed in the cytoplasm, extracellular space, vesicular lumen, etc.
 is not that trivial as it initially appears.
@@ -911,11 +991,11 @@ The difference in   and   normalisation is visualised in Figure~\ref{fig:normali
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/normalisation}
-\captionof{figure}[Relative percentage heatmaps from the predictive datasets calculated by fractions of the absolute maximum and by the relative percentage of a given amino acid type.]{\textbf{Relative percentage heatmaps from the predictive datasets calculated by fractions of the absolute maximum and by the relative percentage of a given amino acid type.}The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
+\captionof{figure}[Relative percentage heatmaps from the predictive datasets calculated by fractions of the absolute maximum and by the relative percentage of a given amino acid type.]{\textbf{Relative percentage heatmaps from the predictive datasets calculated by fractions of the absolute maximum and by the relative percentage of a given amino acid type.}The residue position aligned to the centre of the~\gls{tmh} is on the horizontal axis, and the residue type is on the vertical axis.
 Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale~\cite{Kyte1982}.
-The flank lengths in the TMH segments were restricted to up to $\pm$5 residues.
+The flank lengths in the~\gls{tmh} segments were restricted to up to $\pm$5 residues.
 The scales for each heatmap are shown beneath the respective subfigure.
-All TMHs and flank lengths are from the UniHuman dataset.
+All~\gls{tmh}s and flank lengths are from the UniHuman dataset.
 (A) The heatmap has been coloured according to a scale that uses column-wise normalisations used in previous studies~\cite{Sharpe2010}.
 See Equation~\ref{eq:dependent_normalisation}.
 As an illustrative example, we show how the value for E at position $\pm$12 is obtained.
@@ -923,8 +1003,8 @@ There are in total 91/22 Es at these positions in 1705 sequences; thus, the repr
 Note that L is clearly a hotspot as well as trends for other hydrophobic residues, I and V, as is to be expected.
 A positive inside effect can also be seen.
 (B) The heatmap has been coloured according to the relative percentage of each amino acid type (Equation~\ref{eq:independent_normalisation}).
-Here, 91/22 Es at position $\pm$12 are compared with 615 Es seen within the flanks and the TMH section itself amongst all sequences in the alignment.
-So, the expectation of an E at position $\pm$12 if there is any E in the TMH + flanks region at all is 0.036 at –12 and 0.148 at position 12.
+Here, 91/22 Es at position $\pm$12 are compared with 615 Es seen within the flanks and the~\gls{tmh} section itself amongst all sequences in the alignment.
+So, the expectation of an E at position $\pm$12 if there is any E in the~\gls{tmh} + flanks region at all is 0.036 at –12 and 0.148 at position 12.
 With this type of normalisation, not surprisingly, we see the positive-inside rule is hotter than in subfigure A.
 There are also hotspots in the flanks for the negatively charged residues on the outside flank.
 The leucine hotspot is no longer very pronounced, as the leucines are quite evenly spread over many positions.}
