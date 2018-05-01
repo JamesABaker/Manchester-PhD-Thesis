@@ -1,115 +1,115 @@
 
 \chapter{The ``Negative-Outside'' Rule}
 \sloppy
-The description of a \gls{tmh} remains incomplete.
-The understanding of \gls{tmp} topology is erroneous, and despite a wealth of structures, the general model of helix-helix and helix-lipid interactions remains speculative and requires a great deal of intensive analysis to generate a working model of a particular \gls{tmp}.
+The description of a~\gls{tmh} remains incomplete.
+The understanding of~\gls{tmp} topology is erroneous, and despite a wealth of structures, the general model of helix-helix and helix-lipid interactions remains speculative and requires a great deal of intensive analysis to generate a working model of a particular~\gls{tmp}.
 
 The work presented in this chapter is an expanded version of published work~\cite{Baker2017}.
 We use advanced statistical analysis to analyze large sequence datasets that have rich topological annotation.
-By analyzing these sequences in the context of anchorage, we find that some \gls{tmh}s are confined to biological constraints of the membrane, whereas others that likely contain function beyond anchorage, are less conforming to the membrane.
+By analyzing these sequences in the context of anchorage, we find that some~\gls{tmh}s are confined to biological constraints of the membrane, whereas others that likely contain function beyond anchorage, are less conforming to the membrane.
 Specifically, there is further elaboration of statistical definitions in the methods than in the published paper.
 
 \section{Abstract}
 
 \section{Summary}
-As the idea of positive residues inside the cytoplasm emerged during the late 1980s, so did the idea of negative residues working in concert with \gls{tmh} orientation.
+As the idea of positive residues inside the cytoplasm emerged during the late 1980s, so did the idea of negative residues working in concert with~\gls{tmh} orientation.
 It was shown that removing a single lysine residue reversed the topology of a model \textit{erichia coli} protein, whereas much higher numbers of negatively charged residues are needed to reverse topology~\cite{Nilsson1990}.
-One would also expect to see a skew in negatively charged distribution if a cooperation between oppositely charged residues orientated a \gls{tmh}, however there is no conclusive evidence in the literature for an opposing negatively charged skew~\cite{Granseth2005, Nilsson2005a, Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
+One would also expect to see a skew in negatively charged distribution if a cooperation between oppositely charged residues orientated a~\gls{tmh}, however there is no conclusive evidence in the literature for an opposing negatively charged skew~\cite{Granseth2005, Nilsson2005a, Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
 However, in \textit{E.
 coli} negative residues do experience electrical pulling forces when traveling through the SecYEG translocon indicating that negative charges are biologically relevant~\cite{Ismail2015}.
-In this chapter, we explore the literature surroudning charged residue distribution in the \gls{tmh}, and demonstrate that the ``negative-outside'' skew exists in anchoring \gls{tmh}s
+In this chapter, we explore the literature surroudning charged residue distribution in the~\gls{tmh}, and demonstrate that the ``negative-outside'' skew exists in anchoring~\gls{tmh}s
 
 \section{Introduction}
 
-Two decades ago, the classic concept of a \gls{tmh} was a rather simple story: Typical \gls{tmp}s were thought to be anchored in the membrane by membrane-spanning bundles of non-polar \(\alpha\)--helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface.
+Two decades ago, the classic concept of a~\gls{tmh} was a rather simple story: Typical~\gls{tmp}s were thought to be anchored in the membrane by membrane-spanning bundles of non-polar \(\alpha\)--helices of roughly 20 residues length, with a consistent orientation of being perpendicular to the membrane surface.
 Although this is broadly true, hundreds of high quality membrane structures have elucidated that membrane-embedded helices can adopt a plethora of lengths and orientations within the membrane.
 They are capable of just partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface~\cite{Elofsson2007, VonHeijne2006}.
-The insertion and formation of the \gls{tmh}s follow a complex thermodynamic equilibrium~\cite{Moon2013, MacCallum2011, Cymer2015}.
-From the biological function point of view, many \gls{tmh}s have multiple roles besides being just hydrophobic anchors; for example, certain \gls{tmh}s have been identified as regulators of protein quality control and trafficking mechanisms~\cite{Hessa2011}.
-As these additional biological functions are mirrored in the \gls{tmh}s’ sequence patterns, \gls{tmh}s can be classified as simple (just hydrophobic anchors) and complex sequence segments~\cite{Wong2010, Wong2011, Wong2012}.
+The insertion and formation of the~\gls{tmh}s follow a complex thermodynamic equilibrium~\cite{Moon2013, MacCallum2011, Cymer2015}.
+From the biological function point of view, many~\gls{tmh}s have multiple roles besides being just hydrophobic anchors; for example, certain~\gls{tmh}s have been identified as regulators of protein quality control and trafficking mechanisms~\cite{Hessa2011}.
+As these additional biological functions are mirrored in the~\gls{tmh}s’ sequence patterns,~\gls{tmh}s can be classified as simple (just hydrophobic anchors) and complex sequence segments~\cite{Wong2010, Wong2011, Wong2012}.
 
-The relationship between sequence patterns in and in the vicinity of \gls{tmh}s and their structural and functional properties, as well as their interaction with the lipid bilayer membrane, has been a field of intensive research in the last three decades~\cite{Ladokhin2015}.
-Besides the span of generally hydrophobic residues in the \gls{tmh}, there are other trends in the sequence such as with a saddle-like distribution of polar residues (depressed incidence of charged residues in the \gls{tmh}  itself), an enriched occurrence of positively charged residues in the cytosolic flanking regions as well as an increased likelihood of tryptophan and tyrosine at either flank edge~\cite{Sharpe2010, VonHeijne1986,VonHeijne1988,VonHeijne1989, Baeza-Delgado2013, Granseth2005}.
+The relationship between sequence patterns in and in the vicinity of~\gls{tmh}s and their structural and functional properties, as well as their interaction with the lipid bilayer membrane, has been a field of intensive research in the last three decades~\cite{Ladokhin2015}.
+Besides the span of generally hydrophobic residues in the~\gls{tmh}, there are other trends in the sequence such as with a saddle-like distribution of polar residues (depressed incidence of charged residues in the~\gls{tmh}  itself), an enriched occurrence of positively charged residues in the cytosolic flanking regions as well as an increased likelihood of tryptophan and tyrosine at either flank edge~\cite{Sharpe2010, VonHeijne1986,VonHeijne1988,VonHeijne1989, Baeza-Delgado2013, Granseth2005}.
 Such properties vary somewhat in length and intensity between various biological organelle membranes, between prokaryotes and eukaryotes~\cite{Ojemalm2013} and even among eukaryotic species studied due to slightly different membrane constraints~\cite{Sharpe2010, Pogozheva2013}.
-These biological dispositions are exploitable in terms of \gls{tm} region prediction in query protein sequences~\cite{Beuming2004, Zhao2006} and tools such as the quite reliable TMHMM~\cite{Krogh2001,Sonnhammer1998}, Phobius~\cite{Kall2004, Kall2007} or DAS-TMfilter represent today’s prediction limit of \gls{tmh}s’ hydrophobic cores within the protein sequence~\cite{Cserzo2002, Cserzo2004, Kall2002}.
+These biological dispositions are exploitable in terms of~\gls{tm} region prediction in query protein sequences~\cite{Beuming2004, Zhao2006} and tools such as the quite reliable TMHMM~\cite{Krogh2001,Sonnhammer1998}, Phobius~\cite{Kall2004, Kall2007} or DAS-TMfilter represent today’s prediction limit of~\gls{tmh}s’ hydrophobic cores within the protein sequence~\cite{Cserzo2002, Cserzo2004, Kall2002}.
 The prediction accuracy for true positives and negatives is reported to be close to 100\% and the remaining main cause of false positive prediction are hydrophobic \(\alpha\)--helices completely buried in the hydrophobic core of proteins.
- To note, reliable prediction of \gls{tmh}s and protein topology is a strong restriction for protein function of even otherwise non\-characterised proteins~\cite{Eisenhaber2016, Eisenhaber2012, Sherman2015} and thus, very valuable information.
+ To note, reliable prediction of~\gls{tmh}s and protein topology is a strong restriction for protein function of even otherwise non\-characterised proteins~\cite{Eisenhaber2016, Eisenhaber2012, Sherman2015} and thus, very valuable information.
 
-The ``positive\-inside rule'' reported by von Heijne~\cite{VonHeijne2006,VonHeijne1989} postulates the preferential occurrence of positively charged residues (lysine and arginine) at the cytoplasmic edge of \gls{tmh}s.
-The practical value of positively charged residue sequence clustering in topology prediction of \gls{tmh} was first shown for the plasmalemma in bacteria~\cite{VonHeijne1989, Sipos1993}.
+The ``positive\-inside rule'' reported by von Heijne~\cite{VonHeijne2006,VonHeijne1989} postulates the preferential occurrence of positively charged residues (lysine and arginine) at the cytoplasmic edge of~\gls{tmh}s.
+The practical value of positively charged residue sequence clustering in topology prediction of~\gls{tmh} was first shown for the plasmalemma in bacteria~\cite{VonHeijne1989, Sipos1993}.
 As a trend, the ``positive-inside rule'' has since been confirmed with statistical observations for most membrane proteins and biological membrane types~\cite{Baeza-Delgado2013, Gavel1991, Nilsson2005a, Wallin1998}.
 However, more recent evidence suggests that, in thylakoid membranes, the ``positive-inside rule'' is less applicable due to the co-occurrence of aspartic acid and glutamic acid residues together with positively charged residues~\cite{Pogozheva2013}.
 
 The positive-inside rule also received support from protein engineering experiments that revealed conclusive evidence for positive charges as a topological determinant~\cite{VonHeijne1989, Beltzer1991, Kida2006, Nilsson1990}.
-Mutational experiments demonstrated that charged residues, when inserted into the center of the helix, had a large effect on insertion capabilities of the \gls{tmh} via the translocon.
-Insertion becomes more unfavourable when the charge was placed closer to the \gls{tmh} core~\cite{Hessa2005}.
+Mutational experiments demonstrated that charged residues, when inserted into the center of the helix, had a large effect on insertion capabilities of the~\gls{tmh} via the translocon.
+Insertion becomes more unfavourable when the charge was placed closer to the~\gls{tmh} core~\cite{Hessa2005}.
 
 It remains unclear exactly why and how exactly the positive charge determines topology from a biophysical perspective.
 Positively charged residues are suggested to be stronger determinants of topology than negatively charged residues due to a dampening of the translocation potential of negatively charged residues.
 This dampening factor is the result of protein-lipid interactions with net zero charged phospholipid, phosphatidylethanolamine and other neutral lipids.
 This effect favours cytoplasmic retention of positively charged residues~\cite{Bogdanov2014}.
 
-The recent accumulation of \gls{tmp} sequences and structures allowed revisiting the problem of charged residue distribution in \gls{tmh}s (see also \url{http://blanco.biomol.uci.edu/mpstruc/}).
-For example, whilst \(\beta\)--sheets contain charged residues in the \gls{tm} region, α-helices generally do not (38).
-Large-scale sequence analysis of \gls{tmh} from various organelle membrane surfaces in eukaryotic proteomes confirm the clustering of positive charge having a statistical bias for the cytosolic side of the membrane.
-At the same time, there are many \gls{tmh} exception examples to the positive-inside rule; however as a trend, topology can be determined by simply looking for the most positive loop region between helices~\cite{Sharpe2010, Baeza-Delgado2013}.
+The recent accumulation of~\gls{tmp} sequences and structures allowed revisiting the problem of charged residue distribution in~\gls{tmh}s (see also \url{http://blanco.biomol.uci.edu/mpstruc/}).
+For example, whilst \(\beta\)--sheets contain charged residues in the~\gls{tm} region, α-helices generally do not (38).
+Large-scale sequence analysis of~\gls{tmh} from various organelle membrane surfaces in eukaryotic proteomes confirm the clustering of positive charge having a statistical bias for the cytosolic side of the membrane.
+At the same time, there are many~\gls{tmh} exception examples to the positive-inside rule; however as a trend, topology can be determined by simply looking for the most positive loop region between helices~\cite{Sharpe2010, Baeza-Delgado2013}.
 
-When the observation of positively charged residues preferentially localised at the cytoplasmic edge of \gls{tmh}s emerged, it was also asked whether negatively charged residues work in concert with \gls{tmh} orientation.
+When the observation of positively charged residues preferentially localised at the cytoplasmic edge of~\gls{tmh}s emerged, it was also asked whether negatively charged residues work in concert with~\gls{tmh} orientation.
 It was shown that a single additional lysine residue can reverse the topology of a model \textit{Escherichia coli} protein, whereas a much higher number of negatively charged residues is needed to achieve the same~\cite{Nilsson1990}; nevertheless, a sufficiently large negative charge can overturn the positive-inside rule~\cite{Andersson1993, Kim1994} and, thus indeed, negative residues are topologically active to a point.
-Negatively charged residues were observed in the flanks of \gls{tmh}s~\cite{Baeza-Delgado2013}, especially of marginally hydrophobic \gls{tm} regions~\cite{Delgado-Partin1998}.
-It is known that the negatively charged acidic residues in \gls{tm} regions have a non-trivial role in the biological context.
+Negatively charged residues were observed in the flanks of~\gls{tmh}s~\cite{Baeza-Delgado2013}, especially of marginally hydrophobic~\gls{tm} regions~\cite{Delgado-Partin1998}.
+It is known that the negatively charged acidic residues in~\gls{tm} regions have a non-trivial role in the biological context.
 In \textit{E.
 coli}, negative residues experience electrical pulling forces when travelling through the SecYEG translocon indicating that negative charges are biologically relevant during the electrostatic interactions of insertion~\cite{Ismail2012, Ismail2015}.
 
-Unfortunately, there is a problem with statistical evidence for preferential negative charge occurrence next to \gls{tmh} regions.
+Unfortunately, there is a problem with statistical evidence for preferential negative charge occurrence next to~\gls{tmh} regions.
 Early investigations indicated overall both positive and negative charge were influential topology factors, dubbed the charge balance rule.
-If true, one would also expect to see a skew in the negative charge distribution if a cooperation between oppositely charged residues orientated a \gls{tmh}~\cite{Sipos1993, Hartmann1989}.
+If true, one would also expect to see a skew in the negative charge distribution if a cooperation between oppositely charged residues orientated a~\gls{tmh}~\cite{Sipos1993, Hartmann1989}.
 It might be expected that, if positive residues force the loop or tail to stay inside, negative residues would be drawn outside and topology would be determined not unlike electrophoresis.
 Yet, there is plenty of individual protein examples but no conclusive statistical evidence in the current literature for a negatively charged skew~\cite{Sharpe2010, Baeza-Delgado2013, Granseth2005, Pogozheva2013, Nilsson2005a, Andersson1992}.
 
-There are many observations described in the literature that charged residues determine topology more predictably in single-pass proteins than in multi-pass \gls{tmh}~\cite{Kim1994, Harley1998}.
-It is thought that the charges only determine the initial orientation of the \gls{tmh} in the biological membrane; yet, the ultimate orientation must be determined together with the totality of subsequent downstream regions~\cite{Sato1998}.
+There are many observations described in the literature that charged residues determine topology more predictably in single-pass proteins than in multi-pass~\gls{tmh}~\cite{Kim1994, Harley1998}.
+It is thought that the charges only determine the initial orientation of the~\gls{tmh} in the biological membrane; yet, the ultimate orientation must be determined together with the totality of subsequent downstream regions~\cite{Sato1998}.
 
 With sequence-based hydrophobicity and volume analysis and consensus sequence studies, Sharpe \textit{et al.}~\cite{Sharpe2010} demonstrated that there is asymmetry in the intramembranous space of some membranes.
 Crucially, this asymmetry differs among the membrane of various organelles.
-They conclude that there are general differences between the lipid composition and organisation in membranes of the Golgi and \gls{er}.
+They conclude that there are general differences between the lipid composition and organisation in membranes of the Golgi and~\gls{er}.
 Functional aspects are also important.
-For example, the abundance of serines in the region following the luminal end of Golgi \gls{tmh}s appears to reflect the fact that this part of many Golgi enzymes forms a flexible linker that tethers the catalytic domain to the membrane~\cite{Sharpe2010}.
+For example, the abundance of serines in the region following the luminal end of Golgi~\gls{tmh}s appears to reflect the fact that this part of many Golgi enzymes forms a flexible linker that tethers the catalytic domain to the membrane~\cite{Sharpe2010}.
 
-A study by Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013} analysed the distribution of amino acid residue types in \gls{tmh}s in 170 integral membrane proteins from a manually maintained database of experimentally confirmed \gls{tmp}s (MPTopo~\cite{Jayasinghe2001}) as well as in 930 structures from the \gls{pdb}.
-As expected, half of the natural amino acids are equally distributed along \gls{tmh} whereas aromatic, polar and charged amino acids along with proline are biased near the flanks of the TM helices.
-Unsurprisingly, leucine and other non-polar residues are far more abundant than the charged residues in the \gls{tm} region~\cite{Sharpe2010}.
+A study by Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013} analysed the distribution of amino acid residue types in~\gls{tmh}s in 170 integral membrane proteins from a manually maintained database of experimentally confirmed~\gls{tmp}s (MPTopo~\cite{Jayasinghe2001}) as well as in 930 structures from the~\gls{pdb}.
+As expected, half of the natural amino acids are equally distributed along~\gls{tmh} whereas aromatic, polar and charged amino acids along with proline are biased near the flanks of the TM helices.
+Unsurprisingly, leucine and other non-polar residues are far more abundant than the charged residues in the~\gls{tm} region~\cite{Sharpe2010}.
 
-In this work, we revisit the issue of statistical evidence for the preferential distribution of negatively charged (and a few other) residues within and nearby \gls{tmh}s.
-We rely on the improved availability of comprehensive and large sequence and structure datasets for \gls{tm} proteins.
+In this work, we revisit the issue of statistical evidence for the preferential distribution of negatively charged (and a few other) residues within and nearby~\gls{tmh}s.
+We rely on the improved availability of comprehensive and large sequence and structure datasets for~\gls{tm} proteins.
 We also show that several methodical aspects have hindered previous studies~\cite{Sharpe2010, Baeza-Delgado2013, Pogozheva2013} to see the consistent non-trivial skew for negatively charged residues disfavouring the cytosolic interfacial region and/or preferring the outside flank.
-First, we show that acidic residues are especially rare within and in the close sequence environment of \gls{tmh}s, even when compared to positively charged lysine and arginine.
-Second, therefore, the manner of normalisation is critical: Taken together with the difficulty to properly align \gls{tmh}s relative to their boundaries, column-wise frequency calculations relative to all amino acid types as in previous studies will blur possible preferential localisations of negative charges in the sequence.
+First, we show that acidic residues are especially rare within and in the close sequence environment of~\gls{tmh}s, even when compared to positively charged lysine and arginine.
+Second, therefore, the manner of normalisation is critical: Taken together with the difficulty to properly align~\gls{tmh}s relative to their boundaries, column-wise frequency calculations relative to all amino acid types as in previous studies will blur possible preferential localisations of negative charges in the sequence.
 However, the outcome changes when we ask where a negative charge occurs in the sequence relative to the total amount of negative charges in the respective sequence region.
 Thus, by accounting for the rarity of acidic residues with sensitive normalisation, the ``non-negative inside rule/negative-outside rule'' is clearly supported by the statistical data.
-We find that minor changes in the flank definitions such as taking the \gls{tmh} boundaries from the database or by generating flanks by centrally aligning \gls{tmh}s and applying some standardised \gls{tmh} length does not have a noticeable influence on the charge bias detected.
+We find that minor changes in the flank definitions such as taking the~\gls{tmh} boundaries from the database or by generating flanks by centrally aligning~\gls{tmh}s and applying some standardised~\gls{tmh} length does not have a noticeable influence on the charge bias detected.
 
-Third, there are significant differences in the distribution of amino acid residues between single-pass and multi-pass \gls{tm} regions in both the intra-membrane helix and the flanking regions with further variations introduced by taxa and by the organelles along the secretory pathway.
-Importantly, we find that it is critical to weigh down the effect of \gls{tmh}s in multi-pass \gls{tmp}s with no or super-short flanks to observe statistical significance for the charge bias.
+Third, there are significant differences in the distribution of amino acid residues between single-pass and multi-pass~\gls{tm} regions in both the intra-membrane helix and the flanking regions with further variations introduced by taxa and by the organelles along the secretory pathway.
+Importantly, we find that it is critical to weigh down the effect of~\gls{tmh}s in multi-pass~\gls{tmp}s with no or super-short flanks to observe statistical significance for the charge bias.
 To say it bluntly, if there are no flanks of sufficient length, there is also no negative charge bias to be observed.
 
-The charge bias effect is even clearer when a classification of \gls{tmh}s into so-called simple (which, as a trend, are mostly single-pass and mere anchors) and so-called complex (which typically have functions beyond anchorage) is considered~\cite{Wong2010, Wong2011, Wong2012}.
+The charge bias effect is even clearer when a classification of~\gls{tmh}s into so-called simple (which, as a trend, are mostly single-pass and mere anchors) and so-called complex (which typically have functions beyond anchorage) is considered~\cite{Wong2010, Wong2011, Wong2012}.
 We also observe parallel skews with regard to leucine, tyrosine, tryptophan and cysteine distributions.
-With these large-scale datasets and a sensitive normalisation approach, new sequence features are revealed that provide spatial insight into \gls{tmh} membrane anchoring, recognition, helix-lipid, and helix-helix interactions.
+With these large-scale datasets and a sensitive normalisation approach, new sequence features are revealed that provide spatial insight into~\gls{tmh} membrane anchoring, recognition, helix-lipid, and helix-helix interactions.
 
 \section{Results}
 
-\subsection{Acidic residues within and nearby \gls{tmh} segments are rare}
+\subsection{Acidic residues within and nearby~\gls{tmh} segments are rare}
 
-In order to reliably compare the amino acid sequence properties of \gls{tmh}s, we assembled datasets of \gls{tmh} proteins from what are likely to be the best in terms of quality and comprehensiveness of annotation in eukaryotic and prokaryotic representative genomes, as well as composite datasets to represent larger taxonomic groups and with regard to subcellular locations (see Table \ref{table:acidicresiduesarerare}).
-In total, 3292 single-pass \gls{tmh} segments and 29898 multi-pass \gls{tmh} segments were extracted from various UniProt~\cite{TheUniProtConsortium2014} text files according to TRANSMEM annotation (download dated 20--03--2016).
-The UniProt datasets used only included manually curated records; however, it is still necessary to check for systematic bias due to the prediction methods used by UniProt for \gls{tmh} annotation in the majority of cases without direct experimental evidence.
+In order to reliably compare the amino acid sequence properties of~\gls{tmh}s, we assembled datasets of~\gls{tmh} proteins from what are likely to be the best in terms of quality and comprehensiveness of annotation in eukaryotic and prokaryotic representative genomes, as well as composite datasets to represent larger taxonomic groups and with regard to subcellular locations (see Table \ref{table:acidicresiduesarerare}).
+In total, 3292 single-pass~\gls{tmh} segments and 29898 multi-pass~\gls{tmh} segments were extracted from various UniProt~\cite{TheUniProtConsortium2014} text files according to TRANSMEM annotation (download dated 20--03--2016).
+The UniProt datasets used only included manually curated records; however, it is still necessary to check for systematic bias due to the prediction methods used by UniProt for~\gls{tmh} annotation in the majority of cases without direct experimental evidence.
 Therefore, a fully experimentally verified dataset was also generated for comparison.
-The representative 1544 single-pass and 15563 \gls{tmh}s were extracted from the manually curated experimentally verified TOPDB~\cite{Dobson2015} database (download dated 21--03--2016) referred to as ExpAll here (Table1).
+The representative 1544 single-pass and 15563~\gls{tmh}s were extracted from the manually curated experimentally verified TOPDB~\cite{Dobson2015} database (download dated 21--03--2016) referred to as ExpAll here (Table1).
 \gls{tmh} organelle residency is defined according to UniProt annotation.
 To ensure reliability, organelles were only analysed from a representative redundancy-reduced protein dataset of the most well-studied genome: Homo sapiens (referred to as UniHuman herein).
 The several datasets from UniProt  are subdivided into different human organelles (UniPM, UniER, UniGolgi) and taxonomical groups (UniHuman, UniCress, UniBacilli, UniEcoli, UniArch, UniFungi) as described in Table \ref{table:acidicresiduesarerare} (see also Methods section).
-As will be shown below, these various datasets allow us to validate our findings for a variety of conditions, namely with regard (i) to experimental verification of \gls{tmh}s, (ii) to origin from various species and taxonomic groups, (iii) to the number of \gls{tmh}s in the same protein as well as (iv) to subcellular localization.
+As will be shown below, these various datasets allow us to validate our findings for a variety of conditions, namely with regard (i) to experimental verification of~\gls{tmh}s, (ii) to origin from various species and taxonomic groups, (iii) to the number of~\gls{tmh}s in the same protein as well as (iv) to subcellular localization.
 Datasets and programs used in this work can be downloaded from \url{http://mendel.bii.a-star.edu.sg/SEQUENCES/NNI/}.
 
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
@@ -153,15 +153,15 @@ Datasets and programs used in this work can be downloaded from \url{http://mende
 
 \end{table}%
 
-The hydrophobic nature of the lipid bilayer membrane implies that, generally, charged residues should be rare within \gls{tmh}s.
-For acidic residues, even the location in the sequence vicinity of \gls{tmh}s should be disfavoured because of the negatively charged head groups of lipids directed towards the aqueous extracellular side or the cytoplasm.
-In agreement with the biophysically justified expectations, the statistical data confirms that acidic residues are especially rare in \gls{tmh}s and their flanking regions.
-In Figure 1 where we plot the total abundance of all amino acid types in single-pass \gls{tmh}s and multi-pass \gls{tmh}s (including their $\pm$5 flanking residues), acidic residues were found to be amongst the rarest amino acids both in UniHuman and ExpAll.
+The hydrophobic nature of the lipid bilayer membrane implies that, generally, charged residues should be rare within~\gls{tmh}s.
+For acidic residues, even the location in the sequence vicinity of~\gls{tmh}s should be disfavoured because of the negatively charged head groups of lipids directed towards the aqueous extracellular side or the cytoplasm.
+In agreement with the biophysically justified expectations, the statistical data confirms that acidic residues are especially rare in~\gls{tmh}s and their flanking regions.
+In Figure 1 where we plot the total abundance of all amino acid types in single-pass~\gls{tmh}s and multi-pass~\gls{tmh}s (including their $\pm$5 flanking residues), acidic residues were found to be amongst the rarest amino acids both in UniHuman and ExpAll.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/amino_acid_distribution}
-\captionof{figure}[Negatively charged amino acids are amongst the rarest residues in \gls{tmh}s and $\pm$5 flanking residues.] {\textbf{Negatively charged amino acids are amongst the rarest residues in \gls{tmh}s and $\pm$5 flanking residues.}Bar charts of the abundance of each amino acid type in the \gls{tmh}s with flank lengths of the accompanying $\pm$5 residues from the (a) UniHuman single-pass proteins, (b) ExpAll single-pass proteins, (c) UniHuman multi-pass proteins, and (d) ExpAll multi-pass proteins.
+\captionof{figure}[Negatively charged amino acids are amongst the rarest residues in~\gls{tmh}s and $\pm$5 flanking residues.] {\textbf{Negatively charged amino acids are amongst the rarest residues in~\gls{tmh}s and $\pm$5 flanking residues.}Bar charts of the abundance of each amino acid type in the~\gls{tmh}s with flank lengths of the accompanying $\pm$5 residues from the (a) UniHuman single-pass proteins, (b) ExpAll single-pass proteins, (c) UniHuman multi-pass proteins, and (d) ExpAll multi-pass proteins.
 Amino acid types on the horizontal axis are listed in descending count.
 The bars were coloured according to categorisations of hydrophobic, neutral and hydrophilic types according to the free energy of insertion biological scale~\cite{Hessa2005}.
 Grey represents hydrophilic amino acids that were found to have a positive $\Delta$G app, and blue represents hydrophobic residues with a negative $\Delta$G app, purple denotes negative residues and positive residues are coloured in orange.
@@ -170,33 +170,33 @@ The abundances of key residues are labelled.}
 \label{fig:amino_acid_distribution}
 \end{figure}
 
-The effect is most pronounced in single-pass \gls{tmp}s (Figure~\ref{fig:amino_acid_distribution}).
-There are only 666 glutamates (just 1.24\% of all residues) and 560 aspartates (1.05\% respectively) among the total set of 53238 residues comprised in 1705 \gls{tmh}s and their flanks.
-Within just the \gls{tmh} regions, there are 71 glutamates (0.20\% of all residues in \gls{tmh}s and flanks) and 58 aspartates (0.16\% respectively).
-This cannot be an artefact of UniProt \gls{tmh} assignments since this feature is repeated in ExpAll.
+The effect is most pronounced in single-pass~\gls{tmp}s (Figure~\ref{fig:amino_acid_distribution}).
+There are only 666 glutamates (just 1.24\% of all residues) and 560 aspartates (1.05\% respectively) among the total set of 53238 residues comprised in 1705~\gls{tmh}s and their flanks.
+Within just the~\gls{tmh} regions, there are 71 glutamates (0.20\% of all residues in~\gls{tmh}s and flanks) and 58 aspartates (0.16\% respectively).
+This cannot be an artefact of UniProt~\gls{tmh} assignments since this feature is repeated in ExpAll.
 There are only 582 glutamates (1.22\%) and 520 aspartates (1.09\%) among the 47568 residues involved.
-Within the \gls{tmh} itself, there are 64 glutamates (0.19\%) and 69 aspartates (0.21\%).
+Within the~\gls{tmh} itself, there are 64 glutamates (0.19\%) and 69 aspartates (0.21\%).
 In both cases, the negatively charged residues represent the ultimate end of the distribution.
 To note, acidic residues are rare even compared to positively charged residues which are about 3--4 times more frequent.
-On a much smaller dataset of single-spanning \gls{tmp}, Nakashima \textit{et al.}
+On a much smaller dataset of single-spanning~\gls{tmp}, Nakashima \textit{et al.}
 ~\cite{Nakashima1992} made similar compositional studies.
-To compare, they found 0.94\% glutamate and 0.94\% aspartate within just the \gls{tmh} region (values very similar to ours from \gls{tmh}s with small flanks; apparently, they used more outwardly defined \gls{tmh} boundaries) but the content of each glutamate and aspartate within the extracellular or cytoplasmic domains is larger by an order of magnitude, between 5.26\% and 9.34\%.
+To compare, they found 0.94\% glutamate and 0.94\% aspartate within just the~\gls{tmh} region (values very similar to ours from~\gls{tmh}s with small flanks; apparently, they used more outwardly defined~\gls{tmh} boundaries) but the content of each glutamate and aspartate within the extracellular or cytoplasmic domains is larger by an order of magnitude, between 5.26\% and 9.34\%.
 These latter values tend to be even higher than the average glutamate and aspartate composition throughout the protein database (5--6\%~\cite{Nakashima1992}).
 
-In the case of multi-pass \gls{tmp}s (Figure~\ref{fig:amino_acid_distribution}), glutamates and aspartates are still very rare in \gls{tmh}s and their $\pm$5 residue flanks (1.94\% and 1.92\% from the total of 377207 in the case of UniHuman respectively, 1.79\% and 1.70\% from the total of 454700 in the case of ExpAll).
+In the case of multi-pass~\gls{tmp}s (Figure~\ref{fig:amino_acid_distribution}), glutamates and aspartates are still very rare in~\gls{tmh}s and their $\pm$5 residue flanks (1.94\% and 1.92\% from the total of 377207 in the case of UniHuman respectively, 1.79\% and 1.70\% from the total of 454700 in the case of ExpAll).
 Yet, their occurrence is similar to those of histidine and tryptophan and, notably, acidic residues are only about $\sim$1.5 times less frequent than positively charged residues.
-The observation that acidic residues are more suppressed in single-pass \gls{tmh}s compared with the case of multi-pass \gls{tmh}s is statistically significant.
+The observation that acidic residues are more suppressed in single-pass~\gls{tmh}s compared with the case of multi-pass~\gls{tmh}s is statistically significant.
 In Table \ref{table:acidicresiduesarerare}, the acidic residues are counted in the helices (excluding flanking regions) belonging to either multi-pass or single-pass helices.
 Indeed, single-pass helices appear to tolerate negative charge to a far lesser extent than multi-pass helices as the data in the top two rows of Table \ref{table:acidicresiduesarerare} indicates (for datasets UniHuman and ExpAll).
 The trend is strictly observed throughout subcellular localisations (rows 3--5 in Table \ref{table:acidicresiduesarerare}) and taxa (rows 6--10).
 Statistical significance (P≤0.001) is found in all but six cases.
 These are UniEcoli (D+E, D, E), UniArch (D+E, E) and UniFungi (E).
 The problem is, most likely, that the respective datasets are quite small.
-Notably, the difference between single- and multi-pass \gls{tmh}s is greatest in UniPM\@; here, \gls{tmh}s from multi-pass proteins have on average 0.400 negative residues per helix, whereas single-pass \gls{tmh}s contained just 0.039 (P=3.86e-28).
+Notably, the difference between single- and multi-pass~\gls{tmh}s is greatest in UniPM\@; here,~\gls{tmh}s from multi-pass proteins have on average 0.400 negative residues per helix, whereas single-pass~\gls{tmh}s contained just 0.039 (P=3.86e-28).
 
-\subsection{Amino acid residue distribution analysis reveals a ``negative-not-inside/negative-outside'' signal in single-pass \gls{tmh} segments}
+\subsection{Amino acid residue distribution analysis reveals a ``negative-not-inside/negative-outside'' signal in single-pass~\gls{tmh} segments}
 
-The rarity of negatively charged residues is a complicating issue when studying their distribution along the sequence positions of \gls{tmh}s and their flanks.
+The rarity of negatively charged residues is a complicating issue when studying their distribution along the sequence positions of~\gls{tmh}s and their flanks.
 For UniHuman and ExpAll , we plotted absolute abundance of aspartic acid, glutamic acid, lysine, arginine, and leucine at each position (i.e., it scales as the equivalent fraction in the total composition of the alignment column) (Figure~\ref{fig:single_pass_charge_distribution}).
 To note, the known preference of positively charged residues towards the cytoplasmic side is nevertheless evident.
 Yet, it becomes apparent that any bias in the occurrence of the much rarer acidic residues is overshadowed by fluctuations in the highly abundant residues such as leucine.
@@ -204,20 +204,20 @@ Yet, it becomes apparent that any bias in the occurrence of the much rarer acidi
 \begin{figure}[p]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/single_pass_charge_distribution}
-\captionof{figure}[Relative percentage normalisation reveals a negative-outside bias in \gls{tmh}s from single-pass protein datasets.]{\textbf{Relative percentage normalisation reveals a negative-outside bias in \gls{tmh}s from single-pass protein datasets.} All flank sizes were set at up to $\pm$20 residues.
+\captionof{figure}[Relative percentage normalisation reveals a negative-outside bias in~\gls{tmh}s from single-pass protein datasets.]{\textbf{Relative percentage normalisation reveals a negative-outside bias in~\gls{tmh}s from single-pass protein datasets.} All flank sizes were set at up to $\pm$20 residues.
 We acknowledge that all values, besides the averaged values, are discrete, and connecting lines are illustrative only.
-On the horizontal axes (a–d) are the distances in residues from the centre of the \gls{tmh}, with the negative numbers extending towards the cytoplasmic space.
+On the horizontal axes (a–d) are the distances in residues from the centre of the~\gls{tmh}, with the negative numbers extending towards the cytoplasmic space.
 For (e) and (f), the horizontal axis represents the residue count from the membrane boundary with negative counts into the cytoplasmic space.
-Leucine, the most abundant non-polar residue in \gls{tmh}s, is in blue.
+Leucine, the most abundant non-polar residue in~\gls{tmh}s, is in blue.
 Arginine and lysine are shown in dark and light orange respectively.
 Aspartic and glutamic acid are showing in dark and light purple respectively.
-(a) and (b) On the vertical axis is the absolute abundance of residues in \gls{tmh}s from single-pass proteins from (a) UniHuman and (b) ExpAll.
-Note that no clear trend can be seen in the negative residue distribution compared to the positive-inside signal and the leucine abundance throughout the \gls{tmh}.
-c and d On the vertical axis is the relative percentage at each position for \gls{tmh}s from single-pass proteins from (c) UniHuman and (d) ExpAll.
+(a) and (b) On the vertical axis is the absolute abundance of residues in~\gls{tmh}s from single-pass proteins from (a) UniHuman and (b) ExpAll.
+Note that no clear trend can be seen in the negative residue distribution compared to the positive-inside signal and the leucine abundance throughout the~\gls{tmh}.
+c and d On the vertical axis is the relative percentage at each position for~\gls{tmh}s from single-pass proteins from (c) UniHuman and (d) ExpAll.
 The dashed lines show the estimation of the background level of residues with respect to the colour; an average of the relative percentage values between positions 25 to 30 and –30 to –25.
 The thick bars show the averages on the inner (positions –20 to –10) and outer (positions 10 to 20) flanks coloured to the respective amino acid type.
 Note a visible suppression of acidic residues on the inside flank when compared to the outside flank in single-pass proteins when normalising according to the relative percentage.
-(e) and (f) The relative distribution of flanks defined by the databases with the distance from the \gls{tmh} boundary on the horizontal axis.
+(e) and (f) The relative distribution of flanks defined by the databases with the distance from the~\gls{tmh} boundary on the horizontal axis.
 The inside and outside flanks are shown in separate subplots.
 The colouring is the same as in (a) and (b).}
 
@@ -238,14 +238,14 @@ Most interestingly, a ``negative‑inside depletion'' trend for the negatively c
 The inside flank averages for glutamic acid were 1.1\% and 1.4\% in UniHuman and ExpAll respectively; for aspartic acid, 1.2\% and 1.4\% in UniHuman and ExpAll respectively.
 Meanwhile, the outside flanks for aspartic acid and glutamic acid occurrences were measured at 2.9\% and 2.4\% respectively in UniHuman and, in ExpAll, these values for aspartic acid and glutamic acid were found to be 2.5\% and 2.1\% respectively.
 Against the background level of aspartic acid (2.8\% and 2.9\% in UniHuman) and glutamic acid (2.6\% and 2.9\% in ExpAll), the inside flank averages were found to be about 2--3 times lower than the background level while the outside flank averages were comparable to the background level (Figure~\ref{fig:single_pass_charge_distribution}).
-Taken together, this indicates a clear suppression of negatively charged residues at the inside flank of single-pass \gls{tmh}s and a possible trend for negatively charged residues occurring preferentially at the outside flank.
-This is not an effect of the flank definition selection since the trend remains the same when using the database-defined flanks without the context of the \gls{tmh} (Figure~\ref{fig:single_pass_charge_distribution}).
+Taken together, this indicates a clear suppression of negatively charged residues at the inside flank of single-pass~\gls{tmh}s and a possible trend for negatively charged residues occurring preferentially at the outside flank.
+This is not an effect of the flank definition selection since the trend remains the same when using the database-defined flanks without the context of the~\gls{tmh} (Figure~\ref{fig:single_pass_charge_distribution}).
 For UniHuman, the negative charge expectancy on the inside flank doesn’t reach above 2\% until position -10 (D) and position -11 (E), whereas, on the outside flank, both D and E start $>$2\%.
 The same can be seen in ExpAll where negative residues reach above 2\% only as far from the membrane boundary as at position -9 (D) and position -7 (E) on the inside but exceed 2\% beginning with position 1 (D) and 3 (E) on the outside (Figure~\ref{fig:single_pass_charge_distribution}).
 
 The observation of negative charge suppression at the inside flank, herein the ``negative-inside depletion'' rule, is statistically significant throughout most datasets in this study.
-The inside-outside bias was counted using the \gls{kw} test comparing the occurrence of acidic residues within 10 residues of each \gls{tmh} inside and outside the \gls{tmh} (Table~\ref{table:negativeskewsinglepass}).
-We studied both the database-reported flanks as well as those obtained from central alignment of \gls{tmh}s (see Methods).
+The inside-outside bias was counted using the~\gls{kw} test comparing the occurrence of acidic residues within 10 residues of each~\gls{tmh} inside and outside the~\gls{tmh} (Table~\ref{table:negativeskewsinglepass}).
+We studied both the database-reported flanks as well as those obtained from central alignment of~\gls{tmh}s (see Methods).
 The null hypothesis (no difference between the two flanks) could be confidently rejected in all cases (P-value$<$0.001 except for UniBacilli), the sign of the H-statistic (\gls{kw}) indicating suppression at the inside and/or preference for the outside flank (except for UniArch).
 Most importantly, acidic residues were found to be distributed with bias in ExpAll (P-value$<$3.47e-58) and in UniHuman (P-value=1.13e-93).
 Whereas with UniBacilli, the problem is most likely the dataset size, the exception of UniArch, for which we observe a strong negative inside rule, is more puzzling and indicates biophysical differences of their plasma-membrane.
@@ -292,24 +292,24 @@ The~\gls{kw} scores were calculated for negative residues by comparing the numbe
 
     \end{table}%
 
-\subsection{Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass \gls{tmh} segments --- the negative outside enrichment rule}
+\subsection{Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass~\gls{tmh} segments --- the negative outside enrichment rule}
 
-As a result of the rarity of negatively charged residues, any distribution bias is difficult to be recognised in the plot showing the total abundance (or alignment column composition) of residues in multi-pass \gls{tmh}s and their flanks from UniHuman and ExpAll (Figure~\ref{fig:multi_pass_charge_distribution}).
+As a result of the rarity of negatively charged residues, any distribution bias is difficult to be recognised in the plot showing the total abundance (or alignment column composition) of residues in multi-pass~\gls{tmh}s and their flanks from UniHuman and ExpAll (Figure~\ref{fig:multi_pass_charge_distribution}).
 Yet, as with single-pass helices, the dominant general leucine enrichment, as well as positive inside signal, can be identified with certainty.
 When the residue occurrence is normalised by the total occurrence of this residue type in the sequence regions studied (shown as a relative percentage of at each position for multi-pass helices from UniHuman and ExpAll  in Figure~\ref{fig:multi_pass_charge_distribution}), the bias in the distribution of any type of charged residues becomes visible.
 
 \begin{figure}[!p]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/multi_pass_charge_distribution}
-\captionof{figure}[Negative-outside bias is very subtle in \gls{tmh}s from multi-pass proteins.]{\textbf{Negative-outside bias is very subtle in \gls{tmh}s from multi-pass proteins.}The meaning for the horizontal axis is the same as in Figure~\ref{fig:single_pass_charge_distribution}, with the negative sequence position numbers extending towards the cytoplasmic space.
+\captionof{figure}[Negative-outside bias is very subtle in~\gls{tmh}s from multi-pass proteins.]{\textbf{Negative-outside bias is very subtle in~\gls{tmh}s from multi-pass proteins.}The meaning for the horizontal axis is the same as in Figure~\ref{fig:single_pass_charge_distribution}, with the negative sequence position numbers extending towards the cytoplasmic space.
 Leucine is in blue.
 Arginine and lysine are shown in dark and light orange respectively.
 Aspartic and glutamic acid are shown in dark and light purple respectively.
 All flank sizes were set at up to $\pm$20 residues.
-(a) and (b) On the vertical axes are the absolute abundances of residues from \gls{tmh}s of multi-pass proteins from (a) UniHuman and (b) ExpAll.
-c and d On the vertical axes are the relative percentages at each position for \gls{tmh}s from multi-pass proteins from (c) UniHuman and (d) ExpAll.
+(a) and (b) On the vertical axes are the absolute abundances of residues from~\gls{tmh}s of multi-pass proteins from (a) UniHuman and (b) ExpAll.
+c and d On the vertical axes are the relative percentages at each position for~\gls{tmh}s from multi-pass proteins from (c) UniHuman and (d) ExpAll.
 As in Figure~\ref{fig:single_pass_charge_distribution}(c) and (d), the dashed lines show the estimation of the background level of residues with respect to the colour, and the thick bars show the averages on the inner and outer flanks coloured to the respective amino acid type.
-e and f The relative distribution of flanks defined by the databases with the distance from the \gls{tmh} boundary on the horizontal axis for both the inside and outside flanks.
+e and f The relative distribution of flanks defined by the databases with the distance from the~\gls{tmh} boundary on the horizontal axis for both the inside and outside flanks.
 The colouring is the same as in (a) and (b).}
 
 \label{fig:multi_pass_charge_distribution}
@@ -320,22 +320,22 @@ At the inside flank, this rises to 4.6\% for arginine and 4.1\% for lysine in Un
 The mean net charge at each position was calculated for multi-pass and single-pass datasets from UniHuman and ExpAll (Figure \ref{fig:net_charge}).
 The positive inside rule clearly becomes visible as the net charge has a positive skew approximately between residues -10 and -25.
 What is noteworthy is that the peaks found for single-pass helices were almost three times greater than those of multi-pass helices.
-For single-pass \gls{tmh}s, the peak is +0.30 at position -15 in UniHuman and +0.31 at position -14 in ExpAll, whereas \gls{tmh}s from multi-pass proteins had lower peaks of +0.15 at position -13 in UniHuman and +0.10 at position -14 in ExpAll.
-Thus, there is a positive charge bias towards the cytoplasmic side; yet, it is much weaker for multi-pass than for single-pass \gls{tmh}s.
+For single-pass~\gls{tmh}s, the peak is +0.30 at position -15 in UniHuman and +0.31 at position -14 in ExpAll, whereas~\gls{tmh}s from multi-pass proteins had lower peaks of +0.15 at position -13 in UniHuman and +0.10 at position -14 in ExpAll.
+Thus, there is a positive charge bias towards the cytoplasmic side; yet, it is much weaker for multi-pass than for single-pass~\gls{tmh}s.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/net_charge}
-\captionof{figure}[The net charge across multi-pass and single-pass \gls{tmh}s shows a stronger positive inside charge in single-pass \gls{tmh}s than multi-pass \gls{tmh}s.]{\textbf{The net charge across multi-pass and single-pass \gls{tmh}s shows a stronger positive inside charge in single-pass \gls{tmh}s than multi-pass \gls{tmh}s.}
-The net charge per \gls{tmh} plotted at each position; the positive-inside rule is stronger in \gls{tmh}s from single-pass proteins than \gls{tmh}s from multi-pass proteins.
+\captionof{figure}[The net charge across multi-pass and single-pass~\gls{tmh}s shows a stronger positive inside charge in single-pass~\gls{tmh}s than multi-pass~\gls{tmh}s.]{\textbf{The net charge across multi-pass and single-pass~\gls{tmh}s shows a stronger positive inside charge in single-pass~\gls{tmh}s than multi-pass~\gls{tmh}s.}
+The net charge per~\gls{tmh} plotted at each position; the positive-inside rule is stronger in~\gls{tmh}s from single-pass proteins than~\gls{tmh}s from multi-pass proteins.
 The net charge was calculated at each position as described in the Methods section for the (A) UniHuman and (B) ExpAll datasets.
-Net charge for \gls{tmh}s from multi-pass proteins is shown in black, and the profile of \gls{tmh}s from single-pass proteins is drawn in blue.}
+Net charge for~\gls{tmh}s from multi-pass proteins is shown in black, and the profile of~\gls{tmh}s from single-pass proteins is drawn in blue.}
 
 \label{fig:net_charge}
 \end{figure}
 
-Notably, a ``negative outside enrichment'' trend also can be seen from the distribution of the negatively charged residues, though with some effort (Table 3) as the effect is also weaker than in the case of single-pass \gls{tmh}s.
-We studied the flanks under four conditions: (i) database-defined flanks without overlap between neighbouring \gls{tmh}s, (ii) flanks after central alignment of \gls{tmh}s without flank overlap, (iii) database-defined flanks but allowing overlap of flanks shared among neighbouring \gls{tmh}s, (iv) same as condition (ii) but only the subset of cases where there is at least half of the required flank length at either side of the \gls{tmh}.
+Notably, a ``negative outside enrichment'' trend also can be seen from the distribution of the negatively charged residues, though with some effort (Table 3) as the effect is also weaker than in the case of single-pass~\gls{tmh}s.
+We studied the flanks under four conditions: (i) database-defined flanks without overlap between neighbouring~\gls{tmh}s, (ii) flanks after central alignment of~\gls{tmh}s without flank overlap, (iii) database-defined flanks but allowing overlap of flanks shared among neighbouring~\gls{tmh}s, (iv) same as condition (ii) but only the subset of cases where there is at least half of the required flank length at either side of the~\gls{tmh}.
 In UniHuman as calculated under condition (i), aspartic acid is lower on the inside flank (2.3\%) than on the outside flank (3.0\%).
 Glutamic acid is also lower at the inside flank (2.4\%) than the 2.8\% on the outside flank (Figure~\ref{fig:multi_pass_charge_distribution}C).
 Slight variations in defining the membrane boundary point do not influence the trend (compare figures~\ref{fig:multi_pass_charge_distribution}C and~\ref{fig:multi_pass_charge_distribution}E).
@@ -351,7 +351,7 @@ In (A) the ``Database-defined flanks'' and in (B) the ``Database-defined viable*
 (A) In the ``Flanks after central alignment'' column, the ``Negative residues'' column refers to the total number of negative residues found in the –20 to –10 residues and the +10 to +20 residues from the centrally aligned residues with a maximum database defined flank length of 20 residues.
 The total number of proteins is given in the IDs column.
 The ``Helices'' column contains the total number of~\gls{tmh}s in the dataset (n), the average number of~\gls{tmh}s per protein in that population ($\mu$) and the standard deviation of that average ($\sigma$).
-The ~\gls{kw} scores were calculated for negative residues by comparing the number of negatively charged residues that were within 10 residues inside and 10 residues outside the~\gls{tmh}.
+The~\gls{kw} scores were calculated for negative residues by comparing the number of negatively charged residues that were within 10 residues inside and 10 residues outside the~\gls{tmh}.
 
 *Here, ``viable'' indicates that in each~\gls{tmh} used for both flanks either side of the~\gls{tmh} has a flank length of at least half the maximum allowed flank length, in this case 10 (the viable length is 5)}
 
@@ -424,8 +424,8 @@ The ~\gls{kw} scores were calculated for negative residues by comparing the numb
 Surprisingly, the result could not straightforwardly be repeated with the considerably smaller ExpAll.
 Under condition (i), we find with ExpAll that aspartic acid has a background level of 1.0\%, an average of 2.6\% on the inside flank, and of 2.9\% on the outside flank but glutamic acid’s background is 1.2\% but 2.8\% on the inside flank and 2.5\% on the outside flank.
 Statistical tests do not support finding a negative charge bias in conditions (i) and (ii).
-Apparently, the problem is \gls{tmh}s having no or almost no flanks at one of the sides.
-Statistical significance for the negative charge bias is detected as soon as this problem is dealt with – either by allowing extension of flanks overlap among neighbouring \gls{tmh}s as in condition (iii) or by kicking out examples without proper flank lengths from the dataset as in condition (iv).
+Apparently, the problem is~\gls{tmh}s having no or almost no flanks at one of the sides.
+Statistical significance for the negative charge bias is detected as soon as this problem is dealt with – either by allowing extension of flanks overlap among neighbouring~\gls{tmh}s as in condition (iii) or by kicking out examples without proper flank lengths from the dataset as in condition (iv).
 The respective P-values are 2.05e-6 and 9.81e-15 respectively.
 
 The issues we had with ExpAll raised the question that, maybe, sequence redundancy in the UniHuman set could have played a role.
@@ -435,60 +435,60 @@ For the conditions (i)- (iv), we computed the following P-values: (i) 1.31e-28 (
 
 So, the amplifying effect of some subsets in the overall dataset on the statistical test that might be caused by allowing overlapping flanks (condition (iii)) is not the major factor leading to the negative charge skew.
 Similarly, the trend is also not caused by sequence redundancy.
-Thus, we have learned that the negative charge bias does also exist in multi-pass \gls{tmp}s but under the conditions that there are sufficiently long loops between \gls{tmh}s.
+Thus, we have learned that the negative charge bias does also exist in multi-pass~\gls{tmp}s but under the conditions that there are sufficiently long loops between~\gls{tmh}s.
 Bluntly said: no loops equals to no charge bias.
-As soon as the loops reach some critical length, there are differences between single-pass and multi-pass \gls{tmh}s with regard to occurrence and distribution of negative charges and the inside-suppression/outside-enrichment negative charge bias appears.
-Not only are there more negative charges within the multi-pass \gls{tmh} itself (in fact, negative charges are almost not tolerated in single-pass \gls{tmh}s; see Table \ref{table:acidicresiduesarerare}), but also, there is a much stronger negative outside skew in the \gls{tmh}s of single-pass proteins than those of multi-pass proteins.
+As soon as the loops reach some critical length, there are differences between single-pass and multi-pass~\gls{tmh}s with regard to occurrence and distribution of negative charges and the inside-suppression/outside-enrichment negative charge bias appears.
+Not only are there more negative charges within the multi-pass~\gls{tmh} itself (in fact, negative charges are almost not tolerated in single-pass~\gls{tmh}s; see Table \ref{table:acidicresiduesarerare}), but also, there is a much stronger negative outside skew in the~\gls{tmh}s of single-pass proteins than those of multi-pass proteins.
 
 \subsection{Further significant sequence differences between single-pass and multi-pass helices: distribution of tryptophan, tyrosine, proline and cysteine}
 
-Amino acid residue profiles along the \gls{tm} segment and its flanks differ between single- and multi-pass \gls{tmh}s also in other aspects.
-The relative percentages of all amino acid types (normalization by the total amount of that residue type in the sequence segment) from single-pass helices of the UniHuman (Figure \ref{fig:comp_heatmaps}A; from 1705 \gls{tmh}s with flanks having 68571 residues) and ExpAll (Figure \ref{fig:comp_heatmaps}B; from 1544 \gls{tmh}s with flanks having 60200 residues) were plotted as a heatmap.
+Amino acid residue profiles along the~\gls{tm} segment and its flanks differ between single- and multi-pass~\gls{tmh}s also in other aspects.
+The relative percentages of all amino acid types (normalization by the total amount of that residue type in the sequence segment) from single-pass helices of the UniHuman (Figure \ref{fig:comp_heatmaps}A; from 1705~\gls{tmh}s with flanks having 68571 residues) and ExpAll (Figure \ref{fig:comp_heatmaps}B; from 1544~\gls{tmh}s with flanks having 60200 residues) were plotted as a heatmap.
 The amino acid types were listed on the Y axis according to Kyte \& Doolittle hydrophobicity~\cite{Kyte1982} in descending order.
 
 \begin{figure}[p]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/comp_heatmaps}
-\captionof{figure}[Relative percentage heatmaps from predictive and experimental datasets corroborate residue distribution differences between \gls{tmh}s from single-pass and multi-pass proteins.]{\textbf{Relative percentage heatmaps from predictive and experimental datasets corroborate residue distribution differences between \gls{tmh}s from single-pass and multi-pass proteins.}
-The residue position aligned to the centre of the \gls{tmh} is on the horizontal axis, and the residue type is on the vertical axis.
+\captionof{figure}[Relative percentage heatmaps from predictive and experimental datasets corroborate residue distribution differences between~\gls{tmh}s from single-pass and multi-pass proteins.]{\textbf{Relative percentage heatmaps from predictive and experimental datasets corroborate residue distribution differences between~\gls{tmh}s from single-pass and multi-pass proteins.}
+The residue position aligned to the centre of the~\gls{tmh} is on the horizontal axis, and the residue type is on the vertical axis.
 Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale [52].
-The flank lengths in the \gls{tmh} segments were restricted to up to $\pm$10 residues.
+The flank lengths in the~\gls{tmh} segments were restricted to up to $\pm$10 residues.
 The scales for each heatmap are shown beneath the respective subfigure.
 The darkest blue represents 0\% distribution, whilst the darkest red represents the maximum relative percentage distribution that is denoted by the keys in each subfigure, with white being 50\% between ``cold'' and ``hot''.
-The central \gls{tmh} subplots extend from the central \gls{tmh} residue, whereas the inner and outer flank subplots use the database-defined \gls{tmh} boundary and extend from that position.
-a \gls{tmh}s from the single-pass UniHuman dataset.
-b Single-pass protein \gls{tmh}s from the ExpAll dataset.
-c \gls{tmh}s from the proteins of the multi-pass UniHuman dataset.
-d \gls{tmh}s from ExpAll multi-pass proteins.
+The central~\gls{tmh} subplots extend from the central~\gls{tmh} residue, whereas the inner and outer flank subplots use the database-defined~\gls{tmh} boundary and extend from that position.
+a~\gls{tmh}s from the single-pass UniHuman dataset.
+b Single-pass protein~\gls{tmh}s from the ExpAll dataset.
+c~\gls{tmh}s from the proteins of the multi-pass UniHuman dataset.
+d~\gls{tmh}s from ExpAll multi-pass proteins.
 The general consistency in relative distributions of every residue type between single-pass and multi-pass of either dataset including flank/\gls{tmh} boundary selection allows us to infer biological conclusions from these distributions that are independent of methodological biases used to gather the sequences.
-The only residue that displays drastically differently between the datasets is cysteine in multi-pass \gls{tmh}s only.
-The most striking differences in distributions between residues from \gls{tmh}s of single-pass and multi-pass proteins include a more defined Y and W clustering at the flanks, a suppression of E and D on the inside flank, a suppression of P on the inside flank and a topological bias for C favouring the inside flank.}
+The only residue that displays drastically differently between the datasets is cysteine in multi-pass~\gls{tmh}s only.
+The most striking differences in distributions between residues from~\gls{tmh}s of single-pass and multi-pass proteins include a more defined Y and W clustering at the flanks, a suppression of E and D on the inside flank, a suppression of P on the inside flank and a topological bias for C favouring the inside flank.}
 
 \label{fig:comp_heatmaps}
 \end{figure}
 
-In accordance with expectations, enrichment for hydrophobic residues in the \gls{tmh}, for the positively charged residues on the inside flank as well as a distribution the negative distribution bias was found in both datasets.
-Additionally, the inside interfacial region showed consistent enrichment hotspots for tryptophan (e.g., 7.1\% at position -11 in ExpAll, 6.2\% at position -10 in UniHuman with flanks after central \gls{tmh} alignment) and tyrosine (6.4\% at -11 in ExpAll, 7.1\% at -11 in UniHuman), and some preference can also be seen for the outer interfacial region (\textit{e.g.}, 5.2\% at position 11 for tryptophan in ExpAll, and 5.8\% at position 10 for tryptophan in UniHuman) albeit the ``hot'' cluster of the outer flank covers fewer positions than that of the inner flank.
+In accordance with expectations, enrichment for hydrophobic residues in the~\gls{tmh}, for the positively charged residues on the inside flank as well as a distribution the negative distribution bias was found in both datasets.
+Additionally, the inside interfacial region showed consistent enrichment hotspots for tryptophan (e.g., 7.1\% at position -11 in ExpAll, 6.2\% at position -10 in UniHuman with flanks after central~\gls{tmh} alignment) and tyrosine (6.4\% at -11 in ExpAll, 7.1\% at -11 in UniHuman), and some preference can also be seen for the outer interfacial region (\textit{e.g.}, 5.2\% at position 11 for tryptophan in ExpAll, and 5.8\% at position 10 for tryptophan in UniHuman) albeit the ``hot'' cluster of the outer flank covers fewer positions than that of the inner flank.
 Further, there is an apparent bias of cysteine on the inner flank and interfacial region (e.g., 5.5\% at position -10 in ExpAll, 5.9\% at position -11 in UniHuman), and a depression in the outer interfacial region and flank (up to a minimum of 0.3\% in both ExpAll and UniHuman).
 Proline appears to have a depression signal on the outer flank.
-Note that, in a similar way to Figures \ref{fig:single_pass_charge_distribution} and \ref{fig:multi_pass_charge_distribution}, the distributions of the flanks derived from centrally aligned \gls{tmh}s are corroborated by the distributions from the database defined \gls{tmh} boundary flanks (see outside bands in Figures \ref{fig:comp_heatmaps}A-D).
+Note that, in a similar way to Figures \ref{fig:single_pass_charge_distribution} and \ref{fig:multi_pass_charge_distribution}, the distributions of the flanks derived from centrally aligned~\gls{tmh}s are corroborated by the distributions from the database defined~\gls{tmh} boundary flanks (see outside bands in Figures \ref{fig:comp_heatmaps}A-D).
 
-A similar heatmap was generated for UniHuman multi-pass (Figure \ref{fig:comp_heatmaps}C; from 12353 \gls{tmh}s with flanks having 452708 residues) \gls{tmh}s and ExpAll multi-pass (Figure \ref{fig:comp_heatmaps}D; from 15563 \gls{tmh}s with flanks having 535599 residues).
-Whereas Figures \ref{fig:comp_heatmaps}A-C appear quite noisy, the plot for ExpAll multi-pass \gls{tmh}s appears almost Gaussian-like smoothed, thus, indicating the quality of this dataset.
-Tyrosine and tryptophan in the multi-pass case do not appear as enriched in the interfacial regions of single-pass \gls{tmh}s from both UniHuman and ExpAll.
-Prolines are only suppressed in the \gls{tmh} itself and are not suppressed in the outer flank as in the single-pass case but, indeed, are tolerated if not slightly enriched in the flanks.
+A similar heatmap was generated for UniHuman multi-pass (Figure \ref{fig:comp_heatmaps}C; from 12353~\gls{tmh}s with flanks having 452708 residues)~\gls{tmh}s and ExpAll multi-pass (Figure \ref{fig:comp_heatmaps}D; from 15563~\gls{tmh}s with flanks having 535599 residues).
+Whereas Figures \ref{fig:comp_heatmaps}A-C appear quite noisy, the plot for ExpAll multi-pass~\gls{tmh}s appears almost Gaussian-like smoothed, thus, indicating the quality of this dataset.
+Tyrosine and tryptophan in the multi-pass case do not appear as enriched in the interfacial regions of single-pass~\gls{tmh}s from both UniHuman and ExpAll.
+Prolines are only suppressed in the~\gls{tmh} itself and are not suppressed in the outer flank as in the single-pass case but, indeed, are tolerated if not slightly enriched in the flanks.
 
-\subsection{Hydrophobicity and leucine distribution in \gls{tmh}s in single- and multi-pass proteins}
+\subsection{Hydrophobicity and leucine distribution in~\gls{tmh}s in single- and multi-pass proteins}
 
 Generally, we see in Figure \ref{fig:comp_heatmaps} that compositional biases appear more extreme in the single-pass case, particularly when it comes to polar and non-polar residues being more heavily suppressed and enriched.
-To investigate this observation, we calculated the hydrophobicity at each sequence-position averaged over all \gls{tmh}s considered (after having window-averaged over 3 residues for each \gls{tmh}) using the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982} (Figure~\ref{fig:hydrophobicity_single_multi}A) and validated using White and Wimley octanol-interface whole residue scale~\cite{White1999}, Hessa’s biological hydrophobicity scale~\cite{Hessa2005}, and the Eisenberg hydrophobic moment consensus scale~\cite{Eisenberg1984} (Supplementary Figure~\ref{fig:hydrophobicity_scale_comparison}).
-The total set of \gls{tmh}s was split into 15 sets of membrane-spanning proteins (1 set containing single-pass proteins, 13 sets each containing \gls{tmh}s from 2-, 3-, 4-\ldots 14-\gls{tmp}s and another of \gls{tmh}s from proteins with 15 or more \gls{tmh}s).
-In Figure~\ref{fig:hydrophobicity_single_multi}B, we show the P-value at each sequence position by comparing the respective values from multi-pass and single-pass \gls{tmh}s using the 2-sample t-test (Figure \ref{fig:hydrophobicity_single_multi}B).
-Strikingly, the inside flank of the single-pass \gls{tmh}s is much more hydrophilic (e.g., see the Kyte \& Doolittle score=-1.3 at position -18) than that of multi-pass \gls{tmh}s (P-value=5.64e-103 at position -14).
+To investigate this observation, we calculated the hydrophobicity at each sequence-position averaged over all~\gls{tmh}s considered (after having window-averaged over 3 residues for each~\gls{tmh}) using the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982} (Figure~\ref{fig:hydrophobicity_single_multi}A) and validated using White and Wimley octanol-interface whole residue scale~\cite{White1999}, Hessa’s biological hydrophobicity scale~\cite{Hessa2005}, and the Eisenberg hydrophobic moment consensus scale~\cite{Eisenberg1984} (Supplementary Figure~\ref{fig:hydrophobicity_scale_comparison}).
+The total set of~\gls{tmh}s was split into 15 sets of membrane-spanning proteins (1 set containing single-pass proteins, 13 sets each containing~\gls{tmh}s from 2-, 3-, 4-\ldots 14-\gls{tmp}s and another of~\gls{tmh}s from proteins with 15 or more~\gls{tmh}s).
+In Figure~\ref{fig:hydrophobicity_single_multi}B, we show the P-value at each sequence position by comparing the respective values from multi-pass and single-pass~\gls{tmh}s using the 2-sample t-test (Figure \ref{fig:hydrophobicity_single_multi}B).
+Strikingly, the inside flank of the single-pass~\gls{tmh}s is much more hydrophilic (e.g., see the Kyte \& Doolittle score=-1.3 at position -18) than that of multi-pass~\gls{tmh}s (P-value=5.64e-103 at position -14).
 Most likely, the positive inside rule, along with the interfacial clustering of tryptophan and tyrosine, contribute to a strong polar inside flank in single-pass helices that is not present in multi-pass helices en masse.
-Further, multi-pass \gls{tmh}s cluster remarkably closely within the \gls{tm} core; the respective hydrophobicity is apparently not dependent on the number of \gls{tmh}s in a given multi-pass \gls{tmp}.
-On average, single-pass \gls{tmh}s are more hydrophobic in the core than multi-pass \gls{tmh}s (P-value$<$1.e-72 within positions -5…5 and P-value=5.92e-190 at position 0).
-On the other hand, hydrophobicity differences between \gls{tmh}s from single- and multi-pass proteins fade somewhat at the transition towards the flanks (P-value=1.85e-4 at position -10, and P-value=3.35e-31 at position 10).
+Further, multi-pass~\gls{tmh}s cluster remarkably closely within the~\gls{tm} core; the respective hydrophobicity is apparently not dependent on the number of~\gls{tmh}s in a given multi-pass~\gls{tmp}.
+On average, single-pass~\gls{tmh}s are more hydrophobic in the core than multi-pass~\gls{tmh}s (P-value$<$1.e-72 within positions -5…5 and P-value=5.92e-190 at position 0).
+On the other hand, hydrophobicity differences between~\gls{tmh}s from single- and multi-pass proteins fade somewhat at the transition towards the flanks (P-value=1.85e-4 at position -10, and P-value=3.35e-31 at position 10).
 
 \begin{figure}[!ht]
 \centering
@@ -516,7 +516,7 @@ The difference in hydrophobicity between the single-pass and multi-pass datasets
 As with Figure~\ref{fig:hydrophobicity_single_multi}, UniHuman was stratified according to the number of~\gls{tmh}s in each protein.
 The mean amino acid hydrophobicity values of~\gls{tmh}s with a sliding unweighted window of 3 residues from UniHuman proteins at each position were plotted.
 To validate the findings presented in Figure \ref{fig:hydrophobicity_single_multi}A, several scales of hydrophobicity were used.
-(A) The White and Wimley whole residue scale~\cite{White1999} is based on the partitioning of peptides between water and octanol as well as water to \gls{popc}.
+(A) The White and Wimley whole residue scale~\cite{White1999} is based on the partitioning of peptides between water and octanol as well as water to~\gls{popc}.
 A positive score indicates a more polar score.
 (B) The Hessa biological scale~\cite{Hessa2005}.
 The hydrophobicity values represent the free energy exchange during recognition of designed peptide~\gls{tmh}s by the endoplasmic reticulum Sec61 translocon and, therefore, negative values indicate an energetic preference for the interior of a lipid bilayer.
@@ -527,18 +527,18 @@ A positive score indicates a generally more hydrophobic score.}
 \label{fig:hydrophobicity_scale_comparison}
 \end{figure}
 
-Leucine is the most abundant residue in \gls{tmh}s (Figure~\ref{fig:amino_acid_distribution}) and is considered one of the most hydrophobic residues by all hydrophobicity scales.
-Therefore, it plays a very influential role in \gls{tmh} helix-helix and lipid-helix interactions in the membrane and recognition by the insertion machinery.
-When looking at the difference in the abundance of leucine between the inner and outer halves, we find that \gls{tmh}s from single-pass proteins have a trend to contain more leucine residues at the cytoplasmic side of \gls{tmh}s, particularly in the case of \gls{tmh}s from single-pass proteins (see Figures~\ref{fig:single_pass_charge_distribution} and~\ref{fig:comp_heatmaps}).
+Leucine is the most abundant residue in~\gls{tmh}s (Figure~\ref{fig:amino_acid_distribution}) and is considered one of the most hydrophobic residues by all hydrophobicity scales.
+Therefore, it plays a very influential role in~\gls{tmh} helix-helix and lipid-helix interactions in the membrane and recognition by the insertion machinery.
+When looking at the difference in the abundance of leucine between the inner and outer halves, we find that~\gls{tmh}s from single-pass proteins have a trend to contain more leucine residues at the cytoplasmic side of~\gls{tmh}s, particularly in the case of~\gls{tmh}s from single-pass proteins (see Figures~\ref{fig:single_pass_charge_distribution} and~\ref{fig:comp_heatmaps}).
 
-This trend is statistically significant for \gls{tmh}s in many biological membranes (Table~\ref{table:leucineskewstats}, Figure~\ref{fig:dataset_distributions}).
+This trend is statistically significant for~\gls{tmh}s in many biological membranes (Table~\ref{table:leucineskewstats}, Figure~\ref{fig:dataset_distributions}).
 In the most extreme case of UniCress (single-pass), we see 49\% more leucine residues on the inside leaflet than the outside leaflet (P-value=5.41e-24).
 This contrasts with UniCress (multi-pass), in which the skew is far weaker, albeit yet statistically significant.
 There are 6\% more leucine residues at the inside half (P-value=2.08e-4).
-The trend of having more leucine residues at the cytoplasmic half of the \gls{tmh} is observed for all datasets (both single- and multi-pass) except for UniArch (single-pass).
+The trend of having more leucine residues at the cytoplasmic half of the~\gls{tmh} is observed for all datasets (both single- and multi-pass) except for UniArch (single-pass).
 The phenomenon is statistically significant with P-value$<$1.e-3 for ExpAll, UniHuman, UniPM and UniCress (both single- and multi-pass).
 As with negative charge distribution, UniArch presents a reversed effect compared to other single-pass protein datasets with a 57\% reduction in leucine on the inside leaflet compared to the outside leaflet (P-value=7.25e-6).
-However, leucine of \gls{tmh}s from UniArch multi-pass proteins have no discernible preference for the inside leaflets (4\% more on the inside leaflet, P-value=0.625).
+However, leucine of~\gls{tmh}s from UniArch multi-pass proteins have no discernible preference for the inside leaflets (4\% more on the inside leaflet, P-value=0.625).
 
 % Table generated by Excel2LaTeX from sheet 'Sheet1'
 \begin{table}[htbp]
@@ -584,12 +584,12 @@ However, leucine of \gls{tmh}s from UniArch multi-pass proteins have no discerni
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/dataset_distributions}
-\captionof{figure}[Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.]{\textbf{Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.} The relative percentage distribution of charged residues and leucine was calculated at each position in the \gls{tmh} with flank lengths of $\pm$20 in different datasets.
+\captionof{figure}[Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.]{\textbf{Comparing charged amino acid distributions in~\gls{tmh}s of multi-pass and single-pass proteins across different species and organelles.} The relative percentage distribution of charged residues and leucine was calculated at each position in the~\gls{tmh} with flank lengths of $\pm$20 in different datasets.
 The distributions are normalised according to relative percentage distribution.
 Aspartic acid and glutamic acid are shown in dark purple and light purple respectively.
-Leucine, the most abundant non-polar residue in \gls{tmh}s, is in blue.
+Leucine, the most abundant non-polar residue in~\gls{tmh}s, is in blue.
 Arginine and lysine are shown in orange.
-TMHs from single-pass proteins are on the left and \gls{tmh}s from multi-pass proteins are on the right for different taxonomic datasets: a UniCress, b UniFungi, c UniEcoli, d UniBacilli, e UniArch, and different organelles: f UniER, g UniGolgi, h UniPM.
+TMHs from single-pass proteins are on the left and~\gls{tmh}s from multi-pass proteins are on the right for different taxonomic datasets: a UniCress, b UniFungi, c UniEcoli, d UniBacilli, e UniArch, and different organelles: f UniER, g UniGolgi, h UniPM.
 As a trend, the negative-outside skew is more present in~\gls{tmh}s from single-pass proteins than multi-pass proteins (Tables 2 and 3).
 Another key observation is that in single-pass~\gls{tmh}s there is a propensity for leucine on the inner over the outer leaflet (Table \ref{table:leucineskewstats})}
 
@@ -599,16 +599,16 @@ Another key observation is that in single-pass~\gls{tmh}s there is a propensity 
 
 \subsection{A negative-outside (or negative-non-inside) signal is present across many membrane types}
 
-We explored the presence of amino acid residue compositional skews described above for human \gls{tmp}s for those in other taxa and also specifically for human proteins with regard to membranes at various subcellular localisations.
-Acidic residues for \gls{tmh}s from single-pass and multi-pass helices were plotted according to their relative percentage distributions (of the total amount of this residue type in the respective segment) for five taxon-specific datasets UniCress (Figure~\ref{fig:dataset_distributions}A), UniFungi (Figure~\ref{fig:dataset_distributions}B), UniEcoli (Figure~\ref{fig:dataset_distributions}C), UniBacilli (Figure~\ref{fig:dataset_distributions}D), UniArch (Figure~\ref{fig:dataset_distributions}E) and for three organelle-specific datasets UniER (Figure~\ref{fig:dataset_distributions}F), UniGolgi (Figure~\ref{fig:dataset_distributions}G), UniPM (Figure~\ref{fig:dataset_distributions}H).
+We explored the presence of amino acid residue compositional skews described above for human~\gls{tmp}s for those in other taxa and also specifically for human proteins with regard to membranes at various subcellular localisations.
+Acidic residues for~\gls{tmh}s from single-pass and multi-pass helices were plotted according to their relative percentage distributions (of the total amount of this residue type in the respective segment) for five taxon-specific datasets UniCress (Figure~\ref{fig:dataset_distributions}A), UniFungi (Figure~\ref{fig:dataset_distributions}B), UniEcoli (Figure~\ref{fig:dataset_distributions}C), UniBacilli (Figure~\ref{fig:dataset_distributions}D), UniArch (Figure~\ref{fig:dataset_distributions}E) and for three organelle-specific datasets UniER (Figure~\ref{fig:dataset_distributions}F), UniGolgi (Figure~\ref{fig:dataset_distributions}G), UniPM (Figure~\ref{fig:dataset_distributions}H).
 
 For single-pass proteins in all taxon-specific datasets (with the exception of UniArch), there are more negative residues at the outside than at the inside.
 The skew is statistically significant (see Table~\ref{table:negativeskewsinglepass}, P$<$0.001) except for UniBacilli.
 Despite statistical significance found for UniFungi (P-value=1.12e-7 for database-defined and P-value=6.79e-10 for flanks after central alignment; Table~\ref{table:negativeskewsinglepass}), however, the trend is not very strong in this case (Figure~\ref{fig:dataset_distributions}B).
 Whereas the skew is just a suppression of negatively charged residues at the inside flank for ExpAll and UniHuman (as well as in UniCress), the bias observed for UniEcoli involves also a negative charge enrichment at the outside flank.
 In the case of UniArch (Figure~\ref{fig:dataset_distributions}E), we see a negative inside preference that is 6.0\% in the case of aspartic acid, and 6.3\% for glutamic acid (not shown), with much lower values close to 0\% on the outside.
-Whilst the difference is statistically significant for both \gls{tmh}s (Table~\ref{table:negativeskewsinglepass}) from single-pass proteins (P-value=1.83e-12 and P-value=1.43e-11 for two versions of flank determination) and multi-pass proteins (P-values 4.72e-3, 7.81e-3, 1.28e-4 for three versions of flank determination, see Tables 3A and 3B), the distribution along the position axis is heavily fluctuating, maybe as a result of the small size of the dataset.
-However, one can assuredly assign a ``negative-inside'' tendency to the flanking regions of Archaean \gls{tmh}s.
+Whilst the difference is statistically significant for both~\gls{tmh}s (Table~\ref{table:negativeskewsinglepass}) from single-pass proteins (P-value=1.83e-12 and P-value=1.43e-11 for two versions of flank determination) and multi-pass proteins (P-values 4.72e-3, 7.81e-3, 1.28e-4 for three versions of flank determination, see Tables 3A and 3B), the distribution along the position axis is heavily fluctuating, maybe as a result of the small size of the dataset.
+However, one can assuredly assign a ``negative-inside'' tendency to the flanking regions of Archaean~\gls{tmh}s.
 
 In the human organelle datasets, we see trend shifts at different stages in the secretory pathway.
 In UniER, there is an enrichment of negative charge on the outside flank of 1--1.5\% that is comparable to the magnitude of the positive inside signal.
@@ -616,15 +616,15 @@ In UniGolgi, there is a suppression of negatively charged residues on the inside
 For UniPM, there is a negative-inside suppression (but no outside enrichment) as well as a positive-inside signal.
 All observed trends are statistically significant (see Table~\ref{table:negativeskewsinglepass}, P$<$1.e-5).
 
-For multi-pass \gls{tmh} proteins, we see either the same trends but in a weaker form or no skews are observed at all as inspection of the graphs in Figure~\ref{fig:dataset_distributions} shows.
+For multi-pass~\gls{tmh} proteins, we see either the same trends but in a weaker form or no skews are observed at all as inspection of the graphs in Figure~\ref{fig:dataset_distributions} shows.
 For datasets UniER, UniGolgi, UniCress, UniFungi, and UniBacilli, the hypothesis of equal distribution of negatively charged residues cannot be rejected (P-value$>$0.001, see Table 3); thus, a skew is statistically non-significant.
 Although UniPM has a statistically significant bias (P-value$<$4.30e-12, Table 3), the trends are more subtle and most present for aspartic acid of UniPM\@.
-We see many more negative and positive charges tolerated within the multi-pass \gls{tmh}s themselves throughout all datasets (Table \ref{table:acidicresiduesarerare}).
+We see many more negative and positive charges tolerated within the multi-pass~\gls{tmh}s themselves throughout all datasets (Table \ref{table:acidicresiduesarerare}).
 To note, there is a positive-inside rule for all multi-pass datasets studied herein.
 
-To conclude, we find that negative-charge bias distribution is a feature of single-pass protein \gls{tmh}s that is present across many membrane types and it can have the form of a negative charge suppression at the inside flank or an enrichment of those charges at the outside flank.
+To conclude, we find that negative-charge bias distribution is a feature of single-pass protein~\gls{tmh}s that is present across many membrane types and it can have the form of a negative charge suppression at the inside flank or an enrichment of those charges at the outside flank.
 
-\subsection{Amino acid compositional skews in relation to \gls{tmh} complexity and anchorage function}
+\subsection{Amino acid compositional skews in relation to~\gls{tmh} complexity and anchorage function}
 
 \begin{figure}[p]
 \centering
@@ -638,70 +638,244 @@ The slopes are statistically compared in Tables 5 and 6, and as a trend, the pro
 \label{fig:complexity_datasets}
 \end{figure}
 
-In previous work, we studied the relationship of \gls{tmh} composition, sequence complexity and function~\cite{Wong2010, Wong2011, Wong2012} and concluded that simple \gls{tmh}s are more probably responsible for simple membrane anchorage, whereas complex \gls{tmh}s have a biological function beyond just anchorage.
+In previous work, we studied the relationship of~\gls{tmh} composition, sequence complexity and function~\cite{Wong2010, Wong2011, Wong2012} and concluded that simple~\gls{tmh}s are more probably responsible for simple membrane anchorage, whereas complex~\gls{tmh}s have a biological function beyond just anchorage.
 We wished to see how the skews observed in this work relate to that classification.
-Therefore, the single-pass \gls{tmh}s from UniHuman and ExpAll were separated into subsets of simple, twilight, and complex \gls{tmh}s using TMSOC~\cite{Wong2011, Wong2012}.
+Therefore, the single-pass~\gls{tmh}s from UniHuman and ExpAll were separated into subsets of simple, twilight, and complex~\gls{tmh}s using TMSOC~\cite{Wong2011, Wong2012}.
 The relative percentages of eight residue types (L, D, E, R, K, Y, W, C\@; normalisation with the total amount of residues of that amino acid type in all sequence segments considered) were plotted along the sequence position for simple and complex helices (Figure~\ref{fig:complexity_datasets}).
-Of UniHuman single-pass proteins, there were 889 records with simple \gls{tmh}s and 570 with complex \gls{tmh}s (Figure~\ref{fig:complexity_datasets}B).
-In ExpAll, 769 \gls{tmh}s from single-pass proteins were simple \gls{tmh}s and 570 were complex \gls{tmh}s.
+Of UniHuman single-pass proteins, there were 889 records with simple~\gls{tmh}s and 570 with complex~\gls{tmh}s (Figure~\ref{fig:complexity_datasets}B).
+In ExpAll, 769~\gls{tmh}s from single-pass proteins were simple~\gls{tmh}s and 570 were complex~\gls{tmh}s.
 
-It is visually apparent (Figure~\ref{fig:complexity_datasets}) that there are (i) stronger skews and more inside-outside disparities in simple single-pass \gls{tm}s than in complex single-pass \gls{tm}s and (ii) greater similarities between single-pass complex TM regions and those from multi-pass proteins compared with simple single-pass \gls{tm}s in comparison with either of the other two distributions.
-To examine the statistical significance of these observations, we compared the amino acid distributions (K, R, K+R, D, E, D+E, Y, W, L, C) across the range of \gls{tmh}s with flank lengths $\pm$10 residues using the \gls{ks}, \gls{kw} and the \({\chi}^{2}\) statistical tests.
-To note, the \gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the gls{kw} test is after skews between distributions and the \({\chi}^{2}\) statistical test checks the average difference between distributions.
-Calculations were carried out over single-pass complex, single-pass simple and multi-pass \gls{tmh} datasets from both ExpAll and UniHuman (for P-values and Bahadur slopes, Table 5 (dataset UniHuman) and Table 6 (dataset ExpAll)).
+It is visually apparent (Figure~\ref{fig:complexity_datasets}) that there are (i) stronger skews and more inside-outside disparities in simple single-pass~\gls{tm}s than in complex single-pass~\gls{tm}s and (ii) greater similarities between single-pass complex TM regions and those from multi-pass proteins compared with simple single-pass~\gls{tm}s in comparison with either of the other two distributions.
+To examine the statistical significance of these observations, we compared the amino acid distributions (K, R, K+R, D, E, D+E, Y, W, L, C) across the range of~\gls{tmh}s with flank lengths $\pm$10 residues using the~\gls{ks},~\gls{kw} and the \({\chi}^{2}\) statistical tests.
+To note, the~\gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the gls{kw} test is after skews between distributions and the \({\chi}^{2}\) statistical test checks the average difference between distributions.
+Calculations were carried out over single-pass complex, single-pass simple and multi-pass~\gls{tmh} datasets from both ExpAll and UniHuman (for P-values and Bahadur slopes, Table~\ref{table:unihumanbahadur} (dataset UniHuman) and Table~\ref{table:expallbahadur} (dataset ExpAll)).
 
-Many low P-values in Tables 5 and 6 indicate significant differences between the three distributions studied.
-For the UniHuman dataset (Table 5), we find most striking, significant differences between charged residue distributions (R, K, D, E) of simple and complex single-pass \gls{tmh}+flank regions (\({\chi}^{2}\) P-value$<$2.23e-3 for single amino acid types).
-Similarly, simple single-pass \gls{tmh}+flank segments differ significantly from multi-pass \gls{tmh}+flank segments (\gls{kw} test P-values$<$3.e-2 for R, K, D, E, Y, W amino acid types as well as for K+R and D+E).
-The trends are the same for the ExpAll dataset (Table 6): simple and complex single-pass \gls{tmh}+flank regions differ in charged amino acid type distributions (\({\chi}^{2}\) P-value$<$4.21e-3 for all cases), as well as simple single-pass and multi-pass ones, do (\gls{kw} test P-values$<$5.e-2 for R, D, E, Y, W amino acid types and D+E).
+\begin{table}[htbp]
 
-Whereas P-value tests for significant differences between distributions depend strongly on the amount of data, the more informative Bahadur slopes that measure the distance from the zero hypothesis are independent of the amount of data (55--57).
-As we can see in Tables 5 and 6, the absolute Bahadur slopes for the simple single-pass to multi-pass comparison are always larger (even by at least an order of magnitude): (ii) for all three statistical tests applied (\({\chi}^{2}\), \gls{ks} and \gls{kw}), (ii) for all amino acid types, for K+R and E+D and (iii) for both datasets UniHuman and ExpAll.
-Thus, complex single-pass \gls{tmh}+flanks have compositional properties that are indeed very similar to those of multi-pass ones (which are known to have a large fraction of complex \gls{tmh}s~\cite{Wong2011, Wong2012}).
-This strong evidence implies that the actual issue is not so much about single- and multi-pass \gls{tmh} segments but between simple and complex \gls{tmh}s where the first are exclusively guided by the anchor requirements whereas the latter have more complex restraints to fulfil.
+  \centering
+  \captionof{table}[Simple TMHs are less similar than complex TMHs to TMHs from multi-pass proteins in UniHuman]{\textbf{Simple TMHs are less similar than complex TMHs to TMHs from multi-pass proteins in UniHuman}
+  The statistical results were gathered by comparing complex single-pass TMHs, simple TMHs from single-pass proteins and TMHs from multi-pass proteins in UniHuman.
+  The abundance of different residues at each position when using the centrally aligned TMH approach was compared with several statistical tests (the~\gls{ks},~\gls{kw} and the $\chi^2$ statistical tests) and the Bahadur slope values of those results}
+    \resizebox{\textwidth}{!}{
+    \tiny
+    \begin{tabular}{ p{5em} l l l l l l }
+    \toprule
+    \multirow{2}[4]{*}{Residues} & \multicolumn{3}{p{15em} }{P values for $\chi^2$} & \multicolumn{3}{p{15em} }{Bahadur slopes for $\chi^2$} \\
+\cmidrule{2-7}    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+    R    & 3.20E-06 & 7.38E-02 & 1.24E-01 & 6.61E-03 & 2.20E-03 & 1.27E-04 \\
+    \midrule
+    K    & 2.23E-03 & 4.99E-02 & 2.14E-01 & 3.99E-03 & 3.70E-03 & 1.18E-04 \\
+    \midrule
+    D    & 1.67E-09 & 3.06E-01 & 3.02E-01 & 3.34E-02 & 3.24E-03 & 1.20E-04 \\
+    \midrule
+    E    & 3.80E-07 & 2.34E-01 & 2.31E-01 & 1.81E-02 & 3.05E-03 & 1.36E-04 \\
+    \midrule
+    Y    & 3.86E-01 & 3.97E-01 & 2.11E-01 & 1.06E-03 & 1.47E-03 & 8.25E-05 \\
+    \midrule
+    W    & 3.77E-03 & 2.97E-01 & 3.84E-01 & 8.52E-03 & 2.73E-03 & 1.13E-04 \\
+    \midrule
+    L    & 3.59E-01 & 2.88E-01 & 3.21E-01 & 1.52E-04 & 3.92E-04 & 1.69E-05 \\
+    \midrule
+    C    & 6.44E-01 & 3.97E-01 & 3.41E-01 & 4.29E-04 & 1.29E-03 & 8.57E-05 \\
+    \midrule
+    R+K & 2.19E-02 & 2.83E-01 & 2.52E-01 & 1.11E-03 & 6.33E-04 & 4.68E-05 \\
+    \midrule
+    D+E & 1.47E-03 & 2.86E-01 & 2.79E-01 & 4.59E-03 & 1.49E-03 & 6.15E-05 \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{3}{p{15em} }{P values for Kolmogorov-Smirnov} & \multicolumn{3}{p{15em} }{Bahadur slopes for Kolmogorov-Smirnov} \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+    R    & 2.31E-01 & 3.57E-04 & 1.08E-02 & 7.66E-04 & 6.71E-03 & 2.76E-04 \\
+    \midrule
+    K    & 4.31E-02 & 2.18E-03 & 8.93E-01 & 2.06E-03 & 7.56E-03 & 8.68E-06 \\
+    \midrule
+    D    & 1.39E-01 & 5.02E-06 & 1.08E-02 & 3.26E-03 & 3.34E-02 & 4.52E-04 \\
+    \midrule
+    E    & 7.96E-02 & 1.58E-05 & 1.08E-02 & 3.10E-03 & 2.32E-02 & 4.20E-04 \\
+    \midrule
+    Y    & 7.96E-02 & 2.22E-02 & 2.31E-01 & 2.81E-03 & 6.07E-03 & 7.78E-05 \\
+    \midrule
+    W    & 2.31E-01 & 9.06E-04 & 4.31E-02 & 2.24E-03 & 1.58E-02 & 3.70E-04 \\
+    \midrule
+    L    & 2.31E-01 & 2.31E-01 & 5.31E-01 & 2.17E-04 & 4.61E-04 & 9.42E-06 \\
+    \midrule
+    C    & 1.39E-01 & 3.61E-01 & 3.61E-01 & 1.93E-03 & 1.42E-03 & 8.10E-05 \\
+    \midrule
+    R+K & 7.96E-02 & 1.33E-04 & 7.96E-02 & 7.35E-04 & 4.48E-03 & 8.60E-05 \\
+    \midrule
+    D+E & 4.31E-02 & 1.58E-05 & 4.98E-03 & 2.21E-03 & 1.31E-02 & 2.55E-04 \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{3}{p{15em} }{P values for Kruskal-Wallis} & \multicolumn{3}{p{15em} }{Bahadur slopes for Kruskal-Wallis} \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+    R    & 2.19E-01 & 5.06E-02 & 2.37E-01 & 7.92E-04 & 2.52E-03 & 8.79E-05 \\
+    \midrule
+    K    & 2.90E-01 & 1.33E-01 & 7.00E-01 & 8.11E-04 & 2.49E-03 & 2.73E-05 \\
+    \midrule
+    D    & 3.50E-01 & 1.81E-02 & 2.81E-01 & 1.74E-03 & 1.10E-02 & 1.27E-04 \\
+    \midrule
+    E    & 2.59E-01 & 5.65E-02 & 1.78E-01 & 1.65E-03 & 6.04E-03 & 1.60E-04 \\
+    \midrule
+    Y    & 6.03E-01 & 4.53E-01 & 4.41E-01 & 5.62E-04 & 1.26E-03 & 4.34E-05 \\
+    \midrule
+    W    & 4.19E-01 & 1.84E-01 & 5.70E-01 & 1.33E-03 & 3.81E-03 & 6.62E-05 \\
+    \midrule
+    L    & 6.37E-01 & 4.88E-01 & 9.77E-01 & 6.68E-05 & 2.25E-04 & 3.47E-07 \\
+    \midrule
+    C    & 5.00E-01 & 2.22E-01 & 9.62E-01 & 6.76E-04 & 2.10E-03 & 3.11E-06 \\
+    \midrule
+    R+K & 1.87E-01 & 8.67E-02 & 4.08E-01 & 4.86E-04 & 1.23E-03 & 3.05E-05 \\
+    \midrule
+    D+E & 1.68E-01 & 4.52E-02 & 1.91E-01 & 1.25E-03 & 3.68E-03 & 7.97E-05 \\
+    \bottomrule
+    \end{tabular}%
+    }%
+   \label{table:unihumanbahadur}
 
-Several distribution features of simple \gls{tmh}s from single-pass proteins when compared to complex \gls{tmh}s from single-pass proteins and \gls{tmh}s from multi-pass proteins that contribute to the statistical differences (Figure~\ref{fig:complexity_datasets}) are especially notable.
+\end{table}%
+
+\begin{table}[htbp]
+
+  \centering
+  \captionof{table}[Simple TMHs are less similar than complex TMHs to TMHs from multi-pass proteins in ExpAll]{\textbf{Simple TMHs are less similar than complex TMHs to TMHs from multi-pass proteins in ExpAll}
+  As in Table~\ref{table:unihumanbahadur}, the statistical results were gathered by comparing complex single-pass TMHs, simple TMHs from single-pass proteins and TMHs from multi-pass proteins; however, in this case only ExpAll is used.
+  The abundance of different residues at each position when using the centrally aligned TMH approach was compared with several statistical tests (the~\gls{ks},~\gls{kw} and the $\chi^2$ statistical tests) and the Bahadur slope values of those results}
+    \resizebox{\textwidth}{!}{
+    \tiny
+    \begin{tabular}{ p{5em} l l l l l l }
+    \toprule
+    \multirow{2}[4]{*}{Residues} & \multicolumn{3}{p{15em} }{P values for $\chi^2$} & \multicolumn{3}{p{15em} }{Bahadur slopes for  $\chi^2$} \\
+\cmidrule{2-7}    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+     R    & 5.10E-06 & 2.98E-01 & 5.10E-06 & 9.17E-03 & 1.61E-03 & 6.23E-05 \\
+    \midrule
+     K    & 2.35E-03 & 1.85E-01 & 2.35E-03 & 4.81E-03 & 3.88E-03 & 9.78E-05 \\
+    \midrule
+     D    & 2.61E-08 & 1.84E-01 & 2.61E-08 & 4.15E-02 & 7.90E-03 & 1.41E-04 \\
+    \midrule
+     E    & 2.38E-10 & 2.04E-01 & 2.38E-10 & 3.88E-02 & 7.08E-03 & 1.22E-04 \\
+    \midrule
+     Y    & 3.03E-01 & 3.11E-01 & 3.03E-01 & 2.01E-03 & 2.49E-03 & 5.51E-05 \\
+    \midrule
+     W    & 4.21E-03 & 4.29E-01 & 4.21E-03 & 1.11E-02 & 4.76E-03 & 6.46E-05 \\
+    \midrule
+     L    & 3.79E-01 & 3.04E-01 & 3.79E-01 & 2.28E-04 & 4.66E-04 & 1.50E-05 \\
+    \midrule
+     C    & 3.87E-01 & 2.52E-01 & 3.87E-01 & 1.75E-03 & 3.28E-03 & 1.48E-04 \\
+    \midrule
+     R+K & 7.16E-04 & 2.52E-01 & 7.16E-04 & 2.80E-03 & 1.28E-03 & 3.76E-05 \\
+    \midrule
+     D+E & 3.58E-05 & 2.94E-01 & 3.58E-05 & 1.03E-02 & 1.94E-03 & 4.90E-05 \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{3}{p{15em} }{P values for Kolmogorov-Smirnov} & \multicolumn{3}{p{15em} }{Bahadur slopes for Kolmogorov-Smirnov} \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+     R    & 3.61E-01 & 4.31E-02 & 3.61E-01 & 7.66E-04 & 7.79E-03 & 1.62E-04 \\
+    \midrule
+     K    & 4.31E-02 & 8.93E-01 & 4.31E-02 & 2.49E-03 & 1.05E-02 & 6.57E-06 \\
+    \midrule
+     D    & 1.39E-01 & 2.18E-03 & 1.39E-01 & 4.68E-03 & 3.61E-02 & 5.10E-04 \\
+    \midrule
+     E    & 5.31E-01 & 1.33E-04 & 5.31E-01 & 1.11E-03 & 2.81E-02 & 6.87E-04 \\
+    \midrule
+     Y    & 2.31E-01 & 9.06E-04 & 2.31E-01 & 2.47E-03 & 6.26E-03 & 3.30E-04 \\
+    \midrule
+     W    & 5.31E-01 & 4.98E-03 & 5.31E-01 & 1.29E-03 & 1.13E-02 & 4.04E-04 \\
+    \midrule
+     L    & 2.31E-01 & 2.31E-01 & 2.31E-01 & 3.45E-04 & 2.12E-03 & 1.85E-05 \\
+    \midrule
+     C    & 5.31E-01 & 3.61E-01 & 5.31E-01 & 1.16E-03 & 8.91E-04 & 1.09E-04 \\
+    \midrule
+     R+K & 1.39E-01 & 2.31E-01 & 1.39E-01 & 7.61E-04 & 4.82E-03 & 4.00E-05 \\
+    \midrule
+     D+E & 1.39E-01 & 9.06E-04 & 1.39E-01 & 1.99E-03 & 1.41E-02 & 2.80E-04 \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{3}{p{15em} }{P values for Kruskal-Wallis} & \multicolumn{3}{p{15em} }{Bahadur slopes for Kruskal-Wallis} \\
+    \midrule
+    \multicolumn{1}{ l }{} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} & \multicolumn{1}{p{5em} }{Simple-vs-complex} & \multicolumn{1}{p{5em} }{Simple-vs-multi} & \multicolumn{1}{p{5em} }{Complex-vs-multi} \\
+    \midrule
+     R    & 4.37E-01 & 3.92E-01 & 4.37E-01 & 6.24E-04 & 2.52E-03 & 4.82E-05 \\
+    \midrule
+     K    & 3.83E-01 & 6.93E-01 & 3.83E-01 & 7.62E-04 & 2.88E-03 & 2.13E-05 \\
+    \midrule
+     D    & 4.49E-01 & 1.81E-01 & 4.49E-01 & 1.90E-03 & 1.06E-02 & 1.42E-04 \\
+    \midrule
+     E    & 7.64E-01 & 1.94E-01 & 7.64E-01 & 4.71E-04 & 9.05E-03 & 1.26E-04 \\
+    \midrule
+     Y    & 8.32E-01 & 3.36E-01 & 8.32E-01 & 3.09E-04 & 9.63E-04 & 5.15E-05 \\
+    \midrule
+     W    & 7.25E-01 & 1.36E-01 & 7.25E-01 & 6.53E-04 & 5.44E-03 & 1.52E-04 \\
+    \midrule
+     L    & 7.15E-01 & 7.95E-01 & 7.15E-01 & 7.90E-05 & 3.41E-04 & 2.90E-06 \\
+    \midrule
+     C    & 8.47E-01 & 9.54E-01 & 8.47E-01 & 3.05E-04 & 4.26E-05 & 5.06E-06 \\
+    \midrule
+     R + K & 2.89E-01 & 5.13E-01 & 2.89E-01 & 4.79E-04 & 1.41E-03 & 1.82E-05 \\
+    \midrule
+     D+E & 4.94E-01 & 2.07E-01 & 4.94E-01 & 7.11E-04 & 4.14E-03 & 6.29E-05 \\
+    \bottomrule
+    \end{tabular}%
+    }%
+   \label{table:expallbahadur}
+
+\end{table}%
+
+Many low P-values in Tables~\ref{table:unihumanbahadur} and~\ref{table:expallbahadur} indicate significant differences between the three distributions studied.
+For the UniHuman dataset (Table~\ref{table:unihumanbahadur}), we find most striking, significant differences between charged residue distributions (R, K, D, E) of simple and complex single-pass~\gls{tmh}+flank regions (\({\chi}^{2}\) P-value$<$2.23e-3 for single amino acid types).
+Similarly, simple single-pass~\gls{tmh}+flank segments differ significantly from multi-pass~\gls{tmh}+flank segments (\gls{kw} test P-values$<$3.e-2 for R, K, D, E, Y, W amino acid types as well as for K+R and D+E).
+The trends are the same for the ExpAll dataset (Table~\ref{table:expallbahadur}): simple and complex single-pass~\gls{tmh}+flank regions differ in charged amino acid type distributions (\({\chi}^{2}\) P-value$<$4.21e-3 for all cases), as well as simple single-pass and multi-pass ones, do (\gls{kw} test P-values$<$5.e-2 for R, D, E, Y, W amino acid types and D+E).
+
+Whereas P-value tests for significant differences between distributions depend strongly on the amount of data, the more informative Bahadur slopes that measure the distance from the zero hypothesis are independent of the amount of data~\cite{Bahadur1967, Bahadur1971, Sunyaev1998}.
+As we can see in Tables~\ref{table:unihumanbahadur} and~\ref{table:expallbahadur}, the absolute Bahadur slopes for the simple single-pass to multi-pass comparison are always larger (even by at least an order of magnitude): (ii) for all three statistical tests applied (\({\chi}^{2}\),~\gls{ks} and~\gls{kw}), (ii) for all amino acid types, for K+R and E+D and (iii) for both datasets UniHuman and ExpAll.
+Thus, complex single-pass~\gls{tmh}+flanks have compositional properties that are indeed very similar to those of multi-pass ones (which are known to have a large fraction of complex~\gls{tmh}s~\cite{Wong2011, Wong2012}).
+This strong evidence implies that the actual issue is not so much about single- and multi-pass~\gls{tmh} segments but between simple and complex~\gls{tmh}s where the first are exclusively guided by the anchor requirements whereas the latter have more complex restraints to fulfil.
+
+Several distribution features of simple~\gls{tmh}s from single-pass proteins when compared to complex~\gls{tmh}s from single-pass proteins and~\gls{tmh}s from multi-pass proteins that contribute to the statistical differences (Figure~\ref{fig:complexity_datasets}) are especially notable.
 There is a more pronounced trend for positively charged residues and tyrosine to be preferentially located on the inside flanks and for negatively charged residues to be on the outside flanks.
-The symmetrical peaks in the percentage distribution of tyrosine in complex single-pass \gls{tmh}s are more akin to multi-pass \gls{tmh}s, whereas in simple \gls{tmh}s the distribution resembles a more typical single-pass helix (compare with Figure~\ref{fig:single_pass_charge_distribution}).
-Furthermore, the depression of charged residues within the \gls{tmh} itself is strongest in simple single-pass \gls{tmh}s.
+The symmetrical peaks in the percentage distribution of tyrosine in complex single-pass~\gls{tmh}s are more akin to multi-pass~\gls{tmh}s, whereas in simple~\gls{tmh}s the distribution resembles a more typical single-pass helix (compare with Figure~\ref{fig:single_pass_charge_distribution}).
+Furthermore, the depression of charged residues within the~\gls{tmh} itself is strongest in simple single-pass~\gls{tmh}s.
 
-To emphasise, tryptophan is essentially not tolerated within the simple \gls{tmh}s and there are higher peaks of tryptophan occurrence at either flank.
-We also see a strong inside skew for leucine clustering within the core of simple \gls{tmh}s which is not present in the ``flatter'' distributions of complex single-pass \gls{tmh}s and \gls{tmh}s from multi-pass proteins.
+To emphasise, tryptophan is essentially not tolerated within the simple~\gls{tmh}s and there are higher peaks of tryptophan occurrence at either flank.
+We also see a strong inside skew for leucine clustering within the core of simple~\gls{tmh}s which is not present in the ``flatter'' distributions of complex single-pass~\gls{tmh}s and~\gls{tmh}s from multi-pass proteins.
 
-There is obviously a cysteine-inside preference for simple, single-pass \gls{tmh}s but less in complex, multi-pass \gls{tmh}s (Figure~\ref{fig:complexity_datasets}).
-This conclusion is contrary to a previous study~\cite{Nakashima1992} but that deduction was drawn from a much smaller dataset of 45 single-pass \gls{tmh}s and 24 multi-pass \gls{tmp}s.
+There is obviously a cysteine-inside preference for simple, single-pass~\gls{tmh}s but less in complex, multi-pass~\gls{tmh}s (Figure~\ref{fig:complexity_datasets}).
+This conclusion is contrary to a previous study~\cite{Nakashima1992} but that deduction was drawn from a much smaller dataset of 45 single-pass~\gls{tmh}s and 24 multi-pass~\gls{tmp}s.
 
 \section{Discussion}
 
-The ``negative-outside/non-negative inside'' skew in \gls{tmh}s and their flanks is statistically significant
-We have seen that, consistently throughout the datasets, there is a trend for generally rare negatively charged residues to prefer the outside flank of a \gls{tmh} rather than the inside (and to almost completely avoid the \gls{tmh} itself); be it by suppression on the inside and/or enrichment on the outside.
+The ``negative-outside/non-negative inside'' skew in~\gls{tmh}s and their flanks is statistically significant
+We have seen that, consistently throughout the datasets, there is a trend for generally rare negatively charged residues to prefer the outside flank of a~\gls{tmh} rather than the inside (and to almost completely avoid the~\gls{tmh} itself); be it by suppression on the inside and/or enrichment on the outside.
 The trend is much stronger in single-pass protein datasets than in multi-pass protein datasets.
-However as we elaborated on further, the real crux of the bias appears to be associated with the \gls{tmh} being simple or complex~\cite{Wong2011, Wong2012}, thus, whether or not the \gls{tmh} has a role beyond anchorage.
-The existence of this bias has implications for topology prediction of proteins with \gls{tmh}s, engineering membrane proteins as well as for models of protein transport via membranes and protein-membrane stability considerations.
+However as we elaborated on further, the real crux of the bias appears to be associated with the~\gls{tmh} being simple or complex~\cite{Wong2011, Wong2012}, thus, whether or not the~\gls{tmh} has a role beyond anchorage.
+The existence of this bias has implications for topology prediction of proteins with~\gls{tmh}s, engineering membrane proteins as well as for models of protein transport via membranes and protein-membrane stability considerations.
 
-It should be noted that the controversy in the scientific community about the existence of a negative charge bias at \gls{tmh}s was mainly with regard to multi-pass \gls{tmp}s.
+It should be noted that the controversy in the scientific community about the existence of a negative charge bias at~\gls{tmh}s was mainly with regard to multi-pass~\gls{tmp}s.
 Despite having access to much larger, better annotated sequence datasets and many more 3D structures than our predecessors, we also had our share of difficulties here (see Results section III and Table 3).
-The straightforward approach results in inconclusive statistical tests if datasets become small (for example, if selections are restricted to subcellular localizations, 3D structures or if very harsh sequence redundancy criteria are applied) and, especially, if \gls{tmh}s with very short or no flanks are included.
-Therefore in the case of multi-pass proteins, we studied flanks as taken from the TM boundaries in the databases under several conditions: (i) without allowing flank overlap between neighbouring \gls{tmh}s, (ii) as subset of (i) but with requiring some minimal flank length at either side, (iii) with overlapping flanks.
-We also studied flanks after central alignment of \gls{tmh}s and assuming standardized \gls{tmh} length.
-Multi-pass \gls{tmh}s (without overlapping flanks) do not show statistically significant negative charge bias under condition (i) but, apparently, due to many \gls{tmh}s without any or super-short flanks at least at one side.
-Significance appears as soon as subsets of \gls{tmh}s with flanks at both sides are studied.
+The straightforward approach results in inconclusive statistical tests if datasets become small (for example, if selections are restricted to subcellular localizations, 3D structures or if very harsh sequence redundancy criteria are applied) and, especially, if~\gls{tmh}s with very short or no flanks are included.
+Therefore in the case of multi-pass proteins, we studied flanks as taken from the TM boundaries in the databases under several conditions: (i) without allowing flank overlap between neighbouring~\gls{tmh}s, (ii) as subset of (i) but with requiring some minimal flank length at either side, (iii) with overlapping flanks.
+We also studied flanks after central alignment of~\gls{tmh}s and assuming standardized~\gls{tmh} length.
+Multi-pass~\gls{tmh}s (without overlapping flanks) do not show statistically significant negative charge bias under condition (i) but, apparently, due to many~\gls{tmh}s without any or super-short flanks at least at one side.
+Significance appears as soon as subsets of~\gls{tmh}s with flanks at both sides are studied.
 Not surprisingly, there is no charge bias if there are no flanks in the first place.
-It is perhaps worth noting that the results from multi-pass \gls{tmh}s with overlapping flanks may involve amplification of skews since it involves multiple counting of the same residues.
+It is perhaps worth noting that the results from multi-pass~\gls{tmh}s with overlapping flanks may involve amplification of skews since it involves multiple counting of the same residues.
 Given the redundancy threshold of UniRef90, we cannot rule out that these statistical skews are the result of a trend from only a small sub-group of~\gls{tmp}s which is being amplified.
 Hence, we also needed to observe if these same observed biases were true in condition (ii), which is indeed the case.
 
 As the ``negative-outside/negative-not-inside'' skew is widely observed among varying taxa and subcellular localisations with statistical significance, it appears to, at least to a certain extent, be caused by physical reasons and be associated with the background membrane potential.
-Several earlier considerations and observation support this thought: (i) Firstly, a concert between the negative and positive charge on the \gls{tmh} flanks drives anchorage and the direction of insertion of engineered \gls{tmh}s~\cite{Sipos1993, Hartmann1989}.
+Several earlier considerations and observation support this thought: (i) Firstly, a concert between the negative and positive charge on the~\gls{tmh} flanks drives anchorage and the direction of insertion of engineered~\gls{tmh}s~\cite{Sipos1993, Hartmann1989}.
 (ii) The inner leaflet of the plasmalemma tends to be more negatively charged~\cite{Zachowski1993}.
 Specifically, phosphatidylserine was found to distribute in the cytosolic leaflets of the plasma membrane and it was found to electrostatically interact with moderately positive-charged proteins enough to redirect the proteins into the endocytic pathway~\cite{Yeung2008}.
-The negative charge of proteins at the inside of the plasma-membrane would decrease the anchoring potency of the \gls{tmh} via electrostatic repulsion.
-(iii) Thirdly in membranes that maintain a membrane potential, there are inevitably electrical forces acting on charged residues during chain translocation as this influences the translocon machinery when orienting the \gls{tmh}.
+The negative charge of proteins at the inside of the plasma-membrane would decrease the anchoring potency of the~\gls{tmh} via electrostatic repulsion.
+(iii) Thirdly in membranes that maintain a membrane potential, there are inevitably electrical forces acting on charged residues during chain translocation as this influences the translocon machinery when orienting the~\gls{tmh}.
 Therefore, it is no surprise that we see an inside-outside bias for negatively charged residues that is opposite to the one for positively charged residues.
-The negative charges in \gls{tmh} residues have been shown to experience an electrical pulling force as they pass through the bacterial SecYEG translocon import~\cite{Ismail2012, Ismail2015}.
+The negative charges in~\gls{tmh} residues have been shown to experience an electrical pulling force as they pass through the bacterial SecYEG translocon import~\cite{Ismail2012, Ismail2015}.
 Also, they are known to be involved in intra-membrane helix-helix interactions~\cite{Meindl-Beinker2006}.
-For example, aspartic acid and glutamic acid can drive efficient di- or trimerisation of \gls{tmh}s in lipid bilayers and, furthermore, that aspartic acid interactions with neighbouring \gls{tmh}s can directly increase insertion efficiency of marginally hydrophobic \gls{tmh}s via the Sec61 translocon~\cite{Meindl-Beinker2006}.
-In support of this, less acidic residues are found in single-pass \gls{tmh}s, among which only some will undergo intra-membrane helix-helix interactions.
+For example, aspartic acid and glutamic acid can drive efficient di- or trimerisation of~\gls{tmh}s in lipid bilayers and, furthermore, that aspartic acid interactions with neighbouring~\gls{tmh}s can directly increase insertion efficiency of marginally hydrophobic~\gls{tmh}s via the Sec61 translocon~\cite{Meindl-Beinker2006}.
+In support of this, less acidic residues are found in single-pass~\gls{tmh}s, among which only some will undergo intra-membrane helix-helix interactions.
 As the mutation studies have shown negative charge as a topological determinant~\cite{Nilsson1990}, therefore, it is perhaps no surprise that we observe a skew in negatively charged residues in a similar manner to the skew in positively charged residues.
 
 Whereas the ``negative-outside/negative-not-inside'' skew is observed for distantly related eukaryotic species and it is also present in Gram-negative bacteria such as \textit{E.
@@ -716,76 +890,76 @@ Whereas the influence of a negative charge bias in engineered proteins with TM r
 
 Generally speaking, the datasets from previous studies have been considerably smaller compared with those in our work (only Sharpe \textit{et al.} had a similar order of magnitude~\cite{Sharpe2010}), especially those with experimental information about 3D structure and membrane topology that we used for validation.
 And they might not have had the luxury of using UniProt’s improved TRANSMEM consensus annotation based on a multitude of TM prediction methods and experimental data, but this is also not the major issue.
-We found that there are other factors that are critical for observing sequence bias such as negative charge skew in the case of \gls{tmh}s.
+We found that there are other factors that are critical for observing sequence bias such as negative charge skew in the case of~\gls{tmh}s.
 
 \begin{enumerate}[i]
-  \item Acidic residues are rare near and within \gls{tmh} and biases in their distribution are easily blurred by minor fluctuations of much more frequent amino acid types, most notably leucine.
+  \item Acidic residues are rare near and within~\gls{tmh} and biases in their distribution are easily blurred by minor fluctuations of much more frequent amino acid types, most notably leucine.
 Therefore, the method of normalisation is critical.
 We have shown that normalising by the total amount of residues of the amino acid type studied within the sequence region under consideration is appropriate to answer the question where to find a negatively charged residue if there is any at all (called ``relative percentage'' in this work).
-  \item The alignment of the \gls{tmh}s is critical.
-It was common practice to align \gls{tmh} according to the most cytosolic residue~\cite{Sharpe2010} although it is known that the membrane/cytosol boundary of the \gls{tmh} is not well defined (and the exact boundary is even less well understood at the non-cytosolic side).
-Aligning the TM regions and their flanks from the center of the \gls{tmh} was first proposed by Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013}.
-Since we know now that acidic residues are often suppressed in the cytosolic flank and within the \gls{tmh}, this implies that the few acidic residues found in the cytosolic interface would appear more comparable to those in the poorly defined non-cytosolic interface as the respective residues are spread over more potential positions, diminishing any observable bias.
-  \item We find that separation into single- and multi-pass~\gls{tm} datasets (or, even better, simple and complex \gls{tmh}s~\cite{Wong2011, Wong2012}) is critical to study the inside/outside bias.
-As many \gls{tmh}s in multi-pass \gls{tmp}s have essentially no flanks or very short flanks if the condition of non-overlap is applied to flanks of neighbouring \gls{tmh}s, this might also obscure the observation of the negative charge bias.
+  \item The alignment of the~\gls{tmh}s is critical.
+It was common practice to align~\gls{tmh} according to the most cytosolic residue~\cite{Sharpe2010} although it is known that the membrane/cytosol boundary of the~\gls{tmh} is not well defined (and the exact boundary is even less well understood at the non-cytosolic side).
+Aligning the TM regions and their flanks from the center of the~\gls{tmh} was first proposed by Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013}.
+Since we know now that acidic residues are often suppressed in the cytosolic flank and within the~\gls{tmh}, this implies that the few acidic residues found in the cytosolic interface would appear more comparable to those in the poorly defined non-cytosolic interface as the respective residues are spread over more potential positions, diminishing any observable bias.
+  \item We find that separation into single- and multi-pass~\gls{tm} datasets (or, even better, simple and complex~\gls{tmh}s~\cite{Wong2011, Wong2012}) is critical to study the inside/outside bias.
+As many~\gls{tmh}s in multi-pass~\gls{tmp}s have essentially no flanks or very short flanks if the condition of non-overlap is applied to flanks of neighbouring~\gls{tmh}s, this might also obscure the observation of the negative charge bias.
 If there are no flanks, then there will be no residue distribution bias in these flanks.
-The problem can be alleviated by either studying only subsets with minimal flank lengths on both sides (although datasets might become too small for statistical analysis) or by allowing flank overlaps between neighbouring \gls{tmh}s.
-  \item This classification is even more justified in the light of previous reports about the ``missing hydrophobicity'' in multi-pass \gls{tmh}s~\cite{Nilsson1990, Hedin2010, Hessa2007, Ojemalm2012}.
+The problem can be alleviated by either studying only subsets with minimal flank lengths on both sides (although datasets might become too small for statistical analysis) or by allowing flank overlaps between neighbouring~\gls{tmh}s.
+  \item This classification is even more justified in the light of previous reports about the ``missing hydrophobicity'' in multi-pass~\gls{tmh}s~\cite{Nilsson1990, Hedin2010, Hessa2007, Ojemalm2012}.
 Otherwise, the distribution bias well observed among the exclusive anchors could be lost to noise.
- This addresses the more biologically contextualised issue that there are different evolutionary pressures on different types of \gls{tmh}s.
-The negative charge skew is most pronounced for dedicated anchors frequently found with simple \gls{tmh}s typically observed in single-pass TM proteins.
-These \gls{tmh}s are pressured to exhibit residue biases that may aid anchorage in a topologically correct manner.
-Complex \gls{tmh}s, typically within multi-pass membrane proteins that have a function beyond anchorage, comply with a multitude of restraints structural and functional constraints and the negative charge skew is just one of them.
+ This addresses the more biologically contextualised issue that there are different evolutionary pressures on different types of~\gls{tmh}s.
+The negative charge skew is most pronounced for dedicated anchors frequently found with simple~\gls{tmh}s typically observed in single-pass TM proteins.
+These~\gls{tmh}s are pressured to exhibit residue biases that may aid anchorage in a topologically correct manner.
+Complex~\gls{tmh}s, typically within multi-pass membrane proteins that have a function beyond anchorage, comply with a multitude of restraints structural and functional constraints and the negative charge skew is just one of them.
 \end{enumerate}
 
-The most representative precedent papers are those of Sharpe \textit{et al.}~\cite{Sharpe2010} from 2010 (with 1192 human and 1119 yeast single-pass \gls{tmh}s), Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013} (with 792 \gls{tmh}s mixed from single- and multi-pass~\gls{tmp}s) and Pogozheva \textit{et al.}~\cite{Pogozheva2013} (\gls{tmh}s from 191 mixed from single- and multi-pass \gls{tmp}s with structural information) both from 2013.
+The most representative precedent papers are those of Sharpe \textit{et al.}~\cite{Sharpe2010} from 2010 (with 1192 human and 1119 yeast single-pass~\gls{tmh}s), Baeza-Delgado \textit{et al.}~\cite{Baeza-Delgado2013} (with 792~\gls{tmh}s mixed from single- and multi-pass~\gls{tmp}s) and Pogozheva \textit{et al.}~\cite{Pogozheva2013} (\gls{tmh}s from 191 mixed from single- and multi-pass~\gls{tmp}s with structural information) both from 2013.
 Whereas the first analysis would have benefitted from the central alignment approach and the first two studies from another normalization as described above, the third study did come close to our findings.
 To note, their dataset mixed with single- and multi-pass proteins was too small for revealing the negative charge bias with significance; yet, they observed total charge differences at either sides of the membrane varying for both single- and multi-pass proteins.
 Membrane asymmetry due to positively charged residues occurring more frequently on the cytosolic side causes net charge unevenness at both sides of the membrane.
 This observation has been known to correlate with orientation for decades~\cite{VonHeijne1989, Baeza-Delgado2013, Meindl-Beinker2006}.
 Our data shows that the negative charge skew contributes to this asymmetry.
 
-There are differences in charged amino acid residue biases in \gls{tmh} flanks through each stage of the secretory pathway
+There are differences in charged amino acid residue biases in~\gls{tmh} flanks through each stage of the secretory pathway
 
 Here, we observe differences throughout sub-cellular locations along the secretory pathway.
-We found that negative charges are enriched at the outside flank (in the \gls{er}), both enriched outside and suppressed inside for the Golgi membrane, and suppressed on the inside flank in the \gls{pm}.
-It has been suggested that the leaflets of different membranes have different lipid compositions throughout the secretory pathway~\cite{VanMeer2008} and this has led to general biochemical conservation in terms of \gls{tmh} length and amino acid composition in different membranes~\cite{Sharpe2010, Pogozheva2013}.
+We found that negative charges are enriched at the outside flank (in the~\gls{er}), both enriched outside and suppressed inside for the Golgi membrane, and suppressed on the inside flank in the~\gls{pm}.
+It has been suggested that the leaflets of different membranes have different lipid compositions throughout the secretory pathway~\cite{VanMeer2008} and this has led to general biochemical conservation in terms of~\gls{tmh} length and amino acid composition in different membranes~\cite{Sharpe2010, Pogozheva2013}.
 
-Lipid asymmetry in the Golgi and \gls{pm} (in contrast to the \gls{er}) has been known about for over a decade~\cite{Daleke2007, Devaux2004}.
-To note, the Golgi and \gls{pm} have lipid asymmetry with sphingomyelin and glycosphingolipids on the non-cytosolic leaflet, and phosphatidylserine and phosphatidylethanolamine enriched in the cytosolic leaflet.
-Although the \gls{er} is the main site for cholesterol synthesis, it has markedly low concentrations of sphingolipids~\cite{Bell1981}.
-Golgi synthesises sphingomyelin, a lipid not present in the \gls{er}, but present in both the Golgi~\cite{Futerman2005} and in the \gls{pm}~\cite{Li2007, Tafesse2007}.
-The \gls{pm} is also enriched with densely packed sphingolipids and sterols~\cite{Paolo2006}.
-Another factor influencing the sequence patterns of \gls{tmh}s and their along the secretory pathway appears to be the variation in membrane potentials~\cite{Qin2011, Worley1994, Schapiro2000}.
+Lipid asymmetry in the Golgi and~\gls{pm} (in contrast to the~\gls{er}) has been known about for over a decade~\cite{Daleke2007, Devaux2004}.
+To note, the Golgi and~\gls{pm} have lipid asymmetry with sphingomyelin and glycosphingolipids on the non-cytosolic leaflet, and phosphatidylserine and phosphatidylethanolamine enriched in the cytosolic leaflet.
+Although the~\gls{er} is the main site for cholesterol synthesis, it has markedly low concentrations of sphingolipids~\cite{Bell1981}.
+Golgi synthesises sphingomyelin, a lipid not present in the~\gls{er}, but present in both the Golgi~\cite{Futerman2005} and in the~\gls{pm}~\cite{Li2007, Tafesse2007}.
+The~\gls{pm} is also enriched with densely packed sphingolipids and sterols~\cite{Paolo2006}.
+Another factor influencing the sequence patterns of~\gls{tmh}s and their along the secretory pathway appears to be the variation in membrane potentials~\cite{Qin2011, Worley1994, Schapiro2000}.
 
-Several sequence features can be assigned to anchor \gls{tmh}s: Charged-residue flank biases, leucine intra-helix asymmetry, and the ``aromatic belt''.
+Several sequence features can be assigned to anchor~\gls{tmh}s: Charged-residue flank biases, leucine intra-helix asymmetry, and the ``aromatic belt''.
 
-We investigated the difference between \gls{tmh}s from single-pass and multi-pass proteins and found significant differences in sequence composition that are reflective of the biologically different roles the \gls{tmh}s play.
-To emphasise and validate these findings, we separated \gls{tmh}s from single-pass proteins into simple and complex \gls{tmh}s~\cite{Wong2011, Wong2012}; ones that likely contains mostly \gls{tmh}s that act as exclusive anchors, and another that have roles beyond anchorage.
-This leaves us with ``anchors'' (simple \gls{tmh}s from single-pass proteins) and ``non-anchors'' (complex \gls{tmh}s from single-pass proteins, and \gls{tmh}s from multi-pass proteins).
+We investigated the difference between~\gls{tmh}s from single-pass and multi-pass proteins and found significant differences in sequence composition that are reflective of the biologically different roles the~\gls{tmh}s play.
+To emphasise and validate these findings, we separated~\gls{tmh}s from single-pass proteins into simple and complex~\gls{tmh}s~\cite{Wong2011, Wong2012}; ones that likely contains mostly~\gls{tmh}s that act as exclusive anchors, and another that have roles beyond anchorage.
+This leaves us with ``anchors'' (simple~\gls{tmh}s from single-pass proteins) and ``non-anchors'' (complex~\gls{tmh}s from single-pass proteins, and~\gls{tmh}s from multi-pass proteins).
 If there are strong sequence feature differences between anchors and non-anchors, it is likely that the sequence feature has a role in satisfying membrane constraints to act as an energetically optimally stable anchor.
 
-Future studies in the area would desirably directly include a comprehensive analyses of datasets oligomerised \gls{tmh}s from single-pass proteins and ascertain if they appear to be more similar to simple anchors, multi-pass, or generally neither.
+Future studies in the area would desirably directly include a comprehensive analyses of datasets oligomerised~\gls{tmh}s from single-pass proteins and ascertain if they appear to be more similar to simple anchors, multi-pass, or generally neither.
 Currently, no sufficiently complete set of intra-membrane oligomerised single-pass proteins exists that can be compared to a large set of known non-oligomerising proteins.
-The current work sidesteps this issue by comparing single-pass proteins with simple \gls{tmh}s, which tend to be simple anchors (as shown in previous work~\cite{Wong2011, Wong2012}), against datasets that contain \gls{tmh}s that will form intra-membrane bundles.
-Bluntly, the simple/complex status of a \gls{tmh} can be easily computed from its sequence with TMSOC whereas the oligomerisation state of most membrane proteins still needs to be experimentally determined.
+The current work sidesteps this issue by comparing single-pass proteins with simple~\gls{tmh}s, which tend to be simple anchors (as shown in previous work~\cite{Wong2011, Wong2012}), against datasets that contain~\gls{tmh}s that will form intra-membrane bundles.
+Bluntly, the simple/complex status of a~\gls{tmh} can be easily computed from its sequence with TMSOC whereas the oligomerisation state of most membrane proteins still needs to be experimentally determined.
 
 Unsurprisingly, both positively and negatively charged residues can be seen to be more strongly distributed with bias in anchors than non-anchors.
-Both the ``positive-inside'' rule as well as the ``negative-outside/non-negative-inside'' bias are mostly observable in simple single-pass \gls{tmh}s (although they are statistically significant elsewhere).
-It is perhaps true that where a bias is clearly present in both non-anchors and anchors alike, it is a strong topological determinant, whereas if the residue is only distributed with topological bias in exclusively anchoring \gls{tmh}s, we can attribute these features more specifically to biophysical anchorage.
+Both the ``positive-inside'' rule as well as the ``negative-outside/non-negative-inside'' bias are mostly observable in simple single-pass~\gls{tmh}s (although they are statistically significant elsewhere).
+It is perhaps true that where a bias is clearly present in both non-anchors and anchors alike, it is a strong topological determinant, whereas if the residue is only distributed with topological bias in exclusively anchoring~\gls{tmh}s, we can attribute these features more specifically to biophysical anchorage.
 This being said, we should not rule out that the same features aid topological determination since negative charge has been shown to be a weaker topological determinant than positively charged residues (35).
 
-Tyrosine and tryptophan residues commonly are found at the interfacial boundaries of the \gls{tmh} and this feature is called the ``aromatic belt''~\cite{Sharpe2010, Baeza-Delgado2013, Granseth2005, Nilsson2005a, Hessa2005} and this was thought to be caused by their affinity to the carbonyl groups in the lipid bilayer~\cite{Killian2000}.
+Tyrosine and tryptophan residues commonly are found at the interfacial boundaries of the~\gls{tmh} and this feature is called the ``aromatic belt''~\cite{Sharpe2010, Baeza-Delgado2013, Granseth2005, Nilsson2005a, Hessa2005} and this was thought to be caused by their affinity to the carbonyl groups in the lipid bilayer~\cite{Killian2000}.
 Not all types of aromatic residues are found in the aromatic belt; phenylalanine has no particular preference for this region~\cite{Granseth2005, Braun1999}.
 It is still unclear if the aromatic belt has to do with anchorage or with translocon recognition~\cite{Baeza-Delgado2013}.
-Here, \gls{tmh}s with exclusively anchorage functions showed stronger preferences for the W and Y in the aromatic belt region, otherwise known as the water-lipid interface region than \gls{tmh}s with function beyond anchorage.
-This is strong evidence that the aromatic belt indeed assists with anchorage, and is less conserved where the \gls{tmh} must conform to other restraints beyond membrane anchorage.
+Here,~\gls{tmh}s with exclusively anchorage functions showed stronger preferences for the W and Y in the aromatic belt region, otherwise known as the water-lipid interface region than~\gls{tmh}s with function beyond anchorage.
+This is strong evidence that the aromatic belt indeed assists with anchorage, and is less conserved where the~\gls{tmh} must conform to other restraints beyond membrane anchorage.
 Furthermore, we see that the tyrosine's preference for the inside interface region also appears to be to do with anchorage and this trend is somewhat true for tryptophan, too.
 
-Finally, our findings corroborate earlier reports that many multi-pass \gls{tmh}s are much less hydrophobic than typical single-pass \gls{tmh} and about 30\% of them fail the hydrophobicity requirements of $\Delta$G \gls{tmh} insertion prediction (``missing hydrophobicity'')~\cite{Hessa2005, Hedin2010, Hessa2007, Ojemalm2012}.
-We also find that the leucine skew and the hydrophobic asymmetry towards the cytosolic leaflet of the membrane is more pronounced in simple, single-pass \gls{tmh}s than in complex or multi-pass ones; thus, it appears to be another anchoring feature.
-It was found previously that the hydrophobic profiles of \gls{tmh}s of multi-pass proteins share similar hydrophobicity profiles on average irrespective of the number of \gls{tmh}s and \gls{tmh}s from single-pass proteins have been found to be typically more hydrophobic than \gls{tmh}s from multi-pass proteins~\cite{Wong2011}.
-Sharpe \textit{et al.}~\cite{Sharpe2010} report an asymmetric hydrophobic length for single-pass \gls{tmh}s.
+Finally, our findings corroborate earlier reports that many multi-pass~\gls{tmh}s are much less hydrophobic than typical single-pass~\gls{tmh} and about 30\% of them fail the hydrophobicity requirements of $\Delta$G~\gls{tmh} insertion prediction (``missing hydrophobicity'')~\cite{Hessa2005, Hedin2010, Hessa2007, Ojemalm2012}.
+We also find that the leucine skew and the hydrophobic asymmetry towards the cytosolic leaflet of the membrane is more pronounced in simple, single-pass~\gls{tmh}s than in complex or multi-pass ones; thus, it appears to be another anchoring feature.
+It was found previously that the hydrophobic profiles of~\gls{tmh}s of multi-pass proteins share similar hydrophobicity profiles on average irrespective of the number of~\gls{tmh}s and~\gls{tmh}s from single-pass proteins have been found to be typically more hydrophobic than~\gls{tmh}s from multi-pass proteins~\cite{Wong2011}.
+Sharpe \textit{et al.}~\cite{Sharpe2010} report an asymmetric hydrophobic length for single-pass~\gls{tmh}s.
 Our study reiterates the hydrophobic asymmetry and attributes it mainly to the leucine distribution.
 The leucine asymmetry might be linked to the different lipid composition of either leaflet of biological membranes.
 
@@ -795,20 +969,20 @@ The leucine asymmetry might be linked to the different lipid composition of eith
 \captionof{figure}[Residue distributions of transmembrane anchors.
 A view showing additional residue distribution features that~\gls{tmh}s with an anchorage function display.]{\textbf{Residue distributions of transmembrane anchors.
 A view showing additional residue distribution features that~\gls{tmh}s with an anchorage function display.}a The more classic model of a~\gls{tmh} showing the ``positive-inside'' rule~\cite{VonHeijne1989}, the hydrophobic core~\cite{Kyte1982}, the polar enrichment that flanks the hydrophobic stretch~\cite{Baeza-Delgado2013} and the aromatic belt~\cite{Granseth2005}.
-b Simple anchors may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table \ref{table:acidicresiduesarerare}), intra-membrane leucine asymmetry that likely causes hydrophobic skew~\cite{Sharpe2010} (Table~\ref{{table:leucineskewstats}}, Figure~\ref{fig:hydrophobicity_single_multi}), a higher preference for cysteine on the inside flanking region (Figure~\ref{fig:complexity_datasets}K and L), a higher net ``positive-inside'' charge (Figure~\ref{fig:net_charge}), asymmetric skew of the hydrophobic belt favouring the inner leaflet interface (Figure~\ref{fig:complexity_datasets}E, F, G, and H) and a negative-outside bias via suppression on the inside flanking region or enrichment on the outside flanking region (Figure~\ref{fig:complexity_datasets}C and D, Tables 2 and 3)}
+b Simple anchors may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table \ref{table:acidicresiduesarerare}), intra-membrane leucine asymmetry that likely causes hydrophobic skew~\cite{Sharpe2010} (Table~\ref{table:leucineskewstats}, Figure~\ref{fig:hydrophobicity_single_multi}), a higher preference for cysteine on the inside flanking region (Figure~\ref{fig:complexity_datasets}K and L), a higher net ``positive-inside'' charge (Figure~\ref{fig:net_charge}), asymmetric skew of the hydrophobic belt favouring the inner leaflet interface (Figure~\ref{fig:complexity_datasets}E, F, G, and H) and a negative-outside bias via suppression on the inside flanking region or enrichment on the outside flanking region (Figure~\ref{fig:complexity_datasets}C and D, Tables 2 and 3)}
 
 \label{fig:overview}
 \end{figure}
 
-In summary, three key features can be assigned to aiding \gls{tmh} stability in the membrane (Figure~\ref{fig:overview}): (i) charge, (ii) the aromatic belt, and (iii) leucine leaflet preference.
-What is most novel here is that each of these features are furthermore distributed with preference for a particular side of the bilayer in the case of anchoring \gls{tmh}s.
-These differences in inside-outside topology that are most present in anchoring \gls{tmh}s further supports the notion that there are broad lipid compositional differences between the inner and outer leaflets of the bilayers~\cite{Sharpe2010}.
-Furthermore, while some \gls{tmh}s conform and complement to the properties of the bilayer, other \gls{tmh}s with function beyond anchorage are less constrained to biophysically complement the bilayer.
-For these \gls{tmh}s, any advantage gained by adhering to the membrane restrictions is outweighed by more complicated protein dynamics, topological frustration and protein functional requirements.
+In summary, three key features can be assigned to aiding~\gls{tmh} stability in the membrane (Figure~\ref{fig:overview}): (i) charge, (ii) the aromatic belt, and (iii) leucine leaflet preference.
+What is most novel here is that each of these features are furthermore distributed with preference for a particular side of the bilayer in the case of anchoring~\gls{tmh}s.
+These differences in inside-outside topology that are most present in anchoring~\gls{tmh}s further supports the notion that there are broad lipid compositional differences between the inner and outer leaflets of the bilayers~\cite{Sharpe2010}.
+Furthermore, while some~\gls{tmh}s conform and complement to the properties of the bilayer, other~\gls{tmh}s with function beyond anchorage are less constrained to biophysically complement the bilayer.
+For these~\gls{tmh}s, any advantage gained by adhering to the membrane restrictions is outweighed by more complicated protein dynamics, topological frustration and protein functional requirements.
 
 To conclude, the large fraction of functionally uncharacterised genomic sequences is the great bottleneck in life sciences at this moment that hinders many biomedical and biotechnological applications, some with tremendous societal need~\cite{Eisenhaber2012,Kuznetsov2013}.
 Among these uncharacterised genomic regions, there is \(\sim\)10000 protein-coding genes, especially many membrane-embedded proteins.
-It is hoped that the NNI/NO-rule as well as the other sequence properties of membrane anchoring \gls{tmh}s described in this article will add new insights for membrane protein function discovery, design and engineering.
+It is hoped that the NNI/NO-rule as well as the other sequence properties of membrane anchoring~\gls{tmh}s described in this article will add new insights for membrane protein function discovery, design and engineering.
 
 \section{Methods}
 
@@ -831,8 +1005,69 @@ If ``cytoplasmic'' was found in the next TOPO\_DOM, relative to the TRANSMEM sec
 Proteins without the ``cytoplasmic'' keyword in their TOPO\_DOM annotation were omitted from further analysis.
 
 The TOPDB database~\cite{Dobson2015} is a manually curated database composed of experimental records from the literature that allow determination of the protein topology.
-Experiments include fusion proteins, posttranslational modifications, protease experiments, immunolocalization, chemical modifications as well as revertants, sequence motifs with known mandatory membrane-embedded topologies, and tailoring mutants (Supplementary Table S1).
-Length cut-offs for the \gls{tmh} were set at 16 as the shortest length and 38 as the longest.
+Experiments include fusion proteins, posttranslational modifications, protease experiments, immunolocalization, chemical modifications as well as revertants, sequence motifs with known mandatory membrane-embedded topologies, and tailoring mutants (Table~\ref{table:topdbevidence}).
+
+\begin{table}[htbp]
+
+  \centering
+
+  \captionof{table}[The experimental evidences of TOPDB.]{\textbf{The experimental evidences of TOPDB.}
+  The total number of experimental evidences that contribute to ExpAll according to the TOPDB database (More information at \url{http://topdb.enzim.hu/?m=exptype&mid=14}).
+  ``*'' refers to the total number of a subsection being larger than the total of the subcategories, likely due to lack of annotation where ambiguous literature evidence is counted toward the total, but cannot be categorised further.}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{cp{5em}cp{5em}}
+    \toprule
+
+    \multicolumn{2}{p{10em}}{\textbf{Experiment}} & \multicolumn{1}{p{5em}}{\textbf{Bitopic (Single-pass)}} & \textbf{Polytopic (Multi-pass)} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{13}[26]{*}{\textbf{Fusion}}} & PhoA  & 97    & \multicolumn{1}{c}{2332} \\
+\cmidrule{2-4}          & PhoAS & 0     & \multicolumn{1}{c}{90} \\
+\cmidrule{2-4}          & LacZ  & 20    & \multicolumn{1}{c}{433} \\
+\cmidrule{2-4}          & PhoALacZ & 0     & \multicolumn{1}{c}{224} \\
+\cmidrule{2-4}          & BlaM  & 162   & \multicolumn{1}{c}{570} \\
+\cmidrule{2-4}          & BAD   & 0     & \multicolumn{1}{c}{2} \\
+\cmidrule{2-4}          & PL    & 0     & \multicolumn{1}{c}{47} \\
+\cmidrule{2-4}          & GFP   & 18    & \multicolumn{1}{c}{591} \\
+\cmidrule{2-4}          & HIS   & 4     & \multicolumn{1}{c}{2} \\
+\cmidrule{2-4}          & SplitUbiquitin & 0     & \multicolumn{1}{c}{11} \\
+\cmidrule{2-4}          & Suc2  & 0     & \multicolumn{1}{c}{96} \\
+\cmidrule{2-4}          & Other & 1     & \multicolumn{1}{c}{137} \\
+\cmidrule{2-4}          & Total Fusion & \multicolumn{1}{p{5em}}{316*} & 4600* \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{5}[10]{*}{\textbf{PostTransMod}}} & NGlyc & 4634  & \multicolumn{1}{c}{1130} \\
+\cmidrule{2-4}          & Cman  & 0     & \multicolumn{1}{c}{6} \\
+\cmidrule{2-4}          & Phosphorylation & 4     & \multicolumn{1}{c}{1} \\
+\cmidrule{2-4}          & Ubiquitination & 47    & \multicolumn{1}{c}{102} \\
+\cmidrule{2-4}          & Total PostTransMod & 4685  & \multicolumn{1}{c}{1239} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{4}[8]{*}{\textbf{Protease}}} & Partial Proteolysis & 51    & \multicolumn{1}{c}{264} \\
+\cmidrule{2-4}          & Signal Peptidase & 1     & \multicolumn{1}{c}{0} \\
+\cmidrule{2-4}          & TID   & 13    & \multicolumn{1}{c}{15} \\
+\cmidrule{2-4}          & Total Protease & 64    & \multicolumn{1}{c}{279} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{3}[6]{*}{\textbf{Immunolocalisation}}} & Epitope Insertion & 33    & \multicolumn{1}{c}{313} \\
+\cmidrule{2-4}          & Endogen Epitope & 8     & \multicolumn{1}{c}{41} \\
+\cmidrule{2-4}          & Total Immunolocalisation & \multicolumn{1}{p{5em}}{53*} & 451* \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{4}[8]{*}{\textbf{Chemical modification}}} & Cys   & 0     & \multicolumn{1}{c}{361} \\
+\cmidrule{2-4}          & Lys   & 0     & \multicolumn{1}{c}{3} \\
+\cmidrule{2-4}          & Quenching & 0     & \multicolumn{1}{c}{2} \\
+\cmidrule{2-4}          & Total Chemical Modification & 0     & 368* \\
+    \midrule
+    \multicolumn{1}{p{5em}}{\textbf{Structure}} & PDBTM TMDET & 5968  & \multicolumn{1}{c}{41977} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{4}[8]{*}{\textbf{Other}}} & Revertants & 0     & \multicolumn{1}{c}{14} \\
+\cmidrule{2-4}          & SeqMotif & 2     & \multicolumn{1}{c}{32} \\
+\cmidrule{2-4}          & Tailoring & 1     & \multicolumn{1}{c}{67} \\
+\cmidrule{2-4}          & Total other & 3     & 115* \\
+    \bottomrule
+    \end{tabular}%
+    }
+   \label{table:topdbevidence}
+
+\end{table}%
+
+Length cut-offs for the~\gls{tmh} were set at 16 as the shortest length and 38 as the longest.
 
 The following datasets are used throughout this work:
 
@@ -841,12 +1076,12 @@ The following datasets are used throughout this work:
 TOPDB contained 4190 manually annotated transmembrane proteins at the time of download~\cite{Dobson2015}.
 CD-HIT~\cite{Huang2010} identified 3857 representative sequences using sequence clusters of $>$90\% sequence identity.
 This choice of similarity threshold was chosen since CD-HIT ultimately underlies the clustering behind UniRef.
-Unlike the other datasets, which by definition contain reasonably typical \gls{tmh}s, many of the transmembrane segments annotated in TOPDB are extremely short or long and this would cause severe unrealistic hydrophobic mismatches.
-Especially, the short segments could be the result of miss-annotation, \gls{tmh}s broken into pieces due to kinks or segments that peripherally insert only into the interface of the membrane bilayer.
+Unlike the other datasets, which by definition contain reasonably typical~\gls{tmh}s, many of the transmembrane segments annotated in TOPDB are extremely short or long and this would cause severe unrealistic hydrophobic mismatches.
+Especially, the short segments could be the result of miss-annotation,~\gls{tmh}s broken into pieces due to kinks or segments that peripherally insert only into the interface of the membrane bilayer.
 To remove the atypical lengths, cut-offs were set at 16 as the lower cut-off and 38 as the upper cut-off after inspecting the length histogram.
-We found that, for the single-pass \gls{tmh}s in TOPDB, 1215 out of 1544 are within the length limits (78.7\%).
-Among the 17141 multi-pass \gls{tmh}s, we find 15563 within our global length limits (from 2205 TOPDB records corresponding to 2281 UniProt entries).
-This removed 1578 very short \gls{tmh}s and none of the long \gls{tmh}s.
+We found that, for the single-pass~\gls{tmh}s in TOPDB, 1215 out of 1544 are within the length limits (78.7\%).
+Among the 17141 multi-pass~\gls{tmh}s, we find 15563 within our global length limits (from 2205 TOPDB records corresponding to 2281 UniProt entries).
+This removed 1578 very short~\gls{tmh}s and none of the long~\gls{tmh}s.
 Our cut-off selection is very similar to the one by Baeza-Delgado etal.~\cite{Baeza-Delgado2013}.
 
 To get an idea of the taxonomical breakdown in the ExpAll dataset, the UniProt ID tags were extracted and mapped to UniProtKB.
@@ -854,20 +1089,20 @@ The combined dataset of multi-pass (single-pass) proteins was mapped to 1288 (13
 
 
 \subsubsection{UniHuman}
-This is a set of mostly human \gls{tmh}-containing proteins or their close mammalian homologues.
+This is a set of mostly human~\gls{tmh}-containing proteins or their close mammalian homologues.
 UniProtKB contains 5187 human protein records that are manually annotated with TRANSMEM regions (query = ``annotation:(type:transmem) AND reviewed:yes AND organism:``Homo sapiens (Human) [9606]'' AND proteome:up000005640''.
 To reduce sequence redundancy, these sequences were submitted to UniRef90~\cite{Suzek2015}.
-To note, Uniref90 was chosen over Uniref50 to maintain a viable size of datasets for statistical analysis of occurrence of negatively charged residue, which are very rare in the vicinity of \gls{tmh}s.
+To note, Uniref90 was chosen over Uniref50 to maintain a viable size of datasets for statistical analysis of occurrence of negatively charged residue, which are very rare in the vicinity of~\gls{tmh}s.
 5015 UniRef90 clusters represented the 5187 sequences.
 A list of sequences representing those clusters was submitted back to UniProtKB resulting and 5014 representative entries were recovered.
 There is a small issue in that the list of representatives from UniRef includes non-canonical isoforms, while the batch retrieve query of UniProtKB only supports complete entries, i.e.
 canonical isoforms.
 This resulted in the loss of one record at this point is due to two splice isoforms acting as representative identifiers.
 Of those 5014 records, 4714 were records from human entries, 197 were from mice, 94 from rats, 5 from bovine, 2 from chimps, 1 from Chinese hamsters, and 1 from pigs.
-Although the \gls{tmh} length variations within the UniHuman dataset are much smaller than for ExpAll, we applied the same length cut-offs for the sake of comparability.
+Although the~\gls{tmh} length variations within the UniHuman dataset are much smaller than for ExpAll, we applied the same length cut-offs for the sake of comparability.
 Out of the 1709 single-pass cases, 1705 entered the final dataset.
 Of those, 1596 were from human records, 87 were from mouse, 19 were from rat, and 2 were from chimpanzee.
-Among the 12390 multi-pass \gls{tmh}s, 12353 were included into UniHuman.
+Among the 12390 multi-pass~\gls{tmh}s, 12353 were included into UniHuman.
 The other, multi-pass record identifiers were mapped to 1789 UniProtKB entries.
 1660 of these were human entries, 63 from rat, 61 from mouse, 4 from bovine, and 1 from Chinese hamster.
 This clustered human dataset was then queried for subcellular locations to make the UniER, UniGolgi, and UniPM datasets (detailed below).
@@ -914,10 +1149,10 @@ Uniref90 identified 4934 representative records, all of which were successfully 
 Of those, 2070 had suitable annotation for orientation.
 1990 records belonged to Ascomycota including 1243 Saccharomycetales.
 73 were Basidomycota, and 6 were Apansporoblastina.
-729 records contained a single \gls{tmh} region, 702 of which belonged to Ascomycota, 26 to Basidomycota and one to Encephalitozoon cuniculi, a Microsporidium parasite.
+729 records contained a single~\gls{tmh} region, 702 of which belonged to Ascomycota, 26 to Basidomycota and one to Encephalitozoon cuniculi, a Microsporidium parasite.
 8698 helices were contained in 1338 records of multi-pass proteins.
 Of these records 1285 were Ascomycota, 47 were Basidomycota, and 5 were Apansporoblastina.
-One \gls{tmh} from UniFungi was discounted from P32897 due to an unknown position.
+One~\gls{tmh} from UniFungi was discounted from P32897 due to an unknown position.
 
 \subsubsection{UniEcoli}
 This dataset was generated by querying UniProt with ``reviewed:yes AND organism:''Escherichia coli (strain K12)[83333]'''' which returned 941 hits.
@@ -945,72 +1180,111 @@ The representative IDs were successfully resubmitted to UniProtKB.
 This dataset contains 48 single-pass proteins and 59 multi-pass proteins containing 327 helices from 59 proteins.
 
 To note, we are aware that proteome datasets are a moving target that have dramatically changed over the years and, probably, will continue to do so to some extent in the future[83].
-Yet, we think that currently available protein sequence sets are sufficiently good for the purpose as we search for statistical properties in the \gls{tmh} context only.
+Yet, we think that currently available protein sequence sets are sufficiently good for the purpose as we search for statistical properties in the~\gls{tmh} context only.
 
 \subsection{On the determination of flanking regions for~\gls{tmh}s and the~\gls{tmh} alignment}
 
-The determination of the boundary point at the sequence between the \gls{tmh} in a membrane and the sequence immersed in the cytoplasm, extracellular space, vesicular lumen, etc.
+The determination of the boundary point at the sequence between the~\gls{tmh} in a membrane and the sequence immersed in the cytoplasm, extracellular space, vesicular lumen, etc.
 is not that trivial as it initially appears.
-There is a lot of dynamics in the \gls{tmh} positioning and the actual boundary point will be represented by various residues at different time points.
-Whilst the \gls{tmh} core region detection from a sequence is trivial with modern software, the exact determination of \gls{tmh} boundaries remains difficult since it is unclear exactly how far in or out of the membrane a given helix extends~\cite{Ojemalm2013}.
+There is a lot of dynamics in the~\gls{tmh} positioning and the actual boundary point will be represented by various residues at different time points.
+Whilst the~\gls{tmh} core region detection from a sequence is trivial with modern software, the exact determination of~\gls{tmh} boundaries remains difficult since it is unclear exactly how far in or out of the membrane a given helix extends~\cite{Ojemalm2013}.
 Previous studies have dealt with this issue in various ways~\cite{Sharpe2010,Baeza-Delgado2013,Pogozheva2013, White2008}.
 
 Here in this work, we explore two boundary definitions.
-First, we assign \gls{tmh} boundary locations as described in the respective databases.
-These flanks are the ones that are reported in our \gls{tmh} data files that are available at the WWW-site associated with this paper.
-We studied flank lengths of $\pm$5, $\pm$10, and $\pm$20 residues preceding and following the inside and outside \gls{tmh} boundaries.
-In these cases, the flanks are aligned relative to the residue closest to the \gls{tmh}.
+First, we assign~\gls{tmh} boundary locations as described in the respective databases.
+These flanks are the ones that are reported in our~\gls{tmh} data files that are available at the WWW-site associated with this paper.
+We studied flank lengths of $\pm$5, $\pm$10, and $\pm$20 residues preceding and following the inside and outside~\gls{tmh} boundaries.
+In these cases, the flanks are aligned relative to the residue closest to the~\gls{tmh}.
 
-In cases where the loops before and after the \gls{tmh} are shorter than the predefined flank lengths, further precautions are necessary.
+In cases where the loops before and after the~\gls{tmh} are shorter than the predefined flank lengths, further precautions are necessary.
 In the multi-pass datasets particularly (Figure~\ref{fig:flank_definitions} \& Figure~\ref{fig:net_charge}), the flanks overlap with other membrane region flanks.
 We explore several variants.
 On the one hand, we work with data files where the flank residue stretches are equally truncated so that no overlap occurs.
 If the loop length was uneven, the central odd residue was not included into any flank.
-We find surprisingly, that a large number of \gls{tmh} has no or just a super-short flank, a circumstance that should disturb any statistical analysis due to the absence of objects.
-Therefore, we also work with alternative datasets (i) with flanks overlapping between consecutive \gls{tmh} (e.g., in Table 3B; yet, it leads to some residues being counted more than one time) as well as (ii) with subsets of the data where the flanks at both sides have a defined minimal length (50\% or 100\% of the required flanks; unfortunately, some of them become too small for analysis).
+We find surprisingly, that a large number of~\gls{tmh} has no or just a super-short flank, a circumstance that should disturb any statistical analysis due to the absence of objects.
+Therefore, we also work with alternative datasets (i) with flanks overlapping between consecutive~\gls{tmh} (e.g., in Table 3B; yet, it leads to some residues being counted more than one time) as well as (ii) with subsets of the data where the flanks at both sides have a defined minimal length (50\% or 100\% of the required flanks; unfortunately, some of them become too small for analysis).
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{NNI_chapter/flank_definitions}
-\captionof{figure}[The lengths of flanks and \gls{tmh}s in multi-pass and single-pass proteins in the UniHuman and ExpAll dataset.]{\textbf{The lengths of flanks and \gls{tmh}s in multi-pass and single-pass proteins in the UniHuman and ExpAll dataset.}On the horizontal axis are the lengths of the \gls{tm} segment regions in residues.
+\captionof{figure}[The lengths of flanks and~\gls{tmh}s in multi-pass and single-pass proteins in the UniHuman and ExpAll dataset.]{\textbf{The lengths of flanks and~\gls{tmh}s in multi-pass and single-pass proteins in the UniHuman and ExpAll dataset.}On the horizontal axis are the lengths of the~\gls{tm} segment regions in residues.
 On the vertical axis are the percentages of the population.
-There are three regions: the inside flank, the \gls{tmh} and the outside flank.
-These regions are acquired according to the \gls{tmh} boundary of the respective database.
-Where no overlap is permitted, if the flank encroaches the flank of another \gls{tmh}, the flank length becomes half the number of residues in the loop region between the two features.
-Where they are allowed to overlap, flanking residues may include other flanks, or indeed other \gls{tmh}s.}
+There are three regions: the inside flank, the~\gls{tmh} and the outside flank.
+These regions are acquired according to the~\gls{tmh} boundary of the respective database.
+Where no overlap is permitted, if the flank encroaches the flank of another~\gls{tmh}, the flank length becomes half the number of residues in the loop region between the two features.
+Where they are allowed to overlap, flanking residues may include other flanks, or indeed other~\gls{tmh}s.}
 
 \label{fig:flank_definitions}
 \end{figure}
 
-The problem of flanks overlapping does affect also some single-pass and multi-pass \gls{tmh} proteins with INTRAMEM regions as described in some UniProt entries.
-We do not include INTRAMEM regions in the datasets as \gls{tmh}s but, sometimes, the flanking regions of \gls{tmh}s were truncated to avoid overlap with INTRAMEM flanking regions (Supplementary Table S2).
- The identifiers affected for single-pass \gls{tmh} proteins are Q01628, P13164, Q01629, Q5JRA8, A2ANU3 (UniHuman), P13164, Q01629, A2ANU3 (UniPM) and Q5JRA8 (UniER).
+The problem of flanks overlapping does affect also some single-pass and multi-pass~\gls{tmh} proteins with INTRAMEM regions as described in some UniProt entries.
+We do not include INTRAMEM regions in the datasets as~\gls{tmh}s but, sometimes, the flanking regions of~\gls{tmh}s were truncated to avoid overlap with INTRAMEM flanking regions (Supplementary Table S2).
+ The identifiers affected for single-pass~\gls{tmh} proteins are Q01628, P13164, Q01629, Q5JRA8, A2ANU3 (UniHuman), P13164, Q01629, A2ANU3 (UniPM) and Q5JRA8 (UniER).
 
-The second form of boundary point definition for flank determination was achieved with gaplessly aligning all \gls{tmh}s relative to their central residue at the position equal to half the length of the \gls{tmh}s at either side.
-Though there is some length variation among \gls{tmh}s, most of them are centred around a length of 20-22 residues.
-In this case, flanks are the sequence extensions beyond the standardised-length 21-residues \gls{tmh}s.
-We define the inside flanking segments as the positions -20 to -10 and the outside flanking regions to be +10 to +20 from the central \gls{tmh} residue (with the label ``0'').
-Instead of emphasizing some artificially selected boundary residue, this definition allows the average \gls{tmh} boundary transition to become apparent.
+ \begin{table}[htbp]
+
+   \centering
+
+   \captionof{table}[Records with INTRAMEM and TRANSMEM flanking region overlap.]{\textbf{Records with INTRAMEM and TRANSMEM flanking region overlap.}
+   The total number of TMHs from UniProt datasets with flanking region overlap between INTRAMEM and TRANSMEM regions.
+   The number of multi-pass records that the TMHs belong to are shown in brackets.}
+     \resizebox{\textwidth}{!}{
+     \begin{tabular}{p{5em}cccp{5em}cp{5em}}
+     \toprule
+     \multirow{3}[6]{*}{\textbf{Dataset}} & \multicolumn{6}{p{30em}}{\textbf{Flank length}} \\
+     \cmidrule{2-7}    \multicolumn{1}{c}{} & \multicolumn{2}{c}{\textbf{5}} & \multicolumn{2}{c}{\textbf{10}} & \multicolumn{2}{c}{\textbf{20}} \\
+     \cmidrule{2-7}    \multicolumn{1}{c}{} & \multicolumn{1}{p{5em}}{\textbf{Single-pass}} & \multicolumn{1}{p{5em}}{\textbf{Multi-pass}} & \multicolumn{1}{p{5em}}{\textbf{Single-pass}} & \textbf{Multi-pass} & \multicolumn{1}{p{5em}}{\textbf{Single-pass}} & \textbf{Multi-pass} \\
+     \midrule
+     \textbf{UniHuman} & 0     & \multicolumn{1}{c}{96 (80)} & 1     & 151 (90) & 5     & 204 (96) \\
+     \midrule
+     \textbf{UniER} & 0     & \multicolumn{1}{c}{6 (6)} & 1     & 13 (8) & 1     & 16 (8) \\
+     \midrule
+     \textbf{UniGolgi} & 0     & \multicolumn{1}{c}{1 (1)} & 0     & 2 (2) & 0     & 4 (2) \\
+     \midrule
+     \textbf{UniPM} & 0     & \multicolumn{1}{c}{57 (46)} & 0     & 93 (51) & 3     & 113 (52) \\
+     \midrule
+     \textbf{UniCress} & 0     & \multicolumn{1}{c}{17 (17)} & 0     & 24 (18) & 0     & 46 (18) \\
+     \midrule
+     \textbf{UniFungi} & 0     & 0     & 0     & \multicolumn{1}{c}{0} & 0     & \multicolumn{1}{c}{0} \\
+     \midrule
+     \textbf{UniBacilli} & 0     & \multicolumn{1}{c}{11 (3)} & 0     & 12 (3) & 0     & 13 (3) \\
+     \midrule
+     \textbf{UniEcoli} & 0     & \multicolumn{1}{c}{22 (8)} & 0     & 25 (9) & 0     & 31 (9) \\
+     \midrule
+     \textbf{UniArch} & 0     & 0     & 0     & 8 (8) & 0     & 17 (9) \\
+     \bottomrule
+     \end{tabular}%
+     }
+    \label{table:overlapflankingregions}
+
+ \end{table}%
+
+
+The second form of boundary point definition for flank determination was achieved with gaplessly aligning all~\gls{tmh}s relative to their central residue at the position equal to half the length of the~\gls{tmh}s at either side.
+Though there is some length variation among~\gls{tmh}s, most of them are centred around a length of 20-22 residues.
+In this case, flanks are the sequence extensions beyond the standardised-length 21-residues~\gls{tmh}s.
+We define the inside flanking segments as the positions -20 to -10 and the outside flanking regions to be +10 to +20 from the central~\gls{tmh} residue (with the label ``0'').
+Instead of emphasizing some artificially selected boundary residue, this definition allows the average~\gls{tmh} boundary transition to become apparent.
 
 \subsection{Separating simple and complex single-pass helices.}
 
-Single-pass helices from ExpAll and UniHuman datasets helices were split into two groups: simple and complex following a previously described classification~\cite{Wong2011,Wong2012} to roughly distinguish simple hydrophobic anchors and \gls{tmh}s with additional structural/functional roles.
+Single-pass helices from ExpAll and UniHuman datasets helices were split into two groups: simple and complex following a previously described classification~\cite{Wong2011,Wong2012} to roughly distinguish simple hydrophobic anchors and~\gls{tmh}s with additional structural/functional roles.
 Simple and complex helices were determined using TMSOC~\cite{Wong2012}.
 The complexity class is determined by calculating the hydrophobicity and sequence entropy.
-The resulting coordinates cluster with anchors being more hydrophobic and less complex whilst more complex and more polar \gls{tmh}s are associated with non-anchorage functions.
-In UniHuman there were 889 simple helices and 570 complex \gls{tmh}s.
+The resulting coordinates cluster with anchors being more hydrophobic and less complex whilst more complex and more polar~\gls{tmh}s are associated with non-anchorage functions.
+In UniHuman there were 889 simple helices and 570 complex~\gls{tmh}s.
 In ExpAll there were 769 simple helices and 570 complex helices.
 
 \subsection{Distribution normalisation}
 
 In this work, we have used normalisation techniques described in previous investigations as well as new approaches designed to more sensitively identify biases of rare residues.
-Baeza-Delgado and co-workers used LogOdds normalisation column-wise in \gls{tmh} alignments.
+Baeza-Delgado and co-workers used LogOdds normalisation column-wise in~\gls{tmh} alignments.
 Critically, this is based on their definition of probability, which takes into account the total number of amino acids in the dataset as a denominator~\cite{Baeza-Delgado2013}.
 Since aliphatic residues such as leucine and other highly abundant slightly polar residues dominate the denominator, the distribution of the rare acidic residues will be easily lost in the ``background noise'' of those highly abundant residues.
 Pogozheva and co-workers used two approaches, (i) the total accessible surface area (ASAtotal) and (ii) total number of charged residues (${N}_{total}$) as a denominator in their distribution normalisation~\cite{Pogozheva2013}.
 
-In this work, two methods for measuring residue occurrence in the \gls{tmh} and its flanks were used.
-Similarly to previous work, we compute the occurrence  of an amino acid type  at a certain sequence position  in a set of aligned sequences \gls{tmh}s and their flanks.
+In this work, two methods for measuring residue occurrence in the~\gls{tmh} and its flanks were used.
+Similarly to previous work, we compute the occurrence  of an amino acid type  at a certain sequence position  in a set of aligned sequences~\gls{tmh}s and their flanks.
 Following~\cite{Sharpe2010}, the absolute relative occurrence  of this amino acid type at the sequence position  is then given by Equation~\ref{eq:dependent_normalisation} as:
 
 \begin{equation} \label{eq:dependent_normalisation}
@@ -1021,13 +1295,13 @@ Following~\cite{Sharpe2010}, the absolute relative occurrence  of this amino aci
 Here, the denominator is the maximal number of all residues in any alignment column (i.e., the number of sequences in the alignment) and, to emphasise, this will make  mostly dependent on the most abundant residue types.
 This type of normalization reveals the most preferred residue types at given sequence positions.
 
-Our second normalization method is independent of the abundance of any amino acid types other than the studied one; it answers the question: ``If there is a residue of type  in the \gls{tmh}-containing segment, where would it most likely be?'' This relative occurrence  calculated in Equation~\ref{eq:independent_normalisation} as:
+Our second normalization method is independent of the abundance of any amino acid types other than the studied one; it answers the question: ``If there is a residue of type  in the~\gls{tmh}-containing segment, where would it most likely be?'' This relative occurrence  calculated in Equation~\ref{eq:independent_normalisation} as:
 
  \begin{equation} \label{eq:independent_normalisation}
    q_{i,r}=\frac{{100}\cdot{a_{i,r}}}{a_i}
  \end{equation}
 
-The value  is the total abundance of residues of just amino acid type  in a given alignment of \gls{tmh}-containing segments (i.e., in the \gls{tmh} together with its two adjoining flanks summed over all cases of \gls{tmh}s in the given dataset).
+The value  is the total abundance of residues of just amino acid type  in a given alignment of~\gls{tmh}-containing segments (i.e., in the~\gls{tmh} together with its two adjoining flanks summed over all cases of~\gls{tmh}s in the given dataset).
 Peaks in as function of r reveal the prefered positions of residues of type i.
 The difference in   and   normalisation is visualised in Figure~\ref{fig:normalisation}.
 
@@ -1073,15 +1347,15 @@ c_r=\frac{(a_{K,r}+a_{R,r})-(a_{D,r}+a_{E,r})}{N}
 
 \subsection{Statistics}
 
-The inside/outside bias of negative residues was quantified by computing the independent \gls{kw} and the 2-sample t-test statistical method from the Python scipy stat package v0.15 python package~\cite{VanderWalt2011}.
+The inside/outside bias of negative residues was quantified by computing the independent~\gls{kw} and the 2-sample t-test statistical method from the Python scipy stat package v0.15 python package~\cite{VanderWalt2011}.
 This test answers the question whether two means are actually different in the statistical sense.
-For the leucine residues, each \gls{tmh} region was divided into two sections, representing the inner and outer leaflets ( Table~\ref{table:leucineskewstats}).
- For the hydrophobicity plot, 3 window values of hydrophobicity were taken for each \gls{tmh} at each position.
+For the leucine residues, each~\gls{tmh} region was divided into two sections, representing the inner and outer leaflets ( Table~\ref{table:leucineskewstats}).
+ For the hydrophobicity plot, 3 window values of hydrophobicity were taken for each~\gls{tmh} at each position.
 The statistical analyses were separately performed for single-pass and multi-pass transmembrane proteins.
-At each position, the two groups were compared using the \gls{kw} test.
+At each position, the two groups were compared using the~\gls{kw} test.
 
-The zero hypothesis of homogeneity of two distributions was examined with the \gls{ks}, the \gls{kw} and the \({\chi}^{2}\) statistical tests.
-To note, the \gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the \gls{kw} test is after skews between distributions and the \({\chi}^{2}\) statistical test checks the average difference between distributions.
+The zero hypothesis of homogeneity of two distributions was examined with the~\gls{ks}, the~\gls{kw} and the \({\chi}^{2}\) statistical tests.
+To note, the~\gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the~\gls{kw} test is after skews between distributions and the \({\chi}^{2}\) statistical test checks the average difference between distributions.
 As the statistical significance value (``P‑value'') is a strong function of N, the total amount of data used in the statistical test, we rely on the (absolute) Bahadur slope (B) as a measure of distance between two distributions~\cite{Bahadur1967, Bahadur1971}:
 
 \begin{equation} \label{eq:bahadur}
