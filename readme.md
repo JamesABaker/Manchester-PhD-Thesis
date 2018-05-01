@@ -25,10 +25,17 @@ Modified by Chris Paul March 2006 to reflect new University Schools and Faculty 
 Modified by Chris Paul August 2013 to support duplex printed margins
 ```
 
-# Setup & Requirements
+#Compiling.
 
-I have had no problems using the default Latex package to compile it on a few different machines. Specifically, ensure that xelatex bibtex are installed.
-
-## Automatically compile via shell.
-
-On any UNIX like system run `bash automatic_latex.sh` from a terminal in the thesis directory. This essentially makes an attempt to guess your OS and then run an appropriate sequence that was compatible on either OSX or Linux systems.
+Run:
+```
+pdflatex thesis.tex
+bibtex thesis.aux
+makeglossaries thesis
+makeglossaries chapter_tailanchor
+makeglossaries chapter_introduction
+makeglossaries chapter_conclusions
+makeglossaries chapter_predictfunction
+pdflatex thesis.tex
+pdflatex thesis.tex
+```
