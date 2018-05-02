@@ -25,7 +25,7 @@ Modified by Chris Paul March 2006 to reflect new University Schools and Faculty 
 Modified by Chris Paul August 2013 to support duplex printed margins
 ```
 
-#Compiling.
+# Compiling.
 
 Run:
 ```
