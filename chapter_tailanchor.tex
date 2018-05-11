@@ -34,22 +34,37 @@ This hydrophobicity appears to be a determinate factor in the precise delivery m
 
 Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
 
-\subsection{Translocon Independent Membrane Insertion}
-%move on to case studies involving spontaneous insertion?
-Signal anchored proteins, proteins that contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor, as well as tail-anchored proteins have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
-
-It is postulated that there are electrostatic factors in the flanking regions that contribute to this spontaneous membrane insertion.
-Our experimental collaborators in Stephen High’s group are interested in a small group of tail-anchored proteins that have very polar trans-membrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion.
-They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the \gls{tm} domains belonging to a protein of known spontaneously inserting domains.
-Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
-The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
-
-
-
 \section{Results}
 
-\subsection{An Up To Date Tail-Anchor Dataset}
+\subsection{Tail-Anchored Protein Datasets Are A Moving Target}
 % Venn diagram
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth]{TA_chapter/database-overlap}
+		\captionof{figure}[A venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.]{\textbf{A venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.}
+The number of ids present in redundant versions of
+i) the supplementary materials table of a previous study predicting the complete set of human tail anchored proteins denote by S1~\cite{Kalbfleisch2007},
+ii) the Swissprot dataset filtered according to typical~\gls{ta} features limited to the human proteome~\cite{TheUniProtConsortium2014}, and
+iii) The UniProt curated list of~\gls{ta} proteins~\cite{TheUniProtConsortium2014}.
+Note that to avoid losing IDs to redundancy reduction this diagram was generated without the use of CD-HIT~\cite{Huang2010, Wu2011}, which is applied in later statistical analysis.}
+
+\label{fig:tadatasetoverlap}
+\end{figure}
+
+Datasets are a moving target as they are constantly updated with more accurate and reliable tools.
+Figure~\ref{fig:tadatasetoverlap} shows that already a study from 2007~\cite{Kalbfleisch2007} has 175 record ids of 222 records (78.8\%) that do not share overlap the up-to-date manually curated UniProt dataset~\cite{TheUniProtConsortium2014}.
+Of the 166 unique records, 92 records do have location annotation in UniProt that the scripts herein use for topological determination, leaving 74 records without location annotation.
+This leaves 92 of 222 (41.4\%) records that originally fitted criteria that no longer fit those same criteria. If we exclude those lacking suitable annotation i.e ids from S1 that are found in either SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared to the 92 that have annotation contradicting the original prodictions, 37.8\% of the ids overlap.
+
+Equivalent criteria were applied to the entire SwissProt database and then restricted to the human proteome dataset.
+43 of these 77 records are in the curated UniProt~\gls{ta} dataset leaving 34 records that meet the criteria out of the manually curated set (44.2\%of the filtered Swissprot dataset).
+42 of the 77 (54.5\%) records from SwissProt filtered human dataset can be found in the original S1 list.
+
+Perhaps unsurprisingly, as a trend this shows that up to date datasets drastically improve the reliability of this automated predicted method and that there is a large degree of what we now believe to be mistakes that occured in older prediction tools.
+These automated criteria still do not fully align with the manually curated list, which is bound to change too.
+
+Note that these numbers are not absolutely certain.
+The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset, which prevents us from directly comparing the entire original S1 dataset.
 
 \subsection{Species Variation}
 % Average lines for figure, table for stats
@@ -60,7 +75,6 @@ The idea that \gls{snare} proteins are modular and capable of spontaneous insert
 \subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
 % Average lines for figure, table for stats
 
-Previously, two datasets of experimentally validated tail anchors and~\gls{snare}s were gathered from the literature and databases.
 ~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
 We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694) (Figure 3).
 This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
@@ -69,6 +83,15 @@ This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif 
 %Spont TA lines against background dataset.
 
 In addition, predicted insertion machinery dependent TAs with TMHs that are more polar on average than spontaneously inserting~\gls{ta} protein cytochrome b5 have been highlighted.
+
+%move on to case studies involving spontaneous insertion?
+Signal anchored proteins, proteins that contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor, as well as tail-anchored proteins have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
+
+It is postulated that there are electrostatic factors in the flanking regions that contribute to this spontaneous membrane insertion.
+Our experimental collaborators in Stephen High’s group are interested in a small group of tail-anchored proteins that have very polar trans-membrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion.
+They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the \gls{tm} domains belonging to a protein of known spontaneously inserting domains.
+Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
+The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
 \section{Methods}
 
@@ -101,12 +124,11 @@ All of these were within the length restrictions.
 155 records had a~\gls{tmh} within 15 residues of the C terminal residue.
 
 \subsubsection{UniProt Curated List}
-A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 463 Swiss-Prot results and 1997 TrEMBL results.
+A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2460 UniProtKB IDs; 463 Swiss-Prot results and 1997 TrEMBL results.
 Running these records through CD-HIT at 90\% redundancy yielded 309 Swiss-Prot records and 808 TrEMBL records~\cite{Huang2010, Wu2011}.
 Of those, 987 proteins from 973 records (308 from Swiss-Prot, and 665 from TrEMBL) had the \url{TRANSMEM} annotation indicating a bone fide~\gls{tmh}.
 No further filters were applied to this list.
 60 of the records belonged to \textit{A. thaliana}, 38 to Humans, 37 to mouse, 31 to \textit{S. cereveisiae}, and 20 to Rat.
-
 
 \subsubsection{Remapping Previous Dataset}
 189 of the 411 proteins from the previous study were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.

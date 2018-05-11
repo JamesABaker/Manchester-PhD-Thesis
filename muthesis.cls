@@ -452,8 +452,8 @@ institute of learning.}
         \vfill}
 
 \def\beforeabstract{
-        %\pagenumbering{arabic}
-        \pagenumbering{roman}
+        \pagenumbering{arabic}
+        %\pagenumbering{roman}
         \pagestyle{plain}
         \titlep
         \ifsigpage\signaturepage\fi
