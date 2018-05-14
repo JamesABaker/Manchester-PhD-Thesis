@@ -4,9 +4,6 @@
 \section{Abstract}
 
 \section{Introduction}
-This study aims to identify \gls{snare} proteins in eukaryotic proteomes by filtering through large datasets using automatically predicted TrEMBL consensus, and manually annotated SWISS-PROT transmembrane regions.
-The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
-A previous study predicted 411 tail anchor proteins~\cite{Kalbfleisch2007}.
 
 ~\gls{ta} proteins are a topologically distinct class of intracellular proteins defined by their single carboxy-terminal~\gls{tms} with a cytosolic facing amino-terminus.
 ~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation and apoptosis.
@@ -53,21 +50,113 @@ Note that to avoid losing IDs to redundancy reduction this diagram was generated
 
 Datasets are a moving target as they are constantly updated with more accurate and reliable tools.
 Figure~\ref{fig:tadatasetoverlap} shows that already a study from 2007~\cite{Kalbfleisch2007} has 175 record ids of 222 records (78.8\%) that do not share overlap the up-to-date manually curated UniProt dataset~\cite{TheUniProtConsortium2014}.
-Of the 166 unique records, 92 records do have location annotation in UniProt that the scripts herein use for topological determination, leaving 74 records without location annotation.
-This leaves 92 of 222 (41.4\%) records that originally fitted criteria that no longer fit those same criteria. If we exclude those lacking suitable annotation i.e ids from S1 that are found in either SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared to the 92 that have annotation contradicting the original prodictions, 37.8\% of the ids overlap.
+Of the 166 unique records of that 2007 dataset, 92 records do have location annotation in UniProt that the scripts herein use for topological determination, leaving 74 records without location annotation.
+This leaves 92 of 222 (41.4\%) records that originally fitted criteria that no longer fit those same criteria.
+If we exclude those lacking suitable annotation i.e ids from S1 that are found in either SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared to the 92 that have annotation contradicting the original prodictions, 37.8\% of the ids overlap.
 
 Equivalent criteria were applied to the entire SwissProt database and then restricted to the human proteome dataset.
-43 of these 77 records are in the curated UniProt~\gls{ta} dataset leaving 34 records that meet the criteria out of the manually curated set (44.2\%of the filtered Swissprot dataset).
+43 of these 77 records (55.8\%) are in the curated UniProt~\gls{ta}  dataset leaving 34 records that meet the criteria out of the manually curated set (44.2\%of the filtered Swissprot dataset).
 42 of the 77 (54.5\%) records from SwissProt filtered human dataset can be found in the original S1 list.
+A further consideration is that, after removing redundant proteins, this method picked up  46 Archaeal and 66 bacterial records.
 
-Perhaps unsurprisingly, as a trend this shows that up to date datasets drastically improve the reliability of this automated predicted method and that there is a large degree of what we now believe to be mistakes that occured in older prediction tools.
-These automated criteria still do not fully align with the manually curated list, which is bound to change too.
+Perhaps unsurprisingly, as a trend, this shows that up-to-date datasets improve the reliability of this automated predicted method and that there is a large degree of what we now believe to be mistakes that occured in older prediction tools.
+These automated criteria still do not fully align with the manually curated list, which is bound to change too, especially considering only 973 of a non-redundant (90\% CD-HIT threshold \cite{Huang2010, Wu2011}) set of those 2460 proteins of the UniProt manually curated set contained annotation for the transmembrane boundary residues.
 
 Note that these numbers are not absolutely certain.
 The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset, which prevents us from directly comparing the entire original S1 dataset.
 
 \subsection{Species Variation}
 % Average lines for figure, table for stats
+
+In eukaryotic species, typically there is various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane that can be observed in terms of hydrophobicity~\cite{Sharpe2010}, especially in \gls{tmh} anchors~\cite{Baker2017}.
+However, in these \gls{ta} protein datasets we see no such patterns.
+When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we see little difference between the mean values all at \~2.4-2.6 with the \gls{tmh}, and at \~1.4-1.6 when considering residues in close proximity to the helix ($\pm$5 residues)(Table~\ref{table:average_species_ta}).
+P$\>$8.30E-2 for all hydrophobic comparisons (Table~\ref{table:speciestableuniprotstats}).
+Indeed, we see no strong observable differences (P-value$>$3.98E-2, Table \ref{table:speciestableuniprotstats}) and the Bahadur slopes are not consistently greater than an order of magnitude between any of the dataset comparisons for disorder, or hydrophobicity, implying they are all ``overlapping'' and undiscernable.
+
+
+\begin{table}[]
+\centering
+\captionof{table}[Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
+{\textbf{Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
+
+The average hydrophoicity values from the Kyte \& Doolittle scale ~\cite{Kyte1982} and the GlobProt scale \cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
+(A) Values for the UniProt manually curated set. We compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts.
+(B) Values for the SwissProt filtered set. The mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
+}
+\label{average_species_ta}
+A)
+\begin{tabular}{llll}
+	\toprule
+Average Values                 & Mammal  & Plants  & Yeast   \\
+\midrule
+TMH Hydrophobicity             & 2.42   & 2.59   & 2.41  \\
+TMH with flanks Hydrophobicity & 1.46   & 1.59   & 1.50  \\
+TMH Disorder                   & -0.22  & -0.24  & -0.23 \\
+TMH with flanks Disorder       & -0.17  & -0.19  & -0.20 \\
+\bottomrule
+
+\end{tabular}
+\\
+B)
+\begin{tabular}{llll}
+	\toprule
+Average Values                 & Mammal  			& Plants  & Yeast   \\
+\midrule
+TMH Hydrophobicity             & 2.34          & 2.43   & 2.30  \\
+TMH with flanks Hydrophobicity & 1.31          & 1.33   & 1.36  \\
+TMH Disorder                   & -0.22         & -0.23  & -0.22 \\
+TMH with flanks Disorder       & -0.17         & -0.18  & -0.18 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+Here, we are dealing with datasets at least an order of magnitude smaller than those broad studies which could explain the absence of the effect, however this only goes to show that if there is an effect in \gls{ta} proteins, it is indeed weak.
+
+
+\begin{table}[htbp]
+
+\centering
+
+\captionof{table}[Statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.]
+{\textbf{Statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.}
+Here, we compare a mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts.
+The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
+Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+The score column refers to the statistical score obtaineed from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
+The Bahadur column refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+
+\resizebox{\textwidth}{!}{
+
+\begin{tabular}{lllllllllll}
+
+	\toprule
+	\multirow{2}{*}{Factor}                           & \multirow{2}{*}{Statistical Test} & \multicolumn{3}{l}{Mammal and Plant}      & \multicolumn{3}{l}{Mammal and Yeast}      & \multicolumn{3}{l}{Plant and Yeast}       \\
+	                                                  &                                   & Score & P value  & Bahadur & Score & P value  & Bahadur & Score & P value  & Bahadur \\
+  \midrule
+	\multirow{3}{*}{Disorder of TMH}                  & Kruskal-Wallis                    & 3.66           & 5.58E-02 & 2.14E-02      & 3.66           & 5.58E-02 & 2.14E-02      & 0.90           & 3.44E-01 & 1.17E-02      \\
+	                                                  & Kolmogorov-Smirnov                & 0.24           & 3.98E-02 & 2.39E-02      & 0.24           & 3.98E-02 & 2.39E-02      & 0.17           & 5.28E-01 & 7.02E-03      \\
+	                                                  & Student's T-test                  & 1.95           & 5.36E-02 & 2.17E-02      & 1.95           & 5.36E-02 & 2.17E-02      & -1.00          & 3.20E-01 & 1.25E-02      \\
+  \midrule
+	\multirow{3}{*}{Hydrophobicity of TMH}            & Kruskal-Wallis                    & 2.12           & 1.45E-01 & 1.43E-02      & 2.12           & 1.45E-01 & 1.43E-02      & 2.30           & 1.30E-01 & 2.25E-02      \\
+	                                                  & Kolmogorov-Smirnov                & 0.17           & 2.86E-01 & 9.27E-03      & 0.17           & 2.86E-01 & 9.27E-03      & 0.24           & 1.69E-01 & 1.95E-02      \\
+	                                                  & Student's T-test                  & -1.71          & 8.96E-02 & 1.79E-02      & -1.71          & 8.96E-02 & 1.79E-02      & 1.47           & 1.46E-01 & 2.11E-02      \\
+  \midrule
+	\multirow{1}{*}{Disorder of}								      & Kruskal-Wallis                    & 3.74           & 5.30E-02 & 2.18E-02      & 3.74           & 5.30E-02 & 2.18E-02      & 0.23           & 6.33E-01 & 5.02E-03      \\
+	\multirow{2}{*}{TMH and flanks}                   & Kolmogorov-Smirnov                & 0.22           & 7.51E-02 & 1.92E-02      & 0.22           & 7.51E-02 & 1.92E-02      & 0.20           & 3.27E-01 & 1.23E-02      \\
+	                                                  & Student's T-test                  & 2.06           & 4.16E-02 & 2.36E-02      & 2.06           & 4.16E-02 & 2.36E-02      & 0.40           & 6.89E-01 & 4.09E-03      \\
+	\midrule
+	\multirow{1}{*}{Hydrophobicity of}	 							& Kruskal-Wallis                    & 2.17           & 1.41E-01 & 1.45E-02      & 2.17           & 1.41E-01 & 1.45E-02      & 0.59           & 4.41E-01 & 9.00E-03      \\
+	\multirow{2}{*}{TMH and flanks}                   & Kolmogorov-Smirnov                & 0.21           & 8.30E-02 & 1.84E-02      & 0.21           & 8.30E-02 & 1.84E-02      & 0.14           & 8.00E-01 & 2.45E-03      \\
+	                                                  & Student's T-test                  & -1.33          & 1.86E-01 & 1.25E-02      & -1.33          & 1.86E-01 & 1.25E-02      & 0.69           & 4.90E-01 & 7.83E-03			\\
+
+	\bottomrule
+	\end{tabular}%
+	}
+	\label{table:speciestableuniprotstats}
+\end{table}%
 
 \subsection{Organelle Membrane Variation}
 % Average lines for figure, table for stats
@@ -76,7 +165,7 @@ The greatest source of uncertainty here is that the original S1 list includes 41
 % Average lines for figure, table for stats
 
 ~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
-We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694) (Figure 3).
+We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694).
 This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
 
 \subsection{Spontaneous insertion may be achieved by polar patches in the \gls{tmh}}
@@ -93,10 +182,19 @@ They have found that chimeric synaptobrevin, one of the first identified \gls{sn
 Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
 The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
+\section{Discussion}
+
+Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations.
+It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that for \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
+Here, we postulate that there is indeed biological information held within the \gls{tmh} itself that allows the protein to be specifically targetted to a destiantion.
+This is almost certainly aided by other factors.
+
+
 \section{Methods}
 
 \subsection{Building a List of Tail-Anchors}
-Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools. Whilst their study focussed on the human proteome, here we take into account the entire TrEMBL and Swiss-Prot database and then stratify the datasets by the organism at the end of the pipeline.
+Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools.
+Whilst their study focussed on the human proteome, here we take into account the entire TrEMBL and Swiss-Prot database and then stratify the datasets by the organism at the end of the pipeline.
 
 \subsubsection{Swiss-Prot Tail Anchored Dataset According to Filters}
 There were 557012 protein records downloaded from Swiss-Prot via UniProt~\cite{TheUniProtConsortium2014} (Downloaded 24--04--2018).
@@ -109,10 +207,11 @@ This keyword is contained in a record according to either experimental evidence~
 615 of those had the~\gls{tmh} within 25 residues of the C terminal, the same threshold used by Kalbfleisch and their coworkers~\cite{Kalbfleisch2007}.
 Running CD-Hit 4.5.3 on the WebMGA webserver~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins.
 This threshold was chosen as a compromise between avoiding over-representation of a certain protein and maintaining a viable sample size.
-%I do not like the next line.
-Even though this allows potentially identical~\gls{tmh}s to be included in analyses, that alone has value providing it is not the same protein.
+
 From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were Eukaryotic and 11 came from dsDNA viruses.
-49 belonged to the \textit{A. thaliana} proteome, 48 to Mouse, 46 to the human proteome, 24 to Rat.
+When counting proteomes with greater than 20 records, 49 belonged to the \textit{A. thaliana} proteome, 48 to Mouse, 46 to the human proteome, 24 to \textit{S.cerevisiae}. %19 from RAT!
+
+65 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}), 157 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, 82 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}), and 98 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]"}).
 
 \subsubsection{TrEMBL Tail Anchored Dataset According to Filters}
 111425234 records were storeed in the TrEMBL database at time of download (Downloaded 25--04--2018).
@@ -122,13 +221,14 @@ All of these were within the length restrictions.
 17973 of those did not contain a signal sequence when looking for \url{SIGNAL} annotation.
 5157 of those contained a cytoplasmically located N terminal according to \url{TOPO_DOM} annotation.
 155 records had a~\gls{tmh} within 15 residues of the C terminal residue.
+In those record's annotations, no more than 1 appeared in any given species, so they were omited from the Swiss-Prot list sequence redundancy protocol to avoid representing a well annotated record with a poorly annotated record.
 
 \subsubsection{UniProt Curated List}
 A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2460 UniProtKB IDs; 463 Swiss-Prot results and 1997 TrEMBL results.
 Running these records through CD-HIT at 90\% redundancy yielded 309 Swiss-Prot records and 808 TrEMBL records~\cite{Huang2010, Wu2011}.
 Of those, 987 proteins from 973 records (308 from Swiss-Prot, and 665 from TrEMBL) had the \url{TRANSMEM} annotation indicating a bone fide~\gls{tmh}.
 No further filters were applied to this list.
-60 of the records belonged to \textit{A. thaliana}, 38 to Humans, 37 to mouse, 31 to \textit{S. cereveisiae}, and 20 to Rat.
+Proteomes represented by more than 20 records include \textit{A. thaliana} (60 records), Humans (38), Mouse (37), and \textit{S. cereveisiae} (31). % and 20 to Rat.
 
 \subsubsection{Remapping Previous Dataset}
 189 of the 411 proteins from the previous study were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.
