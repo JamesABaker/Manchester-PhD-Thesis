@@ -34,6 +34,13 @@ Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
 \section{Results}
 
 \subsection{Tail-Anchored Protein Datasets Are A Moving Target}
+Here, we use two sources for \gls{ta} protein datasets.
+One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
+Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
+This dataset contains 21119 \gls{tmh} residues (28791 including uptt to $\pm$5 flanking residues) from 987 UniProt protein records.
+
+We compared redundant versions of these two datasets to the S1 dataset from a previous method~\cite{Kalbfleisch2007}, that aimed to gather \gls{ta} proteins in the human genome from the NCBI, to see how many records are shared, how many are now obselete, and how many are unique.
+
 % Venn diagram
 \begin{figure}[!ht]
 \centering
@@ -48,7 +55,6 @@ Note that to avoid losing IDs to redundancy reduction this diagram was generated
 \label{fig:tadatasetoverlap}
 \end{figure}
 
-Datasets are a moving target as they are constantly updated with more accurate and reliable tools.
 Figure~\ref{fig:tadatasetoverlap} shows that already a study from 2007~\cite{Kalbfleisch2007} has 175 record ids of 222 records (78.8\%) that do not share overlap the up-to-date manually curated UniProt dataset~\cite{TheUniProtConsortium2014}.
 Of the 166 unique records of that 2007 dataset, 92 records do have location annotation in UniProt that the scripts herein use for topological determination, leaving 74 records without location annotation.
 This leaves 92 of 222 (41.4\%) records that originally fitted criteria that no longer fit those same criteria.
@@ -59,21 +65,24 @@ Equivalent criteria were applied to the entire SwissProt database and then restr
 42 of the 77 (54.5\%) records from SwissProt filtered human dataset can be found in the original S1 list.
 A further consideration is that, after removing redundant proteins, this method picked up  46 Archaeal and 66 bacterial records.
 
+Datasets are a moving target as they are constantly updated with more accurate and reliable tools.
 Perhaps unsurprisingly, as a trend, this shows that up-to-date datasets improve the reliability of this automated predicted method and that there is a large degree of what we now believe to be mistakes that occured in older prediction tools.
 These automated criteria still do not fully align with the manually curated list, which is bound to change too, especially considering only 973 of a non-redundant (90\% CD-HIT threshold \cite{Huang2010, Wu2011}) set of those 2460 proteins of the UniProt manually curated set contained annotation for the transmembrane boundary residues.
 
 Note that these numbers are not absolutely certain.
-The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset, which prevents us from directly comparing the entire original S1 dataset.
+The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset.
+This figure is closer to the 202 proteins from the original list that excluded proteins that were either hypothetical or splice isoforms.
+That being said, this ``conversion'' step prevents us from directly comparing the entire original S1 dataset.
 
 \subsection{Species Variation}
 % Average lines for figure, table for stats
 
-In eukaryotic species, typically there is various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane that can be observed in terms of hydrophobicity~\cite{Sharpe2010}, especially in \gls{tmh} anchors~\cite{Baker2017}.
-However, in these \gls{ta} protein datasets we see no such patterns.
-When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we see little difference between the mean values all at \~2.4-2.6 with the \gls{tmh}, and at \~1.4-1.6 when considering residues in close proximity to the helix ($\pm$5 residues)(Table~\ref{table:average_species_ta}).
+When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we see little difference between the mean values all at \~2.3-2.6 with the \gls{tmh}, and at \~1.3-1.6 when considering residues in close proximity to the~\gls{tmh} ($\pm$5 residues)(Table~\ref{table:average_species_ta}).
 P$\>$8.30E-2 for all hydrophobic comparisons (Table~\ref{table:speciestableuniprotstats}).
-Indeed, we see no strong observable differences (P-value$>$3.98E-2, Table \ref{table:speciestableuniprotstats}) and the Bahadur slopes are not consistently greater than an order of magnitude between any of the dataset comparisons for disorder, or hydrophobicity, implying they are all ``overlapping'' and undiscernable.
+Indeed, we see no strong observable differences in hydrophobicity ($P-value>8.30E-02$ in the UniProt curated list, Table \ref{table:speciestableuniprotstats}, $P>3.35E-01$ in the SwissProt automatically filtered list).
 
+In single-pass proteins of eukaryotic species there are typically various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane that can be observed in terms of hydrophobicity~\cite{Sharpe2010}, especially in \gls{tmh} anchors~\cite{Baker2017}.
+However, in these \gls{ta} protein datasets we see no such patterns.
 
 \begin{table}[]
 \centering
@@ -85,36 +94,9 @@ The average hydrophoicity values from the Kyte \& Doolittle scale ~\cite{Kyte198
 (B) Values for the SwissProt filtered set. The mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 }
 \label{average_species_ta}
-A)
-\begin{tabular}{llll}
-	\toprule
-Average Values                 & Mammal  & Plants  & Yeast   \\
-\midrule
-TMH Hydrophobicity             & 2.42   & 2.59   & 2.41  \\
-TMH with flanks Hydrophobicity & 1.46   & 1.59   & 1.50  \\
-TMH Disorder                   & -0.22  & -0.24  & -0.23 \\
-TMH with flanks Disorder       & -0.17  & -0.19  & -0.20 \\
-\bottomrule
-
-\end{tabular}
-\\
-B)
-\begin{tabular}{llll}
-	\toprule
-Average Values                 & Mammal  			& Plants  & Yeast   \\
-\midrule
-TMH Hydrophobicity             & 2.34          & 2.43   & 2.30  \\
-TMH with flanks Hydrophobicity & 1.31          & 1.33   & 1.36  \\
-TMH Disorder                   & -0.22         & -0.23  & -0.22 \\
-TMH with flanks Disorder       & -0.17         & -0.18  & -0.18 \\
-\bottomrule
-\end{tabular}
 \end{table}
 
-
-
 Here, we are dealing with datasets at least an order of magnitude smaller than those broad studies which could explain the absence of the effect, however this only goes to show that if there is an effect in \gls{ta} proteins, it is indeed weak.
-
 
 \begin{table}[htbp]
 
@@ -128,45 +110,27 @@ Disorder was calculated in the same way using the GlobProt scale \cite{Linding20
 The score column refers to the statistical score obtaineed from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 The Bahadur column refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
 
-\resizebox{\textwidth}{!}{
 
-\begin{tabular}{lllllllllll}
-
-	\toprule
-	\multirow{2}{*}{Factor}                           & \multirow{2}{*}{Statistical Test} & \multicolumn{3}{l}{Mammal and Plant}      & \multicolumn{3}{l}{Mammal and Yeast}      & \multicolumn{3}{l}{Plant and Yeast}       \\
-	                                                  &                                   & Score & P value  & Bahadur & Score & P value  & Bahadur & Score & P value  & Bahadur \\
-  \midrule
-	\multirow{3}{*}{Disorder of TMH}                  & Kruskal-Wallis                    & 3.66           & 5.58E-02 & 2.14E-02      & 3.66           & 5.58E-02 & 2.14E-02      & 0.90           & 3.44E-01 & 1.17E-02      \\
-	                                                  & Kolmogorov-Smirnov                & 0.24           & 3.98E-02 & 2.39E-02      & 0.24           & 3.98E-02 & 2.39E-02      & 0.17           & 5.28E-01 & 7.02E-03      \\
-	                                                  & Student's T-test                  & 1.95           & 5.36E-02 & 2.17E-02      & 1.95           & 5.36E-02 & 2.17E-02      & -1.00          & 3.20E-01 & 1.25E-02      \\
-  \midrule
-	\multirow{3}{*}{Hydrophobicity of TMH}            & Kruskal-Wallis                    & 2.12           & 1.45E-01 & 1.43E-02      & 2.12           & 1.45E-01 & 1.43E-02      & 2.30           & 1.30E-01 & 2.25E-02      \\
-	                                                  & Kolmogorov-Smirnov                & 0.17           & 2.86E-01 & 9.27E-03      & 0.17           & 2.86E-01 & 9.27E-03      & 0.24           & 1.69E-01 & 1.95E-02      \\
-	                                                  & Student's T-test                  & -1.71          & 8.96E-02 & 1.79E-02      & -1.71          & 8.96E-02 & 1.79E-02      & 1.47           & 1.46E-01 & 2.11E-02      \\
-  \midrule
-	\multirow{1}{*}{Disorder of}								      & Kruskal-Wallis                    & 3.74           & 5.30E-02 & 2.18E-02      & 3.74           & 5.30E-02 & 2.18E-02      & 0.23           & 6.33E-01 & 5.02E-03      \\
-	\multirow{2}{*}{TMH and flanks}                   & Kolmogorov-Smirnov                & 0.22           & 7.51E-02 & 1.92E-02      & 0.22           & 7.51E-02 & 1.92E-02      & 0.20           & 3.27E-01 & 1.23E-02      \\
-	                                                  & Student's T-test                  & 2.06           & 4.16E-02 & 2.36E-02      & 2.06           & 4.16E-02 & 2.36E-02      & 0.40           & 6.89E-01 & 4.09E-03      \\
-	\midrule
-	\multirow{1}{*}{Hydrophobicity of}	 							& Kruskal-Wallis                    & 2.17           & 1.41E-01 & 1.45E-02      & 2.17           & 1.41E-01 & 1.45E-02      & 0.59           & 4.41E-01 & 9.00E-03      \\
-	\multirow{2}{*}{TMH and flanks}                   & Kolmogorov-Smirnov                & 0.21           & 8.30E-02 & 1.84E-02      & 0.21           & 8.30E-02 & 1.84E-02      & 0.14           & 8.00E-01 & 2.45E-03      \\
-	                                                  & Student's T-test                  & -1.33          & 1.86E-01 & 1.25E-02      & -1.33          & 1.86E-01 & 1.25E-02      & 0.69           & 4.90E-01 & 7.83E-03			\\
-
-	\bottomrule
-	\end{tabular}%
-	}
 	\label{table:speciestableuniprotstats}
 \end{table}%
 
 \subsection{Organelle Membrane Variation}
 % Average lines for figure, table for stats
 
-\subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
+
+
+
+
+
+
+
+
+%\subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
 % Average lines for figure, table for stats
 
-~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
-We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694).
-This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
+%~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
+%We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694).
+%This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
 
 \subsection{Spontaneous insertion may be achieved by polar patches in the \gls{tmh}}
 %Spont TA lines against background dataset.
@@ -174,21 +138,22 @@ This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif 
 In addition, predicted insertion machinery dependent TAs with TMHs that are more polar on average than spontaneously inserting~\gls{ta} protein cytochrome b5 have been highlighted.
 
 %move on to case studies involving spontaneous insertion?
-Signal anchored proteins, proteins that contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor, as well as tail-anchored proteins have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
 
-It is postulated that there are electrostatic factors in the flanking regions that contribute to this spontaneous membrane insertion.
-Our experimental collaborators in Stephen High’s group are interested in a small group of tail-anchored proteins that have very polar trans-membrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion.
-They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the \gls{tm} domains belonging to a protein of known spontaneously inserting domains.
-Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
-The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
+
+%Our experimental collaborators in Stephen High’s group are interested in a small group of tail-anchored proteins that have very polar trans-membrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion.
+%They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the \gls{tm} domains belonging to a protein of known spontaneously inserting domains.
+%Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
+
 
 \section{Discussion}
 
-Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations.
-It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that for \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
+Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations, it is tempting to conclude that \gls{tmh}s contain the necessary biological factors to determine their targetting.
+It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
 Here, we postulate that there is indeed biological information held within the \gls{tmh} itself that allows the protein to be specifically targetted to a destiantion.
-This is almost certainly aided by other factors.
+This is almost certainly aided by other factors and is part of a system with several redundant mechanisms.
 
+Signal anchored proteins, proteins that contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor, as well as tail-anchored proteins have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
+The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
 \section{Methods}
 
@@ -230,6 +195,11 @@ Of those, 987 proteins from 973 records (308 from Swiss-Prot, and 665 from TrEMB
 No further filters were applied to this list.
 Proteomes represented by more than 20 records include \textit{A. thaliana} (60 records), Humans (38), Mouse (37), and \textit{S. cereveisiae} (31). % and 20 to Rat.
 
+401 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}) 39 from Swissprot and 362 automatically assigned in TrEMBL.
+401 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]"}), 98 from SwissProt and 303 automatically annotated in TrEMBL.
+1 TrEMBL record (A0A1E5RT24) in the \gls{er} set contained an ``X'' residue in the C terminal flank and was omitted from the analyses.
+Two subcellular location datasets had no automatically ascribed records and only contained manually annoted SwissProt records; 37 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 82 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
+
 \subsubsection{Remapping Previous Dataset}
 189 of the 411 proteins from the previous study were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.
 
@@ -237,4 +207,33 @@ Proteomes represented by more than 20 records include \textit{A. thaliana} (60 r
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half windows were permitted.
 Average hydrophobicity takes the total of the raw amino acid hydrophobicity values and divides them by the number of amino acids in the slice.
 Values reported in the results are based on the Kyte \& Doolittle scale~\cite{Kyte1982} which is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids.
-Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
+%Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
+
+\subsection{Calculating Sequence Entropy}
+Sequence entropy, is essentially an estimate of the linguistic entropy of a string.
+In the context of biology, it can be thought of as an estimation of the non-randomness of a sequence.
+Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002}, and is a component of the TMSOC z-score which can predict function beyond anchorage of a \gls{tmh}~\cite{Wong2011, Wong2012, Baker2017}.
+here we focus on the analysis of the complexity of a sequence in protein sequences.
+
+Broadly speaking, the information theory entropy of a linguistic string can be defined as in equation~\ref{simpleentropy2}, and we treat the protein sequence \gls{tmh} as a string with or without its flanking regions.
+
+\begin{equation} \label{simpleentropy2}
+	H(S)=-{\sum_{i=1}^n {p_i\log_s(p_i)}}
+\end{equation}
+
+Where H is the entropy of a sequence (S), and $p_i$ is the probability of a character $i$ through each position (n) in S. This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
+
+\subsection{Statistics}
+
+The null hypothesis of homogeneity of two distributions was examined with the~\gls{ks}, the~\gls{kw} and the 2-sampled T-test statistical tests.
+These tests were all ran through the Python scipy stat package v0.17 python package~\cite{VanderWalt2011}.
+To note, the~\gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the~\gls{kw} test is after skews between distributions and the student t-test statistical test checks the average difference between distributions.
+
+Since the ``P‑value'' is a product of a fraction of a permutated set that exponentially increases as N increases, the P-value is a strong function of N.
+We rely on the (absolute) Bahadur slope (B) as a measure of distance between two distributions~\cite{Bahadur1967, Bahadur1971, Sunyaev1998, Baker2017}:
+
+\begin{equation} \label{eq:bahadur2}
+B=\frac{|\ln(P~value)|}{N}
+\end{equation}
+
+The larger the absolute Bahadur slope, the greater the difference between the two distributions.

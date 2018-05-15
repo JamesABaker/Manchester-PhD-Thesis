@@ -345,49 +345,61 @@ Calculating Hydrophobicity . . . . . . . . . . . . . . . . . . . .
 
 91
 
+3.5.3
+
+Calculating Sequence Entropy . . . . . . . . . . . . . . . . . . .
+
+92
+
+3.5.4
+
+Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+92
+
 4 Identifying Intramembrane Folds Using Sequence Complexity
 
-93
+94
 
 4.1
 
 Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.3
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.3.1
 
 Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.3.2
 
 Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.3.3
 
 Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-93
+94
 
 4.4
 
@@ -400,46 +412,47 @@ TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . .
 
 4.5
 
+94
+
 Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . .
 
-94
+95
 
 4.4.3
 
 The pattern is present for GPCR subfamilies . . . . . . . . . . .
 
-94
+95
 
 4.4.4
 
 The prevelance of this amongst all TMPs. . . . . . . . . . . . .
 
-94
+95
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-94
-
-5 Conclusions
-5.1
-
-93
-
 95
 
-Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 4
 
-95
+5 Conclusions
+5.1
 
-5.1.1
+96
+
+Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+96
+
+5.1.1
+
+96
 
 The hydrophobicity–sequence complexity continuum . . . . . . .
 
 Word count 22,000
 5
-
-95
 
 List of Tables
 2.1
@@ -507,7 +520,7 @@ in the UniProt Curated Dataset. . . . . . . . . . . . . . . . . . . . . . .
 
 6
 
-88
+87
 
 List of Figures
 1.1
@@ -603,23 +616,23 @@ each of the datasets as well as those present in multiple datasets. . . . .
 85
 
 Acronyms
-ER Endoplasmic Reticulum. 13, 16, 21, 23, 29, 61, 80, 86
+ER Endoplasmic Reticulum. 13, 16, 21, 23, 29, 61, 80, 85, 86
 HTL Holotranslocon. 23
-KS Kolmogorov-Smirnov. 51, 53–55, 78
-KW Kruskal-Wallis. 37, 38, 42, 51, 53–55, 77, 78
+KS Kolmogorov-Smirnov. 51, 53–55, 78, 87
+KW Kruskal-Wallis. 37, 38, 42, 51, 53–55, 77, 78, 87
 MD Molecular Dynamics. 21
 PDB Protein Data Bank. 12, 30
-PM Plasma Membrane. 61, 86
+PM Plasma Membrane. 61, 85, 86
 POPC Palmitoyloleoylphosphatidylcholine. 16, 47
 RNA Ribonucleic Acid. 23
 SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 79, 80,
-83, 84
+83
 SP Signal Peptide. 19, 85
 SR Signal Recognition Particle Receptor. 23
 SRP Signal Recognition Particle. 23, 24
 TA Tail Anchor. 79–84
-TM Trans-membrane. 11, 14, 27–30, 43, 46, 51, 60, 73, 84
-TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–78, 80, 82–86
+TM Trans-membrane. 11, 14, 27–30, 43, 46, 51, 60, 73, 83
+TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–78, 80, 82–87
 9
 
 TMP Trans-membrane Protein. 11, 13, 18–20, 23, 25, 26, 28, 30, 31, 33, 34, 43, 46,
@@ -633,7 +646,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-May 14, 2018
+May 15, 2018
 
 11
 
@@ -6304,67 +6317,7 @@ representing plants and S. cerevisiae (N=31) representing yeasts. (B) Values for
 set. The mammalian set of TA proteins (Human N=46 and Mouse N=48) to A. thaliana (N=49)
 representing plants and S. cerevisiae (N=24) representing yeasts.
 
-Average Values
-TMH
-A) TMH
-TMH
-TMH
-
-Hydrophobicity
-2.42
-with flanks Hydrophobicity 1.46
-Disorder
--0.22
-with flanks Disorder
--0.17
-
-Average Values
-TMH
-B) TMH
-TMH
-TMH
-
 3.3.2
-
-Mammal
-
-Mammal
-
-Hydrophobicity
-2.34
-with flanks Hydrophobicity 1.31
-Disorder
--0.22
-with flanks Disorder
--0.17
-
-Plants
-
-Yeast
-
-2.59
-1.59
--0.24
--0.19
-
-2.41
-1.50
--0.23
--0.20
-
-Plants
-
-Yeast
-
-2.43
-1.33
--0.23
--0.18
-
-2.30
-1.36
--0.22
--0.18
 
 Species Variation
 
@@ -6381,10 +6334,6 @@ Here, we are dealing with datasets at least an order of magnitude smaller than
 those broad studies which could explain the absence of the effect, however this only
 goes to show that if there is an effect in TA proteins, it is indeed weak.
 
-88
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 Table 3.2: Statistical comparisons between mouse and human, yeast, and plants in the
 UniProt Curated Dataset. Here, we compare a mammalian set of TA proteins (Human N=38
 and Mouse N=37) to A. thaliana (N=60) representing plants and S. cerevisiae (N=31) representing
@@ -6395,111 +6344,10 @@ same way using the GlobProt scale [141]. The score column refers to the statisti
 from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test,
 and the t-statistic for the T-test. The Bahadur column refers to the Bahadur slope, an interpretation
 of the P-value that accounts for the sample size powering the test [113, 114].
-Factor
 
-Statistical Test
+88
 
-Mammal and Plant
-Score P value
-Bahadur
-
-Disorder of TMH
-
-Kruskal-Wallis
-Kolmogorov-Smirnov
-Student’s T-test
-
-3.66
-0.24
-1.95
-
-5.58E-02 2.14E-02 3.66
-3.98E-02 2.39E-02 0.24
-5.36E-02 2.17E-02 1.95
-
-5.58E-02 2.14E-02 0.90
-3.98E-02 2.39E-02 0.17
-5.36E-02 2.17E-02 -1.00
-
-3.44E-01 1.17E-02
-5.28E-01 7.02E-03
-3.20E-01 1.25E-02
-
-Hydrophobicity of TMH
-
-Kruskal-Wallis
-Kolmogorov-Smirnov
-Student’s T-test
-
-2.12
-0.17
--1.71
-
-1.45E-01 1.43E-02 2.12
-2.86E-01 9.27E-03 0.17
-8.96E-02 1.79E-02 -1.71
-
-1.45E-01 1.43E-02 2.30
-2.86E-01 9.27E-03 0.24
-8.96E-02 1.79E-02 1.47
-
-1.30E-01 2.25E-02
-1.69E-01 1.95E-02
-1.46E-01 2.11E-02
-
-Kruskal-Wallis
-Kolmogorov-Smirnov
-Student’s T-test
-
-3.74
-0.22
-2.06
-
-5.30E-02 2.18E-02 3.74
-7.51E-02 1.92E-02 0.22
-4.16E-02 2.36E-02 2.06
-
-5.30E-02 2.18E-02 0.23
-7.51E-02 1.92E-02 0.20
-4.16E-02 2.36E-02 0.40
-
-6.33E-01 5.02E-03
-3.27E-01 1.23E-02
-6.89E-01 4.09E-03
-
-Kruskal-Wallis
-Kolmogorov-Smirnov
-Student’s T-test
-
-2.17
-0.21
--1.33
-
-1.41E-01 1.45E-02 2.17
-8.30E-02 1.84E-02 0.21
-1.86E-01 1.25E-02 -1.33
-
-1.41E-01 1.45E-02 0.59
-8.30E-02 1.84E-02 0.14
-1.86E-01 1.25E-02 0.69
-
-4.41E-01 9.00E-03
-8.00E-01 2.45E-03
-4.90E-01 7.83E-03
-
-Disorder of
-TMH and flanks
-Hydrophobicity of
-TMH and flanks
-
-Mammal and Yeast
-Score P value
-Bahadur
-
-Plant and Yeast
-Score P value
-
-Bahadur
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
 3.3.3
 
@@ -6527,11 +6375,6 @@ In addition, predicted insertion machinery dependent TAs with TMHs that are more
 polar on average than spontaneously inserting TA protein cytochrome b5 have been
 highlighted.
 Signal anchored proteins, proteins that contain a single hydrophobic segment that
-
-3.4. DISCUSSION
-
-89
-
 serves as both a mitochondrial targeting signal and a membrane anchor, as well as
 tail-anchored proteins have been shown to be able to spontaneously insert into the
 membrane independently from the translocon [50, 142, 143].
@@ -6545,6 +6388,11 @@ of spontaneous insertion if the tail anchor domain is replaced by the TM domains
 belonging to a protein of known spontaneously inserting domains. Their studies have
 moved the focus of spontaneous insertion away from the loop regions and onto the
 physicochemical factors of the TMH itself. The idea that SNARE proteins are modular
+
+3.4. DISCUSSION
+
+89
+
 and capable of spontaneous insertion has significant implications for both biomedical
 application in liposome-based drug delivery and can aid future research for testing
 complex biological molecular networks [144, 145].
@@ -6554,10 +6402,14 @@ complex biological molecular networks [144, 145].
 Discussion
 
 Given the large biochemical distinction between TA proteins with different terminal
-destinations. It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that for TA proteins
-would be expected to experience similar adaptations at a species level, for which at
-this sample size such an effect is unobservable. Here, we postulate that there is indeed biological information held within the TMH itself that allows the protein to be
-specifically targetted to a destiantion. This is almost certainly aided by other factors.
+destinations, it is tempting to conclude that TMHs contain the necessary biological
+factors to determine their targetting. It is indeed possible that our observations are
+adaptations to the membrane environment, and this would not be unreasonable, except
+that TA proteins would be expected to experience similar adaptations at a species
+level, for which at this sample size such an effect is unobservable. Here, we postulate
+that there is indeed biological information held within the TMH itself that allows the
+protein to be specifically targetted to a destiantion. This is almost certainly aided by
+other factors and is part of a system with several redundant mechanisms.
 
 3.5
 3.5.1
@@ -6567,21 +6419,19 @@ Building a List of Tail-Anchors
 
 Steps carried out by Kalbfleisch et al. published in Traffic 2007 (8: 16871694) [136],
 were recreated using up to date tools. Whilst their study focussed on the human
-
-90
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 proteome, here we take into account the entire TrEMBL and Swiss-Prot database and
 then stratify the datasets by the organism at the end of the pipeline.
-
 Swiss-Prot Tail Anchored Dataset According to Filters
-
 There were 557012 protein records downloaded from Swiss-Prot via UniProt [110]
 (Downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between
 76953 records (annotation:(type:transmem)ANDreviewed:no). This keyword is contained in a record according to either experimental evidence [110] or a robust metaanalysis of TMH prediction using TMHMM [40], Memsat [41], Phobius [42, 90] and
 the hydrophobic moment plot method of Eisenberg and co-workers [39]. 11141 of
 those records had only a single TMH. 11110 of those glstmhs were within the length
+
+90
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms
 according to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL).
 4332 of those had annotation (based on TOPO_DOM annotation) that the N terminal was
@@ -6604,10 +6454,6 @@ human proteome, 24 to S.cerevisiae.
 (location:"Golgiapparatus[SL-0132]")), and 98 in the ER (query locations:
 (location:"Endoplasmicreticulum[SL-0095]").
 
-3.5. METHODS
-
-91
-
 TrEMBL Tail Anchored Dataset According to Filters
 111425234 records were storeed in the TrEMBL database at time of download (Downloaded 25–04–2018). 22107826 of those contained TRANSMEM annotation (annotation:
 (type:transmem)ANDreviewed:no). 18053 of these were single-pass proteins. All of
@@ -6618,6 +6464,10 @@ than 1 appeared in any given species, so they were omited from the Swiss-Prot li
 sequence redundancy protocol to avoid representing a well annotated record with a
 poorly annotated record.
 
+3.5. METHODS
+
+91
+
 UniProt Curated List
 A query for locations:(location:"Single-passtypeIVmembraneprotein[SL-9908]
 ") was used in UniProt which returned 2460 UniProtKB IDs; 463 Swiss-Prot results
@@ -6626,6 +6476,13 @@ and 1997 TrEMBL results. Running these records through CD-HIT at 90% redundancy 
 TRANSMEM annotation indicating a bone fide TMH. No further filters were applied
 to this list. Proteomes represented by more than 20 records include A. thaliana (60
 records), Humans (38), Mouse (37), and S. cereveisiae (31).
+401 were annotated under the Mitochondrion location (query locations:
+(location:"Mitochondrion[SL-0173]")) 39 from Swissprot and 362 automatically assigned in TrEMBL. 401 in the ER (query locations:(location:
+"Endoplasmicreticulum[SL-0095]"), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
+“X” residue in the C terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only contained
+manually annoted SwissProt records; 37 in the PM (query locations:(location:
+"Cellmembrane[SL-0039]"), and 82 in the Golgi (query locations:(location:
+"Golgiapparatus[SL-0132]")).
 
 Remapping Previous Dataset
 189 of the 411 proteins from the previous study were successfully mapped to 222
@@ -6638,15 +6495,70 @@ Calculating Hydrophobicity
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half
 windows were permitted. Average hydrophobicity takes the total of the raw amino
 acid hydrophobicity values and divides them by the number of amino acids in the slice.
+Values reported in the results are based on the Kyte & Doolittle scale [30] which is
+based on the water–vapour transfer free energy and the interior-exterior distribution
 
 92
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-Values reported in the results are based on the Kyte & Doolittle scale [30] which is
-based on the water–vapour transfer free energy and the interior-exterior distribution
-of individual amino acids. Hydrophobicity values were also validated by the White
-and Wimley scale [32], the Hessa scale [15], and the Eisenberg scale [39].
+of individual amino acids.
+
+3.5.3
+
+Calculating Sequence Entropy
+
+Sequence entropy, is essentially an estimate of the linguistic entropy of a string. In
+the context of biology, it can be thought of as an estimation of the non-randomness of
+a sequence. Sequence complexity can be used to analyse DNA sequences [44–46], and
+is a component of the TMSOC z-score which can predict function beyond anchorage
+of a TMH [26, 79, 83]. here we focus on the analysis of the complexity of a sequence
+in protein sequences.
+Broadly speaking, the information theory entropy of a linguistic string can be
+defined as in equation 3.1, and we treat the protein sequence TMH as a string with or
+without its flanking regions.
+
+H(S) = −
+
+n
+X
+
+pi logs (pi )
+
+(3.1)
+
+i=1
+
+Where H is the entropy of a sequence (S), and pi is the probability of a character i through each position (n) in S. This allows us to quantify the average relative
+information density held within a string of information [47].
+
+3.5.4
+
+Statistics
+
+The null hypothesis of homogeneity of two distributions was examined with the KS,
+the KW and the 2-sampled T-test statistical tests. These tests were all ran through the
+Python scipy stat package v0.17 python package [135]. To note, the KS test scrutinises
+for significant maximal absolute differences between distribution curves; the KW test
+is after skews between distributions and the student t-test statistical test checks the
+average difference between distributions.
+Since the “Pvalue” is a product of a fraction of a permutated set that exponentially
+increases as N increases, the P-value is a strong function of N. We rely on the (absolute)
+Bahadur slope (B) as a measure of distance between two distributions [79, 113–115]:
+
+B=
+
+| ln(P value)|
+N
+
+(3.2)
+
+3.5. METHODS
+
+93
+
+The larger the absolute Bahadur slope, the greater the difference between the two
+distributions.
 
 Chapter 4
 Identifying Intramembrane Folds
@@ -6686,11 +6598,13 @@ GPCR distribution tables for complexity and hydrophobicity
 Graphs of complexity and hydrophobicity distributions
 Show there are step changes in GPCRs from Bahadur
 Supplementary tables for additional stats tests and hydrophobicities
-93
+94
 
-94CHAPTER 4. IDENTIFYING INTRAMEMBRANE FOLDS USING SEQUENCE COMPLEXITY
+4.5. DISCUSSION
 
 4.4.2
+
+95
 
 Complexity ascention repeats according to how many
 TM-bundles are in the protein.
@@ -6736,7 +6650,7 @@ suggest probing functional classification of yet uncharacterized membrane protei
 similarities of combinations of complex TM sets to well studied membrane proteins and
 finding those classes of TM proteins where this principle is most directly applicable.
 
-95
+96
 
 Bibliography
 1. Ladokhin, A. S. Membrane protein folding and lipid interactions: theory and
@@ -6760,11 +6674,11 @@ Molecular Cell Biology 7, 909–918 (2006).
 9. Van Meer, G., Voelker, D. R., Feigenson, G. W., Meer, G, Voelker, D. R. &
 Feigenson, G. W. Membrane lipids: where they are and how they behave. Nature
 reviews. Molecular cell biology 9, 112–124 (2008).
-96
-
-BIBLIOGRAPHY
-
 97
+
+98
+
+BIBLIOGRAPHY
 
 10. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of
 Transmembrane Domains Reveals Organelle-Specific Properties. Cell 142, 158–
@@ -6791,9 +6705,9 @@ Biochemistry 38, 9778–9782 (1999).
 Anchoring of α-Helical Proteins: Role of Tryptophan. The Journal of Physical
 Chemistry B, acs.jpcb.7b11227 (2018).
 
-98
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+99
 
 20. Chamberlain, A. K., Lee, Y., Kim, S. & Bowie, J. U. Snorkeling preferences
 foster an amino acid composition bias in transmembrane helices. Journal of
@@ -6816,9 +6730,9 @@ biology of the cell 21, 1662–70 (2010).
 30. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
 character of a protein. Journal of Molecular Biology 157, 105–132 (1982).
 
-BIBLIOGRAPHY
+100
 
-99
+BIBLIOGRAPHY
 
 31. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & von Heijne, G. Molecular code for
 transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
@@ -6845,9 +6759,9 @@ Annual review of biochemistry 53, 595–623 (1984).
 40. Krogh, A, Larsson, B, von Heijne, G & Sonnhammer, E. L. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of molecular biology 305, 567–580 (2001).
 41. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
 
-100
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+101
 
 42. Käll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology and signal peptide prediction method. Journal of Molecular Biology 338,
 1027–1036 (2004).
@@ -6874,9 +6788,9 @@ and Molecular Biology 22, 145–149 (2015).
 52. Hessa, T., Sharma, A., Mariappan, M., Eshleman, H. D., Gutierrez, E. & Hegde,
 R. S. Protein targeting and degradation are coupled for elimination of mislocalized proteins. Nature 475, 394–7 (2011).
 
-BIBLIOGRAPHY
+102
 
-101
+BIBLIOGRAPHY
 
 53. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
 with protein domain databases: Transmembrane regions, signal peptides and the
@@ -6907,9 +6821,9 @@ Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
 of cholesterol, glycosphingolipids, and anionic phospholipids in vitro. Journal of
 Biological Chemistry 280, 36815–36823 (2005).
 
-102
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+103
 
 63. Urban, S. & Wolfe, M. S. Reconstitution of intramembrane proteolysis in vitro
 reveals that pure rhomboid is sufficient for catalysis and specificity. eng. Proceedings of the National Academy of Sciences of the United States of America
@@ -6935,9 +6849,9 @@ anchoring (Review). en. Molecular Membrane Biology 20, 271–284 (2003).
 steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences of the
 United States of America 108, 7351–6 (2011).
 
-BIBLIOGRAPHY
+104
 
-103
+BIBLIOGRAPHY
 
 72. Worley, J. F., McIntyre, M. S., Spencer, B., Mertz, R. J., Roe, M. W. & Dukes,
 I. D. Endoplasmic reticulum calcium store regulates membrane potential in
@@ -6963,9 +6877,9 @@ Membrane protein thermodynamic stability may serve as the energy sink for
 sorting in the periplasm. Proceedings of the National Academy of Sciences of
 the United States of America 110, 4285–90 (2013).
 
-104
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+105
 
 82. MacCallum, J. L. & Tieleman, D. P. Hydrophobicity scales: A thermodynamic
 looking glass into lipid-protein interactions. Trends in Biochemical Sciences 36,
@@ -6992,9 +6906,9 @@ Acids Res 35 (2007).
 91. Cserzo, M, Eisenhaber, F, Eisenhaber, B & Simon, I. On filtering false positive
 transmembrane protein predictions. Protein Eng 15 (2002).
 
-BIBLIOGRAPHY
+106
 
-105
+BIBLIOGRAPHY
 
 92. Cserzo, M, Eisenhaber, F, Eisenhaber, B & Simon, I. TM or not TM: transmembrane protein prediction with low false positive rate using DAS-TMfilter.
 Bioinformatics 20 (2004).
@@ -7021,9 +6935,9 @@ from eubacterial, archaean, and eukaryotic organisms. Protein Sci 7, 1029–38
 orientation of a signal-anchor sequence. Journal of Biological Chemistry 266,
 973–978 (1991).
 
-106
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+107
 
 101. Kida, Y., Morimoto, F., Mihara, K. & Sakaguchi, M. Function of positive charges
 following signal-anchor sequences during translocation of the N-terminal domain. Journal of Biological Chemistry 281, 1152–1158 (2006).
@@ -7051,9 +6965,9 @@ Biological Chemistry 273, 24963–24971 (1998).
 for the assembly of a eucaryotic multispanning membrane protein. J Biol Chem
 273, 25203–25208 (1998).
 
-BIBLIOGRAPHY
+108
 
-107
+BIBLIOGRAPHY
 
 110. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212 (2015).
 111. Dobson, L., Langó, T., Reményi, I. & Tusnády, G. E. Expediting topology data
@@ -7081,9 +6995,9 @@ the orientation of a membrane protein in the inner membrane of Escherichia coli
 only when it is located adjacent to a transmembrane domain. J Biol Chem 274
 (1999).
 
-108
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+109
 
 121. Hedin, L. E., Öjemalm, K., Bernsel, A., Hennerdal, A., Illergård, K., Enquist,
 K., Kauko, A., Cristobal, S., von Heijne, G., Lerch-Bader, M., Nilsson, I. & Elofsson, A. Membrane insertion of marginally hydrophobic transmembrane helices
@@ -7111,9 +7025,9 @@ Biol Chem 282 (2007).
 usage of biomolecular sequences, expression profiles and automated microscopic
 image analyses for clinical needs and public health. Health Inf Sci Syst 1 (2013).
 
-BIBLIOGRAPHY
+110
 
-109
+BIBLIOGRAPHY
 
 132. Huang, Y., Niu, B., Gao, Y., Fu, L. & Li, W. CD-HIT Suite: a web server
 for clustering and comparing biological sequences. Bioinformatics 26, 680–682
@@ -7141,9 +7055,9 @@ for fast metagenomic sequence analysis. BMC Genomics 12, 444 (2011).
 protein sequences for globularity and disorder. Nucleic Acids Research 31, 3701–
 3708 (2003).
 
-110
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+111
 
 142. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
 and saturable but does not strictly require ATP or molecular chaperones. The
