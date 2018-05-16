@@ -1,12 +1,16 @@
 DATE=$(date +"date-%Y-%m-%d_time-%H-%M-%S")
 
+# This sometimes fixes an issue in my Sierra that stops stuff being found. Uncomment this line if you find PATH issues on OSX.
+# export PATH="$PATH:/Library/TeX/Distributions/Programs/texbin"
+
 pdflatex thesis.tex
 bibtex thesis.aux
 makeglossaries thesis
-makeglossaries chapter_tailanchor
 makeglossaries chapter_introduction
-makeglossaries chapter_conclusions
+makeglossaries chapter_tmcomposition
+makeglossaries chapter_tailanchor
 makeglossaries chapter_predictfunction
+makeglossaries chapter_conclusions
 pdflatex thesis.tex
 pdflatex thesis.tex
 
