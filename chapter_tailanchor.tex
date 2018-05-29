@@ -33,7 +33,7 @@ Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
 
 \section{Results}
 
-\subsection{Tail-Anchored Protein Datasets Are A Moving Target}
+\subsection{A Comparison Of Up-To-Date Tail-Anchored Protein Datasets}
 Here, we use two sources for \gls{ta} protein datasets.
 One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
 Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
@@ -73,7 +73,7 @@ The greatest source of uncertainty here is that the original S1 list includes 41
 This figure is closer to the 202 proteins from the original S1 list that excluded proteins that were either hypothetical or splice isoforms.
 That being said, this mapping step prevents us from directly comparing the entire original S1 dataset.
 
-\subsection{Species Tail-Anchored TMH Variation}
+\subsection{It Is Difficult To Observe Hydrophobic Variation Of TA Protein TMHs Between Species}
 % Average lines for figure, table for stats
 
 \begin{table}[htbp]
@@ -82,7 +82,7 @@ That being said, this mapping step prevents us from directly comparing the entir
 {\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.}
 Here, we compare a mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-%Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+% Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 $P$ is the P-value of that statistical score.
 $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
@@ -135,7 +135,7 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 \captionof{figure}[Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
 {\textbf{Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
 
-The average hydrophobicity values from the Kyte \& Doolittle scale ~\cite{Kyte1982} and the GlobProt scale \cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues. Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
+The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982} and the GlobProt scale~\cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues. Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants/ and \textit{S. cerevisiae} (N=31) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 }
 
@@ -143,7 +143,7 @@ Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 \end{figure}
 
 When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we can see little difference between the mean values.
-All of the mean values lie between $\sim$2.3-2.6 when we only consider the \gls{tmh} and at $\sim$1.3-1.6 when considering residues in close proximity to the~\gls{tmh} ($\pm$5 residues) (Figure~\ref{fig:average_species_hydrophobicity_ta}).
+All of the mean values lie between 2.3-2.6 when we only consider the \gls{tmh} and at 1.3-1.6 when considering residues in close proximity to the~\gls{tmh} ($\pm$5 residues) (Figure~\ref{fig:average_species_hydrophobicity_ta}).
 Indeed, we see no strong observable statistical differences in hydrophobicity ($P>3.35E-1$ in the SwissProt automatically filtered list Table \ref{table:speciestableswissprotstats}, and $P>8.30E-2$ in the UniProt curated list Table \ref{table:speciestableuniprotstats}).
 There are also no consistent trends among the absolute Bahadur slopes; no datasets are greatly different from any other.
 
@@ -153,8 +153,7 @@ However, in these \gls{ta} protein datasets we see no such patterns at this samp
 Here, we are dealing with datasets at least an order of magnitude smaller than those broad studies which could explain the absence of the effect.
 However this only goes to show that if there is an effect in \gls{ta} proteins, it is indeed weak.
 
-
-\subsection{Organelle Tail-Anchored TMH Variation}
+\subsection{There Are Biochemical Differences Between Tail-Anchored TMHs From Different Organelles}
 % Average lines for figure, table for stats
 
 When we consider the \gls{ta} proteins at certain locations within the cell ignoring species, we see clear differences in the biochemistry of the \gls{tmh}.
@@ -301,7 +300,7 @@ Whereas mitochondria is the least negative in both cases when considering the \g
 
 
 
-\subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
+% \subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
 % Average lines for figure, table for stats
 
 %~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
@@ -345,11 +344,11 @@ There were 557012 protein records downloaded from SwissProt via UniProt~\cite{Th
 106149~\gls{tmh}s (\url{TRANSMEM} annotation) were found between 76953 records (\url{annotation:(type:transmem) AND reviewed:no}).
 This keyword is contained in a record according to either experimental evidence~\cite{TheUniProtConsortium2014} or a robust meta-analysis of~\gls{tmh} prediction using TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004,Kall2007} and the hydrophobic moment plot method of Eisenberg and co-workers~\cite{Eisenberg1984}.
 11141 of those records had only a single~\gls{tmh}.
-11110 of those~gls{tmh}s were within the length thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms according to \url{NON_TER} annotation).
+11110 of those~\gls{tmh}s were within the length thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms according to \url{NON_TER} annotation).
 5548 of those had had no~\gls{sp} annotation (\url{SIGNAL}).
 4332 of those had annotation (based on \url{TOPO_DOM} annotation) that the N terminal was cytoplasmic.
 615 of those had the~\gls{tmh} within 25 residues of the C terminal, the same threshold used by Kalbfleisch and their coworkers~\cite{Kalbfleisch2007}.
-Running CD-Hit 4.5.3 on the WebMGA webserver~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins.
+Running CD-Hit 4.5.3 on the WebMGA web-server~\cite{Huang2010, Wu2011} at 90\% identical sequence at 90\% coverage thresholds resulted in 443 representative proteins.
 This threshold was chosen as a compromise between avoiding over-representation of a certain protein and maintaining a viable sample size.
 
 From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were Eukaryotic and 11 came from dsDNA viruses.
@@ -365,7 +364,7 @@ All of these were within the length restrictions.
 17973 of those did not contain a signal sequence when looking for \url{SIGNAL} annotation.
 5157 of those contained a cytoplasmically located N terminal according to \url{TOPO_DOM} annotation.
 155 records had a~\gls{tmh} within 15 residues of the C terminal residue.
-In those record's annotations, no more than 1 appeared in any given species, so they were omitted from the SwissProt list sequence redundancy protocol to avoid representing a well annotated record with a poorly annotated record.
+In those record's annotations, no more than 1 appeared in any given species, so they were omitted from the SwissProt list sequence redundancy protocol to avoid representing a well-annotated record with a poorly annotated record.
 
 \subsubsection{UniProt Curated List}
 A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2460 UniProtKB IDs; 463 SwissProt results and 1997 TrEMBL results.
@@ -405,7 +404,7 @@ Where H is the entropy of a sequence (S), and $p_i$ is the probability of a char
 \subsection{Statistics}
 
 The null hypothesis of homogeneity of two distributions was examined with the Kolmogorov Smirnov, the Kruskal-Wallis, and the 2-sampled Student's T-test statistical tests.
-These tests were all ran through the Python scipy stat package v0.17 python package~\cite{VanderWalt2011}.
+These tests were all ran through the Python SciPy stat package v0.17 python package~\cite{VanderWalt2011}.
 To note, the~\gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the~\gls{kw} test is after skews between distributions and the student t-test statistical test checks the average difference between distributions.
 
 Since the P‑value is a product of a fraction of test statistics obtained from a permutated set of the samples, it exponentially increases as N increases; the P-value is a strong function of N.
