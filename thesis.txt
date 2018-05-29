@@ -291,27 +291,25 @@ Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 3.3.1
 
-Tail-Anchored Protein Datasets Are A Moving Target . . . . . .
+A Comparison Of Up-To-Date Tail-Anchored Protein Datasets .
 
 85
 
 3.3.2
 
-Species Tail-Anchored TMH Variation . . . . . . . . . . . . . .
-
-87
+It Is Difficult To Observe Hydrophobic Variation Of TA Protein
+TMHs Between Species . . . . . . . . . . . . . . . . . . . . . . .
 
 3.3.3
 
-Organelle Tail-Anchored TMH Variation . . . . . . . . . . . . .
-
-89
+There Are Biochemical Differences Between Tail-Anchored
+TMHs From Different Organelles . . . . . . . . . . . . . . . . .
 
 3.3.4
 
-SNAREs are consistently more hydrophobic across the entire TMH 92
+87
 
-3.3.5
+88
 
 Spontaneous insertion may be achieved by polar patches in the
 TMH . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -407,8 +405,6 @@ TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . .
 
 4.4.2
 
-4.5
-
 97
 
 Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . .
@@ -427,15 +423,16 @@ The prevelance of this amongst all TMPs. . . . . . . . . . . . .
 
 98
 
-Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
-98
-
 4
 
-5 Conclusions
+4.5
+
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+5 Conclusions
 5.1
 
+98
 99
 
 Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -515,7 +512,7 @@ yeast, and plants in the UniProt Curated Dataset. . . . . . . . . . . . .
 
 3.3
 
-87
+88
 
 Statistical comparisons between TMH sequences from organelles in the
 UniProt Curated Dataset. . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -524,7 +521,7 @@ UniProt Curated Dataset. . . . . . . . . . . . . . . . . . . . . . . . . .
 
 87
 
-90
+91
 
 Statistical comparisons between TMH sequences from organelles in the
 SwissProt Filtered Dataset. . . . . . . . . . . . . . . . . . . . . . . . .
@@ -631,7 +628,7 @@ and SwissProt automatically filtered dataset. . . . . . . . . . . . . . . .
 
 81
 
-88
+89
 
 Average sequence-based biochemical values of organelle datasets from
 UniProt manually curated set and SwissProt automatically filtered
@@ -639,10 +636,10 @@ dataset. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 8
 
-89
+90
 
 Acronyms
-ER Endoplasmic Reticulum. 13, 16, 21, 23, 29, 61, 80, 83, 85, 86, 89, 90
+ER Endoplasmic Reticulum. 13, 16, 21, 23, 29, 61, 80, 84–87, 89, 90
 HTL Holotranslocon. 23
 KS Kolmogorov-Smirnov. 51, 53–55, 78, 91
 KW Kruskal-Wallis. 37, 38, 42, 51, 53–55, 78, 91
@@ -658,7 +655,7 @@ SR Signal Recognition Particle Receptor. 23
 SRP Signal Recognition Particle. 23, 24
 TA Tail Anchor. 79–87
 TM Trans-membrane. 11, 14, 27–30, 43, 46, 51, 60, 73
-TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–78, 80, 82–89, 91
+TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–78, 80, 82–91
 9
 
 TMP Trans-membrane Protein. 11, 13, 18–20, 23, 25, 26, 28, 30, 31, 33, 34, 43, 46,
@@ -672,7 +669,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-May 16, 2018
+May 25, 2018
 
 11
 
@@ -1092,7 +1089,7 @@ if so what are they?
 
 The Importance Of Transmembrane Proteins
 
-Membrane bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral TMP are encoded by between a
+Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral TMP are encoded by between a
 third to a half of the genes in the human genome which reflects their biological importance [55–57]. These proteins allow biochemical pathways that traverse the various
 biological membranes used in life.
 The relationship between the membrane and TMPs is underpinned by complex
@@ -6286,7 +6283,8 @@ Whilst most eukaryotic TA proteins are inserted into the ER.
 3.3.1
 
 Results
-Tail-Anchored Protein Datasets Are A Moving Target
+A Comparison Of Up-To-Date Tail-Anchored Protein
+Datasets
 
 Here, we use two sources for TA protein datasets. One dataset is based on a previous
 method [136] to obtain TA datasets and consists of 9296 TMH residues (13279 including up to ±5 flanking residues) from 443 SwissProt entries with 90% redundancy
@@ -6300,8 +6298,6 @@ ids of 222 records (78.8%) that do not share overlap the up-to-date manually cur
 UniProt dataset [110]. Of the 166 unique records of that 2007 S1 dataset, 92 records
 do have location annotation in UniProt that the scripts herein use for topological
 determination, leaving 74 records without location annotation. This leaves 92 of 222
-(41.4%) records that originally fitted criteria that no longer fit those same criteria. If
-we exclude those lacking suitable annotation i.e ids from S1 that are found in either
 
 86
 
@@ -6315,6 +6311,8 @@ according to typical TA features limited to the human proteome [110], and iii) T
 list of TA proteins [110]. Note that to avoid losing IDs to redundancy reduction this diagram was
 generated without the use of CD-HIT [132, 140], which is applied in later statistical analysis.
 
+(41.4%) records that originally fitted criteria that no longer fit those same criteria. If
+we exclude those lacking suitable annotation i.e ids from S1 that are found in either
 SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared
 to the 92 that have annotation contradicting the original predictions, 37.8% of the ids
 overlap.
@@ -6327,13 +6325,13 @@ Datasets are a moving target as they are constantly updated with more accurate
 and reliable tools. Perhaps unsurprisingly, as a trend, this shows that up-to-date
 datasets improve the reliability of this automated predicted method and that there is
 a large degree of what we now believe to be mistakes that occurred in older prediction tools, even when using similar methods. These automated criteria still do not
-fully align with the manually curated list, which is bound to change too, especially
-considering only 973 of a non-redundant (90% CD-HIT threshold [132, 140]) set of
 
 3.3. RESULTS
 
 87
 
+fully align with the manually curated list, which is bound to change too, especially
+considering only 973 of a non-redundant (90% CD-HIT threshold [132, 140]) set of
 those 2460 proteins of the UniProt manually curated set contained annotation for the
 transmembrane boundary residues.
 Note that these numbers are not absolutely certain. The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of
@@ -6343,7 +6341,8 @@ comparing the entire original S1 dataset.
 
 3.3.2
 
-Species Tail-Anchored TMH Variation
+It Is Difficult To Observe Hydrophobic Variation Of TA
+Protein TMHs Between Species
 
 Table 3.1: Hydrophobicity statistical comparisons between mouse and human, yeast,
 and plants in the SwissProt Filtered Dataset. Here, we compare a mammalian set of TA
@@ -6437,6 +6436,20 @@ B
 8.50E-1
 2.22E-3
 
+When comparing the average Kyte & Doolittle [30] hydrophobicity values for
+the TMHs from humans and mice, A. thaliana, and S. cerevisiae, we can see little
+difference between the mean values. All of the mean values lie between 2.3-2.6 when
+we only consider the TMH and at 1.3-1.6 when considering residues in close proximity
+to the TMH (±5 residues) (Figure 3.2). Indeed, we see no strong observable statistical
+differences in hydrophobicity (P > 3.35E − 1 in the SwissProt automatically filtered
+list Table 3.1, and P > 8.30E − 2 in the UniProt curated list Table 3.2). There are
+also no consistent trends among the absolute Bahadur slopes; no datasets are greatly
+different from any other.
+
+88
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 Table 3.2: Hydrophobicity statistical comparisons between mouse and human, yeast, and
 plants in the UniProt Curated Dataset. Here, we compare a mammalian set of TA proteins
 (Human N=38 and Mouse N=37) to A. thaliana (N=60) representing plants and S. cerevisiae (N=31)
@@ -6529,35 +6542,7 @@ B
 4.90E-1
 7.83E-3
 
-When comparing the average Kyte & Doolittle [30] hydrophobicity values for
-the TMHs from humans and mice, A. thaliana, and S. cerevisiae, we can see little
-
-88
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
-Figure 3.2: Average values of species datasets from UniProt manually curated set and
-SwissProt automatically filtered dataset.
-The average hydrophobicity values from the Kyte & Doolittle scale [30] and the GlobProt scale
-[141] for both the TMH and the TMH±5 residues. Values are shown for both the UniProt manually
-curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the
-mammalian set of TA proteins (Human N=38 and Mouse N=37) to A. thaliana (N=60) representing
-plants and S. cerevisiae (N=31) representing yeasts. For the SwissProt filtered set we compare the
-mammalian set of TA proteins (Human N=46 and Mouse N=48) to A. thaliana (N=49) representing
-plants and S. cerevisiae (N=24) representing yeasts. Error bars are shown at ±1σ from the mean of
-the respective dataset.
-
-difference between the mean values. All of the mean values lie between ∼2.3-2.6 when
-we only consider the TMH and at ∼1.3-1.6 when considering residues in close proximity to the TMH (±5 residues) (Figure 3.2). Indeed, we see no strong observable
-statistical differences in hydrophobicity (P > 3.35E − 1 in the SwissProt automatically filtered list Table 3.1, and P > 8.30E − 2 in the UniProt curated list Table 3.2).
-There are also no consistent trends among the absolute Bahadur slopes; no datasets
-are greatly different from any other.
 In single-pass proteins of Eukaryotic species there are typically various adaptations
-
-3.3. RESULTS
-
-89
-
 of the TMH to adhere to the membrane constraints of the specific membrane that can
 be observed in terms of hydrophobicity [10], especially in TMH anchors [79]. However,
 in these TA protein datasets we see no such patterns at this sample size.
@@ -6567,11 +6552,44 @@ goes to show that if there is an effect in TA proteins, it is indeed weak.
 
 3.3.3
 
-Organelle Tail-Anchored TMH Variation
+There Are Biochemical Differences Between TailAnchored TMHs From Different Organelles
 
 When we consider the TA proteins at certain locations within the cell ignoring species,
 we see clear differences in the biochemistry of the TMH. In the UniProt manually
 curated dataset, the Kyte & Doolittle hydrophobicity scores rage from 1.7 in mitochondria to 2.7 in the PM (Figure 3.3A).
+In the UniProt curated list, there are clear hydrophobic differences between all
+the TMHs (P < 6.89E − 5) which as a trend becomes less clear when considering
+the TMH±5 flanking residues except for mitochondria which increases in significance
+when considering the flanks also (Table 3.3). The ER and mitochondrial tests are
+very significant (P < 3.71E − 74). Consistently the Bahadur slope is at least an order
+of magnitude greater in the ER and mitochondrial comparison than for the other
+considerations, so these differences cannot be accounted for by the larger sample size.
+
+3.3. RESULTS
+
+89
+
+Figure 3.2: Average values of species datasets from UniProt manually curated set and
+SwissProt automatically filtered dataset.
+The average hydrophobicity values from the Kyte & Doolittle scale [30] and the GlobProt scale [141]
+for both the TMH and the TMH±5 residues. Values are shown for both the UniProt manually
+curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the
+mammalian set of TA proteins (Human N=38 and Mouse N=37) to A. thaliana (N=60) representing
+plants/ and S. cerevisiae (N=31) representing yeasts. For the SwissProt filtered set we compare the
+mammalian set of TA proteins (Human N=46 and Mouse N=48) to A. thaliana (N=49) representing
+plants and S. cerevisiae (N=24) representing yeasts. Error bars are shown at ±1σ from the mean of
+the respective dataset.
+
+In terms of sequence entropy, there is a marked lack of entropy in the PM subset (mean entropy = 3.12 in the TMH, 2.6 including ±5 flanking residues) from
+the UniProt curated dataset compared to the other organelle datasets (entropy >
+3.3 and > 2.8 including the flanks). However this stark difference cannot be observed in the SwissProt set(Figure 3.3). All considerations of disorder were significant
+(P < 2.33E − 4)(Table 3.3). As a trend, the flanks obscure the differences between the
+datasets, implying the differences of disorder are more clear within the TMH itself.
+No clear significances can be observed for the sequence entropy (P > 6.33E −
+
+A)
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 B)
 
 3.50
@@ -6648,7 +6666,7 @@ ER
 -0.15
 GlobProt Scale
 
-A)
+90
 
 -0.30
 ER
@@ -6701,17 +6719,29 @@ In the UniProt manually curated set we compare TA proteins from the ER (N=400) t
 TA proteins from the ER (N=98) to the Golgi (N=82), the PM (N=157), and the mitochondria
 (N=65). Error bars are shown at ±1σ from the mean of the respective dataset.
 
-In the UniProt curated list, there are clear hydrophobic differences between all
-the TMHs (P < 6.89E − 5) which as a trend becomes less clear when considering
-the TMH±5 flanking residues except for mitochondria which increases in significance
-when considering the flanks also (Table 3.3). The ER and mitochondrial tests are
-very significant (P < 3.71E − 74). Consistently the Bahadur slope is at least an order
-of magnitude greater in the ER and mitochondrial comparison than for the other
-considerations, so these differences cannot be accounted for by the larger sample size.
+2), but unsurprisingly as a trend the entropy mirrors the hydrophobicity albeit with
+less range between dataset means (2.62-3.00 in the TMH for disorder, 1.72-2.74 for
+hydrophobicity)(Figure 3.3).
+Similarly, in the SwissProt filtered dataset the mean TMH hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the
+peak at 2.4. In the SwissProt dataset, when we compare each subset of only the TMH
+to the ER subset, we find significance between the ER and the Golgi (P < 1.98E − 3),
+and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
+more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
+smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
+into account the flanks, the ER and PM dataset can be distinguished (P < 2.50E − 3),
+however as a trend the other two comparisons, ER and Golgi becomes less significant,
+and ER and mitochondria become more significant.
+The linguistic sequence entropy of the TMH string as well as the GlobProt disorder
+were also examined. Significance was found in disorder when comparing TMH between
+ER and Golgi (P < 5.01E − 4) and the PM (P < 2.87E − 6)(Table 3.4), but there was
+no observable difference between the ER and PM. No real significance was observed
+in any consideration of the linguistic entropy, but similarly to the UniProt subset,
+as a trend the entropy mirrors the hydrophobicity (Figure 3.3). This is unsurprising
+given that the hydrophobic nature of the TMHs demands that certain residues must
 
-90
+3.3. RESULTS
 
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+91
 
 Table 3.3: Statistical comparisons between TMH sequences from organelles in the
 UniProt Curated Dataset. Here, we compare a organelle subsets from the UniProt curated
@@ -6991,24 +7021,6 @@ T-test
 2.88E-2
 2.80E-2
 2.51E-2
-
-In terms of sequence entropy, there is a marked lack of entropy in the PM subset (mean entropy = 3.12 in the TMH, 2.6 including ±5 flanking residues) from
-the UniProt curated dataset compared to the other organelle datasets (entropy >
-3.3 and > 2.8 including the flanks). However this stark difference cannot be observed in the SwissProt set(Figure 3.3). All considerations of disorder were significant
-(P < 2.33E − 4)(Table 3.3). As a trend, the flanks obscure the differences between the
-datasets, implying the differences of disorder are more clear within the TMH itself.
-No clear significances can be observed for the sequence entropy (P > 6.33E −
-2), but unsurprisingly as a trend the entropy mirrors the hydrophobicity albeit with
-less range between dataset means (2.62-3.00 in the TMH for disorder, 1.72-2.74 for
-hydrophobicity)(Figure 3.3).
-Similarly, in the SwissProt filtered dataset the mean TMH hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the
-peak at 2.4. In the SwissProt dataset, when we compare each subset of only the TMH
-to the ER subset, we find significance between the ER and the Golgi (P < 1.98E − 3),
-and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
-
-3.3. RESULTS
-
-91
 
 Table 3.4: Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset. Here, we compare a organelle subsets from the SwissProt automatically
 filtered dataset of TA proteins. We compare ER (N=98) to Golgi (N=82), PM (N=157), and the
@@ -7291,38 +7303,20 @@ T-test
 1.69E-2
 2.44E-3
 
-more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
-smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
-into account the flanks, the ER and PM dataset can be distinguished (P < 2.50E − 3),
-however as a trend the other two comparisons, ER and Golgi becomes less significant,
-and ER and mitochondria become more significant.
-The linguistic sequence entropy of the TMH string as well as the GlobProt disorder
-were also examined. Significance was found in disorder when comparing TMH between
-ER and Golgi (P < 5.01E − 4) and the PM (P < 2.87E − 6)(Table 3.4), but there was
-no observable difference between the ER and PM. No real significance was observed
-in any consideration of the linguistic entropy, but similarly to the UniProt subset,
-as a trend the entropy mirrors the hydrophobicity (Figure 3.3). This is unsurprising
-given that the hydrophobic nature of the TMHs demands that certain residues must
-be over-represented, which lowers the sequence entropy. In this case, we have a highly
-hydrophobic set, the PM UniProt set, which likely contains a higher proportion of the
-most hydrophobic residues.
-When considering disorder, we see in both datasets that the Golgi subset is the most
-
 92
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
+be over-represented, which lowers the sequence entropy. In this case, we have a highly
+hydrophobic set, the PM UniProt set, which likely contains a higher proportion of the
+most hydrophobic residues.
+When considering disorder, we see in both datasets that the Golgi subset is the most
 negative at -0.2 with TMH and -0.25 with the flanks in both the UniProt manually curated and the SwissProt filtered datasets. Whereas mitochondria is the least negative
 in both cases when considering the TMH (-0.14 in UniProt and -0.13 in SwissProt) or
 the TMH and ±5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure
 3.3).
 
 3.3.4
-
-SNAREs are consistently more hydrophobic across the
-entire TMH
-
-3.3.5
 
 Spontaneous insertion may be achieved by polar
 patches in the TMH
@@ -7345,15 +7339,16 @@ mitochondrial targeting signal and a membrane anchor. Interestingly, these prote
 along with some tail-anchored proteins, have been shown to be able to spontaneously
 insert into the membrane independently from the translocon [50, 142, 143].
 The idea that SNARE proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based
-drug delivery and can aid future research for testing complex biological molecular
-networks [144, 145].
 
 3.5. METHODS
 
+93
+
+drug delivery and can aid future research for testing complex biological molecular
+networks [144, 145].
+
 3.5
 3.5.1
-
-93
 
 Methods
 Building a List of Tail-Anchors
@@ -7369,19 +7364,24 @@ There were 557012 protein records downloaded from SwissProt via UniProt [110]
 is contained in a record according to either experimental evidence [110] or a robust
 meta-analysis of TMH prediction using TMHMM [40], Memsat [41], Phobius [42, 90]
 and the hydrophobic moment plot method of Eisenberg and co-workers [39]. 11141 of
-those records had only a single TMH. 11110 of those glstmhs were within the length
+those records had only a single TMH. 11110 of those TMHs were within the length
 thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms
 according to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL).
 4332 of those had annotation (based on TOPO_DOM annotation) that the N terminal was
 cytoplasmic. 615 of those had the TMH within 25 residues of the C terminal, the same
 threshold used by Kalbfleisch and their coworkers [136]. Running CD-Hit 4.5.3 on the
-WebMGA webserver [132, 140] at 90% identical sequence at 90% coverage thresholds
+WebMGA web-server [132, 140] at 90% identical sequence at 90% coverage thresholds
 resulted in 443 representative proteins. This threshold was chosen as a compromise
 between avoiding over-representation of a certain protein and maintaining a viable
 sample size.
 From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were
 Eukaryotic and 11 came from dsDNA viruses. When counting proteomes with greater
 than 20 records, 49 belonged to the A. thaliana proteome, 48 to Mouse, 46 to the
+
+94
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 human proteome, 24 to S.cerevisiae.
 65 were annotated under the Mitochondrion location (query locations:
 (location:"Mitochondrion[SL-0173]")), 157 in the PM (query locations:
@@ -7389,12 +7389,9 @@ human proteome, 24 to S.cerevisiae.
 
 82 in the Golgi (query locations:
 
-94
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 (location:"Golgiapparatus[SL-0132]")), and 98 in the ER (query locations:
 (location:"Endoplasmicreticulum[SL-0095]").
+
 TrEMBL Tail Anchored Dataset According to Filters
 111425234 records were stored in the TrEMBL database at time of download (Downloaded 25–04–2018). 22107826 of those contained TRANSMEM annotation (annotation:
 (type:transmem)ANDreviewed:no). 18053 of these were single-pass proteins. All of
@@ -7402,8 +7399,9 @@ these were within the length restrictions. 17973 of those did not contain a sign
 sequence when looking for SIGNAL annotation. 5157 of those contained a cytoplasmically located N terminal according to TOPO_DOM annotation. 155 records had a TMH
 within 15 residues of the C terminal residue. In those record’s annotations, no more
 than 1 appeared in any given species, so they were omitted from the SwissProt list
-sequence redundancy protocol to avoid representing a well annotated record with a
+sequence redundancy protocol to avoid representing a well-annotated record with a
 poorly annotated record.
+
 UniProt Curated List
 A query for locations:(location:"Single-passtypeIVmembraneprotein[SL-9908]
 ") was used in UniProt which returned 2460 UniProtKB IDs; 463 SwissProt results
@@ -7414,16 +7412,17 @@ to this list. Proteomes represented by more than 20 records include A. thaliana 
 records), Humans (38), Mouse (37), and S. cerevisiae (31).
 401 were annotated under the Mitochondrion location (query locations:
 (location:"Mitochondrion[SL-0173]")) 39 from SwissProt and 362 automatically assigned in TrEMBL. 401 in the ER (query locations:(location:
-"Endoplasmicreticulum[SL-0095]"), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
-“X” residue in the C terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only contained
-manually annotated SwissProt records; 37 in the PM (query locations:(location:
 
 3.5. METHODS
 
 95
 
+"Endoplasmicreticulum[SL-0095]"), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
+“X” residue in the C terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only contained
+manually annotated SwissProt records; 37 in the PM (query locations:(location:
 "Cellmembrane[SL-0039]"), and 82 in the Golgi (query locations:(location:
 "Golgiapparatus[SL-0132]")).
+
 Remapping Previous Dataset
 189 of the 411 proteins from the previous study [136] were successfully mapped to
 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to
@@ -7453,9 +7452,16 @@ in protein sequences.
 Broadly speaking, the information theory entropy of a linguistic string can be
 defined as in equation 3.1, and we treat the protein sequence TMH as a string with or
 without its flanking regions.
+
+96
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
+H(S) = −
+
 n
 X
-H(S) = −
+
 pi logs (pi )
 
 (3.1)
@@ -7465,16 +7471,12 @@ i=1
 Where H is the entropy of a sequence (S), and pi is the probability of a character i through each position (n) in S. This allows us to quantify the average relative
 information density held within a string of information [47].
 
-96
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 3.5.4
 
 Statistics
 
 The null hypothesis of homogeneity of two distributions was examined with the Kolmogorov Smirnov, the Kruskal-Wallis, and the 2-sampled Student’s T-test statistical
-tests. These tests were all ran through the Python scipy stat package v0.17 python
+tests. These tests were all ran through the Python SciPy stat package v0.17 python
 package [135]. To note, the KS test scrutinises for significant maximal absolute differences between distribution curves; the KW test is after skews between distributions
 and the student t-test statistical test checks the average difference between distributions.
 Since the Pvalue is a product of a fraction of test statistics obtained from a permutated set of the samples, it exponentially increases as N increases; the P-value is
