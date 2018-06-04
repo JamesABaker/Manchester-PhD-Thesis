@@ -1,4 +1,4 @@
-ope\chapter{Tail-Anchored Protein Datasets}
+\chapter{Tail-Anchored Protein Datasets}
 \sloppy
 % gls refers to a glossary term, cite refers to an entry from the separate bibtex folder. url is a lazy way of forcing monospaced text. textit is italics. sections and subsections are the headers.
 \section{Abstract}
@@ -10,6 +10,14 @@ ope\chapter{Tail-Anchored Protein Datasets}
 Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins.
 There is biomedical interest in~\gls{snare} drug delivery mechanisms.
 ~\gls{snare}s can fuse liposomes containing various drug payloads into the membrane.
+
+%Evidence for completely unassissted insertion Kemper et al., 2008; Meineke et al., 2008; Setoguchi et al., 2006
+%Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
+% a novel SRP- independent (SND) pathway in yeast (Aviram et al., 2016).
+
+\gls{ta} proteins are integrated into the~\gls{er} membrane by different molecular machinery than the co-translational proteins.
+These mechanisms include the Hsp70/Hsc40 chaperone system~\cite{Rabu2008}, the TRC40/Get3 ATP dependent chaperone system~\cite{Johnson2013, Chartron2012, Wang2014},
+
 
 The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
 A previous study by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins~\cite{Kalbfleisch2007}.
@@ -31,307 +39,7 @@ This hydrophobicity appears to be a determinate factor in the precise delivery m
 
 Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
 
-\section{Results}
-
-\subsection{A Comparison Of Up-To-Date Tail-Anchored Protein Datasets}
-Here, we use two sources for \gls{ta} protein datasets.
-One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
-Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
-This dataset contains 21119 \gls{tmh} residues (28791 including up to $\pm$5 flanking residues) from 987 UniProt protein records.
-
-% Venn diagram
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=0.5\textwidth]{TA_chapter/database-overlap}
-		\captionof{figure}[A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.]{\textbf{A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.}
-The number of ids present in redundant versions of
-i) the supplementary materials table of a previous study predicting the complete set of human tail anchored proteins denote by S1~\cite{Kalbfleisch2007},
-ii) the SwissProt dataset filtered according to typical~\gls{ta} features limited to the human proteome~\cite{TheUniProtConsortium2014}, and
-iii) The UniProt curated list of~\gls{ta} proteins~\cite{TheUniProtConsortium2014}.
-Note that to avoid losing IDs to redundancy reduction this diagram was generated without the use of CD-HIT~\cite{Huang2010, Wu2011}, which is applied in later statistical analysis.}
-
-\label{fig:tadatasetoverlap}
-\end{figure}
-
-We compared redundant versions of these two datasets to the S1 dataset from a previous method~\cite{Kalbfleisch2007}, that aimed to gather \gls{ta} proteins in the human genome from the NCBI, to see how many records are shared, how many are now obsolete, and how many are unique.
-Figure~\ref{fig:tadatasetoverlap} shows that already a study from 2007~\cite{Kalbfleisch2007} has 175 record ids of 222 records (78.8\%) that do not share overlap the up-to-date manually curated UniProt dataset~\cite{TheUniProtConsortium2014}.
-Of the 166 unique records of that 2007 S1 dataset, 92 records do have location annotation in UniProt that the scripts herein use for topological determination, leaving 74 records without location annotation.
-This leaves 92 of 222 (41.4\%) records that originally fitted criteria that no longer fit those same criteria.
-If we exclude those lacking suitable annotation i.e ids from S1 that are found in either SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared to the 92 that have annotation contradicting the original predictions, 37.8\% of the ids overlap.
-
-Equivalent criteria were applied to the entire SwissProt database and then restricted to the human proteome dataset.
-43 of these 77 records (55.8\%) are in the curated UniProt~\gls{ta}  dataset leaving 34 records that meet the criteria out of the manually curated set (44.2\%of the filtered SwissProt dataset).
-42 of the 77 (54.5\%) records from SwissProt filtered human dataset can be found in the original S1 list.
-A further consideration is that, after removing redundant proteins, this method picked up  46 archaeal and 66 bacterial records.
-
-Datasets are a moving target as they are constantly updated with more accurate and reliable tools.
-Perhaps unsurprisingly, as a trend, this shows that up-to-date datasets improve the reliability of this automated predicted method and that there is a large degree of what we now believe to be mistakes that occurred in older prediction tools, even when using similar methods.
-These automated criteria still do not fully align with the manually curated list, which is bound to change too, especially considering only 973 of a non-redundant (90\% CD-HIT threshold \cite{Huang2010, Wu2011}) set of those 2460 proteins of the UniProt manually curated set contained annotation for the transmembrane boundary residues.
-
-Note that these numbers are not absolutely certain.
-The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset.
-This figure is closer to the 202 proteins from the original S1 list that excluded proteins that were either hypothetical or splice isoforms.
-That being said, this mapping step prevents us from directly comparing the entire original S1 dataset.
-
-\subsection{It Is Difficult To Observe Hydrophobic Variation Of TA Protein TMHs Between Species}
-% Average lines for figure, table for stats
-
-\begin{table}[htbp]
-\centering
-\captionof{table}[Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.]
-{\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.}
-Here, we compare a mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
-The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-% Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
-The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
-$P$ is the P-value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
-\tiny
-	% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
-
-    \begin{tabular}{clrrrrrrrrr}
-          &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
-          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-    \multirow{3}[0]{*}{TMH } &  Kruskal-Wallis & 0.93  & 3.35E-1 & 7.64E-3 & 0.10  & 7.56E-1 & 2.37E-3 & 0.84  & 3.60E-1 & 1.40E-2 \\
-          &  Kolmogorov-Smirnov & 0.13  & 6.36E-1 & 3.17E-3 & 0.12  & 9.24E-1 & 6.69E-4 & 0.19  & 5.28E-1 & 8.76E-3 \\
-          &  Student's T-test & -0.86 & 3.90E-1 & 6.58E-3 & 0.21  & 8.31E-1 & 1.57E-3 & 0.79  & 4.33E-1 & 1.15E-2 \\
-    \multirow{3}[0]{*}{TMH and flanks } &  Kruskal-Wallis & 0.04  & 8.52E-1 & 1.12E-3 & 0.12  & 7.28E-1 & 2.69E-3 & 0.04  & 8.33E-1 & 2.51E-3 \\
-          &  Kolmogorov-Smirnov & 0.11  & 7.72E-1 & 1.81E-3 & 0.13  & 8.79E-1 & 1.09E-3 & 0.11  & 9.80E-1 & 2.81E-4 \\
-          &  Student's T-test & -0.22 & 8.23E-1 & 1.37E-3 & -0.38 & 7.04E-1 & 2.97E-3 & -0.19 & 8.50E-1 & 2.22E-3 \\
-    \end{tabular}%
-				\label{table:speciestableswissprotstats}
-
-\end{table}%
-
-\begin{table}[htbp]
-\centering
-\captionof{table}[Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.]
-{\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.}
-Here, we compare a mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts.
-The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-%Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
-The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
-$P$ is the P-value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
-	\tiny
-	% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
-
-    \begin{tabular}{clrrrrrrrrr}
-	          &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
-	          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-	    \multirow{3}[0]{*}{TMH } &  Kruskal-Wallis & 2.15  & 1.42E-1 & 1.45E-2 & 0.22  & 6.39E-1 & 4.22E-3 & 2.30  & 1.30E-1 & 2.25E-2 \\
-	          &  Kolmogorov-Smirnov & 0.17  & 2.86E-1 & 9.27E-3 & 0.15  & 6.32E-1 & 4.34E-3 & 0.24  & 1.69E-1 & 1.95E-2 \\
-	          &  Student's T-test & -1.71 & 8.96E-2 & 1.79E-2 & 0.04  & 9.70E-1 & 2.86E-4 & 1.47  & 1.46E-1 & 2.11E-2 \\
-	    \multirow{3}[0]{*}{TMH and flanks } &  Kruskal-Wallis & 2.17  & 1.41E-1 & 1.45E-2 & 0.14  & 7.13E-1 & 3.19E-3 & 0.59  & 4.41E-1 & 9.00E-3 \\
-	          &  Kolmogorov-Smirnov & 0.21  & 8.30E-2 & 1.84E-2 & 0.10  & 9.62E-1 & 3.62E-4 & 0.14  & 8.00E-1 & 2.45E-3 \\
-	          &  Student's T-test & -1.33 & 1.86E-1 & 1.25E-2 & -0.39 & 7.00E-1 & 3.36E-3 & 0.69  & 4.90E-1 & 7.83E-3 \\
-	    \end{tabular}%
-					\label{table:speciestableuniprotstats}
-	\end{table}%
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{TA_chapter/species-hydrophobicity}
-\captionof{figure}[Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
-{\textbf{Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
-
-The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982} and the GlobProt scale~\cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues. Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants/ and \textit{S. cerevisiae} (N=31) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
-Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
-}
-
-\label{fig:average_species_hydrophobicity_ta}
-\end{figure}
-
-When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we can see little difference between the mean values.
-All of the mean values lie between 2.3-2.6 when we only consider the \gls{tmh} and at 1.3-1.6 when considering residues in close proximity to the~\gls{tmh} ($\pm$5 residues) (Figure~\ref{fig:average_species_hydrophobicity_ta}).
-Indeed, we see no strong observable statistical differences in hydrophobicity ($P>3.35E-1$ in the SwissProt automatically filtered list Table \ref{table:speciestableswissprotstats}, and $P>8.30E-2$ in the UniProt curated list Table \ref{table:speciestableuniprotstats}).
-There are also no consistent trends among the absolute Bahadur slopes; no datasets are greatly different from any other.
-
-In single-pass proteins of Eukaryotic species there are typically various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane that can be observed in terms of hydrophobicity~\cite{Sharpe2010}, especially in \gls{tmh} anchors~\cite{Baker2017}.
-However, in these \gls{ta} protein datasets we see no such patterns at this sample size.
-
-Here, we are dealing with datasets at least an order of magnitude smaller than those broad studies which could explain the absence of the effect.
-However this only goes to show that if there is an effect in \gls{ta} proteins, it is indeed weak.
-
-\subsection{There Are Biochemical Differences Between Tail-Anchored TMHs From Different Organelles}
-% Average lines for figure, table for stats
-
-When we consider the \gls{ta} proteins at certain locations within the cell ignoring species, we see clear differences in the biochemistry of the \gls{tmh}.
-In the UniProt manually curated dataset, the Kyte \& Doolittle hydrophobicity scores rage from 1.7 in mitochondria to 2.7 in the \gls{pm} (Figure \ref{fig:average_organelle_factors_ta}A).
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{TA_chapter/organelle-averages}
-\captionof{figure}[Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
-{\textbf{Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
-
-A) The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982}, B) the average sequence entropy~\cite{Shannon1948} (see methods) and C) the GlobProt scale~\cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
-Values are shown for both the UniProt manually curated set and the SwissProt filtered set.
-In the UniProt manually curated set we compare \gls{ta} proteins from the~\gls{er} (N=400) to the Golgi (N=82), the~\gls{pm} (N=37), and the mitochondria (N=401).
-For the SwissProt filtered set we compare \gls{ta} proteins from the~\gls{er} (N=98) to the Golgi (N=82), the~\gls{pm} (N=157), and the mitochondria (N=65).
-Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
-}
-
-\label{fig:average_organelle_factors_ta}
-\end{figure}
-
-
-
-
-\begin{table}[htbp]
-\centering
-\captionof{table}[Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.]
-{\textbf{Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.}
-Here, we compare a organelle subsets from the UniProt curated dataset of \gls{ta} proteins.
-We compare \gls{er} (N=400) to Golgi (N=82), \gls{pm} (N=37), and the mitochondria (N=401).
-The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
-The linguistic sequence entropy was calculated according to the methods section~\cite{Shannon1948}.
-The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
-$P$ is the P-value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
-	\tiny
-
-	\begin{tabular}{clrrrrrrrrr}
-							&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{3}{c}{ER and mitochondria} \\
-							&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-	\midrule
-	\multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 15.84 & 6.89E-5 & 1.93E-2 & 32.82 & 1.01E-8 & 4.17E-2 & 344.94 & 5.36E-77 & 2.15E-1 \\
-							&  KS & 0.30  & 2.79E-6 & 2.58E-2 & 0.54  & 2.04E-9 & 4.54E-2 & 0.64  & 3.71E-74 & 2.07E-1 \\
-							&  T-test & -5.45 & 7.91E-8 & 3.30E-2 & -8.64 & 1.02E-16 & 8.35E-2 & 21.65 & 1.90E-82 & 2.31E-1 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 0.95  & 3.30E-1 & 2.24E-3 & 15.29 & 9.22E-5 & 2.11E-2 & 463.33 & 9.05E-103 & 2.88E-1 \\
-							&  KS & 0.17  & 1.79E-2 & 8.11E-3 & 0.47  & 3.90E-7 & 3.35E-2 & 0.80  & 1.03E-116 & 3.28E-1 \\
-							&  T-test & 0.52  & 6.02E-1 & 1.02E-3 & -4.72 & 3.24E-6 & 2.87E-2 & 32.76 & 1.02E-150 & 4.24E-1 \\
-	\midrule
-	\multirow{3}[0]{*}{TMH Disorder} &  KW & 79.40 & 5.08E-19 & 8.49E-2 & 24.33 & 8.12E-7 & 3.18E-2 & 60.00 & 9.46E-15 & 3.96E-2 \\
-							&  KS & 0.48  & 5.56E-16 & 7.08E-2 & 0.49  & 8.84E-8 & 3.68E-2 & 0.26  & 3.78E-12 & 3.23E-2 \\
-							&  T-test & 10.62 & 7.27E-24 & 1.07E-1 & 6.03  & 3.43E-9 & 4.42E-2 & -7.98 & 4.81E-15 & 4.05E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 74.45 & 6.22E-18 & 7.99E-2 & 13.54 & 2.33E-4 & 1.90E-2 & 33.76 & 6.23E-9 & 2.32E-2 \\
-							&  KS & 0.46  & 1.58E-14 & 6.41E-2 & 0.37  & 1.42E-4 & 2.01E-2 & 0.22  & 3.02E-9 & 2.41E-2 \\
-							&  T-test & 9.93  & 2.52E-21 & 9.56E-2 & 3.78  & 1.78E-4 & 1.96E-2 & -5.96 & 3.77E-9 & 2.38E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{TMH entropy} &  KW & 1.33  & 2.49E-1 & 2.80E-3 & 31.76 & 1.75E-8 & 4.05E-2 & 22.64 & 1.95E-6 & 1.61E-2 \\
-							&  KS & 0.20  & 3.86E-3 & 1.12E-2 & 0.42  & 6.23E-6 & 2.72E-2 & 0.18  & 1.46E-6 & 1.65E-2 \\
-							&  T-test & 1.97  & 4.97E-2 & 6.05E-3 & 7.37  & 8.47E-13 & 6.30E-2 & -4.24 & 2.54E-5 & 1.30E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 0.16  & 6.93E-1 & 7.39E-4 & 27.12 & 1.91E-7 & 3.51E-2 & 42.77 & 6.15E-11 & 2.88E-2 \\
-							&  KS & 0.16  & 3.15E-2 & 6.97E-3 & 0.46  & 5.92E-7 & 3.25E-2 & 0.24  & 1.20E-10 & 2.80E-2 \\
-							&  T-test & 0.10  & 9.21E-1 & 1.66E-4 & 5.55  & 4.97E-8 & 3.81E-2 & -6.14 & 1.26E-9 & 2.51E-2 \\
-	\end{tabular}%
-					\label{table:organellesuniprotstats}
-	\end{table}%
-
-In the UniProt curated list, there are clear hydrophobic differences between all the \gls{tmh}s ($P<6.89E-5$) which as a trend becomes less clear when considering the \gls{tmh}$\pm$5 flanking residues except for mitochondria which increases in significance when considering the flanks also (Table~\ref{table:organellesuniprotstats}).
-The \gls{er} and mitochondrial tests are very significant ($P<3.71E-74$).
-Consistently the Bahadur slope is at least an order of magnitude greater in the \gls{er} and mitochondrial comparison than for the other considerations, so these differences cannot be accounted for by the larger sample size.
-
-In terms of sequence entropy, there is a marked lack of entropy in the \gls{pm} subset (mean entropy = 3.12 in the \gls{tmh}, 2.6 including $\pm$5 flanking residues) from the UniProt curated dataset compared to the other organelle datasets (entropy $>$ 3.3 and $>$ 2.8 including the flanks).
-However this stark difference cannot be observed in the SwissProt set(Figure~\ref{fig:average_organelle_factors_ta}).
-All considerations of disorder were significant ($P<2.33E-4$)(Table~\ref{table:organellesuniprotstats}).
-As a trend, the flanks obscure the differences between the datasets, implying the differences of disorder are more clear within the \gls{tmh} itself.
-
-No clear significances can be observed for the sequence entropy ($P>6.33E-2$), but unsurprisingly as a trend the entropy mirrors the hydrophobicity albeit with less range between dataset means (2.62-3.00 in the \gls{tmh} for disorder, 1.72-2.74 for hydrophobicity)(Figure~\ref{fig:average_organelle_factors_ta}).
-
-
-	\begin{table}[htbp]
-	\centering
-	\captionof{table}[Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.]
-	{\textbf{Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.}
-	Here, we compare a organelle subsets from the SwissProt automatically filtered dataset of \gls{ta} proteins.
-	We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria (N=65).
-	The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-	Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
-	The linguistic sequence entropy was calculated according to the methods section~\cite{Shannon1948}.
-	The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
-	$P$ is the P-value of that statistical score.
-	$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
-		\tiny
-		% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
-
-		\begin{tabular}{clrrrrrrrrr}
-								&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{1}{l}{ER and mitochondria} &       &  \\
-								&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-
-		\midrule
-		\multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 11.96 & 5.43E-4 & 4.18E-2 & 0.02  & 8.77E-1 & 5.14E-4 & 8.46  & 3.64E-3 & 3.45E-2 \\
-								&  KS & 0.27  & 1.98E-3 & 3.46E-2 & 0.08  & 8.48E-1 & 6.44E-4 & 0.27  & 4.62E-3 & 3.30E-2 \\
-								&  T-test & -3.47 & 6.50E-4 & 4.08E-2 & -0.17 & 8.67E-1 & 5.60E-4 & 3.45  & 7.24E-4 & 4.44E-2 \\
-		\midrule
-		\multirow{3}[0]{*}{... including flanks} &  KW & 5.92  & 1.50E-2 & 2.33E-2 & 9.14  & 2.50E-3 & 2.35E-2 & 26.42 & 2.75E-7 & 9.27E-2 \\
-								&  KS & 0.21  & 2.85E-2 & 1.98E-2 & 0.26  & 4.88E-4 & 2.99E-2 & 0.43  & 4.93E-7 & 8.91E-2 \\
-								&  T-test & -2.52 & 1.25E-2 & 2.43E-2 & -3.09 & 2.23E-3 & 2.40E-2 & 4.95  & 1.87E-6 & 8.09E-2 \\
-	  \midrule
-		\multirow{3}[0]{*}{TMH Disorder} &  KW & 18.84 & 1.42E-5 & 6.20E-2 & 0.37  & 5.44E-1 & 2.39E-3 & 28.06 & 1.17E-7 & 9.79E-2 \\
-								&  KS & 0.30  & 5.01E-4 & 4.22E-2 & 0.12  & 3.15E-1 & 4.53E-3 & 0.41 & 2.87E-6 & 7.83E-2 \\
-								&  T-test & 4.74  & 4.34E-6 & 6.86E-2 & -0.33 & 7.40E-1 & 1.18E-3 & -5.33 & 3.22E-7 & 9.17E-2 \\
-		\midrule
-		\multirow{3}[0]{*}{... including flanks} &  KW & 15.13 & 1.01E-4 & 5.11E-2 & 3.26  & 7.08E-2 & 1.04E-2 & 29.19 & 6.57E-8 & 1.01E-1 \\
-								&  KS & 0.28  & 1.37E-3 & 3.66E-2 & 0.16  & 8.69E-2 & 9.58E-3 & 0.43 & 4.88E-7 & 8.92E-2 \\
-								&  T-test & 4.34  & 2.36E-5 & 5.92E-2 & -1.53 & 1.27E-1 & 8.10E-3 & -5.23 & 5.16E-7 & 8.88E-2 \\
-		\midrule
-		\multirow{3}[0]{*}{TMH entropy} &  KW & 2.96  & 8.56E-2 & 1.37E-2 & 0.66  & 4.17E-1 & 3.43E-3 & 0.69  & 4.05E-1 & 5.54E-3 \\
-								&  KS & 0.13  & 4.32E-1 & 4.66E-3 & 0.10  & 5.27E-1 & 2.51E-3 & 0.18 & 1.40E-1 & 1.20E-2 \\
-								&  T-test & 1.58  & 1.15E-1 & 1.20E-2 & 0.79  & 4.32E-1 & 3.29E-3 & 1.03 & 3.06E-1 & 7.26E-3 \\
-		\midrule
-		\multirow{3}[0]{*}{... including flanks} &  KW & 2.62  & 1.06E-1 & 1.25E-2 & 2.87  & 9.04E-2 & 9.42E-3 & 0.05 & 8.31E-1 & 1.14E-3 \\
-								&  KS & 0.15  & 2.48E-1 & 7.75E-3 & 0.17  & 6.56E-2 & 1.07E-2 & 0.21 & 6.33E-2 & 1.69E-2 \\
-								&  T-test & 1.84  & 6.75E-2 & 1.50E-2 & 1.66  & 9.84E-2 & 9.09E-3 & 0.42 & 6.72E-1 & 2.44E-3 \\
-		\end{tabular}%
-						\label{table:organellesswissstats}
-		\end{table}%
-
-Similarly, in the SwissProt filtered dataset the mean \gls{tmh} hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the peak at 2.4.
-In the SwissProt dataset, when we compare each subset of only the \gls{tmh} to the \gls{er} subset, we find significance between the \gls{er} and the Golgi ($P<1.98E-3$), and the \gls{er} and the mitochondria ($P<4.62E-3$), however the \gls{er} and \gls{pm} are more similar considering the Bahadur values are $<6.44E-4$, two orders of magnitude smaller that the other sets (Bahadur values $>3.3E-2$) (Table \ref{table:organellesswissstats}).
-When we take into account the flanks, the \gls{er} and \gls{pm} dataset can be distinguished ($P<2.50E-3$), however as a trend the other two comparisons, \gls{er} and Golgi becomes less significant, and \gls{er} and mitochondria become more significant.
-
-The linguistic sequence entropy of the \gls{tmh} string as well as the GlobProt disorder were also examined.
-Significance was found in disorder when comparing \gls{tmh} between \gls{er} and Golgi ($P<5.01E-4$) and the \gls{pm} ($P<2.87E-6$)(Table \ref{table:organellesswissstats}), but there was no observable difference between the \gls{er} and \gls{pm}.
-No real significance was observed in any consideration of the linguistic entropy, but similarly to the UniProt subset, as a trend the entropy mirrors the hydrophobicity (Figure \ref{fig:average_organelle_factors_ta}).
-This is unsurprising given that the hydrophobic nature of the \gls{tmh}s demands that certain residues must be over-represented, which lowers the sequence entropy.
-In this case, we have a highly hydrophobic set, the \gls{pm} UniProt set, which likely contains a higher proportion of the most hydrophobic residues.
-
-When considering disorder, we see in both datasets that the Golgi subset is the most negative at -0.2 with \gls{tmh} and -0.25 with the flanks in both the UniProt manually curated and the SwissProt filtered datasets.
-Whereas mitochondria is the least negative in both cases when considering the \gls{tmh} (-0.14 in UniProt and -0.13 in SwissProt) or the \gls{tmh} and $\pm$5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure \ref{fig:average_organelle_factors_ta}).
-
-
-
-
-
-
-% \subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
-% Average lines for figure, table for stats
-
-%~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
-%We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694).
-%This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
-
-\subsection{Spontaneous insertion may be achieved by polar patches in the \gls{tmh}}
-%Spont TA lines against background dataset.
-
-%In addition, predicted insertion machinery dependent TAs with TMHs that are more polar on average than spontaneously inserting~\gls{ta} protein cytochrome b5 have been highlighted.
-
-%move on to case studies involving spontaneous insertion?
-
-
-%Our experimental collaborators in Stephen High’s group are interested in a small group of tail-anchored proteins that have very polar trans-membrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion.
-%They have found that chimeric synaptobrevin, one of the first identified \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the \gls{tm} domains belonging to a protein of known spontaneously inserting domains.
-%Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
-
-
-\section{Discussion}
-
-Since we could not scrutinise a difference in the species, the strong hydrophobic differences between \gls{tmh}s from different organelles may not be solely accounted for by adaptation to the different membrane compositions.
-Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations, it is possible to conclude that \gls{tmh}s contain necessary, yet cryptic, biological factors that play a role in their targeting.
-It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
-This is almost certainly aided by other factors and is part of a system with several redundant mechanisms.
-
-This could indeed be a cryptic functional similarity to the signal anchored proteins.
-Signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
-Interestingly, these proteins, along with some tail-anchored proteins, have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
-
-The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
+Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
 
 \section{Methods}
 
@@ -387,8 +95,8 @@ Average hydrophobicity takes the total of the raw amino acid hydrophobicity valu
 Values reported in the results are based on the Kyte \& Doolittle scale~\cite{Kyte1982} which is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids.
 %Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
 
-\subsection{Calculating Sequence Entropy}
-Sequence entropy, is essentially an estimate of the linguistic entropy of a string.
+\subsection{Calculating Sequence Information Entropy}
+Information entropy, is essentially an estimate of the linguistic entropy of a string.
 In the context of biology, it can be thought of as an estimation of the non-randomness of a sequence.
 Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002}, and is a component of the TMSOC z-score which can predict function beyond anchorage of a \gls{tmh}~\cite{Wong2011, Wong2012, Baker2017}.
 here we focus on the analysis of the complexity of a sequence in protein sequences.
@@ -415,3 +123,316 @@ B=\frac{|\ln(P~value)|}{N}
 \end{equation}
 
 The larger the absolute Bahadur slope, the greater the difference between the two distributions.
+
+
+\section{Results}
+
+\subsection{A Comparison Of Up-To-Date Tail-Anchored Protein Datasets}
+Here, we use two sources for \gls{ta} protein datasets.
+One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
+Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
+This dataset contains 21119 \gls{tmh} residues (28791 including up to $\pm$5 flanking residues) from 987 UniProt protein records.
+
+% Venn diagram
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.5\textwidth]{TA_chapter/database-overlap}
+		\captionof{figure}[A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.]{\textbf{A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.}
+The number of ids present in redundant versions of
+i) the supplementary materials table of a previous study predicting the complete set of human tail anchored proteins denote by S1~\cite{Kalbfleisch2007},
+ii) the SwissProt dataset filtered according to typical~\gls{ta} features limited to the human proteome~\cite{TheUniProtConsortium2014}, and
+iii) The UniProt curated list of~\gls{ta} proteins~\cite{TheUniProtConsortium2014}.
+Note that to avoid losing IDs to redundancy reduction this diagram was generated without the use of CD-HIT~\cite{Huang2010, Wu2011}, which is applied in later statistical analysis.}
+
+\label{fig:tadatasetoverlap}
+\end{figure}
+
+In order to get an understanding of the consistency of the datasets, before removing redundant proteins, we compared these two datasets to a dataset remapped set of proteins from a previous 2007 method~\cite{Kalbfleisch2007}.
+The S1 dataset was built with an aim to gather \gls{ta} proteins in the human genome from the NCBI.
+Note that these numbers are not absolutely certain.
+The greatest source of uncertainty here is that the original S1 list includes 411 records, however only 222 of these were successfully mapped to the UniProt dataset.
+This figure is closer to the 202 proteins from the original S1 list that excluded proteins that were either hypothetical or splice isoforms.
+That being said, this mapping step prevents us from directly comparing the entire original S1 dataset.
+We compared the up-to-date datasets to S1 to see how many records are shared, how many are now obsolete, and how many are unique.
+
+Figure~\ref{fig:tadatasetoverlap} shows that S1 has 175 record ids of 222 records (78.8\%) which do not share overlap the up-to-date manually curated UniProt dataset~\cite{TheUniProtConsortium2014}.
+Of the 166 unique records of that S1 dataset, 92 records do have location annotation in UniProt which our scripts use for topological determination, leaving 74 records without location annotation.
+This leaves 92 of the 222 S1 (41.4\%) records that originally fitted criteria that no longer fit those same criteria.
+If we exclude those lacking suitable annotation i.e ids from S1 that are found in either SwissProt with the filters (9), the curated UniProt list (14), or both (33), compared to the 92 that have annotation contradicting the original predictions, 37.8\% of the ids overlap.
+
+Equivalent criteria were applied to the entire SwissProt database and then restricted to the human proteome dataset.
+43 of these 77 records (55.8\%) are in the curated UniProt~\gls{ta}  dataset leaving 34 records that meet the criteria out of the manually curated set (44.2\%of the filtered SwissProt dataset).
+42 of the 77 (54.5\%) records from SwissProt filtered human dataset can be found in the original S1 list.
+A further consideration is that, before limiting the dataset to human and after removing redundant proteins, this method picked up  46 archaeal and 66 bacterial records.
+
+The same method applied to an up-to-date dataset overlaps more with a manually curated dataset.
+There is also a large degree of what we now believe to be mistakes that occurred in the older prediction tools and datasets, even when using similar methods.
+As a trend, this shows that up-to-date datasets improve the reliability of this automated predicted method.
+These automated criteria still do not fully align with the manually curated list.
+Only 973 of a non-redundant (90\% CD-HIT threshold \cite{Huang2010, Wu2011}) set of those 2460 proteins of the UniProt manually curated set contained annotation for the transmembrane boundary residues.
+Ultimately, this points to the idea that datasets are a moving target as they are constantly updated with more accurate and reliable tools.
+
+\subsection{It Is Difficult To Observe Hydrophobic Variation Of TA Protein TMHs From Different Species}
+
+In single-pass proteins of eukaryotic species there are typically various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane.
+For single-pass proteins, previous studies have observed differences in terms of \gls{tmh} hydrophobicity between yeast and human \gls{tmp}s~\cite{Sharpe2010}, or in cress, yeast, bacteria, and human datasets~\cite{Baker2017}.
+We would expect to see a similar trend between the \gls{tmh}s of \gls{ta} proteins from different species.
+However, when assuming a zero-difference hypothesis, in these \gls{tmh} \gls{ta} protein datasets we cannot observe any species-level differences between the datasets at this sample size for \gls{tmh} hydrophobicity.
+
+% Average lines for figure, table for stats
+When comparing the average Kyte \& Doolittle~\cite{Kyte1982} hydrophobicity values for the~\gls{tmh}s from humans and mice, \textit{A. thaliana}, and  \textit{S. cerevisiae}, we can see little difference between the mean values.
+All of the mean values lie between 2.3-2.6 when we only consider the \gls{tmh} and at 1.3-1.6 when considering residues in close proximity to the~\gls{tmh} ($\pm$5 residues) (Figure~\ref{fig:average_species_hydrophobicity_ta}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/species-hydrophobicity}
+\captionof{figure}[Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
+{\textbf{Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
+
+The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982}.for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
+%and the GlobProt scale~\cite{Linding2003}
+Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants and \textit{S. cerevisiae} (N=31) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
+Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
+}
+
+\label{fig:average_species_hydrophobicity_ta}
+\end{figure}
+
+Indeed, we see no strong observable statistical differences in hydrophobicity ($P>3.35E-1$ in the SwissProt automatically filtered list Table \ref{table:speciestableswissprotstats}, and $P>8.30E-2$ in the UniProt curated list Table \ref{table:speciestableuniprotstats}).
+There are also no consistent trends among the absolute Bahadur slopes; no datasets are greatly different from any other.
+
+\begin{table}[htbp]
+\centering
+\captionof{table}[Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.]
+{\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.}
+Here, we compare a mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
+The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
+% Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
+$P$ is the P-value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+\tiny
+	% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
+
+    \begin{tabular}{clrrrrrrrrr}
+          &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
+          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+    \multirow{3}[0]{*}{TMH } &  Kruskal-Wallis & 0.93  & 3.35E-1 & 7.64E-3 & 0.10  & 7.56E-1 & 2.37E-3 & 0.84  & 3.60E-1 & 1.40E-2 \\
+          &  Kolmogorov-Smirnov & 0.13  & 6.36E-1 & 3.17E-3 & 0.12  & 9.24E-1 & 6.69E-4 & 0.19  & 5.28E-1 & 8.76E-3 \\
+          &  Student's T-test & -0.86 & 3.90E-1 & 6.58E-3 & 0.21  & 8.31E-1 & 1.57E-3 & 0.79  & 4.33E-1 & 1.15E-2 \\
+    \multirow{3}[0]{*}{TMH and flanks } &  Kruskal-Wallis & 0.04  & 8.52E-1 & 1.12E-3 & 0.12  & 7.28E-1 & 2.69E-3 & 0.04  & 8.33E-1 & 2.51E-3 \\
+          &  Kolmogorov-Smirnov & 0.11  & 7.72E-1 & 1.81E-3 & 0.13  & 8.79E-1 & 1.09E-3 & 0.11  & 9.80E-1 & 2.81E-4 \\
+          &  Student's T-test & -0.22 & 8.23E-1 & 1.37E-3 & -0.38 & 7.04E-1 & 2.97E-3 & -0.19 & 8.50E-1 & 2.22E-3 \\
+    \end{tabular}%
+				\label{table:speciestableswissprotstats}
+
+\end{table}%
+
+\begin{table}[htbp]
+\centering
+\captionof{table}[Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.]
+{\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.}
+Here, we compare a mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts.
+The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
+%Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
+$P$ is the P-value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+	\tiny
+	% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
+
+    \begin{tabular}{clrrrrrrrrr}
+	          &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
+	          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+	    \multirow{3}[0]{*}{TMH } &  Kruskal-Wallis & 2.15  & 1.42E-1 & 1.45E-2 & 0.22  & 6.39E-1 & 4.22E-3 & 2.30  & 1.30E-1 & 2.25E-2 \\
+	          &  Kolmogorov-Smirnov & 0.17  & 2.86E-1 & 9.27E-3 & 0.15  & 6.32E-1 & 4.34E-3 & 0.24  & 1.69E-1 & 1.95E-2 \\
+	          &  Student's T-test & -1.71 & 8.96E-2 & 1.79E-2 & 0.04  & 9.70E-1 & 2.86E-4 & 1.47  & 1.46E-1 & 2.11E-2 \\
+	    \multirow{3}[0]{*}{TMH and flanks } &  Kruskal-Wallis & 2.17  & 1.41E-1 & 1.45E-2 & 0.14  & 7.13E-1 & 3.19E-3 & 0.59  & 4.41E-1 & 9.00E-3 \\
+	          &  Kolmogorov-Smirnov & 0.21  & 8.30E-2 & 1.84E-2 & 0.10  & 9.62E-1 & 3.62E-4 & 0.14  & 8.00E-1 & 2.45E-3 \\
+	          &  Student's T-test & -1.33 & 1.86E-1 & 1.25E-2 & -0.39 & 7.00E-1 & 3.36E-3 & 0.69  & 4.90E-1 & 7.83E-3 \\
+	    \end{tabular}%
+					\label{table:speciestableuniprotstats}
+	\end{table}%
+
+Here, we are dealing with datasets at least an order of magnitude smaller than those broad studies \cite{Sharpe2010, Baker2017} which could explain the absence of the effect.
+However this only goes to show that if there is an effect in \gls{ta} proteins, it is indeed weak between species.
+
+
+\subsection{There Are Biochemical Differences Between Tail-Anchored TMHs From Different Organelles}
+% Average lines for figure, table for stats
+
+As in the case of species, \gls{tmh}s with different subcellular localisations on average  have different hydrophobicity.
+%Need mitochondria reference, and numbers for the UniER etc.
+These hydrophobic differences have already been observed in the mitochondria localised \gls{ta} protein \gls{tmh}.
+Here we consider the \gls{ta} proteins at certain locations within the cell ignoring species, and we see clear differences in the biochemistry of the \gls{tmh}.
+In the UniProt manually curated dataset, the Kyte \& Doolittle hydrophobicity scores rage from 1.7 in mitochondria to 2.7 in the \gls{pm} (Figure \ref{fig:average_organelle_factors_ta}A).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/organelle-averages}
+\captionof{figure}[Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
+{\textbf{Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
+
+A) The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982}, B) the average information entropy~\cite{Shannon1948} (see methods) and C) the GlobProt scale~\cite{Linding2003} for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
+Values are shown for both the UniProt manually curated set and the SwissProt filtered set.
+In the UniProt manually curated set we compare \gls{ta} proteins from the~\gls{er} (N=400) to the Golgi (N=82), the~\gls{pm} (N=37), and the mitochondria (N=401).
+For the SwissProt filtered set we compare \gls{ta} proteins from the~\gls{er} (N=98) to the Golgi (N=82), the~\gls{pm} (N=157), and the mitochondria (N=65).
+Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
+}
+
+\label{fig:average_organelle_factors_ta}
+\end{figure}
+
+
+
+
+\begin{table}[htbp]
+\centering
+\captionof{table}[Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.]
+{\textbf{Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.}
+Here, we compare a organelle subsets from the UniProt curated dataset of \gls{ta} proteins.
+We compare \gls{er} (N=400) to Golgi (N=82), \gls{pm} (N=37), and the mitochondria (N=401).
+The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
+Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
+The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
+$P$ is the P-value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+	\tiny
+
+	\begin{tabular}{clrrrrrrrrr}
+							&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{3}{c}{ER and mitochondria} \\
+							&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+	\midrule
+	\multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 15.84 & 6.89E-5 & 1.93E-2 & 32.82 & 1.01E-8 & 4.17E-2 & 344.94 & 5.36E-77 & 2.15E-1 \\
+							&  KS & 0.30  & 2.79E-6 & 2.58E-2 & 0.54  & 2.04E-9 & 4.54E-2 & 0.64  & 3.71E-74 & 2.07E-1 \\
+							&  T-test & -5.45 & 7.91E-8 & 3.30E-2 & -8.64 & 1.02E-16 & 8.35E-2 & 21.65 & 1.90E-82 & 2.31E-1 \\
+	\midrule
+	\multirow{3}[0]{*}{... including flanks} &  KW & 0.95  & 3.30E-1 & 2.24E-3 & 15.29 & 9.22E-5 & 2.11E-2 & 463.33 & 9.05E-103 & 2.88E-1 \\
+							&  KS & 0.17  & 1.79E-2 & 8.11E-3 & 0.47  & 3.90E-7 & 3.35E-2 & 0.80  & 1.03E-116 & 3.28E-1 \\
+							&  T-test & 0.52  & 6.02E-1 & 1.02E-3 & -4.72 & 3.24E-6 & 2.87E-2 & 32.76 & 1.02E-150 & 4.24E-1 \\
+	\midrule
+	\multirow{3}[0]{*}{TMH Disorder} &  KW & 79.40 & 5.08E-19 & 8.49E-2 & 24.33 & 8.12E-7 & 3.18E-2 & 60.00 & 9.46E-15 & 3.96E-2 \\
+							&  KS & 0.48  & 5.56E-16 & 7.08E-2 & 0.49  & 8.84E-8 & 3.68E-2 & 0.26  & 3.78E-12 & 3.23E-2 \\
+							&  T-test & 10.62 & 7.27E-24 & 1.07E-1 & 6.03  & 3.43E-9 & 4.42E-2 & -7.98 & 4.81E-15 & 4.05E-2 \\
+	\midrule
+	\multirow{3}[0]{*}{... including flanks} &  KW & 74.45 & 6.22E-18 & 7.99E-2 & 13.54 & 2.33E-4 & 1.90E-2 & 33.76 & 6.23E-9 & 2.32E-2 \\
+							&  KS & 0.46  & 1.58E-14 & 6.41E-2 & 0.37  & 1.42E-4 & 2.01E-2 & 0.22  & 3.02E-9 & 2.41E-2 \\
+							&  T-test & 9.93  & 2.52E-21 & 9.56E-2 & 3.78  & 1.78E-4 & 1.96E-2 & -5.96 & 3.77E-9 & 2.38E-2 \\
+	\midrule
+	\multirow{3}[0]{*}{TMH entropy} &  KW & 1.33  & 2.49E-1 & 2.80E-3 & 31.76 & 1.75E-8 & 4.05E-2 & 22.64 & 1.95E-6 & 1.61E-2 \\
+							&  KS & 0.20  & 3.86E-3 & 1.12E-2 & 0.42  & 6.23E-6 & 2.72E-2 & 0.18  & 1.46E-6 & 1.65E-2 \\
+							&  T-test & 1.97  & 4.97E-2 & 6.05E-3 & 7.37  & 8.47E-13 & 6.30E-2 & -4.24 & 2.54E-5 & 1.30E-2 \\
+	\midrule
+	\multirow{3}[0]{*}{... including flanks} &  KW & 0.16  & 6.93E-1 & 7.39E-4 & 27.12 & 1.91E-7 & 3.51E-2 & 42.77 & 6.15E-11 & 2.88E-2 \\
+							&  KS & 0.16  & 3.15E-2 & 6.97E-3 & 0.46  & 5.92E-7 & 3.25E-2 & 0.24  & 1.20E-10 & 2.80E-2 \\
+							&  T-test & 0.10  & 9.21E-1 & 1.66E-4 & 5.55  & 4.97E-8 & 3.81E-2 & -6.14 & 1.26E-9 & 2.51E-2 \\
+	\end{tabular}%
+					\label{table:organellesuniprotstats}
+	\end{table}%
+
+In the UniProt curated list, there are clear hydrophobic differences between all the \gls{tmh}s ($P<6.89E-5$) which as a trend becomes less clear when considering the \gls{tmh}$\pm$5 flanking residues except for mitochondria which increases in significance when considering the flanks also (Table~\ref{table:organellesuniprotstats}).
+The \gls{er} and mitochondrial tests are very significant ($P<3.71E-74$).
+Consistently the Bahadur slope is at least an order of magnitude greater in the \gls{er} and mitochondrial comparison than for the other considerations, so these differences cannot be accounted for by the larger sample size.
+
+In terms of information entropy, there is a marked decrease in entropy in the \gls{pm} subset (mean entropy = 3.12 in the \gls{tmh}, 2.6 including $\pm$5 flanking residues) from the UniProt curated dataset compared to the other organelle datasets (entropy $>$ 3.3 and $>$ 2.8 including the flanks).
+However this stark difference between \gls{tmh}s from \gls{pm} bound \gls{ta} proteins and the other organelle datasets cannot be observed in the SwissProt set (Figure~\ref{fig:average_organelle_factors_ta}).
+All considerations of disorder were significant ($P<2.33E-4$)(Table~\ref{table:organellesuniprotstats}).
+As a trend, the flanks obscure the differences between the datasets, implying the differences of disorder are more clear within the \gls{tmh} itself.
+
+No clear significances can be observed for the information entropy ($P>6.33E-2$).
+This is unsurprising given that the hydrophobic nature of the \gls{tmh}s demands that certain residues must be over-represented, which lowers the information entropy.
+In this case, we have a highly hydrophobic set, the \gls{pm} UniProt set, which likely contains a higher proportion of the most hydrophobic residues.
+As a trend the entropy mirrors the hydrophobicity albeit with less range between dataset means (2.62-3.00 in the \gls{tmh} for disorder, 1.72-2.74 for hydrophobicity)(Figure~\ref{fig:average_organelle_factors_ta}).
+
+
+	\begin{table}[htbp]
+	\centering
+	\captionof{table}[Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.]
+	{\textbf{Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.}
+	Here, we compare a organelle subsets from the SwissProt automatically filtered dataset of \gls{ta} proteins.
+	We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria (N=65).
+	The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
+	Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
+	The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
+	The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
+	$P$ is the P-value of that statistical score.
+	$B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+		\tiny
+		% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
+
+		%\begin{tabular}{clrrrrrrrrr}
+		 \begin{tabular}{clccccccccc}
+								&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{1}{l}{ER and mitochondria} &       &  \\
+								&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+
+		\midrule
+		\multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 11.96 & 5.43E-4 & 4.18E-2 & 0.02  & 8.77E-1 & 5.14E-4 & 8.46  & 3.64E-3 & 3.45E-2 \\
+								&  KS & 0.27  & 1.98E-3 & 3.46E-2 & 0.08  & 8.48E-1 & 6.44E-4 & 0.27  & 4.62E-3 & 3.30E-2 \\
+								&  T-test & -3.47 & 6.50E-4 & 4.08E-2 & -0.17 & 8.67E-1 & 5.60E-4 & 3.45  & 7.24E-4 & 4.44E-2 \\
+		\midrule
+		\multirow{3}[0]{*}{... including flanks} &  KW & 5.92  & 1.50E-2 & 2.33E-2 & 9.14  & 2.50E-3 & 2.35E-2 & 26.42 & 2.75E-7 & 9.27E-2 \\
+								&  KS & 0.21  & 2.85E-2 & 1.98E-2 & 0.26  & 4.88E-4 & 2.99E-2 & 0.43  & 4.93E-7 & 8.91E-2 \\
+								&  T-test & -2.52 & 1.25E-2 & 2.43E-2 & -3.09 & 2.23E-3 & 2.40E-2 & 4.95  & 1.87E-6 & 8.09E-2 \\
+	  \midrule
+		\multirow{3}[0]{*}{TMH Disorder} &  KW & 18.84 & 1.42E-5 & 6.20E-2 & 0.37  & 5.44E-1 & 2.39E-3 & 28.06 & 1.17E-7 & 9.79E-2 \\
+								&  KS & 0.30  & 5.01E-4 & 4.22E-2 & 0.12  & 3.15E-1 & 4.53E-3 & 0.41 & 2.87E-6 & 7.83E-2 \\
+								&  T-test & 4.74  & 4.34E-6 & 6.86E-2 & -0.33 & 7.40E-1 & 1.18E-3 & -5.33 & 3.22E-7 & 9.17E-2 \\
+		\midrule
+		\multirow{3}[0]{*}{... including flanks} &  KW & 15.13 & 1.01E-4 & 5.11E-2 & 3.26  & 7.08E-2 & 1.04E-2 & 29.19 & 6.57E-8 & 1.01E-1 \\
+								&  KS & 0.28  & 1.37E-3 & 3.66E-2 & 0.16  & 8.69E-2 & 9.58E-3 & 0.43 & 4.88E-7 & 8.92E-2 \\
+								&  T-test & 4.34  & 2.36E-5 & 5.92E-2 & -1.53 & 1.27E-1 & 8.10E-3 & -5.23 & 5.16E-7 & 8.88E-2 \\
+		\midrule
+		\multirow{3}[0]{*}{TMH entropy} &  KW & 2.96  & 8.56E-2 & 1.37E-2 & 0.66  & 4.17E-1 & 3.43E-3 & 0.69  & 4.05E-1 & 5.54E-3 \\
+								&  KS & 0.13  & 4.32E-1 & 4.66E-3 & 0.10  & 5.27E-1 & 2.51E-3 & 0.18 & 1.40E-1 & 1.20E-2 \\
+								&  T-test & 1.58  & 1.15E-1 & 1.20E-2 & 0.79  & 4.32E-1 & 3.29E-3 & 1.03 & 3.06E-1 & 7.26E-3 \\
+		\midrule
+		\multirow{3}[0]{*}{... including flanks} &  KW & 2.62  & 1.06E-1 & 1.25E-2 & 2.87  & 9.04E-2 & 9.42E-3 & 0.05 & 8.31E-1 & 1.14E-3 \\
+								&  KS & 0.15  & 2.48E-1 & 7.75E-3 & 0.17  & 6.56E-2 & 1.07E-2 & 0.21 & 6.33E-2 & 1.69E-2 \\
+								&  T-test & 1.84  & 6.75E-2 & 1.50E-2 & 1.66  & 9.84E-2 & 9.09E-3 & 0.42 & 6.72E-1 & 2.44E-3 \\
+		\end{tabular}%
+						\label{table:organellesswissstats}
+		\end{table}%
+
+Similarly, in the SwissProt filtered dataset the mean \gls{tmh} hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the peak at 2.4.
+In the SwissProt dataset, when we compare each subset of only the \gls{tmh} to the \gls{er} subset, we find significance between the \gls{er} and the Golgi ($P<1.98E-3$), and the \gls{er} and the mitochondria ($P<4.62E-3$), however the \gls{er} and \gls{pm} are more similar considering the Bahadur values are $<6.44E-4$, two orders of magnitude smaller that the other sets (Bahadur values $>3.3E-2$) (Table \ref{table:organellesswissstats}).
+When we take into account the flanks, the \gls{er} and \gls{pm} dataset can be distinguished ($P<2.50E-3$), however as a trend the other two comparisons, \gls{er} and Golgi becomes less significant, and \gls{er} and mitochondria become more significant.
+
+The linguistic information entropy of the \gls{tmh} string as well as the GlobProt disorder were also examined.
+Significance was found in disorder when comparing \gls{tmh} between \gls{er} and Golgi ($P<5.01E-4$) and the \gls{pm} ($P<2.87E-6$)(Table \ref{table:organellesswissstats}), but there was no observable difference between the \gls{er} and \gls{pm}.
+No significance was observed in any consideration of the linguistic entropy, but similarly to the UniProt subset, as a trend the entropy mirrors the hydrophobicity (Figure \ref{fig:average_organelle_factors_ta}).
+
+
+When considering disorder, we see in both datasets that the Golgi subset is the most negative at -0.2 with \gls{tmh} and -0.25 with the flanks in both the UniProt manually curated and the SwissProt filtered datasets.
+Whereas mitochondria is the least negative in both cases when considering the \gls{tmh} (-0.14 in UniProt and -0.13 in SwissProt) or the \gls{tmh} and $\pm$5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure \ref{fig:average_organelle_factors_ta}).
+
+Whilst we expect to see hydrophobic adaptations of \gls{tmh} to the membrane environment at both a species and organelle level, we only observe such differences at the organelle level.
+% Are the organelle membrane more compositionally different than species?
+
+% \subsection{SNAREs are consistently more hydrophobic across the entire \gls{tmh}}
+% Average lines for figure, table for stats
+
+%~\gls{snare} proteins were noted to have more of the most hydrophobic amino acids than the general population of tail anchors~\cite{Kalbfleisch2007}.
+%We exploit the difference by mapping the hydrophobicity of the transmembrane domains from a novel list of potential~\gls{ta} proteins generated in this study onto the experimentally validated~\gls{ta} hydrophobicity plot compiled by Kalbfleisch et al. published in Traffic 2007 (8: 1687-1694).
+%This method has revealed potential~\gls{ta}~\gls{snare}s with~\gls{snare} motif domains that may not appear in conventional screening.
+
+\subsection{Spontaneous insertion may be achieved by polar patches in the \gls{tmh}}
+%Spont TA lines against background dataset.
+
+There are a small group of tail-anchored proteins that have very polar transmembrane domains and are capable of liposome membrane insertion without insertion machinery, also known as spontaneous insertion, that are chaperoned by Hsp70/Hsc40 rather than the TRC40 pathway~\cite{Rabu2008, Rabu2009, Colombo2009}.
+Chimeric synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the~\gls{tm} domains belonging to a protein of known spontaneously inserting domains.
+
+\section{Discussion}
+
+We expect to see evolutionary adaptations of \gls{tmh} hydrophobicity to species specific membranes, even within eukaryotes~\cite{Baker2017, Sharpe2010}.
+In this study using both a manually curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences.
+Since we could not scrutinise a difference in the species, the strong hydrophobic differences between \gls{tmh}s from different organelles may not be solely accounted for by adaptation to the different membrane compositions.
+Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations, it is possible to conclude that \gls{tmh}s contain necessary, yet cryptic, biological factors that play a role in their targeting.
+It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
+This is almost certainly aided by other factors and is part of a system with several redundant mechanisms.
+
+This could indeed be a cryptic functional similarity to the signal anchored proteins.
+Signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
+Interestingly, these proteins, along with some tail-anchored proteins, have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
+
+The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
