@@ -12,10 +12,9 @@ There is biomedical interest in~\gls{snare} drug delivery mechanisms.
 ~\gls{snare}s can fuse liposomes containing various drug payloads into the membrane. %reference needed
 
 The \gls{ta} protein's \gls{tmh} is unusual in that it is both the anchor and the targetting factor for the \gls{er} \cite{Kutay1993}.
-Furthermore, the hydrophobicity appears to be a determinate factor in the precise delivery mechanistic route that a~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that are several mechanisms~\cite{Rabu2009, Johnson2013}(Figure \ref{biogenesis-overview}).
-Altering the hydrophobicity, at least in the case of PTP1b, also determinates the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
+Furthermore, the hydrophobicity appears to be a determinate factor in the precise delivery mechanistic route that a~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that are several mechanisms~\cite{Rabu2009, Johnson2013}(Figure \ref{fig:biogenesis-overview}).
+%Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
 
-Generally, studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
 
 \begin{figure}[!ht]
 \centering
@@ -27,12 +26,39 @@ Generally, studies have moved the focus of spontaneous insertion away from the l
 \end{figure}
 
 
+Altering the hydrophobicity, at least in the case of PTP1b, also determinates the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
+
+\gls{ta} proteins have several pathways for biogenesis in the~\gls{er} membrane.
+These mechanisms include the Hsp70/Hsc40 chaperone system~\cite{Rabu2008}, the TRC40/Get3 ATP dependent chaperone system~\cite{Johnson2013, Chartron2012, Wang2014},
+They were originally thought to be inserted into the membrane via different machinery than the co-translational machinery, but unexpectedly \gls{srp} was found to be a factor for post-translational targetting confirmed by both cross linking studies \cite{Abell2004} and \textit{in vitro} pull down experiment \cite{Leznicki2010}.
+Further cross-linking experiments suggested Sec61 is also involved during \gls{ta} protein membrane insertion \cite{Abell2003}.
+Previous studies had shown the Sec61 translocon is not necessary for \gls{ta} protein membrane integration by biochemical reconstitution experiments \cite{Kutay1993} and conditional mutants in yeast \cite{Steel2002, Yabal2003}. %What kind of mutants?
+This suggests at least one insertion mechanism that is related to the co-translational method of insertion.
+
+A second, possibly redundant, system is also known to be involved in \gls{ta} protein biogenesis and is referred to as the TRC40 (also known as Asna1) pathway in mammals.
+A conserved homologue was found in \textit{Saccharomyces cerevisiae}, Get3 \cite{Schuldiner2008}, and in yeast this mechanism is generally referred to as the Get pathway.
+At some point after the \gls{ta} protein emerges from the ribosomal exit tunnel, the \gls{ta} protein \gls{tmh} associates with Sgt2.
+An \textit{in vitro} assay revealed that Sgt2 associates with Get5  \cite{Wang2010} as part of a dimerised Get4 and Get5 complex (two copies of each)\cite{Chang2010, Chang2012, Chartron2010, Chartron2012}.
+Get 3 Associates first with this complex via in interaction with the N-terminal of Get4 \cite{Wang2010}.
+A dimerised ADP-bound Get3 \cite{Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2009} (TRC40) associates with and shields the C-terminal region of the \gls{ta} protein \cite{Stefanovic2007, Schuldiner2008, Favaloro2008}.
+This shielding may be especially important since Get3 is involved in the folding of any nascent \gls{ta} proteins, which would be unviably hydrophobic in the cytosol \cite{Jonikas2009}.
+Fluoresence studies revealed that tagged Get3 appears at both the cytosol and the \gls{er} membrane so apparently shuttles the \gls{ta} protein between the transmembrane complex of Get1 and Get 2 (WRB and CAML), that contains cytosolic domains that recieve Get3, and Get4 Get5 Sgt2 complex \cite{Huh2003}.
+
+In the absence of the Get machinery, Hsp70 and Hsc40 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003}.
 %Evidence for completely unassissted insertion Kemper et al., 2008; Meineke et al., 2008; Setoguchi et al., 2006
-%Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
+Molecular dynamics simulations showed that direct insertion \gls{tmh}s thermodynamically mimics the energies of \gls{tmh}s integrated by the translocon \cite{Ulmschneider2014} so in theory no integration machinery is strictly necessary if the \gls{tmh} can ``correctly'' interact with the membrane interface.
+
+Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targetted via the \gls{srp} pathway, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40.
+This investigation aims to find any relationship between biochemical factors, such as hydrophobicity, and a disposition to a certain insertion mechanism.
+
 % a novel SRP- independent (SND) pathway in yeast (Aviram et al., 2016).
 
-\gls{ta} proteins are integrated into the~\gls{er} membrane by different molecular machinery than the co-translational proteins.
-These mechanisms include the Hsp70/Hsc40 chaperone system~\cite{Rabu2008}, the TRC40/Get3 ATP dependent chaperone system~\cite{Johnson2013, Chartron2012, Wang2014},
+
+
+
+
+
+
 
 \section{Methods}
 
@@ -426,7 +452,7 @@ We expect to see evolutionary adaptations of \gls{tmh} hydrophobicity to species
 In this study using both a manually curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences.
 Since we could not scrutinise a difference in the species, the strong hydrophobic differences between \gls{tmh}s from different organelles may not be solely accounted for by adaptation to the different membrane compositions.
 Given the large biochemical distinction between \gls{ta} proteins with different terminal destinations, it is possible to conclude that \gls{tmh}s contain necessary, yet cryptic, biological factors that play a role in their targeting.
-It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at this sample size such an effect is unobservable.
+It is indeed possible that our observations are adaptations to the membrane environment, and this would not be unreasonable, except that \gls{ta} proteins would be expected to experience similar adaptations at a species level, for which at th  is sample size such an effect is unobservable.
 This is almost certainly aided by other factors and is part of a system with several redundant mechanisms.
 
 This could indeed be a cryptic functional similarity to the signal anchored proteins.
