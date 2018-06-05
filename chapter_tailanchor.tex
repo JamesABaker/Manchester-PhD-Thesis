@@ -1,15 +1,30 @@
 \chapter{Tail-Anchored Protein Datasets}
 \sloppy
-% gls refers to a glossary term, cite refers to an entry from the separate bibtex folder. url is a lazy way of forcing monospaced text. textit is italics. sections and subsections are the headers.
+
 \section{Abstract}
 
 \section{Introduction}
 
-~\gls{ta} proteins are a topologically distinct class of intracellular proteins defined by their single carboxy-terminal~\gls{tms} with a cytosolic facing amino-terminus.
-~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation and apoptosis.
-Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins.
+~\gls{ta} proteins are defined by their single carboxy-terminal~\gls{tms} with a cytosolic facing amino-terminus and are a topologically distinct class of intracellular proteins.
+~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation \cite{Osborne2005} and apoptosis \cite{Hockenbery1990}.
+Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins \cite{Ungar2003}, which are contain typically hydrophobic \gls{tmh}s \cite{Kalbfleisch2007}.
 There is biomedical interest in~\gls{snare} drug delivery mechanisms.
 ~\gls{snare}s can fuse liposomes containing various drug payloads into the membrane.
+
+This hydrophobicity appears to be a determinate factor in the precise delivery mechanistic route that a~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that are several mechanisms~\cite{Rabu2009, Johnson2013}.
+
+Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
+Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/biogenesis-overview}
+		\captionof{figure}[An overview of the biogenesis of tail anchored proteins.]{\textbf{An overview of the biogenesis of tail anchored proteins.}
+}
+
+\label{fig:biogenesis-overview}
+\end{figure}
+
 
 %Evidence for completely unassissted insertion Kemper et al., 2008; Meineke et al., 2008; Setoguchi et al., 2006
 %Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
@@ -19,27 +34,19 @@ There is biomedical interest in~\gls{snare} drug delivery mechanisms.
 These mechanisms include the Hsp70/Hsc40 chaperone system~\cite{Rabu2008}, the TRC40/Get3 ATP dependent chaperone system~\cite{Johnson2013, Chartron2012, Wang2014},
 
 
-The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
-A previous study by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins~\cite{Kalbfleisch2007}.
-The tools developed herein are openly available for re-application to other datasets.
-Notably, known~\gls{snare} transmembrane helices are highly hydrophobic even compared to other~\gls{ta} transmembrane helices.
-We compare Kyte and Doolittle hydrophobicity profiles of our filtered human protein list against the profiles of previously known~\gls{snare} and~\gls{ta} proteins.
-This provided a list of potential~\gls{snare} proteins in addition to potential spontaneously inserting~\gls{ta} proteins similar to cytochrome b5 which have the least hydrophobic transmembrane helices.
+%The pipeline generates a list of singlepass proteins with a transmembrane domain close to the C terminal, that are not splice isoforms.
+%A previous study by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687-1694) predicted 411 tail anchor proteins~\cite{Kalbfleisch2007}.
+%The tools developed herein are openly available for re-application to other datasets.
 
-Tail-anchored proteins are a topologically distinct class of intracellular proteins defined by their single carboxy-terminal transmembrane domain with a cytosolic-facing amino-terminus.
 %Need a figure here of a crystal structure TA.
 
-Tail-anchored proteins are involved in a range of key cellular functions including protein translocation and apoptosis.
-Additionally, within the tail-anchored class of proteins are a set of vesicle fusion proteins called \gls{snare} proteins.
-There is biomedical interest in \gls{snare} drug delivery mechanisms.
 
-\gls{snare}s can fuse liposomes containing various drug payloads into the membrane.
-Notably, known \gls{snare} \gls{tmh}s are highly hydrophobic even compared to other tail anchored \gls{tmh}s~\cite{Kalbfleisch2007}.
-This hydrophobicity appears to be a determinate factor in the precise delivery mechanistic route that a~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that are several mechanisms~\cite{Rabu2009, Johnson2013}.
+%Additionally, within the tail-anchored class of proteins are a set of vesicle fusion proteins called \gls{snare} proteins.
+%There is biomedical interest in \gls{snare} drug delivery mechanisms.
 
-Whilst most eukaryotic~\gls{ta} proteins are inserted into the~\gls{er}.
+%\gls{snare}s can fuse liposomes containing various drug payloads into the membrane.
+%Notably, known \gls{snare} \gls{tmh}s are highly hydrophobic even compared to other tail anchored \gls{tmh}s~\cite{Kalbfleisch2007}.
 
-Their studies have moved the focus of spontaneous insertion away from the loop regions and onto the physicochemical factors of the \gls{tmh} itself.
 
 \section{Methods}
 
@@ -94,6 +101,11 @@ Windowed hydrophobicity was calculated using a window length of 5 residues, and 
 Average hydrophobicity takes the total of the raw amino acid hydrophobicity values and divides them by the number of amino acids in the slice.
 Values reported in the results are based on the Kyte \& Doolittle scale~\cite{Kyte1982} which is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids.
 %Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
+
+\subsection{Calculating Sequence Disorder}
+
+Sequence disorder was calculated from the GlobProt scale~\cite{Linding2003}.
+This scale can be used to calculate the tendency within the query protein sequence for order/globularity and disorder.
 
 \subsection{Calculating Sequence Information Entropy}
 Information entropy, is essentially an estimate of the linguistic entropy of a string.
@@ -351,7 +363,7 @@ As a trend the entropy mirrors the hydrophobicity albeit with less range between
 	\captionof{table}[Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.]
 	{\textbf{Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.}
 	Here, we compare a organelle subsets from the SwissProt automatically filtered dataset of \gls{ta} proteins.
-	We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria (N=65).
+	We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria referred to as ``mito'' (N=65).
 	The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 	Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 	The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
@@ -362,8 +374,8 @@ As a trend the entropy mirrors the hydrophobicity albeit with less range between
 		% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
 
 		%\begin{tabular}{clrrrrrrrrr}
-		 \begin{tabular}{clccccccccc}
-								&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{1}{l}{ER and mitochondria} &       &  \\
+		 \begin{tabular}{ccccccccccc}
+								&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{1}{l}{ER and mito} &       &  \\
 								&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
 
 		\midrule
