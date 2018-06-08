@@ -111,7 +111,7 @@ No further filters were applied to this list.
 Proteomes represented by more than 20 records include \textit{A. thaliana} (60 records), Humans (38), Mouse (37), and \textit{S. cerevisiae} (31). % and 20 to Rat.
 
 401 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}) 39 from SwissProt and 362 automatically assigned in TrEMBL.
-401 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]"}), 98 from SwissProt and 303 automatically annotated in TrEMBL.
+401 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]")}), 98 from SwissProt and 303 automatically annotated in TrEMBL.
 1 TrEMBL record (A0A1E5RT24) in the \gls{er} set contained an ``X'' residue in the C terminal flank and was omitted from the analyses.
 Two subcellular location datasets had no automatically ascribed records and only contained manually annotated SwissProt records; 37 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 82 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
 
@@ -156,12 +156,12 @@ We rely on the Bahadur slope ($B$) as a measure of distance between two distribu
 B=\frac{|\ln(P~value)|}{N}
 \end{equation}
 
-\subsection{Modelling Cytochrome b5 }
-The HHpred webserver was used to query homologues of and model templates for Cytochrome b5 (UniProt accession number P00167) \cite{Soding 2005, Soding 2005a}.
-Homologues were queried using three iterations of HHblits25 against the sequence database version uniprot20_2016_02 to generate the query Hidden Markov Model.
+\subsection{Modelling Cytochrome b5}
+The HHpred webserver was used to query homologues of and model templates for Cytochrome b5 (UniProt accession number P00167)~\cite{Soding 2005, Soding 2005a}.
+Homologues were queried using three iterations of HHblitscd against the sequence database version uniprot20\_2016\_02 to generate the query Hidden Markov Model.
 The choice of templates was driven by the quality and coverage of the alignments and of the quality of the models that resulted.
 A multiple alignment was generated from PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
-Modeller was used to generate a model \cite{Eswar2007}.
+Modeller was ran from within the HHPRED server to generate the homology model \cite{Eswar2007,Zimmerman2017,Webb2016}.
 The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite{Wiederstein2007}, Ramachandran plot on the RAMPAGE webserver (98\% allowed residues, including all \gls{tmh} residues) \cite{Lovell2003}.
 %Verify3D \cite{Luthy1992}, and PROCHECK \cite{Laskowski1993}.
 
@@ -196,8 +196,10 @@ The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite
 %structure:2MMU:30  :A:53  :A::Mycobacterium tuberculosis::
 %-------------------------------------------------------------------------------------------------------------SVWFVSLFIGLMLIGLIWLMVFQL----*
 
-There are 482 CSI-BLAST hits. 451 of them are unique, including the query.
-The calculation is performed on a sample of 150 sequences that represent the list of homologues to the query.
+APBS as a PyMol plugin was used to map the electrostatic surface of the model \cite{Baker2001}.
+Consurf \cite{Ashkenazy2010} was used to map the conservation scores based on 5 iterations of PSI-BLAST \cite{Altschul1997} with an E-value cut-off of 0.0001.
+Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity scale \cite{Eisenberg1984} using a script accessed at \url{https://pymolwiki.org/index.php/Color_h}.
+
 
 \section{Results}
 
@@ -336,6 +338,11 @@ However this only goes to show that if there is an effect in \gls{ta} proteins, 
 % Average lines for figure, table for stats
 
 As in the case of species, \gls{tmh}s with different subcellular localisations on average  have different hydrophobicity.
+This could be in part due to the variation in membrane potential across the different organelles~\cite{Qin2011, Worley1994, Schapiro2000}, the known lipid asymetry caused by sphingomyelin and glycosphingolipids on the non-cytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic leaflet in the Golgi and \gls{pm} and lack of asymetry in the \gls{er}~\cite{Daleke2007, Devaux2004}.
+Sphingomyelin is not present in the \gls{er} but is present in the Golgi~\cite{Futerman2005} and \gls{pm}~\cite{Li2007, Tafesse2007}.
+Furthermore the \gls{pm} contains densly packed sphingolipids and sterols~\cite{Paolo2006}.
+%Need a sentence on the mitochondrial membrane
+
 %Need mitochondria reference, and numbers for the UniER etc.
 These hydrophobic differences have already been observed in the mitochondria localised \gls{ta} protein \gls{tmh}.
 Here we consider the \gls{ta} proteins at certain locations within the cell ignoring species, and we see clear differences in the biochemistry of the \gls{tmh}.
