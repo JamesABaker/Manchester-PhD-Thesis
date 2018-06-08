@@ -642,9 +642,9 @@ SNARE Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor. 79, 82,
 SP Signal Peptide. 19, 83
 SR Signal Recognition Particle Receptor. 23, 80
 SRP Signal Recognition Particle. 23, 24, 80–82
-TA Tail Anchor. 79–82, 87–96
+TA Tail Anchor. 79–82, 87–95, 97
 TM Trans-membrane. 11, 14, 27–30, 43, 46, 51, 60, 73, 82
-TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–87, 89–96
+TMH Trans-membrane Helix. 11–21, 23, 25–53, 56–66, 68, 69, 71–87, 89–97
 9
 
 TMP Trans-membrane Protein. 11, 13, 18–20, 23, 25, 26, 28, 30, 31, 33, 34, 43, 46,
@@ -658,7 +658,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-June 6, 2018
+June 8, 2018
 
 11
 
@@ -6451,7 +6451,7 @@ to this list. Proteomes represented by more than 20 records include A. thaliana 
 records), Humans (38), Mouse (37), and S. cerevisiae (31).
 401 were annotated under the Mitochondrion location (query locations:
 (location:"Mitochondrion[SL-0173]")) 39 from SwissProt and 362 automatically assigned in TrEMBL. 401 in the ER (query locations:(location:
-"Endoplasmicreticulum[SL-0095]"), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
+"Endoplasmicreticulum[SL-0095]")), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
 “X” residue in the C terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only contained
 manually annotated SwissProt records; 37 in the PM (query locations:(location:
 
@@ -6541,7 +6541,7 @@ Modelling Cytochrome b5
 
 The HHpred webserver was used to query homologues of and model templates for
 Cytochrome b5 (UniProt accession number P00167) [Soding 2005, Soding 2005a].
-Homologues were queried using three iterations of HHblits25 against the sequence
+Homologues were queried using three iterations of HHblitscd against the sequence
 database version uniprot20 2016 02 to generate the query Hidden Markov Model. The
 choice of templates was driven by the quality and coverage of the alignments and of
 the quality of the models that resulted. A multiple alignment was generated from
@@ -6858,18 +6858,22 @@ between species.
 
 There Are Biochemical Differences Between TailAnchored TMHs From Different Organelles
 
-As in the case of species, TMHs with different subcellular localisations on average have
-different hydrophobicity. These hydrophobic differences have already been observed
-in the mitochondria localised TA protein TMH. Here we consider the TA proteins
+As in the case of species, TMHs with different subcellular localisations on average
+have different hydrophobicity. This could be in part due to the variation in membrane potential across the different organelles [71, 72, 74], the known lipid asymetry
 
 3.4. RESULTS
 
 97
 
-at certain locations within the cell ignoring species, and we see clear differences in
-the biochemistry of the TMH. In the UniProt manually curated dataset, the Kyte &
-Doolittle hydrophobicity scores rage from 1.7 in mitochondria to 2.7 in the PM (Figure
-3.4A).
+caused by sphingomyelin and glycosphingolipids on the non-cytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic leaflet in the Golgi and
+PM and lack of asymetry in the ER [123, 124]. Sphingomyelin is not present in the
+ER but is present in the Golgi [126] and PM [127, 128]. Furthermore the PM contains
+densly packed sphingolipids and sterols [129].
+These hydrophobic differences have already been observed in the mitochondria
+localised TA protein TMH. Here we consider the TA proteins at certain locations
+within the cell ignoring species, and we see clear differences in the biochemistry of the
+TMH. In the UniProt manually curated dataset, the Kyte & Doolittle hydrophobicity
+scores rage from 1.7 in mitochondria to 2.7 in the PM (Figure 3.4A).
 B)
 
 3.50
@@ -7012,12 +7016,6 @@ considerations, so these differences cannot be accounted for by the larger sampl
 In terms of information entropy, there is a marked decrease in entropy in the PM
 subset (mean entropy = 3.12 in the TMH, 2.6 including ±5 flanking residues) from the
 UniProt curated dataset compared to the other organelle datasets (entropy > 3.3 and >
-2.8 including the flanks). However this stark difference between TMHs from PM bound
-TA proteins and the other organelle datasets cannot be observed in the SwissProt set
-(Figure 3.4). All considerations of disorder were significant (P < 2.33E−4)(Table 3.3).
-As a trend, the flanks obscure the differences between the datasets, implying the
-differences of disorder are more clear within the TMH itself.
-No clear significances can be observed for the information entropy (P > 6.33E −2).
 
 98
 
@@ -7303,6 +7301,12 @@ T-test
 2.80E-2
 2.51E-2
 
+2.8 including the flanks). However this stark difference between TMHs from PM bound
+TA proteins and the other organelle datasets cannot be observed in the SwissProt set
+(Figure 3.4). All considerations of disorder were significant (P < 2.33E−4)(Table 3.3).
+As a trend, the flanks obscure the differences between the datasets, implying the
+differences of disorder are more clear within the TMH itself.
+No clear significances can be observed for the information entropy (P > 6.33E −2).
 This is unsurprising given that the hydrophobic nature of the TMHs demands that
 certain residues must be over-represented, which lowers the information entropy. In
 this case, we have a highly hydrophobic set, the PM UniProt set, which likely contains
@@ -7312,12 +7316,6 @@ TMH for disorder, 1.72-2.74 for hydrophobicity)(Figure 3.4).
 Similarly, in the SwissProt filtered dataset the mean TMH hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the
 peak at 2.4. In the SwissProt dataset, when we compare each subset of only the TMH
 to the ER subset, we find significance between the ER and the Golgi (P < 1.98E − 3),
-and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
-more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
-smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
-into account the flanks, the ER and PM dataset can be distinguished (P < 2.50E − 3),
-however as a trend the other two comparisons, ER and Golgi becomes less significant,
-and ER and mitochondria become more significant.
 
 3.4. RESULTS
 
@@ -7605,6 +7603,12 @@ T-test
 1.69E-2
 2.44E-3
 
+and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
+more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
+smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
+into account the flanks, the ER and PM dataset can be distinguished (P < 2.50E − 3),
+however as a trend the other two comparisons, ER and Golgi becomes less significant,
+and ER and mitochondria become more significant.
 The linguistic information entropy of the TMH string as well as the GlobProt
 disorder were also examined. Significance was found in disorder when comparing
 TMH between ER and Golgi (P < 5.01E − 4) and the PM (P < 2.87E − 6)(Table
@@ -7614,16 +7618,17 @@ subset, as a trend the entropy mirrors the hydrophobicity (Figure 3.4).
 When considering disorder, we see in both datasets that the Golgi subset is the most
 negative at -0.2 with TMH and -0.25 with the flanks in both the UniProt manually curated and the SwissProt filtered datasets. Whereas mitochondria is the least negative
 in both cases when considering the TMH (-0.14 in UniProt and -0.13 in SwissProt) or
+
+100
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 the TMH and ±5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure
 3.4).
 Whilst we expect to see hydrophobic adaptations of TMH to the membrane environment at both a species and organelle level, we only observe such differences at the
 organelle level.
 
-100
-
 3.4.4
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
 Spontaneous Insertion May Be Achieved by Polar
 Strips in the TMH of Tail Anchored Proteins
@@ -7652,10 +7657,6 @@ Discussion
 
 We expect to see evolutionary adaptations of TMH hydrophobicity to species specific
 membranes, even within eukaryotes [10, 79]. In this study using both a manually
-curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences. Why would we assume a stronger
-adaptation to organelles than to species? Since we could not scrutinise a difference
-in the species, the strong hydrophobic differences between TMHs from different organelles may not be solely accounted for by adaptation to the different membrane
-compositions. Given the large biochemical distinction between TA proteins with different terminal destinations, it is possible to conclude that TMHs contain necessary,
 
 3.5. DISCUSSION
 
@@ -7701,9 +7702,18 @@ is the least. Note the correlation between the highly and modestly conserved TMH
 relatively polar residues. Another observable feature is the very strong “positive inside” [6, 7, 10, 13,
 14] and “negative outside” features which are associated with anchorage [79].
 
+curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences. Why would we assume a stronger
+adaptation to organelles than to species? Since we could not scrutinise a difference
+in the species, the strong hydrophobic differences between TMHs from different organelles may not be solely accounted for by adaptation to the different membrane
+compositions. Given the large biochemical distinction between TA proteins with different terminal destinations, it is possible to conclude that TMHs contain necessary,
 yet cryptic, biological factors that play a role in their targeting. It is indeed possible
 that our observations are adaptations to the membrane environment, and this would
 not be unreasonable, except that TA proteins would be expected to experience similar
+
+102
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 adaptations at a species level, for which at th is sample size such an effect is unobservable. This is almost certainly aided by other factors and is part of a system with
 several redundant mechanisms.
 This could indeed be a cryptic functional similarity to the signal anchored proteins.
@@ -7711,11 +7721,6 @@ Signal anchored proteins contain a single hydrophobic segment that serves as bot
 mitochondrial targeting signal and a membrane anchor. Interestingly, these proteins,
 along with some tail-anchored proteins, have been shown to be able to spontaneously
 insert into the membrane independently from the translocon [50, 144, 154].
-
-102
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 The idea that SNARE proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based
 drug delivery and can aid future research for testing complex biological molecular
 networks [155, 156].
