@@ -287,13 +287,13 @@ Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-88
+87
 
 3.3.1
 
 Building a List of Tail-Anchors . . . . . . . . . . . . . . . . . .
 
-88
+87
 
 3.3.2
 
@@ -611,7 +611,7 @@ and SwissProt automatically filtered dataset. . . . . . . . . . . . . . . .
 
 3.4
 
-93
+92
 
 96
 
@@ -658,7 +658,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-June 8, 2018
+June 9, 2018
 
 11
 
@@ -6234,23 +6234,21 @@ Abstract
 
 Introduction
 
-Tail Anchor (TA) proteins are defined by their single carboxy-terminal TMS with
-a cytosolic facing amino-terminus and are a topologically distinct class of intracellular proteins.
-
-TA proteins are involved in a range of key cellular functions
-
-including protein translocation [Osborne2005] and apoptosis [Hockenbery1990].
-Additionally, within the TA class of proteins are a set of vesicle fusion proteins
-called Soluble N-Ethylmaleimide-Sensitive Factor Attachment Receptor (SNARE) proteins [Ungar2003], which are contain typically hydrophobic TMHs [136]. There is
-biomedical interest in SNARE drug delivery mechanisms. SNAREs can fuse liposomes
-containing various drug payloads into the membrane.
+Tail Anchor (TA) proteins are defined by their single carboxy-terminal TMS with a
+cytosolic facing amino-terminus and are a topologically distinct class of intracellular
+proteins. TA proteins are involved in a range of key cellular functions including protein
+translocation [136] and apoptosis [137]. Additionally, within the TA class of proteins
+are a set of vesicle fusion proteins called Soluble N-Ethylmaleimide-Sensitive Factor
+Attachment Receptor (SNARE) proteins [138], which are contain typically hydrophobic TMHs [139]. There is biomedical interest in SNARE drug delivery mechanisms.
+SNAREs can fuse liposomes containing various drug payloads into the membrane.
 The TA protein’s TMH is unusual in that it is both the anchor and the targetting
-factor for the ER [Kutay1993]. Furthermore, the hydrophobicity appears to be a
-determinate factor in the precise delivery mechanistic route that a TA proteins use
-for insertion [137, 138], for which there is evidence demonstrating that are several
-mechanisms [138, 139](Figure 3.1).
+factor for the ER [140]. Furthermore, the hydrophobicity appears to be a determinate
+factor in the precise delivery mechanistic route that a TA proteins use for insertion [141,
+142], for which there is evidence demonstrating that are several mechanisms [142,
+143](Figure 3.1).
 TA proteins have several pathways for biogenesis in the ER membrane. These
-mechanisms include the Hsp70/Hsc40 chaperone system [137], the intensly studied
+mechanisms include the Hsp70/Hsc40 chaperone system [141], the intensly studied
+TRC40/Get3 ATP dependent pathway [Wang2014, 143, 144], as well as some evidence supporting the use of the co-translational machinery. TA proteins were originally thought to be inserted into the membrane via different machinery than the
 84
 
 3.2. INTRODUCTION
@@ -6315,79 +6313,83 @@ to the membrane bound Snd2 and Snd3 complex. (3) The intensively studied Get (ye
 integrating into the membrane using Hsp40 and Hsc70 as chaperones. Adapted from Johnson et al.,
 2013 and Guna et al., 2018.
 
-TRC40/Get3 ATP dependent pathway [Wang2014, 139, 140], as well as some evidence supporting the use of the co-translational machinery. TA proteins were originally thought to be inserted into the membrane via different machinery than the
-co-translational machinery, but unexpectedly SRP was found to be a factor for posttranslational targetting confirmed by both cross linking studies [Abell2004] and an
-in vitro pull down experiment [Leznicki2010]. SRP would deliver the TA protein
-to the membrane bound SR in association with a highly conserved Sec translocon.
-Further cross-linking experiments suggested Sec61 is also involved during TA protein
-membrane insertion [141]. Previous studies had shown the Sec61 translocon is not
-necessary for TA protein membrane integration by biochemical reconstitution experiments [Kutay1993] and conditional mutants in yeast [Steel2002, Yabal2003]. This
-suggests at least one insertion mechanism that is related to the co-translational method
+co-translational machinery, but unexpectedly SRP was found to be a factor for posttranslational targetting confirmed by both cross linking studies [145] and an in vitro
+pull down experiment [146]. SRP would deliver the TA protein to the membrane
+bound SR in association with a highly conserved Sec translocon. Further cross-linking
+experiments suggested Sec61 is also involved during TA protein membrane insertion
+[147]. Previous studies had shown the Sec61 translocon is not necessary for TA protein
+membrane integration by biochemical reconstitution experiments [140] and conditional
+mutants in yeast [Steel2002, 148]. This suggests at least one insertion mechanism
+that is related to the co-translational method of insertion.
+A second, possibly redundant, system is also known to be involved in TA protein
+biogenesis and is referred to as the TRC40 (also known as Asna1) pathway in mammals.
+A conserved homologue was found in Saccharomyces cerevisiae, Get3 [149], and in yeast
 
 86
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-of insertion.
-A second, possibly redundant, system is also known to be involved in TA protein biogenesis and is referred to as the TRC40 (also known as Asna1) pathway
-in mammals. A conserved homologue was found in Saccharomyces cerevisiae, Get3
-[Schuldiner2008], and in yeast this mechanism is generally referred to as the Get
-pathway. Unlike the cotranslational machinery, the post-translational proteins do not
-couple with the ribosome, so the TA protein must be exposed to the cytosolic environment for at least some time [142]. At some point after the TA protein emerges from the
-ribosomal exit tunnel, the TA protein TMH associates with Sgt2. An in vitro assay
-revealed that Sgt2 associates with Get5 [Wang2010] as part of a dimerised Get4 and
-Get5 complex (two copies of each)[Chang2010, Chang2012, Chartron2010, 140].
-At this point Sgt2 either associates with preferential Get3 which targets the TA protein
-for ER membrane biogenesis, or if there are excess TA proteins Sgt2 also associates
-with Bag6 which targets the TA protein for degradation [143]. This “race” between
-Bag6 and Get3 ensures a level of quality control within the system. Assuming the TA
-protein is not targetted for degradation, Get3 associates first with this complex via an
-interaction with the N-terminal of Get4 [Wang2010]. A dimerised ADP-bound Get3
-[Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2009] (TRC40)
-associates with and shields the C-terminal region of the TA protein [Stefanovic2007,
-Schuldiner2008, Favaloro2008]. This shielding may be especially important since
-Get3 is involved in the folding of any nascent TA proteins, which would be unviably hydrophobic in the cytosol [Jonikas2009]. Fluoresence studies revealed that
-tagged Get3 appears at both the cytosol and the ER membrane so apparently shuttles
-the TA protein between the transmembrane complex of Get1 and Get 2 (WRB and
-CAML), that contains cytosolic domains that recieve Get3, and Get4 Get5 Sgt2 complex [Huh2003, Zalisko2017]. Yet it is an interesting note that a single molecule
-fluoresence study revealed that the minimum machinery required for TA protein insertion from this system is a Get1 and Get2 heterodimer [Zalisko2017].
+this mechanism is generally referred to as the Get pathway. Unlike the cotranslational
+machinery, the post-translational proteins do not couple with the ribosome, so the TA
+protein must be exposed to the cytosolic environment for at least some time [150].
+At some point after the TA protein emerges from the ribosomal exit tunnel, the TA
+protein TMH associates with Sgt2. An in vitro assay revealed that Sgt2 associates
+with Get5 [151] as part of a dimerised Get4 and Get5 complex (two copies of each)[144,
+152–154]. At this point Sgt2 either associates with preferential Get3 which targets the
+TA protein for ER membrane biogenesis, or if there are excess TA proteins Sgt2 also
+associates with Bag6 which targets the TA protein for degradation [155]. This “race”
+between Bag6 and Get3 ensures a level of quality control within the system. Assuming
+the TA protein is not targetted for degradation, Get3 associates first with this complex
+via an interaction with the N-terminal of Get4 [151]. A dimerised ADP-bound Get3
+[Yamagata2009, 156–159] (TRC40) associates with and shields the C-terminal region
+of the TA protein [Stefanovic2007, Favaloro2008, 149]. This shielding may be
+especially important since Get3 is involved in the folding of any nascent TA proteins,
+which would be unviably hydrophobic in the cytosol [Jonikas2009]. Fluoresence
+studies revealed that tagged Get3 appears at both the cytosol and the ER membrane
+so apparently shuttles the TA protein between the transmembrane complex of Get1
+and Get 2 (WRB and CAML), that contains cytosolic domains that recieve Get3,
+and Get4 Get5 Sgt2 complex [160, 161]. Yet it is an interesting note that a single
+molecule fluoresence study revealed that the minimum machinery required for TA
+protein insertion from this system is a Get1 and Get2 heterodimer [161].
 Redundancy of the Get/TRC40 pathway and SRP pathway may be explained in
 part by a novel SRP and Get independent pathway. This pathway utilises the Snd
 protein pathway and was discovered in yeast [Aviram2016]. Snd1 binds to the TA
 protein after it exits the ribsosome and delivers it to the Snd2 and Snd3 membrane
-
-3.2. INTRODUCTION
-
-87
-
 bound complex which integrate the TA protein into the membrane.
 In the absence of the Get machinery, Hsp70 and Hsc40 chaperones along with
 ATP are also sufficient for enough biogenesis of TA proteins for viable cell growth
-[Ngosuwan2003, Kemper2008, Meineke2008, Setoguchi2006, 137, 138, 144].
-Chimeric synaptobrevin, one of the first identified SNARE proteins, is capable of
-spontaneous insertion if the tail anchor domain is replaced by the TM domains belonging to a protein of known spontaneously inserting domains. Molecular dynamics
-simulations showed that direct insertion TMHs thermodynamically mimics the energies of TMHs integrated by the translocon [145] so in theory no integration machinery
-is strictly necessary if the TMH can “correctly” interact with the membrane interface.
-Altering the hydrophobicity, at least in the case of the spontaneously inserting PTP1b,
-also determinates the localisation of the TA protein to either the mitochondrial membrane or the ER membrane, or rather a more hydrophobic TA protein TMH is less
-likely to localise to the mitochondrial membrane [Fueller2015].
+[Kemper2008, Meineke2008, Setoguchi2006, 141, 142, 162, 163].
+
+Chimeric
+
+synaptobrevin, one of the first identified SNARE proteins, is capable of spontaneous
+insertion if the tail anchor domain is replaced by the TM domains belonging to a
+
+3.3. METHODS
+
+87
+
+protein of known spontaneously inserting domains. Molecular dynamics simulations
+showed that direct insertion TMHs thermodynamically mimics the energies of TMHs
+integrated by the translocon [164] so in theory no integration machinery is strictly
+necessary if the TMH can “correctly” interact with the membrane interface. Altering
+the hydrophobicity, at least in the case of the spontaneously inserting PTP1b, also
+determinates the localisation of the TA protein to either the mitochondrial membrane
+or the ER membrane, or rather a more hydrophobic TA protein TMH is less likely to
+localise to the mitochondrial membrane [165].
 Given a “choice”, it is speculated that hydrophobicity determines the integration
 pathway since Sec61β has a hydrophobic TMH and is targetted via the SRP pathway,
 whereas marginally hydrophobic TA proteins like cytochrome b5 and PTP1b can spontaneously insert in vitro and biologically only rely on Hsp70 and Hsc40. Broader analysis has shown that hydrophobicity [32] stratified by TM tendency score [Zhao2009]
-can distinguish between the ER and mitochondrial localised TA proteins [142]. However, the trememndous diversity and known biogenesis redundancy of these proteins
+can distinguish between the ER and mitochondrial localised TA proteins [150]. However, the trememndous diversity and known biogenesis redundancy of these proteins
 may mean that no single factor applied en masse may be able to distinguish the TMH
 recognition factors and investigation into this area is becoming increasingly complex
-[142].
-By regenerating a list of likely TMHs [136] and using a manually curated list of
+[150].
+By regenerating a list of likely TMHs [139] and using a manually curated list of
 TA proteins [110], this investigation aims to find relationships between biochemical
 factors and a disposition to a certain insertion mechanism and terminal localisations.
 Here, we also present evidence for a conserved polar strip along the spontaneously
 inserting TA protein TMHs, which may be the key to the initial interaction of these
 TMHs with the membrane interface.
-
-88
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
 3.3
 3.3.1
@@ -6395,10 +6397,14 @@ CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 Methods
 Building a List of Tail-Anchors
 
-Steps carried out by Kalbfleisch et al. published in Traffic 2007 (8: 16871694) [136],
+Steps carried out by Kalbfleisch et al. published in Traffic 2007 (8: 16871694) [139],
 were recreated using up to date tools. Whilst their study focused on the human
 proteome, here we take into account the entire TrEMBL and SwissProt database and
 then stratify the datasets by the organism at the end of the pipeline.
+
+88
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
 SwissProt Tail Anchored Dataset According to Filters
 There were 557012 protein records downloaded from SwissProt via UniProt [110]
@@ -6411,8 +6417,8 @@ thresholds of 16 to 30 residues (None of those had the annotation for splice iso
 according to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL).
 4332 of those had annotation (based on TOPO_DOM annotation) that the N terminal was
 cytoplasmic. 615 of those had the TMH within 25 residues of the C terminal, the same
-threshold used by Kalbfleisch and their coworkers [136]. Running CD-Hit 4.5.3 on the
-WebMGA web-server [132, 146] at 90% identical sequence at 90% coverage thresholds
+threshold used by Kalbfleisch and their coworkers [139]. Running CD-Hit 4.5.3 on the
+WebMGA web-server [132, 166] at 90% identical sequence at 90% coverage thresholds
 resulted in 443 representative proteins. This threshold was chosen as a compromise
 between avoiding over-representation of a certain protein and maintaining a viable
 sample size.
@@ -6426,25 +6432,27 @@ human proteome, 24 to S.cerevisiae.
 
 82 in the Golgi (query locations:
 
-3.3. METHODS
-
-89
-
 (location:"Golgiapparatus[SL-0132]")), and 98 in the ER (query locations:
 (location:"Endoplasmicreticulum[SL-0095]").
 TrEMBL Tail Anchored Dataset According to Filters
 111425234 records were stored in the TrEMBL database at time of download (Downloaded 25–04–2018). 22107826 of those contained TRANSMEM annotation (annotation:
 (type:transmem)ANDreviewed:no). 18053 of these were single-pass proteins. All of
 these were within the length restrictions. 17973 of those did not contain a signal
+
+3.3. METHODS
+
+89
+
 sequence when looking for SIGNAL annotation. 5157 of those contained a cytoplasmically located N terminal according to TOPO_DOM annotation. 155 records had a TMH
 within 15 residues of the C terminal residue. In those record’s annotations, no more
 than 1 appeared in any given species, so they were omitted from the SwissProt list
 sequence redundancy protocol to avoid representing a well-annotated record with a
 poorly annotated record.
+
 UniProt Curated List
 A query for locations:(location:"Single-passtypeIVmembraneprotein[SL-9908]
 ") was used in UniProt which returned 2460 UniProtKB IDs; 463 SwissProt results
-and 1997 TrEMBL results. Running these records through CD-HIT at 90% redundancy yielded 309 SwissProt records and 808 TrEMBL records [132, 146]. Of those,
+and 1997 TrEMBL results. Running these records through CD-HIT at 90% redundancy yielded 309 SwissProt records and 808 TrEMBL records [132, 166]. Of those,
 987 proteins from 973 records (308 from SwissProt, and 665 from TrEMBL) had the
 TRANSMEM annotation indicating a bone fide TMH. No further filters were applied
 to this list. Proteomes represented by more than 20 records include A. thaliana (60
@@ -6454,17 +6462,17 @@ records), Humans (38), Mouse (37), and S. cerevisiae (31).
 "Endoplasmicreticulum[SL-0095]")), 98 from SwissProt and 303 automatically annotated in TrEMBL. 1 TrEMBL record (A0A1E5RT24) in the ER set contained an
 “X” residue in the C terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only contained
 manually annotated SwissProt records; 37 in the PM (query locations:(location:
+"Cellmembrane[SL-0039]"), and 82 in the Golgi (query locations:(location:
+"Golgiapparatus[SL-0132]")).
+
+Remapping Previous Dataset
+189 of the 411 proteins from the previous study [139] were successfully mapped to
+222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to
+UniProtKB option [110].
 
 90
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
-"Cellmembrane[SL-0039]"), and 82 in the Golgi (query locations:(location:
-"Golgiapparatus[SL-0132]")).
-Remapping Previous Dataset
-189 of the 411 proteins from the previous study [136] were successfully mapped to
-222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to
-UniProtKB option [110].
 
 3.3.2
 
@@ -6481,7 +6489,7 @@ of individual amino acids.
 
 Calculating Sequence Disorder
 
-Sequence disorder was calculated from the GlobProt scale [147]. This scale can be
+Sequence disorder was calculated from the GlobProt scale [167]. This scale can be
 used to calculate the tendency within the query protein sequence for order/globularity
 and disorder.
 
@@ -6499,13 +6507,11 @@ Broadly speaking, the information theory entropy of a linguistic string can be
 defined as in equation 3.1, and we treat the protein sequence TMH as a string with or
 without its flanking regions.
 
-3.3. METHODS
-
-91
+H(S) = −
 
 n
 X
-H(S) = −
+
 pi logs (pi )
 
 (3.1)
@@ -6515,7 +6521,11 @@ i=1
 Where H is the entropy of a sequence (S), and pi is the probability of a character i through each position (n) in S. This allows us to quantify the average relative
 information density held within a string of information [47].
 
+3.3. METHODS
+
 3.3.5
+
+91
 
 Statistics
 
@@ -6547,18 +6557,18 @@ choice of templates was driven by the quality and coverage of the alignments and
 the quality of the models that resulted. A multiple alignment was generated from
 PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular
 domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the
+TMH. Modeller was ran from within the HHPRED server to generate the homology
+model [Zimmerman2017, 168, 169]. The model was confirmed to be of high quality
+using ProSA (Z-Score: -4.61) [170], Ramachandran plot on the RAMPAGE webserver
+(98% allowed residues, including all TMH residues) [171].
+APBS as a PyMol plugin was used to map the electrostatic surface of the model
+[172]. Consurf [173] was used to map the conservation scores based on 5 iterations
 
 92
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-TMH. Modeller was ran from within the HHPRED server to generate the homology
-model [Zimmerman2017, Webb2016, 148]. The model was confirmed to be of high
-quality using ProSA (Z-Score: -4.61) [149], Ramachandran plot on the RAMPAGE
-webserver (98% allowed residues, including all TMH residues) [Lovell2003].
-APBS as a PyMol plugin was used to map the electrostatic surface of the model
-[150]. Consurf [151] was used to map the conservation scores based on 5 iterations
-of PSI-BLAST [152] with an E-value cut-off of 0.0001. Hydrophobicity was mapped
+of PSI-BLAST [174] with an E-value cut-off of 0.0001. Hydrophobicity was mapped
 according to the Eisenberg aggregated hydrophicity scale [39] using a script accessed
 at https://pymolwiki.org/index.php/Color_h.
 
@@ -6570,12 +6580,26 @@ A Comparison Of Up-To-Date Tail-Anchored Protein
 Datasets
 
 Here, we use two sources for TA protein datasets. One dataset is based on a previous
-method [136] to obtain TA datasets and consists of 9296 TMH residues (13279 including up to ±5 flanking residues) from 443 SwissProt entries with 90% redundancy
+method [139] to obtain TA datasets and consists of 9296 TMH residues (13279 including up to ±5 flanking residues) from 443 SwissProt entries with 90% redundancy
 removal. Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90% redundancy removal. This dataset contains 21119 TMH residues
 (28791 including up to ±5 flanking residues) from 987 UniProt protein records.
+
+Figure 3.2: A Venn diagram showing tail anchored protein UniProt ids present in each
+of the datasets as well as those present in multiple datasets. The number of ids present
+in redundant versions of i) the supplementary materials table of a previous study predicting the
+complete set of human tail anchored proteins denote by S1 [139], ii) the SwissProt dataset filtered
+according to typical TA features limited to the human proteome [110], and iii) The UniProt curated
+list of TA proteins [110]. Note that to avoid losing IDs to redundancy reduction this diagram was
+generated without the use of CD-HIT [132, 166], which is applied in later statistical analysis.
+
 In order to get an understanding of the consistency of the datasets, before removing
 redundant proteins, we compared these two datasets to a dataset remapped set of
-proteins from a previous 2007 method [136]. The S1 dataset was built with an aim to
+
+3.4. RESULTS
+
+93
+
+proteins from a previous 2007 method [139]. The S1 dataset was built with an aim to
 gather TA proteins in the human genome from the NCBI. Note that these numbers
 are not absolutely certain. The greatest source of uncertainty here is that the original
 S1 list includes 411 records, however only 222 of these were successfully mapped to the
@@ -6584,19 +6608,6 @@ excluded proteins that were either hypothetical or splice isoforms. That being s
 this mapping step prevents us from directly comparing the entire original S1 dataset.
 We compared the up-to-date datasets to S1 to see how many records are shared, how
 many are now obsolete, and how many are unique.
-
-3.4. RESULTS
-
-93
-
-Figure 3.2: A Venn diagram showing tail anchored protein UniProt ids present in each
-of the datasets as well as those present in multiple datasets. The number of ids present
-in redundant versions of i) the supplementary materials table of a previous study predicting the
-complete set of human tail anchored proteins denote by S1 [136], ii) the SwissProt dataset filtered
-according to typical TA features limited to the human proteome [110], and iii) The UniProt curated
-list of TA proteins [110]. Note that to avoid losing IDs to redundancy reduction this diagram was
-generated without the use of CD-HIT [132, 146], which is applied in later statistical analysis.
-
 Figure 3.2 shows that S1 has 175 record ids of 222 records (78.8%) which do not
 share overlap the up-to-date manually curated UniProt dataset [110]. Of the 166
 unique records of that S1 dataset, 92 records do have location annotation in UniProt
@@ -6611,17 +6622,17 @@ curated UniProt TA dataset leaving 34 records that meet the criteria out of the 
 from SwissProt filtered human dataset can be found in the original S1 list. A further consideration is that, before limiting the dataset to human and after removing
 redundant proteins, this method picked up 46 archaeal and 66 bacterial records.
 The same method applied to an up-to-date dataset overlaps more with a manually
-
-94
-
-CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
-
 curated dataset. There is also a large degree of what we now believe to be mistakes
 that occurred in the older prediction tools and datasets, even when using similar
 methods. As a trend, this shows that up-to-date datasets improve the reliability of
 this automated predicted method. These automated criteria still do not fully align
 with the manually curated list. Only 973 of a non-redundant (90% CD-HIT threshold
-[132, 146]) set of those 2460 proteins of the UniProt manually curated set contained
+[132, 166]) set of those 2460 proteins of the UniProt manually curated set contained
+
+94
+
+CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
+
 annotation for the transmembrane boundary residues. Ultimately, this points to the
 idea that datasets are a moving target as they are constantly updated with more
 accurate and reliable tools.
@@ -6648,6 +6659,8 @@ in the UniProt curated list Table 3.2). There are also no consistent trends amon
 absolute Bahadur slopes; no datasets are greatly different from any other.
 Here, we are dealing with datasets at least an order of magnitude smaller than
 those broad studies [10, 79] which could explain the absence of the effect. However
+this only goes to show that if there is an effect in TA proteins, it is indeed weak
+between species.
 
 3.4. RESULTS
 
@@ -6851,22 +6864,19 @@ representing yeasts. For the SwissProt filtered set we compare the mammalian set
 (Human N=46 and Mouse N=48) to A. thaliana (N=49) representing plants and S. cerevisiae (N=24)
 representing yeasts. Error bars are shown at ±1σ from the mean of the respective dataset.
 
-this only goes to show that if there is an effect in TA proteins, it is indeed weak
-between species.
-
 3.4.3
 
 There Are Biochemical Differences Between TailAnchored TMHs From Different Organelles
 
 As in the case of species, TMHs with different subcellular localisations on average
 have different hydrophobicity. This could be in part due to the variation in membrane potential across the different organelles [71, 72, 74], the known lipid asymetry
+caused by sphingomyelin and glycosphingolipids on the non-cytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic leaflet in the Golgi and
+PM and lack of asymetry in the ER [123, 124]. Sphingomyelin is not present in the
 
 3.4. RESULTS
 
 97
 
-caused by sphingomyelin and glycosphingolipids on the non-cytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic leaflet in the Golgi and
-PM and lack of asymetry in the ER [123, 124]. Sphingomyelin is not present in the
 ER but is present in the Golgi [126] and PM [127, 128]. Furthermore the PM contains
 densly packed sphingolipids and sterols [129].
 These hydrophobic differences have already been observed in the mitochondria
@@ -6904,7 +6914,7 @@ and flanks
 
 3.60
 3.40
-
+3.20
 3.00
 2.80
 2.60
@@ -6948,9 +6958,6 @@ ER
 -0.10
 
 -0.15
-
-3.20
-
 GlobProt Scale
 
 A)
@@ -6999,7 +7006,7 @@ SwissProt Filtered Set
 Figure 3.4: Average sequence-based biochemical values of organelle datasets from
 UniProt manually curated set and SwissProt automatically filtered dataset.
 A) The average hydrophobicity values from the Kyte & Doolittle scale [30], B) the average information
-entropy [47] (see methods) and C) the GlobProt scale [147] for both the TMH and the TMH±5
+entropy [47] (see methods) and C) the GlobProt scale [167] for both the TMH and the TMH±5
 residues. Values are shown for both the UniProt manually curated set and the SwissProt filtered set.
 In the UniProt manually curated set we compare TA proteins from the ER (N=400) to the Golgi
 (N=82), the PM (N=37), and the mitochondria (N=401). For the SwissProt filtered set we compare
@@ -7016,6 +7023,9 @@ considerations, so these differences cannot be accounted for by the larger sampl
 In terms of information entropy, there is a marked decrease in entropy in the PM
 subset (mean entropy = 3.12 in the TMH, 2.6 including ±5 flanking residues) from the
 UniProt curated dataset compared to the other organelle datasets (entropy > 3.3 and >
+2.8 including the flanks). However this stark difference between TMHs from PM bound
+TA proteins and the other organelle datasets cannot be observed in the SwissProt set
+(Figure 3.4). All considerations of disorder were significant (P < 2.33E−4)(Table 3.3).
 
 98
 
@@ -7025,7 +7035,7 @@ Table 3.3: Statistical comparisons between TMH sequences from organelles in the
 UniProt Curated Dataset. Here, we compare a organelle subsets from the UniProt curated
 dataset of TA proteins. We compare ER (N=400) to Golgi (N=82), PM (N=37), and the mitochondria (N=401). The hydrophobicity was predicted as the mean average of the values of the sequences
 of the TMH, as well another group including up to ±5 flanking residues, since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity scale [30]. Disorder was
-calculated in the same way using the GlobProt scale [147]. The linguistic information entropy was
+calculated in the same way using the GlobProt scale [167]. The linguistic information entropy was
 calculated according to the methods section [47]. The Test column refers to the statistical score
 obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov
 Smirnov test (KS), and the t-statistic for the student’s T-test (T-test). P is the P-value of that
@@ -7301,9 +7311,6 @@ T-test
 2.80E-2
 2.51E-2
 
-2.8 including the flanks). However this stark difference between TMHs from PM bound
-TA proteins and the other organelle datasets cannot be observed in the SwissProt set
-(Figure 3.4). All considerations of disorder were significant (P < 2.33E−4)(Table 3.3).
 As a trend, the flanks obscure the differences between the datasets, implying the
 differences of disorder are more clear within the TMH itself.
 No clear significances can be observed for the information entropy (P > 6.33E −2).
@@ -7316,6 +7323,9 @@ TMH for disorder, 1.72-2.74 for hydrophobicity)(Figure 3.4).
 Similarly, in the SwissProt filtered dataset the mean TMH hydrophobicity for mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the
 peak at 2.4. In the SwissProt dataset, when we compare each subset of only the TMH
 to the ER subset, we find significance between the ER and the Golgi (P < 1.98E − 3),
+and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
+more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
+smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
 
 3.4. RESULTS
 
@@ -7326,7 +7336,7 @@ filtered dataset of TA proteins. We compare ER (N=98) to Golgi (N=82), PM (N=157
 mitochondria referred to as “mito” (N=65). The hydrophobicity was predicted as the mean average
 of the values of the sequences of the TMH, as well another group including up to ±5 flanking residues,
 since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity
-scale [30]. Disorder was calculated in the same way using the GlobProt scale [147]. The linguistic
+scale [30]. Disorder was calculated in the same way using the GlobProt scale [167]. The linguistic
 information entropy was calculated according to the methods section [47]. The Test column refers to
 the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic
 for the Kolmogorov Smirnov test (KS), and the t-statistic for the student’s T-test (T-test). P is the
@@ -7603,9 +7613,6 @@ T-test
 1.69E-2
 2.44E-3
 
-and the ER and the mitochondria (P < 4.62E − 3), however the ER and PM are
-more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
-smaller that the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
 into account the flanks, the ER and PM dataset can be distinguished (P < 2.50E − 3),
 however as a trend the other two comparisons, ER and Golgi becomes less significant,
 and ER and mitochondria become more significant.
@@ -7618,13 +7625,13 @@ subset, as a trend the entropy mirrors the hydrophobicity (Figure 3.4).
 When considering disorder, we see in both datasets that the Golgi subset is the most
 negative at -0.2 with TMH and -0.25 with the flanks in both the UniProt manually curated and the SwissProt filtered datasets. Whereas mitochondria is the least negative
 in both cases when considering the TMH (-0.14 in UniProt and -0.13 in SwissProt) or
+the TMH and ±5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure
+3.4).
 
 100
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-the TMH and ±5 flanking residues (-0.18 in UniProt and -0.16 in SwissProt)(Figure
-3.4).
 Whilst we expect to see hydrophobic adaptations of TMH to the membrane environment at both a species and organelle level, we only observe such differences at the
 organelle level.
 
@@ -7634,7 +7641,7 @@ Spontaneous Insertion May Be Achieved by Polar
 Strips in the TMH of Tail Anchored Proteins
 
 The TMH of cytochrome b5 is among the most hydrophobic of the TA proteins and
-in theory misses the ∆G requirements of a TMH [137, 138]. Indeed it is not trivial to
+in theory misses the ∆G requirements of a TMH [141, 142]. Indeed it is not trivial to
 predict and is not found in either datasets prepared herein. Strucural modelling and
 analysis thereof reveals features that may explain the “missing hydrophobicity” [15,
 31, 121, 122] of this particular TMH.
@@ -7646,7 +7653,7 @@ would face when coming into contact with the highly polar membrane interface. We
 observe a highly conserved strip of relatively polar / non-hydrophobic residues on one
 side of the TMH (N112, P116, A120, A124 Y127, R128) which would not be as repulsed
 by the interfacial environment 3.5. Scrambling the TMH sequence whilst maintaining
-the same hydrophobicity reduces the insertion potential [153]; there is more to it than
+the same hydrophobicity reduces the insertion potential [175]; there is more to it than
 hydrophobicity alone. It becomes apparent that the 3D arrangment of these relatively
 polar TMH residues is not trivial and is probably the key to spontaneous insertion of
 TMHs.
@@ -7657,6 +7664,8 @@ Discussion
 
 We expect to see evolutionary adaptations of TMH hydrophobicity to species specific
 membranes, even within eukaryotes [10, 79]. In this study using both a manually
+curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences. Why would we assume a stronger
+adaptation to organelles than to species? Since we could not scrutinise a difference
 
 3.5. DISCUSSION
 
@@ -7695,35 +7704,33 @@ Figure 3.5: Structural biochemical analysis of a homology model of cytochrome b5
 The secondary structure of the protein coloured from the N terminus in blue to the C terminus in red
 coloured through the rainbow according to the residue number. (B) The hydrophobicity of the TMH
 from white representing relatively polar residues to red showing relatively hydrophobic residues [39].
-(C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [150]. Red
+(C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [172]. Red
 patches are negatively charged whilst blue are positively charged. (D) The consurf scores on a scale
-of 1-9 (all residues had sufficient data) [151]. Purple represents the the most conserved whilst blue
+of 1-9 (all residues had sufficient data) [173]. Purple represents the the most conserved whilst blue
 is the least. Note the correlation between the highly and modestly conserved TMH residues and the
 relatively polar residues. Another observable feature is the very strong “positive inside” [6, 7, 10, 13,
 14] and “negative outside” features which are associated with anchorage [79].
 
-curated dataset from UniProt, and an automatically filtered list using SwissProt annotation, we do not observe any strong differences. Why would we assume a stronger
-adaptation to organelles than to species? Since we could not scrutinise a difference
 in the species, the strong hydrophobic differences between TMHs from different organelles may not be solely accounted for by adaptation to the different membrane
 compositions. Given the large biochemical distinction between TA proteins with different terminal destinations, it is possible to conclude that TMHs contain necessary,
 yet cryptic, biological factors that play a role in their targeting. It is indeed possible
 that our observations are adaptations to the membrane environment, and this would
 not be unreasonable, except that TA proteins would be expected to experience similar
+adaptations at a species level, for which at th is sample size such an effect is unobservable. This is almost certainly aided by other factors and is part of a system with
+several redundant mechanisms.
+This could indeed be a cryptic functional similarity to the signal anchored proteins.
 
 102
 
 CHAPTER 3. TAIL-ANCHORED PROTEIN DATASETS
 
-adaptations at a species level, for which at th is sample size such an effect is unobservable. This is almost certainly aided by other factors and is part of a system with
-several redundant mechanisms.
-This could indeed be a cryptic functional similarity to the signal anchored proteins.
 Signal anchored proteins contain a single hydrophobic segment that serves as both a
 mitochondrial targeting signal and a membrane anchor. Interestingly, these proteins,
 along with some tail-anchored proteins, have been shown to be able to spontaneously
-insert into the membrane independently from the translocon [50, 144, 154].
+insert into the membrane independently from the translocon [50, 163, 176].
 The idea that SNARE proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based
 drug delivery and can aid future research for testing complex biological molecular
-networks [155, 156].
+networks [177, 178].
 
 Chapter 4
 Identifying Intramembrane Folds
@@ -7793,7 +7800,7 @@ gated (controlled vocabulary if no list available) distributions
 
 Discussion
 
-GPCRs have long be known to be overrepresented among genomes [157].
+GPCRs have long be known to be overrepresented among genomes [179].
 Seen across a variety of 7TM families with varying functions with datasets built
 from all membrane types (hence variety). Suggests a pressure for simpler TMHs to
 precede more complex ones, repeating every 3-4 TMHs. The universality points toward
@@ -8059,9 +8066,10 @@ Eur J Biochem 174, 671–8 (1988).
 SecYEG-mediated insertion of transmembrane alpha-helices into the bacterial
 inner membrane. J Mol Biol 425 (2013).
 87. Beuming, T. & Weinstein, H. A knowledge-based scale for the analysis and prediction of buried and exposed faces of transmembrane domain proteins. Bioinformatics 20, 1822–1835 (2004).
-88. Zhao, G & London, E. An amino acid “transmembrane tendency” scale that
+88. Zhao, G. & London, E. An amino acid transmembrane tendency scale that
 approaches the theoretical limit to accuracy for prediction of transmembrane
-helices: relationship to biological hydrophobicity. Protein Sci 15 (2006).
+helices: Relationship to biological hydrophobicity. Protein Science 15, 1987–
+2001 (2006).
 89. Sonnhammer, E. L., Heijne, G & Krogh, A. A hidden Markov model for predicting transmembrane helices in protein sequences. Proc Int Conf Intell Syst
 Mol Biol 6 (1998).
 90. Kall, L, Krogh, A & Sonnhammer, E. L. Advantages of combined transmembrane topology and signal peptide prediction—the Phobius web server. Nucleic
@@ -8201,72 +8209,157 @@ searches. Bioinformatics 31, 926–932 (2015).
 en. Annual review of biophysics 37, 23–42 (2008).
 135. Van der Walt, S., Colbert, S. C. & Varoquaux, G. The NumPy Array: A Structure for Efficient Numerical Computation. Computing in Science & Engineering
 13, 22–30 (2011).
-136. Kalbfleisch, T., Cambon, A. & Wattenberg, B. W. A bioinformatics approach
+136. Osborne, A. R., Rapoport, T. A. & van den Berg, B. Protein Translocation By
+the Sec61/Secy Channel. Annual Review of Cell and Developmental Biology 21,
+529–550 (2005).
+137. Hockenbery, D., Nuñez, G., Milliman, C., Schreiber, R. D. & Korsmeyer, S. J.
+Bcl-2 is an inner mitochondrial membrane protein that blocks programmed cell
+death. Nature 348, 334–336 (1990).
+138. Ungar, D. & Hughson, F. M. SNARE Protein Structure and Function. Annual
+Review of Cell and Developmental Biology 19, 493–517 (2003).
+139. Kalbfleisch, T., Cambon, A. & Wattenberg, B. W. A bioinformatics approach
 to identifying tail-anchored proteins in the human genome. Traffic 8, 1687–1694
 (2007).
-137. Rabu, C., Wipf, P., Brodsky, J. L. & High, S. A precursor-specific role for
-Hsp40/Hsc70 during tail-anchored protein integration at the endoplasmic reticulum. Journal of Biological Chemistry 283, 27504–27513 (2008).
-138. Rabu, C., Schmid, V., Schwappach, B. & High, S. Biogenesis of tail-anchored
-proteins: the beginning for the end? Journal of Cell Science 122, 3605–3612
-(2009).
-139. Johnson, N., Powis, K. & High, S. Post-translational translocation into the
-endoplasmic reticulum. Biochimica et Biophysica Acta - Molecular Cell Research
-1833, 2403–2409 (2013).
-140. Chartron, J. W., Clemons, W. M. & Suloway, C. J. M. The complex process
-of GETting tail-anchored membrane proteins to the ER. Current Opinion in
-Structural Biology 22, 217–224 (2012).
-141. Abell, B. M., Jung, M., Oliver, J. D., Knight, B. C., Tyedmers, J., Zimmermann,
-R. & High, S. Tail-anchored and Signal-anchored Proteins Utilize Overlapping
-Pathways during Membrane Insertion. Journal of Biological Chemistry 278,
-5669–5678 (2003).
+140. Kutay, U., Hartmann, E. & Rapoport, T. A. A class of membrane proteins with
+a C-terminal anchor. Trends in Cell Biology 3, 72–75 (1993).
+141. Rabu, C., Wipf, P., Brodsky, J. L. & High, S. A precursor-specific role for
+Hsp40/Hsc70 during tail-anchored protein integration at the endoplasmic reticulum. The Journal of biological chemistry 283, 27504–13 (2008).
+142. Rabu, C., Schmid, V., Schwappach, B. & High, S. Biogenesis of tail-anchored
+proteins: the beginning for the end? Journal of cell science 122, 3605–12 (2009).
 
 120
 
 BIBLIOGRAPHY
 
-142. Guna, A., Volkmar, N., Christianson, J. C. & Hegde, R. S. The ER membrane
-protein complex is a transmembrane domain insertase. Science 359 (2018).
-143. Shao, S., Rodrigo-Brenni, M. C., Kivlen, M. H. & Hegde, R. S. Mechanistic
-basis for a molecular triage reaction. Science 355, 298–302 (2017).
-144. Colombo, S. F., Longhi, R. & Borgese, N. The role of cytosolic proteins in the
-insertion of tail-anchored proteins into phospholipid bilayers. Journal of cell
-science 122, 2383–92 (2009).
-145. Ulmschneider, M. B., Ulmschneider, J. P., Schiller, N., Wallace, B. a., von Heijne,
-G. & White, S. H. Spontaneous transmembrane helix insertion thermodynamically mimics translocon-guided insertion. en. Nature Communications 5, 4863
-(2014).
-146. Wu, S., Zhu, Z., Fu, L., Niu, B. & Li, W. WebMGA: A customizable web server
-for fast metagenomic sequence analysis. BMC Genomics 12, 444 (2011).
-147. Linding, R., Russell, R. B., Neduva, V. & Gibson, T. J. GlobPlot: Exploring
-protein sequences for globularity and disorder. Nucleic Acids Research 31, 3701–
-3708 (2003).
-148. Eswar, N., Webb, B., Marti-Renom, M. A., Madhusudhan, M. S., Eramian, D.,
-Shen, M.-Y., Pieper, U. & Sali, A. Comparative Protein Structure Modeling Using MODELLER. Current Protocols in Protein Science 50, 2.9.1–2.9.31 (2001).
-149. Wiederstein, M. & Sippl, M. J. ProSA-web: Interactive web service for the recognition of errors in three-dimensional structures of proteins. Nucleic Acids Research 35, W407–W410 (2007).
-150. Baker, N. A., Sept, D, Joseph, S, Holst, M. J. & McCammon, J. A. Electrostatics
-of nanosystems: application to microtubules and the ribosome. Proceedings of
-the National Academy of Sciences of the United States of America 98, 10037–41
-(2001).
-151. Ashkenazy, H., Erez, E., Martz, E., Pupko, T. & Ben-Tal, N. ConSurf 2010:
-Calculating evolutionary conservation in sequence and structure of proteins and
-nucleic acids. Nucleic Acids Research 38, W529–W533 (2010).
+143. Johnson, N., Powis, K. & High, S. Post-translational translocation into the
+endoplasmic reticulum. Biochimica et Biophysica Acta (BBA) - Molecular Cell
+Research 1833, 2403–2409 (2013).
+144. Chartron, J. W., VanderVelde, D. G., Rao, M. & Clemons, W. M. Get5
+carboxyl-terminal domain is a novel dimerization motif that tethers an extended
+Get4/Get5 complex. The Journal of biological chemistry 287, 8310–7 (2012).
+145. Abell, B. M., Pool, M. R., Schlenker, O., Sinning, I. & High, S. Signal recognition
+particle mediates post-translational targeting in eukaryotes. The EMBO journal
+23, 2755–64 (2004).
+146. Leznicki, P., Clancy, A., Schwappach, B. & High, S. Bat3 promotes the membrane integration of tail-anchored proteins. Journal of cell science 123, 2170–8
+(2010).
+147. Abell, B. M., Jung, M., Oliver, J. D., Knight, B. C., Tyedmers, J., Zimmermann,
+R. & High, S. Tail-anchored and signal-anchored proteins utilize overlapping
+pathways during membrane insertion. The Journal of biological chemistry 278,
+5669–78 (2003).
+148. Yabal, M., Brambillasca, S., Soffientini, P., Pedrazzini, E., Borgese, N. &
+Makarow, M. Translocation of the C terminus of a tail-anchored protein across
+the endoplasmic reticulum membrane in yeast mutants defective in signal
+peptide-driven translocation. The Journal of biological chemistry 278, 3489–
+96 (2003).
+149. Schuldiner, M., Metz, J., Schmid, V., Denic, V., Rakwalska, M., Schmitt, H. D.,
+Schwappach, B. & Weissman, J. S. The GET Complex Mediates Insertion of
+Tail-Anchored Proteins into the ER Membrane. Cell 134, 634–645 (2008).
+150. Guna, A. & Hegde, R. S. Transmembrane Domain Recognition during Membrane Protein Biogenesis and Quality Control. Current Biology 28, R498–R511
+(2018).
+151. Wang, F., Brown, E. C., Mak, G., Zhuang, J. & Denic, V. A Chaperone Cascade
+Sorts Proteins for Posttranslational Membrane Insertion into the Endoplasmic
+Reticulum. Molecular Cell 40, 159–171 (2010).
 
 BIBLIOGRAPHY
 
 121
 
-152. Ramsay, L., Macaulay, M., Degli Ivanissevich, S., MacLean, K., Cardle, L.,
+152. Chang, Y.-W., Chuang, Y.-C., Ho, Y.-C., Cheng, M.-Y., Sun, Y.-J., Hsiao, C.-D.
+& Wang, C. Crystal structure of Get4-Get5 complex and its interactions with
+Sgt2, Get3, and Ydj1. The Journal of biological chemistry 285, 9962–70 (2010).
+153. Chang, Y.-W., Lin, T.-W., Li, Y.-C., Huang, Y.-S., Sun, Y.-J. & Hsiao, C.-D.
+Interaction surface and topology of Get3-Get4-Get5 protein complex, involved
+in targeting tail-anchored proteins to endoplasmic reticulum. The Journal of
+biological chemistry 287, 4783–9 (2012).
+154. Chartron, J. W., Suloway, C. J. M., Zaslaver, M. & Clemons, W. M. Structural
+characterization of the Get4/Get5 complex and its interaction with Get3. Proceedings of the National Academy of Sciences of the United States of America
+107, 12127–32 (2010).
+155. Shao, S., Rodrigo-Brenni, M. C., Kivlen, M. H. & Hegde, R. S. Mechanistic
+basis for a molecular triage reaction. Science (New York, N.Y.) 355, 298–302
+(2017).
+156. Mateja, A., Szlachcic, A., Downing, M. E., Dobosz, M., Mariappan, M., Hegde,
+R. S. & Keenan, R. J. The structural basis of tail-anchored membrane protein
+recognition by Get3. Nature 461, 361–366 (2009).
+157. Hu, J., Li, J., Qian, X., Denic, V. & Sha, B. The Crystal Structures of Yeast Get3
+Suggest a Mechanism for Tail-Anchored Protein Membrane Insertion. PLoS
+ONE 4 (ed Mayer, C.) e8061 (2009).
+158. Bozkurt, G., Stjepanovic, G., Vilardi, F., Amlacher, S., Wild, K., Bange, G.,
+Favaloro, V., Rippe, K., Hurt, E., Dobberstein, B. & Sinning, I. Structural
+insights into tail-anchored protein binding and membrane insertion by Get3.
+Proceedings of the National Academy of Sciences of the United States of America
+106, 21131–6 (2009).
+159. Suloway, C. J. M., Chartron, J. W., Zaslaver, M. & Clemons, W. M. Model
+for eukaryotic tail-anchored protein binding based on the structure of Get3.
+Proceedings of the National Academy of Sciences of the United States of America
+106, 14849–54 (2009).
+
+122
+
+BIBLIOGRAPHY
+
+160. Huh, W.-K., Falvo, J. V., Gerke, L. C., Carroll, A. S., Howson, R. W., Weissman,
+J. S. & O’Shea, E. K. Global analysis of protein localization in budding yeast.
+Nature 425, 686–691 (2003).
+161. Zalisko, B. E., Chan, C., Denic, V., Rock, R. S. & Keenan, R. J. Tail-Anchored
+Protein Insertion by a Single Get1/2 Heterodimer. Cell Reports 20, 2287–2293
+(2017).
+162. Ngosuwan, J., Wang, N. M., Fung, K. L. & Chirico, W. J. Roles of cytosolic
+Hsp70 and Hsp40 molecular chaperones in post-translational translocation of
+presecretory proteins into the endoplasmic reticulum. The Journal of biological
+chemistry 278, 7034–42 (2003).
+163. Colombo, S. F., Longhi, R., Borgese, N., Kuismanen, E, Ehnholm, C, Söderlund,
+H & Olkkonen, V. M. The role of cytosolic proteins in the insertion of tailanchored proteins into phospholipid bilayers. Journal of cell science 122, 2383–
+92 (2009).
+164. Ulmschneider, M. B., Ulmschneider, J. P., Schiller, N., Wallace, B. a., von Heijne,
+G. & White, S. H. Spontaneous transmembrane helix insertion thermodynamically mimics translocon-guided insertion. en. Nature Communications 5, 4863
+(2014).
+165. Fueller, J., Egorov, M. V., Walther, K. A., Sabet, O., Mallah, J., Grabenbauer,
+M. & Kinkhabwala, A. Subcellular Partitioning of Protein Tyrosine Phosphatase
+1B to the Endoplasmic Reticulum and Mitochondria Depends Sensitively on the
+Composition of Its Tail Anchor. PLOS ONE 10 (ed Chen, Y.) e0139429 (2015).
+166. Wu, S., Zhu, Z., Fu, L., Niu, B. & Li, W. WebMGA: A customizable web server
+for fast metagenomic sequence analysis. BMC Genomics 12, 444 (2011).
+167. Linding, R., Russell, R. B., Neduva, V. & Gibson, T. J. GlobPlot: Exploring
+protein sequences for globularity and disorder. Nucleic Acids Research 31, 3701–
+3708 (2003).
+168. Eswar, N., Webb, B., Marti-Renom, M. A., Madhusudhan, M. S., Eramian, D.,
+Shen, M.-Y., Pieper, U. & Sali, A. Comparative Protein Structure Modeling Using MODELLER. Current Protocols in Protein Science 50, 2.9.1–2.9.31 (2001).
+
+BIBLIOGRAPHY
+
+123
+
+169. Webb, B. & Sali, A. in Current Protocols in Protein Science 1, 2.9.1–2.9.37
+(John Wiley & Sons, Inc., Hoboken, NJ, USA, 2016).
+170. Wiederstein, M. & Sippl, M. J. ProSA-web: Interactive web service for the recognition of errors in three-dimensional structures of proteins. Nucleic Acids Research 35, W407–W410 (2007).
+171. Lovell, S. C., Davis, I. W., Arendall, W. B., de Bakker, P. I. W., Word, J. M.,
+Prisant, M. G., Richardson, J. S. & Richardson, D. C. Structure validation by
+Cα geometry: ,ψ and Cβ deviation. Proteins: Structure, Function, and Bioinformatics 50, 437–450 (2003).
+172. Baker, N. A., Sept, D, Joseph, S, Holst, M. J. & McCammon, J. A. Electrostatics
+of nanosystems: application to microtubules and the ribosome. Proceedings of
+the National Academy of Sciences of the United States of America 98, 10037–41
+(2001).
+173. Ashkenazy, H., Erez, E., Martz, E., Pupko, T. & Ben-Tal, N. ConSurf 2010:
+Calculating evolutionary conservation in sequence and structure of proteins and
+nucleic acids. Nucleic Acids Research 38, W529–W533 (2010).
+174. Ramsay, L., Macaulay, M., Degli Ivanissevich, S., MacLean, K., Cardle, L.,
 Fuller, J., Edwards, K. J., Tuvesson, S., Morgante, M., Massari, A., Maestri,
 E., Marmiroli, N., Sjakste, T., Ganal, M., Powell, W. & Waugh, R. A simple
 sequence repeat-based linkage map of Barley. Genetics 156, 1997–2005 (2000).
-153. Brambillasca, S., Yabal, M., Makarow, M. & Borgese, N. Unassisted translocation of large polypeptide domains across phospholipid bilayers. The Journal of
+175. Brambillasca, S., Yabal, M., Makarow, M. & Borgese, N. Unassisted translocation of large polypeptide domains across phospholipid bilayers. The Journal of
 cell biology 175, 767–77 (2006).
-154. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
+176. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
 and saturable but does not strictly require ATP or molecular chaperones. The
 Biochemical journal 349, 611–621 (2000).
-155. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
+177. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
 clinical applications. Advanced Drug Delivery Reviews 65, 36–48 (2013).
-156. Nordlund, G., Brzezinski, P. & von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artificial membranes. Nature Communications 5, 4303 (2014).
-157. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
+
+124
+
+BIBLIOGRAPHY
+
+178. Nordlund, G., Brzezinski, P. & von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artificial membranes. Nature Communications 5, 4303 (2014).
+179. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
 in the Caenorhabditis elegans genome and indentification of human orthologs.
 Genome Res. 10, 1679–1689 (2000).
 
