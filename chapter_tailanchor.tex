@@ -8,8 +8,7 @@
 \gls{ta} proteins are defined by their single carboxy-terminal~\gls{tms} with a cytosolic facing amino-terminus and are a topologically distinct class of intracellular proteins.
 ~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation \cite{Osborne2005} and apoptosis \cite{Hockenbery1990}.
 Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins \cite{Ungar2003}, which are contain typically hydrophobic \gls{tmh}s \cite{Kalbfleisch2007}.
-There is biomedical interest in~\gls{snare} drug delivery mechanisms.
-~\gls{snare}s can fuse liposomes containing various drug payloads into the membrane. %reference needed
+The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
 The \gls{ta} protein's \gls{tmh} is unusual in that it is both the anchor and the targetting factor for the \gls{er} \cite{Kutay1993}.
 Furthermore, the hydrophobicity appears to be a determinate factor in the precise delivery mechanistic route that a~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that are several mechanisms~\cite{Rabu2009, Johnson2013}(Figure \ref{fig:biogenesis-overview}).
@@ -31,7 +30,7 @@ Furthermore, the hydrophobicity appears to be a determinate factor in the precis
 \end{figure}
 
 \gls{ta} proteins have several pathways for biogenesis in the~\gls{er} membrane.
-These mechanisms include the Hsp70/Hsc40 chaperone system~\cite{Rabu2008}, the intensly studied TRC40/Get3 ATP dependent pathway ~\cite{Johnson2013, Chartron2012, Wang2014}, as well as some evidence supporting the use of the co-translational machinery.
+These mechanisms include the Hsp40/Hsc70 chaperone system~\cite{Rabu2008}, the intensly studied TRC40/Get3 ATP dependent pathway ~\cite{Johnson2013, Chartron2012, Wang2014}, as well as some evidence supporting the use of the co-translational machinery.
 \gls{ta} proteins were originally thought to be inserted into the membrane via different machinery than the co-translational machinery, but unexpectedly \gls{srp} was found to be a factor for post-translational targetting confirmed by both cross linking studies \cite{Abell2004} and an \textit{in vitro} pull down experiment \cite{Leznicki2010}.
 \gls{srp} would deliver the \gls{ta} protein to the membrane bound \gls{sr} in association with a highly conserved Sec translocon.
 Further cross-linking experiments suggested Sec61 is also involved during \gls{ta} protein membrane insertion \cite{Abell2003}.
@@ -55,11 +54,12 @@ Redundancy of the Get/TRC40 pathway and \gls{srp} pathway may be explained in pa
 This pathway utilises the Snd protein pathway and was discovered in yeast \cite{Aviram2016}.
 Snd1 binds to the \gls{ta} protein after it exits the ribsosome and delivers it to the Snd2 and Snd3 membrane bound complex which integrate the \gls{ta} protein into the membrane.
 
-In the absence of the Get machinery, Hsp70 and Hsc40 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
+In the absence of the Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
 Chimeric synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the~\gls{tm} domains belonging to a protein of known spontaneously inserting domains. %citation
 Molecular dynamics simulations showed that direct insertion \gls{tmh}s thermodynamically mimics the energies of \gls{tmh}s integrated by the translocon \cite{Ulmschneider2014} so in theory no integration machinery is strictly necessary if the \gls{tmh} can ``correctly'' interact with the membrane interface.
 Altering the hydrophobicity, at least in the case of the spontaneously inserting PTP1b, also determinates the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
-
+Further, it was revealed that scrambling the \gls{tmh} sequence, but maintaining hydrophobicity, reduced the insertion potential of spontaneously inserting \gls{tmh}s \cite{Brambillasca2006}.
+This phenomenon cannot therefore be explained entirely by marginal hydrophobicity of the \gls{tmh}.
 
 Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targetted via the \gls{srp} pathway, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 and PTP1b can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40.
 Broader analysis has shown that hydrophobicity \cite{White1999} stratified by TM tendency score \cite{Zhao2009} can distinguish between the \gls{er} and mitochondrial localised \gls{ta} proteins \cite{Guna2018}.
@@ -74,7 +74,17 @@ Here, we also present evidence for a conserved polar strip along the spontaneous
 
 \subsection{Building a List of Tail-Anchors}
 Steps carried out by Kalbfleisch \textit{et al.} published in Traffic 2007 (8: 1687\-1694)~\cite{Kalbfleisch2007}, were recreated using up to date tools.
-Whilst their study focused on the human proteome, here we take into account the entire TrEMBL and SwissProt database and then stratify the datasets by the organism at the end of the pipeline.
+Whilst their study focused on the human proteome, here we take into account the entire TrEMBL and SwissProt database and then stratify the datasets by the organism at the end of the pipeline (Figure \ref{fig:dataset-overview}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/dataset-overview}
+		\captionof{figure}[The sources, methods, and filters applied to the sequences in the datasets.]{\textbf{The sources, methods, and filters applied to the sequences in the datasets.}
+		From top to bottom are the sources of the sequences and the filters and methods applied to each of the datasets of sequences. The database sybmol is used to denote when the dataset was used to capture results, and is available as supplementary material. For the dataset size and more information, see the methods section herein.
+}
+
+\label{fig:dataset-overview}
+\end{figure}
 
 \subsubsection{SwissProt Tail Anchored Dataset According to Filters}
 There were 557012 protein records downloaded from SwissProt via UniProt~\cite{TheUniProtConsortium2014} (Downloaded 24--04--2018).
@@ -104,16 +114,20 @@ All of these were within the length restrictions.
 In those record's annotations, no more than 1 appeared in any given species, so they were omitted from the SwissProt list sequence redundancy protocol to avoid representing a well-annotated record with a poorly annotated record.
 
 \subsubsection{UniProt Curated List}
-A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2460 UniProtKB IDs; 463 SwissProt results and 1997 TrEMBL results.
-Running these records through CD-HIT at 90\% redundancy yielded 309 SwissProt records and 808 TrEMBL records~\cite{Huang2010, Wu2011}.
-Of those, 987 proteins from 973 records (308 from SwissProt, and 665 from TrEMBL) had the \url{TRANSMEM} annotation indicating a bone fide~\gls{tmh}.
+A query for \url{locations:(location:"Single-pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2633 UniProtKB IDs; 463 SwissProt results and 2170 TrEMBL results.
+This manaully created list contained some \gls{ta} proteins that didn't fit the generally accepted definition of a \gls{ta} protein and were excluded from further analysis.
+101 exceeded the \gls{ta} length restrictions of 25 residues between the \gls{tmh} and the terminal residue.
+8 contained annotation for \url{SIGNAL}, indicating a \gls{sp}, inconsistent with the \gls{ta} protein definition.
+20 were multipass proteins.
+A full list of which records exceeded these limits and by how much is included in the supplementary files.
+Running these records through CD-HIT at 90\% redundancy yielded 956 clusters; 269 SwissProt records and 687 TrEMBL records~\cite{Huang2010, Wu2011}.
 No further filters were applied to this list.
-Proteomes represented by more than 20 records include \textit{A. thaliana} (60 records), Humans (38), Mouse (37), and \textit{S. cerevisiae} (31). % and 20 to Rat.
+Proteomes represented by more than 20 records include \textit{A. thaliana} (53 records), Humans (30), Mouse (30), and \textit{S. cerevisiae} (27). % and 20 to Rat.
 
-401 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}) 39 from SwissProt and 362 automatically assigned in TrEMBL.
-401 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]")}), 98 from SwissProt and 303 automatically annotated in TrEMBL.
+426 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}) 47 from SwissProt and 379 automatically assigned in TrEMBL.
+397 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]")}), 88 from SwissProt and 308 automatically annotated in TrEMBL.
 1 TrEMBL record (A0A1E5RT24) in the \gls{er} set contained an ``X'' residue in the C terminal flank and was omitted from the analyses.
-Two subcellular location datasets had no automatically ascribed records and only contained manually annotated SwissProt records; 37 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 82 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
+Two subcellular location datasets had no automatically ascribed records and only contained manually annotated SwissProt records; 31 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 83 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
 
 \subsubsection{Remapping Previous Dataset}
 189 of the 411 proteins from the previous study~\cite{Kalbfleisch2007} were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.
@@ -156,13 +170,16 @@ We rely on the Bahadur slope ($B$) as a measure of distance between two distribu
 B=\frac{|\ln(P~value)|}{N}
 \end{equation}
 
-\subsection{Modelling Cytochrome b5}
-The HHpred webserver was used to query homologues of and model templates for Cytochrome b5 (UniProt accession number P00167)~\cite{Soding 2005, Soding 2005a}.
+\subsection{Modelling Cytochrome b5 and PTP1b}
+The HHpred webserver was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding 2005, Soding 2005a}.
 Homologues were queried using three iterations of HHblitscd against the sequence database version uniprot20\_2016\_02 to generate the query Hidden Markov Model.
 The choice of templates was driven by the quality and coverage of the alignments and of the quality of the models that resulted.
-A multiple alignment was generated from PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
+For cytochrome b5, a multiple alignment was generated from PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
 Modeller was ran from within the HHPRED server to generate the homology model \cite{Eswar2007,Zimmerman2017,Webb2016}.
 The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite{Wiederstein2007}, Ramachandran plot on the RAMPAGE webserver (98\% allowed residues, including all \gls{tmh} residues) \cite{Lovell2003}.
+
+The coverage and alignment quality of PTP 1b was however, not as good quality.
+Instead of a global protein model only the \gls{tmd} was modelled using a homology model derived from a multiple sequence alignment of XXXX.
 %Verify3D \cite{Luthy1992}, and PROCHECK \cite{Laskowski1993}.
 
 %>P1;UKNP
@@ -198,6 +215,7 @@ The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite
 
 APBS as a PyMol plugin was used to map the electrostatic surface of the model \cite{Baker2001}.
 Consurf \cite{Ashkenazy2010} was used to map the conservation scores based on 5 iterations of PSI-BLAST \cite{Altschul1997} with an E-value cut-off of 0.0001.
+In the case of PTP 1b a sequence alignment was generated for the full sequence and mapped onto the \gls{tmd} structure.
 Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity scale \cite{Eisenberg1984} using a script accessed at \url{https://pymolwiki.org/index.php/Color_h}.
 
 
@@ -207,7 +225,7 @@ Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity sca
 Here, we use two sources for \gls{ta} protein datasets.
 One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
 Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
-This dataset contains 21119 \gls{tmh} residues (28791 including up to $\pm$5 flanking residues) from 987 UniProt protein records.
+This dataset contains 20528 \gls{tmh} residues (27950 including up to $\pm$5 flanking residues) from 956 UniProt protein records.
 
 % Venn diagram
 \begin{figure}[!ht]
@@ -267,7 +285,7 @@ All of the mean values lie between 2.3-2.6 when we only consider the \gls{tmh} a
 
 The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982}.for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
 %and the GlobProt scale~\cite{Linding2003}
-Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants and \textit{S. cerevisiae} (N=31) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
+Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=30 and Mouse N=30) to \textit{A. thaliana} (N=57) representing plants and \textit{S. cerevisiae} (N=27) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 }
 
@@ -308,7 +326,7 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 \centering
 \captionof{table}[Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.]
 {\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.}
-Here, we compare a mammalian set of \gls{ta} proteins (Human N=38 and Mouse N=37) to \textit{A. thaliana} (N=60) representing plants  and  \textit{S. cerevisiae} (N=31) representing yeasts.
+Here, we compare a mammalian set of \gls{ta} proteins (Human N=30 and Mouse N=30) to \textit{A. thaliana} (N=57) representing plants  and  \textit{S. cerevisiae} (N=27) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 %Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
@@ -317,16 +335,28 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 	\tiny
 	% Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
 
-    \begin{tabular}{clrrrrrrrrr}
-	          &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
-	          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-	    \multirow{3}[0]{*}{TMH } &  Kruskal-Wallis & 2.15  & 1.42E-1 & 1.45E-2 & 0.22  & 6.39E-1 & 4.22E-3 & 2.30  & 1.30E-1 & 2.25E-2 \\
-	          &  Kolmogorov-Smirnov & 0.17  & 2.86E-1 & 9.27E-3 & 0.15  & 6.32E-1 & 4.34E-3 & 0.24  & 1.69E-1 & 1.95E-2 \\
-	          &  Student's T-test & -1.71 & 8.96E-2 & 1.79E-2 & 0.04  & 9.70E-1 & 2.86E-4 & 1.47  & 1.46E-1 & 2.11E-2 \\
-	    \multirow{3}[0]{*}{TMH and flanks } &  Kruskal-Wallis & 2.17  & 1.41E-1 & 1.45E-2 & 0.14  & 7.13E-1 & 3.19E-3 & 0.59  & 4.41E-1 & 9.00E-3 \\
-	          &  Kolmogorov-Smirnov & 0.21  & 8.30E-2 & 1.84E-2 & 0.10  & 9.62E-1 & 3.62E-4 & 0.14  & 8.00E-1 & 2.45E-3 \\
-	          &  Student's T-test & -1.33 & 1.86E-1 & 1.25E-2 & -0.39 & 7.00E-1 & 3.36E-3 & 0.69  & 4.90E-1 & 7.83E-3 \\
-	    \end{tabular}%
+	\begin{tabular}{clrrrrrrrrr}
+				&       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
+				&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} \\
+	\multirow{3}[0]{*}{Hydrophobicity of TMH } &  Kruskal-Wallis & 0.71  & 4.01E-01 & 8.09E-03 & 0.03  & 8.72E-01 & 1.57E-03 & 0.57  & 4.48E-01 & 1.00E-02 \\
+				&  Kolmogorov-Smirnov & 0.13  & 6.93E-01 & 3.24E-03 & 0.13  & 9.11E-01 & 1.08E-03 & 0.20  & 4.16E-01 & 1.10E-02 \\
+				&  Student's T-test & -0.93 & 3.55E-01 & 9.15E-03 & -0.11 & 9.13E-01 & 1.04E-03 & 0.64  & 5.22E-01 & 8.12E-03 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 1.37  & 2.42E-01 & 1.26E-02 & 0.38  & 5.36E-01 & 7.17E-03 & 0.08  & 7.80E-01 & 3.11E-03 \\
+				&  Kolmogorov-Smirnov & 0.19  & 2.40E-01 & 1.26E-02 & 0.14  & 8.13E-01 & 2.38E-03 & 0.09  & 9.97E-01 & 3.21E-05 \\
+				&  Student's T-test & -1.17 & 2.45E-01 & 1.24E-02 & -0.79 & 4.35E-01 & 9.58E-03 & 0.20  & 8.43E-01 & 2.14E-03 \\
+	\multirow{3}[0]{*}{Disorder of TMH } &  Kruskal-Wallis & 0.19  & 6.66E-01 & 3.60E-03 & 0.04  & 8.47E-01 & 1.91E-03 & 0.05  & 8.19E-01 & 2.50E-03 \\
+				&  Kolmogorov-Smirnov & 0.14  & 6.04E-01 & 4.46E-03 & 0.09  & 9.99E-01 & 1.48E-05 & 0.15  & 8.09E-01 & 2.65E-03 \\
+				&  Student's T-test & 0.45  & 6.52E-01 & 3.78E-03 & 0.08  & 9.34E-01 & 7.88E-04 & -0.30 & 7.68E-01 & 3.30E-03 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 0.86  & 3.54E-01 & 9.18E-03 & 2.58  & 1.08E-01 & 2.55E-02 & 1.17  & 2.79E-01 & 1.60E-02 \\
+				&  Kolmogorov-Smirnov & 0.17  & 3.27E-01 & 9.89E-03 & 0.24  & 1.85E-01 & 1.94E-02 & 0.26  & 1.63E-01 & 2.27E-02 \\
+				&  Student's T-test & 1.22  & 2.26E-01 & 1.32E-02 & 1.72  & 8.91E-02 & 2.78E-02 & 0.96  & 3.41E-01 & 1.34E-02 \\
+	\multirow{3}[0]{*}{Sequence Entropy of TMH } &  Kruskal-Wallis & 0.03  & 8.63E-01 & 1.30E-03 & 0.44  & 5.06E-01 & 7.83E-03 & 0.15  & 6.99E-01 & 4.48E-03 \\
+				&  Kolmogorov-Smirnov & 0.23  & 8.93E-02 & 2.14E-02 & 0.22  & 3.08E-01 & 1.35E-02 & 0.18  & 5.32E-01 & 7.88E-03 \\
+				&  Student's T-test & -0.96 & 3.41E-01 & 9.52E-03 & -0.73 & 4.64E-01 & 8.81E-03 & -0.10 & 9.22E-01 & 1.02E-03 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 0.27  & 6.03E-01 & 4.48E-03 & 0.14  & 7.07E-01 & 3.99E-03 & 0.00  & 9.84E-01 & 2.05E-04 \\
+				&  Kolmogorov-Smirnov & 0.17  & 3.64E-01 & 8.94E-03 & 0.12  & 9.19E-01 & 9.67E-04 & 0.18  & 5.62E-01 & 7.19E-03 \\
+				&  Student's T-test & -0.53 & 5.99E-01 & 4.53E-03 & -0.45 & 6.54E-01 & 4.89E-03 & -0.04 & 9.72E-01 & 3.59E-04 \\
+	\end{tabular}%
 					\label{table:speciestableuniprotstats}
 	\end{table}%
 
@@ -372,7 +402,7 @@ Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 \captionof{table}[Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.]
 {\textbf{Statistical comparisons between TMH sequences from organelles in the UniProt Curated Dataset.}
 Here, we compare a organelle subsets from the UniProt curated dataset of \gls{ta} proteins.
-We compare \gls{er} (N=400) to Golgi (N=82), \gls{pm} (N=37), and the mitochondria (N=401).
+We compare \gls{er} (N=397) to Golgi (N=83), \gls{pm} (N=31), and the mitochondria (N=426).
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
@@ -382,32 +412,26 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 	\tiny
 
 	\begin{tabular}{clrrrrrrrrr}
-							&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{3}{c}{ER and mitochondria} \\
-							&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
-	\midrule
-	\multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 15.84 & 6.89E-5 & 1.93E-2 & 32.82 & 1.01E-8 & 4.17E-2 & 344.94 & 5.36E-77 & 2.15E-1 \\
-							&  KS & 0.30  & 2.79E-6 & 2.58E-2 & 0.54  & 2.04E-9 & 4.54E-2 & 0.64  & 3.71E-74 & 2.07E-1 \\
-							&  T-test & -5.45 & 7.91E-8 & 3.30E-2 & -8.64 & 1.02E-16 & 8.35E-2 & 21.65 & 1.90E-82 & 2.31E-1 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 0.95  & 3.30E-1 & 2.24E-3 & 15.29 & 9.22E-5 & 2.11E-2 & 463.33 & 9.05E-103 & 2.88E-1 \\
-							&  KS & 0.17  & 1.79E-2 & 8.11E-3 & 0.47  & 3.90E-7 & 3.35E-2 & 0.80  & 1.03E-116 & 3.28E-1 \\
-							&  T-test & 0.52  & 6.02E-1 & 1.02E-3 & -4.72 & 3.24E-6 & 2.87E-2 & 32.76 & 1.02E-150 & 4.24E-1 \\
-	\midrule
-	\multirow{3}[0]{*}{TMH Disorder} &  KW & 79.40 & 5.08E-19 & 8.49E-2 & 24.33 & 8.12E-7 & 3.18E-2 & 60.00 & 9.46E-15 & 3.96E-2 \\
-							&  KS & 0.48  & 5.56E-16 & 7.08E-2 & 0.49  & 8.84E-8 & 3.68E-2 & 0.26  & 3.78E-12 & 3.23E-2 \\
-							&  T-test & 10.62 & 7.27E-24 & 1.07E-1 & 6.03  & 3.43E-9 & 4.42E-2 & -7.98 & 4.81E-15 & 4.05E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 74.45 & 6.22E-18 & 7.99E-2 & 13.54 & 2.33E-4 & 1.90E-2 & 33.76 & 6.23E-9 & 2.32E-2 \\
-							&  KS & 0.46  & 1.58E-14 & 6.41E-2 & 0.37  & 1.42E-4 & 2.01E-2 & 0.22  & 3.02E-9 & 2.41E-2 \\
-							&  T-test & 9.93  & 2.52E-21 & 9.56E-2 & 3.78  & 1.78E-4 & 1.96E-2 & -5.96 & 3.77E-9 & 2.38E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{TMH entropy} &  KW & 1.33  & 2.49E-1 & 2.80E-3 & 31.76 & 1.75E-8 & 4.05E-2 & 22.64 & 1.95E-6 & 1.61E-2 \\
-							&  KS & 0.20  & 3.86E-3 & 1.12E-2 & 0.42  & 6.23E-6 & 2.72E-2 & 0.18  & 1.46E-6 & 1.65E-2 \\
-							&  T-test & 1.97  & 4.97E-2 & 6.05E-3 & 7.37  & 8.47E-13 & 6.30E-2 & -4.24 & 2.54E-5 & 1.30E-2 \\
-	\midrule
-	\multirow{3}[0]{*}{... including flanks} &  KW & 0.16  & 6.93E-1 & 7.39E-4 & 27.12 & 1.91E-7 & 3.51E-2 & 42.77 & 6.15E-11 & 2.88E-2 \\
-							&  KS & 0.16  & 3.15E-2 & 6.97E-3 & 0.46  & 5.92E-7 & 3.25E-2 & 0.24  & 1.20E-10 & 2.80E-2 \\
-							&  T-test & 0.10  & 9.21E-1 & 1.66E-4 & 5.55  & 4.97E-8 & 3.81E-2 & -6.14 & 1.26E-9 & 2.51E-2 \\
+				&       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{3}{c}{ER and mito} \\
+				&       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{P} & \multicolumn{1}{l}{B} \\
+	\multirow{3}[0]{*}{Hydrophobicity of TMH } &  Kruskal-Wallis & 21.83 & 2.98E-06 & 2.66E-02 & 28.53 & 9.21E-08 & 3.80E-02 & 377.02 & 5.54E-84 & 2.34E-01 \\
+				&  Kolmogorov-Smirnov & 0.34  & 1.61E-07 & 3.27E-02 & 0.57  & 5.32E-09 & 4.47E-02 & 0.67  & 4.22E-82 & 2.28E-01 \\
+				&  Student's T-test & -6.45 & 2.72E-10 & 4.61E-02 & -8.86 & 2.30E-17 & 8.99E-02 & 23.53 & 6.58E-94 & 2.61E-01 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 0.21  & 6.48E-01 & 9.07E-04 & 17.53 & 2.83E-05 & 2.46E-02 & 490.46 & 1.13E-108 & 3.03E-01 \\
+				&  Kolmogorov-Smirnov & 0.19  & 1.10E-02 & 9.44E-03 & 0.50  & 4.69E-07 & 3.42E-02 & 0.82  & 5.58E-123 & 3.43E-01 \\
+				&  Student's T-test & 0.32  & 7.48E-01 & 6.07E-04 & -4.85 & 1.75E-06 & 3.11E-02 & 34.60 & 2.19E-162 & 4.53E-01 \\
+	\multirow{3}[0]{*}{Disorder of TMH } &  Kruskal-Wallis & 89.46 & 3.13E-21 & 9.88E-02 & 24.15 & 8.90E-07 & 3.27E-02 & 47.72 & 4.92E-12 & 3.17E-02 \\
+				&  Kolmogorov-Smirnov & 0.53  & 7.55E-18 & 8.25E-02 & 0.52  & 1.91E-07 & 3.63E-02 & 0.24  & 5.27E-11 & 2.88E-02 \\
+				&  Student's T-test & 11.50 & 3.70E-27 & 1.27E-01 & 6.13  & 2.01E-09 & 4.70E-02 & -6.86 & 1.37E-11 & 3.05E-02 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 81.78 & 1.52E-19 & 9.06E-02 & 11.46 & 7.09E-04 & 1.70E-02 & 27.71 & 1.41E-07 & 1.92E-02 \\
+				&  Kolmogorov-Smirnov & 0.51  & 1.22E-16 & 7.67E-02 & 0.37  & 4.26E-04 & 1.82E-02 & 0.21  & 4.71E-08 & 2.05E-02 \\
+				&  Student's T-test & 10.59 & 1.15E-23 & 1.10E-01 & 3.47  & 5.70E-04 & 1.75E-02 & -5.19 & 2.59E-07 & 1.85E-02 \\
+	\multirow{3}[0]{*}{Sequence Entropy of TMH } &  Kruskal-Wallis & 4.66  & 3.09E-02 & 7.28E-03 & 27.54 & 1.54E-07 & 3.68E-02 & 24.03 & 9.48E-07 & 1.69E-02 \\
+				&  Kolmogorov-Smirnov & 0.24  & 4.78E-04 & 1.60E-02 & 0.46  & 4.20E-06 & 2.91E-02 & 0.18  & 2.10E-06 & 1.59E-02 \\
+				&  Student's T-test & 3.22  & 1.37E-03 & 1.38E-02 & 6.42  & 3.71E-10 & 5.10E-02 & -4.55 & 6.28E-06 & 1.46E-02 \\
+	\multirow{3}[0]{*}{... and flanks} &  Kruskal-Wallis & 0.52  & 4.70E-01 & 1.58E-03 & 19.50 & 1.01E-05 & 2.70E-02 & 40.11 & 2.40E-10 & 2.70E-02 \\
+				&  Kolmogorov-Smirnov & 0.13  & 2.06E-01 & 3.31E-03 & 0.41  & 7.97E-05 & 2.22E-02 & 0.23  & 5.53E-10 & 2.60E-02 \\
+				&  Student's T-test & 1.08  & 2.82E-01 & 2.65E-03 & 4.47  & 1.00E-05 & 2.70E-02 & -5.84 & 7.51E-09 & 2.28E-02 \\
 	\end{tabular}%
 					\label{table:organellesuniprotstats}
 	\end{table}%
@@ -508,9 +532,9 @@ The electrostatic surface is proto-typical of a \gls{tmh} anchor with large ``po
 Once in the membrane, this may allow it to be an effective anchor despite such poor hydrophobicity since it satisfies electrostatic coupling to the membrane potential.
 
 Furthermore is the question of overcoming the unfavourable interaction most \gls{tmh}s would face when coming into contact with the highly polar membrane interface.
-We observe a highly conserved strip of relatively polar / non-hydrophobic residues on one side of the \gls{tmh} (N112, P116, A120, A124 Y127, R128) which would not be as repulsed by the interfacial environment \ref{fig:cytb5-biochemistry}.
+We observe a highly conserved strip of relatively polar / non-hydrophobic residues on one side of the \gls{tmh} (N112, P116, A120, A124 Y127, R128) which would not be as repulsed by the interfacial environment (Figure \ref{fig:cytb5-biochemistry}).
 Scrambling the \gls{tmh} sequence whilst maintaining the same hydrophobicity reduces the insertion potential \cite{Brambillasca2006}; there is more to it than hydrophobicity alone.
-It becomes apparent that the 3D arrangment of these relatively polar \gls{tmh} residues is not trivial and is probably the key to spontaneous insertion of \gls{tmh}s.
+It becomes apparent that the 3D arrangment of these relatively polar \gls{tmh} residues is conserved and is probably the key to spontaneous insertion of \gls{tmh}s.
 
 \begin{figure}[!ht]
 \centering
@@ -528,6 +552,26 @@ It becomes apparent that the 3D arrangment of these relatively polar \gls{tmh} r
 \label{fig:cytb5-biochemistry}
 \end{figure}
 
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/ptp1b-biochemistry}
+		\captionof{figure}[Structural biochemical analysis of a homology model of PTP 1b.]{\textbf{Structural biochemical analysis of a homology model of PTP 1b.}
+		(A) The secondary structure of the protein coloured from the N terminus in blue to the C terminus in red coloured through the rainbow according to the residue number.
+		(B) The hydrophobicity of the \gls{tmh} from white representing relatively polar residues to red showing relatively hydrophobic residues \cite{Eisenberg1984}.
+		(C) The electrostatic surface with a threshold of $\pm5$ KT/e calculated by APBS in PyMol \cite{Baker2001}.
+		Red patches are negatively charged whilst blue are positively charged.
+		(D)
+		Note the one hydrophobic face of the \gls{tmh}, and the opposing relatively polar face.
+		Another observable feature the ``positive inside'' \cite{VonHeijne1989, Andersson1992, Sharpe2010, Baeza-Delgado2013, Pogozheva2013} and ``negative outside'' features which are associated with anchorage \cite{Baker2017}.
+}
+
+\label{fig:ptp1b-biochemistry}
+\end{figure}
+
+
+
+
 \section{Discussion}
 
 We expect to see evolutionary adaptations of \gls{tmh} hydrophobicity to species specific membranes, even within eukaryotes~\cite{Baker2017, Sharpe2010}.
@@ -541,5 +585,3 @@ This is almost certainly aided by other factors and is part of a system with sev
 This could indeed be a cryptic functional similarity to the signal anchored proteins.
 Signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
 Interestingly, these proteins, along with some tail-anchored proteins, have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
-
-The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
