@@ -236,7 +236,7 @@ In the case of PTP 1b a sequence alignment was generated for the full sequence a
 Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity scale \cite{Eisenberg1984} using a script accessed at \url{https://pymolwiki.org/index.php/Color_h}.
 
 
-\section{Results}
+\section{Results And Discussion}
 
 \subsection{A Comparison Of Up-To-Date Tail-Anchored Protein Datasets}
 Here, we use two sources for \gls{ta} protein datasets.
@@ -383,7 +383,7 @@ In the UniProt manually curated dataset, the Kyte \& Doolittle hydrophobicity sc
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{TA_chapter/organelle-averages}
+\includegraphics[width=0.75\textwidth]{TA_chapter/organelle-averages}
 \captionof{figure}[Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
 {\textbf{Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
 
@@ -397,6 +397,43 @@ Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 \label{fig:average_organelle_factors_ta}
 \end{figure}
 
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/SwissProt-heatmaps}
+\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset}
+
+The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
+Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
+Flank lengths were restricted to $\pm$5 residues.
+The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
+The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
+The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
+The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
+These datasets are more thoroughly outlined in the methods section.
+}
+
+\label{fig:swissprot-heatmaps}
+\end{figure}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/UniProt-heatmaps}
+\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the UniProt manually curated dataset.}
+
+Similarly to figure \ref{fig:swissprot-heatmap}, the residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
+Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
+Flank lengths were restricted to $\pm$5 residues.
+The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
+The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
+The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
+The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
+These datasets are more thoroughly outlined in the methods section.
+}
+
+\label{fig:uniprot-heatmaps}
+\end{figure}
 
 
 
@@ -498,9 +535,38 @@ No significance was observed in any consideration of the information entropy, bu
 Whilst we expect to see hydrophobic adaptations of \gls{tmh} to the membrane environment at both a species and organelle level, we only observe such differences at the organelle level.
 % Are the organelle membrane more compositionally different than species?
 
-ADD HEATMAPS HERE
-
 \subsection{More annotation is required to identify chaperone-specific factors.}
+
+\gls{ta} known to interact with certain chaperones were acquired by filtering the interactor partner IDs for chaperones from BioGrid through the redundant versions of these UniProt manually curated lists and Swissprot automatically generated lists.
+
+Hsp40 and Hsc70 returned 0 hits, indicating a lack of annotation regarding \gls{ta} proteins with these chaperons probably due to the relatively polar, and non-trivially predictable, \gls{tmh}s of \gls{ta} proteins that these chaperones interact with.
+
+Snd1 has 15 records that were in our \gls{ta} lists.
+The average Kyte \& Doolittle hydrophobicity of these records was 2.60 in the \gls{tmh} itself and 1.58 including $\pm$ 5 flanking residues.
+Sgt2, with 14 records, had a \gls{tmh} hydrophobicity of 2.47 and 1.51 including the flanks.
+5 records were captured for SGTA with a \gls{tmh} hydrophobicity of 2.27 and 1.19 including the flanks.
+TRC40 had the highest \gls{tmh} hydrophicity of 2.77 and 1.82 including flanks.
+However, TRC40 also only had 7 records.
+Get3 had 22 \gls{ta} interactor records with an average \gls{tmh} hydrophobicity of 2.36 and 1.48 including the flanks.
+
+At the current time of investigation, these sample sizes are not statistically viable for analysis.
+Whilst it appears TRC40 interactors have notably hydrophobic \gls{tmh}s, TRC40s yeast homologue Get3 has interactors with much more polar \gls{tmh}s.
+So although these average values differ and overlap, we tried to identify clearer patterns from the \gls{tmh} hydrophobic profiles (Figure \ref{fig:interaction-profile}).
+Similarly, whilst a clear dip in hydrophobicity at position +5 in Get3 from ~2-3 across the rest of the \gls{tmh} core to 0.32, there is no such spike for TRC40 meaning this is probably not of any functional importance, but rather an artefact of overrepresented proteins in the Get3 dataset.
+In order to remove redundant proteins and investigate this further, more records with greater levels of accurate annotation need to be available to both BioGrid and UniProt.
+However, this method demonstrates a potential way that this chaperone-interaction problem can be investigated to verify that indeed hydrophicity plays deterministic role in chaperone selection.
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/interaction-profile}
+\captionof{figure}[The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.]
+{\textbf{The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.}
+}
+
+\label{fig:interaction-profile}
+\end{figure}
+
 
 \subsection{Spontaneous Insertion May Be Achieved by Polar Strips in the TMH of Tail Anchored Proteins}
 
@@ -548,7 +614,7 @@ It becomes apparent that the 3D arrangment of these relatively polar \gls{tmh} r
 \label{fig:ptp1b-biochemistry}
 \end{figure}
 
-\section{Discussion}
+\section{Summary}
 
 \subsection{Adaptations and targetting factors of TMHs in tail-anchored proteins.}
 
