@@ -6,8 +6,8 @@
 \section{Introduction}
 
 \gls{ta} proteins are defined by their single carboxy-terminal~\gls{tms} with a cytosolic facing amino-terminus and are a topologically distinct class of intracellular proteins.
-~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation \cite{Osborne2005} and apoptosis \cite{Hockenbery1990}.
-Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins \cite{Ungar2003}, which are contain typically hydrophobic \gls{tmh}s \cite{Kalbfleisch2007}.
+~\gls{ta} proteins are involved in a range of key cellular functions including protein translocation proteins \cite{Osborne2005} such as Sec61$\beta$ and Sec61$\gamma$ as well as the Bcl-2 apoptotic protein family  \cite{Hockenbery1990}.
+Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion proteins called~\gls{snare} proteins \cite{Ungar2003}, which	 contain typically hydrophobic \gls{tmh}s \cite{Kalbfleisch2007}.
 The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery and can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
 The \gls{ta} protein's \gls{tmh} is unusual in that it is both the anchor and the targetting factor for the \gls{er} \cite{Kutay1993}.
@@ -15,7 +15,7 @@ Furthermore, the hydrophobicity appears to be a determinate factor in the precis
 %Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
 
 
-\begin{figure}[!ht]
+\begin{sidewaysfigure}
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/biogenesis-overview}
 		\captionof{figure}[An overview of the biogenesis of tail anchored proteins.]{\textbf{An overview of the biogenesis of tail anchored proteins.}
@@ -23,14 +23,14 @@ Furthermore, the hydrophobicity appears to be a determinate factor in the precis
 		(2) In yeast a novel mechanism was identified in which Snd1 binds to the folded \gls{ta} protein and delivers it to the membrane bound Snd2 and Snd3 complex.
 		(3) The intensively studied Get (yeast) or TRC40 (mammalian) pathway can target either for membrane integration or degradation of the \gls{ta} protein.
 		(4) A handful of \gls{ta} proteins with relatively polar \gls{tmh} regions have been observed spontaneously integrating into the membrane using Hsp40 and Hsc70 as chaperones.
-		Adapted from Johnson \textit{et al.,} 2013 and Guna \textit{et al.,} 2018.
+		This system may be employed for mitochondrial localisation.
+		(5) Peroxisomal proteins with an abundance of charge in the tail region are chaperoned by Pex19 into association with the membrane bound Pex3.
 }
 
 \label{fig:biogenesis-overview}
-\end{figure}
+\end{sidewaysfigure}
 
 \gls{ta} proteins have several pathways for biogenesis in the~\gls{er} membrane.
-These mechanisms include the Hsp40/Hsc70 chaperone system~\cite{Rabu2008}, the intensly studied TRC40/Get3 ATP dependent pathway ~\cite{Johnson2013, Chartron2012, Wang2014}, as well as some evidence supporting the use of the co-translational machinery.
 \gls{ta} proteins were originally thought to be inserted into the membrane via different machinery than the co-translational machinery, but unexpectedly \gls{srp} was found to be a factor for post-translational targetting confirmed by both cross linking studies \cite{Abell2004} and an \textit{in vitro} pull down experiment \cite{Leznicki2010}.
 \gls{srp} would deliver the \gls{ta} protein to the membrane bound \gls{sr} in association with a highly conserved Sec translocon.
 Further cross-linking experiments suggested Sec61 is also involved during \gls{ta} protein membrane insertion \cite{Abell2003}.
@@ -55,11 +55,14 @@ This pathway utilises the Snd protein pathway and was discovered in yeast \cite{
 Snd1 binds to the \gls{ta} protein after it exits the ribsosome and delivers it to the Snd2 and Snd3 membrane bound complex which integrate the \gls{ta} protein into the membrane.
 
 In the absence of the Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
+In biological systems this is possibly used for mitochondrial delivery \cite{Kemper 2008}.
 Chimeric synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of spontaneous insertion if the tail anchor domain is replaced by the~\gls{tm} domains belonging to a protein of known spontaneously inserting domains. %citation
 Molecular dynamics simulations showed that direct insertion \gls{tmh}s thermodynamically mimics the energies of \gls{tmh}s integrated by the translocon \cite{Ulmschneider2014} so in theory no integration machinery is strictly necessary if the \gls{tmh} can ``correctly'' interact with the membrane interface.
 Altering the hydrophobicity, at least in the case of the spontaneously inserting PTP1b, also determinates the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
 Further, it was revealed that scrambling the \gls{tmh} sequence, but maintaining hydrophobicity, reduced the insertion potential of spontaneously inserting \gls{tmh}s \cite{Brambillasca2006}.
 This phenomenon cannot therefore be explained entirely by marginal hydrophobicity of the \gls{tmh}.
+
+The few peroxisomal \gls{ta} proteins first associate with Pex19 which forms a complex with the membrane anchored Pex3 protein from which the \gls{ta} protein is integrated into the membrane \cite{Chen2014, Yagita2013, Costello2017}.
 
 Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targetted via the \gls{srp} pathway, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 and PTP1b can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40.
 Broader analysis has shown that hydrophobicity \cite{White1999} stratified by TM tendency score \cite{Zhao2009} can distinguish between the \gls{er} and mitochondrial localised \gls{ta} proteins \cite{Guna2018}.
@@ -67,8 +70,6 @@ However, the trememndous diversity and known biogenesis redundancy of these prot
 
 By regenerating a list of likely \gls{tmh}s \cite{Kalbfleisch2007} and using a manually curated list of \gls{ta} proteins \cite{TheUniProtConsortium2014}, this investigation aims to find relationships between biochemical factors and a disposition to a certain insertion mechanism and terminal localisations.
 Here, we also present evidence for a conserved polar strip along the spontaneously inserting \gls{ta} protein \gls{tmh}s, which may be the key to the initial interaction of these \gls{tmh}s with the membrane interface.
-
-
 
 \section{Methods}
 
@@ -102,6 +103,8 @@ From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were
 When counting proteomes with greater than 20 records, 49 belonged to the \textit{A. thaliana} proteome, 48 to Mouse, 46 to the human proteome, 24 to \textit{S.cerevisiae}. %19 from RAT!
 
 65 were annotated under the Mitochondrion location (query \url{locations:(location:"Mitochondrion [SL-0173]")}), 157 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, 82 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}), and 98 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]"}).
+Only 16 records were found for the peroxisome (query \url{locations:(location:"Endoplasmic reticulum [SL-0204]"}) which is not high enough a sample size for accurate statistical analysis.
+
 
 \subsubsection{TrEMBL Tail Anchored Dataset According to Filters}
 111425234 records were stored in the TrEMBL database at time of download (Downloaded 25--04--2018).
@@ -128,29 +131,37 @@ Proteomes represented by more than 20 records include \textit{A. thaliana} (53 r
 397 in the \gls{er} (query \url{locations:(location:"Endoplasmic reticulum [SL-0095]")}), 88 from SwissProt and 308 automatically annotated in TrEMBL.
 1 TrEMBL record (A0A1E5RT24) in the \gls{er} set contained an ``X'' residue in the C terminal flank and was omitted from the analyses.
 Two subcellular location datasets had no automatically ascribed records and only contained manually annotated SwissProt records; 31 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 83 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
+There were only 8 \gls{ta} proteins located in the peroxisome (\url{locations:(location:"Golgi apparatus [SL-0204]")}), making them an unsuitable dataset for statistcal analysis.
 
 \subsubsection{Remapping Previous Dataset}
 189 of the 411 proteins from the previous study~\cite{Kalbfleisch2007} were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.
 
 \subsubsection{Tail Anchor Protein Chaperone Interactors}
-BioGrid interactors for the chaperones were downloaded.
 
 These interactor lists were filtered through the SwissProt automatically filtered and the UniProt curated \gls{ta} protein datasets.
-There were 91 interaction pairs for Hsp40 which mapped to 206 UniProt records.
-Hsc70 had 534 interaction pairs 61 of which were mapped to 91 UniProt records.
+There were 91 interaction pairs for Hsp40 (Biogrid ID 119699) which mapped to 206 UniProt records.
+Hsc70 (Biogrid ID 109544) had 534 interaction pairs 61 of which were mapped to 91 UniProt records.
 Hsp40 and Hsc70 both returned 0 record hits after filtering the UniProt records ids through the UniProt manually curated list and the automatically generated SwissProt list both before redundancy removal.
 
-Snd1 had 237 interaction pairs which mapped to 239 records.
+Snd1 (Biogrid ID 32240) had 237 interaction pairs which mapped to 239 records.
 Snd1 returned 15 hits when filtering it through the \gls{ta} datasets.
 
-SGT2 had 260 BioGrid interactor ids which mapped to 264 UniProt records.
-SGTA had 155 interactor ids from BioGrid, 153 of which were mapped to 274 records.
+SGT2 (BioGrid ID 34410) had 260 BioGrid interactor ids which mapped to 264 UniProt records.
+SGTA (BioGrid ID 112347) had 155 interactor ids from BioGrid, 153 of which were mapped to 274 records.
 SGT2 and SGTA returned 14 and 5 hits respectively.
 
-50 BioGrid ids from TRC40 interaction pairs were mapped to 90 UniProt records.
-Get3 had 456 Biogrid interactor ids, which mapped to 465 UniProt records.
+50 BioGrid ids from TRC40 (Biogrid ID 106931) interaction pairs were mapped to 90 UniProt records.
+Get3 (BioGrid ID 31962) had 456 Biogrid interactor ids, which mapped to 465 UniProt records.
 After filtering those records throught the \gls{ta} anchor datasets TRC40 and Get3 returned 7 and 22 hits respectively.
 
+In yeast, Pex19 (BioGrid ID 31994) contained 466 interactor pairs which mapped to 384 uniprot IDs.
+The human Pex19 (BioGrid ID 111782) contained 230 interaction pairs which successfully mapped to 218 UniProt records.
+When the \gls{ta} list filters were applied, 2 human and 7 yeast records were found.
+
+For SRP54, ideally the plant version of the protein was required, for which there is more precedent for post-translational protein interaction and biogenesis into the chloroplasts (\cite{Abell2004}), however of the 3 plant SRPs available on Biogrid, between them only 10 interactor pairs were available, none of which were common with our \gls{ta} lists.
+The human SRP54 (Biogrid ID 112607) had 37 interactors which mapped to 85 Uniprot IDs, but again, none of which were in our \gls{ta} lists.
+On the other hand, the yeast SRP54 (BioGrid ID 36258) had 270 interactors which mapped to 273 UniProt records.
+4 of those were found in our \gls{ta} lists.
 
 \subsection{Calculating Hydrophobicity}
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half windows were permitted.
@@ -184,6 +195,16 @@ We rely on the Bahadur slope ($B$) as a measure of distance between two distribu
 \begin{equation} \label{eq:bahadur2}
 B=\frac{|\ln(P~value)|}{N}
 \end{equation}
+
+In the heatmaps (Figure \ref{fig:uniprot-heatmap}, Figure \ref{fig:uniprot-heatmap}), the relative percentage normalisation was used rather than a fraction of the absolute value.
+This aims to answer the question of ``if we have a certain amino acid, which position is it likely to be in?'' and are able to sensitively identify clusters of skewed preference \cite{Baker2017}.
+
+\begin{equation} \label{eq:independent_normalisation2}
+		q_{i,r}=\frac{{100}\cdot{a_{i,r}}}{a_i}
+\end{equation}
+
+$a_i$ is the total abundance of residues of a specific amino acid type ($i$) of an aligned set of~\gls{tmh}-containing segments.
+Peaks in $q_{i,r}$ as function of r reveal the preferred positions of residues of type $i$.
 
 \subsection{Modelling Cytochrome b5 and PTP1b}
 The HHpred webserver was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding 2005, Soding 2005a}.
@@ -245,9 +266,9 @@ Another dataset contains the UniProt curated set of Type IV membrane proteins ag
 This dataset contains 20528 \gls{tmh} residues (27950 including up to $\pm$5 flanking residues) from 956 UniProt protein records.
 
 % Venn diagram
-\begin{figure}[!ht]
+\begin{figure}
 \centering
-\includegraphics[width=0.5\textwidth]{TA_chapter/database-overlap}
+\includegraphics[width=1\textwidth]{TA_chapter/database-overlap}
 		\captionof{figure}[A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.]{\textbf{A Venn diagram showing tail anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.}
 The number of ids present in redundant versions of
 i) the supplementary materials table of a previous study predicting the complete set of human tail anchored proteins denote by S1~\cite{Kalbfleisch2007},
@@ -299,7 +320,6 @@ All of the mean values lie between 2.3-2.6 when we only consider the \gls{tmh} a
 {\textbf{Average values of species datasets from UniProt manually curated set and SwissProt automatically filtered dataset.}
 
 The average hydrophobicity values from the Kyte \& Doolittle scale~\cite{Kyte1982}.for both the \gls{tmh} and the \gls{tmh}$\pm$5 residues.
-%and the GlobProt scale~\cite{Linding2003}
 Values are shown for both the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated set we compare the mammalian set of \gls{ta} proteins (Human N=30 and Mouse N=30) to \textit{A. thaliana} (N=57) representing plants and \textit{S. cerevisiae} (N=27) representing yeasts. For the SwissProt filtered set we compare the mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 }
@@ -316,7 +336,6 @@ There are also no consistent trends among the absolute Bahadur slopes; no datase
 {\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the SwissProt Filtered Dataset.}
 Here, we compare a mammalian set of \gls{ta} proteins (Human N=46 and Mouse N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-% Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 $P$ is the P-value of that statistical score.
 $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
@@ -343,7 +362,6 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 {\textbf{Hydrophobicity statistical comparisons between mouse and human, yeast, and plants in the UniProt Curated Dataset.}
 Here, we compare a mammalian set of \gls{ta} proteins (Human N=30 and Mouse N=30) to \textit{A. thaliana} (N=53) representing plants  and  \textit{S. cerevisiae} (N=27) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-%Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 $P$ is the P-value of that statistical score.
 $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
@@ -377,11 +395,11 @@ Furthermore the \gls{pm} contains densly packed sphingolipids and sterols~\cite{
 %Need a sentence on the mitochondrial membrane
 
 %Need mitochondria reference, and numbers for the UniER etc.
-These hydrophobic differences have already been observed in the mitochondria localised \gls{ta} protein \gls{tmh}.
+These hydrophobic differences have already been observed in the mitochondria localised \gls{ta} protein \gls{tmh} \cite{Borgese2003}.
 Here we consider the \gls{ta} proteins at certain locations within the cell ignoring species, and we see clear differences in the biochemistry of the \gls{tmh}.
 In the UniProt manually curated dataset, the Kyte \& Doolittle hydrophobicity scores rage from 1.7 in mitochondria to 2.7 in the \gls{pm} (Figure \ref{fig:average_organelle_factors_ta}A).
 
-\begin{figure}[!ht]
+\begin{figure}
 \centering
 \includegraphics[width=0.75\textwidth]{TA_chapter/organelle-averages}
 \captionof{figure}[Average sequence-based biochemical values of organelle datasets from UniProt manually curated set and SwissProt automatically filtered dataset.]
@@ -397,43 +415,9 @@ Error bars are shown at $\pm 1 \sigma$ from the mean of the respective dataset.
 \label{fig:average_organelle_factors_ta}
 \end{figure}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{TA_chapter/SwissProt-heatmaps}
-\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
-{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset}
 
-The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
-Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
-Flank lengths were restricted to $\pm$5 residues.
-The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
-The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
-The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
-The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
-These datasets are more thoroughly outlined in the methods section.
-}
 
-\label{fig:swissprot-heatmaps}
-\end{figure}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{TA_chapter/UniProt-heatmaps}
-\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
-{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the UniProt manually curated dataset.}
-
-Similarly to figure \ref{fig:swissprot-heatmap}, the residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
-Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
-Flank lengths were restricted to $\pm$5 residues.
-The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
-The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
-The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
-The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
-These datasets are more thoroughly outlined in the methods section.
-}
-
-\label{fig:uniprot-heatmaps}
-\end{figure}
 
 
 
@@ -469,9 +453,68 @@ $B$ refers to the Bahadur slope, an interpretation of the P-value that accounts 
 					\label{table:organellesuniprotstats}
 	\end{table}%
 
-In the UniProt curated list, there are clear hydrophobic differences between all the \gls{tmh} datasets excluding flanks ($P<2.98E-6$) which as a trend becomes less clear when considering the \gls{tmh}$\pm$5 flanking residues except for mitochondria which increases in significance when considering the flanks also (Table~\ref{table:organellesuniprotstats}).
+In the UniProt curated list, there are clear hydrophobic differences between all the organelle \gls{tmh} datasets excluding flanks ($P<2.98E-6$) which as a trend becomes less clear when considering the \gls{tmh}$\pm$5 flanking residues except for mitochondria which increases in significance when considering the flanks also (Table~\ref{table:organellesuniprotstats}).
 The \gls{er} and mitochondrial tests are very significant ($P<4.22E-82$).
 Consistently the Bahadur slope is at least an order of magnitude greater in the \gls{er} and mitochondrial comparison than for the other considerations, so these differences cannot be accounted for by the larger sample size.
+This gap in hydrophobicity appears to be due to a trend of the \gls{er}, \gls{pm}, and Golgi using isoleucine, valine, and leucine as their most common \gls{tmh} residues, whereas in the case mitochondrial located \gls{ta} proteins, the most common residue type is alanine in the UniProt manually curated dataset (16.3\% of total residues) followed by valine (12\% total residues)(Figure \ref{fig:uniprot-heatmap}).
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/UniProt-heatmaps}
+\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the UniProt manually curated dataset.}
+
+The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
+Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
+Flank lengths were restricted to $\pm$5 residues.
+The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
+The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
+The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
+The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
+These datasets are more thoroughly outlined in the methods section.
+}
+
+\label{fig:uniprot-heatmap}
+\end{figure}
+
+Similarly, alanine is the second most common residue in mitochondrial located \gls{ta} proteins from the Swissprot automatically generated dataset at 11.9\% of the total residues after leucine which is 13.4\% of the total residues(Figure \ref{fig:swissprot-heatmap}).
+
+Analysis from 16 \gls{ta} proteins with known subcellular locations showed that both the C-terminal tail charge and hydrophobicity are determinates of the terminal desitantion to the \gls{er}, mitochondria, and the peroxisome intra-cellular sub-cellular locations \cite{Costello2017}.
+They found that less hydrophobicity and more charge in the ``tail'' determined the \gls{ta} protein for the mitochondria rather than the \gls{er}.
+This corroborates what we see in terms of hydrophobicity (Figure \ref{fig:average_organelle_factors_ta}A).
+When we consider charge difference between organelles on larger datasets, we see trends that reinforce this idea, however rather than net charge, we see charge distribution along the \gls{tmh} and the neighbouring flanks.
+In the Swissprot automatically filtered dataset, in the \gls{er} 9.4\% of the residues are positively charged, and 2.5\% are negatively charged.
+Most of the positively charged residues cluster following the ``positive-inside'' rule between positions -15 and -10 for R and K, but so do the negatively charged residues D and E, effectively reducing this local charge by 2.5\%.
+In mitochondria, we find that the proportion of charge is similar (10.4\% R and K, 3.3\% D and E) however the negative charge clusters on the N flank (-15 to -8) and the the positively charged residues cluster more strongly on the outside flank (positions 9 to 15) (Figure \ref{fig:swissprot-heatmap}).
+
+In the UniProt manually curated \gls{er} set, 6.6\% of residues are positively charged and 3.3\% of residues are negatively charged.
+K clusters strongly on the inside flank as expected, yet R clusters strongly between positions 7 to 15 and rather weakly at the inside flank (positions -15 to -10) (Figure \ref{fig:uniprot-heatmap}).
+Similarly to the Swissprot sets, D prefers the inside flank, but is tolerated in the outside flank.
+The more abundant E residues behave very unusually and cluster at positions 5-10.
+Generally, charged residues are supressed in the \gls{tmh} core \cite{Sharpe2010, Baeza-Delgado2013}, especially in anchoring \gls{tmh}s \cite{Baker2017}.
+It is unclear why this is observed, yet, altogether the 313 glutamic acid residues and 397 arginine residues that appear unusually deep in the \gls{tmh} core may be to an extent neutralising one another in the folded \gls{tmh} arrangement, but are ultimately not that abundant compared to the total number of residues in this organelle dataset (11351 total residues).
+In mitochondria the 1413 positively charged residues (11\% of the total residues in the mitochondrial dataset) were preferentially located at the outside flank and somewhat into the core (positions 6 to 15) than the expected ``inside'' flank (positions -15 to -5).
+The 221 negatively charged residues (1.7\%) unusually cluster at the inside.
+This results in a strong net positive-outside charge signal.
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{TA_chapter/SwissProt-heatmaps}
+\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset}
+
+Similarly to figure \ref{fig:uniprot-heatmap}, the residue position aligned to the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
+Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
+Flank lengths were restricted to $\pm$5 residues.
+The edge residues from proteins with flank lengths and \gls{tmh} lengths that exceeded the plotted 31 residues were still included in the normalisation calculations despite not being plotted.
+The colour scale represents the relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th percentile value of the entire heatmap, and dark red as the highest percentage on the heatmap.
+The panels are constructed from TA proteins derived from the Swissprot automatic method with redundancy removal applied detailed in the methods section.
+The datasets were further separated by subcellular locations: (a) the \gls{er}, (b) the Golgi, (c) the cell membrane, (d) the mitochondria.
+These datasets are more thoroughly outlined in the methods section.
+}
+
+\label{fig:swissprot-heatmap}
+\end{figure}
 
 Information entropy has been known to identify cryptic function in \gls{tmh}s when considered along with hydrophobicity \cite{Wong2011, Wong2012}.
 In terms of information entropy, there is a marked decrease in entropy in the \gls{pm} subset (mean entropy = 3.15 in the \gls{tmh}, 2.67 including $\pm$5 flanking residues) from the UniProt curated dataset compared to the other organelle datasets (entropy $>$ 3.29 and $>$ 2.85 including the flanks).
@@ -490,7 +533,6 @@ As a trend the information entropy mirrors the hydrophobicity albeit with less r
 	Here, we compare a organelle subsets from the SwissProt automatically filtered dataset of \gls{ta} proteins.
 	We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria referred to as ``mito'' (N=65).
 	The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
-	Disorder was calculated in the same way using the GlobProt scale \cite{Linding2003}.
 	The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
 	The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
 	$P$ is the P-value of that statistical score.
@@ -528,18 +570,22 @@ Similarly, in the SwissProt filtered dataset the mean \gls{tmh} hydrophobicity f
 In the SwissProt dataset, when we compare each subset of only the \gls{tmh} to the \gls{er} subset, we find significance between the \gls{er} and the Golgi ($P<1.98E-3$), and the \gls{er} and the mitochondria ($P<4.62E-3$), however the \gls{er} and \gls{pm} are more similar considering the Bahadur values are $<6.44E-4$, two orders of magnitude smaller that the other sets (Bahadur values $>3.3E-2$) (Table \ref{table:organellesswissstats}).
 When we take into account the flanks, the \gls{er} and \gls{pm} dataset can be distinguished ($P<2.50E-3$), however as a trend the other two comparisons, \gls{er} and Golgi becomes less significant, and \gls{er} and mitochondria become more significant.
 
-The linguistic information entropy of the \gls{tmh} string as well as the GlobProt disorder were also examined.
-Significance was found in disorder when comparing \gls{tmh} between \gls{er} and Golgi ($P<5.01E-4$) and the \gls{pm} ($P<2.87E-6$)(Table \ref{table:organellesswissstats}), but there was no observable difference between the \gls{er} and \gls{pm}.
+The information entropy of the \gls{tmh} string was also examined.
 No significance was observed in any consideration of the information entropy, but similarly to the UniProt subset, as a trend the entropy mirrors the hydrophobicity (Figure \ref{fig:average_organelle_factors_ta}).
 
-Whilst we expect to see hydrophobic adaptations of \gls{tmh} to the membrane environment at both a species and organelle level, we only observe such differences at the organelle level.
-% Are the organelle membrane more compositionally different than species?
+It has been known for some time that both the charge and the hydrophobic length of the \gls{ta} protein \gls{tmh} region determine subcellular targetting of the protein \cite{Borgese2003}.
+The C-terminal tail charge is particularly important for determing subcellular localisation, and can even override the hydrophobic signal if strong enough \cite{Costello2017}.
+Here we see that while hydrophobicity is statistically different between the subcellular membranes, there is overlap.
+Whilst there are differences in total average charge at the C-terminal flank, there are not absolute rules.
+
+Average biochemical features are evidently of significance, however here we see that the tandem in positively and negatively charged residues and the localisation of signals and features along the \gls{tmh} and flanks may be another nuance of the system and go some way to explaining how signals are maintained in local environments even when the average values are ambiguous.
+We also identify that alanine is a key reason behind the hydrophobic difference between subcellular organelles, with alanine being highly tolerated, if not favoured over other hydrophobic residues like leucine, in mitochondrial \gls{ta} proteins compared to \gls{er}, the Golgi, and the \gls{pm}.
 
 \subsection{More annotation is required to identify chaperone-specific factors.}
 
 \gls{ta} known to interact with certain chaperones were acquired by filtering the interactor partner IDs for chaperones from BioGrid through the redundant versions of these UniProt manually curated lists and Swissprot automatically generated lists.
 
-Hsp40 and Hsc70 returned 0 hits, indicating a lack of annotation regarding \gls{ta} proteins with these chaperons probably due to the relatively polar, and non-trivially predictable, \gls{tmh}s of \gls{ta} proteins that these chaperones interact with.
+Hsp40, Hsc70, SRP54 (both plant and human) returned 0 hits, indicating a lack of annotation regarding \gls{ta} proteins with these chaperons probably due to the relatively polar, and non-trivially predictable, \gls{tmh}s of \gls{ta} proteins that these chaperones interact with.
 
 Snd1 has 15 records that were in our \gls{ta} lists.
 The average Kyte \& Doolittle hydrophobicity of these records was 2.60 in the \gls{tmh} itself and 1.58 including $\pm$ 5 flanking residues.
@@ -548,25 +594,38 @@ Sgt2, with 14 records, had a \gls{tmh} hydrophobicity of 2.47 and 1.51 including
 TRC40 had the highest \gls{tmh} hydrophicity of 2.77 and 1.82 including flanks.
 However, TRC40 also only had 7 records.
 Get3 had 22 \gls{ta} interactor records with an average \gls{tmh} hydrophobicity of 2.36 and 1.48 including the flanks.
+The 2 records for human Pex19 had an average hydrophobicity of 1.33 for the \gls{tmh} and 0.70 including the flanking residues.
+The yeast Pex19 had an \gls{tmh} average hydrophobicity of 2.48 and 1.41 including the flanking residues.
+The 4 yeast SRP54 interactors had an average \gls{tmh} of 2.43 and 1.98 including the flanking residues.
 
 At the current time of investigation, these sample sizes are not statistically viable for analysis.
 Whilst it appears TRC40 interactors have notably hydrophobic \gls{tmh}s, TRC40s yeast homologue Get3 has interactors with much more polar \gls{tmh}s.
-So although these average values differ and overlap, we tried to identify clearer patterns from the \gls{tmh} hydrophobic profiles (Figure \ref{fig:interaction-profile}).
+So although these average values differ and overlap between various chaperone systems, we tried to identify clearer patterns from the \gls{tmh} hydrophobic profiles (Figure \ref{fig:interaction-profile}).
 Similarly, whilst a clear dip in hydrophobicity at position +5 in Get3 from ~2-3 across the rest of the \gls{tmh} core to 0.32, there is no such spike for TRC40 meaning this is probably not of any functional importance, but rather an artefact of overrepresented proteins in the Get3 dataset.
-In order to remove redundant proteins and investigate this further, more records with greater levels of accurate annotation need to be available to both BioGrid and UniProt.
-However, this method demonstrates a potential way that this chaperone-interaction problem can be investigated to verify that indeed hydrophicity plays deterministic role in chaperone selection.
+Snd1 also lies among these values, reinforcing Snd1 as a biological redundancy system \cite{Rabu2009, Johnson2013, Schuldiner2008}.
 
+As expected, the human Pex19 interactors are as a trend among the most polar throughout the \gls{tmh} core, however when we consider the yeast Pex19, this trend is less clear.
+
+It is also encouraging that at least at a handful of locations (-3, 3, 4 and 5) the SRP54 interactors have the most hydrophobic \gls{tmh} cores.
+
+In order to remove redundant proteins and investigate this further, more records with greater levels of accurate annotation need to be available to both BioGrid and UniProt.
+We also observe a great deal of overlap between the profiles, indicating that as a trend this is more complex than hydrophobicity alone, or at least polarity is not the absolute determinant of subcellular targetting.
+Hydrophobicity alone would have resulted in stark contrasts between chaperone interactor pairs, even with low sample sizes.
+
+However, this method demonstrates a potential way that this chaperone-interaction problem can be investigated to verify that indeed hydrophicity plays deterministic role in chaperone selection.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/interaction-profile}
 \captionof{figure}[The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.]
 {\textbf{The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.}
+On the horizontal axis is the position relative to the central TMH residue defined by UniProt.
+On the vertical axis is the Kyte \& Doolittle hydrophobicity windowed across 5 residues allowing for half windows.
+The chaperone interactors are color coded according to the key.
 }
 
 \label{fig:interaction-profile}
 \end{figure}
-
 
 \subsection{Spontaneous Insertion May Be Achieved by Polar Strips in the TMH of Tail Anchored Proteins}
 
