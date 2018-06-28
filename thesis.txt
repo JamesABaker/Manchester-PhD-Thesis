@@ -6412,7 +6412,7 @@ spontaneously inserting TMHs [168]. This phenomenon cannot, therefore, be explai
 entirely by the marginal hydrophobicity of the TMH.
 The few peroxisomal TA proteins first associate with Pex19 which forms a complex
 with the membrane-anchored Pex3 protein from which the TA protein is integrated
-into the membrane [Chen2014, Yagita2013, Costello2017].
+into the membrane [Yagita2013, 169, 170].
 Given a “choice”, it is speculated that hydrophobicity determines the integration
 pathway since Sec61β has a hydrophobic TMH and is targetted via the SRP pathway,
 whereas marginally hydrophobic TA proteins like cytochrome b5 and PTP1b can spontaneously insert in vitro and biologically only rely on Hsp70 and Hsc40. Broader analysis has shown that hydrophobicity [32] stratified by TM tendency score [Zhao2009]
@@ -6545,7 +6545,7 @@ the methods section herein.
 
 cytoplasmic. 615 of those had the TMH within 25 residues of the C terminal, the same
 threshold used by Kalbfleisch and their coworkers [139]. Running CD-Hit 4.5.3 on the
-WebMGA web-server [132, 169] at 90% identical sequence at 90% coverage thresholds
+WebMGA web-server [132, 171] at 90% identical sequence at 90% coverage thresholds
 
 90
 
@@ -6592,7 +6592,7 @@ the TMH and the terminal residue. 8 contained annotation for SIGNAL, indicating
 a SP, inconsistent with the TA protein definition. 20 were multipass proteins. A
 full list of which records exceeded these limits and by how much is included in the
 supplementary files. Running these records through CD-HIT at 90% redundancy
-yielded 956 clusters; 269 SwissProt records and 687 TrEMBL records [132, 169].
+yielded 956 clusters; 269 SwissProt records and 687 TrEMBL records [132, 171].
 No further filters were applied to this list. Proteomes represented by more than 20
 records include A. thaliana (53 records), Humans (30), Mouse (30), and S. cerevisiae
 (27).
@@ -6736,9 +6736,9 @@ and coverage of the alignments and of the quality of the models that resulted. F
 cytochrome b5, a multiple alignment was generated from PDB accession codes 2M33,
 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession
 codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the TMH. Modeller was run from
-within the HHPRED server to generate the homology model [Zimmerman2017, 170,
-171]. The model was confirmed to be of high quality using ProSA (Z-Score: -4.61)
-[172], Ramachandran plot on the RAMPAGE webserver (98% allowed residues, including all TMH residues) [173].
+within the HHPRED server to generate the homology model [Zimmerman2017, 172,
+173]. The model was confirmed to be of high quality using ProSA (Z-Score: -4.61)
+[174], Ramachandran plot on the RAMPAGE webserver (98% allowed residues, including all TMH residues) [175].
 The coverage and alignment quality of PTP 1b was, however, not as good quality.
 Although UniProt holds 145 associated PDB structures for PTP1b, these structures
 cover at least some part of the globular domains of the protein. There are no PDB
@@ -6751,8 +6751,8 @@ structures for the TM domain or the nearby flanking regions. Instead of a global
 protein model only the Trans-membrane Domain (TMD) was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH±6
 residues of PTP1b.
 APBS as a PyMol plugin was used to map the electrostatic surface of the model
-[174]. Consurf [175] was used to map the conservation scores based on 5 iterations of
-PSI-BLAST [176] with an E-value cut-off of 0.0001. In the case of PTP 1b, a sequence
+[176]. Consurf [177] was used to map the conservation scores based on 5 iterations of
+PSI-BLAST [178] with an E-value cut-off of 0.0001. In the case of PTP 1b, a sequence
 alignment was generated for the full sequence and mapped onto the TMD structure.
 Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity scale
 [39] using a script accessed at https://pymolwiki.org/index.php/Color_h.
@@ -6807,7 +6807,7 @@ in redundant versions of i) the supplementary materials table of a previous stud
 complete set of human tail-anchored proteins denote by S1 [139], ii) the SwissProt dataset filtered
 according to typical TA features limited to the human proteome [110], and iii) The UniProt curated
 list of TA proteins [110]. Note that to avoid losing IDs to redundancy reduction this diagram was
-generated without the use of CD-HIT [132, 169], which is applied in the later statistical analysis.
+generated without the use of CD-HIT [132, 171], which is applied in the later statistical analysis.
 
 3.4. RESULTS AND DISCUSSION
 
@@ -7110,7 +7110,7 @@ PM and lack of asymmetry in the ER [123, 124]. Sphingomyelin is not present in t
 ER but is present in the Golgi [126] and PM [127, 128]. Furthermore, the PM contains
 densely packed sphingolipids and sterols [129].
 These hydrophobic differences have already been observed in the mitochondria
-localised TA protein TMH [177]. Here we consider the TA proteins at certain locations
+localised TA protein TMH [179]. Here we consider the TA proteins at certain locations
 within the cell ignoring species, and we see clear differences in the biochemistry of the
 TMH. In the UniProt manually curated dataset, the Kyte & Doolittle hydrophobicity
 scores rage from 1.7 in mitochondria to 2.7 in the PM (Figure 3.5A).
@@ -7310,18 +7310,17 @@ Similarly, alanine is the second most common residue in mitochondrial located TA
 proteins from the Swissprot automatically generated dataset at 11.9% of the total
 residues after leucine which is 13.4% of the total residues(Figure 3.7).
 Analysis from 16 TA proteins with known subcellular locations showed that both
-the C-terminal tail charge and hydrophobicity are determinates of the terminal destination to the ER, mitochondria, and the peroxisome intra-cellular sub-cellular locations [Costello2017]. They found that less hydrophobicity and more charge in the
-“tail” determined the TA protein for the mitochondria rather than the ER. This corroborates what we see in terms of hydrophobicity (Figure 3.5A). When we consider
-charge difference between organelles on larger datasets, we see trends that reinforce
-this idea, however rather than net charge, we see charge distribution along the TMH
-and the neighbouring flanks. In the Swissprot automatically filtered dataset, in the
-ER 9.4% of the residues are positively charged, and 2.5% are negatively charged. Most
-of the positively charged residues cluster following the “positive-inside” rule between
-positions -15 and -10 for R and K, but so do the negatively charged residues D and
-E, effectively reducing this local charge by 2.5%. In mitochondria, we find that the
-proportion of charge is similar (10.4% R and K, 3.3% D and E) however the negatively
-charged residues cluster on the N flank (-15 to -8) and the positively charged residues
-cluster more strongly on the outside flank (positions 9 to 15) (Figure 3.7).
+the C-terminal tail charge and hydrophobicity are determinates of the terminal destination to the ER, mitochondria, and the peroxisome intra-cellular sub-cellular locations
+[170]. They found that less hydrophobicity and more charge in the “tail” determined
+the TA protein for the mitochondria rather than the ER. This corroborates what we
+see in terms of hydrophobicity (Figure 3.5A). When we consider charge difference between organelles on larger datasets, we see trends that reinforce this idea, however
+rather than net charge, we see charge distribution along the TMH and the neighbouring flanks. In the Swissprot automatically filtered dataset, in the ER 9.4% of the
+residues are positively charged, and 2.5% are negatively charged. Most of the positively charged residues cluster following the “positive-inside” rule between positions
+-15 and -10 for R and K, but so do the negatively charged residues D and E, effectively
+reducing this local charge by 2.5%. In mitochondria, we find that the proportion of
+charge is similar (10.4% R and K, 3.3% D and E) however the negatively charged
+residues cluster on the N flank (-15 to -8) and the positively charged residues cluster
+more strongly on the outside flank (positions 9 to 15) (Figure 3.7).
 In the UniProt manually curated ER set, 6.6% of residues are positively charged
 
 3.4. RESULTS AND DISCUSSION
@@ -7682,11 +7681,10 @@ The information entropy of the TMH string was also examined. No significance
 was observed in any consideration of the information entropy, but similarly to the
 UniProt subset, as a trend, the entropy mirrors the hydrophobicity (Figure 3.5).
 It has been known for some time that both the charge and the hydrophobic length
-of the TA protein TMH region determine subcellular targetting of the protein [177].
-The C-terminal tail charge is particularly important for determining subcellular localisation, and can even override the hydrophobic signal if strong enough [Costello2017].
-Here we see that while hydrophobicity is statistically different between the subcellular
-membranes, there is overlap. Whilst there are differences in total average charge at
-the C-terminal flank, there are not absolute rules.
+of the TA protein TMH region determine subcellular targetting of the protein [179].
+The C-terminal tail charge is particularly important for determining subcellular localisation, and can even override the hydrophobic signal if strong enough [170]. Here we
+see that while hydrophobicity is statistically different between the subcellular membranes, there is overlap. Whilst there are differences in total average charge at the
+C-terminal flank, there are not absolute rules.
 Average biochemical features are evidently of significance, however here we see that
 the tandem in positively and negatively charged residues and the localisation of signals
 
@@ -7872,9 +7870,9 @@ Figure 3.9: Structural biochemical analysis of a homology model of cytochrome b5
 The secondary structure of the protein coloured from the N terminus in blue to the C terminus in
 red coloured through the rainbow according to the residue number. (B) The hydrophobicity of the
 TMH from white representing relatively polar residues to red showing relatively hydrophobic residues
-[39]. (C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [174].
+[39]. (C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [176].
 Red patches are negatively charged whilst blue is positively charged. (D) The consurf scores on a
-scale of 1-9 (all residues had sufficient data) [175]. Purple represents the most conserved whilst blue
+scale of 1-9 (all residues had sufficient data) [177]. Purple represents the most conserved whilst blue
 is the least. Note the correlation between the highly and modestly conserved TMH residues and the
 relatively polar residues. Another observable feature is the very strong “positive inside” [6, 7, 10, 13,
 14] and “negative outside” features which are associated with anchorage [79].
@@ -7921,7 +7919,7 @@ Figure 3.10: Structural biochemical analysis of a homology model of PTP 1b. (A) 
 secondary structure of the protein coloured from the N terminus in blue to the C terminus in red
 coloured through the rainbow according to the residue number. (B) The hydrophobicity of the TMH
 from white representing relatively polar residues to red showing relatively hydrophobic residues [39].
-(C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [174]. Red
+(C) The electrostatic surface with a threshold of ±5 KT/e calculated by APBS in PyMol [176]. Red
 patches are negatively charged whilst blue is positively charged. Note the one hydrophobic face of
 the TMH and the opposing relatively polar face. Another observable feature the “positive inside” [6,
 7, 10, 13, 14] and “negative outside” features which are associated with anchorage [79].
@@ -7942,7 +7940,7 @@ This could indeed be a cryptic functional similarity to the signal-anchored prot
 Signal anchored proteins contain a single hydrophobic segment that serves as both a
 mitochondrial targeting signal and a membrane anchor. Interestingly, these proteins,
 along with some tail-anchored proteins, have been shown to be able to spontaneously
-insert into the membrane independently from the translocon [50, 165, 178].
+insert into the membrane independently from the translocon [50, 165, 180].
 
 3.5.2
 
@@ -8016,7 +8014,7 @@ gated (controlled vocabulary if no list available) distributions
 
 Discussion
 
-GPCRs have long be known to be overrepresented among genomes [179].
+GPCRs have long be known to be overrepresented among genomes [181].
 Seen across a variety of 7TM families with varying functions with datasets built
 from all membrane types (hence variety). Suggests a pressure for simpler TMHs to
 precede more complex ones, repeating every 3-4 TMHs. The universality points toward
@@ -8538,44 +8536,52 @@ M. & Kinkhabwala, A. Subcellular Partitioning of Protein Tyrosine Phosphatase
 Composition of Its Tail Anchor. PLOS ONE 10 (ed Chen, Y.) e0139429 (2015).
 168. Brambillasca, S., Yabal, M., Makarow, M. & Borgese, N. Unassisted translocation of large polypeptide domains across phospholipid bilayers. The Journal of
 cell biology 175, 767–77 (2006).
-169. Wu, S., Zhu, Z., Fu, L., Niu, B. & Li, W. WebMGA: A customizable web server
-for fast metagenomic sequence analysis. BMC Genomics 12, 444 (2011).
 
 BIBLIOGRAPHY
 
 133
 
-170. Eswar, N., Webb, B., Marti-Renom, M. A., Madhusudhan, M. S., Eramian, D.,
+169. Chen, Y., Pieuchot, L., Loh, R. A., Yang, J., Kari, T. M. A., Wong, J. Y. &
+Jedd, G. Hydrophobic handoff for direct delivery of peroxisome tail-anchored
+proteins. Nature Communications 5, 5790 (2014).
+170. Costello, J. L., Castro, I. G., Camões, F., Schrader, T. A., McNeall, D., Yang, J.,
+Giannopoulou, E.-A., Gomes, S., Pogenberg, V., Bonekamp, N. A., Ribeiro, D.,
+Wilmanns, M., Jedd, G., Islinger, M. & Schrader, M. Predicting the targeting of
+tail-anchored proteins to subcellular compartments in mammalian cells. Journal
+of cell science 130, 1675–1687 (2017).
+171. Wu, S., Zhu, Z., Fu, L., Niu, B. & Li, W. WebMGA: A customizable web server
+for fast metagenomic sequence analysis. BMC Genomics 12, 444 (2011).
+172. Eswar, N., Webb, B., Marti-Renom, M. A., Madhusudhan, M. S., Eramian, D.,
 Shen, M.-Y., Pieper, U. & Sali, A. Comparative Protein Structure Modeling Using MODELLER. Current Protocols in Protein Science 50, 2.9.1–2.9.31 (2001).
-171. Webb, B. & Sali, A. in Current Protocols in Protein Science 1, 2.9.1–2.9.37
+173. Webb, B. & Sali, A. in Current Protocols in Protein Science 1, 2.9.1–2.9.37
 (John Wiley & Sons, Inc., Hoboken, NJ, USA, 2016).
-172. Wiederstein, M. & Sippl, M. J. ProSA-web: Interactive web service for the recognition of errors in three-dimensional structures of proteins. Nucleic Acids Research 35, W407–W410 (2007).
-173. Lovell, S. C., Davis, I. W., Arendall, W. B., de Bakker, P. I. W., Word, J. M.,
+174. Wiederstein, M. & Sippl, M. J. ProSA-web: Interactive web service for the recognition of errors in three-dimensional structures of proteins. Nucleic Acids Research 35, W407–W410 (2007).
+175. Lovell, S. C., Davis, I. W., Arendall, W. B., de Bakker, P. I. W., Word, J. M.,
 Prisant, M. G., Richardson, J. S. & Richardson, D. C. Structure validation by
 Cα geometry: ,ψ and Cβ deviation. Proteins: Structure, Function, and Bioinformatics 50, 437–450 (2003).
-174. Baker, N. A., Sept, D, Joseph, S, Holst, M. J. & McCammon, J. A. Electrostatics
+176. Baker, N. A., Sept, D, Joseph, S, Holst, M. J. & McCammon, J. A. Electrostatics
 of nanosystems: application to microtubules and the ribosome. Proceedings of
 the National Academy of Sciences of the United States of America 98, 10037–41
 (2001).
-175. Ashkenazy, H., Erez, E., Martz, E., Pupko, T. & Ben-Tal, N. ConSurf 2010:
+177. Ashkenazy, H., Erez, E., Martz, E., Pupko, T. & Ben-Tal, N. ConSurf 2010:
 Calculating evolutionary conservation in sequence and structure of proteins and
 nucleic acids. Nucleic Acids Research 38, W529–W533 (2010).
-176. Ramsay, L., Macaulay, M., Degli Ivanissevich, S., MacLean, K., Cardle, L.,
-Fuller, J., Edwards, K. J., Tuvesson, S., Morgante, M., Massari, A., Maestri,
-E., Marmiroli, N., Sjakste, T., Ganal, M., Powell, W. & Waugh, R. A simple
-sequence repeat-based linkage map of Barley. Genetics 156, 1997–2005 (2000).
-177. Borgese, N., Colombo, S. & Pedrazzini, E. The tale of tail-anchored proteins:
-Coming from the cytosol and looking for a membrane. Journal of Cell Biology
-161, 1013–1019 (2003).
-178. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
-and saturable but does not strictly require ATP or molecular chaperones. The
-Biochemical journal 349, 611–621 (2000).
 
 134
 
 BIBLIOGRAPHY
 
-179. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
+178. Ramsay, L., Macaulay, M., Degli Ivanissevich, S., MacLean, K., Cardle, L.,
+Fuller, J., Edwards, K. J., Tuvesson, S., Morgante, M., Massari, A., Maestri,
+E., Marmiroli, N., Sjakste, T., Ganal, M., Powell, W. & Waugh, R. A simple
+sequence repeat-based linkage map of Barley. Genetics 156, 1997–2005 (2000).
+179. Borgese, N., Colombo, S. & Pedrazzini, E. The tale of tail-anchored proteins:
+coming from the cytosol and looking for a membrane. The Journal of cell biology
+161, 1013–9 (2003).
+180. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
+and saturable but does not strictly require ATP or molecular chaperones. The
+Biochemical journal 349, 611–621 (2000).
+181. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
 in the Caenorhabditis elegans genome and indentification of human orthologs.
 Genome Res. 10, 1679–1689 (2000).
 
