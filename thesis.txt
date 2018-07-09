@@ -356,7 +356,7 @@ TMH of Tail-Anchored Proteins . . . . . . . . . . . . . . . . . . 108
 
 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
 
-4 Identifying Intramembrane Folds Using Sequence Complexity
+4 Co-operative TMH Insertion
 
 113
 
@@ -367,57 +367,59 @@ Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
 4.2
 
 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+4.2.1
 
 4.3
 
-Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
-
 4.4
 
+Ribsomes in the biogenesis of membrane proteins. . . . . . . . . 114
+
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 4.3.1
 
-Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 
 4.3.2
 
-Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 
 4.3.3
 
-Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 
-Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
 4.4.1
 
 There are step changes in TMH complexity depending on the
-TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . . 113
-
-4.4.2
-
-Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 114
+TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . . 115
 4
 
-4.5
+4.4.2
+
+Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 115
+
+4.5
 
 4.4.3
 
-The pattern is present for GPCR subfamilies . . . . . . . . . . . 114
+The pattern is present for GPCR subfamilies . . . . . . . . . . . 115
 
 4.4.4
 
-The prevelance of this amongst all TMPs. . . . . . . . . . . . . 114
+The prevelance of this amongst all TMPs. . . . . . . . . . . . . 115
 
-Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
 
 5 Conclusions
 5.1
 
-115
+117
 
-Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 5.1.1
 
-The hydrophobicity–sequence complexity continuum . . . . . . . 115
+The hydrophobicity–sequence complexity continuum . . . . . . . 117
 
 Word count 22,000
 5
@@ -669,7 +671,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-July 4, 2018
+July 9, 2018
 
 11
 
@@ -693,29 +695,28 @@ differently.
 12
 
 Lay Abstract
-The survival of each of our cells relies on a a cellular barrier to separate themselves
-from the surrounding environment. This cellular skin can be thought of as the bag that
-contains all the important machinery required for normal cell function. The barrier
-works by being chemically very different to both the outside environment, and to the
-inside of the cell, which in both cases are mostly water. The membrane is fatty, and
-because of that, the membrane repels water.
-Proteins are the molecular machinery that form much of the cell structure and
+The survival of each of our cells relies on a cellular barrier to separate themselves from
+the surrounding environment. The barrier works by being chemically very different
+from both the outside environment and to the inside of the cell, which in both cases
+are mostly water. The membrane is fatty, and because of that, the membrane repels
+water.
+Proteins are the molecular machinery that forms much of the cell structure and
 shape as well as carrying out many of the cell’s routine tasks. Around a third of
 our genome codes for proteins that are permanently embedded in the membrane, but
 because these proteins are adapted for a life in the water repelling cell wall, they are
 very hard to study in laboratories which often rely on methods that hold proteins in
-water based solutions.
+water-based solutions.
 In this thesis, we focus particularly on the parts of the protein that are embedded
 in the water repelling cellular skin. Traditionally, these regions are hard to study,
 because we must first remove them from the cellular wall, which causes problems since
 the embedded regions also repel water and this often causes them to stick to one
-another, making them hard to work with in a laboratory setting.
+another, making them hard to work within a laboratory setting.
 We analyse thousands of proteins to further our understanding of electrical charges
 in the embedded regions and find that negative charge on the outside of the cell has
-been evolutionary selected across bacteria, animals, and plants. This is especially
+been evolutionarily selected across bacteria, animals, and plants. This is especially
 true for regions that specifically anchor the protein into the cellular wall. Where the
-embedded regions have additional function, for example ferrying something in or out
-of the cell, the negative charge “bias” can no longer be seen.
+embedded regions have an additional function, for example ferrying something in or
+out of the cell, the negative charge “bias” can no longer be seen.
 This thesis demonstrates the radically different evolutionary story that transmembrane regions have compared to other proteins; the sacrifices they make for their stability in order to maintain their function, and their optimisation through evolutionary
 timescales to become mould to the membrane as best they can.
 
@@ -7949,8 +7950,7 @@ could allow the marginally hydrophobic TMH to perform as a suitable membrane
 anchoring feature.
 
 Chapter 4
-Identifying Intramembrane Folds
-Using Sequence Complexity
+Co-operative TMH Insertion
 4.1
 
 Abstract
@@ -7958,6 +7958,58 @@ Abstract
 4.2
 
 Introduction
+
+Steves paper GPCRs (opsin) helix 4 5 6 are folded together - Ismail, N., Crawshaw,
+S. G., Cross, B. C. S., Haagsma, A. C., & High, S. (2008). Specific transmembrane
+segments are selectively delayed at the ER translocon during opsin biogenesis. The
+Biochemical Journal, 411(3), 495506. https://doi.org/10.1042/BJ20071597
+Good bad graphic from von heijne group association can happen in tunnel, in
+translocon, or after insertion Cymer, F., von Heijne, G., & White, S. H. (2015). Mechanisms of Integral Membrane Protein Insertion and Folding. Journal of Molecular
+Biology, 427(5), 9991022. https://doi.org/10.1016/J.JMB.2014.09.014
+Potassium channel (shaker family) S3S4 insertion may, in part, occur in a sequential or cotranslational manner potassium channel - Zhang,L., Sato,Y., Hessa,T., von
+Heijne,G., Lee,J.-K., Kodama,I., Sakaguchi,M. and Uozumi,N. (2007) Contribution of
+hydrophobic and electrostatic interactions to the membrane integration of the Shaker
+K+ channel voltage sensor domain. Proc. Natl. Acad. Sci. U. S. A., 104, 82638.
+SecY cracks open according to crystal structure analysis. Allows potential TMH
+to probe the environment. Egea,P.F. and Stroud,R.M. Lateral opening of a translocon upon entry of protein suggests the mechanism of insertion into membranes.
+10.1073/pnas.1012556107.
+Translational Arrest Peptides as in Vivo Force Sensors found interactions between
+113
+
+114
+
+CHAPTER 4. CO-OPERATIVE TMH INSERTION
+
+C-terminal TMH and upstream TMH as the C-terminal TMH is partitioning from
+the translocon. 1. Cymer,F. and von Heijne,G. (2013) Cotranslational folding of
+membrane proteins probed by arrest-peptide-mediated force measurements. Proc.
+Natl. Acad. Sci. U. S. A., 110, 146405.
+
+4.2.1
+
+Ribsomes in the biogenesis of membrane proteins.
+
+Accessibility assay and an improved intramolecular crosslinking assay showed that the
+helical transmembrane S3bS4 hairpin (paddle) of a voltage-gated potassium (Kv)forms
+in the ribosome tunnel - Tu,L., Khanna,P. and Deutsch,C. (2014) Transmembrane
+Segments Form Tertiary Hairpins in the Folding Vestibule of the Ribosome. J. Mol.
+Biol., 426, 185198.
+Size dependent folding happens through the exit tunnel.
+
+Ribosome mutants
+
+(Leucine 23 and 24 deletions) Zinc finger folds deeper in L23 mutant than wildtype
+(but not L24) and a 100 residue domain folds deeper than the L24 mutant (but not
+the L23). Kudva,R., Pardo-Avila,F., Sandhu,H., Carroni,M., Bernstein,H.D. and Heijne,G. Von (2018) The Shape of the Ribosome Exit Tunnel Affects Cotranslational
+Protein Folding. bioRxiv, 10.1101/274191.
+Ribosomal folding of the TMHs (in Kv1.3) is kept in the translocon therefor tertiary folding of the voltage sensor domain occurs via preformed secondary-structure
+formation. Tu,L.W. and Deutsch,C. (2010) A Folding Zone in the Ribosomal Exit
+Tunnel for Kv1.3 Helix Formation. J. Mol. Biol., 396, 13461360.
+Ribosomal tunnel speeds up elongation of neutral and negatively-charged peptides
+because it has sporadic negative patches. Lu,J. and Deutsch,C. (2008) Electrostatics
+in the Ribosomal Tunnel Modulate Chain Elongation Rates. J. Mol. Biol., 384, 7386.
+
+4.3. METHODS
 
 4.3
 
@@ -7978,6 +8030,8 @@ Statistics
 4.4
 4.4.1
 
+115
+
 Results
 There are step changes in TMH complexity depending
 on the TMH number in GPCRs
@@ -7986,9 +8040,6 @@ GPCR distribution tables for complexity and hydrophobicity
 Graphs of complexity and hydrophobicity distributions
 Show there are step changes in GPCRs from Bahadur
 Supplementary tables for additional stats tests and hydrophobicities
-113
-
-114CHAPTER 4. IDENTIFYING INTRAMEMBRANE FOLDS USING SEQUENCE COMPLEXITY
 
 4.4.2
 
@@ -8012,7 +8063,11 @@ The prevelance of this amongst all TMPs.
 Mechano-sensitive (controlled vocabulary if no list available) distributions Voltage
 gated (controlled vocabulary if no list available) distributions
 
+116
+
 4.5
+
+CHAPTER 4. CO-OPERATIVE TMH INSERTION
 
 Discussion
 
@@ -8036,7 +8091,7 @@ suggest probing functional classification of yet uncharacterised membrane protei
 similarities of combinations of complex TM sets to well studied membrane proteins and
 finding those classes of TM proteins where this principle is most directly applicable.
 
-115
+117
 
 Bibliography
 1. Ladokhin, A. S. Membrane protein folding and lipid interactions: theory and
@@ -8060,11 +8115,11 @@ Molecular Cell Biology 7, 909–918 (2006).
 9. Van Meer, G., Voelker, D. R., Feigenson, G. W., Meer, G, Voelker, D. R. &
 Feigenson, G. W. Membrane lipids: where they are and how they behave. Nature
 reviews. Molecular cell biology 9, 112–124 (2008).
-116
+118
 
 BIBLIOGRAPHY
 
-117
+119
 
 10. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of
 Transmembrane Domains Reveals Organelle-Specific Properties. Cell 142, 158–
@@ -8091,7 +8146,7 @@ Biochemistry 38, 9778–9782 (1999).
 Anchoring of α-Helical Proteins: Role of Tryptophan. The Journal of Physical
 Chemistry B, acs.jpcb.7b11227 (2018).
 
-118
+120
 
 BIBLIOGRAPHY
 
@@ -8118,7 +8173,7 @@ character of a protein. Journal of Molecular Biology 157, 105–132 (1982).
 
 BIBLIOGRAPHY
 
-119
+121
 
 31. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & von Heijne, G. Molecular code for
 transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
@@ -8145,7 +8200,7 @@ Annual review of biochemistry 53, 595–623 (1984).
 40. Krogh, A, Larsson, B, von Heijne, G & Sonnhammer, E. L. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of molecular biology 305, 567–580 (2001).
 41. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
 
-120
+122
 
 BIBLIOGRAPHY
 
@@ -8176,7 +8231,7 @@ R. S. Protein targeting and degradation are coupled for elimination of mislocali
 
 BIBLIOGRAPHY
 
-121
+123
 
 53. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
 with protein domain databases: Transmembrane regions, signal peptides and the
@@ -8207,7 +8262,7 @@ Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
 of cholesterol, glycosphingolipids, and anionic phospholipids in vitro. Journal of
 Biological Chemistry 280, 36815–36823 (2005).
 
-122
+124
 
 BIBLIOGRAPHY
 
@@ -8237,7 +8292,7 @@ United States of America 108, 7351–6 (2011).
 
 BIBLIOGRAPHY
 
-123
+125
 
 72. Worley, J. F., McIntyre, M. S., Spencer, B., Mertz, R. J., Roe, M. W. & Dukes,
 I. D. Endoplasmic reticulum calcium store regulates membrane potential in
@@ -8263,7 +8318,7 @@ Membrane protein thermodynamic stability may serve as the energy sink for
 sorting in the periplasm. Proceedings of the National Academy of Sciences of
 the United States of America 110, 4285–90 (2013).
 
-124
+126
 
 BIBLIOGRAPHY
 
@@ -8295,7 +8350,7 @@ transmembrane protein predictions. Protein Eng 15 (2002).
 
 BIBLIOGRAPHY
 
-125
+127
 
 92. Cserzo, M, Eisenhaber, F, Eisenhaber, B & Simon, I. TM or not TM: transmembrane protein prediction with low false positive rate using DAS-TMfilter.
 Bioinformatics 20 (2004).
@@ -8322,7 +8377,7 @@ from eubacterial, archaean, and eukaryotic organisms. Protein Sci 7, 1029–38
 orientation of a signal-anchor sequence. Journal of Biological Chemistry 266,
 973–978 (1991).
 
-126
+128
 
 BIBLIOGRAPHY
 
@@ -8354,7 +8409,7 @@ for the assembly of a eucaryotic multispanning membrane protein. J Biol Chem
 
 BIBLIOGRAPHY
 
-127
+129
 
 110. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212 (2015).
 111. Dobson, L., Langó, T., Reményi, I. & Tusnády, G. E. Expediting topology data
@@ -8382,7 +8437,7 @@ the orientation of a membrane protein in the inner membrane of Escherichia coli
 only when it is located adjacent to a transmembrane domain. J Biol Chem 274
 (1999).
 
-128
+130
 
 BIBLIOGRAPHY
 
@@ -8414,7 +8469,7 @@ image analyses for clinical needs and public health. Health Inf Sci Syst 1 (2013
 
 BIBLIOGRAPHY
 
-129
+131
 
 132. Huang, Y., Niu, B., Gao, Y., Fu, L. & Li, W. CD-HIT Suite: a web server
 for clustering and comparing biological sequences. Bioinformatics 26, 680–682
@@ -8442,7 +8497,7 @@ clinical applications. Advanced Drug Delivery Reviews 65, 36–48 (2013).
 142. Kutay, U., Hartmann, E. & Rapoport, T. A. A class of membrane proteins with
 a C-terminal anchor. Trends in Cell Biology 3, 72–75 (1993).
 
-130
+132
 
 BIBLIOGRAPHY
 
@@ -8475,7 +8530,7 @@ Tail-Anchored Proteins into the ER Membrane. Cell 134, 634–645 (2008).
 
 BIBLIOGRAPHY
 
-131
+133
 
 152. Wang, F., Brown, E. C., Mak, G., Zhuang, J. & Denic, V. A Chaperone Cascade
 Sorts Proteins for Posttranslational Membrane Insertion into the Endoplasmic
@@ -8508,7 +8563,7 @@ insights into tail-anchored protein binding and membrane insertion by Get3.
 Proceedings of the National Academy of Sciences of the United States of America
 106, 21131–6 (2009).
 
-132
+134
 
 BIBLIOGRAPHY
 
@@ -8540,7 +8595,7 @@ proteins. Nature Communications 5, 5790 (2014).
 
 BIBLIOGRAPHY
 
-133
+135
 
 169. Costello, J. L., Castro, I. G., Camões, F., Schrader, T. A., McNeall, D., Yang, J.,
 Giannopoulou, E.-A., Gomes, S., Pogenberg, V., Bonekamp, N. A., Ribeiro, D.,
@@ -8569,7 +8624,7 @@ the National Academy of Sciences of the United States of America 98, 10037–41
 Calculating evolutionary conservation in sequence and structure of proteins and
 nucleic acids. Nucleic Acids Research 38, W529–W533 (2010).
 
-134
+136
 
 BIBLIOGRAPHY
 
