@@ -358,7 +358,7 @@ TMH of Tail-Anchored Proteins . . . . . . . . . . . . . . . . . . 109
 
 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
 
-4 Co-operative TMH Insertion
+4 Co-operative TMHs
 
 113
 
@@ -376,62 +376,62 @@ Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
 
 4.2.1
 
-Sequential insertion . . . . . . . . . . . . . . . . . . . . . . . . . 113
+Co-operative insertion . . . . . . . . . . . . . . . . . . . . . . . 114
 
 4.2.2
 
-Cooperative insertion . . . . . . . . . . . . . . . . . . . . . . . . 114
+Voltage gated ion channels . . . . . . . . . . . . . . . . . . . . . 115
 
 4.2.3
 
 Ribsomes in the biogenesis of membrane proteins. . . . . . . . . 115
 
-Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 4.3.1
 
-Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 
 4.3.2
 
-Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Complexity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 
 4.3.3
 
-Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 
-Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Results . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 4
 
 4.4.1
 
 There are step changes in TMH complexity depending on the
-TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . . 116
+TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . . 117
 
 4.4.2
 
-Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 116
+Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 117
 
 4.5
 
 4.4.3
 
-The pattern is present for GPCR subfamilies . . . . . . . . . . . 116
+The pattern is present for GPCR subfamilies . . . . . . . . . . . 117
 
 4.4.4
 
-The prevelance of this amongst all TMPs. . . . . . . . . . . . . 116
+The prevelance of this amongst all TMPs. . . . . . . . . . . . . 117
 
-Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118
 
 5 Conclusions
 5.1
 
-118
+119
 
-Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118
+Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
 5.1.1
 
-The hydrophobicity–sequence complexity continuum . . . . . . . 118
+The hydrophobicity–sequence complexity continuum . . . . . . . 119
 
 Word count 22,000
 5
@@ -649,11 +649,16 @@ stratified by chaperone interactors. . . . . . . . . . . . . . . . . . . . . 108
 Structural biochemical analysis of a homology model of cytochrome b5. 110
 
 3.10 Structural biochemical analysis of a homology model of PTP1b. . . . . 111
+4.1
+
+A cartoon showing the generally accepted schematic of sequential multipass TMH insertion into the membranes. . . . . . . . . . . . . . . . . 114
 
 8
 
 Acronyms
-ER Endoplasmic Reticulum. 13, 16, 21, 23, 28, 60, 78, 80–82, 84–86, 95–102, 108
+AP Arrest Peptide. 111
+ER Endoplasmic Reticulum. 13, 16, 21, 23, 28, 60, 78, 80–82, 84–86, 95–102, 108,
+109
 GPCR G protein-coupled receptor. 109
 HTL Holotranslocon. 23
 KS Kolmogorov-Smirnov. 50, 52–54, 77, 88
@@ -666,16 +671,16 @@ RNA Ribonucleic Acid. 108
 SNARE Soluble N-ethylmaleimide-sensitive factor attachment protein receptor. 78,
 81
 SP Signal Peptide. 19, 84, 85
-SR Signal Recognition Particle Receptor. 80, 108
-SRP Signal Recognition Particle. 79–82, 108
-TA Tail Anchor. 78–82, 85–87, 90–97, 99, 101, 102, 104, 106, 107
-TM Trans-membrane. 11, 14, 26–29, 42, 45, 50, 59, 72, 81, 89
+SR Signal Recognition Particle Receptor. 80, 108, 111
+SRP Signal Recognition Particle. 79–82, 108, 111
 9
 
-TMD Trans-membrane Domain. 89
-TMH Trans-membrane Helix. 11–21, 24–52, 55–65, 67, 68, 70–86, 88–90, 92–108
+TA Tail Anchor. 78–82, 85–87, 90–97, 99, 101, 102, 104, 106, 107
+TM Trans-membrane. 11, 14, 26–29, 42, 45, 50, 59, 72, 81, 89
+TMD Trans-membrane Domain. 89
+TMH Trans-membrane Helix. 11–21, 24–52, 55–65, 67, 68, 70–86, 88–90, 92–111
 TMP Trans-membrane Protein. 11, 13, 18–20, 24, 25, 27, 29, 30, 32, 33, 42, 45, 47,
-55–57, 59, 60, 92, 108
+55–57, 59, 60, 92, 108, 111
 TMS Trans-membrane Segment. 11, 13, 19
 
 10
@@ -685,7 +690,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-July 11, 2018
+July 16, 2018
 
 11
 
@@ -7987,7 +7992,7 @@ could allow the marginally hydrophobic TMH to perform as a suitable membrane
 anchoring feature.
 
 Chapter 4
-Co-operative TMH Insertion
+Co-operative TMHs
 4.1
 
 Abstract
@@ -7996,45 +8001,82 @@ Abstract
 
 Introduction
 
-4.2.1
-
-Sequential insertion
-
 Translocation is when a ribosome translates the Ribonucleic Acid (RNA) to a nascent
-peptide chain which is handed directly or indirectly to insertion machinery which
-threads the chain through and, in the case of TMHs, releases the TMH into the
-membrane environment.
+peptide chain which is handed directly or indirectly to the translocon insertion machinery which threads the chain through and, in the case of TMHs, releases the TMH
+into the membrane environment.
 The overwhelming majority of TMPs use the co-translational method of translocation. It has long been understood that this method is essentially the SRP recognising
 and attaching to the nascent peptide chain whilst it is still associated with the ribosome, and the SRP then targets the peptide and ribosome to a SR in association with
-some membrane insertion machinery on the ER [15, 178].
+some membrane insertion machinery on the ER membrane [15, 178].
 Crystal structures showed the SRP targets the nascent peptide chain for membrane
 insertion via a GTPase in both the SRP and SR, that is initially associated with the
 translocon machinery, coming together to form a complex thus bringing the nascent
-peptide chain in proximity to the translocon [179]. Mutant studies of SRP [179]
-revealed key discrete conformational stages. These are the specific recognition of
-signal sequences on cargo proteins, the targeting of the package to the membrane, the
-handing over of the cargo to the translocation machinery all the while maintaining
+peptide chain in proximity to the translocon [179]. Mutant studies of SRP revealed
+key discrete conformational stages [179]. These are the specific recognition of signal
+sequences on cargo proteins, the targeting of the package to the membrane, the handing
+over of the cargo to the translocation machinery all the while maintaining precise
+spatial and temporal coordination of each molecular event [180].
+The prevailing idea about membrane insertion by the translocon is that the TMHs
 113
 
 114
 
-CHAPTER 4. CO-OPERATIVE TMH INSERTION
+CHAPTER 4. CO-OPERATIVE TMHS
 
-precise spatial and temporal coordination of each molecular event [180].
+partition in the membrane one at a time as the translocon lateral gate opens, exposing
+the TMH to the membrane (Figure 4.1)[181].
+From Ribosome
+
+C terminal
+
+Translocon
+Cytoplasm
+Membrane
+
+Lateral gate
+
+TMH
+Lumen
+
+N terminal
+
+Figure 4.1: A cartoon showing the generally accepted schematic of sequential multipass
+TMH insertion into the membranes. The two key concepts are that, one at a time, the TMHs
+emerge from the ribosome into the translocon. This triggers the lateral gate to open. As the nascent
+TMH is exposed to the membrane, it begins to partition. This implies that the TMHs ultimately
+have no meaningful interactions with one another until they the protein has been threaded into the
+membrane and the1 TMH bundle is formed.
+
+4.2.1
+
+Co-operative insertion
+
+Generally only a handful of examples have come close to demonstrating that TMHs
+co-operate in order to integrate relatively polar TMHs.
+GPCRs
+G protein-coupled receptor (GPCR)s are a diverse family of membrane surface receptors with 7 TMH segments. They have adapted to respond to a wide range of specific
+signals ranging from macromolecules, to photons. The specific signal triggers a conformational change of the GPCR that is translated across the membrane. GPCRs have
+been associated with tumerigenesis [OHayre2013], metastasis [Singh2015] and in
+cancers [Bar-Shavit2016] and are a potential target for therapies [Arakaki2018].
+Their ubiquitous presence in cellular life and medical relevance makes them an important topic of study.
+Opsins are a group of light sensitive GPCRs. It was shown by cross linking studies that opsin TMHs 5-7 are retained in the ER translocon and only parition once
+biosynthesis is complete [182]. The timing of this partitioning is controlled by the
+hydrophobicity of the TMH, not protein length or the relative position of the TMH
+within the protein. Although artificially extending the C-terminal did not result release of the TMHs, by replacing native TMH 7 with a more hydrophobic TMH, the
+
+4.2. INTRODUCTION
+
+115
+
+speed of insertion was decreased. TMHs 1-4 are inserted independently, and the 5-7
+TMHs partition into the membrane at the same time.
 
 4.2.2
 
-Cooperative insertion
+Voltage gated ion channels
 
-G protein-coupled receptor (GPCR)s are a diverse family of membrane surface receptors. They have been associated with tumerigenesis [OHayre2013], metastasis
-[Singh2015] and in cancers [Bar-Shavit2016] and are a potential target for therapies [Arakaki2018].
-Steves paper GPCRs (opsin) helix 4 5 6 are folded together - Ismail, N., Crawshaw,
-S. G., Cross, B. C. S., Haagsma, A. C., & High, S. (2008). Specific transmembrane
-segments are selectively delayed at the ER translocon during opsin biogenesis. The
-Biochemical Journal, 411(3), 495506. https://doi.org/10.1042/BJ20071597
-Good-bad graphic from von heijne group association can happen in tunnel, in
-translocon, or after insertion Cymer, F., von Heijne, G., & White, S. H. (2015). Mechanisms of Integral Membrane Protein Insertion and Folding. Journal of Molecular
-Biology, 427(5), 9991022. https://doi.org/10.1016/J.JMB.2014.09.014
+Good-bad graphic from von heijne group association can happen in tunnel, in translocon, or after insertion Cymer, F., von Heijne, G., & White, S. H. (2015). Mechanisms
+of Integral Membrane Protein Insertion and Folding. Journal of Molecular Biology,
+427(5), 9991022. https://doi.org/10.1016/J.JMB.2014.09.014
 Potassium channel (shaker family) S3S4 insertion may, in part, occur in a sequential or cotranslational manner potassium channel - Zhang,L., Sato,Y., Hessa,T., von
 Heijne,G., Lee,J.-K., Kodama,I., Sakaguchi,M. and Uozumi,N. (2007) Contribution of
 hydrophobic and electrostatic interactions to the membrane integration of the Shaker
@@ -8048,40 +8090,43 @@ the translocon. 1. Cymer,F. and von Heijne,G. (2013) Cotranslational folding of
 membrane proteins probed by arrest-peptide-mediated force measurements. Proc.
 Natl. Acad. Sci. U. S. A., 110, 146405.
 
-4.2. INTRODUCTION
-
 4.2.3
-
-115
 
 Ribsomes in the biogenesis of membrane proteins.
 
-Accessibility assay and an improved intramolecular crosslinking assay showed that the
-helical transmembrane S3bS4 hairpin (paddle) of a voltage-gated potassium (Kv)forms
-in the ribosome tunnel - Tu,L., Khanna,P. and Deutsch,C. (2014) Transmembrane
-Segments Form Tertiary Hairpins in the Folding Vestibule of the Ribosome. J. Mol.
-Biol., 426, 185198.
-
-Size dependent folding happens through the exit tunnel.
-
-Ribosome mutants
-
-(Leucine 23 and 24 deletions) Zinc finger folds deeper in L23 mutant than wildtype
-(but not L24) and a 100 residue domain folds deeper than the L24 mutant (but not
-the L23). Kudva,R., Pardo-Avila,F., Sandhu,H., Carroni,M., Bernstein,H.D. and Heijne,G. Von (2018) The Shape of the Ribosome Exit Tunnel Affects Cotranslational
-Protein Folding. bioRxiv, 10.1101/274191.
-
-Ribosomal folding of the TMHs (in Kv1.3) is kept in the translocon therefor tertiary folding of the voltage sensor domain occurs via preformed secondary-structure
-formation. Tu,L.W. and Deutsch,C. (2010) A Folding Zone in the Ribosomal Exit
-Tunnel for Kv1.3 Helix Formation. J. Mol. Biol., 396, 13461360.
-
-Ribosomal tunnel speeds up elongation of neutral and negatively-charged peptides
-because it has sporadic negative patches. Lu,J. and Deutsch,C. (2008) Electrostatics
-in the Ribosomal Tunnel Modulate Chain Elongation Rates. J. Mol. Biol., 384, 7386.
+Ribosomes translate mRNA sequences to amino acid chains and are present in all
+living cells, and indeed the ribosomal complexes presence and activity is for many
+used to define whether something is alive. They are a highly conserved RNA-protein
+complex with a multitude of accessory proteins and targetting factors.
+During translation of a TMP protein, the SRP binds to the ribosome after recognising the nascent protein as a TMP. This complex then binds to the SR in association with the membrane bound translocon. The nascent peptide is then fed into the
 
 116
 
-CHAPTER 4. CO-OPERATIVE TMH INSERTION
+CHAPTER 4. CO-OPERATIVE TMHS
+
+translocon as it is being translated; hence “co-translational insertion”.
+
+The journey of the TMH through this machinery has been studied using both
+crosslinking experiments and a relatively new technique of Arrest Peptide (AP)s [181].
+Accessibility assays and an improved intramolecular crosslinking assay showed that the
+helical transmembrane S3bS4 hairpin (the paddle) of a voltage-gated potassium (Kv)
+forms in the ribosome tunnel [183]. Ribosomal folding of the TMHs in Kv1.3, a potassium channel, is maintained in the translocon [184]. Therefore, the tertiary folding of
+the voltage sensor domain occurs via preformed secondary-structure formation.
+
+Furthermore, it has recently been suggested that larger structures fold as the ribosomal exit tunnel widens [185]. This size dependent folding was observed by using the
+SecM translational AP. Two ribosome mutants were compared (uL23 that is close to
+the exit tunnel and uL24 deletions which is a hairpin loop that obstructs the tunnel
+exit.) zinc finger folds deeper in uL23 mutant than wildtype (but not uL24) and a 100
+residue domain folds deeper than the uL24 mutant (but not the uL23) [185].
+
+The ribosomal tunnel also speeds up elongation of neutral and negatively-charged
+peptides. This is attributed to the sporadic negative patches within the ribosomal exit
+tunnel [186].
+
+The ribosome clearly has the potential to prefold motifs and small domains before
+translocon insertion.
+
+4.3. METHODS
 
 4.3
 
@@ -8101,6 +8146,8 @@ Statistics
 
 4.4
 4.4.1
+
+117
 
 Results
 There are step changes in TMH complexity depending
@@ -8133,15 +8180,15 @@ The prevelance of this amongst all TMPs.
 Mechano-sensitive (controlled vocabulary if no list available) distributions Voltage
 gated (controlled vocabulary if no list available) distributions
 
-4.5. DISCUSSION
+118
 
 4.5
 
-117
+CHAPTER 4. CO-OPERATIVE TMHS
 
 Discussion
 
-GPCRs have long be known to be overrepresented among genomes [181].
+GPCRs have long be known to be overrepresented among genomes [187].
 Seen across a variety of 7TM families with varying functions with datasets built
 from all membrane types (hence variety). Suggests a pressure for simpler TMHs to
 precede more complex ones, repeating every 3-4 TMHs. The universality points toward
@@ -8161,7 +8208,7 @@ suggest probing functional classification of yet uncharacterised membrane protei
 similarities of combinations of complex TM sets to well studied membrane proteins and
 finding those classes of TM proteins where this principle is most directly applicable.
 
-118
+119
 
 Bibliography
 1. Ladokhin, A. S. Membrane protein folding and lipid interactions: theory and
@@ -8185,11 +8232,11 @@ Molecular Cell Biology 7, 909–918 (2006).
 9. Van Meer, G., Voelker, D. R., Feigenson, G. W., Meer, G, Voelker, D. R. &
 Feigenson, G. W. Membrane lipids: where they are and how they behave. Nature
 reviews. Molecular cell biology 9, 112–124 (2008).
-119
+120
 
-120
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+121
 
 10. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of
 Transmembrane Domains Reveals Organelle-Specific Properties. Cell 142, 158–
@@ -8216,9 +8263,9 @@ Biochemistry 38, 9778–9782 (1999).
 Anchoring of α-Helical Proteins: Role of Tryptophan. The Journal of Physical
 Chemistry B, acs.jpcb.7b11227 (2018).
 
-BIBLIOGRAPHY
+122
 
-121
+BIBLIOGRAPHY
 
 20. Chamberlain, A. K., Lee, Y., Kim, S. & Bowie, J. U. Snorkeling preferences
 foster an amino acid composition bias in transmembrane helices. Journal of
@@ -8241,9 +8288,9 @@ biology of the cell 21, 1662–70 (2010).
 30. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
 character of a protein. Journal of Molecular Biology 157, 105–132 (1982).
 
-122
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+123
 
 31. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & von Heijne, G. Molecular code for
 transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
@@ -8270,9 +8317,9 @@ Annual review of biochemistry 53, 595–623 (1984).
 40. Krogh, A, Larsson, B, von Heijne, G & Sonnhammer, E. L. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of molecular biology 305, 567–580 (2001).
 41. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
 
-BIBLIOGRAPHY
+124
 
-123
+BIBLIOGRAPHY
 
 42. Käll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology and signal peptide prediction method. Journal of Molecular Biology 338,
 1027–1036 (2004).
@@ -8299,9 +8346,9 @@ and Molecular Biology 22, 145–149 (2015).
 52. Hessa, T., Sharma, A., Mariappan, M., Eshleman, H. D., Gutierrez, E. & Hegde,
 R. S. Protein targeting and degradation are coupled for elimination of mislocalized proteins. Nature 475, 394–7 (2011).
 
-124
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+125
 
 53. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
 with protein domain databases: Transmembrane regions, signal peptides and the
@@ -8332,9 +8379,9 @@ Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
 of cholesterol, glycosphingolipids, and anionic phospholipids in vitro. Journal of
 Biological Chemistry 280, 36815–36823 (2005).
 
-BIBLIOGRAPHY
+126
 
-125
+BIBLIOGRAPHY
 
 63. Urban, S. & Wolfe, M. S. Reconstitution of intramembrane proteolysis in vitro
 reveals that pure rhomboid is sufficient for catalysis and specificity. eng. Proceedings of the National Academy of Sciences of the United States of America
@@ -8360,9 +8407,9 @@ anchoring (Review). en. Molecular Membrane Biology 20, 271–284 (2003).
 steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences of the
 United States of America 108, 7351–6 (2011).
 
-126
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+127
 
 72. Worley, J. F., McIntyre, M. S., Spencer, B., Mertz, R. J., Roe, M. W. & Dukes,
 I. D. Endoplasmic reticulum calcium store regulates membrane potential in
@@ -8391,9 +8438,9 @@ looking glass into lipid-protein interactions. Trends in Biochemical Sciences 36
 are born equal: Towards the extension of the sequence homology concept to
 membrane proteins. Biology Direct 6, 57 (2011).
 
-BIBLIOGRAPHY
+128
 
-127
+BIBLIOGRAPHY
 
 81. Von Heijne, G. The distribution of positively charged residues in bacterial inner
 membrane proteins correlates with the trans-membrane topology. The EMBO
@@ -8418,9 +8465,9 @@ transmembrane protein predictions. Protein Eng 15 (2002).
 Bioinformatics 20 (2004).
 90. Kall, L & Sonnhammer, E. L. Reliability of transmembrane predictions in wholegenome data. FEBS Lett 532 (2002).
 
-128
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+129
 
 91. Eisenhaber, B, Kuchibhatla, D, Sherman, W, Sirota, F. L., Berezovsky, I. N.,
 Wong, W. C. & Eisenhaber, F. The recipe for protein sequence-based function
@@ -8449,9 +8496,9 @@ following signal-anchor sequences during translocation of the N-terminal domain.
 membrane protein assembly. Biochimica et Biophysica Acta (BBA) - Molecular
 Cell Research 1843, 1475–1488 (2014).
 
-BIBLIOGRAPHY
+130
 
-129
+BIBLIOGRAPHY
 
 100. Andersson, H. & Von Heijne, G. Position-specific asp-lys pairing can affect signal sequence function and membrane protein topology. Journal of Biological
 Chemistry 268, 21389–21393 (1993).
@@ -8478,9 +8525,9 @@ for the assembly of a eucaryotic multispanning membrane protein. J Biol Chem
 gathering for the TOPDB database. Nucleic Acids Research 43, D283–D289
 (2015).
 
-130
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+131
 
 109. Nakashima, H. & Nishikawa, K. The amino acid composition is different between
 the cytoplasmic and extracellular sides in membrane proteins. English. FEBS
@@ -8507,9 +8554,9 @@ only when it is located adjacent to a transmembrane domain. J Biol Chem 274
 K., Kauko, A., Cristobal, S., von Heijne, G., Lerch-Bader, M., Nilsson, I. & Elofsson, A. Membrane insertion of marginally hydrophobic transmembrane helices
 depends on sequence context. J Mol Biol 396, 221–229 (2010).
 
-BIBLIOGRAPHY
+132
 
-131
+BIBLIOGRAPHY
 
 119. Öjemalm, K., Halling, K. K., Nilsson, I. & von Heijne, G. Orientational preferences of neighboring helices can drive ER insertion of a marginally hydrophobic
 transmembrane helix. Mol Cell 45, 529–540 (2012).
@@ -8537,9 +8584,9 @@ image analyses for clinical needs and public health. Health Inf Sci Syst 1 (2013
 for clustering and comparing biological sequences. Bioinformatics 26, 680–682
 (2010).
 
-132
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+133
 
 130. Suzek, B. E., Wang, Y., Huang, H., McGarvey, P. B. & Wu, C. H. UniRef clusters: a comprehensive and scalable alternative for improving sequence similarity
 searches. Bioinformatics 31, 926–932 (2015).
@@ -8566,9 +8613,9 @@ a C-terminal anchor. Trends in Cell Biology 3, 72–75 (1993).
 140. Rabu, C., Wipf, P., Brodsky, J. L. & High, S. A precursor-specific role for
 Hsp40/Hsc70 during tail-anchored protein integration at the endoplasmic reticulum. The Journal of biological chemistry 283, 27504–13 (2008).
 
-BIBLIOGRAPHY
+134
 
-133
+BIBLIOGRAPHY
 
 141. Rabu, C., Schmid, V., Schwappach, B. & High, S. Biogenesis of tail-anchored
 proteins: the beginning for the end? Journal of cell science 122, 3605–12 (2009).
@@ -8598,9 +8645,9 @@ Tail-Anchored Proteins into the ER Membrane. Cell 134, 634–645 (2008).
 Sorts Proteins for Posttranslational Membrane Insertion into the Endoplasmic
 Reticulum. Molecular Cell 40, 159–171 (2010).
 
-134
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+135
 
 150. Chang, Y.-W., Chuang, Y.-C., Ho, Y.-C., Cheng, M.-Y., Sun, Y.-J., Hsiao, C.-D.
 & Wang, C. Crystal structure of Get4-Get5 complex and its interactions with
@@ -8630,9 +8677,9 @@ insights into tail-anchored protein binding and membrane insertion by Get3.
 Proceedings of the National Academy of Sciences of the United States of America
 106, 21131–6 (2009).
 
-BIBLIOGRAPHY
+136
 
-135
+BIBLIOGRAPHY
 
 158. Suloway, C. J. M., Chartron, J. W., Zaslaver, M. & Clemons, W. M. Model
 for eukaryotic tail-anchored protein binding based on the structure of Get3.
@@ -8660,9 +8707,9 @@ cell biology 175, 767–77 (2006).
 Jedd, G. Hydrophobic handoff for direct delivery of peroxisome tail-anchored
 proteins. Nature Communications 5, 5790 (2014).
 
-136
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+137
 
 166. Costello, J. L., Castro, I. G., Camões, F., Schrader, T. A., McNeall, D., Yang, J.,
 Giannopoulou, E.-A., Gomes, S., Pogenberg, V., Bonekamp, N. A., Ribeiro, D.,
@@ -8691,9 +8738,9 @@ the National Academy of Sciences of the United States of America 98, 10037–41
 Calculating evolutionary conservation in sequence and structure of proteins and
 nucleic acids. Nucleic Acids Research 38, W529–W533 (2010).
 
-BIBLIOGRAPHY
+138
 
-137
+BIBLIOGRAPHY
 
 175. Ramsay, L., Macaulay, M., Degli Ivanissevich, S., MacLean, K., Cardle, L.,
 Fuller, J., Edwards, K. J., Tuvesson, S., Morgante, M., Massari, A., Maestri,
@@ -8708,7 +8755,26 @@ Biochemical journal 349, 611–621 (2000).
 178. Pool, M. R. Signal recognition particles in chloroplasts, bacteria, yeast and mammals (Review). Molecular Membrane Biology 22, 3–15 (2005).
 179. Shan, S.-o. & Walter, P. Co-translational protein targeting by the signal recognition particle. FEBS Letters 579, 921–926 (2005).
 180. Saraogi, I. & Shan, S.-o. Molecular Mechanism of Co-translational Protein Targeting by the Signal Recognition Particle. Traffic 12, 535–542 (2011).
-181. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
+181. Cymer, F., Von Heijne, G. & White, S. H. Mechanisms of integral membrane protein insertion and folding. Journal of Molecular Biology 427, 999–1022 (2015).
+182. Ismail, N., Crawshaw, S. G., Cross, B. C. S., Haagsma, A. C. & High, S. Specific
+transmembrane segments are selectively delayed at the ER translocon during
+opsin biogenesis. The Biochemical journal 411, 495–506 (2008).
+183. Tu, L., Khanna, P. & Deutsch, C. Transmembrane Segments Form Tertiary
+Hairpins in the Folding Vestibule of the Ribosome. Journal of Molecular Biology
+426, 185–198 (2014).
+184. Tu, L. W. & Deutsch, C. A Folding Zone in the Ribosomal Exit Tunnel for
+Kv1.3 Helix Formation. Journal of Molecular Biology 396, 1346–1360 (2010).
+185. Kudva, R., Pardo-Avila, F., Sandhu, H., Carroni, M., Bernstein, H. D. & Heijne,
+G. V. The Shape of the Ribosome Exit Tunnel Affects Cotranslational Protein
+Folding. bioRxiv, 274191 (2018).
+
+BIBLIOGRAPHY
+
+139
+
+186. Lu, J. & Deutsch, C. Electrostatics in the Ribosomal Tunnel Modulate Chain
+Elongation Rates. Journal of Molecular Biology 384, 73–86 (2008).
+187. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
 in the Caenorhabditis elegans genome and indentification of human orthologs.
 Genome Res. 10, 1679–1689 (2000).
 
