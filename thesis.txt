@@ -384,7 +384,7 @@ Voltage gated ion channels . . . . . . . . . . . . . . . . . . . . . 115
 
 4.2.3
 
-Ribsomes in the biogenesis of membrane proteins. . . . . . . . . 115
+Ribsomes in the biogenesis of membrane proteins. . . . . . . . . 116
 
 Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
 4.3.1
@@ -409,17 +409,17 @@ TMH number in GPCRs . . . . . . . . . . . . . . . . . . . . . . 117
 
 4.4.2
 
-Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 117
+Complexity ascention repeats according to how many TMbundles are in the protein. . . . . . . . . . . . . . . . . . . . . . 118
 
 4.5
 
 4.4.3
 
-The pattern is present for GPCR subfamilies . . . . . . . . . . . 117
+The pattern is present for GPCR subfamilies . . . . . . . . . . . 118
 
 4.4.4
 
-The prevelance of this amongst all TMPs. . . . . . . . . . . . . 117
+The prevelance of this amongst all TMPs. . . . . . . . . . . . . 118
 
 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118
 
@@ -656,10 +656,10 @@ A cartoon showing the generally accepted schematic of sequential multipass TMH i
 8
 
 Acronyms
-AP Arrest Peptide. 111
+AP Arrest Peptide. 109, 111, 112
 ER Endoplasmic Reticulum. 13, 16, 21, 23, 28, 60, 78, 80–82, 84–86, 95–102, 108,
-109
-GPCR G protein-coupled receptor. 109
+110
+GPCR G protein-coupled receptor. 109, 110
 HTL Holotranslocon. 23
 KS Kolmogorov-Smirnov. 50, 52–54, 77, 88
 KW Kruskal-Wallis. 36, 37, 41, 50, 52–54, 77, 88
@@ -678,7 +678,7 @@ SRP Signal Recognition Particle. 79–82, 108, 111
 TA Tail Anchor. 78–82, 85–87, 90–97, 99, 101, 102, 104, 106, 107
 TM Trans-membrane. 11, 14, 26–29, 42, 45, 50, 59, 72, 81, 89
 TMD Trans-membrane Domain. 89
-TMH Trans-membrane Helix. 11–21, 24–52, 55–65, 67, 68, 70–86, 88–90, 92–111
+TMH Trans-membrane Helix. 11–21, 24–52, 55–65, 67, 68, 70–86, 88–90, 92–112
 TMP Trans-membrane Protein. 11, 13, 18–20, 24, 25, 27, 29, 30, 32, 33, 42, 45, 47,
 55–57, 59, 60, 92, 108, 111
 TMS Trans-membrane Segment. 11, 13, 19
@@ -690,7 +690,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-July 16, 2018
+July 18, 2018
 
 11
 
@@ -8050,23 +8050,33 @@ membrane and the1 TMH bundle is formed.
 
 Co-operative insertion
 
-Generally only a handful of examples have come close to demonstrating that TMHs
-co-operate in order to integrate relatively polar TMHs.
+Multiple TMHs in a nascent protein can be associated with the eukaryotic translocon
+simultaneously. It was shown that TMHs can stay inassociation with the translocon
+in order to mediate integration of downstream TMHs [Sadish2005, Cross2009]. Not
+only this, but it was shown that there is a direct interaction between the TMHs; more
+recently Arrest Peptide (AP)s were used to show pulling forces between a TMH and
+more C-terminally located TMH during the C-terminal TMH membrane partitioning
+from the translocon in vivo [182]. This could be facilitated during the probing of a
+TMH from the translocon as the lateral gate “cracks” open in an intermediate stage
+before the TMH satisfies the full hydrophobic requirements to open the gate fully, an
+intermediate stage observed in a SecY crystal structure [Egea2010].
+
 GPCRs
-G protein-coupled receptor (GPCR)s are a diverse family of membrane surface receptors with 7 TMH segments. They have adapted to respond to a wide range of specific
-signals ranging from macromolecules, to photons. The specific signal triggers a conformational change of the GPCR that is translated across the membrane. GPCRs have
-been associated with tumerigenesis [OHayre2013], metastasis [Singh2015] and in
-cancers [Bar-Shavit2016] and are a potential target for therapies [Arakaki2018].
-Their ubiquitous presence in cellular life and medical relevance makes them an important topic of study.
-Opsins are a group of light sensitive GPCRs. It was shown by cross linking studies that opsin TMHs 5-7 are retained in the ER translocon and only parition once
-biosynthesis is complete [182]. The timing of this partitioning is controlled by the
-hydrophobicity of the TMH, not protein length or the relative position of the TMH
-within the protein. Although artificially extending the C-terminal did not result release of the TMHs, by replacing native TMH 7 with a more hydrophobic TMH, the
+G protein-coupled receptor (GPCR)s are a diverse family of membrane surface receptors with 7 TMH segments. GPCRs have long be known to be overrepresented among
+genomes [183]. They have adapted to respond to a wide range of specific signals
+ranging from macromolecules, to photons. The specific signal triggers a conformational change of the GPCR that is translated across the membrane. GPCRs have
 
 4.2. INTRODUCTION
 
 115
 
+been associated with tumerigenesis [184], metastasis [185] and in cancers [186] and are
+a potential target for therapies [187]. Their ubiquitous presence in cellular life and
+medical relevance makes them an important topic of study.
+Opsins are a group of light sensitive GPCRs. It was shown by cross linking studies that opsin TMHs 5-7 are retained in the ER translocon and only parition once
+biosynthesis is complete [188]. The timing of this partitioning is controlled by the
+hydrophobicity of the TMH, not protein length or the relative position of the TMH
+within the protein. Although artificially extending the C-terminal did not result release of the TMHs, by replacing native TMH 7 with a more hydrophobic TMH, the
 speed of insertion was decreased. TMHs 1-4 are inserted independently, and the 5-7
 TMHs partition into the membrane at the same time.
 
@@ -8074,23 +8084,28 @@ TMHs partition into the membrane at the same time.
 
 Voltage gated ion channels
 
-Good-bad graphic from von heijne group association can happen in tunnel, in translocon, or after insertion Cymer, F., von Heijne, G., & White, S. H. (2015). Mechanisms
-of Integral Membrane Protein Insertion and Folding. Journal of Molecular Biology,
-427(5), 9991022. https://doi.org/10.1016/J.JMB.2014.09.014
-Potassium channel (shaker family) S3S4 insertion may, in part, occur in a sequential or cotranslational manner potassium channel - Zhang,L., Sato,Y., Hessa,T., von
-Heijne,G., Lee,J.-K., Kodama,I., Sakaguchi,M. and Uozumi,N. (2007) Contribution of
-hydrophobic and electrostatic interactions to the membrane integration of the Shaker
-K+ channel voltage sensor domain. Proc. Natl. Acad. Sci. U. S. A., 104, 82638.
-SecY cracks open according to crystal structure analysis. Allows potential TMH
-to probe the environment. Egea,P.F. and Stroud,R.M. Lateral opening of a translocon upon entry of protein suggests the mechanism of insertion into membranes.
-10.1073/pnas.1012556107.
-Translational Arrest Peptides as in Vivo Force Sensors found interactions between
-C-terminal TMH and upstream TMH as the C-terminal TMH is partitioning from
-the translocon. 1. Cymer,F. and von Heijne,G. (2013) Cotranslational folding of
-membrane proteins probed by arrest-peptide-mediated force measurements. Proc.
-Natl. Acad. Sci. U. S. A., 110, 146405.
+Another example of cooperative TMH insertion is that of the 3rd and 4th TMH of
+the potassium channel (shaker family) which was shown to insert either sequentially
+or cotranslationally [29, 189]. This is especially notable in the case of KAT1, that is
+a plant Kv channel that is thought to mediate long-term potassium influx into guard
+cells causing the stomata to open. In the case of KAT1, N-glycosylation of various
+mutant fusion KAT1 constructs revealed that there is no choice of sequential insertion
+since TMH 3 and 4 have no insertion potential and no topogenic functions themselves
+[190, 191]. In TMH 4 this is due to the charged residues making it relatively polar.
+However, previous experimentation in Kv1.3 had found that while TMH 4 did not
+initiate insertion, it did have insertion potential, and that when constgructs contained
+multiple TMHs, membrane insertion efficiency increased [192]. Without the ability to
+stop the translation through the translocon and form a TMH, it was suggested that
+a different means was needed than classic sequential insertion, and even that TMH 3
+and 4 are integrated by the translocon at the same time post-translationally, i.e the
+TMHs are folded prior to insertion [191]. They achieve this in part becase the previous
+TMHs 1 and 2 form a firm “base” within the membrane environment.
+
+116
 
 4.2.3
+
+CHAPTER 4. CO-OPERATIVE TMHS
 
 Ribsomes in the biogenesis of membrane proteins.
 
@@ -8099,34 +8114,45 @@ living cells, and indeed the ribosomal complexes presence and activity is for ma
 used to define whether something is alive. They are a highly conserved RNA-protein
 complex with a multitude of accessory proteins and targetting factors.
 During translation of a TMP protein, the SRP binds to the ribosome after recognising the nascent protein as a TMP. This complex then binds to the SR in association with the membrane bound translocon. The nascent peptide is then fed into the
-
-116
-
-CHAPTER 4. CO-OPERATIVE TMHS
-
 translocon as it is being translated; hence “co-translational insertion”.
-
+APs are typically 10-15 residues long that bind to the upper end of the ribosomal exit tunnel. Once a specific mRNA codon is recognised, ribosomal stalling is
+induced [Ito2010] and translation is halted unless a strong enough pulling force from
+the downstream insertion is acting on the nascent chain at that time [Butkus2013].
+Several “strengths” of AP have been identified. For example, SecM from E. coli is
+17 residues long and relatively weak, whereas a mutated SecM from Mannheimia succiniciproducens(Ms-Sup1) is much stronger and 8 residues long ending in a proline
+which will halt translation [103]. There are several other SecM proteins of other
+strengths from various bacterial species [Yap2009]. Therefore APs are a technique
+that can be used to measure precise forces acting on a specific part of the nascent chain
+during co-transltaional membrane protein integration allowing the study of TMP kinetics during insertion and folding. Indeed the force profile of a single residue can
+now be obtained in vivo [103]. In an idealised TMH segment composed of alanine
+and leucine being inserted into E. coli membrane through SecM AP with SDS-PAGE,
+hydrophobicity is more able to overcome the arrest peptide when it is near the Nterminal (of an N-terminal-inside TMH) [103]. This could be either the TMH finally
+coming into contact with the cytoplasmic face of the lipid bilayer, or an interaction
+between the N-terminal and the tip of the lateral gate as previosuly shown in Sec61;
+part of a pre-integration TMH interrogation [MacKinnon2014].
 The journey of the TMH through this machinery has been studied using both
-crosslinking experiments and a relatively new technique of Arrest Peptide (AP)s [181].
-Accessibility assays and an improved intramolecular crosslinking assay showed that the
-helical transmembrane S3bS4 hairpin (the paddle) of a voltage-gated potassium (Kv)
-forms in the ribosome tunnel [183]. Ribosomal folding of the TMHs in Kv1.3, a potassium channel, is maintained in the translocon [184]. Therefore, the tertiary folding of
-the voltage sensor domain occurs via preformed secondary-structure formation.
+crosslinking experiments and the relatively new technique of APs [181].
+Accessibility assays and an improved intramolecular crosslinking assay showed that
+the helical transmembrane S3bS4 hairpin (the paddle) of a voltage-gated potassium
 
-Furthermore, it has recently been suggested that larger structures fold as the ribosomal exit tunnel widens [185]. This size dependent folding was observed by using the
+4.3. METHODS
+
+117
+
+(Kv) forms in the ribosome tunnel [193]. Ribosomal folding of the TMHs in Kv1.3, a
+potassium channel, is maintained in the translocon [194]. Therefore, some of the final
+structural folded elements of the voltage sensor domain occurs within the ribosomal
+exit tunnel.
+Furthermore, it has recently been suggested that larger structures fold as the ribosomal exit tunnel widens [195]. This size dependent folding was observed by using the
 SecM translational AP. Two ribosome mutants were compared (uL23 that is close to
 the exit tunnel and uL24 deletions which is a hairpin loop that obstructs the tunnel
 exit.) zinc finger folds deeper in uL23 mutant than wildtype (but not uL24) and a 100
-residue domain folds deeper than the uL24 mutant (but not the uL23) [185].
-
+residue domain folds deeper than the uL24 mutant (but not the uL23) [195].
 The ribosomal tunnel also speeds up elongation of neutral and negatively-charged
 peptides. This is attributed to the sporadic negative patches within the ribosomal exit
-tunnel [186].
-
+tunnel [196].
 The ribosome clearly has the potential to prefold motifs and small domains before
 translocon insertion.
-
-4.3. METHODS
 
 4.3
 
@@ -8147,8 +8173,6 @@ Statistics
 4.4
 4.4.1
 
-117
-
 Results
 There are step changes in TMH complexity depending
 on the TMH number in GPCRs
@@ -8158,7 +8182,11 @@ Graphs of complexity and hydrophobicity distributions
 Show there are step changes in GPCRs from Bahadur
 Supplementary tables for additional stats tests and hydrophobicities
 
+118
+
 4.4.2
+
+CHAPTER 4. CO-OPERATIVE TMHS
 
 Complexity ascention repeats according to how many
 TM-bundles are in the protein.
@@ -8180,18 +8208,12 @@ The prevelance of this amongst all TMPs.
 Mechano-sensitive (controlled vocabulary if no list available) distributions Voltage
 gated (controlled vocabulary if no list available) distributions
 
-118
-
 4.5
-
-CHAPTER 4. CO-OPERATIVE TMHS
 
 Discussion
 
-GPCRs have long be known to be overrepresented among genomes [187].
-Seen across a variety of 7TM families with varying functions with datasets built
-from all membrane types (hence variety). Suggests a pressure for simpler TMHs to
-precede more complex ones, repeating every 3-4 TMHs. The universality points toward
+Seen across a variety of 7TM families with varying functions with datasets built from
+all membrane types (hence variety). Suggests a pressure for simpler TMHs to precede more complex ones, repeating every 3-4 TMHs. The universality points toward
 translocon behaviour pressure, or thermodynamic stability in the membrane. Would
 we expect this behaviour if the translocon acted on only one TMH at a time?
 
@@ -8752,30 +8774,62 @@ coming from the cytosol and looking for a membrane. The Journal of cell biology
 177. Lan, L, Isenmann, S & Wattenberg, B. W. Targeting and insertion of Cterminally anchored proteins to the mitochondrial outer membrane is specific
 and saturable but does not strictly require ATP or molecular chaperones. The
 Biochemical journal 349, 611–621 (2000).
-178. Pool, M. R. Signal recognition particles in chloroplasts, bacteria, yeast and mammals (Review). Molecular Membrane Biology 22, 3–15 (2005).
+178. Pool, M. R. Signal recognition particles in chloroplasts, bacteria, yeast and mammals. Molecular Membrane Biology 22, 3–15 (2005).
 179. Shan, S.-o. & Walter, P. Co-translational protein targeting by the signal recognition particle. FEBS Letters 579, 921–926 (2005).
 180. Saraogi, I. & Shan, S.-o. Molecular Mechanism of Co-translational Protein Targeting by the Signal Recognition Particle. Traffic 12, 535–542 (2011).
 181. Cymer, F., Von Heijne, G. & White, S. H. Mechanisms of integral membrane protein insertion and folding. Journal of Molecular Biology 427, 999–1022 (2015).
-182. Ismail, N., Crawshaw, S. G., Cross, B. C. S., Haagsma, A. C. & High, S. Specific
-transmembrane segments are selectively delayed at the ER translocon during
-opsin biogenesis. The Biochemical journal 411, 495–506 (2008).
-183. Tu, L., Khanna, P. & Deutsch, C. Transmembrane Segments Form Tertiary
-Hairpins in the Folding Vestibule of the Ribosome. Journal of Molecular Biology
-426, 185–198 (2014).
-184. Tu, L. W. & Deutsch, C. A Folding Zone in the Ribosomal Exit Tunnel for
-Kv1.3 Helix Formation. Journal of Molecular Biology 396, 1346–1360 (2010).
-185. Kudva, R., Pardo-Avila, F., Sandhu, H., Carroni, M., Bernstein, H. D. & Heijne,
-G. V. The Shape of the Ribosome Exit Tunnel Affects Cotranslational Protein
-Folding. bioRxiv, 274191 (2018).
+182. Cymer, F. & von Heijne, G. Cotranslational folding of membrane proteins
+probed by arrest-peptide-mediated force measurements. Proceedings of the National Academy of Sciences of the United States of America 110, 14640–5 (2013).
+183. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
+in the Caenorhabditis elegans genome and indentification of human orthologs.
+Genome Res. 10, 1679–1689 (2000).
+184. O’Hayre, M., Vázquez-Prado, J., Kufareva, I., Stawiski, E. W., Handel, T. M.,
+Seshagiri, S. & Gutkind, J. S. The emerging mutational landscape of G proteins
+and G-protein-coupled receptors in cancer. Nature Reviews Cancer 13, 412–424
+(2013).
 
 BIBLIOGRAPHY
 
 139
 
-186. Lu, J. & Deutsch, C. Electrostatics in the Ribosomal Tunnel Modulate Chain
+185. Singh, A., Nunes, J. J. & Ateeq, B. Role and therapeutic potential of G-protein
+coupled receptors in breast cancer progression and metastases. European Journal
+of Pharmacology 763, 178–183 (2015).
+186. Bar-Shavit, R., Maoz, M., Kancharla, A., Nag, J., Agranovich, D., GrisaruGranovsky, S. & Uziely, B. G Protein-Coupled Receptors in Cancer. International Journal of Molecular Sciences 17, 1320 (2016).
+187. Arakaki, A., Pan, W.-A. & Trejo, J. GPCRs in Cancer: Protease-Activated Receptors, Endocytic Adaptors and Signaling. International Journal of Molecular
+Sciences 19, 1886 (2018).
+188. Ismail, N., Crawshaw, S. G., Cross, B. C. S., Haagsma, A. C. & High, S. Specific
+transmembrane segments are selectively delayed at the ER translocon during
+opsin biogenesis. The Biochemical journal 411, 495–506 (2008).
+189. Zhang, L., Sato, Y., Hessa, T., von Heijne, G., Lee, J.-K., Kodama, I., Sakaguchi,
+M. & Uozumi, N. Contribution of hydrophobic and electrostatic interactions
+to the membrane integration of the Shaker K+ channel voltage sensor domain.
+Proceedings of the National Academy of Sciences of the United States of America
+104, 8263–8 (2007).
+190. Sato, Y., Sakaguchi, M., Goshima, S., Nakamura, T. & Uozumi, N. Integration
+of Shaker-type K+ channel, KAT1, into the endoplasmic reticulum membrane:
+synergistic insertion of voltage-sensing segments, S3-S4, and independent insertion of pore-forming segments, S5-P-S6. Proceedings of the National Academy
+of Sciences of the United States of America 99, 60–5 (2002).
+191. Sato, Y., Sakaguchi, M., Goshima, S., Nakamura, T. & Uozumi, N. Molecular
+dissection of the contribution of negatively and positively charged residues in
+S2, S3, and S4 to the final membrane topology of the voltage sensor in the K+
+channel, KAT1. The Journal of biological chemistry 278, 13227–34 (2003).
+192. Tu, L., Wang, J., Helm, A., Skach, W. & Deutsch, C. Transmembrane biogenesis
+of Kv1. 3. Biochemistry 39, 824–836 (2000).
+193. Tu, L., Khanna, P. & Deutsch, C. Transmembrane Segments Form Tertiary
+Hairpins in the Folding Vestibule of the Ribosome. Journal of Molecular Biology
+426, 185–198 (2014).
+
+140
+
+BIBLIOGRAPHY
+
+194. Tu, L. W. & Deutsch, C. A Folding Zone in the Ribosomal Exit Tunnel for
+Kv1.3 Helix Formation. Journal of Molecular Biology 396, 1346–1360 (2010).
+195. Kudva, R., Pardo-Avila, F., Sandhu, H., Carroni, M., Bernstein, H. D. & Heijne,
+G. V. The Shape of the Ribosome Exit Tunnel Affects Cotranslational Protein
+Folding. bioRxiv, 274191 (2018).
+196. Lu, J. & Deutsch, C. Electrostatics in the Ribosomal Tunnel Modulate Chain
 Elongation Rates. Journal of Molecular Biology 384, 73–86 (2008).
-187. Remm, M & Sonnhammer, E. Classification of transmembrane protein families
-in the Caenorhabditis elegans genome and indentification of human orthologs.
-Genome Res. 10, 1679–1689 (2000).
 
 
