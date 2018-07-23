@@ -45,7 +45,7 @@ An \textit{in vitro} assay revealed that Sgt2 associates with Get5  \cite{Wang20
 At this point Sgt2 either associates with preferential Get3 which targets the \gls{ta} protein for \gls{er} membrane biogenesis or if there are excess \gls{ta} proteins Sgt2 also associates with Bag6 which targets the \gls{ta} protein for degradation \cite{Shao2017}.
 This ``race'' between Bag6 and Get3 ensures a level of quality control within the system.
 Assuming the \gls{ta} protein is not targetted for degradation, Get3 associates first with this complex via an interaction with the N-terminal of Get4 \cite{Wang2010}.
-A dimerised ADP-bound Get3 \cite{Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2009} (TRC40) associates with and shields the C-terminal region of the \gls{ta} protein \cite{Stefanovic2007, Schuldiner2008, Favaloro2008}.
+A dimerised ADP-bound Get3 \cite{Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2010} (TRC40) associates with and shields the C-terminal region of the \gls{ta} protein \cite{Stefanovic2007, Schuldiner2008, Favaloro2008}.
 This shielding may be especially important since Get3 is involved in the folding of any nascent \gls{ta} proteins, which would be an unviable hydrophobic in the cytosol \cite{Jonikas2009}.
 Fluorescence studies revealed that tagged Get3 appears at both the cytosol and the \gls{er} membrane so apparently shuttles the \gls{ta} protein between the transmembrane complex of Get1 and Get 2 (WRB and CAML in mammalian cells), that contains cytosolic domains that receive Get3, and Get4 Get5 Sgt2 complex \cite{Huh2003, Zalisko2017}.
 Yet it is an interesting note that a single molecule fluorescence study revealed that the minimum machinery required for \gls{ta} protein insertion from this system is a Get1 and Get2 heterodimer \cite{Zalisko2017}.
@@ -54,8 +54,8 @@ Redundancy of the Get/TRC40 pathway and \gls{srp} pathway may be explained in pa
 This pathway utilises the Snd protein pathway and was discovered in yeast \cite{Aviram2016} (Figure \ref{fig:biogenesis-overview} (2)).
 Snd1 binds to the \gls{ta} protein after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane\--bound complex which integrates the \gls{ta} protein into the membrane.
 
-In the absence of the Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
-In biological systems, this is possibly used for mitochondrial delivery \cite{Kemper 2008} (Figure \ref{fig:biogenesis-overview} (4)).
+In the absence of the mitochondrial TIM-TOM insertion machinery and Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
+In biological systems, this is possibly used for mitochondrial delivery \cite{Kemper2008} (Figure \ref{fig:biogenesis-overview} (4)).
 Chimeric synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of this spontaneous insertion if the tail anchor domain is replaced by the~\gls{tm} domains belonging to a protein of known spontaneously inserting domains \cite{Nordlund2014}.
 Molecular dynamics simulations showed that direct insertion \gls{tmh}s thermodynamically mimics the energies of \gls{tmh}s integrated by the translocon \cite{Ulmschneider2014} so in theory, no integration machinery is strictly necessary if the \gls{tmh} can ``correctly'' interact with the membrane interface.
 Further, it was revealed that scrambling the \gls{tmh} sequence, but maintaining hydrophobicity, reduced the insertion potential of spontaneously inserting \gls{tmh}s \cite{Brambillasca2006}.
@@ -65,7 +65,7 @@ The few peroxisomal \gls{ta} proteins first associate with Pex19 which forms a c
 
 Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targetted via the \gls{srp} pathway, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 and PTP1b can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40.
 Altering the hydrophobicity, at least in the case of the spontaneously inserting PTP1b, also determinates the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
-Broader analysis has shown that hydrophobicity \cite{White1999} stratified by TM tendency score \cite{Zhao2009} can distinguish between the \gls{er} and mitochondrial localised \gls{ta} proteins \cite{Guna2018}.
+Broader analysis has shown that hydrophobicity \cite{White1999} stratified by TM tendency score \cite{Zhao2006} can distinguish between the \gls{er} and mitochondrial localised \gls{ta} proteins \cite{Guna2018}.
 However, the tremendous diversity and known biogenesis redundancy of these proteins may mean that no single factor applied en masse may be able to distinguish the \gls{tmh} recognition factors and investigation into this area is becoming increasingly complex \cite{Guna2018}.
 
 By regenerating a list of likely \gls{tmh}s \cite{Kalbfleisch2007} and using a manually curated list of \gls{ta} proteins \cite{TheUniProtConsortium2014}, this investigation aims to find relationships between biochemical factors and a disposition to a certain insertion mechanism and terminal localisations.
@@ -212,11 +212,11 @@ $a_i$ is the total abundance of residues of a specific amino acid type ($i$) of 
 Peaks in $q_{i,r}$ as a function of $r$ (the position index) reveal the preferred positions of residues of type $i$.
 
 \subsection{Modelling Cytochrome b5 and PTP1b}
-The HHpred web server was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding 2005, Soding 2005a}.
+The HHpred web server was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding2005}.
 Homologues were queried using three iterations of HHblitscd against the sequence database version uniprot20\_2016\_02 to generate the query Hidden Markov Model.
 The choice of templates was driven by the quality and coverage of the alignments and of the quality of the models that resulted.
 For cytochrome b5, a multiple alignment was generated from PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
-Modeller was run from within the HHPRED server to generate the homology model \cite{Eswar2007, Zimmerman2017, Webb2016}.
+Modeller was run from within the HHPRED server to generate the homology model \cite{Eswar2007, Webb2016}.
 The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite{Wiederstein2007}, Ramachandran plot on the RAMPAGE web server (98\% allowed residues, including all \gls{tmh} residues) \cite{Lovell2003}.
 
 The coverage and alignment quality of PTP1b was, however, not as good quality.
