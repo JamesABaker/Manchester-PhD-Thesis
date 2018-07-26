@@ -222,7 +222,16 @@ The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite
 The coverage and alignment quality of PTP1b was, however, not as good quality.
 Although UniProt holds 145 associated PDB structures for PTP1b, these structures cover at least some part of the globular domains of the protein.
 There are no PDB structures for the \gls{tm} domain or the nearby flanking regions.
-Instead of a global protein model, only the \gls{tmd} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C-terminal tail) residues of PTP1b .
+Instead of a global protein model, only the \gls{tmd} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C-terminal tail) residues of PTP1b.
+
+Both these \gls{tmh} regions were verified by a consensus of sequence \gls{tmh} predictions (Scampi seq \cite{Bernsel2008}, Phobius \cite{Kall2004}, TMHMM \cite{Krogh2001}, MEMSAT3 \cite{Jones2007}, TMpred \cite{Hofmann1993}, HMMTOP \cite{Tusnady2001},
+DAS--TMfilter \cite{Cserzo2004}, MINNOU \cite{Cao2006}, OCTOPUS \cite{Viklund2008}, PRODIV \cite{Viklund2004}, PRO--S \cite{Viklund2004}, S--TMHMM \cite{Viklund2004}, and proteus \cite{Montgomerie2008}).
+However it should be noted that not all these predictions unanimously agreed.
+For PTP1b, several methods identified more than 1 \gls{tmh} (HMMTOP, TMPred) whilst Memsat identified a short \gls{tmh} in a completely different region for the \gls{tmh} (35A to 45R).
+Besides that, only S--TMHMM and PRO agreed on the exact start and stop positions, and it so happens that these are also the majority consensus positions \cite{Kurowski2003} (409F to 429F).
+
+
+
 %Verify3D \cite{Luthy1992}, and PROCHECK \cite{Laskowski1993}.
 
 %>P1;UKNP
