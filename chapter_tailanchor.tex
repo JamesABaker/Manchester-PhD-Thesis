@@ -19,7 +19,7 @@ Furthermore, the hydrophobicity appears to be a determining factor in the delive
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/biogenesis-overview}
         \captionof{figure}[An overview of the biogenesis of tail-anchored proteins.]{\textbf{An overview of the biogenesis of tail-anchored proteins.}
-        (1) \gls{srp} and Sec61 of the co-translational insertion mechanism have been shown to be able to integrate \gls{ta} proteins.
+        (1) \gls{srp} of the co-translational insertion mechanism has been shown to be able to integrate \gls{ta} proteins. Sec61s role in this is disputed, and it is likely other proteins are involved in membrane partitioning instead.
         (2) In yeast, a novel mechanism was identified in which Snd1 binds to the folded \gls{ta} protein and delivers it to the membrane\--bound Snd2 and Snd3 complex.
         (3) The intensively studied Get (yeast) or TRC40 (mammalian) pathway can target either for membrane integration or degradation of the \gls{ta} protein.
         (4) A handful of \gls{ta} proteins with relatively polar \gls{tmh} regions have been observed spontaneously integrating into the membrane using Hsp40 and Hsc70 as chaperones.
@@ -35,9 +35,11 @@ Furthermore, the hydrophobicity appears to be a determining factor in the delive
 \gls{srp} would deliver the \gls{ta} protein to the membrane\--bound \gls{sr} in association with a highly conserved Sec translocon.
 Further cross-linking experiments suggested Sec61 is also involved during \gls{ta} protein membrane insertion \cite{Abell2003}.
 Previous studies had shown the Sec61 translocon is not necessary for \gls{ta} protein membrane integration by biochemical reconstitution experiments \cite{Kutay1993} and conditional mutants in yeast \cite{Steel2002, Yabal2003}. %What kind of mutants?
-Nevertheless, this suggests the possibility of at least one insertion mechanism that is related to the co-translational method of insertion (Figure \ref{fig:biogenesis-overview} (1)).
+So whilst it is hard to determine if Sec61 can be part of the post-translational pathway, we can conlude that it is certainly not essential, indeed almost no observable impact on biogenesis is had when it is removed \cite{Kutay1993, Steel2002, Yabal2003}.
+Nevertheless, this suggests the possibility of at least one insertion mechanism that is related to the co-translational method of insertion.
+Most likely is that \gls{srp} binds to the \gls{ta} protein after it is released from the ribosome and chaperones it until it is close enough to the established post translational machinery \cite{Casson2017} (Figure \ref{fig:biogenesis-overview} (1)).
 
-A second possibly redundant system is also known to be involved in \gls{ta} protein biogenesis and is referred to as the TRC40 (also known as Asna1) pathway in mammals (Figure \ref{fig:biogenesis-overview} (3)).
+A second redundant system is also known to be involved in \gls{ta} protein biogenesis and is referred to as the TRC40 (also known as Asna1) pathway in mammals (Figure \ref{fig:biogenesis-overview} (3)).
 A conserved homologue was found in \textit{Saccharomyces cerevisiae}, Get3 \cite{Schuldiner2008}, and in yeast, this mechanism is generally referred to as the Get pathway.
 Unlike co-translational insertion, the post-translational proteins do not couple with the ribosome, so the \gls{ta} protein must be exposed to the cytosolic environment for at least some time \cite{Guna2018}.
 At some point after the \gls{ta} protein emerges from the ribosomal exit tunnel, the \gls{ta} protein \gls{tmh} associates with Sgt2.
@@ -53,6 +55,8 @@ Yet it is an interesting note that a single molecule fluorescence study revealed
 Redundancy of the Get/TRC40 pathway and \gls{srp} pathway may be explained in part by a novel \gls{srp} and Get independent pathway.
 This pathway utilises the Snd protein pathway and was discovered in yeast \cite{Aviram2016} (Figure \ref{fig:biogenesis-overview} (2)).
 Snd1 binds to the \gls{ta} protein after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane\--bound complex which integrates the \gls{ta} protein into the membrane.
+So far only the homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity \cite{Haßdenteufel2017}.
+However, it is suspected that functional mammalian homologues exist for Snd1 and Snd3 also, albeit with low sequence similarity.
 
 In the absence of the mitochondrial TIM-TOM insertion machinery and Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
 In biological systems, this is possibly used for mitochondrial delivery \cite{Kemper2008} (Figure \ref{fig:biogenesis-overview} (4)).
@@ -177,7 +181,7 @@ Unless explicitly stated, values reported in the results are based on the Kyte \
 \subsection{Calculating Sequence Information Entropy}
 Information entropy is essentially an estimate of the linguistic entropy of a string.
 In the context of biology, it can be thought of as an estimation of the non-randomness of a sequence.
-Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002} and is a component of the TMSOC z-score which can predict function beyond anchorage of a \gls{tmh}~\cite{Wong2011, Wong2012, Baker2017}.
+Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002} and is a component of the TMSOC z-score which can predict function beyond anchorage of a \gls{tmh}; an increase in complexity is associated with increased likelihood of function~\cite{Wong2011, Wong2012, Baker2017}.
 Here we focus on the analysis of the complexity of a string of characters in protein sequences.
 
 Broadly speaking, the information theory entropy of a linguistic string can be defined as in equation~\ref{simpleentropy2}, and we treat the protein sequence \gls{tmh} as a string with or without its flanking regions.
@@ -311,7 +315,7 @@ The same method applied to an up-to-date dataset overlaps more with a manually c
 There is also a large degree of what we now believe to be mistakes that occurred in the older prediction tools and datasets, even when using similar methods.
 As a trend, this shows that up-to-date datasets improve the reliability of this automated predicted method.
 These automated criteria still do not fully align with the manually curated list.
-Of 2633 records, only 2241 have the \texttt{TRANSMEM} annotation.
+Of 2633 records in the manually curated list, only 2241 have the \texttt{TRANSMEM} annotation.
 Ultimately, this points to the idea that datasets are a moving target as they are constantly updated with more accurate information using evermore reliable tools and methods.
 
 \subsection{It Is Difficult To Observe Any Hydrophobic Variation Of TA Protein TMHs From Different Species}
@@ -600,7 +604,7 @@ Porins on the mitochondrial outer membrane effectively diminish the membrane pot
 Nevertheless, it is tempting to conclude that these biochemical differences between localised \gls{ta} proteins is an adaptation to the membrane composition and environment.
 But this must be tempered by noting that the spontaneously inserting cytochrome b5 localises to the mitochondrial membrane in the absence of cytosol, and to the \gls{er} in the presence of cytosol \cite{Costa2018}; there are also biological factors determining localisation.
 
-\subsection{More annotation is required to identify chaperone\--specific factors.}
+\subsection{More annotation is required to identify chaperone interaction factors of the TMH.}
 
 \gls{ta} proteins known to interact with certain chaperones were acquired by filtering the interactor partner IDs for chaperones from BioGrid through the redundant versions of these UniProt manually curated lists and Swissprot automatically generated lists.
 
