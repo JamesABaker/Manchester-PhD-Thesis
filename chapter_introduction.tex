@@ -223,42 +223,49 @@ The overall $\Delta G$ for a \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~
 %Expand this section
 
 \section{Biological Membrane Composition}
-
-%Something about asymmetry varies through the tree of life.
-"before we discuss the membrane proteins, one must consider the biological reason as for why they exist."
-%to do:  give specific examples of incredibly useful membrane proteins.
-The outline that MPs are vital for relaying information and chemistry across the membrane.
-\subsection{Lipids of the Membrane}
-
-%At some point the membrane phases should be discussed.
-%Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
 The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.
- The proteins that allow life to use this biochemical barrier are perhaps equally important.
+The proteins that allow life to use this biochemical barrier are perhaps equally important.
 Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
 
 It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes.
+For example, often \gls{tmh}s reflect the membrane environments they exist in, for example the hydrophobicity, asymetry, and thickness of the membrane lipids is reflected when looking at large numbers of \gls{tmp}s \cite{Sharpe2010}.
+
 The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001a, Jensen2004, Henin2014}, as well as protein folding~\cite{Kauko2010}.
 %Henin2014.
 %Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
 
+\subsection{Lipids of the Membrane}
+
+The lipids that make up these membranes are very diverse, and not only do different cells have different membrane compositions, but so do different subcellular compartments which again is reflected in the \gls{tmh} composition of \gls{tmp}s \cite{Sharpe2010, VanMeer2008}.
+
+They consist of a polar head group and a hydrophobic region and so are described as being amphiphilic molecules.
+This factor, along with geometric contraints of the membrane lipids causes them to not only be insoluble molecules, but also that they readily self-associate into complex ordered structures that has been demonstrated \textit{in silico} with coarse grain \gls{md} simulations \cite{Scott2008}.
+This self association is entropically driven by water molecules.
 There is a rich variety of lipid molecules that make up the biological membranes.
-The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols.
-These are composed of a glycerol molecule.
-Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups and a negatively-charged polar phosphate group.
-The polar phosphate group is modified with an alcohol group.
-Water entropically drives the self-association of the lipid molecules.
 In other words, the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails.
 Furthermore, the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer.
 This can be seen even in relatively early \gls{md} simulations~\cite{Goetz1998}.
 
+The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols.
+The hydrophobicity of a membrane lipid can be caused by several features; (i) aliphatic chains such as in the most abundant membrane lipids, glycerophospholipids and the sphingolipids, (ii) aromatic groups, or (iii) polycyclic structures such as the sterols most abundantly of which in mammals is cholesterol  \cite{Helenius1975, Lichtenberg1983}.
+Phospholipids are composed of a glycerol molecule.
+Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups and a negatively-charged polar phosphate group.
+The polar phosphate group is modified with an alcohol group.
+
+%At some point the membrane phases should be discussed.
+%Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
+
 \subsubsection{Differences in Membrane Compositions}
 
-It has been known for some time that the outer membranes of Gram-negative bacteria are asymmetric in terms of lipid composition.
-The outer membranes contain lipopolysaccharide, whilst the inner is a mixture of approximately 25 phospholipid types.
+It has been known for some time that biological bi-layer membranes are asymmetric \cite{Singer1972, OpdenKamp1979}.
+For example, in the outer membranes of Gram-negative bacteria, the outer membrane leaflet contain lipopolysaccharide, whilst the inner is a mixture of approximately 25 phospholipid types \cite{VanMeer2008}.
 Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human \gls{tmh} regions revealed intra-membrane leaflet composition asymmetry in the \gls{er}, but not the Golgi~\cite{Sharpe2010}.
 Furthermore, protein-lipid interactions have been shown to be determinants of membrane curvature~\cite{Jensen2004}, and undertake complex orientations and conformations to allow for hydrophobic mismatch~\cite{Planque2003}.
-%the plaque reference is messed up.
-% It may need changing with every bib.tex update unless the permanent record is changed.
+
+The evolutionary theories behind these various membrane compositions emerging is complex and remains in dispute.
+A popular theory is that eukaryotic cells used mitochondria as the ATP synthesisers to provide an energetic boost, the result of which was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound organelle structures, sexual reproduction, and complex inter-cellular cooperation in the form of multi-cellular organisms \cite{Lane2005, Lane2015}.
+A lot of this theory rested on the idea that mitochondrial membranes within the eukaryotic cells were energetically favorable, however more recent experimentation disputes this claim \cite{Lynch2017}.
+
 
 \subsection{Membrane Potential}
 Simply put, membrane potential is the voltage across a membrane.
