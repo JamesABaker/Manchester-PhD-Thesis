@@ -12,6 +12,7 @@ James Alexander Baker
 orcid.org/0000-0003-0874-2298
 
 Contents
+
 Abstract
 
 12
@@ -93,12 +94,6 @@ Biological Membrane Composition . . . . . . . . . . . . . . . . . . . . .
 Lipids of the Membrane . . . . . . . . . . . . . . . . . . . . . .
 
 26
-
-1.3.2
-
-Membrane Potential . . . . . . . . . . . . . . . . . . . . . . . .
-
-28
 
 Biogenesis of transmembrane Proteins . . . . . . . . . . . . . . . . . . .
 
@@ -682,7 +677,7 @@ James Alexander Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
-August 7, 2018
+August 8, 2018
 
 11
 
@@ -1164,8 +1159,6 @@ structures such as the sterols most abundantly of which in mammals is cholestero
 [70, 71]. Phospholipids are composed of a glycerol molecule. Bonded to the glycerol
 molecule are two hydrophobic fatty acid tail groups and a negatively-charged polar
 phosphate group. The polar phosphate group is modified with an alcohol group.
-
-Differences in Membrane Compositions
 It has been known for some time that biological bi-layer membranes are asymmetric [72, 73]. For example, in the outer membranes of Gram-negative bacteria, the
 outer membrane leaflet contain lipopolysaccharide, whilst the inner is a mixture of
 approximately 25 phospholipid types [9]. Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human TMH
@@ -1179,19 +1172,14 @@ mitochondria as the ATP synthesisers to provide an energetic boost, the result o
 was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound
 organelle structures, sexual reproduction, and complex inter-cellular cooperation in
 the form of multi-cellular organisms [75, 76]. A lot of this theory rested on the idea
+that mitochondrial membranes within the eukaryotic cells were energetically favorable,
+however more recent experimentation disputes this claim [77].
 
 28
 
 CHAPTER 1. INTRODUCTION
-
-that mitochondrial membranes within the eukaryotic cells were energetically favorable,
-however more recent experimentation disputes this claim [77].
-
-1.3.2
-
-Membrane Potential
-
 Simply put, membrane potential is the voltage across a membrane. If the membrane
+
 is permeable to a certain type of ion, then the ion will experience an electrical pulling
 force during the diffusion process that pulls toward the “preferred” biological location.
 This clearly depends on a chemical component involving both the charge and ion
@@ -1215,8 +1203,8 @@ Where charge Em is the membrane potential, z is the ion charge, c is the concent
 One problem in biological membranes is that the compartments always involve multiple ion channels. The Goldman equation aims to solve this problem by accounting
 for several ions that contribute to cout and cin (such as K + , N a+ , and Cl− ) simultaneously:
 RT
-Em =
 × ln
+Em =
 F
 
 
@@ -1234,18 +1222,16 @@ Such assumptions include ions having point charge, that the potential is constan
 throughout the solution. This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by,
 for example, a specific adsorption of either part of the redox pair or the competitive
 adsorption of a supporting ion in solution [78]. Therefore one should be cautious to
+understand the limitations and variability when extrapolating experimentally determined E0 , particularly when using such an idealised model in a biological context.
+Several studies have attempted to quantify the various voltages across the intracellular membranes. Negativity was found in the ER, with a voltage between 75mV
+to 95mV in the ER membrane [79, 80]. Negativity was found in the mitochondrial
 
 1.4. BIOGENESIS OF TRANSMEMBRANE PROTEINS
 
 29
 
-understand the limitations and variability when extrapolating experimentally determined E0 , particularly when using such an idealised model in a biological context.
-Organelle Membrane Potentials
-Several studies have attempted to quantify the various voltages across the intracellular
-membranes. Negativity was found in the ER, with a voltage between 75mV to 95mV
-in the ER membrane [79, 80]. Negativity was found in the mitochondrial matrix with
-a voltage across the mitochondrial membrane at 150mV [81]. No notable membrane
-potential has been identified in the Golgi [82, 83].
+matrix with a voltage across the mitochondrial membrane at 150mV [81]. No notable
+membrane potential has been identified in the Golgi [82, 83].
 
 1.4
 1.4.1
