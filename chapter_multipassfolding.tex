@@ -69,7 +69,39 @@ It was shown that \gls{tmh}s can stay inassociation with the translocon in order
 Not only this, but it was shown that there is a direct interaction between the \gls{tmh}s; more recently \gls{ap}s were used to show pulling forces between a \gls{tmh} and more C-terminally located \gls{tmh} during the C-terminal \gls{tmh} membrane partitioning from the translocon \textit{in vivo} \cite{Cymer2013}.
 This could be facilitated during the probing of a \gls{tmh} from the translocon as the lateral gate ``cracks'' open in an intermediate stage before the \gls{tmh} satisfies the full hydrophobic requirements to open the gate fully, an intermediate stage observed in a SecY crystal structure \cite{Egea2010}.
 
-\subsubsection{GPCRs}
+\section{Results}
+
+\subsection{Large contrasts in TMH hydrophobicity occurs in channels and receptors.}
+In order to identify which type of \gls{tmp} there may be potentially large numbers of cooperateive \gls{tmh}, the hydrophobicities for all \gls{tmh}s in a redudant version of SwissProt were calculated according to the Kyte \& Dolittle hydropathy scale \cite{Kyte1982}.
+The absolute difference between each sequentially adjacent \gls{tmh} was calculated.
+The full list, along with the 0.1\% \gls{tmh} pair were submitted to PANTHER \cite{Mi2017}.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/good-bad-ontology}
+		\captionof{figure}[Pie charts of a non-redundant list of TMPs compared to a list of TMPs containing the most hydrophobically different TMH pais.]{\textbf{Pie charts of a non-redundant list of TMPs compared to a list of TMPs containing the most hydrophobically different TMH pairs.}}
+
+\label{fig:good-bad-ontology}
+\end{figure}
+
+%Need percentage decreases
+
+\subsection{There are step changes in TMH complexity depending on the TMH number in GPCRs}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/GPCR-structures}
+		\captionof{figure}[The hydrophobicity and complexity of GPCR TMHs.]{\textbf{The hydrophobicity and complexity of GPCR TMHs.}}
+
+\label{fig:GPCR-structures}
+\end{figure}
+
+\subsection{Complexity ascention repeats according to how many TM-bundles are in the protein.}
+GPCR distribution tables for complexity and hydrophobicity
+Graphs of complexity and hydrophobicity distributions
+Show there are step changes in GPCRs from Bahadur
+Supplementary tables for additional stats tests and hydrophobicities
+
 
 \gls{gpcr}s are a diverse family of membrane surface receptors with 7 \gls{tmh} segments.
 GPCRs have long be known to be overrepresented among genomes \cite{Remm2000}.
@@ -84,7 +116,28 @@ The timing of this partitioning is controlled by the hydrophobicity of the \gls{
 Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native \gls{tmh} 7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
 \gls{tmh}s 1-4 are inserted independently, and the 5-7 \gls{tmh}s partition into the membrane at the same time.
 
+\subsection{The pattern is present for GPCR subfamilies}
+Figure of complexity distributions with Rhodopsin like, Secretin, metabotropic glutamate, Fungal mating, cyclic AMP, Frizzled and smooth.
+Bahadur tables also
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/KD-GPCR}
+		\captionof{figure}[The hydrophobicity of TMHs in GPCR subfamilies.]{\textbf{The hydrophobicity of TMHs in GPCR subfamilies.}}
+
+\label{fig:KD-GPCR}
+\end{figure}
+
+
 \subsection{Voltage gated ion channels}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/KD-ion-channels}
+		\captionof{figure}[The hydrophobicity of TMHs in ion channels.]{\textbf{The hydrophobicity of TMHs in ion channels.}}
+
+\label{fig:KD-ion-channels}
+\end{figure}
 
 Another example of cooperative \gls{tmh} insertion is that of the 3rd and 4th \gls{tmh} of the potassium channel (shaker family) which was shown to insert either sequentially or cotranslationally \cite{Zhang2007, Cymer2015}.
 This is especially notable in the case of KAT1, that is a plant K$_v$ channel that is thought to mediate long-term potassium influx into guard cells causing the stomata to open.
@@ -94,6 +147,24 @@ However, previous experimentation in Kv1.3 had found that while \gls{tmh} 4 did 
 Without the ability to stop the translation through the translocon and form a \gls{tmh}, it was suggested that a different means was needed than classic sequential insertion, and even that \gls{tmh} 3 and 4 are integrated by the translocon at the same time post-translationally, i.e the \gls{tmh}s are folded prior to insertion \cite{Sato2003}.
 They achieve this in part becase the previous \gls{tmh}s 1 and 2 form a firm ``base'' within the membrane environment.
 
+\subsection{The prevelance of this amongst all TMPs.}
+Mechano-sensitive (controlled vocabulary if no list available) distributions
+Voltage gated (controlled vocabulary if no list available) distributions
+
+\section{Summary}
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/Good-bad-TMH}
+		\captionof{figure}[A cartoon of potential cooperative TMH insertion methods.]{\textbf{A cartoon of potential cooperative TMH insertion methods.}}
+
+\label{fig:Good-bad-TMH}
+\end{figure}
+
+Seen across a variety of 7TM families with varying functions with datasets built from all membrane types (hence variety).
+Suggests a pressure for simpler TMHs to precede more complex ones, repeating every 3-4 TMHs.
+The universality points toward translocon behaviour pressure, or thermodynamic stability in the membrane.
+Would we expect this behaviour if the translocon acted on only one TMH at a time?
 
 \section{Methods}
 \subsection{Datasets}
@@ -121,42 +192,11 @@ There were 13 fungal mating proteins, represented by 9 after UniRef50.
 \subsection{Gene Ontology}
 77153 protein records matched the query \url{annotation:(type:transmem) AND reviewed:yes} in UniProt \cite{TheUniProtConsortium2014}.
 30045 records of these represented those proteins after submitting the list to UniRef50.
-To gain an approximate idea of what proteins may have cooperative \gls{tmh}s, we submitted that non-redundant SwissProt transmembrane dataset to PANTHER and used their pie chart visualisation\cite{Mi2017}.
+To gain an approximate idea of what proteins may have cooperative \gls{tmh}s, we submitted that non-redundant SwissProt transmembrane dataset to PANTHER and used their pie chart visualisation \cite{Mi2017}.
 We also submitted a constricted list of the non-redundant SwissProt transmembrane dataset to PANTHER by sorting the list according to proteins with sequentially adjacent \gls{tmh}s that had the greatest difference in Kyte \& Doolittle hydrophobicity \cite{Kyte1982}.
 This consisted of the top 102 pairs from a list of 101604 (the top 0.1\%) \gls{tmh} pairs from 87 unique UniProt records.
 In PANTHER, these hit 59 genes with 58 functions.
 
 \subsection{Complexity}
+
 \subsection{Statistics}
-
-\section{Results}
-\subsection{There are step changes in TMH complexity depending on the TMH number in GPCRs}
-GPCR distribution tables for complexity and hydrophobicity
-
-Graphs of complexity and hydrophobicity distributions
-
-Show there are step changes in GPCRs from Bahadur
-
-Supplementary tables for additional stats tests and hydrophobicities
-
-\subsection{Complexity ascention repeats according to how many TM-bundles are in the protein.}
-GPCR distribution tables for complexity and hydrophobicity
-Graphs of complexity and hydrophobicity distributions
-Show there are step changes in GPCRs from Bahadur
-Supplementary tables for additional stats tests and hydrophobicities
-
-\subsection{The pattern is present for GPCR subfamilies}
-Figure of complexity distributions with Rhodopsin like, Secretin, metabotropic glutamate, Fungal mating, cyclic AMP, Frizzled and smooth.
-Bahadur tables also
-
-\subsection{The prevelance of this amongst all TMPs.}
-Mechano-sensitive (controlled vocabulary if no list available) distributions
-Voltage gated (controlled vocabulary if no list available) distributions
-
-\section{Summary}
-
-
-Seen across a variety of 7TM families with varying functions with datasets built from all membrane types (hence variety).
-Suggests a pressure for simpler TMHs to precede more complex ones, repeating every 3-4 TMHs.
-The universality points toward translocon behaviour pressure, or thermodynamic stability in the membrane.
-Would we expect this behaviour if the translocon acted on only one TMH at a time?
