@@ -125,7 +125,7 @@ PDB codes 1u19 (rhodopsin) \cite{Okada2004}, 2z73 (rhodopsin) \cite{Murakami2008
     Blue is the N terminal residue, working through the rainbow until red at the C terminal position.
     B) The same 7 \gls{gpcr}s aligned structurally, but instead coloured by the Eisenberg hydrophobic scale \cite{Eisenberg1984} at 50\% transparency with red being hydrophobic and white being polar.
     C) A top down (birds-eye) version of the alignment coloured similarly to A taken at a slice half way through the TMHs.
-    D) On the vertical axis is the TMSOC z-score of each of the helices and on the horizontal axis is the TMH number.
+    D) On the vertical axis is the TMSOC z\--score of each of the helices and on the horizontal axis is the TMH number.
     The points are coloured by the corresponding structure.
     E) The axis are similar to D, however the datasets are from non-redundant UniProt \gls{gpcr} sequence datasets from 1016 \gls{gpcr} records that contained annotation of 7 \gls{tmh}s.
     The data is represented by a violin plot, the thickness indicating the distribution of the data.
@@ -138,27 +138,37 @@ PDB codes 1u19 (rhodopsin) \cite{Okada2004}, 2z73 (rhodopsin) \cite{Murakami2008
 Even in a relatively small dataset of functionally varied \gls{gpcr}s we can see structural conservation of the \gls{tmh} arrangement (Figure \ref{fig:GPCR-structures}A Figure \ref{fig:GPCR-structures}C).
 Hydrophobic patterns are hard to identify structurally beyond the clear membrane boundary where we would expect to see hydrophobic residues in the \gls{tmh} (Figure \ref{fig:GPCR-structures}B).
 TMSOC \cite{Wong2011, Wong2012} is an algorthim that takes into account the White and Wimley hydrophobicity \cite{White1999} and the information entropy of the TMH sequence.
-The resulting z-score has been shown to be able to scrutinise between \gls{tmh}s that serve as anchors and those that have function beyond anchorage.
-The lower the z-score, the more likelyhood of the \gls{tmh} being solely a membrane anchor.
+The resulting z\--score has been shown to be able to scrutinise between \gls{tmh}s that serve as anchors and those that have function beyond anchorage.
+The lower the z\--score (low sequence information entropy and high hydrophobicity), the more likelyhood of the \gls{tmh} being solely a membrane anchor.
 When considering the functional/anchoring potential of these \gls{gpcr} \gls{tmh}s  using TMSOC, we see trends among the structures with and average of 1.96 for TMH1, 2.30 for TMH2, 2.43 for TMH3, 2.34 for TMH4, 2.05 for TMH5, 2.24 for TMH 6 and 2.83 for TMH7 (Figure \ref{fig:GPCR-structures}D).
-TMH3 and TMH7 are therefor the most likely to contain function beyond anchorage, whilst the low z-scores of TMH1 and TMH5 indicate they are more optimal anchors \cite{Baker2017}.
+TMH3 and TMH7 are therefor the most likely to contain function beyond anchorage, whilst the low z\--scores of TMH1 and TMH5 indicate they are more optimal anchors \cite{Baker2017}.
 
-When we consider much larger sequence datasets, the trend remains the same: that TMH3 (mean z-score of 2.52) and TMH7 (mean z-score of 2.55) have the highest z-score, whilst TMH1 (mean z-score of 2.09) and TMH5 (mean z-score of 2.20) have the lowest (Figure \ref{fig:GPCR-structures}E).
-To investigate the statistical differences between the z-score of the \gls{tmh}s, we applied the Kruskal Wallis and 2-sample Kilmogorov Smirnov tests from each \gls{tmh} number to each other \gls{tmh} number.
-TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z-score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kilmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kilmogorov Smirnov P\--value = 1.74E\--37).
-
+When we consider much larger sequence datasets containing 1016 \gls{tmh}s at each \gls{tmh} number from non-redundant \gls{gpcr}s obtained from UniProt, the trend remains the same: that TMH3 (mean z\--score of 2.52) and TMH7 (mean z\--score of 2.55) have the highest z\--score, whilst TMH1 (mean z\--score of 2.09) and TMH5 (mean z\--score of 2.20) have the lowest (Figure \ref{fig:GPCR-structures}E).
+To investigate the statistical differences between the z\--score of the \gls{tmh}s, we applied the Kruskal Wallis and 2-sample Kilmogorov Smirnov tests from each \gls{tmh} number to each other \gls{tmh} number.
+TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z\--score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kilmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kilmogorov Smirnov P\--value = 1.74E\--37).
 This is also mirrored in the relationship between the preceding \gls{tmh}s of TMH3.
-TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kilmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kilmogorov Smirnov P\--value = 1.06E\--31)
+TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kilmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kilmogorov Smirnov P\--value = 1.06E\--31).
+We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value > 0.99, Kruskal Wallis P\--value = 0.99, Kilmogorov Smirnov P\--value = 0.07).
 
-Opsins are a group of light sensitive \gls{gpcr}s.
-It was shown by cross linking studies that opsin \gls{tmh}s 5-7 are retained in the \gls{er} translocon and only parition once biosynthesis is complete \cite{Ismail2008}.
-The timing of this partitioning is controlled by the hydrophobicity of the \gls{tmh}, not protein length or the relative position of the \gls{tmh} within the protein.
-Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native \gls{tmh} 7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
-\gls{tmh}s 1-4 are inserted independently, and the 5-7 \gls{tmh}s partition into the membrane at the same time.
+As expected, these trends are mirrored in the Kyte \& Doolittle \cite{Kyte1982} hydrophobicity plots.
+Where there is a high TMSOC z\--score, there is a low hydrophobicity score.
+However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity = 1.13) are very different (Welch's t\--test P\--value = 3.95E\--163), the difference between TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity = 1.39) is less stark (Welch's t\--test P\--value = 0.12).
+Even though there is discrepency between the scales, the change in hydrophobicity  between TMH6 and TMH7 can be seen consistently across the Eisenberg consensus scale \cite{Eisenberg1984}, the White and Wimley biophysical scale \cite{White1999}, and the von Heijne biological scale \cite{Hessa2005} emphasising the significance of this particular \gls{tmh} pair (Figure \ref{fig:gpcr-hydrophobicity-verification}).
 
-\subsection{The pattern is present for GPCR subfamilies}
-Figure of complexity distributions with Rhodopsin like, Secretin, metabotropic glutamate, Fungal mating, cyclic AMP, Frizzled and smooth.
-Bahadur tables also
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/gpcr-hydrophobicity-verification}
+		\captionof{figure}[The hydrophobic difference observed between TMH6 and TMH7 in GPCRs is not due to the choice of hydrophobic scale.]{\textbf{The hydrophobic difference observed between TMH6 and TMH7 in GPCRs is not due to the choice of hydrophobic scale.}
+    Three different scales were applied to the same dataset used in figure \ref{fig:GPCR-structures}F to verify the observed differences were not caused by the choice of scale.
+    A) The White and Wimley biophysical scale \cite{White1999}
+    B) The Eisenberg consensus scale \cite{Eisenberg1984}.
+    C)The von Heijne biological scale \cite{Hessa2005}.}
+
+\label{fig:gpcr-hydrophobicity-verification}
+\end{figure}
+
+When considering different \gls{gpcr} subfamilies, we see a consistent difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate \gls{gpcr}s in which there is very little discrepency (Figure \ref{fig:KD-GPCR}).
+
 
 \begin{figure}[!ht]
 \centering
@@ -167,6 +177,14 @@ Bahadur tables also
 
 \label{fig:KD-GPCR}
 \end{figure}
+
+Opsins are a group of light sensitive \gls{gpcr}s.
+It was shown by cross linking studies that opsin \gls{tmh}s 5-7 are retained in the \gls{er} translocon and only parition once biosynthesis is complete \cite{Ismail2008}.
+The timing of this partitioning is controlled by the hydrophobicity of the \gls{tmh}, not protein length or the relative position of the \gls{tmh} within the protein.
+Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native \gls{tmh} 7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
+\gls{tmh}s 1-4 are inserted independently, and the 5-7 \gls{tmh}s partition into the membrane at the same time.
+
+
 
 
 \subsection{Ion channels contain polar-hydrophobic TMH pairs/groups}
@@ -274,6 +292,7 @@ There were 82 records for frizzled/smooth, of which 41 were cluster representiti
 114 were metabotropic glutamate recepters which became 44 after redundancy removal.
 In serotonin, 91 original records were represented by 28 records.
 There were 13 fungal mating proteins, represented by 9 after UniRef50.
+560 olfactory records were mapped to 274 records after Uniref50.
 
 
 
