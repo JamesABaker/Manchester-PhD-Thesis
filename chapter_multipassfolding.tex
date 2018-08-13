@@ -1,4 +1,5 @@
-\chapter{Co-operative TMHs.}
+\chapter{Cooperation between TMHs facilitates translocation of relatively polar TMHs.}
+\chaptermark{Cooperation between TMHs...}
 \section{Abstract}
 \section{Introduction}
 
@@ -40,10 +41,10 @@ The nascent peptide is then fed into the translocon as it is being translated; h
 
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=1\textwidth]{multipass-folding/sequential-insertion}
+\includegraphics[width=1\textwidth]{multipass-folding/Ribosome-translocon-complex}
         \captionof{figure}[A cartoon of the ribosome in association with the translocon during insertion.]{\textbf{A cartoon of the ribosome in association with the translocon during insertion.}
 }
-\label{fig:sequential-insertion}
+\label{fig:Ribosome-translocon-complex}
 \end{figure}
 
 \gls{ap}s are typically 10-15 residues long that bind to the upper end of the ribosomal exit tunnel.
@@ -77,7 +78,7 @@ It was shown that \gls{tmh}s can stay inassociation with the translocon in order
 Not only this, but it was shown that there is a direct interaction between the \gls{tmh}s; more recently \gls{ap}s were used to show pulling forces between a \gls{tmh} and more C-terminally located \gls{tmh} during the C-terminal \gls{tmh} membrane partitioning from the translocon \textit{in vivo} \cite{Cymer2013}.
 This could be facilitated during the probing of a \gls{tmh} from the translocon as the lateral gate ``cracks'' open in an intermediate stage before the \gls{tmh} satisfies the full hydrophobic requirements to open the gate fully, an intermediate stage observed in a SecY crystal structure \cite{Egea2010}.
 
-\section{Results}
+\section{Results and discussion}
 
 \subsection{Large contrasts in TMH hydrophobicity occurs in channels and receptors.}
 In order to identify which type of \gls{tmp} there may be potentially large numbers of cooperateive \gls{tmh}, the hydrophobicities for all \gls{tmh}s in a redudant version of SwissProt were calculated according to the Kyte \& Dolittle hydropathy scale \cite{Kyte1982}.
@@ -94,7 +95,7 @@ The full list, along with the 0.1\% \gls{tmh} pair were submitted to PANTHER \ci
 
 %Need percentage decreases
 
-\subsection{There are step changes in TMH complexity depending on the TMH number in GPCRs}
+\subsection{GPCRs contain high a conserved relatively polar TMH}
 
 \begin{figure}[!ht]
 \centering
@@ -104,12 +105,10 @@ The full list, along with the 0.1\% \gls{tmh} pair were submitted to PANTHER \ci
 \label{fig:GPCR-structures}
 \end{figure}
 
-\subsection{Complexity ascention repeats according to how many TM-bundles are in the protein.}
 GPCR distribution tables for complexity and hydrophobicity
 Graphs of complexity and hydrophobicity distributions
 Show there are step changes in GPCRs from Bahadur
 Supplementary tables for additional stats tests and hydrophobicities
-
 
 \gls{gpcr}s are a diverse family of membrane surface receptors with 7 \gls{tmh} segments.
 GPCRs have long be known to be overrepresented among genomes \cite{Remm2000}.
@@ -137,7 +136,7 @@ Bahadur tables also
 \end{figure}
 
 
-\subsection{Voltage gated ion channels}
+\subsection{Ion channels contain polar-hydrophobic TMH pairs/groups}
 
 \begin{figure}[!ht]
 \centering
@@ -156,8 +155,15 @@ Without the ability to stop the translation through the translocon and form a \g
 They achieve this in part becase the previous \gls{tmh}s 1 and 2 form a firm ``base'' within the membrane environment.
 
 \subsection{The prevelance of this amongst all TMPs.}
-Mechano-sensitive (controlled vocabulary if no list available) distributions
-Voltage gated (controlled vocabulary if no list available) distributions
+
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.8\textwidth]{multipass-folding/other-groups-good-bad}
+		\captionof{figure}[Other large TMP groups with no apparrent polar-hydophobic groups.]{\textbf{Other large TMP groups with no apparrent polar-hydophobic groups.}}
+
+\label{fig:other-groups-good-bad}
+\end{figure}
 
 \section{Summary}
 
@@ -179,7 +185,48 @@ Would we expect this behaviour if the translocon acted on only one TMH at a time
 \subsubsection{Membrane protein families}
 This is not an exhaustive search among \gls{tmp}s for all examples of starkly polar \gls{tmh}s conserved among the family.
 Instead we show that there is precedent for several, but not all, protein families to contain polar helices and that these polar \gls{tmh}s are sequentially next to typically hydrophobic \gls{tmh}s.
-Analysis can only really be done if the number of \gls{tmh}s is conserved across the family.
+Analysis can only be done if the number of \gls{tmh}s is conserved across the family since different mechanisms are utilised to transmit a signal or transport a molecule across the membrane.
+
+Datasets were attained by querying the UniProt database for controlled vocabulary keywords (Table \ref{table:datasetsizes}) \cite{TheUniProtConsortium2014}.
+After filtering our redundant proteins using UniRef50, the datasets were stratified according to the total number of \gls{tmh}s per protein.
+Only families with a total N > 20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
+
+
+
+\begin{table}[htbp]
+
+  \centering
+  \captionof{table}[Dataset sizes of common TMP families of transporters and channels.]{\textbf{Dataset sizes of common TMP families of transporters and channels.}
+  The type column refers to the family name.
+  The keyword identifier column refers to the specific query term that UniProt uses as the controlled vocabulary identifier.
+  UniProt hits refers to the number of SwissProt hits, which are manually curated, however the SwissProt and TrEMBL hits are also given in the brackets.
+  The UniRef column denotes how many representative sequences resulted from the UniProt hits, again with the number in the brackets including the TrEMBL hits.
+  Because UniRef often returns representatives of splice isoforms as a separate hit, the lists were re-uploaded to UniProtKB to get the final hit.
+  The lists are then stratified by the total number of TMHs.
+  }
+
+\begin{tabular}{lllllll}
+  \footnotesize
+Type                     & Keyword Identifier & UniProt Hits   & UniRef Representatives &  UniProtKB & TMHs & Final hits \\
+Ion channel              & KW-0407            & 2452 (176417)  & 912 (21024)            & 882                & 4    & 234        \\
+                         &                    &                &                        &                    & 6    & 188        \\
+                         &                    &                &                        &                    & 24   & 34         \\
+Ligand-gated ion channel & KW-1071            & 452 (14051)    & 189 (3055)             & 185                & 6    & 33         \\
+Voltage gated channel    & KW-0851            & 683 (27,662)   & 285 (3876)             & 267                & 6    & 97         \\
+Calcium channel          & KW-0107            & 272 (5056)     & 128 (1003)             & 120                & 6    & 38         \\
+Potassium channel        & KW-0631            & 337 (11852)    & 160 (1893)             & 152                & 6    & 88         \\
+Sugar transport          & KW-0762            & 1217 (107721)  & 467 (16748)            & 464                & 12   & 134        \\
+Chloride channel         & KW-0869            & 303 (3697)     & 117 (1039)             & 117                & 4    & 50         \\
+Ion transport            & KW-0406            & 10264 (443600) & 3070 (42259)           & 3023               & 4    & 338        \\
+                         &                    &                &                        &                    & 6    & 390        \\
+                         &                    &                &                        &                    & 8    & 162        \\
+                         &                    &                &                        &                    & 10   & 189        \\
+                         &                    &                &                        &                    & 12   & 292        \\
+                         &                    &                &                        &                    & 24   & 35
+\end{tabular}
+\label{table:datasetsizes}
+\end{table}
+
 
 \subsubsection{GPCR subfamilies}
 The 7TMR list is a list distributed by UniProt containing G-receptor linked proteins available at \url{http://www.uniprot.org/docs/7tmrlist.txt} \cite{TheUniProtConsortium2014}.
@@ -192,10 +239,10 @@ Here, we also looked at opsins, the T2R taste receptors, frizzled/smooth \gls{gp
 211 T2R taste receptors were mapped to 45 records after UniRef50.
 There were 82 records for frizzled/smooth, of which 41 were cluster representitives after querying with UniRef50.
 114 were metabotropic glutamate recepters which became 44 after redundancy removal.
-In serotonin,91 original records were represented by 28 records.
+In serotonin, 91 original records were represented by 28 records.
 There were 13 fungal mating proteins, represented by 9 after UniRef50.
 
-\subsubsection{Ion channels}
+
 
 \subsection{Gene Ontology}
 77153 protein records matched the query \url{annotation:(type:transmem) AND reviewed:yes} in UniProt \cite{TheUniProtConsortium2014}.
