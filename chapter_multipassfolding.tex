@@ -86,15 +86,17 @@ The absolute difference between each sequentially adjacent \gls{tmh} was calcula
 The full list, along with the 0.1\% \gls{tmh} pair were submitted to PANTHER \cite{Mi2017}.
 We found that transporters were by far the most abundant in this sub\---list relative to the global TMP list, however it should be considered that ``transporters'' in this sense also includes both ion transporters and ion channels (Figure \ref{fig:good-bad-ontology}).
 Among the other prevelent functions are receptors, binding proteins, and signal transducers.
-All these were predominantly \gls{gpcr}s.
+All these lists were predominantly made up of \gls{gpcr}s.
 
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{multipass-folding/good-bad-ontology}
 		\captionof{figure}[Pie charts of a non-redundant list of TMPs compared to a list of TMPs containing the most hydrophobically different TMH pais.]{\textbf{Pie charts of a non-redundant list of TMPs compared to a list of TMPs containing the most hydrophobically different TMH pairs.}
-    The output of PANTHER Gene ontology server of A) a non-redundant list of all TMPs in SwissProt and B) a list of the TMPs with the highest (0.1\%) hydrophobic discrepency between adjacent TMHs.
-    Note that the proportions of Binding TMPs stay roughly the same, receptors and signal transducers reduce slightly, catalytic proteins is reduced by $\tilde$60\% and transporter more than doubles in proportion.}
+    The output of PANTHER Gene ontology server of A) a non-redundant list of all TMPs in SwissProt and
+    B) a list of the TMPs with the highest (0.1\%) hydrophobic discrepency between adjacent TMHs.
+    Note that the proportions of binding TMPs stay roughly the same, receptors and signal transducers reduce slightly, catalytic proteins is reduced by two thirds and transporter more than doubles in proportion.
+    }
 
 \label{fig:good-bad-ontology}
 \end{figure}
@@ -105,25 +107,48 @@ This gives us an idea of search space where highly polar \gls{tmh}s are proximal
 
 \subsection{GPCRs contain conserved relatively polar TMHs}
 
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{multipass-folding/GPCR-structures}
-		\captionof{figure}[The hydrophobicity and complexity of GPCR TMHs.]{\textbf{The hydrophobicity and complexity of GPCR TMHs.}}
-
-\label{fig:GPCR-structures}
-\end{figure}
-
-GPCR distribution tables for complexity and hydrophobicity
-Graphs of complexity and hydrophobicity distributions
-Show there are step changes in GPCRs from Bahadur
-Supplementary tables for additional stats tests and hydrophobicities
-
 \gls{gpcr}s are a diverse family of membrane surface receptors with 7 \gls{tmh} segments.
 GPCRs have long be known to be overrepresented among genomes \cite{Remm2000}.
 They have adapted to respond to a wide range of specific signals ranging from macromolecules to photons.
 The specific signal triggers a conformational change of the \gls{gpcr} that is translated across the membrane.
 \gls{gpcr}s have been associated with tumerigenesis \cite{OHayre2013}, metastasis \cite{Singh2015} and in cancers \cite{Bar-Shavit2016} and are a potential target for therapies \cite{Arakaki2018}.
 Their ubiquitous presence in cellular life and medical relevance makes them an important topic of study.
+
+Here, we structurally aligned 7 structures of monomeric \gls{gpcr}s using PyMol \cite{DeLano2002};
+PDB codes 1u19 (rhodopsin) \cite{Okada2004}, 2z73 (rhodopsin) \cite{Murakami2008}, 2vt4 ($\beta$1-adrenergic receptor) \cite{Warne2008}, 2lnl (CXCR1, rhodopsin-like) \cite{Park2012}, 4mbs (CCR5, chemokine receptor) \cite{Tan2013}, 4xt1 (viral chemokine) \cite{Burg2015}, and 4ea3 (opioid receptor) \cite{Thompson2012} (Figure \ref{fig:GPCR-structures}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/GPCR-structures}
+		\captionof{figure}[The hydrophobicity and complexity of GPCR TMHs.]{\textbf{The hydrophobicity and complexity of GPCR TMHs.}
+    A) A cartoon of 7 structurally aligned \gls{gpcr}s of various molecular functions coloured according the residue sequence postion.
+    Blue is the N terminal residue, working through the rainbow until red at the C terminal position.
+    B) The same 7 \gls{gpcr}s aligned structurally, but instead coloured by the Eisenberg hydrophobic scale \cite{Eisenberg1984} at 50\% transparency with red being hydrophobic and white being polar.
+    C) A top down (birds-eye) version of the alignment coloured similarly to A taken at a slice half way through the TMHs.
+    D) On the vertical axis is the TMSOC z-score of each of the helices and on the horizontal axis is the TMH number.
+    The points are coloured by the corresponding structure.
+    E) The axis are similar to D, however the datasets are from non-redundant UniProt \gls{gpcr} sequence datasets from 1016 \gls{gpcr} records that contained annotation of 7 \gls{tmh}s.
+    The data is represented by a violin plot, the thickness indicating the distribution of the data.
+    The mean average is the dash in black, and the median is the dash in orange.
+    F) As in E, however the vertical axis is Kyte \& Doolittle hydrophobicity \cite{Kyte1982}.}
+
+\label{fig:GPCR-structures}
+\end{figure}
+
+Even in a relatively small dataset of functionally varied \gls{gpcr}s we can see structural conservation of the \gls{tmh} arrangement (Figure \ref{fig:GPCR-structures}A Figure \ref{fig:GPCR-structures}C).
+Hydrophobic patterns are hard to identify structurally beyond the clear membrane boundary where we would expect to see hydrophobic residues in the \gls{tmh} (Figure \ref{fig:GPCR-structures}B).
+TMSOC \cite{Wong2011, Wong2012} is an algorthim that takes into account the White and Wimley hydrophobicity \cite{White1999} and the information entropy of the TMH sequence.
+The resulting z-score has been shown to be able to scrutinise between \gls{tmh}s that serve as anchors and those that have function beyond anchorage.
+The lower the z-score, the more likelyhood of the \gls{tmh} being solely a membrane anchor.
+When considering the functional/anchoring potential of these \gls{gpcr} \gls{tmh}s  using TMSOC, we see trends among the structures with and average of 1.96 for TMH1, 2.30 for TMH2, 2.43 for TMH3, 2.34 for TMH4, 2.05 for TMH5, 2.24 for TMH 6 and 2.83 for TMH7 (Figure \ref{fig:GPCR-structures}D).
+TMH3 and TMH7 are therefor the most likely to contain function beyond anchorage, whilst the low z-scores of TMH1 and TMH5 indicate they are more optimal anchors \cite{Baker2017}.
+
+When we consider much larger sequence datasets, the trend remains the same: that TMH3 (mean z-score of 2.52) and TMH7 (mean z-score of 2.55) have the highest z-score, whilst TMH1 (mean z-score of 2.09) and TMH5 (mean z-score of 2.20) have the lowest (Figure \ref{fig:GPCR-structures}E).
+To investigate the statistical differences between the z-score of the \gls{tmh}s, we applied the Kruskal Wallis and 2-sample Kilmogorov Smirnov tests from each \gls{tmh} number to each other \gls{tmh} number.
+TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z-score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kilmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kilmogorov Smirnov P\--value = 1.74E\--37).
+
+This is also mirrored in the relationship between the preceding \gls{tmh}s of TMH3.
+TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kilmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kilmogorov Smirnov P\--value = 1.06E\--31)
 
 Opsins are a group of light sensitive \gls{gpcr}s.
 It was shown by cross linking studies that opsin \gls{tmh}s 5-7 are retained in the \gls{er} translocon and only parition once biosynthesis is complete \cite{Ismail2008}.
