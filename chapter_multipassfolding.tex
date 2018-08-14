@@ -148,7 +148,7 @@ To investigate the statistical differences between the z\--score of the \gls{tmh
 TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z\--score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kilmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kilmogorov Smirnov P\--value = 1.74E\--37).
 This is also mirrored in the relationship between the preceding \gls{tmh}s of TMH3.
 TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kilmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kilmogorov Smirnov P\--value = 1.06E\--31).
-We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value $>$ 0.99, Kruskal Wallis P\--value = 0.99, Kilmogorov Smirnov P\--value = 0.07).
+We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value \textgreater 0.99, Kruskal Wallis P\--value = 0.99, Kilmogorov Smirnov P\--value = 0.07).
 
 As expected, these trends are mirrored in the Kyte \& Doolittle \cite{Kyte1982} hydrophobicity plots.
 Where there is a high TMSOC z\--score, there is a low hydrophobicity score.
@@ -195,10 +195,15 @@ The timing of this partitioning is controlled by the hydrophobicity of the \gls{
 Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native TMH7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
 \gls{tmh}s 1-4 are inserted independently, and the 5-7 \gls{tmh}s partition into the membrane at the same time.
 
-Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes efficient insertion of the \gls{gpcr} \cite{Ismail2008}, and that this hydrophobic difference is high conserved throughout \gls{gpcr}s generally (Figure \ref{fig:GPCR-structure}F), and especially in many of the subfamilies(Figure \ref{fig:KD-GPCR}A, C, D, F), we believe that the hydrophobic difference of TMH6 and TMH7 is highly important to the biogenesis of \gls{gpcr}s. This is evidence for wide spread biologically employed \gls{tmh} cooperation during translocation of a typically hydrophobic \gls{tmh} remaining in association with the translocon until the relatively polar \gls{tmh} is processed by the insertion machinery.
+Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes efficient insertion of the \gls{gpcr} \cite{Ismail2008}, and that this hydrophobic difference is high conserved throughout \gls{gpcr}s generally (Figure \ref{fig:GPCR-structures}F), and especially in many of the subfamilies(Figure \ref{fig:KD-GPCR}A, C, D, F), we believe that the hydrophobic difference of TMH6 and TMH7 is highly important to the biogenesis of \gls{gpcr}s. This is evidence for wide spread biologically employed \gls{tmh} cooperation during translocation of a typically hydrophobic \gls{tmh} remaining in association with the translocon until the relatively polar \gls{tmh} is processed by the insertion machinery.
 
 
 \subsection{Ion channels contain polar-hydrophobic TMH pairs/groups}
+
+Another group of proteins that featured heavily on the list of top \gls{tmh} pairs with high hydrophobic discrepency was ion channels (Figure \ref{fig:good-bad-ontology}B).
+Ion channels are a much more structurally varied class of \gls{tmp} than \gls{gpcr}s, varing greatly in their number of \gls{tmh}s, so a summary structural alignment equivalent to Figure \ref{fig:GPCR-structures}A, B, and C was not possible.
+
+In the 6TMH class of ion channels, we observe a conserved difference in the relatively polar TMH4 known to carry charged residues.
 
 \begin{figure}[!ht]
 \centering
@@ -208,13 +213,46 @@ Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes ef
 \label{fig:KD-ion-channels}
 \end{figure}
 
-Another example of cooperative \gls{tmh} insertion is that of the 3rd and 4th \gls{tmh} of the potassium channel (shaker family) which was shown to insert either sequentially or cotranslationally \cite{Zhang2007, Cymer2015}.
+This holds true for voltage gated ion channels, ligand gated ion channels, and appears to be independent of the ion being transported (Calcium or Potassium).
+
+The difference is independent of the scale chosen (Figure \ref{fig:ion-channel-hydrophobicity-verification}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/ion-channel-hydrophobicity-verification}
+  \captionof{figure}[The hydrophobic difference observed between TMH4 and it's neighboring TMHs in 6TMH ion channels is not due to the choice of hydrophobic scale.]{\textbf{The hydrophobic difference observed between TMH4 and it's neighboring TMHs in 6TMH ion channels is not due to the choice of hydrophobic scale.}
+  Three different scales were applied to the same dataset used in figure \ref{fig:KD-ion-channels}A to verify the observed differences were not caused by the choice of scale.
+  A) The White and Wimley biophysical scale \cite{White1999}
+  B) The Eisenberg consensus scale \cite{Eisenberg1984}.
+  C) The von Heijne/Hessa biological scale \cite{Hessa2005}.}
+
+\label{fig:ion-channel-hydrophobicity-verification}
+\end{figure}
+
+24TMH class is essentially a modular variant of the 6TMH class, and has even more extreme discrepencies between the equivalent 4 TMHs.
+
+This is another example of cooperative \gls{tmh} insertion.
+The 3rd and 4th \gls{tmh} of the potassium channel (shaker family) was shown to insert either sequentially or cooperatively \cite{Zhang2007, Cymer2015}.
 This is especially notable in the case of KAT1, that is a plant K$_v$ channel that is thought to mediate long-term potassium influx into guard cells causing the stomata to open.
 In the case of KAT1, N-glycosylation of various mutant fusion KAT1 constructs revealed that there is no choice of sequential insertion since \gls{tmh} 3 and 4 have no insertion potential and no topogenic functions themselves \cite{Sato2002, Sato2003}.
 In \gls{tmh} 4 this is due to the charged residues making it relatively polar.
 However, previous experimentation in Kv1.3 had found that while \gls{tmh} 4 did not initiate insertion, it did have insertion potential, and that when constgructs contained multiple \gls{tmh}s, membrane insertion efficiency increased \cite{Tu2000}.
 Without the ability to stop the translation through the translocon and form a \gls{tmh}, it was suggested that a different means was needed than classic sequential insertion, and even that \gls{tmh} 3 and 4 are integrated by the translocon at the same time post-translationally, i.e the \gls{tmh}s are folded prior to insertion \cite{Sato2003}.
 They achieve this in part becase the previous \gls{tmh}s 1 and 2 form a firm ``base'' within the membrane environment.
+
+Oddly, as a trend the TMSOC z-score was not sensitive to detecting function in the extremely hydrophobic TMH4 (Figure \ref{Ion-channel-information-entropy}).
+This is due to the other component of the z-score, the sequence information entropy.
+The relative probability of a polar/charged residue is so high in TMH4 that it apparently has the same expectency as the hydrophobic residues, and the ``simple'' entropy mutes somewhat the effect of the extreme hydrophobicity.
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/Ion-channel-information-entropy}
+		\captionof{figure}[Sequence entropy is unsuitable for assessing function in TMH4 of ion channels.]{\textbf{Sequence entropy is unsuitable for assessing function in TMH4 of ion channels.}
+    }
+
+\label{fig:Ion-channel-information-entropy}
+\end{figure}
+
 
 \subsection{The prevelance of this amongst all TMPs.}
 
@@ -251,7 +289,7 @@ Analysis can only be done if the number of \gls{tmh}s is conserved across the fa
 
 Datasets were attained by querying the UniProt database for controlled vocabulary keywords (Table \ref{table:datasetsizes}) \cite{TheUniProtConsortium2014}.
 After filtering our redundant proteins using UniRef50, the datasets were stratified according to the total number of \gls{tmh}s per protein.
-Only families with a total N $>$ 20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
+Only families with a total N \textgreater  20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
 
 
 
