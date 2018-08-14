@@ -105,7 +105,7 @@ Since catalyic function decreased so much, as a trend we thought that catalytic 
 This gives us an idea of search space where highly polar \gls{tmh}s are proximally adjacent to typically hydrophobic \gls{tmh}s; \gls{gpcr}s and membrane transporters.
 %Need percentage decreases
 
-\subsection{GPCRs contain conserved relatively polar TMHs}
+\subsection{GPCRs contain conserved relatively polar TMH7, which follows the typically hydrophobic TMH6}
 
 \gls{gpcr}s are a diverse family of membrane surface receptors with 7 \gls{tmh} segments.
 GPCRs have long be known to be overrepresented among genomes \cite{Remm2000}.
@@ -148,12 +148,12 @@ To investigate the statistical differences between the z\--score of the \gls{tmh
 TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z\--score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kilmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kilmogorov Smirnov P\--value = 1.74E\--37).
 This is also mirrored in the relationship between the preceding \gls{tmh}s of TMH3.
 TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kilmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kilmogorov Smirnov P\--value = 1.06E\--31).
-We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value > 0.99, Kruskal Wallis P\--value = 0.99, Kilmogorov Smirnov P\--value = 0.07).
+We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value $>$ 0.99, Kruskal Wallis P\--value = 0.99, Kilmogorov Smirnov P\--value = 0.07).
 
 As expected, these trends are mirrored in the Kyte \& Doolittle \cite{Kyte1982} hydrophobicity plots.
 Where there is a high TMSOC z\--score, there is a low hydrophobicity score.
 However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity = 1.13) are very different (Welch's t\--test P\--value = 3.95E\--163), the difference between TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity = 1.39) is less stark (Welch's t\--test P\--value = 0.12).
-Even though there is discrepency between the scales, the change in hydrophobicity  between TMH6 and TMH7 can be seen consistently across the Eisenberg consensus scale \cite{Eisenberg1984}, the White and Wimley biophysical scale \cite{White1999}, and the von Heijne biological scale \cite{Hessa2005} emphasising the significance of this particular \gls{tmh} pair (Figure \ref{fig:gpcr-hydrophobicity-verification}).
+Even though there is discrepency between the scales, the significant change in hydrophobicity  between TMH6 and TMH7 can be seen consistently across the Eisenberg consensus scale \cite{Eisenberg1984} (Welch's t\--test P\--value = 5.61E-130), the White and Wimley biophysical scale \cite{White1999} (Welch's t\--test P\--value = 5.21E-62), and the von Heijne/Hessa biological scale \cite{Hessa2005} (Welch's t\--test P\--value = 3.56E-210) emphasising the significance of this particular \gls{tmh} pair (Figure \ref{fig:gpcr-hydrophobicity-verification}).
 
 \begin{figure}[!ht]
 \centering
@@ -162,29 +162,40 @@ Even though there is discrepency between the scales, the change in hydrophobicit
     Three different scales were applied to the same dataset used in figure \ref{fig:GPCR-structures}F to verify the observed differences were not caused by the choice of scale.
     A) The White and Wimley biophysical scale \cite{White1999}
     B) The Eisenberg consensus scale \cite{Eisenberg1984}.
-    C)The von Heijne biological scale \cite{Hessa2005}.}
+    C) The von Heijne/Hessa biological scale \cite{Hessa2005}.}
 
 \label{fig:gpcr-hydrophobicity-verification}
 \end{figure}
 
-When considering different \gls{gpcr} subfamilies, we see a consistent difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate \gls{gpcr}s in which there is very little discrepency (Figure \ref{fig:KD-GPCR}).
-
+When considering different \gls{gpcr} subfamilies, we see a consistent difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate \gls{gpcr}s (Welch's t\--test P\--value = 0.90) and Frizzled-smooth \gls{gpcr}s (Welch's t\--test P\--value = 0.07) in which there is very little discrepency (Figure \ref{fig:KD-GPCR}).
+For opsins, Welch's t\--test P\--value is 5.62E-15.
+After restricting the dataset to only those records with 7 \gls{tmh}s, fungal mating \gls{gpcr}s were reduced to a set of 9 proteins, howeverr as a trend, they appear to be very typical \gls{gpcr}s in terms of \gls{tmh} hydrophobicity.
+They follow a very similar pattern to the much more popular olfactory \gls{gpcr}s (N=263) for which the TMH6 to TMH7 Welch's t\--test P\--value was 4.73E-35.
+Although for taste rrerceptors, there are much bigger step changes between sequentially adjacent \gls{tmh}s, there is still a real statistical difference between TMH6 and TMH7 (Welch's t\--test P\--value = 2.89E-12).
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{multipass-folding/KD-GPCR}
-		\captionof{figure}[The hydrophobicity of TMHs in GPCR subfamilies.]{\textbf{The hydrophobicity of TMHs in GPCR subfamilies.}}
+		\captionof{figure}[The hydrophobicity of TMHs in GPCR subfamilies.]{\textbf{The hydrophobicity of TMHs in GPCR subfamilies.}
+    Violin plots of the hydrophobicity of \gls{tmh}s of \gls{gpcr}s after selecting a non-exhaustive sample of \gls{gpcr} subfamilies with a wide variety of molecular functions.
+    A) Opsins (N=39).
+    B) Frizzled-smooth \gls{gpcr}s (N=38).
+    C) Fungal mating \gls{gpcr} proteins (N=9).
+    D) Olfactory receptor proteins (N=263).
+    E) Metabolic glutamate receptor (N=41).
+    F) T2R taste receptors (N=45)
+    }
 
 \label{fig:KD-GPCR}
 \end{figure}
 
-Opsins are a group of light sensitive \gls{gpcr}s.
+Opsins are a group of light sensitive \gls{gpcr}s that exhibit the TMH6\--TMH7 hydrophobic discrepency (Figure \ref{fig:KD-GPCR}A).
 It was shown by cross linking studies that opsin \gls{tmh}s 5-7 are retained in the \gls{er} translocon and only parition once biosynthesis is complete \cite{Ismail2008}.
 The timing of this partitioning is controlled by the hydrophobicity of the \gls{tmh}, not protein length or the relative position of the \gls{tmh} within the protein.
-Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native \gls{tmh} 7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
+Although artificially extending the C-terminal did not result release of the \gls{tmh}s, by replacing native TMH7 with a more hydrophobic \gls{tmh}, the speed of insertion was decreased.
 \gls{tmh}s 1-4 are inserted independently, and the 5-7 \gls{tmh}s partition into the membrane at the same time.
 
-
+Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes efficient insertion of the \gls{gpcr} \cite{Ismail2008}, and that this hydrophobic difference is high conserved throughout \gls{gpcr}s generally (Figure \ref{fig:GPCR-structure}F), and especially in many of the subfamilies(Figure \ref{fig:KD-GPCR}A, C, D, F), we believe that the hydrophobic difference of TMH6 and TMH7 is highly important to the biogenesis of \gls{gpcr}s. This is evidence for wide spread biologically employed \gls{tmh} cooperation during translocation of a typically hydrophobic \gls{tmh} remaining in association with the translocon until the relatively polar \gls{tmh} is processed by the insertion machinery.
 
 
 \subsection{Ion channels contain polar-hydrophobic TMH pairs/groups}
@@ -240,7 +251,7 @@ Analysis can only be done if the number of \gls{tmh}s is conserved across the fa
 
 Datasets were attained by querying the UniProt database for controlled vocabulary keywords (Table \ref{table:datasetsizes}) \cite{TheUniProtConsortium2014}.
 After filtering our redundant proteins using UniRef50, the datasets were stratified according to the total number of \gls{tmh}s per protein.
-Only families with a total N > 20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
+Only families with a total N $>$ 20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
 
 
 
@@ -294,6 +305,7 @@ In serotonin, 91 original records were represented by 28 records.
 There were 13 fungal mating proteins, represented by 9 after UniRef50.
 560 olfactory records were mapped to 274 records after Uniref50.
 
+After limiting all these sets to records containing 7 TRANSMEM features, there were 39 opsins, 38 frizzled smooth \gls{gpcr}s, 9 fungal mating \gls{gpcr}s, 41 metabolic glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor \gls{gpcr} proteins.
 
 
 \subsection{Gene Ontology}
