@@ -48,7 +48,7 @@ The nascent peptide is then fed into the translocon as it is being translated; h
 \end{figure}
 
 \gls{ap}s are typically 10-15 residues long that bind to the upper end of the ribosomal exit tunnel.
-Once a specific mRNA codon is recognised, ribosomal stalling is induced \cite{Ito2010} and translation is halted unless a strong enough pulling force from the downstream insertion is acting on the nascent chain at that time \cite{Butkus2013}.
+Once a specific mRNA codon is recognised, ribosomal stalling is induced \cite{Ito2010} and translation is halted unless a strong enough pulling force from the downstream insertion is acting on the nascent chain at that time \cite{Butkus2003}.
 Several ``strengths'' of \gls{ap} have been identified.
 For example, SecM from \textit{E. coli} is 17 residues long and relatively weak, whereas a mutated SecM from \textit{Mannheimia succiniciproducens}(Ms-Sup1) is much stronger and 8 residues long ending in a proline which will halt translation \cite{Ismail2012}.
 There are several other SecM proteins of other strengths from various bacterial species \cite{Yap2009}.
@@ -61,7 +61,7 @@ The journey of the \gls{tmh} through this machinery has been studied using both 
 
 Early evidence of secondary structure folding of the Kv ion channel showed that the S6 (TMH6) is indeed compacted in the ribosomal tunnel by using pegylation and calmodulation of the tagged cysteine-scanned S6 transmembrane segment \cite{Lu2005}.
 Furthermore, accessibility assays and an improved intramolecular crosslinking assay showed that the helical transmembrane S3b–S4 hairpin (the “paddle”) of a voltage-gated potassium (Kv) forms in the ribosome tunnel \cite{Tu2014}.
-Ribosomal folding of the \gls{tmh}s in Kv1.3, a potassium channel, is maintained in the translocon \cite{Tu2010}.
+Ribosomal folding of the \gls{tmh}s in Kv1.3, a potassium channel, is maintained in the translocon \cite{Tu2010a}.
 Therefore, some of the final structural folded elements of the voltage sensor domain occurs within the ribosomal exit tunnel.
 
 Furthermore, it has recently been suggested that larger structures fold as the ribosomal exit tunnel widens \cite{Kudva2018}.
@@ -202,7 +202,7 @@ Although artificially extending the C-terminal did not result release of the \gl
 Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes efficient insertion of the \gls{gpcr} \cite{Ismail2008}, that one would expect the terminal \gls{tmh} to be more hydrophobic rather than relatively polar \cite{Virkki2014}, and that this hydrophobic difference is high conserved throughout \gls{gpcr}s generally (Figure \ref{fig:GPCR-structures}F), and especially in many of the subfamilies(Figure \ref{fig:KD-GPCR}A, C, D, F), we believe that the hydrophobic difference of TMH6 and TMH7 is highly important to the biogenesis of \gls{gpcr}s. This is evidence for wide spread biologically employed \gls{tmh} cooperation during translocation of a typically hydrophobic \gls{tmh} remaining in association with the translocon until the relatively polar \gls{tmh} is processed by the insertion machinery.
 
 
-\subsection{Ion channels contain polar-hydrophobic TMH pairs/groups}
+\subsection{6TMH ion channels contain polar-hydrophobic TMH pairs/groups}
 
 Another group of proteins that featured heavily on the list of top \gls{tmh} pairs with high hydrophobic discrepency was ion channels (Figure \ref{fig:good-bad-ontology}B).
 Ion channels are a much more structurally varied class of \gls{tmp} than \gls{gpcr}s, varing greatly in their number of \gls{tmh}s, so a summary structural alignment equivalent to Figure \ref{fig:GPCR-structures}A, B, and C was not possible.
@@ -305,12 +305,21 @@ It also appears that ion transporters have no conserved hydrophobicity differenc
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.8\textwidth]{multipass-folding/other-groups-good-bad}
-		\captionof{figure}[Other large TMP groups with no apparrent polar-hydophobic groups.]{\textbf{Other large TMP groups with no apparrent polar-hydophobic groups.}}
+		\captionof{figure}[High polarity discrepency between sequentially adjancent TMHs is not present in all TMP transporter families.]{\textbf{High polarity discrepency between sequentially adjancent TMHs is not present in all TMP transporter families.}
+    The mean average Kyte \& Doolittle hydrophobic scores of a \gls{tmh}s from various families and classes of membrane transporter proteins.
+    Datasets are represented as a violin plot where thickness denotes the relative density of the population distribution.
+    A) A dataset of  134 sugar transporters containing 12 \gls{tmh}s.
+    B) A dataset of 50 chloride channels containing 4 \gls{tmh}s.
+    C) 234 ion channels with 4 \gls{tmh}s.
+    D-H) Ion transporters resticted to the number of \gls{tmh}s on the horizontal axis.
+    Sample sizes can be found in table \ref{table:datasetsizes}}
 
 \label{fig:other-groups-good-bad}
 \end{figure}
 
 Another large family of transporters are the sugar transporters.
+In terms of hydrophobic discrepency between sequentially adjacent \gls{tmh} pairs, sugar transporters also have a few peaks and dips at TMH6 and TMH11 (Figure \ref{fig:other-groups-good-bad}A).
+TMH5 (mean hydrophobicity = 1.32) to TMH6 (mean hydrophobicity = 1.81) (Welch's t\--test P\--value = 3.09E-19) was less significant than TMH6 to TMH7 (mean hydrophobicity = 1.23) (Welch's t\--test P\--value = 8.75E-29).
 
 The ion channel 4TMH class also has a discrepency between TMH2 (Kyte \& Doolittle hydrophobicity = 1.49) and TMH3 (hydrophobicity = 1.81) (Welch's t\--test P\-- value = 4.42E-10, from 234 records) (Figure \ref{fig:other-groups-good-bad}C).
 The largest family within the 4TMH class is the chloride channel 4TMH family.
@@ -318,18 +327,34 @@ A jump of hydrophobicity is observed in TMH2 (hydrophobicity = 1.05) to TMH3 (hy
 
 \section{Summary}
 
+Marginally hydrophobic \gls{tmh}s are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage.
+However this presents a significant biophysical challenge; how to incorporate and maintain such \gls{tmh}s into the membrane.
+We we show that among certain classes of \gls{tmp}s that this is a conserved issue.
+There is evidence to suggest that multipass \gls{tmh} arrangements work cooperatively during translocation and insertion to achieve correct folding \cite{Ismail2008, Virkki2014, Sadlish2005, Cross2009, Cymer2013, Sato2002, Sato2003, Zhang2007, Cymer2015, Tu2000}.
+
+Here, we have shown that high discrepency of TMSOC z-score (simple-complex score) \cite{Wong2011, Wong2012}, and several hydrophobicity scales \cite{Hessa2005, Kyte1982, White1999, Eisenberg1984} can be used to identify \gls{tmh} groups that must work cooperatively to incorporate the marginally hydrophobic \gls{tmh}s.
+So far, this method has shown that the TMH7 of \gls{gpcr}s is a conserved marginally hydrophobic \gls{tmh} with the typically polar TMH6 preceding it.
+In opsins, TMH5-TMH7 are incorporated to the membrane together simultaneously by staying in association with the translocon until TMH7 emerges \cite{Ismail2008}.
+We see this pattern across several \gls{gpcr} families and the \gls{gpcr} family as a whole.
+Furthermore we found that the charged TMH4 of 6TMH ion channels has a typically hydrophobic TMH3 preceding it and a more hydrophobic TMH5 following it.
+Indeed there is evidence that TMH3 and TMH4 cannot incorporate alone \cite{Sato2003}, that TMH3 and TMH4 can insert as a pair from the translocon simultaneously \cite{Zhang2007, Cymer2015}.
+
+With the emergence of advanced cross linking experiments and \gls{ap}s that can probe energetics and \gls{tmh}\--\gls{tmh} interactions dynamically during ribosomal translation and membrane insertion, we suggest that \gls{tmh}s with highly contrasting hydrophobicity and TMSOC z-score could yield interesting examples of cooperative insertion during translocation.
+For example, here we find discrepencies in the TMH6 and TMH11 to their adjacent \gls{tmh}s of sugar transporters as well as TMH2 and TMH3 in ion channels, specifically in chloride channels.
+
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{multipass-folding/Good-bad-TMH}
-		\captionof{figure}[A cartoon of potential cooperative TMH insertion methods.]{\textbf{A cartoon of potential cooperative TMH insertion methods.}}
+		\captionof{figure}[A cartoon of potential cooperative TMH insertion methods.]{\textbf{A cartoon of potential cooperative TMH insertion methods.}
+    A) Typically hydrophobic \gls{tmh}s remain in association with the translocon machinery until the marginally hydrophobic \gls{tmh} is released into the membrane.
+    This was observed in an opsin protein \cite{Ismail2008}.
+    B) The marginally polar \gls{tmh} remains in the translocon until the typical hydrophobic \gls{tmh} emerges from the ribosomal exit tunnel and enters the translocon.
+    This was observed in a potassium ion channel \cite{Zhang2007, Cymer2015}.
+    }
 
 \label{fig:Good-bad-TMH}
 \end{figure}
 
-Seen across a variety of 7TM families with varying functions with datasets built from all membrane types (hence variety).
-Suggests a pressure for simpler TMHs to precede more complex ones, repeating every 3-4 TMHs.
-The universality points toward translocon behaviour pressure, or thermodynamic stability in the membrane.
-Would we expect this behaviour if the translocon acted on only one TMH at a time?
 
 \section{Methods}
 \subsection{Datasets}
@@ -355,10 +380,10 @@ Only families with a total N \textgreater  20 were included in the analysis, for
   Because UniRef often returns representatives of splice isoforms as a separate hit, the lists were re-uploaded to UniProtKB to get the final hit.
   The lists are then stratified by the total number of TMHs.
   }
-
+\footnotesize
 \begin{tabular}{lllllll}
-  \footnotesize
-Type                     & Keyword Identifier & UniProt Hits   & UniRef Representatives &  UniProtKB & TMHs & Final hits \\
+
+Type                     & Query & UniProt Hits   & UniRef &  Records & TMHs & Final hits \\
 Ion channel              & KW-0407            & 2452 (176417)  & 912 (21024)            & 882                & 4    & 234        \\
                          &                    &                &                        &                    & 6    & 188        \\
                          &                    &                &                        &                    & 24   & 34         \\
@@ -397,7 +422,7 @@ There were 13 fungal mating proteins, represented by 9 after UniRef50.
 After limiting all these sets to records containing 7 TRANSMEM features, there were 39 opsins, 38 frizzled smooth \gls{gpcr}s, 9 fungal mating \gls{gpcr}s, 41 metabolic glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor \gls{gpcr} proteins.
 
 
-\subsection{Gene Ontology}
+\subsection{Gene ontology}
 77153 protein records matched the query \url{annotation:(type:transmem) AND reviewed:yes} in UniProt \cite{TheUniProtConsortium2014}.
 30045 records of these represented those proteins after submitting the list to UniRef50.
 To gain an approximate idea of what proteins may have cooperative \gls{tmh}s, we submitted that non-redundant SwissProt transmembrane dataset to PANTHER and used their pie chart visualisation \cite{Mi2017}.
@@ -405,6 +430,23 @@ We also submitted a constricted list of the non-redundant SwissProt transmembran
 This consisted of the top 102 pairs from a list of 101604 (the top 0.1\%) \gls{tmh} pairs from 87 unique UniProt records.
 In PANTHER, these hit 59 genes with 58 functions.
 
-\subsection{Complexity}
+\subsection{Complexity and hydrophobic estimation}
+Primarily we used the Kyte \& Doolittle scale in this work.
+We verified this scale with the Eisenberg scale \cite{Eisenberg1984}, the Hessa biological scale \cite{Hessa2005}, and the White and Wimley scale \cite{White1999}.
+The Eisenberg scale is potentially double counted for many of these proteins since it is used by UniProt during their automatic \gls{tmh} annotation where experimental evidence is not avaialble.
+The Hessa biological scale originally reported positional dependencies that affected the hydrophobicity values which were refined in a later version of the scale \cite{Hessa2007}, however this later version was not programmatically available to us.
+
+When stratifying \gls{tmh}s by hydrophobicity and sequence information entropy, there is a clear distinction between anchoring \gls{tmh}s and those with a function beyond anchorage.
+The TMSOC z-score quantifies this relationship and is calculated by equation \ref{equation:zscoreterm2}.
+
+\begin{equation} \label{zscoreterm2}
+z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\sigma}_{\phi}^{2}}+\frac{{({x}_{c}-{\mu}_{c})}^{2}}{{\sigma}_{c}^{2}}\right]
+\end{equation}
+
+Where $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy~\cite{Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} set, that is those~\gls{tmh}s containing active residues.
 
 \subsection{Statistics}
+
+We used the Welch's t\--test to scrutinise the means of the datasets without assuming equal variance.
+To examine any differences in variance of the datasets, the Kruskal Walis test, and Kilmogorov smirnov test were used.
+All these tests were performed using the Python scipy package \cite{Oliphant2007}.
