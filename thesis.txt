@@ -371,7 +371,7 @@ Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
 
 4.2
 
-Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
 4.2.1
 
 The ribosome-translocon complex in the biogenesis of membrane
@@ -380,16 +380,16 @@ proteins. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
 4.2.2
 4.3
 
-Co-operative TMH insertion by the translocon-ribosome complex.123
+Co-operative TMH insertion by the translocon-ribosome complex.124
 
-Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
 4
 
 4.4
 
 4.3.1
 
-Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
 
 4.3.2
 
@@ -397,22 +397,22 @@ Gene ontology . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
 
 4.3.3
 
-Complexity and hydrophobic estimation . . . . . . . . . . . . . 127
+Complexity and hydrophobic estimation . . . . . . . . . . . . . 128
 
 4.3.4
 
 Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
 
-Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
 4.4.1
 
 Large contrasts in TMH hydrophobicity occurs in channels and
-receptors. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+receptors. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 129
 
 4.4.2
 
 GPCRs contain conserved relatively polar TMH7, which follows
-the typically hydrophobic TMH6 . . . . . . . . . . . . . . . . . 129
+the typically hydrophobic TMH6 . . . . . . . . . . . . . . . . . 130
 
 4.4.3
 
@@ -428,25 +428,25 @@ polar-hydrophobic
 
 TMH
 
-pairs/groups indicative of conserved cooperative insertion . . . . 134
+pairs/groups indicative of conserved cooperative insertion . . . . 135
 4.4.4
 
 The prevalance of the high hydrophobic discrepancy of TMHs
-amongst other common “transporter” TMP classes. . . . . . . . 139
+amongst other common “transporter” TMP classes. . . . . . . . 140
 
 4.5
 
-Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
 
 5 Conclusions
 5.1
 
-143
+144
 
-Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Outlook . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 5.1.1
 
-The hydrophobicity–sequence complexity continuum . . . . . . . 143
+The hydrophobicity–sequence complexity continuum . . . . . . . 144
 
 Word count 22,000
 5
@@ -664,12 +664,12 @@ Structural biochemical analysis of a homology model of cytochrome b5. 116
 could integrate spontaneously into the membrane. . . . . . . . . . . . . 118
 4.1
 
-A cartoon showing the generally accepted schematic of sequential multipass TMH insertion into the membranes. . . . . . . . . . . . . . . . . 121
+A cartoon showing the generally accepted schematic of sequential multipass TMH insertion into the membranes. . . . . . . . . . . . . . . . . 122
 
 4.2
 
 A cartoon of the ribosome in association with the translocon during
-insertion. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+insertion. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
 
 4.3
 
@@ -678,13 +678,13 @@ containing the most hydrophobically different TMH pais. . . . . . . . . 129
 
 4.4
 
-The hydrophobicity and complexity of GPCR TMHs. . . . . . . . . . . 130
+The hydrophobicity and complexity of GPCR TMHs. . . . . . . . . . . 131
 8
 
 4.5
 
 The hydrophobic difference observed between TMH6 and TMH7 in
-GPCRs is not due to the choice of hydrophobic scale. . . . . . . . . . . 132
+GPCRs is not due to the choice of hydrophobic scale. . . . . . . . . . . 133
 
 4.6
 
@@ -692,7 +692,7 @@ The hydrophobicity of TMHs in GPCR subfamilies. . . . . . . . . . . . 134
 
 4.7
 
-The hydrophobicity of TMHs in ion channels. . . . . . . . . . . . . . . 136
+The hydrophobicity of TMHs in ion channels. . . . . . . . . . . . . . . 137
 
 4.8
 
@@ -705,18 +705,18 @@ Sequence entropy is unsuitable for assessing function in TMH4 of ion
 channels. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
 
 4.10 High polarity discrepancy between sequentially adjacent TMHs is not
-present in all TMP transporter families. . . . . . . . . . . . . . . . . . 140
+present in all TMP transporter families. . . . . . . . . . . . . . . . . . 141
 4.11 A cartoon of potential cooperative TMH insertion methods. . . . . . . 142
 
 9
 
 Acronyms
-AP Arrest Peptide. 117–119, 137
+AP Arrest Peptide. 117–120, 138
 EM Electron microscopy. 25
 EMC ER Membrane protein Complex. 85
-ER Endoplasmic Reticulum. 13, 16, 22–24, 30, 62, 81–86, 89, 90, 100–108, 115, 119,
-120, 128
-GPCR G protein-coupled receptor. 121–130, 137
+ER Endoplasmic Reticulum. 13, 16, 22–24, 30, 62, 81–86, 89, 90, 100–108, 116, 120,
+129
+GPCR G protein-coupled receptor. 122, 124–130, 138
 HTL Holotranslocon. 24
 KS Kolmogorov-Smirnov. 52, 54–56, 79, 92
 KW Kruskal-Wallis. 38, 39, 43, 52, 54–56, 79, 92
@@ -724,21 +724,21 @@ MD Molecular Dynamics. 21, 22
 PDB Protein Data Bank. 12, 31
 PM Plasma Membrane. 24, 62, 81, 88, 90, 100–102, 104, 106, 107
 POPC Palmitoyloleoylphosphatidylcholine. 17, 48
-RNA Ribonucleic Acid. 115
+RNA Ribonucleic Acid. 116
 SNARE Soluble N-ethylmaleimide-sensitive factor attachment protein receptor. 81,
 85
 SP Signal Peptide. 20, 25, 87, 90
 10
 
-SR Signal Recognition Particle Receptor. 82, 115, 116
-SRP Signal Recognition Particle. 82–84, 86, 91, 115, 116
+SR Signal Recognition Particle Receptor. 82, 116, 117
+SRP Signal Recognition Particle. 82–84, 86, 91, 116, 117
 TA Tail Anchor. 80–87, 89–91, 95–102, 104, 106–108, 110–112, 114
 TM Transmembrane. 11, 14, 24, 28–31, 44, 47, 52, 61, 74, 85, 94
 TMD Transmembrane Domain. 94
 TMH Transmembrane Helix. 11–17, 19–22, 24–54, 57–67, 69, 70, 72–87, 89, 90,
-92–95, 97–120, 122–132, 134–137
+92–95, 97–114, 116–133, 135–138
 TMP Transmembrane Protein. 11, 13, 19–21, 24, 26, 27, 29, 31, 32, 34, 35, 44, 47,
-49, 57–59, 61, 62, 97, 108, 115, 116, 118, 120, 123, 125, 130, 136, 138
+49, 57–59, 61, 62, 97, 108, 116, 117, 119, 121, 124, 125, 130, 137, 138
 TMS Transmembrane Segment. 11, 13, 19, 20
 
 11
@@ -8283,7 +8283,23 @@ relatively polar TMHs.
 
 Abstract
 
+Marginally hydrophobic transmembrane helices perform a variety of essential for life
+intra-membrane molecular biochemistry. However, due to their relatively polar composition, they often lack sufficient hydrophobicity by themselves to incorporate into
+the membrane efficiently via the translocon. Other elements of the sequence context,
+such as other transmembrane helices or flexible loop regions, allow the marginally hydrophobic transmembrane regions to integrate into the membrane environment. Here
+we analyse large numbers of multipass transmembrane protein sequences stratified by
+protein families and molecular functions to show that there are conserved stark differences between sequentially adjacent transmembrane helices in terms of hydrophobicity
+and TMSOC complexity. Not all classes of transmembrane protein have these highly
+polar-hydrophobic pairs. In the instances of GPCRs and ion channels, there is evidence in the literature to support cooperative insertion between the these highly polar-hydrophobic transmembrane helix pairs highlighted in our results. We propose that
+such methods may be used to identify other examples of undocumented cooperative
+transmembrane helix insertion into the membrane.
+120
+
+4.2. INTRODUCTION
+
 4.2
+
+121
 
 Introduction
 
@@ -8297,12 +8313,6 @@ with the membrane insertion machinery on the ER membrane [15, 227].
 Crystal structures showed the SRP targets the nascent peptide chain for membrane
 insertion via a GTPase in both the SRP and SR, that is initially associated with the
 translocon machinery, coming together to form a complex thus bringing the nascent
-120
-
-4.2. INTRODUCTION
-
-121
-
 peptide chain in proximity to the translocon [228]. Mutant studies of SRP revealed
 key discrete conformational stages [228]. These are the specific recognition of signal
 sequences on cargo proteins, the targeting of the package to the membrane, the handing
@@ -8311,6 +8321,20 @@ spatial and temporal coordination of each molecular event [229].
 The prevailing idea about membrane insertion by the translocon is that the TMHs
 partition in the membrane one at a time as the translocon lateral gate opens, exposing
 the TMH to the membrane (Figure 4.1)[29].
+
+4.2.1
+
+The ribosome-translocon complex in the biogenesis of
+membrane proteins.
+
+Ribosomes translate mRNA sequences into amino acid chains and are present in all
+living cells, and indeed the ribosomal complexes presence and activity is, for many,
+used to define whether something is alive. They are a highly conserved RNA-protein
+complex with a multitude of accessory proteins and targetting factors.
+
+122
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
 From Ribosome
 C terminal
 
@@ -8334,24 +8358,25 @@ downstream protein from the TMH is then threaded through the translocon until th
 recognised. This implies that the TMHs ultimately have no meaningful interactions with one another
 until the protein has been threaded into the membrane and the multiple TMHs form a bundle.
 
-4.2.1
-
-The ribosome-translocon complex in the biogenesis of
-membrane proteins.
-
-Ribosomes translate mRNA sequences into amino acid chains and are present in all
-living cells, and indeed the ribosomal complexes presence and activity is, for many,
-used to define whether something is alive. They are a highly conserved RNA-protein
-complex with a multitude of accessory proteins and targetting factors.
 During translation of a TMP protein, the SRP binds to the ribosome after recognising the nascent protein as a TMP. This complex then binds to the SR in association
 with the membrane-bound translocon. The nascent peptide is then fed into the translocon as it is being translated; hence “co-translational insertion”. The journey of the
-
-122
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 TMH through this machinery has been studied using both cross-linking experiments
 and the relatively new technique of Arrest Peptide (AP)s [29].
+APs are typically 10-15 residues long that bind to the upper end of the ribosomal
+exit tunnel. Once a specific mRNA codon is recognised, ribosomal stalling is induced
+[233] and the translation is halted unless a strong enough pulling force from the downstream insertion is acting on the nascent chain at that time [234]. Several “strengths”
+of AP have been identified. For example, SecM from E. coli is 17 residues long and relatively weak, whereas a mutated SecM from Mannheimia succiniciproducens(Ms-Sup1)
+is much stronger and 8 residues long ending in a proline which will halt translation
+[125]. There are several other SecM proteins of other strengths from various bacterial
+species [235]. Therefore APs are a technique that can be used to measure precise
+forces acting on a specific part of the nascent chain during co-translational membrane
+protein integration allowing the study of TMP kinetics during insertion and folding.
+Indeed the force profile of a single residue can now be obtained in vivo [125]. In an
+idealised TMH segment composed of alanine and leucine being inserted into E. coli
+
+4.2. INTRODUCTION
+
+123
 
 PTC
 40S
@@ -8389,27 +8414,16 @@ ribosome hands the nascent chain to the translocon. Once the plug moves to expos
 pore, the translocon has a hydrophobic core which regulates the integration of the TMH via the
 lateral gate [25].
 
-APs are typically 10-15 residues long that bind to the upper end of the ribosomal
-exit tunnel. Once a specific mRNA codon is recognised, ribosomal stalling is induced
-[233] and the translation is halted unless a strong enough pulling force from the downstream insertion is acting on the nascent chain at that time [234]. Several “strengths”
-
-4.2. INTRODUCTION
-
-123
-
-of AP have been identified. For example, SecM from E. coli is 17 residues long and relatively weak, whereas a mutated SecM from Mannheimia succiniciproducens(Ms-Sup1)
-is much stronger and 8 residues long ending in a proline which will halt translation
-[125]. There are several other SecM proteins of other strengths from various bacterial
-species [235]. Therefore APs are a technique that can be used to measure precise
-forces acting on a specific part of the nascent chain during co-translational membrane
-protein integration allowing the study of TMP kinetics during insertion and folding.
-Indeed the force profile of a single residue can now be obtained in vivo [125]. In an
-idealised TMH segment composed of alanine and leucine being inserted into E. coli
 membrane through SecM AP with SDS-PAGE, hydrophobicity is more able to overcome the arrest peptide when it is near the N-terminal (of an N-terminal-inside TMH)
 [125]. This could be either the TMH finally coming into contact with the cytoplasmic
 face of the lipid bilayer, or an interaction between the N-terminal and the tip of the
 lateral gate as previously shown in Sec61; part of a pre-integration TMH interrogation
 [236].
+
+124
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
+
 The ribosome passes the nascent chain to the Sec translocon machinery. Like the ribosome, the Sec pathway is widely conserved across life [85]. Sec61 (in eukaryotes) and
 SecYEG (in prokaryotes) translocate hydrophilic peptides across a membrane whilst
 also integrating sufficiently hydrophobic sequences to the membrane [Rapoport2012,
@@ -8437,11 +8451,6 @@ translocon-
 ribosome complex.
 Early evidence of secondary structure folding of the Kv ion channel showed that the S6
 (referred to later in this study as TMH6) is indeed compacted in the ribosomal tunnel
-
-124
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 by using pegylation and calmodulation of the tagged cysteine-scanned S6 transmembrane segment [239]. Furthermore, accessibility assays and an improved intramolecular
 cross-linking assay showed that the helical transmembrane S3bS4 hairpin (the paddle)
 of a voltage-gated potassium (Kv) forms in the ribosome tunnel [231]. Ribosomal
@@ -8455,9 +8464,16 @@ exit.) zinc finger folds deeper in uL23 mutant than wildtype (but not uL24) and 
 residue domain folds deeper than the uL24 mutant (but not the uL23) [232].
 The ribosomal tunnel also speeds up elongation of neutral and negatively-charged
 peptides. This is attributed to the sporadic negative patches within the ribosomal exit
+
+4.2. INTRODUCTION
+
+125
+
 tunnel [241].
+
 The ribosome clearly has the potential to pre-fold secondary structures and some
 motifs before translocon insertion into the membrane.
+
 Multiple TMHs in a nascent protein can be associated with the eukaryotic translocon simultaneously. It was shown that TMHs can stay in association with the translocon in order to mediate integration of downstream TMHs demonstrated by cross-linking analysis [242, 243]. Not only this, but it was shown that there is a direct
 interaction between the TMHs; more recently APs were used to show pulling forces
 between a TMH and more C-terminally located TMH during the C-terminal TMH
@@ -8465,15 +8481,11 @@ membrane partitioning from the translocon in vivo [244]. This could be facilitat
 during the probing of a TMH from the translocon as the lateral gate “cracks” open in
 an intermediate stage before the TMH satisfies the full hydrophobic requirements to
 open the gate fully, an intermediate stage observed in a SecY crystal structure [238].
+
 16 marginally hydrophobic TMHs were screened and revealed that independently
 they did not efficiently insert via the translocon into the ER [Hedin2009]. The study
 showed that in the presence of the neighbouring loops and TMHs, insertion often
 became sufficient with the exception of two of the marginally hydrophobic TMHs.
-
-4.3. METHODS
-
-125
-
 The orientational preference of neighbouring TMHs was shown to increase insertion
 efficiency into the ER of a marginally hydrophobic TMH [jemalm2012]. A glycosylation study of three relatively polar TMHs revealed that proteins have even evolved
 to exhibit stronger “positive-inside” tendencies when following another TMH [245].
@@ -8483,6 +8495,10 @@ between the ribosome and the translocon can alter the hydrophobic threshold of t
 translocon is dynamic and influenced by downstream flexible sequences [246]. Sequence context is clearly an important factor of the efficient insertion of marginally
 hydrophobic TMHs; these TMHs rely on other components of their protein in order
 to incorporate into the membrane.
+
+126
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
 
 4.3
 
@@ -8505,11 +8521,6 @@ datasets were stratified according to the total number of TMHs per protein. Only
 families with a total N >20 were included in the analysis, for example, there are ion
 channels with 12 TMHs, but only 16 examples fitted the criteria and were omitted
 from the study.
-
-126
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 Table 4.1: Dataset sizes of common TMP families of transporters and channels. The type
 column refers to the family name. The keyword identifier column refers to the specific query term that
 UniProt uses as the controlled vocabulary identifier. UniProt hits refers to the number of SwissProt
@@ -8607,6 +8618,10 @@ Final hits
 292
 35
 
+4.3. METHODS
+
+127
+
 GPCR subfamilies
 The 7TMR list is a list distributed by UniProt containing G protein-coupled receptor (GPCR)s available at http://www.uniprot.org/docs/7tmrlist.txt [129]. The
 entire list contains 3115 UniProt IDs which mapped to 3092 records on the date of
@@ -8621,11 +8636,6 @@ receptors were mapped to 45 records after UniRef50. There were 82 records for fr
 fungal mating proteins, represented by 9 after UniRef50. 560 olfactory records were
 mapped to 274 records after Uniref50.
 After limiting all these sets to records containing 7 TRANSMEM features, there
-
-4.3. METHODS
-
-127
-
 were 39 opsins, 38 frizzled smooth GPCRs, 9 fungal mating GPCRs, 41 metabolic
 glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor GPCR
 proteins. TRANSMEM is an annotation by UniProt denoting a TMH evidenced by
@@ -8657,6 +8667,11 @@ transmembrane dataset to PANTHER and used their pie chart visualisation [247].
 We also submitted a constricted list of the non-redundant SwissProt transmembrane
 dataset to PANTHER by sorting the list according to proteins with sequentially
 adjacent TMHs that had the greatest difference in Kyte & Doolittle hydrophobicity
+
+128
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
+
 [30]. This consisted of the top 102 pairs from a list of 101604 (the top 0.1%) TMH
 pairs from 87 unique UniProt records. In PANTHER, these hit 59 genes with 58
 functions.
@@ -8676,11 +8691,6 @@ available to us.
 When stratifying TMHs by hydrophobicity and sequence information entropy, there
 is a clear distinction between anchoring TMHs and those with a function beyond anchoring. The TMSOC z-score quantifies this relationship and is calculated by equation
 ??.
-
-128
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 "
 z(xΦ , xc ) = (−1)s
 
@@ -8706,10 +8716,16 @@ equal variance. To examine any differences in the skew of the datasets, the Krus
 Walis, and the Kolmogorov Smirnov tests were used. All these tests were performed
 using the Python scipy package [248].
 
+4.4. RESULTS AND DISCUSSION
+
 4.4
-4.4.1
+
+129
 
 Results and discussion
+
+4.4.1
+
 Large contrasts in TMH hydrophobicity occurs in channels and receptors.
 
 In order to identify which type of TMP may contain potentially cooperative TMHs,
@@ -8722,14 +8738,6 @@ global TMP list, however, it should be considered that “transporters” in thi
 also includes both ion transporters and ion channels (Figure 4.3). Among the other
 prevalent functions are receptors, binding proteins, and signal transducers. All these
 lists were predominantly made up of GPCRs.
-Since catalytic function decreased so much, as a trend we thought that the catalytic
-function of the TMP may not be associated with a high hydrophobic discrepancy
-between TMHs within the protein. This gives us an idea of search space where highly
-
-4.4. RESULTS AND DISCUSSION
-
-129
-
 antioxidant activity (GO:0016209)
 
 A)
@@ -8762,6 +8770,14 @@ the highest (0.1%) hydrophobic discrepancy between adjacent TMHs. Note that the 
 of binding TMPs stay roughly the same, receptors and signal transducers reduce slightly, catalytic
 proteins are reduced by two thirds and transporter more than doubles in proportion.
 
+Since catalytic function decreased so much, as a trend we thought that the catalytic
+function of the TMP may not be associated with a high hydrophobic discrepancy
+between TMHs within the protein. This gives us an idea of search space where highly
+
+130
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
+
 polar TMHs are proximally adjacent to typically hydrophobic TMHs; GPCRs and
 membrane transporters.
 
@@ -8780,14 +8796,24 @@ is translated across the membrane. GPCRs have been associated with tumorigenesis
 important topic of study.
 Here, we structurally aligned 7 structures of monomeric GPCRs using PyMol [254];
 PDB codes 1u19 (rhodopsin) [255], 2z73 (rhodopsin) [256], 2vt4 (β1-adrenergic receptor) [257], 2lnl (CXCR1, rhodopsin-like) [96], 4mbs (CCR5, chemokine receptor) [258],
-
-130
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 4xt1 (viral chemokine) [259], and 4ea3 (opioid receptor) [260] (Figure 4.4A).
+Even in a relatively small dataset of functionally varied GPCRs, we can see structural conservation of the TMH arrangement (Figure 4.4A Figure 4.4C). Hydrophobic
+patterns are hard to identify structurally beyond the clear membrane boundary where
+we would expect to see hydrophobic residues in the TMH (Figure 4.4B). TMSOC [26,
+102] is an algorithm that takes into account the White and Wimley hydrophobicity
+[32] and the information entropy of the TMH sequence. The resulting z-score has been
+shown to be able to scrutinise between TMHs that serve as anchors and those that
+have a function beyond TMP anchoring. The lower the z-score (low sequence information entropy and high hydrophobicity), the more likelihood of the TMH being solely
+a membrane anchor. When considering the functional/anchoring potential of these
+GPCR TMHs using TMSOC, we see trends among the structures with an average
+of 1.96 for TMH1, 2.30 for TMH2, 2.43 for TMH3, 2.34 for TMH4, 2.05 for TMH5,
+2.24 for TMH 6 and 2.83 for TMH7 (Figure 4.4D). TMH3 and TMH7 are therefor the
+most likely to contain function beyond anchorage, whilst the low z-scores of TMH1
+
+4.4. RESULTS AND DISCUSSION
 A)
 
+131
 B)
 
 180°
@@ -8838,27 +8864,15 @@ plot, the thickness indicating the distribution of the data. The mean average is
 and the median is the dash in orange. F) As in E, however, the vertical axis is Kyte & Doolittle
 hydrophobicity [30].
 
-Even in a relatively small dataset of functionally varied GPCRs, we can see structural conservation of the TMH arrangement (Figure 4.4A Figure 4.4C). Hydrophobic
-patterns are hard to identify structurally beyond the clear membrane boundary where
-
-4.4. RESULTS AND DISCUSSION
-
-131
-
-we would expect to see hydrophobic residues in the TMH (Figure 4.4B). TMSOC [26,
-102] is an algorithm that takes into account the White and Wimley hydrophobicity
-[32] and the information entropy of the TMH sequence. The resulting z-score has been
-shown to be able to scrutinise between TMHs that serve as anchors and those that
-have a function beyond TMP anchoring. The lower the z-score (low sequence information entropy and high hydrophobicity), the more likelihood of the TMH being solely
-a membrane anchor. When considering the functional/anchoring potential of these
-GPCR TMHs using TMSOC, we see trends among the structures with an average
-of 1.96 for TMH1, 2.30 for TMH2, 2.43 for TMH3, 2.34 for TMH4, 2.05 for TMH5,
-2.24 for TMH 6 and 2.83 for TMH7 (Figure 4.4D). TMH3 and TMH7 are therefor the
-most likely to contain function beyond anchorage, whilst the low z-scores of TMH1
 and TMH5 indicate they are more optimal anchors [98].
 When we consider much larger sequence datasets containing 1016 TMHs at each
 TMH number from non-redundant GPCRs obtained from UniProt, the trend remains
 the same: that TMH3 (mean z-score of 2.52) and TMH7 (mean z-score of 2.55) have the
+
+132
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
+
 highest z-score, whilst TMH1 (mean z-score of 2.09) and TMH5 (mean z-score of 2.20)
 have the lowest (Figure 4.4E). To investigate the statistical differences between the zscore of the TMHs, we applied the Kruskal Wallis and 2-sample Kolmogorov Smirnov
 tests from each TMH number to each other TMH number. TMH5 and TMH7 are
@@ -8873,11 +8887,6 @@ Smirnov P-value = 1.06E-174) and so are TMH2 and TMH3 (Welch’s t-test P-value 
 and TMH6 (Welch’s t-test P-value >0.99, Kruskal Wallis P-value = 0.99, Kolmogorov
 Smirnov P-value = 0.07).
 As expected, these trends are mirrored in the Kyte & Doolittle [30] hydrophobicity
-
-132
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
-
 plots. Where there is a high TMSOC z-score, there is a low hydrophobicity score. However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity
 = 1.13) are very different (Welch’s t-test P-value = 3.95E-163), the difference between
 TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity = 1.39) is
@@ -8887,8 +8896,15 @@ be seen consistently across the Eisenberg consensus scale [39] (Welch’s t-test
 = 5.61E-130), the White and Wimley biophysical scale [32] (Welch’s t-test P-value
 = 5.21E-62), and the von Heijne/Hessa biological scale [15] (Welch’s t-test P-value =
 3.56E-210) emphasising the significance of this particular TMH pair (Figure 4.5).
+In order to determine if this is conserved through the GPCR subfamilies, a variety of GPCRs with different functions were examined in terms of Kyte & Doolittle
+hydrophobicity. When considering different GPCR subfamilies, we see a consistent
+difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate GPCRs (Welch’s t-test P-value = 0.90) and Frizzled-smooth GPCRs (Welch’s
+t-test P-value = 0.07) in which there is only a little discrepancy (Figure 4.6). For
+
+4.4. RESULTS AND DISCUSSION
 A)
 
+133
 B)
 
 C)
@@ -8899,15 +8915,6 @@ dataset used in figure 4.4F to verify the observed differences were not caused b
 A) The White and Wimley biophysical scale [32] B) The Eisenberg consensus scale [39]. C) The von
 Heijne/Hessa biological scale [15].
 
-In order to determine if this is conserved through the GPCR subfamilies, a variety of GPCRs with different functions were examined in terms of Kyte & Doolittle
-
-4.4. RESULTS AND DISCUSSION
-
-133
-
-hydrophobicity. When considering different GPCR subfamilies, we see a consistent
-difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate GPCRs (Welch’s t-test P-value = 0.90) and Frizzled-smooth GPCRs (Welch’s
-t-test P-value = 0.07) in which there is only a little discrepancy (Figure 4.6). For
 opsins, Welch’s t-test P-value is 5.62E-15. After restricting the dataset to only those
 records with 7 TMHs, fungal mating GPCRs were reduced to a set of 9 proteins,
 however as a trend, they appear to be very typical GPCRs in terms of TMH hydrophobicity. They follow a very similar pattern to the much more popular olfactory
@@ -8915,25 +8922,9 @@ GPCRs (N=263) for which the TMH6 to TMH7 Welch’s t-test P-value was 4.73E-35.
 For taste receptors, there are much bigger step changes between sequentially adjacent
 TMHs than between TMH6 to TMH7. But there is still a real statistical difference
 between TMH6 and TMH7 (Welch’s t-test P-value = 2.89E-12).
-
 Opsins are a group of light-sensitive GPCRs that exhibit the TMH6-TMH7 hydrophobic discrepancy (Figure 4.6A). It was shown by cross-linking studies that opsin
 TMHs 5-7 are retained in the ER translocon and only partition into the membrane
 once biosynthesis is complete [261]. The timing of this partitioning is controlled by the
-hydrophobicity of the TMH, not protein length or the relative position of the TMH
-within the protein. Although artificially extending the C-terminal did not result in
-the release of the TMHs, by replacing native TMH7 with a more hydrophobic TMH,
-the speed of insertion was decreased. TMHs 1-4 are inserted independently, and the
-5-7 TMHs partition into the membrane at the same time.
-
-Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes
-efficient insertion of the GPCR [261], that one would expect the terminal TMH to
-be more hydrophobic rather than relatively polar [245], and that this hydrophobic
-difference is high conserved throughout GPCRs generally (Figure 4.4F), and especially
-in many of the subfamilies(Figure 4.6A, C, D, F), we believe that the hydrophobic
-difference of TMH6 and TMH7 is highly important to the biogenesis of GPCRs. This is
-evidence for widespread biologically employed TMH cooperation during translocation
-of a typically hydrophobic TMH remaining in association with the translocon until
-the relatively polar TMH is processed by the insertion machinery.
 
 134
 A)
@@ -8941,11 +8932,11 @@ A)
 CHAPTER 4. COOPERATION BETWEEN TMHS...
 Opsins
 
-B) Frizzled smooth
-
 C) Fungal mating
 
 E) Metabolic Glutamate
+
+B) Frizzled smooth
 
 D) Olfactory
 
@@ -8957,6 +8948,26 @@ subfamilies with a wide variety of molecular functions. A) Opsins (N=39). B) Fri
 GPCRs (N=38). C) Fungal mating GPCR proteins (N=9). D) Olfactory receptor proteins (N=263).
 E) Metabolic glutamate receptor (N=41). F) T2R taste receptors (N=45)
 
+hydrophobicity of the TMH, not protein length or the relative position of the TMH
+within the protein. Although artificially extending the C-terminal did not result in
+the release of the TMHs, by replacing native TMH7 with a more hydrophobic TMH,
+the speed of insertion was decreased. TMHs 1-4 are inserted independently, and the
+5-7 TMHs partition into the membrane at the same time.
+
+4.4. RESULTS AND DISCUSSION
+
+135
+
+Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes
+efficient insertion of the GPCR [261], that one would expect the terminal TMH to
+be more hydrophobic rather than relatively polar [245], and that this hydrophobic
+difference is high conserved throughout GPCRs generally (Figure 4.4F), and especially
+in many of the subfamilies(Figure 4.6A, C, D, F), we believe that the hydrophobic
+difference of TMH6 and TMH7 is highly important to the biogenesis of GPCRs. This is
+evidence for widespread biologically employed TMH cooperation during translocation
+of a typically hydrophobic TMH remaining in association with the translocon until
+the relatively polar TMH is processed by the insertion machinery.
+
 4.4.3
 
 6TMH ion channels contain polar-hydrophobic TMH
@@ -8964,11 +8975,6 @@ pairs/groups indicative of conserved cooperative insertion
 
 Another group of proteins that featured heavily on the list of top TMH pairs with a
 high hydrophobic discrepancy was ion channels (Figure 4.3B). Ion channels are a much
-
-4.4. RESULTS AND DISCUSSION
-
-135
-
 more structurally varied class of TMP than GPCRs, varying greatly in their number
 of TMHs, so a summary structural alignment equivalent to Figure 4.4A, B, and C was
 not possible.
@@ -8984,6 +8990,11 @@ in Kv1.3 had found that while TMH4 did not initiate insertion, it did have inser
 potential and that when constructs contained multiple TMHs, membrane insertion
 efficiency increased [265]. Without the ability to stop the translation through the
 translocon and form a TMH, it was suggested that a different means was needed than
+
+136
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
+
 classic sequential insertion, and even that TMH3 and TMH4 are integrated by the
 translocon at the same time post-translationally, i.e the TMHs are folded prior to
 insertion [264]. They achieve this in part because the previous TMHs, TMH1 and
@@ -8996,12 +9007,24 @@ of KAT1, cannot [263]. However, there is strong evidence that TMH3 and TMH4
 cooperate with one another during membrane integration and are inserted at the same
 time [29, 262–264]. This leads us to be inclined to believe that the hydrophobic gap
 here that indicates a conserved cooperative role between TMHs is that between TMH3
+and TMH4 rather than TMH4 and TMH5.
+This statistical difference between the hydrophobicity of TMH3 and TMH4 holds
+true for voltage-gated ion channels (Welch’s t-test P-value = 1.57E-17) (Figure 4.7C).
+However, the pattern is more obscure in ligand-gated ion channels (Welch’s t-test Pvalue = 5.32E-2). The difference does appear to match the general pattern, however,
+albeit as a trend, in the 33 records; there is a decrease in the mean hydrophobicity
+from 1.31 to 1.03 (Figure 4.7D).
+The TMH3 TMH4 hydrophobic step also appears to be independent of the ion
+being transported. For calcium ion channels the drop from TMH3 (mean hydrophobicity 1.52) to TMH3 (mean hydrophobicity 1.21) is significant (Welch’s t-test P-value
+= 3.57E-3) given the relatively low sample size (38 protein records) (Figure 4.7E). In
+potassium channels, the difference is even greater between TMH3 (mean hydrophobicity of 1.37) and TMH4 (mean hydrophobicity of 0.61) (Welch’s t-test P-value =
+2.52E-19) in potassium ion channels (Figure 4.7F).
+The observed difference between TMH3 and TMH4 is somewhat independent of
+the scale chosen (Figure 4.8), however, the Kyte & Doolittle scale is the most sensitive
 
-136
-
-CHAPTER 4. COOPERATION BETWEEN TMHS...
+4.4. RESULTS AND DISCUSSION
 A)
 
+137
 B)
 
 Ion channels
@@ -9049,23 +9072,10 @@ schematic of an ion channel. P indicates the pore-forming area of the protein, w
 into the membrane but is not a membrane-spanning unit. In the case of the 24 class, this pattern is
 repeated 4 times.
 
-4.4. RESULTS AND DISCUSSION
+138
 
-137
+CHAPTER 4. COOPERATION BETWEEN TMHS...
 
-and TMH4 rather than TMH4 and TMH5.
-This statistical difference between the hydrophobicity of TMH3 and TMH4 holds
-true for voltage-gated ion channels (Welch’s t-test P-value = 1.57E-17) (Figure 4.7C).
-However, the pattern is more obscure in ligand-gated ion channels (Welch’s t-test Pvalue = 5.32E-2). The difference does appear to match the general pattern, however,
-albeit as a trend, in the 33 records; there is a decrease in the mean hydrophobicity
-from 1.31 to 1.03 (Figure 4.7D).
-The TMH3 TMH4 hydrophobic step also appears to be independent of the ion
-being transported. For calcium ion channels the drop from TMH3 (mean hydrophobicity 1.52) to TMH3 (mean hydrophobicity 1.21) is significant (Welch’s t-test P-value
-= 3.57E-3) given the relatively low sample size (38 protein records) (Figure 4.7E). In
-potassium channels, the difference is even greater between TMH3 (mean hydrophobicity of 1.37) and TMH4 (mean hydrophobicity of 0.61) (Welch’s t-test P-value =
-2.52E-19) in potassium ion channels (Figure 4.7F).
-The observed difference between TMH3 and TMH4 is somewhat independent of
-the scale chosen (Figure 4.8), however, the Kyte & Doolittle scale is the most sensitive
 to the hydrophobic differences between TMH3 and TMH4. Statistical significance was
 found in the difference between TMH3 and TMH4 in the Eisenberg scale (Welch’s t-test
 P-value = 4.74E-23), the White and Wimley scale (Welch’s t-test P-value = 1.26E3). The Hessa/von Heijne biological scale was particularly insensitive to the mean
@@ -9075,15 +9085,8 @@ skews of the data (Kolmogorov Smirnov test P-value = 1.56E-4, Kruskal Wallis P-v
 may not readily scrutinise the hydrophobicity between the two. All the scales however
 corroborate the large hydrophobic difference between TMH4 and TMH5 (Welch’s t-test P-values for Hessa = 1.23E-35, White and Wimley = 4.82E-23, Eisenberg =
 5.72E-41)
-24TMH class is essentially a modular variant of the 6TMH class, and has even
-more extreme discrepencies between the equivalent 4 TMHs (Figure 4.7B). In the
-first cluster, TMH3 (mean Kyte & Doolittle hydrophobicity = 0.96) to TMH4 (mean
-hydrophobicity = 0.47) is different (Welch’s t-test P-value = 5.16E-6), but even more
-
-138
 A)
 
-CHAPTER 4. COOPERATION BETWEEN TMHS...
 B)
 
 C)
@@ -9094,6 +9097,15 @@ scales were applied to the same dataset used in figure 4.7A to verify the observ
 not caused by the choice of scale. A) The White and Wimley biophysical scale [32] B) The Eisenberg
 consensus scale [39]. C) The von Heijne/Hessa biological scale [15].
 
+24TMH class is essentially a modular variant of the 6TMH class, and has even
+
+4.4. RESULTS AND DISCUSSION
+
+139
+
+more extreme discrepencies between the equivalent 4 TMHs (Figure 4.7B). In the
+first cluster, TMH3 (mean Kyte & Doolittle hydrophobicity = 0.96) to TMH4 (mean
+hydrophobicity = 0.47) is different (Welch’s t-test P-value = 5.16E-6), but even more
 so is the step up from TMH4 to TMH5 (hydrophobicity = 2.26, Welch’s t-test P-value = 5.16E-32). The preceding step is weaker, and the proceeding step is greater
 throughout the 6TMH “modules”. A similar step change is found between TMH9 and
 TMH10 (P-value = 3.02E-13) and TMH10 to TMH11 (P-value = 5.51E-44), TMH15
@@ -9105,14 +9117,10 @@ the z-score, the sequence information entropy [26, 102]. The relative probabilit
 polar/charged residue is so high in TMH4 that it apparently has the same expectancy
 as the hydrophobic residues, and the “simple” entropy mutes somewhat the effect of
 the extreme hydrophobicity. This is compounded by the fact that the White and
-
-4.4. RESULTS AND DISCUSSION
-
-139
-
 Wimley scale (used to generate the z-score) is already less sensitive to the relative
 polarity difference between TMH3 and TMH4 than the Kyte & Doolittle scale (Figure
 4.7A, Figure 4.8A).
+
 A)
 
 B)
@@ -9120,7 +9128,11 @@ B)
 Figure 4.9: Sequence entropy is unsuitable for assessing function in TMH4 of ion channels. A) The TMSOC z-score [26, 102] of TMHs from the ion channel dataset used in Figure ??A.
 B) The sequence information entropy of those same TMHs.
 
+140
+
 4.4.4
+
+CHAPTER 4. COOPERATION BETWEEN TMHS...
 
 The prevalance of the high hydrophobic discrepancy
 of TMHs amongst other common “transporter” TMP
@@ -9138,10 +9150,23 @@ also have a few peaks and dips at TMH6 and TMH11 (Figure 4.10A). TMH5 (mean
 hydrophobicity = 1.32) to TMH6 (mean hydrophobicity = 1.81) (Welch’s t-test Pvalue = 3.09E-19) was less significant than TMH6 to TMH7 (mean hydrophobicity =
 1.23) (Welch’s t-test P-value = 8.75E-29). TMH10 (mean hydrophobicity = 1.66) to
 TMH11 (mean hydrophobicity = 1.23) (Welch’s t-test P-value = 1.03E-14) was also
+less significant than TMH11 to TMH12 (mean hydrophobicity = 1.84) (Welch’s t-test
+P-value = 3.22E-22).
+The ion channel 4TMH class also has a discrepancy between TMH2 (Kyte & Doolittle hydrophobicity = 1.49) and TMH3 (hydrophobicity = 1.81) (Welch’s t-test P- value
+= 4.42E-10, from 234 records) (Figure 4.10C). The largest family within the 4TMH
+class is the chloride channel 4TMH family. A jump of hydrophobicity is observed in
+TMH2 (hydrophobicity = 1.05) to TMH3 (hydrophobicity = 1.50) (Welch’s t-test Pvalue = 5.34E-5, from 50 records) (Figure 4.10B).
 
-140
+4.5
 
-CHAPTER 4. COOPERATION BETWEEN TMHS...
+Summary
+
+Marginally hydrophobic TMHs are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage, and widely
+prevalent among TMPs [31]. However, this presents a significant biophysical and
+
+4.5. SUMMARY
+
+141
 E)
 
 A)
@@ -9182,43 +9207,15 @@ A) A dataset of 134 sugar transporters containing 12 TMHs. B) A dataset of 50 ch
 containing 4 TMHs. C) 234 ion channels with 4 TMHs. D-H) Ion transporters restricted to the
 number of TMHs on the horizontal axis. Sample sizes can be found in table 4.1
 
-less significant than TMH11 to TMH12 (mean hydrophobicity = 1.84) (Welch’s t-test
-P-value = 3.22E-22).
-
-4.5. SUMMARY
-
-141
-
-The ion channel 4TMH class also has a discrepancy between TMH2 (Kyte & Doolittle hydrophobicity = 1.49) and TMH3 (hydrophobicity = 1.81) (Welch’s t-test P- value
-= 4.42E-10, from 234 records) (Figure 4.10C). The largest family within the 4TMH
-class is the chloride channel 4TMH family. A jump of hydrophobicity is observed in
-TMH2 (hydrophobicity = 1.05) to TMH3 (hydrophobicity = 1.50) (Welch’s t-test Pvalue = 5.34E-5, from 50 records) (Figure 4.10B).
-
-4.5
-
-Summary
-
-Marginally hydrophobic TMHs are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage, and widely
-prevalent among TMPs [31]. However, this presents a significant biophysical and
 biological challenge; how to incorporate and maintain such necessarily relatively polar TMHs into the membrane. We show that among certain classes of TMPs that
-this is a conserved issue. There is evidence to suggest that multipass TMH arrangements work cooperatively during translocation and insertion to achieve correct folding
-of marginally hydrophobic TMHs [jemalm2012, 29, 231, 242–245, 261–265] (Figure
-4.11).
-Here, we have shown that high discrepancy of TMSOC z-score (simple-complex
-score) [26, 102], and several hydrophobicity scales [15, 30, 32, 39] can be used to
-identify TMH groups that must work cooperatively to incorporate the marginally hydrophobic TMHs. Here we have shown that the hydrophobic relationships between
-these cooperatively inserted TMHs are conserved throughout their larger families indicating that cooperative insertion may be a routine mechanism for the insertion of some
-families of TMPs. So far, this method has shown that the TMH7 of GPCRs is a conserved marginally hydrophobic TMH with the typically hydrophobic TMH6 preceding
-it. In opsins, TMH5-TMH7 are incorporated into the membrane together simultaneously by staying in association with the translocon until TMH7 emerges [261]. We
-see this pattern across several GPCR sub-families and the GPCR family as a whole.
-Furthermore, we found that the charged TMH4 of 6TMH ion channels has a typically
-hydrophobic TMH3 preceding it and a more hydrophobic TMH5 following it. Indeed
-there is evidence that TMH3 and TMH4 cannot incorporate alone [264], that TMH3
 
 142
 
 CHAPTER 4. COOPERATION BETWEEN TMHS...
 
+this is a conserved issue. There is evidence to suggest that multipass TMH arrangements work cooperatively during translocation and insertion to achieve correct folding
+of marginally hydrophobic TMHs [jemalm2012, 29, 231, 242–245, 261–265] (Figure
+4.11).
 Less hydrophobic
 
 More hydrophobic
@@ -9245,6 +9242,21 @@ marginally hydrophobic TMH can associate with the typical hydrophobic TMH in the
 tunnel [231] or in the translocon tunnel [262]. This was observed in a potassium ion channel [29, 231,
 262].
 
+Here, we have shown that high discrepancy of TMSOC z-score (simple-complex
+score) [26, 102], and several hydrophobicity scales [15, 30, 32, 39] can be used to
+identify TMH groups that must work cooperatively to incorporate the marginally hydrophobic TMHs. Here we have shown that the hydrophobic relationships between
+these cooperatively inserted TMHs are conserved throughout their larger families indicating that cooperative insertion may be a routine mechanism for the insertion of some
+families of TMPs. So far, this method has shown that the TMH7 of GPCRs is a conserved marginally hydrophobic TMH with the typically hydrophobic TMH6 preceding
+it. In opsins, TMH5-TMH7 are incorporated into the membrane together simultaneously by staying in association with the translocon until TMH7 emerges [261]. We
+see this pattern across several GPCR sub-families and the GPCR family as a whole.
+
+4.5. SUMMARY
+
+143
+
+Furthermore, we found that the charged TMH4 of 6TMH ion channels has a typically
+hydrophobic TMH3 preceding it and a more hydrophobic TMH5 following it. Indeed
+there is evidence that TMH3 and TMH4 cannot incorporate alone [264], that TMH3
 and TMH4 can insert as a pair from the translocon simultaneously [29, 262].
 With the emergence of advanced cross-linking experiments and APs that can probe
 energetics and TMH-TMH interactions dynamically during ribosomal translation and
@@ -9269,7 +9281,7 @@ suggest probing functional classification of yet uncharacterised membrane protei
 similarities of combinations of complex TM sets to well studied membrane proteins and
 finding those classes of TM proteins where this principle is most directly applicable.
 
-143
+144
 
 Bibliography
 1. Ladokhin, A. S. Membrane Protein Folding & Lipid Interactions: Theory &
@@ -9291,11 +9303,11 @@ Biophysica Acta - Biomembranes 1828, 2592–2608 (2013).
 9. Van Meer, G., Voelker, D. R. & Feigenson, G. W. Membrane lipids: Where they
 are and how they behave. Nature Reviews Molecular Cell Biology 9, 112–124
 (2008).
-144
-
-BIBLIOGRAPHY
-
 145
+
+146
+
+BIBLIOGRAPHY
 
 10. Sharpe, H. J., Stevens, T. J. & Munro, S. A Comprehensive Comparison of
 Transmembrane Domains Reveals Organelle-Specific Properties. Cell 142, 158–
@@ -9319,9 +9331,9 @@ Biochemistry 38, 9778–9782 (1999).
 19. Situ, A. J., Kang, S. M., Frey, B. B., An, W., Kim, C. & Ulmer, T. S. Membrane Anchoring of α-Helical Proteins: Role of Tryptophan. Journal of Physical
 Chemistry B 122, 1185–1194 (2018).
 
-146
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+147
 
 20. Chamberlain, A. K., Lee, Y., Kim, S. & Bowie, J. U. Snorkeling preferences
 foster an amino acid composition bias in transmembrane helices. Journal of
@@ -9345,9 +9357,9 @@ helix: simple or complex. Nucleic Acids Research 40, W370–W375 (2012).
 30. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
 character of a protein. Journal of Molecular Biology 157, 105–132 (1982).
 
-BIBLIOGRAPHY
+148
 
-147
+BIBLIOGRAPHY
 
 31. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & Von Heijne, G. Molecular code for
 transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
@@ -9372,9 +9384,9 @@ Annual Review of Biochemistry 53, 595–623 (1984).
 40. Krogh, A., Larsson, B., Von Heijne, G. & Sonnhammer, E. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of Molecular Biology 305, 567–580 (2001).
 41. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
 
-148
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+149
 
 42. Käll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology and signal peptide prediction method. Journal of Molecular Biology 338,
 1027–1036 (2004).
@@ -9402,9 +9414,9 @@ and Evolution 5, 1291–1297 (2013).
 52. Elofsson, A. & von Heijne, G. Membrane Protein Structure: Prediction versus
 Reality. Annual Review of Biochemistry 76, 125–140 (2007).
 
-BIBLIOGRAPHY
+150
 
-149
+BIBLIOGRAPHY
 
 53. Merklinger, E., Gofman, Y., Kedrov, A., Driessen, A., Ben-Tal, N., Shai, Y. &
 Rapaport, D. Membrane integration of a mitochondrial signal-anchored protein
@@ -9436,9 +9448,9 @@ Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
 of cholesterol, glycosphingolipids, and anionic phospholipids in vitro. Journal of
 Biological Chemistry 280, 36815–36823 (2005).
 
-150
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+151
 
 63. Urban, S. & Wolfe, M. S. Reconstitution of intramembrane proteolysis in vitro
 reveals that pure rhomboid is sufficient for catalysis and specificity. eng. Proceedings of the National Academy of Sciences 102, 1883–1888 (2005).
@@ -9464,9 +9476,9 @@ membranes. Science 175, 720–731 (1972).
 73. Op den Kamp, J. A. F. Lipid Asymmetry in Membranes. Annual Review of
 Biochemistry 48, 47–71 (1979).
 
-BIBLIOGRAPHY
+152
 
-151
+BIBLIOGRAPHY
 
 74. De Planque, M. R. R. & Killian, J. A. Protein-lipid interactions studied with
 designed transmembrane peptides: Role of hydrophobic matching and interfacial
@@ -9495,9 +9507,9 @@ green fluorescent proteins. Proceedings of the National Academy of Sciences 95,
 84. Drew, D., Fröderberg, L., Baars, L. & de Gier, J.-W. L. Assembly and overexpression of membrane proteins in Escherichia coli. Biochimica et Biophysica
 Acta (BBA) - Biomembranes 1610, 3–10 (2003).
 
-152
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+153
 
 85. Cao, T. B. & Saier, M. H. The general protein secretory pathway: phylogenetic analyses leading to evolutionary conclusions. Biochimica et Biophysica
 Acta (BBA) - Biomembranes 1609, 115–125 (2003).
@@ -9525,9 +9537,9 @@ of Biological Chemistry 282, 33201–33209 (2007).
 Rapoport, T. A. & Pohl, P. Determining the Conductance of the SecY Protein Translocation Channel for Small Molecules. Molecular Cell 26, 501–509
 (2007).
 
-BIBLIOGRAPHY
+154
 
-153
+BIBLIOGRAPHY
 
 94. Martoglio, B., Hofmann, M. W., Brunner, J. & Dobberstein, B. The proteinconducting channel in the membrane of the endoplasmic reticulum is open laterally toward the lipid bilayer. Cell 81, 207–214 (1995).
 95. Gogala, M., Becker, T., Beatrix, B., Armache, J.-P., Barrio-Garcia, C., Berninghausen, O. & Beckmann, R. Structures of the Sec61 complex engaged in nascent
@@ -9551,9 +9563,9 @@ sorting in the periplasm. Proceedings of the National Academy of Sciences 110,
 looking glass into lipid-protein interactions. Trends in Biochemical Sciences 36,
 653–662 (2011).
 
-154
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+155
 
 102. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. Not all transmembrane helices
 are born equal: Towards the extension of the sequence homology concept to
@@ -9581,9 +9593,9 @@ transmembrane protein predictions. Protein Engineering, Design and Selection
 111. Cserzo, M., Eisenhaber, F., Eisenhaber, B. & Simon, I. TM or not TM: Transmembrane protein prediction with low false positive rate using DAS-TMfilter.
 Bioinformatics 20, 136–137 (2004).
 
-BIBLIOGRAPHY
+156
 
-155
+BIBLIOGRAPHY
 
 112. Käll, L. & Sonnhammer, E. L. Reliability of transmembrane predictions in
 whole-genome data. FEBS Letters 532, 415–418 (2002).
@@ -9614,9 +9626,9 @@ following signal-anchor sequences during translocation of the N-terminal domain.
 membrane protein assembly. Biochimica et Biophysica Acta - Molecular Cell
 Research 1843, 1475–1488 (2014).
 
-156
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+157
 
 122. Andersson, H. & Von Heijne, G. Position-specific Asp-Lys pairing can affect
 signal sequence function and membrane protein topology. Journal of Biological
@@ -9643,9 +9655,9 @@ Biological Chemistry 273, 25203–25208 (1998).
 gathering for the TOPDB database. Nucleic Acids Research 43, D283–D289
 (2015).
 
-BIBLIOGRAPHY
+158
 
-157
+BIBLIOGRAPHY
 
 131. Nakashima, H. & Nishikawa, K. The amino acid composition is different between
 the cytoplasmic and extracellular sides in membrane proteins. English. FEBS
@@ -9671,12 +9683,12 @@ Biological Chemistry 274, 33757–33763 (1999).
 K., Kauko, A., Cristobal, S., von Heijne, G., Lerch-Bader, M., Nilsson, I. &
 Elofsson, A. Membrane Insertion of Marginally Hydrophobic Transmembrane
 
-158
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+159
+
 Helices Depends on Sequence Context. Journal of Molecular Biology 396, 221–
 229 (2010).
-
 141. Öjemalm, K., Halling, K. K., Nilsson, I. & Von Heijne, G. Orientational Preferences of Neighboring Helices Can Drive ER Insertion of a Marginally Hydrophobic Transmembrane Helix. Molecular Cell 45, 529–540 (2012).
 142. Devaux, P. F. Phospholipid flippases. FEBS Letters 234, 8–12 (1988).
 143. Devaux, P. F. & Morris, R. Transmembrane asymmetry and lateral domains in
@@ -9700,9 +9712,9 @@ and Systems 1, 2 (2013).
 for clustering and comparing biological sequences. Bioinformatics 26, 680–682
 (2010).
 
-BIBLIOGRAPHY
+160
 
-159
+BIBLIOGRAPHY
 
 151. Suzek, B. E., Wang, Y., Huang, H., McGarvey, P. B. & Wu, C. H. UniRef clusters: A comprehensive and scalable alternative for improving sequence similarity
 searches. Bioinformatics 31, 926–932 (2015).
@@ -9729,9 +9741,9 @@ a C-terminal anchor. Trends in Cell Biology 3, 72–75 (1993).
 161. Rabu, C., Wipf, P., Brodsky, J. L. & High, S. A precursor-specific role for
 Hsp40/Hsc70 during tail-anchored protein integration at the endoplasmic reticulum. Journal of Biological Chemistry 283, 27504–27513 (2008).
 
-160
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+161
 
 162. Rabu, C., Schmid, V., Schwappach, B. & High, S. Biogenesis of tail-anchored
 proteins: the beginning for the end? Journal of Cell Science 122, 3605–3612
@@ -9761,9 +9773,9 @@ proteins. Journal of Cell Science 130, 3851–3861 (2017).
 Schwappach, B. & Weissman, J. S. The GET Complex Mediates Insertion of
 Tail-Anchored Proteins into the ER Membrane. Cell 134, 634–645 (2008).
 
-BIBLIOGRAPHY
+162
 
-161
+BIBLIOGRAPHY
 
 171. Guna, A. & Hegde, R. S. Transmembrane Domain Recognition during Membrane Protein Biogenesis and Quality Control. Current Biology 28, R498–R511
 (2018).
@@ -9794,12 +9806,12 @@ ONE 4 (ed Mayer, C.) e8061 (2009).
 Favaloro, V., Rippe, K., Hurt, E., Dobberstein, B. & Sinning, I. Structural
 insights into tail-anchored protein binding and membrane insertion by Get3.
 
-162
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+163
+
 Proceedings of the National Academy of Sciences of the United States of America
 106, 21131–6 (2009).
-
 181. Suloway, C. J. M., Chartron, J. W., Zaslaver, M. & Clemons, W. M. Model
 for eukaryotic tail-anchored protein binding based on the structure of Get3.
 Proceedings of the National Academy of Sciences of the United States of America
@@ -9826,9 +9838,9 @@ B., Borgese, N. & Rapaport, D. The GET pathway can increase the risk of
 mitochondrial outer membrane proteins to be mistargeted to the ER. Journal
 of cell science 131, 734–764 (2018).
 
-BIBLIOGRAPHY
+164
 
-163
+BIBLIOGRAPHY
 
 189. Mariappan, M., Mateja, A., Dobosz, M., Bove, E., Hegde, R. S. & Keenan, R. J.
 The mechanism of membrane-associated steps in tail-anchored protein insertion.
@@ -9857,9 +9869,9 @@ Chemistry 278, 7034–7042 (2003).
 insertion of tail-anchored proteins into phospholipid bilayers. Journal of Cell
 Science 122, 2383–2392 (2009).
 
-164
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+165
 
 197. Kemper, C., Habib, S. J., Engl, G., Heckmeyer, P., Dimmer, K. S. & Rapaport,
 D. Integration of tail-anchored proteins into the mitochondrial outer membrane
@@ -9888,9 +9900,9 @@ Wilmanns, M., Jedd, G., Islinger, M. & Schrader, M. Predicting the targeting of
 tail-anchored proteins to subcellular compartments in mammalian cells. Journal
 of Cell Science 130, 1675–1687 (2017).
 
-BIBLIOGRAPHY
+166
 
-165
+BIBLIOGRAPHY
 
 205. Fueller, J., Egorov, M. V., Walther, K. A., Sabet, O., Mallah, J., Grabenbauer,
 M. & Kinkhabwala, A. Subcellular partitioning of protein tyrosine Phosphatase
@@ -9918,9 +9930,9 @@ Frankfurt. Biological Chemistry Hoppe-Seyler 374, 143–170 (1993).
 214. Tusnády, G. E. & Simon, I. The HMMTOP transmembrane topology prediction
 server. Bioinformatics 17, 849–850 (2001).
 
-166
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+167
 
 215. Cao, B., Porollo, A., Adamczak, R., Jarrell, M. & Meller, J. Enhanced recognition of protein transmembrane domains with prediction-based structural profiles. Bioinformatics 22, 303–309 (2006).
 216. Viklund, H. & Elofsson, A. OCTOPUS: Improving topology prediction by
@@ -9946,9 +9958,9 @@ sequence repeat-based linkage map of Barley. Genetics 156, 1997–2005 (2000).
 as genetic and biochemical tools for studying phospholipid traffic. Analytical
 Biochemistry 347, 165–175 (2005).
 
-BIBLIOGRAPHY
+168
 
-167
+BIBLIOGRAPHY
 
 224. Gebert, N., Joshi, A. S., Kutik, S., Becker, T., McKenzie, M., Guan, X. L.,
 Mooga, V. P., Stroud, D. A., Kulkarni, G., Wenk, M. R., Rehling, P., Meisinger,
@@ -9974,9 +9986,9 @@ Folding. bioRxiv, 274191 (2018).
 233. Ito, K., Chiba, S. & Pogliano, K. Divergent stalling sequences sense and control cellular physiology. Biochemical and Biophysical Research Communications
 393, 1–5 (2010).
 
-168
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+169
 
 234. Butkus, M. E., Prundeanu, L. B. & Oliver, D. B. Translocon ”Pulling” of
 Nascent SecM Controls the Duration of Its Translational Pause and SecretionResponsive secA Regulation. Journal of Bacteriology 185, 6719–6722 (2003).
@@ -10003,9 +10015,9 @@ transmembrane-segment retention at the ER translocon. Journal of Cell Science 12
 244. Cymer, F. & von Heijne, G. Cotranslational folding of membrane proteins
 probed by arrest-peptidemediated force measurements. Proceedings of the National Academy of Sciences 110, 14640–14645 (2013).
 
-BIBLIOGRAPHY
+170
 
-169
+BIBLIOGRAPHY
 
 245. Virkki, M., Boekel, C., Illergård, K., Peters, C., Shu, N., Tsirigos, K. D., Elofsson, A., Von Heijne, G. & Nilsson, I. Large tilts in transmembrane helices can
 be induced during tertiary structure formation. Journal of Molecular Biology
@@ -10033,9 +10045,9 @@ Journal of Molecular Sciences 17, 1320 (2016).
 Sciences 19, 1886 (2018).
 254. DeLano, W. L. The PyMOL molecular graphics system. PyMOL. DeLano Scientific, San Carlos, CA, USA, Version 1.2r3pre (2002).
 
-170
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+171
 
 255. Okada, T., Sugihara, M., Bondar, A.-N., Elstner, M., Entel, P. & Buss, V. The
 Retinal Conformation and its Environment in Rhodopsin in Light of a New 2.2Å
@@ -10063,9 +10075,9 @@ M. & Uozumi, N. Contribution of hydrophobic and electrostatic interactions to
 the membrane integration of the Shaker K+ channel voltage sensor domain.
 Proceedings of the National Academy of Sciences 104, 8263–8268 (2007).
 
-BIBLIOGRAPHY
+172
 
-171
+BIBLIOGRAPHY
 
 263. Sato, Y., Sakaguchi, M., Goshima, S., Nakamura, T. & Uozumi, N. Integration
 of Shaker-type K+ channel, KAT1, into the endoplasmic reticulum membrane:
