@@ -3,10 +3,12 @@
 \section{Abstract}
 \section{Introduction}
 
-Translocation is when a ribosome translates the~\gls{rna} to a nascent peptide chain which is handed directly or indirectly to the translocon insertion machinery which threads the chain through and, in the case of~\gls{tmh}s, releases the~\gls{tmh} into the membrane environment.
+Translocation is the process of incorporating a \gls{tmp} into the membrane.
+A ribosome translates the~\gls{rna} to a nascent peptide chain which is handed directly (co-translational insertion) or indirectly (post translational insertion) to the translocon insertion machinery.
+This translocon assembly then threads the chain through the membrane and releases hydrophobic~\gls{tmh}s into the membrane environment.
 
 The overwhelming majority of~\gls{tmp}s use the co-translational method of translocation.
-It has long been understood that this method is essentially the ~\gls{srp} recognising and attaching to the nascent peptide chain whilst it is still associated with the ribosome, and the~\gls{srp} then targets the peptide and ribosome to a~\gls{sr} in association with some membrane insertion machinery on the~\gls{er} membrane~\cite{Pool2005, Hessa2005}.
+It has long been understood that this method is essentially the ~\gls{srp} recognising and attaching to the nascent peptide chain whilst it is still associated with the ribosome, and the~\gls{srp} then targets the peptide and ribosome to a~\gls{sr} in association with the membrane insertion machinery on the~\gls{er} membrane~\cite{Pool2005, Hessa2005}.
 
 Crystal structures showed the \gls{srp} targets the nascent peptide chain for membrane insertion via a GTPase in both the \gls{srp} and \gls{sr}, that is initially associated with the translocon machinery, coming together to form a complex thus bringing the nascent peptide chain in proximity to the translocon~\cite{Shan2005}.
 Mutant studies of \gls{srp} revealed key discrete conformational stages~\cite{Shan2005}.
@@ -31,18 +33,28 @@ The prevailing idea about membrane insertion by the translocon is that the \gls{
 \label{fig:sequential-insertion}
 \end{figure}
 
-\subsection{Ribsomes in the biogenesis of membrane proteins.}
+\subsection{The ribsome-translocon complex in the biogenesis of membrane proteins.}
 Ribosomes translate mRNA sequences to amino acid chains and are present in all living cells, and indeed the ribosomal complexes presence and activity is for many used to define whether something is alive.
 They are a highly conserved RNA-protein complex with a multitude of accessory proteins and targetting factors.
 
 During translation of a \gls{tmp} protein, the \gls{srp} binds to the ribosome after recognising the nascent protein as a \gls{tmp}.
 This complex then binds to the \gls{sr} in association with the membrane bound translocon.
 The nascent peptide is then fed into the translocon as it is being translated; hence ``co-translational insertion''.
+The journey of the \gls{tmh} through this machinery has been studied using both crosslinking experiments and the relatively new technique of \gls{ap}s \cite{Cymer2015}.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{multipass-folding/Ribosome-translocon-complex}
         \captionof{figure}[A cartoon of the ribosome in association with the translocon during insertion.]{\textbf{A cartoon of the ribosome in association with the translocon during insertion.}
+        The structure used is of a translating mammalian ribosome-Sec61 translocon complex (PDB code 3j7r \cite{Voorhees2014}).
+        The Sec61 translocon is the membrane embedded element of the structure that feeds the protein into the membrane.
+        The ribosome is made of two elements, 60s and 40s.
+        These vary in composition and size between ekaryotes and prokaryotes.
+        PTC refers to the peptidase transferase center, a high conserved catalytic site across all the kingdoms of life that performs the translation of RNA to amino acid polypeptides.
+        After translation, the nascent peptide moves down the exit tunnel located in the larger ribosomal subunit.
+        There is evidence that the secondary structural elements of  \gls{tmh}s in ion channels are prefolded in the ribosomal exit tunnel \cite{Lu2005. Tu2010a, Tu2014, Kudva2018}.
+        The ribosome hands the nascent chain to the translocon.
+        Once the plug moves to expose the translocon pore, the translocon has a hydrophobic core which regulates the integration of the \gls{tmh} via the lateral gate \cite{Junne2010}.
 }
 \label{fig:Ribosome-translocon-complex}
 \end{figure}
@@ -57,9 +69,17 @@ Indeed the force profile of a single residue can now be obtained \textit{in vivo
 In an idealised \gls{tmh} segment composed of alanine and leucine being inserted into \textit{E. coli} membrane through SecM \gls{ap} with SDS-PAGE, hydrophobicity is more able to overcome the arrest peptide when it is near the N-terminal (of an N-terminal-inside \gls{tmh}) \cite{Ismail2012}.
 This could be either the \gls{tmh} finally coming into contact with the cytoplasmic face of the lipid bilayer, or an interaction between the N-terminal and the tip of the lateral gate as previosuly shown in Sec61; part of a pre-integration \gls{tmh} interrogation \cite{MacKinnon2014}.
 
-The journey of the \gls{tmh} through this machinery has been studied using both crosslinking experiments and the relatively new technique of \gls{ap}s \cite{Cymer2015}.
+The ribosome passes the nascent chain to the Sec translocon machinery.
+Like the ribosome, the Sec pathway is widely conserved across life \cite{Cao2003}.
+Sec61 (in eukaryotes) and SecYEG (in prokaryotes) translocate hydrophilic peptides across a membrane whilst also integrating sufficiently hydrophobic sequences to the membrane~\cite{Junne2010, Rapoport2012, Shao2011, Cymer2015}.
+SecY in prokaryotes or Sec61$\alpha$ in eukaryotes are \gls{tmp}s with 10 \gls{tmh}s that perform the translocation.
+These proteins have a lumenal plug~\cite{Tam2005, Junne2006} and a constricted core to prevent permeability whilst the protein is idle~\cite{Junne2010}.
+During translocation the plug moves out of the pore \cite{Li2016}, the channel is in an open unconstricted state \cite{Junne2010}, and a lateral gate of TMH2 and TMH7 \cite{Berg} periodically opens to release a \gls{tmh} to the membrane environment if sufficient hydrophobicity is detected in the peptide chain \cite{Junne2010, Egea2010}(Figure \ref{fig:sequential-insertion}).
 
-Early evidence of secondary structure folding of the Kv ion channel showed that the S6 (TMH6) is indeed compacted in the ribosomal tunnel by using pegylation and calmodulation of the tagged cysteine-scanned S6 transmembrane segment \cite{Lu2005}.
+
+\subsection{Co-operative TMH insertion by the translocon-ribosome complex.}
+
+Early evidence of secondary structure folding of the Kv ion channel showed that the S6 (referred to later in this study as TMH6) is indeed compacted in the ribosomal tunnel by using pegylation and calmodulation of the tagged cysteine-scanned S6 transmembrane segment \cite{Lu2005}.
 Furthermore, accessibility assays and an improved intramolecular crosslinking assay showed that the helical transmembrane S3b–S4 hairpin (the “paddle”) of a voltage-gated potassium (Kv) forms in the ribosome tunnel \cite{Tu2014}.
 Ribosomal folding of the \gls{tmh}s in Kv1.3, a potassium channel, is maintained in the translocon \cite{Tu2010a}.
 Therefore, some of the final structural folded elements of the voltage sensor domain occurs within the ribosomal exit tunnel.
@@ -71,16 +91,117 @@ Two ribosome mutants were compared (uL23 that is close to the exit tunnel and uL
 The ribosomal tunnel also speeds up elongation of neutral and negatively-charged peptides.
 This is attributed to the sporadic negative patches within the ribosomal exit tunnel \cite{Lu2008}.
 
-The ribosome clearly has the potential to prefold motifs and small domains before translocon insertion.
+The ribosome clearly has the potential to prefoldsecondary structures and some motifs before translocon insertion into the membrane.
 
-\subsection{Co-operative insertion}
 Multiple \gls{tmh}s in a nascent protein can be associated with the eukaryotic translocon simultaneously.
 It was shown that \gls{tmh}s can stay inassociation with the translocon in order to mediate integration of downstream \gls{tmh}s demonstrated by crosslinking analysis \cite{Sadlish2005, Cross2009}.
 Not only this, but it was shown that there is a direct interaction between the \gls{tmh}s; more recently \gls{ap}s were used to show pulling forces between a \gls{tmh} and more C-terminally located \gls{tmh} during the C-terminal \gls{tmh} membrane partitioning from the translocon \textit{in vivo} \cite{Cymer2013}.
 This could be facilitated during the probing of a \gls{tmh} from the translocon as the lateral gate ``cracks'' open in an intermediate stage before the \gls{tmh} satisfies the full hydrophobic requirements to open the gate fully, an intermediate stage observed in a SecY crystal structure \cite{Egea2010}.
 
+16 marginally hydrophobic \gls{tmh}s were screenedand revealed that independently they did not efficiently insert via the translocon into the \gls{er} \cite{Hedin2009}.
+The study showed that in the presence of the neighbouring loops and \gls{tmh}s, insertion often became sufficient with the exception of two of the marginally hydrophobic \gls{tmh}s.
+The orientational preference of neighbouring \gls{tmh}s was shown to increase insertion efficiency into the \gls{er} of a marginally hydrophobic \gls{tmh} \cite{Öjemalm2012}.
 A glycosylation study of three relatively polar \gls{tmh}s revealed that proteins have even evolved to exhibit stronger ``positive\--inside'' tendencies when following another \gls{tmh} \cite{Virkki2014}.
 Subsequent \gls{tmh}s with a strong topological preference (increased arginine presence) increase the insertion potential of relatively polar \gls{tmh}s, however no specific interaction between the \gls{tmh}s was responsible.
+The nascent polypeptide in the cavity between the ribosome and the translocon can
+alter the hydrophobic threshold of the translocon is dynamic and influenced by downstream flexible sequences \cite{Junne2017}.
+Sequence context is clearly an important factor of the efficient insertion of marginally hydrophobic \gls{tmh}s; these \gls{tmh}s rely on other components of their protein in order to incorporate into the membrane.
+
+\section{Methods}
+\subsection{Datasets}
+\subsubsection{Membrane protein families}
+This is not an exhaustive search among \gls{tmp}s for all examples of starkly polar \gls{tmh}s conserved among the family.
+Instead we show that there is precedent for several, but not all, protein families to contain polar helices and that these polar \gls{tmh}s are sequentially next to typically hydrophobic \gls{tmh}s.
+Analysis can only be done if the number of \gls{tmh}s is conserved across the family since different mechanisms are utilised to transmit a signal or transport a molecule across the membrane.
+
+Datasets were attained by querying the UniProt database for controlled vocabulary keywords (Table \ref{table:datasetsizes}) \cite{TheUniProtConsortium2014}.
+After filtering our redundant proteins using UniRef50, the datasets were stratified according to the total number of \gls{tmh}s per protein.
+Only families with a total N \textgreater  20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
+
+
+
+\begin{table}[htbp]
+
+  \centering
+  \captionof{table}[Dataset sizes of common TMP families of transporters and channels.]{\textbf{Dataset sizes of common TMP families of transporters and channels.}
+  The type column refers to the family name.
+  The keyword identifier column refers to the specific query term that UniProt uses as the controlled vocabulary identifier.
+  UniProt hits refers to the number of SwissProt hits, which are manually curated, however the SwissProt and TrEMBL hits are also given in the brackets.
+  The UniRef column denotes how many representative sequences resulted from the UniProt hits, again with the number in the brackets including the TrEMBL hits.
+  Because UniRef often returns representatives of splice isoforms as a separate hit, the lists were re-uploaded to UniProtKB to get the final hit.
+  The lists are then stratified by the total number of TMHs.
+  }
+\footnotesize
+\begin{tabular}{lllllll}
+
+Type                     & Query & UniProt Hits   & UniRef &  Records & TMHs & Final hits \\
+Ion channel              & KW-0407            & 2452 (176417)  & 912 (21024)            & 882                & 4    & 234        \\
+                         &                    &                &                        &                    & 6    & 188        \\
+                         &                    &                &                        &                    & 24   & 34         \\
+Ligand-gated ion channel & KW-1071            & 452 (14051)    & 189 (3055)             & 185                & 6    & 33         \\
+Voltage gated channel    & KW-0851            & 683 (27,662)   & 285 (3876)             & 267                & 6    & 97         \\
+Calcium channel          & KW-0107            & 272 (5056)     & 128 (1003)             & 120                & 6    & 38         \\
+Potassium channel        & KW-0631            & 337 (11852)    & 160 (1893)             & 152                & 6    & 88         \\
+Sugar transport          & KW-0762            & 1217 (107721)  & 467 (16748)            & 464                & 12   & 134        \\
+Chloride channel         & KW-0869            & 303 (3697)     & 117 (1039)             & 117                & 4    & 50         \\
+Ion transport            & KW-0406            & 10264 (443600) & 3070 (42259)           & 3023               & 4    & 338        \\
+                         &                    &                &                        &                    & 6    & 390        \\
+                         &                    &                &                        &                    & 8    & 162        \\
+                         &                    &                &                        &                    & 10   & 189        \\
+                         &                    &                &                        &                    & 12   & 292        \\
+                         &                    &                &                        &                    & 24   & 35
+\end{tabular}
+\label{table:datasetsizes}
+\end{table}
+
+
+\subsubsection{GPCR subfamilies}
+The 7TMR list is a list distributed by UniProt containing G-receptor linked proteins available at \url{http://www.uniprot.org/docs/7tmrlist.txt} \cite{TheUniProtConsortium2014}.
+The entire list contains 3115 UniProt IDs which mapped to 3092 records on the date of download (12/9/2017).
+After removing redundant records using UniRef50 to identify cluster representitives, 1142 records made the final dataset.
+The original list is also sub categorised by function.
+Here, we also looked at opsins, the T2R taste receptors, frizzled/smooth \gls{gpcr}s, metabotropic gluatmate receptors (Family C), fungal mating proteins, and serotonin receptors.
+
+218 opsin records were mapped through UniRef50 to 40 records.
+211 T2R taste receptors were mapped to 45 records after UniRef50.
+There were 82 records for frizzled/smooth, of which 41 were cluster representitives after querying with UniRef50.
+114 were metabotropic glutamate recepters which became 44 after redundancy removal.
+In serotonin, 91 original records were represented by 28 records.
+There were 13 fungal mating proteins, represented by 9 after UniRef50.
+560 olfactory records were mapped to 274 records after Uniref50.
+
+After limiting all these sets to records containing 7 TRANSMEM features, there were 39 opsins, 38 frizzled smooth \gls{gpcr}s, 9 fungal mating \gls{gpcr}s, 41 metabolic glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor \gls{gpcr} proteins.
+
+
+\subsection{Gene ontology}
+77153 protein records matched the query \url{annotation:(type:transmem) AND reviewed:yes} in UniProt \cite{TheUniProtConsortium2014}.
+30045 records of these represented those proteins after submitting the list to UniRef50.
+To gain an approximate idea of what proteins may have cooperative \gls{tmh}s, we submitted that non-redundant SwissProt transmembrane dataset to PANTHER and used their pie chart visualisation \cite{Mi2017}.
+We also submitted a constricted list of the non-redundant SwissProt transmembrane dataset to PANTHER by sorting the list according to proteins with sequentially adjacent \gls{tmh}s that had the greatest difference in Kyte \& Doolittle hydrophobicity \cite{Kyte1982}.
+This consisted of the top 102 pairs from a list of 101604 (the top 0.1\%) \gls{tmh} pairs from 87 unique UniProt records.
+In PANTHER, these hit 59 genes with 58 functions.
+
+\subsection{Complexity and hydrophobic estimation}
+Primarily we used the Kyte \& Doolittle scale in this work \cite{Kyte1982}.
+We verified this scale with the Eisenberg scale \cite{Eisenberg1984}, the Hessa biological scale \cite{Hessa2005}, and the White and Wimley scale \cite{White1999}.
+The Eisenberg scale is potentially double counted for many of these proteins since it is used by UniProt during their automatic \gls{tmh} annotation where experimental evidence is not avaialble.
+The Hessa biological scale originally reported positional dependencies that affected the hydrophobicity values which were refined in a later version of the scale \cite{Hessa2007}, however this later version was not programmatically available to us.
+
+When stratifying \gls{tmh}s by hydrophobicity and sequence information entropy, there is a clear distinction between anchoring \gls{tmh}s and those with a function beyond anchorage.
+The TMSOC z-score quantifies this relationship and is calculated by equation \ref{equation:zscoreterm2}.
+
+\begin{equation} \label{zscoreterm2}
+z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\sigma}_{\phi}^{2}}+\frac{{({x}_{c}-{\mu}_{c})}^{2}}{{\sigma}_{c}^{2}}\right]
+\end{equation}
+
+Where $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy~\cite{Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} set, that is those~\gls{tmh}s containing active residues.
+
+\subsection{Statistics}
+
+We used the Welch's t\--test to scrutinise the means of the datasets without assuming equal variance.
+To examine any differences in variance of the datasets, the Kruskal Walis test, and Kilmogorov smirnov test were used.
+All these tests were performed using the Python scipy package \cite{Oliphant2007}.
+
 
 \section{Results and discussion}
 
@@ -329,10 +450,25 @@ A jump of hydrophobicity is observed in TMH2 (hydrophobicity = 1.05) to TMH3 (hy
 
 Marginally hydrophobic \gls{tmh}s are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage.
 However this presents a significant biophysical challenge; how to incorporate and maintain such \gls{tmh}s into the membrane.
-We we show that among certain classes of \gls{tmp}s that this is a conserved issue.
-There is evidence to suggest that multipass \gls{tmh} arrangements work cooperatively during translocation and insertion to achieve correct folding \cite{Ismail2008, Virkki2014, Sadlish2005, Cross2009, Cymer2013, Sato2002, Sato2003, Zhang2007, Cymer2015, Tu2000}.
+We show that among certain classes of \gls{tmp}s that this is a conserved issue.
+There is evidence to suggest that multipass \gls{tmh} arrangements work cooperatively during translocation and insertion to achieve correct folding \cite{Ismail2008, Virkki2014, Sadlish2005, Cross2009, Cymer2013, Sato2002, Sato2003, Zhang2007, Cymer2015, Tu2000} (Figure \ref{fig:Good-bad-TMH}).
+
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=1\textwidth]{multipass-folding/Good-bad-TMH}
+		\captionof{figure}[A cartoon of potential cooperative TMH insertion methods.]{\textbf{A cartoon of potential cooperative TMH insertion methods.}
+    A) Typically hydrophobic \gls{tmh}s remain in association with the translocon machinery until the marginally hydrophobic \gls{tmh} is released into the membrane.
+    This was observed in an opsin protein \cite{Ismail2008}.
+    B) \gls{tmh}\--\gls{tmh} interactions allow the marginally hydrophobic \gls{tmh} to shield it's polar residues.
+    The marginally hydrophobic \gls{tmh} can associate with the typical hydrophobic \gls{tmh} in the ribosomal exit tunnel \cite{Tu2014} or in the translocon tunnel \cite{Zhang2007}.
+    This was observed in a potassium ion channel \cite{Tu2014, Zhang2007, Cymer2015}.
+    }
+
+\label{fig:Good-bad-TMH}
+\end{figure}
 
 Here, we have shown that high discrepency of TMSOC z-score (simple-complex score) \cite{Wong2011, Wong2012}, and several hydrophobicity scales \cite{Hessa2005, Kyte1982, White1999, Eisenberg1984} can be used to identify \gls{tmh} groups that must work cooperatively to incorporate the marginally hydrophobic \gls{tmh}s.
+Here we have shown that the hydrophobic relationships between these cooperatively inserted \gls{tmh}s are conserved throughout their larger families indicating that cooperative insertion may be a routine mechanism for the insertion of some families of \gls{tmp}s.
 So far, this method has shown that the TMH7 of \gls{gpcr}s is a conserved marginally hydrophobic \gls{tmh} with the typically polar TMH6 preceding it.
 In opsins, TMH5-TMH7 are incorporated to the membrane together simultaneously by staying in association with the translocon until TMH7 emerges \cite{Ismail2008}.
 We see this pattern across several \gls{gpcr} families and the \gls{gpcr} family as a whole.
@@ -341,112 +477,3 @@ Indeed there is evidence that TMH3 and TMH4 cannot incorporate alone \cite{Sato2
 
 With the emergence of advanced cross linking experiments and \gls{ap}s that can probe energetics and \gls{tmh}\--\gls{tmh} interactions dynamically during ribosomal translation and membrane insertion, we suggest that \gls{tmh}s with highly contrasting hydrophobicity and TMSOC z-score could yield interesting examples of cooperative insertion during translocation.
 For example, here we find discrepencies in the TMH6 and TMH11 to their adjacent \gls{tmh}s of sugar transporters as well as TMH2 and TMH3 in ion channels, specifically in chloride channels.
-
-\begin{figure}[!ht]
-\centering
-\includegraphics[width=1\textwidth]{multipass-folding/Good-bad-TMH}
-		\captionof{figure}[A cartoon of potential cooperative TMH insertion methods.]{\textbf{A cartoon of potential cooperative TMH insertion methods.}
-    A) Typically hydrophobic \gls{tmh}s remain in association with the translocon machinery until the marginally hydrophobic \gls{tmh} is released into the membrane.
-    This was observed in an opsin protein \cite{Ismail2008}.
-    B) The marginally polar \gls{tmh} remains in the translocon until the typical hydrophobic \gls{tmh} emerges from the ribosomal exit tunnel and enters the translocon.
-    This was observed in a potassium ion channel \cite{Zhang2007, Cymer2015}.
-    }
-
-\label{fig:Good-bad-TMH}
-\end{figure}
-
-
-\section{Methods}
-\subsection{Datasets}
-\subsubsection{Membrane protein families}
-This is not an exhaustive search among \gls{tmp}s for all examples of starkly polar \gls{tmh}s conserved among the family.
-Instead we show that there is precedent for several, but not all, protein families to contain polar helices and that these polar \gls{tmh}s are sequentially next to typically hydrophobic \gls{tmh}s.
-Analysis can only be done if the number of \gls{tmh}s is conserved across the family since different mechanisms are utilised to transmit a signal or transport a molecule across the membrane.
-
-Datasets were attained by querying the UniProt database for controlled vocabulary keywords (Table \ref{table:datasetsizes}) \cite{TheUniProtConsortium2014}.
-After filtering our redundant proteins using UniRef50, the datasets were stratified according to the total number of \gls{tmh}s per protein.
-Only families with a total N \textgreater  20 were included in the analysis, for example, there are ion channels with 12 \gls{tmh}s, but only 16 examples fitted the criteria and were omitted from the study.
-
-
-
-\begin{table}[htbp]
-
-  \centering
-  \captionof{table}[Dataset sizes of common TMP families of transporters and channels.]{\textbf{Dataset sizes of common TMP families of transporters and channels.}
-  The type column refers to the family name.
-  The keyword identifier column refers to the specific query term that UniProt uses as the controlled vocabulary identifier.
-  UniProt hits refers to the number of SwissProt hits, which are manually curated, however the SwissProt and TrEMBL hits are also given in the brackets.
-  The UniRef column denotes how many representative sequences resulted from the UniProt hits, again with the number in the brackets including the TrEMBL hits.
-  Because UniRef often returns representatives of splice isoforms as a separate hit, the lists were re-uploaded to UniProtKB to get the final hit.
-  The lists are then stratified by the total number of TMHs.
-  }
-\footnotesize
-\begin{tabular}{lllllll}
-
-Type                     & Query & UniProt Hits   & UniRef &  Records & TMHs & Final hits \\
-Ion channel              & KW-0407            & 2452 (176417)  & 912 (21024)            & 882                & 4    & 234        \\
-                         &                    &                &                        &                    & 6    & 188        \\
-                         &                    &                &                        &                    & 24   & 34         \\
-Ligand-gated ion channel & KW-1071            & 452 (14051)    & 189 (3055)             & 185                & 6    & 33         \\
-Voltage gated channel    & KW-0851            & 683 (27,662)   & 285 (3876)             & 267                & 6    & 97         \\
-Calcium channel          & KW-0107            & 272 (5056)     & 128 (1003)             & 120                & 6    & 38         \\
-Potassium channel        & KW-0631            & 337 (11852)    & 160 (1893)             & 152                & 6    & 88         \\
-Sugar transport          & KW-0762            & 1217 (107721)  & 467 (16748)            & 464                & 12   & 134        \\
-Chloride channel         & KW-0869            & 303 (3697)     & 117 (1039)             & 117                & 4    & 50         \\
-Ion transport            & KW-0406            & 10264 (443600) & 3070 (42259)           & 3023               & 4    & 338        \\
-                         &                    &                &                        &                    & 6    & 390        \\
-                         &                    &                &                        &                    & 8    & 162        \\
-                         &                    &                &                        &                    & 10   & 189        \\
-                         &                    &                &                        &                    & 12   & 292        \\
-                         &                    &                &                        &                    & 24   & 35
-\end{tabular}
-\label{table:datasetsizes}
-\end{table}
-
-
-\subsubsection{GPCR subfamilies}
-The 7TMR list is a list distributed by UniProt containing G-receptor linked proteins available at \url{http://www.uniprot.org/docs/7tmrlist.txt} \cite{TheUniProtConsortium2014}.
-The entire list contains 3115 UniProt IDs which mapped to 3092 records on the date of download (12/9/2017).
-After removing redundant records using UniRef50 to identify cluster representitives, 1142 records made the final dataset.
-The original list is also sub categorised by function.
-Here, we also looked at opsins, the T2R taste receptors, frizzled/smooth \gls{gpcr}s, metabotropic gluatmate receptors (Family C), fungal mating proteins, and serotonin receptors.
-
-218 opsin records were mapped through UniRef50 to 40 records.
-211 T2R taste receptors were mapped to 45 records after UniRef50.
-There were 82 records for frizzled/smooth, of which 41 were cluster representitives after querying with UniRef50.
-114 were metabotropic glutamate recepters which became 44 after redundancy removal.
-In serotonin, 91 original records were represented by 28 records.
-There were 13 fungal mating proteins, represented by 9 after UniRef50.
-560 olfactory records were mapped to 274 records after Uniref50.
-
-After limiting all these sets to records containing 7 TRANSMEM features, there were 39 opsins, 38 frizzled smooth \gls{gpcr}s, 9 fungal mating \gls{gpcr}s, 41 metabolic glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor \gls{gpcr} proteins.
-
-
-\subsection{Gene ontology}
-77153 protein records matched the query \url{annotation:(type:transmem) AND reviewed:yes} in UniProt \cite{TheUniProtConsortium2014}.
-30045 records of these represented those proteins after submitting the list to UniRef50.
-To gain an approximate idea of what proteins may have cooperative \gls{tmh}s, we submitted that non-redundant SwissProt transmembrane dataset to PANTHER and used their pie chart visualisation \cite{Mi2017}.
-We also submitted a constricted list of the non-redundant SwissProt transmembrane dataset to PANTHER by sorting the list according to proteins with sequentially adjacent \gls{tmh}s that had the greatest difference in Kyte \& Doolittle hydrophobicity \cite{Kyte1982}.
-This consisted of the top 102 pairs from a list of 101604 (the top 0.1\%) \gls{tmh} pairs from 87 unique UniProt records.
-In PANTHER, these hit 59 genes with 58 functions.
-
-\subsection{Complexity and hydrophobic estimation}
-Primarily we used the Kyte \& Doolittle scale in this work.
-We verified this scale with the Eisenberg scale \cite{Eisenberg1984}, the Hessa biological scale \cite{Hessa2005}, and the White and Wimley scale \cite{White1999}.
-The Eisenberg scale is potentially double counted for many of these proteins since it is used by UniProt during their automatic \gls{tmh} annotation where experimental evidence is not avaialble.
-The Hessa biological scale originally reported positional dependencies that affected the hydrophobicity values which were refined in a later version of the scale \cite{Hessa2007}, however this later version was not programmatically available to us.
-
-When stratifying \gls{tmh}s by hydrophobicity and sequence information entropy, there is a clear distinction between anchoring \gls{tmh}s and those with a function beyond anchorage.
-The TMSOC z-score quantifies this relationship and is calculated by equation \ref{equation:zscoreterm2}.
-
-\begin{equation} \label{zscoreterm2}
-z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\sigma}_{\phi}^{2}}+\frac{{({x}_{c}-{\mu}_{c})}^{2}}{{\sigma}_{c}^{2}}\right]
-\end{equation}
-
-Where $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy~\cite{Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} set, that is those~\gls{tmh}s containing active residues.
-
-\subsection{Statistics}
-
-We used the Welch's t\--test to scrutinise the means of the datasets without assuming equal variance.
-To examine any differences in variance of the datasets, the Kruskal Walis test, and Kilmogorov smirnov test were used.
-All these tests were performed using the Python scipy package \cite{Oliphant2007}.
