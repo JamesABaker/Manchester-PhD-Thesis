@@ -7,6 +7,112 @@ Despite progress over the last decade, the understanding of the relationship bet
 
 In this chapter we will place the \gls{tmh} problem in context, then describe the important biological aspects of the \gls{tmh} (the traversing \gls{tms} as well as the membrane itself), and discuss tools and methods that allow us to analyse and describe the nuanced differences between these \gls{tmh} sequences.
 
+\section{Biological Membrane Composition}
+The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.
+The proteins that allow life to use this biochemical barrier are perhaps equally important.
+Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
+
+It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes.
+For example, often \gls{tmh}s reflect the membrane environments they exist in, for example the hydrophobicity, asymetry, and thickness of the membrane lipids is reflected when looking at large numbers of \gls{tmp}s~\cite{Sharpe2010}.
+
+The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001a, Jensen2004, Henin2014}, as well as protein folding~\cite{Kauko2010}.
+%Henin2014.
+%Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
+
+\subsection{Lipids of the Membrane}
+
+The lipids that make up these membranes are very diverse, and not only do different cells have different membrane compositions, but so do different subcellular compartments which again is reflected in the \gls{tmh} composition of \gls{tmp}s~\cite{Sharpe2010, VanMeer2008}.
+
+They consist of a polar head group and a hydrophobic region and so are described as being amphiphilic molecules.
+This factor, along with geometric contraints of the membrane lipids causes them to not only be insoluble molecules, but also that they readily self-associate into complex ordered structures that has been demonstrated \textit{in silico} with coarse grain \gls{md} simulations~\cite{Scott2008}.
+This self association is entropically driven by water molecules.
+There is a rich variety of lipid molecules that make up the biological membranes.
+In other words, the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails.
+Furthermore, the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer.
+This can be seen even in relatively early \gls{md} simulations~\cite{Goetz1998}.
+
+The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols.
+The hydrophobicity of a membrane lipid can be caused by several features; (i) aliphatic chains such as in the most abundant membrane lipids, glycerophospholipids and the sphingolipids, (ii) aromatic groups, or (iii) polycyclic structures such as the sterols most abundantly of which in mammals is cholesterol ~\cite{Helenius1975, Lichtenberg1983}.
+Phospholipids are composed of a glycerol molecule.
+Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups and a negatively-charged polar phosphate group.
+The polar phosphate group is modified with an alcohol group.
+
+%At some point the membrane phases should be discussed.
+%Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
+
+It has been known for some time that biological bi-layer membranes are asymmetric~\cite{Singer1972, OpdenKamp1979}.
+For example, in the outer membranes of Gram-negative bacteria, the outer membrane leaflet contain lipopolysaccharide, whilst the inner is a mixture of approximately 25 phospholipid types~\cite{VanMeer2008}.
+Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human \gls{tmh} regions revealed intra-membrane leaflet composition asymmetry in the \gls{er}, but not the Golgi~\cite{Sharpe2010}.
+Furthermore, protein-lipid interactions have been shown to be determinants of membrane curvature~\cite{Jensen2004}, and undertake complex orientations and conformations to allow for hydrophobic mismatch~\cite{Planque2003}.
+
+The evolutionary theories behind these various membrane compositions emerging is complex and remains in dispute.
+A popular theory is that eukaryotic cells used mitochondria as the ATP synthesisers to provide an energetic boost, the result of which was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound organelle structures, sexual reproduction, and complex inter-cellular cooperation in the form of multi-cellular organisms~\cite{Lane2005, Lane2015}.
+A lot of this theory rested on the idea that mitochondrial membranes within the eukaryotic cells were energetically favorable, however more recent experimentation disputes this claim~\cite{Lynch2017}.
+
+Simply put, membrane potential is the voltage across a membrane.
+If the membrane is permeable to a certain type of ion, then the ion will experience an electrical pulling force during the diffusion process that pulls toward the ``preferred'' biological location.
+This clearly depends on a chemical component involving both the charge and ion concentration gradient.
+There are various ways of estimating the membrane potential \textit{ ab initio}.
+
+The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann distribution, and (ii) a field charge interaction energy~\cite{Feiner1994}.
+It is defined as:
+
+\begin{equation}
+{E}_{m}=\frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
+\end{equation}
+
+Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment.
+
+One problem in biological membranes is that the compartments always  involve multiple ion channels.
+The Goldman equation aims to solve this problem by accounting for several ions that contribute to $c_{out}$ and $c_{in}$ (such as $K^+$, $Na^+$, and $Cl^-$) simultaneously:
+
+\begin{equation}
+{{E}_{m}}=\frac{RT}{F} \times{\ln}
+  \left(\frac{
+    {p}_{K^+}\cdot{[K^+]}_{out} + {p}_{Na^+}\cdot{[Na^+]}_{out} + {p}_{Cl^-}\cdot{[Cl^-]}_{in}}
+    {{p}_{K^+}\cdot{[K^+]}_{in} + {p}_{Na^+}\cdot{[Na^+]}_{in} + {p}_{Cl^-}\cdot{[Cl^-]}_{out}
+    }\right)
+\end{equation}
+
+Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and ${p}_{i}$ is the relative membrane permeability for the actual ion.
+
+However, it is rife with caveats caused by the assumptions of the simplified model.
+Such assumptions include ions having point charge, that the potential is constant throughout the solution.
+This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by, for example, a specific adsorption of either part of the redox pair or the competitive adsorption of a supporting ion in solution~\cite{Feiner1994}.
+Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context.
+
+Several studies have attempted to quantify the various voltages across the intracellular membranes.
+Negativity was found in the \gls{er}, with a voltage between 75mV to 95mV in the \gls{er} membrane~\cite{Qin2011, Worley1994}.
+Negativity was found in the mitochondrial matrix with a  voltage across the mitochondrial membrane at 150mV~\cite{Perry2011}.
+No notable membrane potential has been identified in the Golgi~\cite{Schapiro2000, Llopis1998}.
+
+\subsection{Membrane proteins}
+
+The membrane is critical in maintaining the separation of biochemically distinct compartments.
+However, there needs to be flux of not only molecules, but signals across these membranes in order to facillitate cellular life.
+Both $\beta$ sheets and $\alpha$ helices are capable of traversing the membrane space.
+The focus of this thesis is primarily on \gls{tmh}s, however, $\beta$ sheets are another protein structure capable of spanning the membrane.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/barrel-versus-helix}
+		\captionof{figure}[Cartoons showing the structural differences of the outer membrane $\protect\beta$\--barrel proteins, transmembrane $\protect\alpha$\--helix channels, and transmembrane $\protect\alpha$\--helix signal transducers in the membrane.]{\textbf{Cartoons showing the structural differences of the outer membrane proteins, transmembrane helix channels, and transmembrane helix signal transducers in the membrane.}
+		The top row shows the proteins traversing the membrane with the interfacial regions denoted by the black lines.
+		A) A porous outer membrane protein using $\protect\beta$\--sheets to form a pore\--forming protein structure.
+		PDB code 2JQY.
+		B) A highly selective ion channel made up of membrane spanning \gls{tmh}s.
+		PDB code 4HYO.
+		C) A 7\--\gls{tmh} \gls{gpcr} that recieves a signal on one side of the membrane which causes a conformational change influencing the structural arrangement of the tertiary structure on the opposing side of the membrane.
+		PDB code 1F88.
+		}
+\label{fig:barrel-versus-helix}
+\end{figure}
+
+$\beta$ barrel proteins are present only in a few membrane types; the outer membrane of Gram negative bacteria for which they constitute between 2-3\% of the genome \cite{Wimley2003}, and in the outer membranes of eukaryotic chloroplasts and mitochondrial membranes.
+Their restriction to these membrane types is the result of ancestral symbiogenesis \cite{Fischer1994, Zeth2010, Fairman2011, Ulrich2015}.
+These outer membrane proteins cause the membranes to be permeable, diminishing membrane potential between the outer and the inner membrane (Figure \ref{fig:barrel-versus-helix}).
+Unlike the \gls{tmh}s, $\beta$ barrel proteins are permeable to water and many other small molecules.
+
 \section{$\alpha$ Helices; Structure And Function}
 
 \subsection{Transmembrane Helix Sequence Composition}
@@ -228,84 +334,7 @@ Nanodiscs overcome some of the major challenges caused by the hydrophobic helice
 \subsection{Bioinformatics in transmembrane biology}
 
 
-\section{Biological Membrane Composition}
-The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.
-The proteins that allow life to use this biochemical barrier are perhaps equally important.
-Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
 
-It is critical to understand that the lipid bilayer and the transmembrane $\alpha$ helices are inextricably linked, and often what we observe from the $\alpha$ helices reflect the properties of the much harder to study membranes.
-For example, often \gls{tmh}s reflect the membrane environments they exist in, for example the hydrophobicity, asymetry, and thickness of the membrane lipids is reflected when looking at large numbers of \gls{tmp}s~\cite{Sharpe2010}.
-
-The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001a, Jensen2004, Henin2014}, as well as protein folding~\cite{Kauko2010}.
-%Henin2014.
-%Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
-
-\subsection{Lipids of the Membrane}
-
-The lipids that make up these membranes are very diverse, and not only do different cells have different membrane compositions, but so do different subcellular compartments which again is reflected in the \gls{tmh} composition of \gls{tmp}s~\cite{Sharpe2010, VanMeer2008}.
-
-They consist of a polar head group and a hydrophobic region and so are described as being amphiphilic molecules.
-This factor, along with geometric contraints of the membrane lipids causes them to not only be insoluble molecules, but also that they readily self-associate into complex ordered structures that has been demonstrated \textit{in silico} with coarse grain \gls{md} simulations~\cite{Scott2008}.
-This self association is entropically driven by water molecules.
-There is a rich variety of lipid molecules that make up the biological membranes.
-In other words, the bilayer forms from these phospholipid molecules due to the fierce dissociation between the polar water and the hydrophobic tails.
-Furthermore, the bilayer maximises van der Waals interactions between the closely-packed hydrocarbon chains, which contributes to the stability of the bilayer.
-This can be seen even in relatively early \gls{md} simulations~\cite{Goetz1998}.
-
-The majority of lipids in higher organism membranes are phospholipids, sphingolipids, and sterols.
-The hydrophobicity of a membrane lipid can be caused by several features; (i) aliphatic chains such as in the most abundant membrane lipids, glycerophospholipids and the sphingolipids, (ii) aromatic groups, or (iii) polycyclic structures such as the sterols most abundantly of which in mammals is cholesterol ~\cite{Helenius1975, Lichtenberg1983}.
-Phospholipids are composed of a glycerol molecule.
-Bonded to the glycerol molecule are two hydrophobic fatty acid tail groups and a negatively-charged polar phosphate group.
-The polar phosphate group is modified with an alcohol group.
-
-%At some point the membrane phases should be discussed.
-%Similar to the diagram here perhaps: http://popups.ulg.ac.be/1780-4507/index.php?id=6568
-
-It has been known for some time that biological bi-layer membranes are asymmetric~\cite{Singer1972, OpdenKamp1979}.
-For example, in the outer membranes of Gram-negative bacteria, the outer membrane leaflet contain lipopolysaccharide, whilst the inner is a mixture of approximately 25 phospholipid types~\cite{VanMeer2008}.
-Adding to the membrane asymmetry composition story, a thorough analysis of residue composition in yeast and human \gls{tmh} regions revealed intra-membrane leaflet composition asymmetry in the \gls{er}, but not the Golgi~\cite{Sharpe2010}.
-Furthermore, protein-lipid interactions have been shown to be determinants of membrane curvature~\cite{Jensen2004}, and undertake complex orientations and conformations to allow for hydrophobic mismatch~\cite{Planque2003}.
-
-The evolutionary theories behind these various membrane compositions emerging is complex and remains in dispute.
-A popular theory is that eukaryotic cells used mitochondria as the ATP synthesisers to provide an energetic boost, the result of which was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound organelle structures, sexual reproduction, and complex inter-cellular cooperation in the form of multi-cellular organisms~\cite{Lane2005, Lane2015}.
-A lot of this theory rested on the idea that mitochondrial membranes within the eukaryotic cells were energetically favorable, however more recent experimentation disputes this claim~\cite{Lynch2017}.
-
-Simply put, membrane potential is the voltage across a membrane.
-If the membrane is permeable to a certain type of ion, then the ion will experience an electrical pulling force during the diffusion process that pulls toward the ``preferred'' biological location.
-This clearly depends on a chemical component involving both the charge and ion concentration gradient.
-There are various ways of estimating the membrane potential \textit{ ab initio}.
-
-The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann distribution, and (ii) a field charge interaction energy~\cite{Feiner1994}.
-It is defined as:
-
-\begin{equation}
-{E}_{m}=\frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
-\end{equation}
-
-Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment.
-
-One problem in biological membranes is that the compartments always  involve multiple ion channels.
-The Goldman equation aims to solve this problem by accounting for several ions that contribute to $c_{out}$ and $c_{in}$ (such as $K^+$, $Na^+$, and $Cl^-$) simultaneously:
-
-\begin{equation}
-{{E}_{m}}=\frac{RT}{F} \times{\ln}
-  \left(\frac{
-    {p}_{K^+}\cdot{[K^+]}_{out} + {p}_{Na^+}\cdot{[Na^+]}_{out} + {p}_{Cl^-}\cdot{[Cl^-]}_{in}}
-    {{p}_{K^+}\cdot{[K^+]}_{in} + {p}_{Na^+}\cdot{[Na^+]}_{in} + {p}_{Cl^-}\cdot{[Cl^-]}_{out}
-    }\right)
-\end{equation}
-
-Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and ${p}_{i}$ is the relative membrane permeability for the actual ion.
-
-However, it is rife with caveats caused by the assumptions of the simplified model.
-Such assumptions include ions having point charge, that the potential is constant throughout the solution.
-This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by, for example, a specific adsorption of either part of the redox pair or the competitive adsorption of a supporting ion in solution~\cite{Feiner1994}.
-Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context.
-
-Several studies have attempted to quantify the various voltages across the intracellular membranes.
-Negativity was found in the \gls{er}, with a voltage between 75mV to 95mV in the \gls{er} membrane~\cite{Qin2011, Worley1994}.
-Negativity was found in the mitochondrial matrix with a  voltage across the mitochondrial membrane at 150mV~\cite{Perry2011}.
-No notable membrane potential has been identified in the Golgi~\cite{Schapiro2000, Llopis1998}.
 
 \section{Biogenesis of transmembrane Proteins}
 %Depth of secretion pathway (talk about translocons in depth here) & outline post-translational insertion
