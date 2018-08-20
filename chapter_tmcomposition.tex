@@ -98,7 +98,7 @@ With these large-scale datasets and a sensitive normalisation approach, new sequ
 
 \section{Results}
 
-\subsection{Acidic residues within and nearby TMH segments are rare}
+\subsection{Acidic residues within and nearby transmembrane helix segments are rare}
 
 In order to reliably compare the amino acid sequence properties of~\gls{tmh}s, we assembled datasets of~\gls{tmh} proteins from what are likely to be the best in terms of quality and comprehensiveness of annotation in eukaryotic and prokaryotic representative genomes, as well as composite datasets to represent larger taxonomic groups and with regard to sub-cellular locations (see Table \ref{table:acidicresiduesarerare}).
 In total, 3292 single-pass~\gls{tmh} segments and 29898 multi-pass~\gls{tmh} segments were extracted from various UniProt~\cite{TheUniProtConsortium2014} text files according to TRANSMEM annotation (download dated 20--03--2016).
@@ -193,7 +193,7 @@ These are UniEcoli (D+E, D, E), UniArch (D+E, E) and UniFungi (E).
 The problem is, most likely, that the respective datasets are quite small.
 Notably, the difference between single- and multi-pass~\gls{tmh}s is greatest in UniPM\@; here,~\gls{tmh}s from multi-pass proteins have on average 0.400 negative residues per helix, whereas single-pass~\gls{tmh}s contained just 0.039 (P=3.86e-28).
 
-\subsection{Amino acid residue distribution analysis reveals a ``negative-not-inside/negative-outside'' signal in single-pass~\gls{tmh} segments}
+\subsection{Amino acid residue distribution analysis reveals a ``negative-not-inside/negative-outside'' signal in single-pass transmembrane helix segments}
 
 The rarity of negatively charged residues is a complicating issue when studying their distribution along the sequence positions of~\gls{tmh}s and their flanks.
 For UniHuman and ExpAll , we plotted absolute abundance of aspartic acid, glutamic acid, lysine, arginine, and leucine at each position (i.e., it scales as the equivalent fraction in the total composition of the alignment column) (Figure~\ref{fig:single_pass_charge_distribution}).
@@ -291,7 +291,7 @@ The~\gls{kw} scores were calculated for negative residues by comparing the numbe
 
     \end{table}%
 
-\subsection{Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass~\gls{tmh} segments --- the negative outside enrichment rule}
+\subsection{Amino acid residue distribution analysis reveals a general negative charge bias signal in outside flank of multi-pass transmembrane helix segments --- the negative outside enrichment rule}
 
 As a result of the rarity of negatively charged residues, any distribution bias is difficult to be recognised in the plot showing the total abundance (or alignment column composition) of residues in multi-pass~\gls{tmh}s and their flanks from UniHuman and ExpAll (Figure~\ref{fig:multi_pass_charge_distribution}).
 Yet, as with single-pass helices, the dominant general leucine enrichment, as well as positive inside signal, can be identified with certainty.
@@ -477,7 +477,7 @@ Whereas Figures \ref{fig:comp_heatmaps}A-C appear quite noisy, the plot for ExpA
 Tyrosine and tryptophan in the multi-pass case do not appear as enriched in the interfacial regions of single-pass~\gls{tmh}s from both UniHuman and ExpAll.
 Prolines are only suppressed in the~\gls{tmh} itself and are not suppressed in the outer flank as in the single-pass case but, indeed, are tolerated if not slightly enriched in the flanks.
 
-\subsection{Hydrophobicity and leucine distribution in~\gls{tmh}s in single- and multi-pass proteins}
+\subsection{Hydrophobicity and leucine distribution in transmembrane helices in single- and multi-pass proteins}
 
 Generally, we see in Figure \ref{fig:comp_heatmaps} that compositional biases appear more extreme in the single-pass case, particularly when it comes to polar and non-polar residues being more heavily suppressed and enriched.
 To investigate this observation, we calculated the hydrophobicity at each sequence-position averaged over all~\gls{tmh}s considered (after having window-averaged over 3 residues for each~\gls{tmh}) using the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982} (Figure~\ref{fig:hydrophobicity_single_multi}A) and validated using White and Wimley octanol-interface whole residue scale~\cite{White1999}, Hessa’s biological hydrophobicity scale~\cite{Hessa2005}, and the Eisenberg hydrophobic moment consensus scale~\cite{Eisenberg1984} (Supplementary Figure~\ref{fig:hydrophobicity_scale_comparison}).
@@ -623,7 +623,7 @@ To note, there is a positive-inside rule for all multi-pass datasets studied her
 
 To conclude, we find that negative-charge bias distribution is a feature of single-pass protein~\gls{tmh}s that is present across many membrane types and it can have the form of a negative charge suppression at the inside flank or an enrichment of those charges at the outside flank.
 
-\subsection{Amino acid compositional skews in relation to~\gls{tmh} complexity and anchorage function}
+\subsection{Amino acid compositional skews in relation to transmembrane helix complexity and anchorage function}
 
 \begin{figure}[p]
 \centering
@@ -1181,7 +1181,7 @@ The representative IDs were successfully resubmitted to UniProtKB.
 This dataset contains 48 single-pass proteins and 59 multi-pass proteins containing 327 helices from 59 proteins.
 
 
-\subsection{On the determination of flanking regions for~\gls{tmh}s and the~\gls{tmh} alignment}
+\subsection{On the determination of flanking regions for transmembrane helices and the transmembrane helix alignment}
 
 The determination of the boundary point at the sequence between the~\gls{tmh} in a membrane and the sequence immersed in the cytoplasm, extracellular space, vesicular lumen, etc.
 is not that trivial as it initially appears.

@@ -251,14 +251,24 @@ This free energy measurement is regarded as being currently experimentally inacc
 Although as a trend most of the scales agree, because of the methodological differences, there are indeed variations of values even after normalisation.
 Due to these discrepancies, it is preferable and typical amongst the literature to use several scales to verify the observable trends resulting from interpretation from an individual scale.
 Notably, one of the classic scales, Kyte \& Doolittle Hydropathy Scale shows a striking similarity to the modern Hessa's ${\Delta G}_{app}^{aa}$ scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues~\cite{Peters2014}.
-In $\alpha$ helices from soluble proteins, proline is almost always a helix breaker, and $\alpha$ helix prediction scales don't even attempt to quantify a proline scoring penalty.
+In $\alpha$ helices from soluble proteins, proline is almost always a helix breaker, and $\alpha$ helix prediction scales don't even attempt to quantify a proline scoring penalty, whereas they are highly tolerated in \gls{tmh}s.
 Several of the scales used throughout this thesis are outlined below.
-
-%Also a note on arrest peptides
 
 \subsubsection{Kyte \& Doolittle Hydropathy Scale}
 
-A scale based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids~\cite{Kyte1982}.
+The Kyte \& Dootlittle scale \cite{Kyte1982} is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids determined previously \cite{Chothia1976}.
+The Kyte \& Doolittle used evidence from previous experiments in the literature scaling them between -4.5 and +4.5.
+These experiments included the molal volumes of model compounds for the side\--chain R groups \cite{Wolfenden1979, Cohn1934, Traube1899}, the water vapour partition coefficients \cite{Hine1975, Wolfenden1979}, and water\--ethanol transfer free energies \cite{Cohn1943, Nozaki1971}.
+However alanine, tyrosine, leucine, and proline scores were subjectively modified.
+The authors found it difficult to accept that the single methyl group from alanine would have more hydrophobic force than leucine, which contains 4 methyl groups so the score was arbitrarily lowered to half way between the originally determined score, and the score of glycine.
+Tyrosine and leucine had their hydropathy values raised to one closer to the water vapour transfer free energy than experimental data suggested.
+In the case of proline, no suitable model existed and it tends to become buried, indicating that it is fairly hydrophilic.
+However, because it contains three methyl groups, the score considers it more hydrophobic than the experiments suggested.
+The authors stated: ``None of these last 3 adjustments, the result of personal bias and heated discussion between the authors, affects the hydropathy profiles in any significant way''\cite{Kyte1982}.
+Arginine represents the bottom of the scale, arbitrarily set at -4.5.
+An algorithm called SOAP was used to scan a window of $\pm$10 residues either side of each residue (allowing for half windows) across a protein to take the mean average of each position and plot them on a profile.
+Sustained areas of high hydrophobicity were indicative of a \gls{tmh}~\cite{Kyte1982}.
+
 
 \subsubsection{Hessa's Biological Hydrophobicity Scale}
 
@@ -283,8 +293,27 @@ The automatic TRANSMEM annotation currently used in UniProt is according to TMHM
 Sequence properties that can be analysed by bioinformatics, the sequence complexity and hydrophobicity, of the \gls{tmh} have been used to predict the role of the \gls{tmh} as either functional or structural, and as a discrete cluster from other SCOP annotated helices~\cite{Wong2012}.
 Those findings demonstrated that the sequence of the \gls{tmh} holds valuable information regarding biological roles, and forms the basis of our interest in the link between the polarity of a helix and functional activity beyond structural anchorage.
 
-TMSOC's z-score is able to distinguish between functionally active~\gls{tmh}s and those only associated with anchorage~\cite{Wong2012}.
-The z-score is a product of both hydrophobicity and a Shannon like sequence entropy of the character string in the~\gls{tmh}. This term is described below in equation~\ref{equation:zscoreterm}.
+TMSOC's z-score is able to distinguish between functionally active~\gls{tmh}s and those only associated with anchorage~\cite{Wong2011, Wong2012}.
+This was determined with annotation of \gls{tmh}s from the UniProt database (303 membrane anchors and 1741 functional TM helices) from UniProt \cite{TheUniProtConsortium2014} and tested with 181132 \gls{tmh} sequences.
+Two peaks can be observed when stratifying the hydrophobicity and the sequence complexity of the \gls{tmh}s (Figure \ref{fig:complexity}).
+These peaks correspond with the ``simple'' and ``complex'' \gls{tmh} annotation.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/complexity}
+		\captionof{figure}[The hydrophobic\--complexity continuum distinguishes between \gls{tmh} anchors, and those with function beyond anchoring.]{\textbf{The hydrophobic\--complexity continuum distinguishes between \gls{tmh} anchors, and those with function beyond anchoring.}
+		A) Two distinct points can be observed when plotting sequence complexity on the x axis, frequency on the y axis, and hydrophobiciy on the z axis of \gls{tmh}s from UniProt.
+		These peaks were shown to correspond to the membrane anchor and functional \gls{tmh} populations.
+		From Wong \textit{et al.,} 2011 \cite{Wong2011}.
+		B) The $\protect\alpha$ helix hydrophobicity complexity continuum stratified by hydrophobicity (vertical axis) and complexity (horizontal axis).
+		In blue are the membrane anchors, in red are the \gls{tmh} with function, and in green are non\--\gls{tm} $\protect\alpha$ helicess from SCOP \cite{Murzin1995}.
+		Clear distinctions can be made between the 3 groups and in fact a composite z-score of the distance of these two factors from the functional \gls{tmh} group allows prediction of which group a \gls{tmh} belongs to \cite{Wong2011, Wong2012}.
+		From Wong \textit{et al.,} 2012 \cite{Wong2012}.
+		}
+\label{fig:complexity}
+\end{figure}
+
+The z-score is a product of both hydrophobicity and a Shannon like sequence entropy \cite{Wong2011, Wong2012} of the character string in the~\gls{tmh}. This term is described below in equation~\ref{equation:zscoreterm}.
 
 \begin{equation} \label{equation:zscoreterm}
 z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\sigma}_{\phi}^{2}}+\frac{{({x}_{c}-{\mu}_{c})}^{2}}{{\sigma}_{c}^{2}}\right]
@@ -314,10 +343,6 @@ The algorithm searches for and concatenates sub-threshold segments for the Shann
 
 The lowest probability sub-segment can be defined as $ K_1=\log N/L $.
 By altering the window lengths, and the thresholds SEG can be optimised to search for subtle compositional deviations, such as coil-coiled regions.
-
-
-
-
 
 
 \section{Biogenesis of transmembrane Proteins}
