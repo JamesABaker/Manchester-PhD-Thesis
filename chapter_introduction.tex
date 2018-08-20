@@ -7,6 +7,70 @@ Despite progress over the last decade, the understanding of the relationship bet
 
 In this chapter we will place the \gls{tmh} problem in context, then describe the important biological aspects of the \gls{tmh} (the traversing \gls{tms} as well as the membrane itself), and discuss tools and methods that allow us to analyse and describe the nuanced differences between these \gls{tmh} sequences.
 
+\section{$\alpha$ Helices In Membranes }
+
+\subsection{The Importance Of Transmembrane Proteins}
+Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration.
+Integral \gls{tmp} are encoded by between a third to a half of the genes in the human genome which reflects their biological importance~\cite{Hopkins2002, Almen2009, Wang2013}.
+These proteins allow biochemical pathways that traverse the various biological membranes used in life.
+%citation for drug targets
+
+%Function is a result of the structure, and here the structure and sequence are supposedly very relatable.
+The relationship between the membrane and \gls{tmp}s is underpinned by complex thermodynamic and  electrostatic equilibrium.
+Once inserted the protein doesn't leave the membrane as a result of the \gls{tmh} being very hydrophobic.
+This hydrophobicity and the hydrophobicity of the lipid tails means that they self-associate and this association is entropically driven by water.
+Another way of describing it is that they fiercely dissociate from the water.
+The overall $\Delta G$ for a \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~\cite{Cymer2015}; the association of the helix in the membrane is typically spontaneous.
+%Expand this section
+
+\subsection{The Transmembrane Protein Problem}
+% Needs references and a figure showing rate of globular proteins and membrane proteins.
+Because of the experimental hindrance, \gls{tmp} biology has been relatively slow to emerge.
+Throughout the 1990s the concept of a \gls{tmh} was simple and fairly assured: they were greasy peptides of around 30{\AA} in length, often bundled together and oriented perpendicularly to the membrane.
+By 2006, crystallography had elucidated more than 60 high-resolution structures.
+Although the classic \gls{tmh} structures were broadly prevalent, these structures contained a plethora of unusual \gls{tmh}s.
+\gls{tms}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface~\cite{VonHeijne2006, Elofsson2007}; the classical model was incomplete.
+Even recently, there is a contingency in the  membrane biology field that despite progress over the last decade there is still a lack of information regarding the relationship between \gls{tmh} sequences and function, \gls{tmh} structure, intra-membrane \gls{tmp} assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s~\cite{Ladokhin2015}.
+
+Furthermore, the insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions~\cite{Cymer2015, Elisa2012, Ismail2015}.
+As well as being a biophysically convoluted system, \gls{tmh}s are biologically functional beyond anchorage in many cases.
+\gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchorage can be revealed by sensitive, careful analysis of the sequence information alone~\cite{Wong2012}.
+
+When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar.
+For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non-polar residue patterns.
+Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the same extent yet homology paradigms are silently extended and applied to them.
+In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s, and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry.
+Worryingly, because of this oversight, it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
+
+
+%\subsection{Earliest Evidences of Compartmentalization}
+%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
+%A group linking computational biophysics http://www.ks.uiuc.edu/History/membrane/
+%Some waffle about Hooke
+
+
+
+
+\subsection{The membrane protein revolution}
+ Over the last decade, Nanodiscs have been routinely used to much more easily obtain crystal structures.
+Nanodiscs overcome some of the major challenges caused by the hydrophobic helices and a more faithful representation of the biological membranes than alternative model membranes like liposomes~\cite{Borch2009}.
+
+ However, critical questions remain: How is the \gls{tmh} oriented in the membrane, how is the \gls{tmh} interacting with the membrane, how is the \gls{tmh} interacting with another \gls{tmh} in the membrane, does the \gls{tmh} have functions beyond anchorage and if so what are they?
+
+
+%Figure for Nanodisc
+%Development of Nanodiscs
+%first crystals in the membrane
+%\subsection{Early Models of the Bilayer}
+%Gorter & Grendel
+%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
+
+
+
+\subsection{Bioinformatics in transmembrane biology}
+
+
+
 \section{Biological Membrane Composition}
 The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.
 The proteins that allow life to use this biochemical barrier are perhaps equally important.
@@ -49,6 +113,7 @@ The evolutionary theories behind these various membrane compositions emerging is
 A popular theory is that eukaryotic cells used mitochondria as the ATP synthesisers to provide an energetic boost, the result of which was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound organelle structures, sexual reproduction, and complex inter-cellular cooperation in the form of multi-cellular organisms~\cite{Lane2005, Lane2015}.
 A lot of this theory rested on the idea that mitochondrial membranes within the eukaryotic cells were energetically favorable, however more recent experimentation disputes this claim~\cite{Lynch2017}.
 
+\subsection{Membrane potential}
 Simply put, membrane potential is the voltage across a membrane.
 If the membrane is permeable to a certain type of ion, then the ion will experience an electrical pulling force during the diffusion process that pulls toward the ``preferred'' biological location.
 This clearly depends on a chemical component involving both the charge and ion concentration gradient.
@@ -86,34 +151,10 @@ Negativity was found in the \gls{er}, with a voltage between 75mV to 95mV in the
 Negativity was found in the mitochondrial matrix with a  voltage across the mitochondrial membrane at 150mV~\cite{Perry2011}.
 No notable membrane potential has been identified in the Golgi~\cite{Schapiro2000, Llopis1998}.
 
-\subsection{Membrane proteins}
 
-The membrane is critical in maintaining the separation of biochemically distinct compartments.
-However, there needs to be flux of not only molecules, but signals across these membranes in order to facillitate cellular life.
-Both $\beta$ sheets and $\alpha$ helices are capable of traversing the membrane space.
-The focus of this thesis is primarily on \gls{tmh}s, however, $\beta$ sheets are another protein structure capable of spanning the membrane.
 
-\begin{figure}[ht]
-\centering
-\includegraphics[width=1\textwidth]{Intro/barrel-versus-helix}
-		\captionof{figure}[Cartoons showing the structural differences of the outer membrane $\protect\beta$\--barrel proteins, transmembrane $\protect\alpha$\--helix channels, and transmembrane $\protect\alpha$\--helix signal transducers in the membrane.]{\textbf{Cartoons showing the structural differences of the outer membrane proteins, transmembrane helix channels, and transmembrane helix signal transducers in the membrane.}
-		The top row shows the proteins traversing the membrane with the interfacial regions denoted by the black lines.
-		A) A porous outer membrane protein using $\protect\beta$\--sheets to form a pore\--forming protein structure.
-		PDB code 2JQY.
-		B) A highly selective ion channel made up of membrane spanning \gls{tmh}s.
-		PDB code 4HYO.
-		C) A 7\--\gls{tmh} \gls{gpcr} that recieves a signal on one side of the membrane which causes a conformational change influencing the structural arrangement of the tertiary structure on the opposing side of the membrane.
-		PDB code 1F88.
-		}
-\label{fig:barrel-versus-helix}
-\end{figure}
 
-$\beta$ barrel proteins are present only in a few membrane types; the outer membrane of Gram negative bacteria for which they constitute between 2-3\% of the genome \cite{Wimley2003}, and in the outer membranes of eukaryotic chloroplasts and mitochondrial membranes.
-Their restriction to these membrane types is the result of ancestral symbiogenesis \cite{Fischer1994, Zeth2010, Fairman2011, Ulrich2015}.
-These outer membrane proteins cause the membranes to be permeable, diminishing membrane potential between the outer and the inner membrane (Figure \ref{fig:barrel-versus-helix}).
-Unlike the \gls{tmh}s, $\beta$ barrel proteins are permeable to water and many other small molecules.
-
-\section{$\alpha$ Helices; Structure And Function}
+\section{$\protect\alpha$ Helices; Structure And Function}
 
 \subsection{Transmembrane Helix Sequence Composition}
 
@@ -155,7 +196,7 @@ A previous study by Sharpe \textit{et al.} from 2010 used 1192 human and 1119 ye
 The differences in consensus \gls{tmh} structure implies that there are general differences between the membranes of the Golgi and \gls{er}.
 The abundance of serines in the region following the lumenal end of Golgi \gls{tms}s probably reflects the fact that this part of many Golgi enzymes forms a flexible linker that tethers the catalytic domain to the membrane~\cite{Sharpe2010}.
 
-\subsubsection{The ``Positive-Inside'' Rule}
+\subsubsection{The ``Positive\-Inside'' Rule}
 
 Two publications by von Heijne coined the ``Positive-Inside'' rule demonstrated the practical value of positively charged residue sequence clustering in topology prediction of \gls{tmh}s in bacteria~\cite{VonHeijne1989,Andersson1992}.
 It was clearly defined and shown that positively charged residues more commonly were found on the ``inside'' of the cytoplasm rather than the periplasm of \textit{ E.
@@ -274,64 +315,7 @@ The algorithm searches for and concatenates sub-threshold segments for the Shann
 The lowest probability sub-segment can be defined as $ K_1=\log N/L $.
 By altering the window lengths, and the thresholds SEG can be optimised to search for subtle compositional deviations, such as coil-coiled regions.
 
-\subsection{Signal peptides}
 
-\section{$\alpha$ Helices In Membranes }
-
-\subsection{The Importance Of Transmembrane Proteins}
-Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration.
-Integral \gls{tmp} are encoded by between a third to a half of the genes in the human genome which reflects their biological importance~\cite{Hopkins2002, Almen2009, Wang2013}.
-These proteins allow biochemical pathways that traverse the various biological membranes used in life.
-%citation for drug targets
-
-%Function is a result of the structure, and here the structure and sequence are supposedly very relatable.
-The relationship between the membrane and \gls{tmp}s is underpinned by complex thermodynamic and  electrostatic equilibrium.
-Once inserted the protein doesn't leave the membrane as a result of the \gls{tmh} being very hydrophobic.
-This hydrophobicity and the hydrophobicity of the lipid tails means that they self-associate and this association is entropically driven by water.
-Another way of describing it is that they fiercely dissociate from the water.
-The overall $\Delta G$ for a \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~\cite{Cymer2015}; the association of the helix in the membrane is typically spontaneous.
-%Expand this section
-
-\subsection{The Transmembrane Protein Problem}
-% Needs references and a figure showing rate of globular proteins and membrane proteins.
-Because of the experimental hindrance, \gls{tmp} biology has been relatively slow to emerge.
-Throughout the 1990s the concept of a \gls{tmh} was simple and fairly assured: they were greasy peptides of around 30{\AA} in length, often bundled together and oriented perpendicularly to the membrane.
-By 2006, crystallography had elucidated more than 60 high-resolution structures.
-Although the classic \gls{tmh} structures were broadly prevalent, these structures contained a plethora of unusual \gls{tmh}s.
-\gls{tms}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface~\cite{VonHeijne2006, Elofsson2007}; the classical model was incomplete.
-Even recently, there is a contingency in the  membrane biology field that despite progress over the last decade there is still a lack of information regarding the relationship between \gls{tmh} sequences and function, \gls{tmh} structure, intra-membrane \gls{tmp} assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s~\cite{Ladokhin2015}.
-
-Furthermore, the insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions~\cite{Cymer2015, Elisa2012, Ismail2015}.
-As well as being a biophysically convoluted system, \gls{tmh}s are biologically functional beyond anchorage in many cases.
-\gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchorage can be revealed by sensitive, careful analysis of the sequence information alone~\cite{Wong2012}.
-
-When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar.
-For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non-polar residue patterns.
-Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the same extent yet homology paradigms are silently extended and applied to them.
-In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s, and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry.
-Worryingly, because of this oversight, it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
-
-
-%\subsection{Earliest Evidences of Compartmentalization}
-%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
-%A group linking computational biophysics http://www.ks.uiuc.edu/History/membrane/
-%Some waffle about Hooke
-
-\subsection{The membrane protein revolution}
- Over the last decade, Nanodiscs have been routinely used to much more easily obtain crystal structures.
-Nanodiscs overcome some of the major challenges caused by the hydrophobic helices and a more faithful representation of the biological membranes than alternative model membranes like liposomes~\cite{Borch2009}.
-
- However, critical questions remain: How is the \gls{tmh} oriented in the membrane, how is the \gls{tmh} interacting with the membrane, how is the \gls{tmh} interacting with another \gls{tmh} in the membrane, does the \gls{tmh} have functions beyond anchorage and if so what are they?
-
-
-%Figure for Nanodisc
-%Development of Nanodiscs
-%first crystals in the membrane
-%\subsection{Early Models of the Bilayer}
-%Gorter & Grendel
-%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
-
-\subsection{Bioinformatics in transmembrane biology}
 
 
 
@@ -354,13 +338,83 @@ Mutation experiments on these three features (the plug, contriction ring, and la
 In bacteria, the SecY protein is partly encircled by SecE which enhances it's stability in the membrane \cite{Kihara1995}
  Sec$\beta$ and Sec$\gamma$
 
-
-
 \subsection{Co-translational Translocation}
 
 
 \subsection{Post-Translational Translocation}
 %Remember to point out differences in pro and eukaryotes.
+
+\subsection{Signal peptides}
+
+\section{$\protect\beta$ sheets in the membrane}
+
+The membrane is critical in maintaining the separation of biochemically distinct compartments.
+However, there needs to be flux of not only molecules, but information signals across these membranes in order to facillitate cellular life.
+Whilst the focus of this thesis is primarily on \gls{tmh}s it is important to acknowledge that $\beta$ sheets are another secondary structural element capable of spanning the membrane.
+
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/barrel-versus-helix}
+		\captionof{figure}[Cartoons showing the structural differences of the outer membrane $\protect\beta$\--barrel proteins, transmembrane $\protect\alpha$\--helix channels, and transmembrane $\protect\alpha$\--helix signal transducers in the membrane.]{\textbf{Cartoons showing the structural differences of the outer membrane proteins, transmembrane helix channels, and transmembrane helix signal transducers in the membrane.}
+		The top row shows the proteins traversing the membrane with the interfacial regions denoted by the black lines.
+		A) A porous outer membrane protein using $\protect\beta$\--sheets to form a pore\--forming protein structure.
+		PDB code 2JQY.
+		B) A highly selective ion channel made up of membrane spanning \gls{tmh}s.
+		PDB code 4HYO.
+		C) A 7\--\gls{tmh} \gls{gpcr} that recieves a signal on one side of the membrane which causes a conformational change influencing the structural arrangement of the tertiary structure on the opposing side of the membrane.
+		PDB code 1F88.
+		}
+\label{fig:barrel-versus-helix}
+\end{figure}
+
+$\beta$ barrel proteins are present only in a few membrane types; the outer membrane of Gram negative bacteria for which they constitute between 2-3\% of the genome \cite{Wimley2003}, and in the outer membranes of eukaryotic chloroplasts and mitochondrial membranes.
+Their restriction to these membrane types is the result of ancestral symbiogenesis \cite{McFadden2001, Gray1999, Fischer1994, Zeth2010, Fairman2011, Ulrich2015}.
+
+These outer membrane proteins cause the membranes to be permeable, diminishing membrane potential between the outer and the inner membrane.
+Unlike the \gls{tmh}s, $\beta$ barrel proteins are permeable to water and many other small molecules often unspecifically due to their large pore (Figure \ref{fig:barrel-versus-helix}).
+Integral $\beta$ barrel proteins consist of between 8 and 26 apmphipathic antiparallel $\beta$ strands forming a cylindrical pore.
+They are capable of active and passive transport, molecule receptors, enzymatic catalysis, structural formation, and translocon machinery \cite{Wimley2003}.
+
+The biogenesis of $\beta$ barrel membrane proteins also differs from that of \gls{tmh}s, and there are differences between prokaryotic and eukaryotic cells.
+
+In Gram negative bacteria, the $\beta$ barrel proteins are translated on cytoplasmic ribosomes (Figure \ref{fig:beta-mito-versus-bacteria}).
+An N-terminal \gls{sp} sequence allows the protein to pass through the inner membrane to the outer membrane \cite{Driessen2008, Papanikou2007}.
+Instead of cotranslational insertion, SecB transports the nascent polypeptide chain to the Sec translocon on the inner membrane \cite{Bechtluft2010}.
+$\beta$\--sheets do not trigger the opening of the lateral gate \cite{Ulrich2015}.
+Once in the periplasm the \gls{sp} is cleaved \cite{Paetzel2014} and chaperones, such as the redundant SurA \cite{Lazar1996, Volokhina2011}, DegQ, and Skp \cite{Volokhina2011}, bind to the protein to prevent premature folding.
+Once at the inner-surface, the BAM complex assembles and integrates the $\beta$ barrel protein into the membrane \cite{Wu2005,Hagan2011} via a lateral opening of one of the BAM subunits, BamA \cite{Noinaj2014}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/beta-mito-versus-bacteria}
+		\captionof{figure}[A cartoon of the biogenesis of $\protect\beta$ barrel membrane proteins in mitochondria and Gram\--negative bacteria.]{\textbf{A cartoon of the biogenesis of $\protect\beta$ barrel membrane proteins in mitochondria and Gram\--negative bacteria.}
+		This is an overview of the current model of $beta$ barrel protein membrane integration.
+		A)In bacteria, SecB chaperones the nascent peptide to SecYEG where it is transported across the inner membrane.
+		Once the \gls{sp} is cleaved, the protein is chaperoned to the BAM machinery by SurA, DegQ, or Skp.
+		The BAM machinery integrates the protein into the membrane.
+		B)After ribosomal translation the nascent peptide is transported across the mitochondrial outer membrane by the \gls{tom} machinery.
+		Several Tim recognition molecules then attach to the protein and present it to the TOB insertion machinery, which integrates the protein into the membrane.
+		Adapted from Ulrich \& Rapoport, 2015 \cite{Ulrich2015}.
+
+		}
+\label{fig:beta-mito-versus-bacteria}
+\end{figure}
+
+Unlike in the bacterial outer membrane, $\beta$-barrel proteins are rare in the mitochondria \cite{Ulrich2015}.
+There is Tom40, Tob55, two isoforms of a porin, and Mdm10 \cite{Ulrich2015}.
+And yet, indeed it was shown that a $\beta$ barrel protein fragments not found in the eukaryotic proteome called trimeric autotransporter can be recognised and assembled byt the mitochondria \cite{Muller2011}.
+Since there is no need to cross the inner membrane, mitochondrial proteins do not have the cleavable \gls{sp}, or any other known targetting signal \cite{Ulrich2015}.
+After cytosolic ribosomes complete the translation, the $\beta$ barrel proteins are recognised on the mitochondrial surface by the \gls{tom} complex import receptors, handed to the $\beta$ barrel protein Tom40 which is the central machinery for mitochondrial protein import \cite{Chachinska2009}.
+After being processed through the \gls{tom} machinery, hexameric chaperone complexes of Tim8 in complex with Tim13, and Tim9 in complex with 10 to the TOB complex (also known as the SAM complex) also on the outer membrane which integrates the $\beta$ barrel protein into the membrane \cite{Wiedermann2003, Paschen2003, Gentle2004}.
+
+Whereas mitochondria originated from the ancestral incorporation of $\alpha$\--proteobacteria \cite{Gray1999}, chloroplasts were thought to originate from the incorporation of cyanobacterium \cite{McFadden2001}.
+Similarly to mitochondrial $\beta$ barrel proteins, there is no cleavable targetting \gls{sp} targetting for the chloroplast since they integrate on the internal side of the membrane, however much less is known about the precise insertion machinery of $\beta$ barrel proteins at a molecular level in chloroplasts \cite{Ulrich2015}.
+
+Besides the differences in biogenesis between $\beta$ barrel \gls{tmp}s and \gls{tmp}s with \gls{tmh}s as the membrane spanninging units, there are also biophysical differences.
+Membrane spanning $\beta$ sheets exhibit a ``positive\--outside'' distribution of positively charged residues \cite{Pogozheva2013}, opposed to the much more typical positive\--inside distribution \cite{VonHeijne1989, Andersson1992, Pogozheva2013, Sharpe2010, Baeza-Delgado2013}.
+Typically, $\beta$ sheets are less hydrophobic than \gls{tmh}s \cite{Tamm2004} as a result of their amphiphilic nature.
 
 
 
