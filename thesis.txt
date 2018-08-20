@@ -757,13 +757,13 @@ SP Signal Peptide. 13, 26, 28, 29, 92, 95
 
 SR Signal Recognition Particle Receptor. 87, 121, 122
 SRP Signal Recognition Particle. 87–89, 91, 96, 121, 122
-TA Tail Anchor. 85–92, 94–96, 100–107, 109, 111–113, 115–117, 119
+TA Tail Anchor. 30, 85–92, 94–96, 100–107, 109, 111–113, 115–117, 119
 TM Transmembrane. 11, 19, 24, 26, 33–36, 49, 52, 57, 66, 79, 90, 99
 TMD Transmembrane Domain. 99
-TMH Transmembrane Helix. 11–15, 17–24, 26–29, 31–59, 62–72, 74, 75, 77–92, 94,
-95, 97–100, 102–119, 121–138, 140–143
-TMP Transmembrane Protein. 11–14, 17, 25, 26, 29, 31, 32, 34, 36, 37, 39, 40, 49,
-52, 54, 62–64, 66, 67, 102, 113, 121, 122, 124, 126, 129, 130, 135, 142, 143
+TMH Transmembrane Helix. 11–15, 17–24, 26–59, 62–72, 74, 75, 77–92, 94, 95,
+97–100, 102–119, 121–138, 140–143
+TMP Transmembrane Protein. 11–14, 17, 25, 26, 29–32, 34, 36, 37, 39, 40, 49, 52,
+54, 62–64, 66, 67, 102, 113, 121, 122, 124, 126, 129, 130, 135, 142, 143
 TMS Transmembrane Segment. 11–13, 18
 TOM translocase of the outer membrane. 28, 29
 
@@ -1486,13 +1486,13 @@ a pore-forming protein structure. PDB code 2JQY. B) A highly selective ion chann
 membrane spanning TMHs. PDB code 4HYO. C) A 7-TMH G protein-coupled receptor (GPCR)
 that recieves a signal on one side of the membrane which causes a conformational change influencing
 the structural arrangement of the tertiary structure on the opposing side of the membrane. PDB
-code 1F88.
-
-β barrel proteins are present only in a few membrane types; the outer membrane of
+code 1F88. Note the pore in the β barrel protein not present in either the TMH channel or the TMH
+transducer.
 
 34
 
 CHAPTER 1. INTRODUCTION
+β barrel proteins are present only in a few membrane types; the outer membrane of
 
 Gram negative bacteria for which they constitute between 2-3% of the genome [106],
 and in the outer membranes of eukaryotic chloroplasts and mitochondrial membranes.
@@ -1518,7 +1518,6 @@ yet, indeed it was shown that a β barrel protein fragments not found in the euk
 proteome called trimeric autotransporter can be recognised and assembled byt the mitochondria [120]. Since there is no need to cross the inner membrane, mitochondrial
 proteins do not have the cleavable SP, or any other known targetting signal [112]. After cytosolic ribosomes complete the translation, the β barrel proteins are recognised
 on the mitochondrial surface by the TOM complex import receptors, handed to the β
-barrel protein Tom40 which is the central machinery for mitochondrial protein import
 
 1.5. β SHEETS IN THE MEMBRANE
 A) Gram negative bacteria
@@ -1577,6 +1576,7 @@ membrane by the translocase of the outer membrane (TOM) machinery. Several Tim r
 molecules then attach to the protein and present it to the TOB insertion machinery, which integrates
 the protein into the membrane. Adapted from Ulrich & Rapoport, 2015 [112].
 
+barrel protein Tom40 which is the central machinery for mitochondrial protein import
 [Chachinska2009]. After being processed through the TOM machinery, hexameric
 chaperone complexes of Tim8 in complex with Tim13, and Tim9 in complex with 10
 to the TOB complex (also known as the SAM complex) also on the outer membrane
@@ -1585,13 +1585,13 @@ which integrates the β barrel protein into the membrane [Wiedermann2003, 121,
 Whereas mitochondria originated from the ancestral incorporation of α-proteobacteria [108], chloroplasts were thought to originate from the incorporation
 of cyanobacterium [107]. Similarly to mitochondrial β barrel proteins, there is no
 cleavable targetting SP targetting for the chloroplast since they integrate on the internal side of the membrane, however much less is known about the precise insertion
-machinery of β barrel proteins at a molecular level in chloroplasts [112].
 
 36
 
 CHAPTER 1. INTRODUCTION
-Besides the differences in biogenesis between β barrel TMPs and TMPs with TMHs
 
+machinery of β barrel proteins at a molecular level in chloroplasts [112].
+Besides the differences in biogenesis between β barrel TMPs and TMPs with TMHs
 as the membrane spanninging units, there are also biophysical differences. Membrane spanning β sheets exhibit a “positive-outside” distribution of positively charged
 residues [47], opposed to the much more typical positive-inside distribution [15, 46,
 47, 50, 51]. Typically, β sheets are less hydrophobic than TMHs [123] as a result of
@@ -1600,6 +1600,24 @@ their amphiphilic nature.
 1.6
 
 Aims of This Thesis.
+
+In this thesis we explore three ideas surrouding the role of TMHs in the membrane.
+In chapter 2 we explore the sequence composition of large datasets of TMHs straifying them by species, organelle, single-pass and multi-pass. After considering the rarity
+of certain amino acid types, we ellucidate a “negative-outside” tendency in concert with
+the positive-inside rule. We go on to further divide the single-pass group into complex
+and simple TMHs according to TMSOC. This reveals that simple TMHs have amino
+acid distribution features along the helix that would optimise for anchoring, however
+complex TMHs are more akin to TMHs from multi-pass TMPs.
+In chapter 3 we generate an up to date dataset of post-translationally inserted Tail
+Anchor (TA) proteins based on previous methods and compare the TMHs within to a
+manually curated TA protein dataset from UniProt. This cross examination revealed
+TMH adaptaions to mitochondrial membranes such as a reversal of the “positive-inside” rule and a reduction in hydrophobicity caused by an abundance of alanine
+residues in lieu of leucine rather than an increase of polar residues. We also generate
+homology models of two spontanously inserting TMHs from TA proteins and show
+that they have an amphiphatic surface which may be key to their insertion.
+In chapter 4 we look at families of TMP that exhibit high hydrophobic discrepency
+between sequentially adjacent TMHs. The conservation of these pairs across the families corroborates evidence of cooperative TMH insertion, showing that marginally
+hydrophobic TMHs could use typical TMHs as part of their biogenesis.
 
 Chapter 2
 The “Negative-Outside” rule.
@@ -6593,34 +6611,32 @@ hydrophobicity.
 
 Abstract
 
-Tail Anchor (TA) proteins are a functionally diverse group of post-translationally
-inserted membrane proteins that have a cytosolic N-terminal, a transmembrane α
-helix, and a short C-terminal tail. The TMH and flanking regions of the TA protein
-have been shown to contain sufficient information for subcellular targeting. Here, we
-built datasets based on sequence definitions of plausible TA proteins using the UniProt
-database. We show that any statistical differences between the hydrophobicity of the
-TMH between TA proteins belonging to mammalian, plant, or yeast organisms are,
+TA proteins are a functionally diverse group of post-translationally inserted membrane
+proteins that have a cytosolic N-terminal, a transmembrane α helix, and a short C-terminal tail. The TMH and flanking regions of the TA protein have been shown to
+contain sufficient information for subcellular targeting. Here, we built datasets based
+on sequence definitions of plausible TA proteins using the UniProt database. We show
+that any statistical differences between the hydrophobicity of the TMH between TA
+proteins belonging to mammalian, plant, or yeast organisms are, if at all present, small.
 91
 
 92
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
-if at all present, small. Yet, the hydrophobicity of TMHs from different subcellular
-locations is, on average, different between the mitochondria and other membranes
-along the secretory pathway. Notably, in the case of mitochondria, this appears to
-be a difference in the hydrophobic residue preference of alanine instead of leucine or
-isoleucine and does not seem to be an increase of intramembrane polar residues. In
-the ER, Golgi, and PM there are positively charged residues inside the cytoplasm
-and negatively charged residues outside. Yet we identify a charge skew reversal of
-the “positive-inside” and “negative-outside” rules in the mitochondrial TA proteins
-to negative-inside and positive-outside. Whether these differences are the result of
-membrane environment adaptations or biological features useful for the biogenesis and
-accurate localisation of the protein remains unclear. Furthermore, structural homology
-modelling of the spontaneously inserting TMHs of PTP1b and cytochrome b5 revealed
-that TA proteins may gain their ability to integrate into the membrane unaided due
-to a strip of conserved relatively polar residues and strong flanking charge that would
-allow effective membrane coupling and anchoring.
+Yet, the hydrophobicity of TMHs from different subcellular locations is, on average,
+different between the mitochondria and other membranes along the secretory pathway.
+Notably, in the case of mitochondria, this appears to be a difference in the hydrophobic
+residue preference of alanine instead of leucine or isoleucine and does not seem to
+be an increase of intramembrane polar residues. In the ER, Golgi, and PM there
+are positively charged residues inside the cytoplasm and negatively charged residues
+outside. Yet we identify a charge skew reversal of the “positive-inside” and “negativeoutside” rules in the mitochondrial TA proteins to negative-inside and positive-outside.
+Whether these differences are the result of membrane environment adaptations or
+biological features useful for the biogenesis and accurate localisation of the protein
+remains unclear. Furthermore, structural homology modelling of the spontaneously
+inserting TMHs of PTP1b and cytochrome b5 revealed that TA proteins may gain their
+ability to integrate into the membrane unaided due to a strip of conserved relatively
+polar residues and strong flanking charge that would allow effective membrane coupling
+and anchoring.
 
 3.2
 
