@@ -5,13 +5,23 @@
 However, the experimental inaccessibility of the \gls{tmh} has hampered the progress of study compared to their globular structural analogues.
 Despite progress over the last decade, the understanding of the relationship between the sequence and function of a \gls{tmh} is incomplete.
 
-In this chapter we will place the \gls{tmh} problem in context, then describe the important biological aspects of the \gls{tmh} (the traversing \gls{tms} as well as the membrane itself), and discuss tools and methods that allow us to analyse and describe the nuanced differences between these \gls{tmh} sequences.
+In this chapter we will place the \gls{tmh} problem in context, then describe the important biological aspects of the \gls{tmh}, and discuss tools and methods that allow us to analyse and describe the nuanced differences between these \gls{tmh} sequences.
 
-\section{$\alpha$ Helices In Membranes }
+\section{Membrane proteins}
 
-\subsection{The Importance Of Transmembrane Proteins}
+\subsection{A brief history of the discovery of the membrane}
+
+%\subsection{Earliest Evidences of Compartmentalization}
+%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
+%A group linking computational biophysics http://www.ks.uiuc.edu/History/membrane/
+%Some waffle about Hooke, Schwan, and Virchow
+%\subsection{Early Models of the Bilayer}
+%Gorter & Grendel
+%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
+
+\subsection{The importance of transmembrane proteins}
 Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration.
-Integral \gls{tmp} are encoded by between a third to a half of the genes in the human genome which reflects their biological importance~\cite{Hopkins2002, Almen2009, Wang2013}.
+Integral \gls{tmp}s are encoded by between a third to a half of the genes in the human genome which reflects their biological importance~\cite{Hopkins2002, Almen2009, Wang2013}.
 These proteins allow biochemical pathways that traverse the various biological membranes used in life.
 %citation for drug targets
 
@@ -23,7 +33,7 @@ Another way of describing it is that they fiercely dissociate from the water.
 The overall $\Delta G$ for a \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~\cite{Cymer2015}; the association of the helix in the membrane is typically spontaneous.
 %Expand this section
 
-\subsection{The Transmembrane Protein Problem}
+\subsection{The transmembrane protein problem}
 % Needs references and a figure showing rate of globular proteins and membrane proteins.
 Because of the experimental hindrance, \gls{tmp} biology has been relatively slow to emerge.
 Throughout the 1990s the concept of a \gls{tmh} was simple and fairly assured: they were greasy peptides of around 30{\AA} in length, often bundled together and oriented perpendicularly to the membrane.
@@ -42,36 +52,22 @@ Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the 
 In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s, and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry.
 Worryingly, because of this oversight, it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
 
-
-%\subsection{Earliest Evidences of Compartmentalization}
-%To get started https://en.wikipedia.org/wiki/History_of_cell_membrane_theory
-%A group linking computational biophysics http://www.ks.uiuc.edu/History/membrane/
-%Some waffle about Hooke
-
-
-
-
 \subsection{The membrane protein revolution}
- Over the last decade, Nanodiscs have been routinely used to much more easily obtain crystal structures.
+Over the last decade, Nanodiscs have been routinely used to much more easily obtain crystal structures.
 Nanodiscs overcome some of the major challenges caused by the hydrophobic helices and a more faithful representation of the biological membranes than alternative model membranes like liposomes~\cite{Borch2009}.
 
- However, critical questions remain: How is the \gls{tmh} oriented in the membrane, how is the \gls{tmh} interacting with the membrane, how is the \gls{tmh} interacting with another \gls{tmh} in the membrane, does the \gls{tmh} have functions beyond anchorage and if so what are they?
+However, critical questions remain: How is the \gls{tmh} oriented in the membrane, how is the \gls{tmh} interacting with the membrane, how is the \gls{tmh} interacting with another \gls{tmh} in the membrane, does the \gls{tmh} have functions beyond anchorage and if so what are they?
 
 
 %Figure for Nanodisc
 %Development of Nanodiscs
 %first crystals in the membrane
-%\subsection{Early Models of the Bilayer}
-%Gorter & Grendel
-%Danielli and Davson http://biology.stackexchange.com/questions/20264/why-was-the-davson-danielli-model-rejected/24051#24051
+%em
 
+\subsection{The role of bioinformatics in transmembrane biology}
 
-
-\subsection{Bioinformatics in transmembrane biology}
-
-
-
-\section{Biological Membrane Composition}
+\section{Biological membranes}
+\subsection{Membrane lipids}
 The compartmentalisation of cellular biochemistry is arguably one of the most significant events to have occurred in evolution and is certainly one of the fundamental prerequisites for life~\cite{Koshland2002}.
 The proteins that allow life to use this biochemical barrier are perhaps equally important.
 Together, the lipid bilayer and proteins therein allow complex biochemical systems that facilitate life as we know it.
@@ -80,10 +76,8 @@ It is critical to understand that the lipid bilayer and the transmembrane $\alph
 For example, often \gls{tmh}s reflect the membrane environments they exist in, for example the hydrophobicity, asymetry, and thickness of the membrane lipids is reflected when looking at large numbers of \gls{tmp}s~\cite{Sharpe2010}.
 
 The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways~\cite{Bondar2010, Bondar2009, Jardon-Valadez2010, Kalvodova2005, Urban2005, White2001a, Jensen2004, Henin2014}, as well as protein folding~\cite{Kauko2010}.
-%Henin2014.
-%Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
 
-\subsection{Lipids of the Membrane}
+%Add references about the hydrogen bonds (white2005 and another one...) %Perhaps this wedge of citations should be expanded.
 
 The lipids that make up these membranes are very diverse, and not only do different cells have different membrane compositions, but so do different subcellular compartments which again is reflected in the \gls{tmh} composition of \gls{tmp}s~\cite{Sharpe2010, VanMeer2008}.
 
@@ -117,7 +111,7 @@ A lot of this theory rested on the idea that mitochondrial membranes within the 
 Simply put, membrane potential is the voltage across a membrane.
 If the membrane is permeable to a certain type of ion, then the ion will experience an electrical pulling force during the diffusion process that pulls toward the ``preferred'' biological location.
 This clearly depends on a chemical component involving both the charge and ion concentration gradient.
-There are various ways of estimating the membrane potential \textit{ ab initio}.
+There are various ways of estimating the membrane potential \textit{ab initio}.
 
 The Nernst equation can be derived directly from the simplified thermodynamic principles (i) the Boltzmann distribution, and (ii) a field charge interaction energy~\cite{Feiner1994}.
 It is defined as:
@@ -128,35 +122,19 @@ It is defined as:
 
 Where charge $Em$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment.
 
-One problem in biological membranes is that the compartments always  involve multiple ion channels.
-The Goldman equation aims to solve this problem by accounting for several ions that contribute to $c_{out}$ and $c_{in}$ (such as $K^+$, $Na^+$, and $Cl^-$) simultaneously:
-
-\begin{equation}
-{{E}_{m}}=\frac{RT}{F} \times{\ln}
-  \left(\frac{
-    {p}_{K^+}\cdot{[K^+]}_{out} + {p}_{Na^+}\cdot{[Na^+]}_{out} + {p}_{Cl^-}\cdot{[Cl^-]}_{in}}
-    {{p}_{K^+}\cdot{[K^+]}_{in} + {p}_{Na^+}\cdot{[Na^+]}_{in} + {p}_{Cl^-}\cdot{[Cl^-]}_{out}
-    }\right)
-\end{equation}
-
-Where charge $Em$ is the membrane potential, $z$ is the ion charge, $[i]$ is the ion concentration and ${p}_{i}$ is the relative membrane permeability for the actual ion.
-
-However, it is rife with caveats caused by the assumptions of the simplified model.
+However, the Nernst equation is rife with caveats caused by the assumptions of the simplified model.
 Such assumptions include ions having point charge, that the potential is constant throughout the solution.
-This is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by, for example, a specific adsorption of either part of the redox pair or the competitive adsorption of a supporting ion in solution~\cite{Feiner1994}.
-Therefore one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context.
+This issue is compounded because it assumes the constant potential is the same as the point of measurement which can be heavily influenced by, for example, a specific adsorption of either part of the redox pair or the competitive adsorption of a supporting ion in solution~\cite{Feiner1994}.
+Considering that in biology the compartments always  involve multiple ion channels and constant flux of biochemical environments, one should be cautious to understand the limitations and variability when extrapolating experimentally determined ${E}_{0}$, particularly when using such an idealised model in a biological context.
 
 Several studies have attempted to quantify the various voltages across the intracellular membranes.
 Negativity was found in the \gls{er}, with a voltage between 75mV to 95mV in the \gls{er} membrane~\cite{Qin2011, Worley1994}.
 Negativity was found in the mitochondrial matrix with a  voltage across the mitochondrial membrane at 150mV~\cite{Perry2011}.
 No notable membrane potential has been identified in the Golgi~\cite{Schapiro2000, Llopis1998}.
 
+\section{$\protect\alpha$ helices in the membrane; structure and function}
 
-
-
-\section{$\protect\alpha$ Helices; Structure And Function}
-
-\subsection{Transmembrane Helix Sequence Composition}
+\subsection{Transmembrane helix sequence composition}
 
 Measurements of the \gls{tmh} regions have found that they are roughly 20 residues in length; 17.3$\pm$3.1 from 160 \gls{tmh}s~\cite{Hildebrand2004}, 27.1$\pm$5.4 residues based on 129 \gls{tmh}s~\cite{Ulmschneider2001}, 26.4 residues based on 45 \gls{tmh}s~\cite{Bowie1997}, 25.3$\pm$6.0 residues based on 702 \gls{tmh}s~\cite{Cuthbertson2005a}, 24.6$\pm$5.6 from 837 \gls{tmh}s~\cite{Baeza-Delgado2013}, and 28.6$\pm$1.6\AA~to 33.5~$\pm$3.1\AA~from 191 proteins depending on membrane types~\cite{Pogozheva2013}.
 There are a couple of reasons for this variation.
@@ -196,27 +174,26 @@ A previous study by Sharpe \textit{et al.} from 2010 used 1192 human and 1119 ye
 The differences in consensus \gls{tmh} structure implies that there are general differences between the membranes of the Golgi and \gls{er}.
 The abundance of serines in the region following the lumenal end of Golgi \gls{tms}s probably reflects the fact that this part of many Golgi enzymes forms a flexible linker that tethers the catalytic domain to the membrane~\cite{Sharpe2010}.
 
-\subsubsection{The ``Positive\-Inside'' Rule}
+\subsubsection{The ``positive\--inside'' rule}
 
 Two publications by von Heijne coined the ``Positive-Inside'' rule demonstrated the practical value of positively charged residue sequence clustering in topology prediction of \gls{tmh}s in bacteria~\cite{VonHeijne1989,Andersson1992}.
 It was clearly defined and shown that positively charged residues more commonly were found on the ``inside'' of the cytoplasm rather than the periplasm of \textit{ E.
 coli}.
 More recently still large-scale sequence analysis of \gls{tmh}s from different organelle membrane surfaces in eukaryotic proteomes, show the clustering of positive charge being cytosolic~\cite{Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
 
-\subsubsection{The Aromatic Belt}
+\subsubsection{The aromatic belt}
 
- Tyrosine and tryptophan residues commonly are found at the interface boundaries of the \gls{tmh} and this feature is called the ``aromatic belt''~\cite{Hessa2005, Granseth2005, Sharpe2010, Baeza-Delgado2013, Nilsson2005a}.
+Tyrosine and tryptophan residues commonly are found at the interface boundaries of the \gls{tmh} and this feature is called the ``aromatic belt''~\cite{Hessa2005, Granseth2005, Sharpe2010, Baeza-Delgado2013, Nilsson2005a}.
 Not all aromatic residues are not found in the aromatic belt; phenylalanine has no particular preference for this region~\cite{Granseth2005, Braun1999}.
 However, it still remains unclear if this is to do with anchorage or translocon recognition~\cite{Baeza-Delgado2013}.
 
 A study of conserved tryptophan residues during folding of integrin $\alpha$II$\beta$3 \gls{tm} complex demonstrated the anchoring effects of tryptophan (0.4 kcal/mol contribution to membrane stability) in \gls{tmh}s is greater than the other residues~\cite{Situ2018}. It was suggested that it's wide amphiphilic range (it's stabilising energetic contribution in either hydrophobic or polar sites) complements the heterogeneity and asymmetry of mammalian membrane lipids in particular.
 
-%More than one explanation has been proposed for the physical and/or chemical basis for the strong preference of aromatic residues to reside in the membrane-water interface region.
 The Tyrosine side chain is a six-membered aromatic ring with an –OH group attached.
 Tryptophan has two aromatic rings that are fused into one large hydrophobic ring-structure.
-Phenylalanine, although aromatic, is completely hydrophobic, and is found in the transmembrane part rather than the interfacial parts of MPs.
+Phenylalanine, although aromatic, is completely hydrophobic, and is found in the transmembrane part rather than the interfacial parts of \gls{tmh}s.
 The classical explanation for the preference of Tyrosine and Tryptophan to reside in the interfacial regions is their dipolar character.
-The side chain must simply seekmpromise.
+The side chain must simply seek compromise.
 This can be achieved by burying the aromatic ring close to, or within, the hydrophobic core, while the hydrophilic part can interact with the polar lipid head-groups at the interface.
 Other factors such as the aromaticity, size, rigidity and shape of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference.
 %Perhaps, as suggested by You \textit{et al.}, it is a balance of all these forces that explains the interfacial preference of Tyrosine and Tryptophan. %This NEEDS referencing!
@@ -228,11 +205,11 @@ However, some contain polar and charged residues in the helix itself.
 Whilst this might seem thermodynamically unstable at first glance, a molecular dynamic feature called the ``snorkel'' effect explains in part how this is possible~\cite{Chamberlain2004, Strandberg2003}.
 Simply put, the snorkelling effect involves the long flexible side chain of leucine reaching the water interface region to interact with the polar head-groups of the bilayer even when the $\alpha$ helix backbone is pulled into the hydrophobic layer~\cite{Krishnakumar2007}.
 This has also been suggested to allow helices to adapt to varying thicknesses of the membrane~\cite{Kandasamy2006}.
-More recently it was found that although in simulations the energetic cost of arginine at the centre of the \gls{tmh} is large, in vivo experimentation with the Sec61 translocon reveals a much smaller penalty~\cite{Ulmschneider2017}.
-That same study also found that in simulations, snorkelling, bilayer deformation, and peptide tilting combined to to be sufficient to lower the thermodynamic stability penalty of arginine insertion so that hydrophobic \gls{tmh}s with a central arginine residue will readily insert into the membrane.
+More recently it was found that although in simulations the energetic cost of arginine at the centre of the \gls{tmh} is large, \textit{in vivo} experimentation with the Sec61 translocon reveals a much smaller penalty~\cite{Ulmschneider2017}.
+That same study also found that in \gls{md} simulations, snorkelling, bilayer deformation, and peptide tilting combined to to be sufficient to lower the thermodynamic stability penalty of arginine insertion so that hydrophobic \gls{tmh}s with a central arginine residue will readily insert into the membrane.
 
 
-\subsection{Hydrophobicity of transmembrane Segments}\label{ssection:hydrophobicityscales}
+\subsection{The hydrophobicity of transmembrane segments}\label{ssection:hydrophobicityscales}
 
 Perhaps the most prevalent and important feature of the transmembrane regions is the membrane spanning region which is composed mostly of non-polar residues.
 The importance of hydrophobicity on the effectiveness of membrane anchoring has been known for some time~\cite{Davis1985}.
@@ -250,14 +227,14 @@ This free energy measurement is regarded as being currently experimentally inacc
 
 Although as a trend most of the scales agree, because of the methodological differences, there are indeed variations of values even after normalisation.
 Due to these discrepancies, it is preferable and typical amongst the literature to use several scales to verify the observable trends resulting from interpretation from an individual scale.
-Notably, one of the classic scales, Kyte \& Doolittle Hydropathy Scale shows a striking similarity to the modern Hessa's ${\Delta G}_{app}^{aa}$ scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues~\cite{Peters2014}.
+Notably, one of the classic scales, Kyte \& Doolittle Hydropathy scale shows a striking similarity to the modern Hessa's ${\Delta G}_{app}^{aa}$ scale, and that generally the ``better'' scales count proline as hydrophilic, and focus on helix recognition rather than amino acid analogues~\cite{Peters2014}.
 In $\alpha$ helices from soluble proteins, proline is almost always a helix breaker, and $\alpha$ helix prediction scales don't even attempt to quantify a proline scoring penalty, whereas they are highly tolerated in \gls{tmh}s.
 Several of the scales used throughout this thesis are outlined below.
 
-\subsubsection{Kyte \& Doolittle Hydropathy Scale}
+\subsubsection{Kyte \& Doolittle hydropathy scale}
 
 The Kyte \& Dootlittle scale \cite{Kyte1982} is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids determined previously \cite{Chothia1976}.
-The Kyte \& Doolittle used evidence from previous experiments in the literature scaling them between -4.5 and +4.5.
+The Kyte \& Doolittle gave a composite score to each amino acid based on evidence from previous experiments in the literature, scaling them between -4.5 and +4.5.
 These experiments included the molal volumes of model compounds for the side\--chain R groups \cite{Wolfenden1979, Cohn1934, Traube1899}, the water vapour partition coefficients \cite{Hine1975, Wolfenden1979}, and water\--ethanol transfer free energies \cite{Cohn1943, Nozaki1971}.
 However alanine, tyrosine, leucine, and proline scores were subjectively modified.
 The authors found it difficult to accept that the single methyl group from alanine would have more hydrophobic force than leucine, which contains 4 methyl groups so the score was arbitrarily lowered to half way between the originally determined score, and the score of glycine.
@@ -269,27 +246,22 @@ Arginine represents the bottom of the scale, arbitrarily set at -4.5.
 An algorithm called SOAP was used to scan a window of $\pm$10 residues either side of each residue (allowing for half windows) across a protein to take the mean average of each position and plot them on a profile.
 Sustained areas of high hydrophobicity were indicative of a \gls{tmh}~\cite{Kyte1982}.
 
-
-\subsubsection{Hessa's Biological Hydrophobicity Scale}
-
+\subsubsection{Hessa's biological hydrophobicity scale}
 This is arguably the most biologically relevant scale~\cite{Peters2014}, and is often called the ${\Delta G}_{app}^{aa}$ scale.
 The scale is based on an experimental method where the free energy exchange during recognition of designed poly-peptide \gls{tmh} by the \gls{er} Sec61 translocon occurred~\cite{Hessa2005}.
 These measurements were then used to calculate a “biological hydrophobicity scale.” The original study reported positional variance in some residues and is strictly valid only for residues in the core of the \gls{tmh}.
 A more refined study quantified the positional dependencies of each amino acid type~\cite{Hessa2007}.
 
-\subsubsection{White and Wimley Octanol \--- Interface Whole Residue Scale}
-
+\subsubsection{White and Wimley octanol \--- interface whole residue scale}
 This scale is calculated from two other scales; the octanol scale, and the interface scale~\cite{White1999}.
 This scale is fundamentally based on the partitioning of host-guest pentapeptides (acetyl-WL-X-LL-OH) and another set of peptides (AcWLm) between water and octanol, as well as water to \gls{popc}.
 
-\subsubsection{The Eisenberg Hydrophobic Moment Consensus Scale}
-
+\subsubsection{The Eisenberg hydrophobic moment consensus scale}
 The Eisenberg scale is a consensus scale based on the earlier scales from Tanford~\cite{Nozaki1971}, Wolfenden~\cite{Rose1993}, Chothia~\cite{Chothia1976}, Janin~\cite{Janin1979},  Wolfenden~\cite{Wolfenden1981}, and the von Heijne scale~\cite{VonHeijne1979}.
 The scales are normalised according to serine~\cite{Eisenberg1984}.
 The automatic TRANSMEM annotation currently used in UniProt is according to TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004} and the hydrophobic moment plot method of Eisenberg and coworkers~\cite{Eisenberg1984}.
 
-\subsection{Sequence Complexity}
-
+\subsection{Sequence complexity}
 Sequence properties that can be analysed by bioinformatics, the sequence complexity and hydrophobicity, of the \gls{tmh} have been used to predict the role of the \gls{tmh} as either functional or structural, and as a discrete cluster from other SCOP annotated helices~\cite{Wong2012}.
 Those findings demonstrated that the sequence of the \gls{tmh} holds valuable information regarding biological roles, and forms the basis of our interest in the link between the polarity of a helix and functional activity beyond structural anchorage.
 
@@ -345,14 +317,30 @@ The lowest probability sub-segment can be defined as $ K_1=\log N/L $.
 By altering the window lengths, and the thresholds SEG can be optimised to search for subtle compositional deviations, such as coil-coiled regions.
 
 
-\section{Biogenesis of transmembrane Proteins}
+\section{Biogenesis of transmembrane proteins}
 %Depth of secretion pathway (talk about translocons in depth here) & outline post-translational insertion
-\subsection{Translocation Overview}
+\subsection{An overview of translocation}
 There are, broadly speaking, 3 types of translocation; BiP-mediated eukaryotic post-translational translocation, bacterial post-translational insertion using the Tat system for folded proteins and the Sec system for unfolded proteins, and co-translational insertion in bacteria through the~\gls{htl} protein complex or its individual components.
-In bacteria nearly all \gls{tmp}s are inserted by either the Sec pathway via  SecYEG machinery, or by the structurally unrelated the 5\--fold more abundant YidC machinery \cite{Drew2003, Dalby2014}, and proteins can often use either pathway.
+In this thesis we focus on co\--translation via the Sec pathway, and on post\--translational pathway of \gls{ta} proteins in eukaryotic systems (Figure \ref{fig:post-versus-co-translation}).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/post-versus-co-translation}
+		\captionof{figure}[A simplified schematic of the co\--translational Sec pathway and the post\--translational pathway.]{\textbf{A simplified schematic of the co\--translational Sec pathway and the post\--translational pathway.}
+		The ribosome translates RNA to a nascent polypeptide chain.
+		In the case of post\--translational insertion (the left\--path), the nascent peptide is release, albeit briefly, to the cytosol.
+		Chaperones of various types then shield the protein \gls{tmh} and bring it into contact with various \gls{tm} bound translocation machinery.
+		In the case of co\--translation (the right\--path), the \gls{srp} binds to the emerging signal sequence of the nascent peptide, which slows protein synthesis of the ribosome.
+		\gls{srp} then targets the ribosome protein complex to the \gls{sr}, which then moves into contact with the translocon.
+		As the nascent protein is inserted into the translocon, \gls{sr} and \gls{srp} detach from the complex and translocation begins.
+		}
+\label{fig:post-versus-co-translation}
+\end{figure}
 
 The Sec pathway is conserved across all life~\cite{Cao2003} and is facillitated by the SecYEG (prokaryotic) and Sec61 (eukaryotic) translocons.
-SecYEG targets proteins to the \gls{pm} (inner membrane) of bacteria and Sec61 targets proteins to the \gls{er} of eukaryotic cells.
+SecYEG targets proteins to the \gls{pm} (inner membrane) of bacteria.
+In bacteria nearly all \gls{tmp}s are inserted by either the Sec pathway via  SecYEG machinery, or by the structurally unrelated the 5\--fold more abundant YidC machinery \cite{Drew2003, Dalby2014}, and proteins can often use either pathway.
+Sec61 targets proteins to the \gls{er} of eukaryotic cells.
 Broadly speaking, these proteins translocate hydrophilic peptides across a membrane whilst also integrating sufficiently hydrophobic sequences to the membrane~\cite{Junne2010, Rapoport2012, Shao2011, Cymer2015}.
 Whilst ultimately the translocon machinery is built of multiple subunits, the \gls{tm} translocating protein itself is a 10 \gls{tmh} protein with an hourglass shaped interior pore~\cite{Berg2004} (SecY in prokaryotes or Sec61$\alpha$ in eukaryotes).
 When translocation is not occuring and the protein is idle, the hydrophobic core is constricted~\cite{Junne2010} and a lumenal plug is in place over the pore resulting in a seal across the \gls{tmp} pore~\cite{Tam2005, Junne2006}.
@@ -370,14 +358,36 @@ In bacteria, the SecY protein is partly encircled by SecE which enhances it's st
 %Remember to point out differences in pro and eukaryotes.
 
 \subsection{Signal peptides}
+\gls{sp}s are short peptide sequences present at the N-terminus of most secretory pathway destined proteins in both prokaryotes and eukaryotes.
+Mutations to the length and compostion of the \gls{sp} revealed their composition is essential for effective localised transport, however they have high compositional variability \cite{VonHeijne1985}.
+Like \gls{tmh}s they translocate into the membrane due to their hydrophobic $\alpha$ helix (albeit typically shorter than a \gls{tmh}) and follow the positive\--inside rule.
 
-\section{$\protect\beta$ sheets in the membrane}
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/sp}
+		\captionof{figure}[They key components of a signal peptide.]{\textbf{They key components of a signal peptide.}
+		Signal peptides consist of between 1\--5 hydrophilic charged residues (in blue) at the N terminal, a 7-15 reisude hydrophobic region (in green), and a c-region of 3-7 residues that invites cleavage by specific signal peptidase (in red).
+	Adapted from von Heijne, 1990 \cite{VonHeijne1990}.
+		}
+\label{fig:sp}
+\end{figure}
+
+
+Once the protein is fully translocated and at the correct location within the cell, a three domain signal peptidase cleaves the \gls{sp} from the rest of the protein.
+\gls{sp}s can also be experimentally interchanged to proteins from different organisms to target them to cellular locations \cite{Izard1994, Gierasch1989}.
+
+\gls{sp}s are rarely used by \gls{tmp}s with the exception of most type I \gls{tmp}s, which are defined by the presence of an \gls{sp}.
+Instead, \gls{tmp}s use their first \gls{tmh} and flanking region as a targetting signal.
+Many bioinformatic methods over the last twenty years have aimed to predict \gls{sp}s and sort them from \gls{tmh}s \cite{Choo2009}, however these methods all struggle to distinguish \gls{sp}s from N-terminal \gls{tmh}s \cite{Petersen2011}.
+This is due to the similarities \gls{sp}s have with gls{tmh}s, and that although \gls{tmh}s are not cleaved, the cleavage site pattern alone cannot effectively separate \gls{sp}s from \gls{tmh}s.
+This results in many false positives for \gls{sp} presence in genome wide studies \cite{Petersen2011}.
+SignalP 4, a neural network based approach, is less effective at predicting cleavage sites or \gls{sp} prediction in the absence of \gls{tmp}s from the dataset, however currently is the most accurate method to distinguish the currently vague differences between \gls{tmh}s and \gls{sp}s \cite{Petersen2011}.
+
+\subsection{$\protect\beta$ sheets in the membrane}
 
 The membrane is critical in maintaining the separation of biochemically distinct compartments.
 However, there needs to be flux of not only molecules, but information signals across these membranes in order to facillitate cellular life.
 Whilst the focus of this thesis is primarily on \gls{tmh}s it is important to acknowledge that $\beta$ sheets are another secondary structural element capable of spanning the membrane.
-
-
 
 \begin{figure}[ht]
 \centering
@@ -410,7 +420,7 @@ An N-terminal \gls{sp} sequence allows the protein to pass through the inner mem
 Instead of cotranslational insertion, SecB transports the nascent polypeptide chain to the Sec translocon on the inner membrane \cite{Bechtluft2010}.
 $\beta$\--sheets do not trigger the opening of the lateral gate \cite{Ulrich2015}.
 Once in the periplasm the \gls{sp} is cleaved \cite{Paetzel2014} and chaperones, such as the redundant SurA \cite{Lazar1996, Volokhina2011}, DegQ, and Skp \cite{Volokhina2011}, bind to the protein to prevent premature folding.
-Once at the inner-surface, the BAM complex assembles and integrates the $\beta$ barrel protein into the membrane \cite{Wu2005,Hagan2011} via a lateral opening of one of the BAM subunits, BamA \cite{Noinaj2014}.
+Once at the inner-surface, the BAM complex assembles and integrates the $\beta$ barrel protein into the membrane \cite{Wu2005, Hagan2011} via a lateral opening of one of the BAM subunits, BamA \cite{Noinaj2014}.
 
 \begin{figure}[ht]
 \centering
@@ -442,7 +452,7 @@ Besides the differences in biogenesis between $\beta$ barrel \gls{tmp}s and \gls
 Membrane spanning $\beta$ sheets exhibit a ``positive\--outside'' distribution of positively charged residues \cite{Pogozheva2013}, opposed to the much more typical positive\--inside distribution \cite{VonHeijne1989, Andersson1992, Pogozheva2013, Sharpe2010, Baeza-Delgado2013}.
 Typically, $\beta$ sheets are less hydrophobic than \gls{tmh}s \cite{Tamm2004} as a result of their amphiphilic nature.
 
-\section{Aims of This Thesis.}
+\section{The aims of this thesis.}
 
 In this thesis we explore three ideas surrouding the role of \gls{tmh}s in the membrane.
 
@@ -455,5 +465,5 @@ In chapter 3 we generate an up to date dataset of post\--translationally inserte
 This cross examination revealed \gls{tmh} adaptaions to mitochondrial membranes such as a reversal of the ``positive\--inside'' rule and a reduction in hydrophobicity caused by an abundance of alanine residues in lieu of leucine rather than an increase of polar residues.
 We also generate homology models of two spontanously inserting \gls{tmh}s from \gls{ta} proteins and show that they have an amphiphatic surface which may be key to their insertion.
 
-In chapter 4 we look at families of \gls{tmp} that exhibit high hydrophobic discrepency between sequentially adjacent \gls{tmh}s.
-The conservation of these pairs across the families corroborates evidence of cooperative \gls{tmh} insertion, showing that marginally hydrophobic \gls{tmh}s could use typical \gls{tmh}s as part of their biogenesis.
+In chapter 4 we look at families of \gls{tmp}s that exhibit high hydrophobic discrepency between sequentially adjacent \gls{tmh}s.
+The conservation of these pairs across the families corroborates evidence of cooperative \gls{tmh} insertion, showing that marginally hydrophobic \gls{tmh}s could use typical \gls{tmh}s as part of their biogenesis on a larger scale than previously thought.
