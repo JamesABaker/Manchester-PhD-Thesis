@@ -516,9 +516,18 @@ Dataset sizes of common TMP families of transporters and channels. . 141
 6
 
 List of Figures
+1.1
+
+A selection of figures demonstrating important discoveries of membrane
+proteins and their environment. . . . . . . . . . . . . . . . . . . . . . .
+
+19
+
 1.2
 
 The structure of SecYE in a nanodisc at near atomic resolution. . . . .
+
+23
 
 1.3
 
@@ -526,8 +535,6 @@ A comparison of a single structure held by commonly used structural
 transmembrane protein databases. . . . . . . . . . . . . . . . . . . . . .
 
 1.4
-
-23
 
 26
 
@@ -545,7 +552,7 @@ The hydropathic index of rabbit cytochrome b5. . . . . . . . . . . . . .
 1.6
 
 The hydrophobic-complexity continuum distinguishes between TMH
-anchors, and those with function beyond anchoring. . . . . . . . . . . .
+anchors and those with function beyond anchoring. . . . . . . . . . . .
 
 1.7
 
@@ -563,7 +570,7 @@ The pore, the plug, and the lateral gate of the translocon. . . . . . . .
 
 1.9
 
-They key components of a signal peptide. . . . . . . . . . . . . . . . . .
+The key components of a signal peptide. . . . . . . . . . . . . . . . . .
 
 41
 
@@ -580,6 +587,8 @@ in TMHs and ±5 flanking residues. . . . . . . . . . . . . . . . . . . . .
 
 2.2
 
+2.3
+
 44
 
 55
@@ -589,21 +598,20 @@ in TMHs from single-pass protein datasets. . . . . . . . . . . . . . . . .
 
 58
 
-2.3
-
 Negative-outside bias is very subtle in TMHs from multi-pass proteins.
 
 62
 
-2.4
+7
+
+2.4
 
 The net charge across multi-pass and single-pass TMHs shows a stronger
 positive inside charge in single-pass TMHs than multi-pass TMHs. . . .
-7
+
+2.5
 
 63
-
-2.5
 
 Relative percentage heat-maps from predictive and experimental
 datasets corroborate residue distribution differences between TMHs
@@ -675,14 +683,14 @@ and SwissProt automatically filtered dataset. . . . . . . . . . . . . . . . 119
 Average sequence-based biochemical values of organelle datasets from
 UniProt manually curated set and SwissProt automatically filtered
 dataset. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+8
 
-3.6
+3.6
 
 The normalised skews of each amino acids from TA proteins grouped
 by localisation from the SwissProt automatically filtered dataset. . . . . 123
-8
 
-3.7
+3.7
 
 The normalised skews of each amino acids from TA proteins grouped
 by localisation from the SwissProt automatically filtered dataset. . . . . 125
@@ -749,34 +757,34 @@ present in all TMP transporter families. . . . . . . . . . . . . . . . . . 156
 Acronyms
 AP Arrest Peptide. 131–134, 152
 EM Electron microscopy. 12, 13, 16–18, 33
-EMC ER Membrane protein Complex. 33, 35, 100
-ER Endoplasmic Reticulum. 21, 22, 24, 28, 33, 35, 45, 77, 96–102, 105, 114–122, 130,
+EMC ER Membrane protein Complex. 35, 100
+ER Endoplasmic Reticulum. 21, 22, 24, 28, 32, 35, 45, 77, 96–102, 105, 114–122, 130,
 134, 143
 GPCR G protein-coupled receptor. 19, 37, 136, 138–144, 152
 KS Kolmogorov-Smirnov. 67, 69–71, 94, 107
 KW Kruskal-Wallis. 53, 54, 58, 67, 69–71, 94, 107
-MD Molecular Dynamics. 18, 20, 26
-PDB Protein Data Bank. 13, 19, 23, 46
+MD Molecular Dynamics. 19–21, 26
+PDB Protein Data Bank. 13, 19, 24, 46
 PM Plasma Membrane. 32, 77, 96, 102, 105, 114, 115, 118, 120, 121
 POPC Palmitoyloleoylphosphatidylcholine. 29, 63
 RNA Ribonucleic Acid. 130
 SNARE Soluble N-ethylmaleimide-sensitive factor attachment protein receptor. 96,
 100
-SP Signal Peptide. 15, 17, 33, 35–39, 102, 104
-SR Signal Recognition Particle Receptor. 32, 97, 130, 131
+SP Signal Peptide. 15, 18, 33, 35, 36, 38, 39, 102, 104
+SR Signal Recognition Particle Receptor. 33, 97, 130, 131
 10
 
-SRP Signal Recognition Particle. 32, 97–99, 101, 106, 130, 131
-TA Tail Anchor. 28, 32–34, 39, 40, 95–101, 104–106, 109–116, 118, 120–122, 124, 127,
+SRP Signal Recognition Particle. 33, 97–99, 101, 106, 130, 131
+TA Tail Anchor. 29, 32, 35, 40, 95–101, 104–106, 109–116, 118, 120–122, 124, 127,
 128
-TM Transmembrane. 11, 12, 17, 19, 25, 30, 32, 33, 43–46, 59, 62, 67, 76, 89, 100, 108
+TM Transmembrane. 11, 12, 17, 19, 25, 31–33, 43–46, 59, 62, 67, 76, 89, 100, 108
 TMD Transmembrane Domain. 108
-TMH Transmembrane Helix. 11, 14–18, 20–37, 39–69, 72–82, 84, 85, 87–102, 104,
-105, 107–109, 111–128, 130–147, 149–152
-TMP Transmembrane Protein. 11–18, 20, 24, 32–36, 39–42, 44, 46, 47, 49, 50, 59,
-62, 64, 72–74, 76, 77, 112, 122, 130, 131, 133, 135, 138, 139, 144, 151, 152
-TMS Transmembrane Segment. 14, 15, 24
-TOM translocase of the outer membrane. 38
+TMH Transmembrane Helix. 11, 14–18, 20, 21, 23–37, 39–69, 72–82, 84, 85, 87–102,
+104, 105, 107–109, 111–128, 130–147, 149–152
+TMP Transmembrane Protein. 11–20, 23, 32, 33, 35, 36, 39–42, 44, 46, 47, 49, 50,
+59, 62, 64, 72–74, 76, 77, 112, 122, 130, 131, 133, 135, 138, 139, 144, 151, 152
+TMS Transmembrane Segment. 15, 24
+TOM translocase of the outer membrane. 38, 39
 
 11
 
@@ -931,67 +939,70 @@ B)
 
 D)
 
-Figure 1.1: . A) (Above/“Fig 1”) A diagram of the cork plant as viewed through an optical
-microscope drawn by Hooke circa 1665. Note the distinction observable by what we now know to be
-the plant cells. (Below/“Fig 2”) The cork plant used in the microscopy. From Hooke, 1961 [3]. B) The
-first near atomic resolution (7Å resolution map) structure of a TMP acquired by Electron microscopy
-(EM). This is a model of the 7TM bacteriorhodopsin single protein from the purple membrane viewed
-roughly parallel to the plane of the membrane. From Henderson & Unwin, 1975 [4]. C) The electron
-density map of the first crystal structure of a TMP [5]. The image shows 11 layers with contours
-representing 1.2Å between layers at 3Åresolution. As in B, this structure is from phototrophic purple
-bacteria. The chromophores are made up of cytochrome (can be seen at the top of the image) and the
-H-subunit (which can be seen at the bottom). From Deisenhofer et al., 1984. D) The first drawing
-in which the fluid mosaic model was presented in the bilayer. From Singer & Nocolson, 1972 [6]
+Figure 1.1: A selection of figures demonstrating important discoveries of membrane
+proteins and their environment. A) (Above/“Fig 1”) A diagram of the cork plant as viewed
+through an optical microscope drawn by Hooke circa 1665. Note the observable cellular barrier
+between what we now know to be the plant cells. (Below/“Fig 2”) The cork plant used in the
+microscope observations. From Hooke, republished in 1961 [3]. B) The first near-atomic resolution
+(7Å resolution map) structure of a TMP acquired by Electron microscopy (EM). This is a model
+of the 7TM bacteriorhodopsin single protein from the purple membrane viewed roughly parallel to
+the plane of the membrane. From Henderson & Unwin, 1975 [4]. C) The electron density map
+of the first crystal structure of a TMP [5]. The image shows 11 layers with contours representing
+1.2Å between layers at 3Åresolution. As in B, this structure is from phototrophic purple bacteria.
+The chromophores are made up of cytochrome (can be seen at the top of the image) and the H-subunit
+(which can be seen at the bottom). From Deisenhofer et al., 1984. D) The first drawing in which the
+fluid mosaic model was presented in the bilayer. From Singer & Nicolson, 1972 [6]
 
 composition of the membrane. In 1925, by scrutinising the concentration of chromocytes in the blood, and the surface area of the cells from blood from a variety of
-mammals Gorter and Grendel concluded that: “chromocytes are covered by a layer
 
 20
 
 CHAPTER 1. INTRODUCTION
 
+mammals Gorter and Grendel concluded that: “chromocytes are covered by a layer
 of fatty substances that is two molecules thick” [7]. This established the awareness of
-the lipid bilyaer. Later, the popular Danielli and Davson model correctly identified a
+the lipid bilayer. Later, the popular Danielli and Davson model correctly identified a
 phospholipid bilayer, however also incorrectly suggested a lipoid space existed within
 the phospholipid bilayer [8]. Eventually, as these ideas were explored, the fluid mosaic
 model was established in 1972 (Figure 1.1D)[6]; the membrane has a fluid behaviour,
-due to the gel-like nature of it’s composition, which allows proteins to move throughout
+due to the gel-like nature of its composition, which allows proteins to move throughout
 the membrane bilayer.
-In order to fully understand the relation ship between TMPs and the membrane,
+In order to fully understand the relationship between TMPs and the membrane,
 molecular details would be needed. By the 1970s, reasonably detailed structures of
-membrane spanning segments of TMPs were available by EM [4] (Figure 1.1B). However the real goal was to have atomic resolution. The advent of x-ray crystallography
-through the first half of the 20th century showed that it was possible to solve atomically resolved structures of small organic molecules [Lonsdale1928, 9] and larger
-proteins such as a steroid [10], penicillin [Hodgekin1949], and vitamnin B12 [11].
-Dorothy Hodgekin was awarded the nobel prize for chemistry in 1964 for the ellucidation of these complex structures [12]. 7 years after the creation of the Protein Data
-Bank (PDB) [13], the first TMP was successfuly solved by x-ray crystallography in
-1984 [5] (Figure 1.1C), for which Johann Deisenhofer, Robert Huber, and Hartmut
-Michel won the Nobel prize in chemistry in 1988 for solving with atomistic resolution
-the 3D structure of a photosynthetic reaction centre [14]. In the following decades,
-x-ray crystallography of TMPs, despite the challenges therein, remained the predominant method of understanding the structure and function of TMPs [15]. Currently,
-we are in a revolution of TMP structural acquisition, which will be discussed further
-in section 1.1.4.
+membrane-spanning segments of TMPs were available by EM [4] (Figure 1.1B). However, the real goal was to have the atomic resolution available. The advent of x-ray
+crystallography through the first half of the 20th century showed that it was possible to solve atomically resolved structures of small organic molecules [Lonsdale1928,
+9] and larger proteins such as a steroid [10], penicillin [Hodgekin1949], and vitamin
+B12 [11]. Dorothy Hodgekin was awarded the Nobel prize for chemistry in 1964 for the
+elucidation of these complex structures [12]. 7 years after the creation of the Protein
+Data Bank (PDB) [13], the first TMP was successfully solved by x-ray crystallography in 1984 [5] (Figure 1.1C). Because of this discovery Johann Deisenhofer, Robert
+Huber, and Hartmut Michel won the Nobel prize in chemistry in 1988 for solving with
+atomistic resolution the 3D structure of a photosynthetic reaction centre [14]. In the
+following decades, x-ray crystallography of TMPs, despite the challenges therein, remained the predominant method of understanding the structure and function of TMPs
+[15]. Currently, we are in a revolution of TMP structural acquisition, which will be
+discussed further in section 1.1.4.
 
 1.1.2
 
 Transmembrane proteins in disease
 
 Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration. Integral TMPs are encoded by between a
-third to a half of the genes in the human genome [16–18], and make up 40% of drug
+third to a half of the genes in the human genome [16–18] and account for 40% of drug
 targets [19] which reflects their biological and physiological importance. TMPs allow
-biochemical pathways that traverse the various biological membranes used in life, either by transporting molecules or transducing signals across the bilayer. Misfolding of
 
 1.1. MEMBRANE PROTEINS
 
 21
 
+biochemical pathways that traverse the various biological membranes used in life, either by transporting molecules or transducing signals across the bilayer. Misfolding of
 these proteins during the complex process of translocation is common in both normal
 and diseased cells and the mechanisms of folding are actively studied even recently
 revealing new systems of translocation [20]. Mutations tend to cluster in the TMH regions of the genes [21], which can cause the misfolding. Glycine to arginine mutations
-occur statistically more frequently in TMHs than their globular α-helix counterparts
+occurs statistically more frequently in TMHs than their globular α-helix counterparts
 [22]. This can result in a range of diseases including but not limited to cystic fibrosis
-caused by mutations in the cystic fibrosis conductance regulator [23], Charcot-MarieTooth disease caused by mutations in the PMP22 gene [24] and the connexin 32 gene
-[25], diabetes insipidis caused by mutations the aquaporin 2 water channel [26], retinitis pigmentosa caused by a point mutation in rhodopsin [27], and Neimann-Pick
-disease that contains over 200 disease causing mutations identified [28–31].
+caused by mutations in the cystic fibrosis conductance regulator [23], Charcot-Marie–
+Tooth disease caused by mutations in the PMP22 gene [24] and the connexin 32 gene
+[25], diabetes insipidus caused by mutations the aquaporin 2 water channel [26], retinitis pigmentosa caused by a point mutation in rhodopsin [27], and Niemann-Pick
+disease that contains over 200 disease-causing mutations identified [28–31].
 
 1.1.3
 
@@ -999,51 +1010,47 @@ The transmembrane protein problem
 
 Because of the experimental hindrance, TMP biology has been relatively slow to
 emerge. Throughout the 1990s the concept of a TMH was simple and fairly assured:
-they were greasy peptides of around 30Å in length, often bundled together and oriented perpendicularly to the membrane. By 2007, crystallography had elucidated 368
-TMP structures from 148 unique proteins [Carpenter2007]. Whilst this growth was
-exponential, at the same time there were in excess of 50,000 protein structures in the
-PDB. Although the classic TMH structures were broadly prevalent, these structures
-contained a plethora of unusual TMHs. Transmembrane Segment (TMS)s are capable of partial spanning of the membrane, spanning using oblique angles, and even
-lying flat on the membrane surface [32, 33]; the classical model was incomplete. Even
-recently, there is a contingency in the membrane biology field that despite progress
-over the last decade there is still a lack of information regarding the relationship between TMH sequences and function, TMH structure, intra-membrane TMP assembly,
-and the behaviour of TMHs in the lipid bilayer; the native biological environment of
-TMHs [1].
+they were greasy peptides of around 30Å in length, often bundled together and oriented perpendicularly to the membrane [32]. By 2007, crystallography had elucidated
+368 TMP structures from 148 unique proteins [Carpenter2007]. Whilst this accumulation of structures was exponential, at the same time, there were in excess of 50,000
+protein structures in the PDB. Although the classic TMH structures were broadly
+prevalent, these structures contained a plethora of unusual TMHs. Transmembrane
+Segment (TMS)s are capable of partial spanning of the membrane, spanning using
+oblique angles, and even lying flat on the membrane surface [32, 33]; the classical
+model was incomplete. Even recently, there is a contingency in the membrane biology field that despite progress over the last decade there is still a lack of information
+regarding the relationship between TMH sequences and function, TMH structure,
+intra-membrane TMP assembly, and the behaviour of TMHs in the lipid bilayer; the
+native biological environment of TMHs [1].
 Furthermore, the insertion and formation of the unusually orientated TMHs and
-of the more traditional TMHs have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions [34–36]. As well as being a
-biophysically convoluted system, TMHs are biologically functional beyond anchoring
 
 22
 
 CHAPTER 1. INTRODUCTION
 
+of the more traditional TMHs have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions [34–36]. As well as being a
+biophysically convoluted system, TMHs are biologically functional beyond anchoring
 in many cases. TMSs have been identified as regulators of protein quality control and
 trafficking mechanisms, shifting the idea away from TMHs broadly exclusively functioning as anchors [37], and crucially this function beyond anchoring can be revealed
-by sensitive, careful analysis of the sequence information alone [38].
+by sensitive, careful analysis of the sequence information alone [38, 39].
 When predicting the function of any protein, one follows the dicta that function
 is facilitated by form, and form is determined by the sequence; the more similar the
 sequences, the more likely that the function is similar. For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a
 hydrophobic protein core which requires similarity of non-polar residue patterns. Sequence analysis of non-globular TMPs has not been studied to nearly the same extent
-yet homology paradigms are silently extended and applied to them [39]. In the case of
-Signal Peptide (SP)s or TMSs the physical constraints are similar for all TMPs, and so
+yet homology paradigms are silently extended and applied to them [40]. In the case of
+Signal Peptide (SP)s or TMSs the physical constraints are similar for all TMPs and so
 matching is indeed merely a reflection of the physical environment of the bilayer, not
 the common ancestry. Worryingly, because of this oversight, it appears that between
-2.1% and 13.6% of Pfam hits for SPs or TMSs are indeed false positive results [39].
+2.1% and 13.6% of Pfam hits for SPs or TMSs are indeed false positive results [40].
 
 1.1.4
 
 The transmembrane protein revolution
 
-Over the last decade or so, several significant steps have been made toward overcoming the challenges in finding the structure of TMPs. Firstly, improvements in expression and purification occured thanks to cleavable green fluorescent protein (allowing
-protein tracking during purification) [40, 41] and antibody tagging for purification
-[Eshagi2005] at the colony level [42] greatly increased the throughput of TMPs.
-Since folding of the TMP often depends on the lipid environment, and finding conditions that encourage protein stability was shown to improve crystallisation
+Over the last decade or so, several significant steps have been made toward overcoming the challenges in finding the structure of TMPs. Firstly, improvements in
+expression and purification occurred thanks to cleavable green fluorescent protein (allowing protein tracking during purification) [41, 42] and antibody tagging for purification [Eshagi2005] at the colony level [43] greatly increased the throughput of TMP
+expression and purification.
+Since the folding of the TMP often depends on the lipid environment and finding conditions that encourage protein stability was shown to improve crystallisation
 [Carpenter2007, Rosenbusch2001]. The technology behind nanodiscs was originally published in 2002 [Bayburt2002]. The structure of the nanodisc is formed from
-two scaffold peptide helices wrapped arround a group of self-associating phospholipids
-(Figure 1.2A). The method was originally shown to be a viable method for obtaining native condition TMP crystals for cytochrome P450 [44]. Nanodiscs have been
-routinely used to much more easily obtain crystal structures. Nanodiscs overcome
-some of the major challenges caused by the hydrophobic helices and a more faithful
-representation of the biological membranes than alternative model membranes like
+two scaffold peptide helices wrapped around a group of self-associating phospholipids
 
 1.1. MEMBRANE PROTEINS
 
@@ -1055,27 +1062,32 @@ Native-like lipid bilayer
 
 Scaffold
 
-Figure 1.2: The structure of SecYE in a nanodisc at near atomic resolution.. A single
-particle cryo-EM derived structure of SecYE in complex with the ribosome (not shown) with the
-TMHs held in a reconstituted nanodisc (PDB code 4v6m [43]). The resolution is 7.1 Å. The protein
-structre is depicted by a rainbow coloured cartoon in the centre of the assembly. The lipids are
-modelled as spherical atoms coloured by atom (carbon and hydrogen are white, oxygen is red and
-nitrogen is blue). The peptide scaffold is shown in pink.
+Figure 1.2: The structure of SecYE in a nanodisc at near atomic resolution. A single
+particle cryo-EM structure of SecYE in complex with the ribosome (not shown) with the TMHs held
+in a reconstituted nanodisc (PDB code 4v6m [44]). The resolution is 7.1 Å. The protein structure
+is depicted by a rainbow coloured cartoon in the centre of the assembly. The lipids are modelled
+as spherical atoms coloured by atom (carbon and hydrogen are white, oxygen is red and nitrogen is
+blue). The peptide scaffold is shown in pink.
 
-liposomes [45].
-Still the challenge remained of getting crystals of sufficient quality for x-ray diffraction. Although many TMPs readily formed low resolution 2D crystals for cryoEM[46,
-47], and genome sequencing resulted in a exponential increase in structures derived
-from x-ray crystallography [48], the dependency on crystallising TMPs has always
-resulted in a hinderance.
+(Figure 1.2A). The method was originally shown to be a viable method for obtaining native condition TMP crystals for cytochrome P450 [45]. Nanodiscs have been
+routinely used to much more easily obtain crystal structures. Nanodiscs overcome
+some of the major challenges caused by the hydrophobic helices and a more faithful
+representation of the biological membranes than alternative model membranes like
+liposomes [46].
+Still, the challenge remained of getting crystals of sufficient quality for x-ray diffraction. Although many TMPs readily formed low-resolution 2D crystals for cryo-EM [47,
+48], and genome sequencing resulted in an exponential increase in structures derived
+from x-ray crystallography [49], the dependency on crystallising TMPs has always
+resulted in a hindrance.
 In a full circle from EM study of the fluid mosaic model in the 1970s [6], once more
 EM techniques were applied to TMPs as single molecules (Figure 1.2A). This method
-escapes the need for TMP crystals [46] and the presence of the sub 3Åstructures [49,
-50] utilising this method have exceeded the near atomistic resolutions that were called
-a revolution in TMP biology not a year ealier [Khlbrandt2014].
+escapes the need for TMP crystals [47] and the presence of the sub 3Å structures [50,
 
 24
 
 CHAPTER 1. INTRODUCTION
+
+51] utilising this method have exceeded the near atomistic resolutions that were called
+a revolution in TMP biology, not a year earlier [Khlbrandt2014].
 
 1.1.5
 
@@ -1083,49 +1095,49 @@ The role of bioinformatics in transmembrane biology
 
 Due to the experimental difficulties of working with TMPs, often it is only possible
 to experiment on the TMPs in silico, or at least common tasks that would involve
-expensive time consuming processes become trivialised, for example identifying TM
+expensive time-consuming processes become trivialised, for example identifying TM
 regions in a protein of known sequence.
 Traditionally, the role of bioinformatics has been to predict TM regions of a protein.
 There are countless methods that can perform this. Many rely on statistical patterns
-to identify TMHs such as the neural network approach of MEMSAT3 [51] Hidden
-Markov models used in TMHMM [52], HMMTOP [53], S–TMHMM [54], OCTOPUS
-[55], Phobius [56]. Unsatisfied with a statistical approach, Scampi seq [57] uses a first
+to identify TMHs such as the neural network approach of MEMSAT3 [52] Hidden
+Markov models used in TMHMM [53], HMMTOP [54], S–TMHMM [55], OCTOPUS
+[56], Phobius [57]. Unsatisfied with a statistical approach, Scampi seq [58] uses a first
 principals method following the Kyte & Doolittle suggestion 26 years previously that
-a biophysical scale can predict TMHs [58] and applies scoring based on the von Heijne
-biological scale [59].
+a biophysical scale can predict TMHs [59] and applies a score based on the von Heijne
+biological scale [60].
 Predicting the presence of a typical TMH based on a protein sequence is currently
-a fairly trivial task and typically relies on a consensus of several prediction softwares,
-such as the automated TRANSMEM annotation used by UniProt [60]. Yet several
-challenges remain in separating SPs from TMHs [61], correctly predicting the topology
-of a TMP. There is also an issue of silent homology extension from α-helices. TMHs
-share composition similarities due to membrane requirerments and restraints, not necessarily due to common ancestry, and it was found that many are often misreported
-as homologous among distantly related proteins in Pfam[39]. Despite being able to
-identify TMHs, our understanding of the specific biochemical role they play in the cell
-often requires intense study. As more data is becoming availble bionformatic methods
-that use multiple biochemical traits in conjunction with hydrophobicity are starting
-to be able to understand if a TMH has a functional role beyond anchoring [38, 62],
-and the protein trafficking signals held within some TMHs [63].
-Despite the advances in availabilty of TMP structures over the last decade, most
-are obtained from membrane free environments via X-ray diffraction of crystals, single-molecule cryo-EM and NMR. The relationship between the membrane and TMPs is
-underpinned by complex thermodynamic and electrostatic equilibrium. Once inserted
-the protein doesn’t leave the membrane as a result of the TMH being very hydrophobic.
-This hydrophobicity of TMHs and the hydrophobicity of the lipid tails means that
+a fairly trivial task and typically relies on a consensus of several prediction programs,
+such as the automated TRANSMEM annotation used by UniProt [61]. Yet several
+challenges remain in separating SPs from TMHs [62] and correctly predicting the topology of a TMP. There is also an issue of silent homology extension from α-helices [40].
+TMHs share composition similarities due to membrane requirements and restraints,
+not necessarily due to common ancestry, and it was found that many are often misreported as homologous among distantly related proteins in Pfam [40]. Despite being
+able to identify TMHs, our understanding of the specific biochemical role they play in
+the cell often requires intense study. As more data is becoming available bioinformatic
+methods that use multiple biochemical traits in conjunction with hydrophobicity are
+starting to be able to understand if a TMH has a functional role beyond anchoring
+[38, 39], and the protein trafficking signals held within some TMHs [63].
+Despite the advances in the availability of TMP structures over the last decade,
+most are obtained from membrane free environments via x-ray diffraction of crystals,
+single-molecule cryo-EM and NMR [47, 64]. The relationship between the membrane
 
 1.2. BIOLOGICAL MEMBRANES
 
 25
 
-they self-associate and this association is entropically driven by water. Another way of
-describing it is that they fiercely dissociate from the water. The overall ∆G for a TMH
-in the membrane is -12kcalmol−1 [34]; the association of the helix in the membrane
-is typically spontaneous but complex owing to interactions with other TMHs in the
-membrane as well as TMP-lipid interactions. Although sometimes there are bound
-lipids and detergents included in the crystal lattice, or the TMPs are integrated in
-a micelle or bicelle environment this is often insufficient to account for the complex
-lipodynamics of the membrane-TMH interactions [64, 65].
+and TMPs is underpinned by complex thermodynamic and electrostatic equilibrium
+[34]. Once inserted the protein does not leave the membrane as a result of the TMH
+being very hydrophobic. This hydrophobicity of TMHs and the hydrophobicity of the
+lipid tails means that they self-associate and this association is entropically driven by
+water. Another way of describing it is that they fiercely dissociate from the water. The
+overall ∆G for a TMH in the membrane is -12kcalmol−1 [34]; the association of the
+helix in the membrane is typically spontaneous but complex owing to interactions with
+other TMHs in the membrane as well as TMP-lipid interactions. Although sometimes
+there are bound lipids and detergents included in the crystal lattice, or the TMPs are
+integrated into a micelle or bicelle environment this is often insufficient to account for
+the complex lipodynamics of the membrane-TMH interactions [64, 65].
 There have been several approaches used to attempt to find a more biologically relevant structure contextualised in the membrane (Figure 1.3). OPM [68] and PDBTM
 [69] use simplified models of the membrane’s hydrophobic environment to orientate
-the TMP into position. MemProtMD [65] uses explicit lipids, a phosphatidylcholine
+the TMP into position. MemProtMD [64] uses explicit lipids, a phosphatidylcholine
 bilayer, in a flexible Molecular Dynamics (MD) simulation along with TMPs accessed
 from the PDB [67]. These approaches allow us to enhance our understanding of the
 TMP structures in the context of the membrane environment.
@@ -1140,12 +1152,10 @@ The compartmentalisation of cellular biochemistry is arguably one of the most si
 prerequisites for life [71]. The proteins that allow life to use this biochemical barrier
 are perhaps equally important. Together, the lipid bilayer and proteins therein allow
 complex biochemical systems that facilitate life as we know it.
-It is critical to understand that the lipid bilayer and the transmembrane α helices are inextricably linked, and often what we observe from the α helices reflect the
-properties of the much harder to study membranes. For example, often TMHs reflect
-the membrane environments they exist in, for example the hydrophobicity, asymetry,
-and thickness of the membrane lipids is reflected when looking at large numbers of
-TMPs [72].
-The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways [73–80], as well as protein folding [81].
+It is critical to understand that the lipid bilayer and the transmembrane α helices
+are inextricably linked, and often what we observe from the α helices reflect the properties of the much harder to study membranes. For example, often TMHs reflect the
+membrane environments they exist in, for example, the hydrophobicity, asymmetry,
+and thickness of the membrane lipids are reflected when looking at large numbers of
 
 26
 
@@ -1159,29 +1169,33 @@ B) PDB / OPM
 
 D) PDBTM
 
-Figure 1.3: A comparison of the raw outputs from commonly used structural transmembrane protein databases.. The example used here is a ligand free G protein-coupled receptor
-(GPCR) rhodopsin (PDB 3cap) [66]. A) The structure held by MemProtMD [65]. A cartoon of
-the structure coloured according to hydrophobicity. Red indicates a hydrophobic residues and cream
-a hydrophilic residue. Note the flexing and distortion of the membrane. B) The RCSB PDB [67]
-showing the hydrophobic patches on the surface (yellow is hydrophobic, cyan is hydrophilic) of the
-membrane proteins using OPM for topological orientation [68]. The blue lines indicate the cytoplasmic side whilts the red indicates the extracellular side. C) The cartoon structure of 3cap from OPM
-[68] coloured by the protein chain. Again, the blue lines indicate the cytoplasmic side whilts the red
-indicates the extracellular side. D) The PDBTM [69] record coloured by the TM regions predicted by
-TMDET [70] in yellow, intramembrane regions in green. In this case, the non-membrane components
-are coloured according to side 1 and side 2 rather than a topological prediction.
+Figure 1.3: A comparison of the raw outputs from commonly used structural transmembrane protein databases. The example used here is a ligand-free G protein-coupled receptor
+(GPCR) rhodopsin (PDB 3cap) [66]. A) The structure held by MemProtMD [64]. A cartoon of the
+structure coloured according to hydrophobicity. Red indicates hydrophobic residues and the cream
+colour represents hydrophilic residues. Note the flexing and distortion of the membrane. B) The
+RCSB PDB [67] showing the hydrophobic patches on the surface (yellow is hydrophobic, cyan is
+hydrophilic) of the membrane proteins using OPM for topological orientation [68]. The blue lines
+indicate the cytoplasmic side whilst the red indicates the extracellular side. C) The cartoon structure
+of 3cap from OPM [68] coloured by the protein chain. Again, the blue lines indicate the cytoplasmic
+side whilst the red indicates the extracellular side. D) The PDBTM [69] record coloured by the
+TM regions predicted by TMDET [70] in yellow, intramembrane regions in green. In this case, the
+non-membrane components are coloured according to side 1 and side 2 rather than a topological
+prediction.
 
+TMPs [72].
+The lipid membranes influence the local structure, dynamics, and activity of proteins in the membrane in non-trivial ways [73–80], as well as protein folding [81].
 The lipids that make up these membranes are very diverse, and not only do different
-cells have different membrane compositions, but so do different subcellular compartments which again is reflected in the TMH composition of TMPs [72, 82].
-They consist of a polar head group and a hydrophobic region and so are described
-as being amphiphilic molecules. This factor, along with geometric contraints of the
-membrane lipids causes them to not only be insoluble molecules, but also that they
 
 1.2. BIOLOGICAL MEMBRANES
 
 27
 
-readily self-associate into complex ordered structures that has been demonstrated in
-silico with coarse grain MD simulations [83]. This self association is entropically
+cells have different membrane compositions but so do different subcellular compartments which again is reflected in the TMH composition of TMPs [72, 82].
+They consist of a polar head group and a hydrophobic region and so are described
+as being amphiphilic molecules. This factor, along with geometric constraints of the
+membrane lipids causes them to not only be insoluble molecules but also that they
+readily self-associate into complex ordered structures that have been demonstrated
+in silico with coarse grain MD simulations [83]. This self-association is entropically
 driven by water molecules. There is a rich variety of lipid molecules that make up
 the biological membranes. In other words, the bilayer forms from these phospholipid
 molecules due to the fierce dissociation between the polar water and the hydrophobic
@@ -1203,18 +1217,18 @@ Reticulum (ER), but not the Golgi [72]. Furthermore, protein-lipid interactions 
 been shown to be determinants of membrane curvature [79], and undertake complex
 orientations and conformations to allow for hydrophobic mismatch [88].
 The evolutionary theories behind these various membrane compositions emerging
-is complex and remains in dispute. A popular theory is that eukaryotic cells used
-mitochondria as the ATP synthesisers to provide an energetic boost, the result of which
-was a massive shift in the evolution of novel eukaryotic protein folds, membrane bound
-organelle structures, sexual reproduction, and complex inter-cellular cooperation in
-the form of multi-cellular organisms [89, 90]. A lot of this theory rested on the idea
-that mitochondrial membranes within the eukaryotic cells were energetically favorable,
+are complex and remain in dispute. A popular theory is that eukaryotic cells used
 
 28
 
 CHAPTER 1. INTRODUCTION
 
-however more recent experimentation disputes this claim [91].
+mitochondria as the ATP synthesisers to provide an energetic boost, the result of which
+was a massive shift in the evolution of novel eukaryotic protein folds, membrane-bound
+organelle structures, sexual reproduction, and complex inter-cellular cooperation in the
+form of multicellular organisms [89, 90]. A lot of this theory rested on the idea that
+mitochondrial membranes within the eukaryotic cells were energetically favourable,
+however, more recent experimentation disputes this claim [91].
 
 1.2.2
 
@@ -1249,18 +1263,19 @@ heavily influenced by, for example, a specific adsorption of either part of the 
 or the competitive adsorption of a supporting ion in solution [92]. Considering that in
 biology the compartments always involve multiple ion channels and constant flux of
 biochemical environments, one should be cautious to understand the limitations and
-variability when extrapolating experimentally determined E0 , particularly when using
+variability when extrapolating experimentally determined E0 particularly when using
 such an idealised model in a biological context.
+
+1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
+
+29
+
 Several studies have attempted to quantify the various voltages across the intracellular membranes. Negativity was found in the ER, with a voltage between 75mV
 to 95mV in the ER membrane [93, 94]. Negativity was found in the mitochondrial
 matrix with a voltage across the mitochondrial membrane at 150mV [95]. No notable
 membrane potential has been identified in the Golgi [96, 97].
 
-1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
-
 1.3
-
-29
 
 α helices in the membrane; structure and function
 
@@ -1274,8 +1289,8 @@ residues based on 45 TMHs [100], 25.3±6.0 residues based on 702 TMHs [101], 24.
 from 837 TMHs [102], and 28.6±1.6Å to 33.5 ±3.1Å from 191 proteins depending on
 membrane types [103]. There are a couple of reasons for this variation. Primarily
 is that the boundaries of TMHs are extremely hard to precisely identify since it is
-unclear exactly how far the TMH rises into the water interface region [32]. Secondly is
-that it is emerging that different membranes have different thicknesses [82], and that
+unclear exactly how far the TMH rises into the water interface region [32]. Secondly
+is that it is emerging that different membranes have different thicknesses [82] and that
 this is directly reflected in the hydrophobic lengths of the TMH [72, 103].
 From left to right: a typical and traditional TMH, an exceptionally long TMH, a
 TMH that lies flat in the interface region, a kinked helix that enters and exits the bilayer on the same leaflet, a TMH that is not long enough to span the entire membrane.
@@ -1287,12 +1302,6 @@ specific protein and membrane constraints [72].
 A study by Baeza–Delgado et al. from 2013 [102] looked at TMHs in 170 integral
 membrane proteins from a manually maintained database of experimentally confirmed
 TMPs; MPTopo [105]. The group examined the distribution of residues along the
-TMHs. As expected, half of the natural amino acids are equally distributed along
-transmembrane (TM) helices whereas aromatic, polar, and charged amino acids along
-with proline are biasedly near the flanks of the TM helices [102]. It has been noted that
-transitions between the polar and non-polar groups at the ends of the hydrophobic core
-occur in a more defined edge on the cytoplasmic side than at the extracytoplasmic face
-when counting from the middle of the helix outwards [102]. This is probably reflecting
 
 30
 
@@ -1324,20 +1333,24 @@ the membrane. The helix core is mostly composed of hydrophobic residues. Althoug
 labelled here generally hold true in terms of the statistical distribution of polar, non-polar, and
 charged groups, it is by no means absolute laws and many proteins break these “rules” [72, 102, 103].
 
+TMHs. As expected, half of the natural amino acids are equally distributed along
+transmembrane (TM) helices whereas aromatic, polar, and charged amino acids along
+with proline are biasedly near the flanks of the TM helices [102]. It has been noted that
+transitions between the polar and non-polar groups at the ends of the hydrophobic core
+occur in a more defined edge on the cytoplasmic side than at the extracytoplasmic face
+when counting from the middle of the helix outwards [102]. This is probably reflecting
 the different lipid composition of both leaflets of biological membranes [102].
-
-A previous study by Sharpe et al. from 2010 used 1192 human and 1119 yeast
-predicted TMHs that were not structurally validated to further explore the difference
-in TMH and leaflet structure by exploiting the evolutionary conserved sequence differences between the TMH in the inner and outer leaflets [72]. TMHs from vertebrates
+A previous study by Sharpe et al. from 2010 used 1192 human and 1119 yeast predicted TMHs that were not structurally validated to further explore the difference in
+TMH and leaflet structure by exploiting the evolutionarily conserved sequence differences between the TMH in the inner and outer leaflets [72]. TMHs from vertebrates
 and invertebrates were found to be reasonably similar compositionally. The differences in consensus TMH structure implies that there are general differences between
-the membranes of the Golgi and ER. The abundance of serines in the region following
-the lumenal end of Golgi TMSs probably reflects the fact that this part of many Golgi
-enzymes forms a flexible linker that tethers the catalytic domain to the membrane [72].
 
 1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
 
 31
 
+the membranes of the Golgi and ER. The abundance of serines in the region following
+the lumenal end of Golgi TMSs probably reflects the fact that this part of many Golgi
+enzymes forms a flexible linker that tethers the catalytic domain to the membrane [72].
 The “positive-inside” rule
 Two publications by von Heijne coined the “Positive-Inside” rule demonstrated the
 practical value of positively charged residue sequence clustering in topology prediction
@@ -1363,13 +1376,13 @@ ring-structure. Phenylalanine, although aromatic, is completely hydrophobic, and
 found in the transmembrane part rather than the interfacial parts of TMHs. The
 classical explanation for the preference of Tyrosine and Tryptophan to reside in the
 interfacial regions is their dipolar character. The side chain must simply seek compromise. This can be achieved by burying the aromatic ring close to, or within, the
-hydrophobic core, while the hydrophilic part can interact with the polar lipid headgroups at the interface. Other factors such as the aromaticity, size, rigidity and shape
-of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference.
 
 32
 
 CHAPTER 1. INTRODUCTION
 
+hydrophobic core, while the hydrophilic part can interact with the polar lipid headgroups at the interface. Other factors such as the aromaticity, size, rigidity and shape
+of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference.
 Snorkelling
 Broadly speaking, TMHs are non-polar. However, some contain polar and charged
 residues in the helix itself. Whilst this might seem thermodynamically unstable at
@@ -1379,34 +1392,34 @@ flexible side chain of leucine reaching the water interface region to interact w
 polar head-groups of the bilayer even when the α helix backbone is pulled into the
 hydrophobic layer [115]. This has also been suggested to allow helices to adapt to
 varying thicknesses of the membrane [116]. More recently it was found that although
-in simulations the energetic cost of arginine at the centre of the TMH is large, in
-vivo experimentation with the Sec61 translocon reveals a much smaller penalty [117].
-That same study also found that in MD simulations, snorkelling, bilayer deformation,
-and peptide tilting combined to to be sufficient to lower the thermodynamic stability
-penalty of arginine insertion so that hydrophobic TMHs with a central arginine residue
-will readily insert into the membrane.
+in simulations the energetic cost of arginine at the centre of the TMH is large, in vivo
+experimentation with the Sec61 translocon reveals a much smaller penalty [117]. That
+same study also found that in MD simulations, snorkelling, bilayer deformation, and
+peptide tilting combined to be sufficient to lower the thermodynamic stability penalty
+of arginine insertion so that hydrophobic TMHs with a central arginine residue will
+readily insert into the membrane.
 
 1.3.2
 
 The hydrophobicity of transmembrane segments
 
 Perhaps the most prevalent and important feature of the transmembrane regions is
-the membrane spanning region which is composed mostly of non-polar residues. The
+the membrane-spanning region which is composed mostly of non-polar residues. The
 importance of hydrophobicity on the effectiveness of membrane anchoring has been
 known for some time [118]. More recently the hydrophobic group region has been
-associated with cell localisation and a broad range of biochemical functions [38, 72,
+associated with cell localisation and a broad range of biochemical functions [39, 72,
 119].
 Over the last 50 years or so, there have been many attempts to use hydrophobicity scales of residues to predict structural classifications of proteins. Due to the vast
 amounts of scales, major efforts have been made to compare them to identify which
 ones are better for which tasks of identifying structural elements [120, 121]. Simm
-et al. 2016 [120] compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of
-certain amino acids but generally that the methods behind the scales don’t affect the
-separation capacity between β sheets or α helices.
 
 1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
 
 33
 
+et al. 2016 [120] compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of
+certain amino acids but generally that the methods behind the scales don’t affect the
+separation capacity between β sheets or α helices.
 Throughout this thesis, several scales are used to evaluate and estimate hydrophobic values of peptide chains. All the scales aim for quantifying the hydrophobic values
 of each residue. There are several key differences in their methodology, assumptions,
 and aims. Ultimately, all the scales are attempting to allow estimation of ∆Gwhf ;
@@ -1421,62 +1434,62 @@ app scale, and that generally the “better” scales
 count proline as hydrophilic, and focus on helix recognition rather than amino acid
 analogues [121]. In α helices from soluble proteins, proline is almost always a helix
 breaker, and α helix prediction scales don’t even attempt to quantify a proline scoring penalty, whereas they are highly tolerated in TMHs. Several of the scales used
-throughout this thesis are outlined below.
+throughout this thesis are overviewed below.
 
 Kyte & Doolittle hydropathy scale
-The Kyte & Dootlittle scale [58] is based on the water–vapour transfer free energy
+The Kyte & Doolittle scale [59] is based on the water–vapour transfer free energy
 and the interior-exterior distribution of individual amino acids determined previously
 [122]. The Kyte & Doolittle gave a composite score to each amino acid based on
 evidence from previous experiments in the literature, scaling them between -4.5 and
 +4.5. These experiments included the molal volumes of model compounds for the
 side-chain R groups [123–125], the water vapour partition coefficients [123, 126], and
-water-ethanol transfer free energies [127, 128]. However alanine, tyrosine, leucine, and
-proline scores were subjectively modified. The authors found it difficult to accept
-that the single methyl group from alanine would have more hydrophobic force than
-leucine, which contains 4 methyl groups so the score was arbitrarily lowered to half
-way between the originally determined score, and the score of glycine. Tyrosine and
-leucine had their hydropathy values raised to one closer to the water vapour transfer
+water-ethanol transfer free energies [127, 128]. However, alanine, tyrosine, leucine,
+and proline scores were subjectively modified. The authors found it difficult to accept
 
 34
 
 CHAPTER 1. INTRODUCTION
 
-free energy than experimental data suggested. In the case of proline, no suitable model
+that the single methyl group from alanine would have more hydrophobic force than
+leucine, which contains 4 methyl groups so the score was arbitrarily lowered to halfway
+between the originally determined score and the score of glycine. Tyrosine and leucine
+had their hydropathy values raised to one closer to the water vapour transfer free
+energy than experimental data suggested. In the case of proline, no suitable model
 existed and it tends to become buried, indicating that it is fairly hydrophilic. However,
 because it contains three methyl groups, the score considers it more hydrophobic than
 the experiments suggested. The authors stated: “None of these last 3 adjustments,
 the result of personal bias and heated discussion between the authors, affects the
-hydropathy profiles in any significant way”[58]. Arginine represents the bottom of the
+hydropathy profiles in any significant way”[59]. Arginine represents the bottom of the
 scale, arbitrarily set at -4.5.
-
 Hydrophobic, but not long enough
 to indicate a TMH.
 
 Hydrophobic, span indicative of a
 TMH.
 
-Figure 1.5: The hydropathic index of rabbit cytochrome b5. The hydropathic index according to the Kyte & Doolittle scale [58] is given on the vertical axis and the sequence number is
+Figure 1.5: The hydropathic index of rabbit cytochrome b5. The hydropathic index according to the Kyte & Doolittle scale [59] is given on the vertical axis and the sequence number is
 on the horizontal axis. Whilst there are several peaks above 0, only one is sustained for around 20
-reisudes near the c-terminal. Cytochrome b5 is a Tail Anchor (TA) protein with an exceptionally
+residues near the c-terminal. Cytochrome b5 is a Tail Anchor (TA) protein with an exceptionally
 polar TMH for an anchor [129], demonstrating the sensitivity of this method. Figure adapted from
-Kyte & Doolittle, 1982 [58].
+Kyte & Doolittle, 1982 [59].
 
 An algorithm called SOAP was used to scan a window of ±10 residues either side
 of each residue (allowing for half windows) across a protein to take the mean average
 of each position and plot them on a profile (Figure 1.5). Sustained areas of high
-hydrophobicity were indicative of a TMH [58].
 
 1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
 
 35
 
+hydrophobicity were indicative of a TMH [59].
+
 Hessa’s biological hydrophobicity scale
-This is arguably the most biologically relevant scale [121], and is often called the
-∆Gaa
-app scale. The scale is based on an experimental method where the free energy exchange during recognition of designed poly-peptide TMH by the ER Sec61 translocon
-occurred [108]. These measurements were then used to calculate a biological hydrophobicity scale. The original study reported positional variance in some residues and is
+This is arguably the most biologically relevant scale [121] and is often called the ∆Gaa
+app
+scale. The scale is based on an experimental method where the free energy exchange
+during recognition of designed poly-peptide TMH by the ER Sec61 translocon occurred [108]. These measurements were then used to calculate a biological hydrophobicity scale. The original study reported positional variance in some residues and is
 strictly valid only for residues in the core of the TMH. A more refined study quantified
-the positional dependencies of each amino acid type [59].
+the positional dependencies of each amino acid type [60].
 
 White and Wimley octanol – interface whole residue scale
 This scale is calculated from two other scales; the octanol scale, and the interface
@@ -1486,8 +1499,8 @@ The Eisenberg hydrophobic moment consensus scale
 The Eisenberg scale is a consensus scale based on the earlier scales from Tanford [128],
 Wolfenden [131], Chothia [122], Janin [132], Wolfenden [133], and the von Heijne
 scale [134]. The scales are normalised according to serine [135]. The automatic
-TRANSMEM annotation currently used in UniProt is according to TMHMM [52],
-Memsat [51], Phobius [56] and the hydrophobic moment plot method of Eisenberg
+TRANSMEM annotation currently used in UniProt is according to TMHMM [53],
+Memsat [52], Phobius [57] and the hydrophobic moment plot method of Eisenberg
 and coworkers [135].
 
 1.3.3
@@ -1497,18 +1510,18 @@ Sequence complexity
 Whilst identifying TMH presence in a protein is somewhat trivial with modern tools,
 the role it plays within the membrane is hard to determine. Sequence properties that
 can be analysed by bioinformatics, the sequence information complexity and hydrophobicity, of the TMH have been used to predict the role of the TMH as either functional
-or structural, and as a discrete cluster from other SCOP annotated helices [38]. Those
-findings demonstrated that the sequence of the TMH holds valuable information regarding biological roles, and forms the basis of our interest in the link between the
+or structural, and as a discrete cluster from other SCOP annotated helices [39]. Those
 
 36
 
 CHAPTER 1. INTRODUCTION
 
+findings demonstrated that the sequence of the TMH holds valuable information regarding biological roles, and forms the basis of our interest in the link between the
 polarity of a helix and functional activity beyond structural anchoring.
-TMSOC’s z-score is able to distinguish between functionally active TMHs and
-those only associated with anchoring [38, 62]. This was determined with annotation
-of TMHs from the UniProt database (303 membrane anchors and 1741 functional TM
-helices) from UniProt [60] and tested with 181132 TMH sequences. Two peaks can
+TMSOC’s z-score is able to distinguish between functionally active TMHs and those
+only associated with anchoring [38, 39]. This was determined with the annotation of
+TMHs from the UniProt database (303 membrane anchors and 1741 functional TM
+helices) from UniProt [61] and tested with 181132 TMH sequences. Two peaks can
 be observed when stratifying the hydrophobicity and the sequence complexity of the
 TMHs (Figure 1.6). These peaks correspond with the “simple” and “complex” TMH
 annotation.
@@ -1516,42 +1529,46 @@ A)
 
 B)
 
-Figure 1.6: The hydrophobic-complexity continuum distinguishes between TMH anchors, and those with function beyond anchoring. A) Two distinct points can be observed
-when plotting sequence complexity on the x axis, frequency on the y axis, and hydrophobiciy on the
-z axis of TMHs from UniProt. These peaks were shown to correspond to the membrane anchor and
-functional TMH populations. From Wong et al., 2011 [62]. B) The α helix hydrophobicity complexity
+Figure 1.6: The hydrophobic-complexity continuum distinguishes between TMH anchors
+and those with function beyond anchoring. A) Two distinct points can be observed when
+plotting sequence complexity on the x-axis, frequency on the y-axis, and hydrophobicity on the z-axis of TMHs from UniProt. These peaks were shown to correspond to the membrane anchor and
+functional TMH populations. From Wong et al., 2011 [38]. B) The α helix hydrophobicity complexity
 continuum stratified by hydrophobicity (vertical axis) and complexity (horizontal axis). In blue are
-the membrane anchors, in red are the TMH with function, and in green are non-TM α helicess from
-SCOP [136]. Clear distinctions can be made between the 3 groups and in fact a composite z-score of
-the distance of these two factors from the functional TMH group allows prediction of which group a
-TMH belongs to [38, 62]. From Wong et al., 2012 [38].
+the membrane anchors, in red are the TMH with function, and in green are non-TM α-helices from
+SCOP [136]. Clear distinctions can be made between the 3 groups and in fact, a composite z-score
+of the distance of these two factors from the functional TMH group allows prediction of which group
+a TMH belongs to [38, 39]. From Wong et al., 2012 [39].
 
 The z-score is a product of both hydrophobicity and a Shannon like sequence
-entropy [38, 62] of the character string in the TMH. This term is described below in
+entropy [38, 39] of the character string in the TMH. This term is described below in
 equation 1.2.
 "
-z(xΦ , xc ) = (−1)
+z(xΦ , xc ) = (−1)s
 
-s
+2
 
-(xΦ − µΦ )2 (xc − µc )2
+2
+
+(xΦ − µΦ )
+(xc − µc )
 +
-σφ2
+2
+σφ
 σc2
 
 #
 (1.2)
 
 Where xc and xΦ are moving window averages of c, the sequence entropy [137]. Φ
-is the White and Wimley hydrophobicity [130] for a given segment and µ and σ are
 
 1.3. α HELICES IN THE MEMBRANE; STRUCTURE AND FUNCTION
 
 37
 
+is the White and Wimley hydrophobicity [130] for a given segment and µ and σ are
 the mean and standard deviation of the sequence entropy and hydrophobicity of the
 functional TMH set, that is those TMHs containing active residues.
-Sequence entropy, is essentially an estimate of the linguistic entropy of a string. In
+Sequence entropy is essentially an estimate of the linguistic entropy of a string. In
 the context of biology can be thought of as an estimation of the non-randomness of
 a sequence. Sequence complexity can be used to analyse DNA sequences [138–140],
 however here we will focus on the analysis of the complexity of a sequence in protein
@@ -1602,8 +1619,7 @@ CHAPTER 1. INTRODUCTION
 Biogenesis of transmembrane proteins
 An overview of translocation
 
-In this thesis we focus on co-translation via the Sec pathway, and on post-translational
-pathway of TA proteins in eukaryotic systems (Figure 1.7).
+In this thesis we focus on co-translation via the Sec pathway, and on the posttranslational pathway of TA proteins in eukaryotic systems (Figure 1.7).
 Ribosome
 
 Co-translational path
@@ -1625,18 +1641,19 @@ machinery
 Sec machinery
 
 Figure 1.7: A simplified schematic of the co-translational Sec pathway and the post-translational pathway. The ribosome translates RNA to a nascent polypeptide chain. In the
-case of post-translational insertion (the left-path), the nascent peptide is release, albeit briefly, to
+case of post-translational insertion (the left-path), the nascent peptide is released, albeit briefly, to
 the cytosol. Chaperones of various types then shield the protein TMH and bring it into contact
-with various TM bound translocation machinery. In the case of co-translation (the right-path), the
+with various TM bound translocation machinery. In the case of co-translation (the right path), the
 Signal Recognition Particle (SRP) binds to the emerging signal sequence of the nascent peptide,
 which slows protein synthesis of the ribosome. SRP then targets the ribosome protein complex to
 the Signal Recognition Particle Receptor (SR), which then moves into contact with the translocon.
 As the nascent protein is inserted into the translocon, SR and SRP detach from the complex and
 translocation begins.
 
-The Sec pathway is conserved across all life [143] and is facillitated by the heterotrimeric SecYEG (prokaryotic) and Sec61 (eukaryotic) translocons. SecYEG targets proteins to the Plasma Membrane (PM) (inner membrane) of bacteria. In bacteria
-nearly all TMPs are inserted by either the Sec pathway via SecYEG machinery, or by
-the structurally unrelated the 5-fold more abundant YidC machinery [Dalby2014,
+The Sec pathway is conserved across all life [143] and is facilitated by the heterotrimeric SecYEG (prokaryotic) and Sec61 (eukaryotic) translocons. SecYEG targets
+proteins to the Plasma Membrane (PM) (inner membrane) of bacteria. In bacteria,
+nearly all TMPs are inserted by either the Sec pathway via SecYEG machinery, or
+by the structurally unrelated the 5-fold more abundant YidC machinery [Dalby2014,
 
 1.4. BIOGENESIS OF TRANSMEMBRANE PROTEINS
 
@@ -1652,27 +1669,26 @@ associated with SecA dependent translocation of secretory proteins [146, 147]. S
 is an ATPase and a membrane channel that can clamp translocating substrates above
 the SecY pore [148].
 Whilst ultimately the translocon machinery is built of multiple subunits, the TM
-translocating protein itself is a 10 TMH protein with an hourglass shaped interior
-pore [150] (SecY in prokaryotes or Sec61α in eukaryotes). When translocation is not
-occuring and the protein is idle, the hydrophobic core is constricted [119] and a lumenal
-plug is in place over the pore resulting in a seal across the TMP pore [151, 152] that
-protects the membrane from ion flow [153] (Figure 1.8). SPs in stalled nascent chains
-crosslinked to the lipid and to the translocon machinery [154], showing that there may
-be a holding space which exposes the TMH to the membrane interfacial environment
-before insertion is complete and this was verified by more recent EM structural study
-[155, 156].
+translocating protein itself is a 10 TMH protein with an hourglass-shaped interior
+pore [150] (SecY in prokaryotes or Sec61α in eukaryotes). When translocation is
+not occurring and the protein is idle, the hydrophobic core is constricted [119] and a
+lumenal plug is in place over the pore resulting in a seal across the TMP pore [151, 152]
+that protects the membrane from ion flow [153] (Figure 1.8). SPs in stalled nascent
+chains crosslinked to the lipid and to the translocon machinery [154], showing that
+there may be a holding space which exposes the TMH to the membrane interfacial
+environment before insertion is complete and this was verified by more recent EM
+structural study [155, 156].
 During translocation the plug exits the pore, the constriction ring is opened, and
 a lateral gate opens between TMH2 and TMH3, and TMH7 and TMH8 to integrate
 TMHs to the membrane [150, 155, 157–160] (Figure 1.8). Mutation experiments on
-these three features (the plug, contriction ring, and lateral gate) destabalised the closed
-state of the translocon and resulted in a protein localisation phenotype that suppressed
-inactivating mutations in signal sequences [161–164] and even caused transient channel
-openings in bacteria [165].
+these three features (the plug, constriction ring, and lateral gate) destabilised the
+closed state of the translocon and resulted in a protein localisation phenotype that
+suppressed inactivating mutations in signal sequences [161–164] and even caused transient channel openings in bacteria [165].
 The ER Membrane protein Complex (EMC) can act as a post-translational TA
-protein insertase [63]. Furthermore, recently it was shown that the EMC was also
-able to act cooperatively with the Sec translocon during cotranslational insertion on
-a subsert of multipass TMPs in both yeast and human cells [20]. Proximity specific
-ribosome profiling in yeast confirmed that the EMC engages the translocating multipass TMPs, especially those containing charged residues in the TMH. This would
+protein insertase [63]. Furthermore, recently it was shown that the EMC was also able
+to act cooperatively with the Sec translocon during cotranslational insertion on a subset of multipass TMPs in both yeast and human cells [20]. Proximity specific ribosome
+profiling in yeast confirmed that the EMC engages the translocating multipass TMPs,
+especially those containing charged residues in the TMH. This would explain why it
 
 40
 
@@ -1712,23 +1728,23 @@ Translocon
 
 Figure 1.8: The pore, the plug, and the lateral gate of the translocon. A) The idle
 state of the translocon. The pore constriction ring is shown by a dashed transparent cylinder. The
-plug is in red and the translocon (SecY or Sec61) is in gray. B) The translocating state of the
-translocon coloured similarly to A, but the plug has moved to allow translocion thought the channel,
+plug is in red and the translocon (SecY or Sec61) is in grey. B) The translocating state of the
+translocon coloured similarly to A, but the plug has moved to allow translocation through the channel,
 the constriction ring has widened, and the lateral gate opens to allow hydrophobic TMHs into the
 membrane environment. C) A sphere representation of the translocon-ribosome complex structure
 during translocation. Highlighted are the Sec61 translocon (orange) the ribosome made up of the
-large 60s subunit and the small 40S subunit and the peptidyl transferase center (denoted by PTC),
+large 60s subunit and the small 40S subunit and the peptidyl transferase centre (denoted by PTC),
 the site of translation (PDB 3J7R [149]). Part C adapted from Voorhees et al., 2014 [149].
 
-explain why it also interacts with TA proteins TMHs [20, 63]. Pulldown experiments
-revealed that the EMC stabilised the synthesised TMPs and recuited chaperones (both
+also interacts with TA proteins TMHs [20, 63]. Pulldown experiments revealed that
+the EMC stabilised the synthesised TMPs and recruited chaperones (both substrate
 
 1.4. BIOGENESIS OF TRANSMEMBRANE PROTEINS
 
 41
 
-substrate specific and general) that allowed unstable TMPs to achieve viable conformations allowing function in the ER and transport to the Golgi. In the absence of the
-EMC, UPS (a proteasome) degrades the membrane proteins.
+specific and general) that allowed unstable TMPs to achieve viable conformations allowing function in the ER and transport to the Golgi. In the absence of the EMC,
+UPS (a proteasome) degrades the membrane proteins.
 This dual function of the EMC is analogous with YidC [20] in bacteria which has
 the role of an insertase [Dalby2014, 144, 166] as well as interacting with SecYEG to
 stabilise translocated TMPs [167].
@@ -1737,10 +1753,10 @@ stabilise translocated TMPs [167].
 
 Signal peptides
 
-SPs are short peptide sequences present at the N-terminus of most secretory pathway
-destined proteins in both prokaryotes and eukaryotes. Mutations to the length and
-compostion of the SP revealed their composition is essential for effective localised transport, however they have high compositional variability [168]. Like TMHs they translocate into the membrane due to their hydrophobic α helix (albeit typically shorter than
-a TMH) and follow the positive-inside rule.
+SPs are short peptide sequences present at the N-terminus of most secretory pathway destined proteins in both prokaryotes and eukaryotes. Mutations to the length
+and composition of the SP revealed their composition is essential for effective localised transport, however, they have high compositional variability [168]. Like TMHs
+they translocate into the membrane due to their hydrophobic α helix (albeit typically
+shorter than a TMH) and follow the positive-inside rule.
 
 Hydrophobic residues
 
@@ -1756,8 +1772,8 @@ C-terminus
 
 Cleavage site
 
-Figure 1.9: They key components of a signal peptide. Signal peptides consist of between 1-5
-hydrophilic charged residues (in blue) at the N terminal, a 7-15 reisude hydrophobic region (in green),
+Figure 1.9: The key components of a signal peptide. Signal peptides consist of between 1-5
+hydrophilic charged residues (in blue) at the N terminal, a 7-15 residue hydrophobic region (in green),
 and a c-region of 3-7 residues that invites cleavage by specific signal peptidase (in red). Adapted from
 von Heijne, 1990 [169].
 
@@ -1767,43 +1783,43 @@ be experimentally interchanged to proteins from different organisms to target th
 cellular locations [170, 171].
 SPs are rarely used by TMPs with the exception of most type I TMPs, which are
 defined by the presence of an SP. Instead, TMPs use their first TMH and flanking
-region as a targetting signal. Many bioinformatic methods over the last twenty years
+region as a targeting signal. Many bioinformatic methods over the last twenty years
 
 42
 
 CHAPTER 1. INTRODUCTION
 
-have aimed to predict SPs and sort them from TMHs [172], however these methods all
-struggle to distinguish SPs from N-terminal TMHs [61]. This is due to the similarities
-SPs have with glstmhs, and that although TMHs are not cleaved, the cleavage site
+have aimed to predict SPs and sort them from TMHs [172], however, these methods all
+struggle to distinguish SPs from N-terminal TMHs [62]. This is due to the similarities
+SPs have with TMHs, and that although TMHs are not cleaved, the cleavage site
 pattern alone cannot effectively separate SPs from TMHs. This results in many false
-positives for SP presence in genome wide studies [61]. SignalP 4, a neural network
+positives for SP presence in genome-wide studies [62]. SignalP 4, a neural network
 based approach, is less effective at predicting cleavage sites or SP prediction in the
 absence of TMPs from the dataset, however currently is the most accurate method to
-distinguish the currently vague differences between TMHs and SPs [61].
+distinguish the currently vague differences between TMHs and SPs [62].
 
 1.4.3
 
 β sheets in the membrane
 
-The membrane is critical in maintaining the separation of biochemically distinct compartments. However, there needs to be flux of not only molecules, but information
-signals across these membranes in order to facillitate cellular life. Whilst the focus
-of this thesis is primarily on TMHs it is important to acknowledge that β sheets are
-another secondary structural element capable of spanning the membrane.
+The membrane is critical in maintaining the separation of biochemically distinct compartments. However, there needs to be a flux not only small molecules but also larger
+complex structures across these membranes in order to facilitate cellular life. Whilst
+the focus of this thesis is primarily on TMHs it is important to acknowledge that β
+sheets are another secondary structural element capable of spanning the membrane.
 β barrel proteins are present only in a few membrane types; the outer membrane of
-Gram negative bacteria for which they constitute between 2-3% of the genome [173],
+Gram-negative bacteria for which they constitute between 2-3% of the genome [173],
 and in the outer membranes of eukaryotic chloroplasts and mitochondrial membranes.
 Their restriction to these membrane types is the result of ancestral symbiogenesis
 [174–179].
 These outer membrane proteins cause the membranes to be permeable, diminishing
 membrane potential between the outer and the inner membrane. Unlike the TMHs,
 β barrel proteins are permeable to water and many other small molecules often unspecifically due to their large pore (Figure 1.10). Integral β barrel proteins consist of
-between 8 and 26 apmphipathic antiparallel β strands forming a cylindrical pore. They
+between 8 and 26 amphipathic antiparallel β strands forming a cylindrical pore. They
 are capable of active and passive transport, molecule receptors, enzymatic catalysis,
 structural formation, and translocon machinery [173].
 The biogenesis of β barrel membrane proteins also differs from that of TMHs, and
 there are differences between prokaryotic and eukaryotic cells.
-In Gram negative bacteria, the β barrel proteins are translated on cytoplasmic ribosomes (Figure 1.11). An N-terminal SP sequence allows the protein to pass through
+In Gram-negative bacteria, the β barrel proteins are translated on cytoplasmic ribosomes (Figure 1.11). An N-terminal SP sequence allows the protein to pass through
 
 1.4. BIOGENESIS OF TRANSMEMBRANE PROTEINS
 
@@ -1839,15 +1855,15 @@ Figure 1.10: Cartoons showing the structural differences of the outer membrane p
 the membrane. The top row shows the proteins traversing the membrane with the interfacial
 regions denoted by the black lines. A) A porous outer membrane protein using β-sheets to form
 a pore-forming protein structure. PDB code 2JQY. B) A highly selective ion channel made up of
-membrane spanning TMHs. PDB code 4HYO. C) A 7-TMH GPCR that recieves a signal on one
+membrane-spanning TMHs. PDB code 4HYO. C) A 7-TMH GPCR that receives a signal on one
 side of the membrane which causes a conformational change influencing the structural arrangement
 of the tertiary structure on the opposing side of the membrane. PDB code 1F88. Note the pore in
 the β barrel protein not present in either the TMH channel or the TMH transducer.
 
 the inner membrane to the outer membrane [180, 181]. Instead of cotranslational insertion, SecB transports the nascent polypeptide chain to the Sec translocon on the
 inner membrane [182]. β-sheets do not trigger the opening of the lateral gate [179].
-Once in the periplasm the SP is cleaved [Paetzel2014] and chaperones, such as the
-redundant SurA [183, 184], DegQ, and Skp [184], bind to the protein to prevent premature folding. Once at the inner-surface, the BAM complex assembles and integrates
+Once in the periplasm, the SP is cleaved [Paetzel2014] and chaperones, such as the
+redundant SurA [183, 184], DegQ, and Skp [184], bind to the protein to prevent premature folding. Once at the inner surface, the BAM complex assembles and integrates
 the β barrel protein into the membrane [Hagan2011, 185] via a lateral opening of
 one of the BAM subunits, BamA [186].
 Unlike in the bacterial outer membrane, β-barrel proteins are rare in the mitochondria [179]. There is Tom40, Tob55, two isoforms of a porin, and Mdm10 [179]. And
@@ -1902,19 +1918,17 @@ SP
 
 Ribosome
 
-Figure 1.11: A cartoon of the biogenesis of β barrel membrane proteins in mitochondria
-and Gram-negative bacteria. This is an overview of the current model of beta barrel protein
+Figure 1.11: A cartoon of the biogenesis of β barrel membrane proteins in mitochondria and Gram-negative bacteria. This is an overview of the current model of β-barrel protein
 membrane integration. A)In bacteria, SecB chaperones the nascent peptide to SecYEG where it is
-transported across the inner membrane. Once the SP is cleaved, the protein is chaperoned to the BAM
-machinery by SurA, DegQ, or Skp. The BAM machinery integrates the protein into the membrane.
-B)After ribosomal translation the nascent peptide is transported across the mitochondrial outer
-membrane by the translocase of the outer membrane (TOM) machinery. Several Tim recognition
-molecules then attach to the protein and present it to the TOB insertion machinery, which integrates
-the protein into the membrane. Adapted from Ulrich & Rapoport, 2015 [179].
+transported across the inner membrane. Once the SP is cleaved, the protein is chaperoned to the
+BAM machinery by SurA, DegQ, or Skp. The BAM machinery integrates the protein into the membrane. B)After ribosomal translation, the nascent peptide is transported across the mitochondrial
+outer membrane by the translocase of the outer membrane (TOM) machinery. Several Tim recognition molecules then attach to the protein and present it to the TOB insertion machinery, which
+integrates the protein into the membrane. Adapted from Ulrich & Rapoport, 2015 [179].
 
-proteome called trimeric autotransporter can be recognised and assembled byt the mitochondria [187]. Since there is no need to cross the inner membrane, mitochondrial
-proteins do not have the cleavable SP, or any other known targetting signal [179]. After cytosolic ribosomes complete the translation, the β barrel proteins are recognised
-on the mitochondrial surface by the TOM complex import receptors, handed to the β
+proteome called trimeric autotransporter can be recognised and assembled by the mitochondria [187]. Since there is no need to cross the inner membrane, mitochondrial
+proteins do not have the cleavable SP, or any other known targeting signal [179]. After
+cytosolic ribosomes complete the translation, the β barrel proteins are recognised on
+the mitochondrial surface by the TOM complex import receptors, handed to the β
 barrel protein Tom40 which is the central machinery for mitochondrial protein import
 [Chachinska2009]. After being processed through the TOM machinery, hexameric
 chaperone complexes of Tim8 in complex with Tim13, and Tim9 in complex with 10
@@ -1928,40 +1942,41 @@ which integrates the β barrel protein into the membrane [Wiedermann2003, 188,
 
 Whereas mitochondria originated from the ancestral incorporation of α-proteobacteria [175], chloroplasts were thought to originate from the incorporation
 of cyanobacterium [174]. Similarly to mitochondrial β barrel proteins, there is no
-cleavable targetting SP targetting for the chloroplast since they integrate on the internal side of the membrane, however much less is known about the precise insertion
+cleavable targeting SP targeting for the chloroplast since they integrate on the internal side of the membrane, however much less is known about the precise insertion
 machinery of β barrel proteins at a molecular level in chloroplasts [179].
 Besides the differences in biogenesis between β barrel TMPs and TMPs with TMHs
-as the membrane spanninging units, there are also biophysical differences. Membrane spanning β sheets exhibit a “positive-outside” distribution of positively charged
-residues [103], opposed to the much more typical positive-inside distribution [72, 102,
-103, 106, 107]. Typically, β sheets are less hydrophobic than TMHs [190] as a result
-of their amphiphilic nature.
+as the membrane-spanning units, there are also biophysical differences. Membrane-spanning β sheets exhibit a “positive-outside” distribution of positively charged
+residues [103], as opposed to the much more typical positive-inside distribution [72,
+102, 103, 106, 107]. Typically, β sheets are less hydrophobic than TMHs [190] as a
+result of their amphiphilic nature.
 
 1.5
 
 The aims of this thesis.
 
-In this thesis we explore three ideas surrouding the role of TMHs in the membrane.
-In chapter 2 we explore the sequence composition of large datasets of TMHs straifying them by species, organelle, single-pass and multi-pass. After considering the rarity
-of certain amino acid types, we ellucidate a “negative-outside” tendency in concert with
-the positive-inside rule. We go on to further divide the single-pass group into complex
-and simple TMHs according to TMSOC. This reveals that simple TMHs have amino
-acid distribution features along the helix that would optimise for anchoring, however
-complex TMHs are more akin to TMHs from multi-pass TMPs.
+In this thesis, we explore three ideas surrounding the role of TMHs in the membrane.
+In chapter 2 we explore the sequence composition of large datasets of TMHs stratifying them by species, organelle, single-pass and multi-pass. After considering the
+rarity of certain amino acid types, we show a “negative-outside” tendency in concert
+with the positive-inside rule. We go on to further divide the single-pass group into
+complex and simple TMHs according to TMSOC. This reveals that simple TMHs have
+amino acid distribution features along the helix that would optimise for anchoring,
+however complex TMHs are more akin to TMHs from multi-pass TMPs.
 In chapter 3 we generate an up to date dataset of post-translationally inserted TA
 proteins based on previous methods and compare the TMHs within to a manually
-curated TA protein dataset from UniProt. This cross examination revealed TMH
-adaptaions to mitochondrial membranes such as a reversal of the “positive-inside”
+curated TA protein dataset from UniProt. This cross-examination revealed TMH
+adaptations to mitochondrial membranes such as a reversal of the “positive-inside”
 rule and a reduction in hydrophobicity caused by an abundance of alanine residues in
 lieu of leucine rather than an increase of polar residues. We also generate homology
-models of two spontanously inserting TMHs from TA proteins and show that they
-have an amphiphatic surface which may be key to their insertion.
-In chapter 4 we look at families of TMPs that exhibit high hydrophobic discrepency
+models of two spontaneously inserting TMHs from TA proteins and show that they
+have an amphipathic surface which may be key to their insertion.
 
 46
 
 CHAPTER 1. INTRODUCTION
+In chapter 4 we look at families of TMPs that exhibit a high hydrophobic discrep-
 
-between sequentially adjacent TMHs. The conservation of these pairs across the families corroborates evidence of cooperative TMH insertion, showing that marginally
+ancy between sequentially adjacent TMHs. The conservation of these pairs across the
+families corroborates evidence of cooperative TMH insertion, showing that marginally
 hydrophobic TMHs could use typical TMHs as part of their biogenesis on a larger
 scale than previously thought.
 
@@ -2017,7 +2032,7 @@ biological function point of view, many TMHs have multiple roles besides being j
 hydrophobic anchors; for example, certain TMHs have been identified as regulators of
 protein quality control and trafficking mechanisms [37]. As these additional biological
 functions are mirrored in the TMHs sequence patterns, TMHs can be classified as
-simple (just hydrophobic anchors) and complex sequence segments [38, 39, 62].
+simple (just hydrophobic anchors) and complex sequence segments [38–40].
 The relationship between sequence patterns in and in the vicinity of TMHs and
 their structural and functional properties, as well as their interaction with the lipid
 bilayer membrane, has been a field of intensive research in the last three decades [1].
@@ -2033,7 +2048,7 @@ properties vary somewhat in length and intensity between various biological orga
 49
 
 membranes, between prokaryotes and eukaryotes [197] and even among eukaryotic
-species studied due to slightly different membrane constraints [72, 103]. These biological dispositions are exploitable in terms of TM region prediction in query protein sequences [198, 199] and tools such as the quite reliable TMHMM [52, 200], Phobius [56,
+species studied due to slightly different membrane constraints [72, 103]. These biological dispositions are exploitable in terms of TM region prediction in query protein sequences [198, 199] and tools such as the quite reliable TMHMM [53, 200], Phobius [57,
 201] or DAS-TMfilter represent todays prediction limit of TMHs hydrophobic cores
 within the protein sequence [202–204]. The prediction accuracy for true positives and
 negatives is reported to be close to 100% and the remaining main cause of false positive prediction are hydrophobic α–helices completely buried in the hydrophobic core
@@ -2143,7 +2158,8 @@ significance for the charge bias. To say it bluntly, if there are no flanks of s
 length, there is also no negative charge bias to be observed.
 
 The charge bias effect is even clearer when a classification of TMHs into so-called
-simple (which, as a trend, are mostly single-pass and mere anchors) and so-called complex (which typically have functions beyond anchorage) is considered [38, 39, 62]. We
+simple (which, as a trend, are mostly single-pass and mere anchors) and so-called
+complex (which typically have functions beyond anchorage) is considered [38–40]. We
 also observe parallel skews with regard to leucine, tyrosine, tryptophan and cysteine
 distributions. With these large-scale datasets and a sensitive normalisation approach,
 new sequence features are revealed that provide spatial insight into TMH membrane
@@ -2162,7 +2178,7 @@ segments are rare
 
 In order to reliably compare the amino acid sequence properties of TMHs, we assembled datasets of TMH proteins from what are likely to be the best in terms of quality and comprehensiveness of annotation in eukaryotic and prokaryotic representative
 genomes, as well as composite datasets to represent larger taxonomic groups and with
-regard to sub-cellular locations (see Table 2.1). In total, 3292 single-pass TMH segments and 29898 multi-pass TMH segments were extracted from various UniProt [60]
+regard to sub-cellular locations (see Table 2.1). In total, 3292 single-pass TMH segments and 29898 multi-pass TMH segments were extracted from various UniProt [61]
 text files according to TRANSMEM annotation (download dated 20–03–2016). The
 UniProt datasets used only included manually curated records; however, it is still necessary to check for systematic bias due to the prediction methods used by UniProt
 for TMH annotation in the majority of cases without direct experimental evidence.
@@ -3937,7 +3953,7 @@ flanks having 60200 residues) were plotted as a heat-map. The amino acid types w
 
 CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE.
 
-listed on the Y axis according to Kyte & Doolittle hydrophobicity [58] in descending
+listed on the Y axis according to Kyte & Doolittle hydrophobicity [59] in descending
 order.
 
 In accordance with expectations, enrichment for hydrophobic residues in the TMH,
@@ -4159,7 +4175,7 @@ Generally, we see in Figure 2.5 that compositional biases appear more extreme in
 the single-pass case, particularly when it comes to polar and non-polar residues being
 more heavily suppressed and enriched. To investigate this observation, we calculated
 the hydrophobicity at each sequence-position averaged over all TMHs considered (after
-having window-averaged over 3 residues for each TMH) using the Kyte & Doolittle hydrophobicity scale [58] (Figure 2.6A) and validated using White and Wimley octanolinterface whole residue scale [130], Hessas biological hydrophobicity scale [108], and
+having window-averaged over 3 residues for each TMH) using the Kyte & Doolittle hydrophobicity scale [59] (Figure 2.6A) and validated using White and Wimley octanolinterface whole residue scale [130], Hessas biological hydrophobicity scale [108], and
 the Eisenberg hydrophobic moment consensus scale [135] (Supplementary Figure 2.7).
 The total set of TMHs was split into 15 sets of membrane-spanning proteins (1 set
 containing single-pass proteins, 13 sets each containing TMHs from 2-, 3-, 4-. . . 14TMPs and another of TMHs from proteins with 15 or more TMHs). In Figure 2.6B,
@@ -4279,7 +4295,7 @@ Hydrophobicity
 
 Figure 2.6: There is a difference in the hydrophobic profiles of TMHs from single-pass
 and multi-pass proteins. a The hydrophobicity of single-pass TMHs compared to multi-pass
-segments from the UniHuman dataset. The Kyte and Doolittle scale of hydrophobicity [58] was
+segments from the UniHuman dataset. The Kyte and Doolittle scale of hydrophobicity [59] was
 used with a window length of 3 to compare TMHs from proteins with different numbers of TMHs.
 This scale is based on the water-vapour transfer of free energy and the interior-exterior distribution
 of individual amino acids. The same datasets also had different scales applied (Figure 2.7). The
@@ -4714,12 +4730,12 @@ charges at the outside flank.
 
 Amino acid compositional skews in relation to transmembrane helix complexity and anchorage function
 
-In previous work, we studied the relationship of TMH composition, sequence complexity and function [38, 39, 62] and concluded that simple TMHs are more probably
+In previous work, we studied the relationship of TMH composition, sequence complexity and function [38–40] and concluded that simple TMHs are more probably
 responsible for simple membrane anchorage, whereas complex TMHs have a biological
 function beyond just anchorage. We wished to see how the skews observed in this
 work relate to that classification. Therefore, the single-pass TMHs from UniHuman
 and ExpAll were separated into subsets of simple, twilight, and complex TMHs using
-TMSOC [38, 62]. The relative percentages of eight residue types (L, D, E, R, K, Y,
+TMSOC [38, 39]. The relative percentages of eight residue types (L, D, E, R, K, Y,
 W, C; normalisation with the total amount of residues of that amino acid type in
 all sequence segments considered) were plotted along the sequence position for simple
 and complex helices (Figure 2.9). Of UniHuman single-pass proteins, there were 889
@@ -4775,7 +4791,7 @@ Outside
 Figure 2.9: Comparing the amino acid relative percentage distributions of simple and
 complex TMHs from single-pass proteins and TMHs from multi-pass proteins. Comparing the amino acid relative percentage distributions of simple and complex TMHs from single-pass
 proteins and TMHs from multi-pass proteins. TMSOC was used to calculate which single-pass TMHs
-were complex and which were simple from ExpAll and UniHuman datasets. Simple TMHs are typically anchors without necessarily having other functions (Wong et al. [39]). The relative percentages
+were complex and which were simple from ExpAll and UniHuman datasets. Simple TMHs are typically anchors without necessarily having other functions (Wong et al. [40]). The relative percentages
 from single-pass simple (shown in light blue), single-pass complex (red), and multi-pass protein TMHs
 (black) were plotted for (a, c, e, g, i and k) UniHuman and (b, d, f, h, j and l) ExpAll for (a and
 b) positive residues, (c and d) negative residues, (e and f) tyrosine, (g and h) tryptophan, (i and j)
@@ -4812,7 +4828,7 @@ of magnitude): (ii) for all three statistical tests applied (χ2 , KS and KW), (
 all amino acid types, for K+R and E+D and (iii) for both datasets UniHuman and
 ExpAll. Thus, complex single-pass TMH+flanks have compositional properties that
 are indeed very similar to those of multi-pass ones (which are known to have a large
-fraction of complex TMHs [38, 62]). This strong evidence implies that the actual issue is not so much about single- and multi-pass TMH segments but between simple
+fraction of complex TMHs [38, 39]). This strong evidence implies that the actual issue is not so much about single- and multi-pass TMH segments but between simple
 
 76
 
@@ -5804,7 +5820,7 @@ a TMH rather than the inside (and to almost completely avoid the TMH itself); be
 it by suppression on the inside and/or enrichment on the outside. The trend is much
 stronger in single-pass protein datasets than in multi-pass protein datasets. However
 as we elaborated on further, the real crux of the bias appears to be associated with
-the TMH being simple or complex [38, 62], thus, whether or not the TMH has a role
+the TMH being simple or complex [38, 39], thus, whether or not the TMH has a role
 
 2.5. DISCUSSION
 
@@ -5918,7 +5934,7 @@ non-cytosolic interface as the respective residues are spread over more potentia
 positions, diminishing any observable bias.
 
 iii We find that separation into single- and multi-pass TM datasets (or, even better,
-simple and complex TMHs [38, 62]) is critical to study the inside/outside bias. As
+simple and complex TMHs [38, 39]) is critical to study the inside/outside bias. As
 many TMHs in multi-pass TMPs have essentially no flanks or very short flanks if
 the condition of non-overlap is applied to flanks of neighbouring TMHs, this might
 also obscure the observation of the negative charge bias. If there are no flanks,
@@ -5927,7 +5943,7 @@ alleviated by either studying only subsets with minimal flank lengths on both si
 (although datasets might become too small for statistical analysis) or by allowing
 flank overlaps between neighbouring TMHs.
 iv This classification is even more justified in the light of previous reports about the
-“missing hydrophobicity” in multi-pass TMHs [59, 192, 231, 232]. Otherwise, the
+“missing hydrophobicity” in multi-pass TMHs [60, 192, 231, 232]. Otherwise, the
 distribution bias well observed among the exclusive anchors could be lost to noise.
 This addresses the more biologically contextualised issue that there are different
 evolutionary pressures on different types of TMHs. The negative charge skew is
@@ -5979,7 +5995,7 @@ biologically different roles the TMHs play. To emphasise and validate these find
 CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE.
 
 we separated TMHs from single-pass proteins into simple and complex TMHs [38,
-62]; ones that likely contains mostly TMHs that act as exclusive anchors, and another
+39]; ones that likely contains mostly TMHs that act as exclusive anchors, and another
 that have roles beyond anchorage. This leaves us with “anchors” (simple TMHs from
 single-pass proteins) and “non-anchors” (complex TMHs from single-pass proteins,
 and TMHs from multi-pass proteins). If there are strong sequence feature differences
@@ -5991,7 +6007,7 @@ to be more similar to simple anchors, multi-pass, or generally neither. Currentl
 sufficiently complete set of intra-membrane oligomerised single-pass proteins exists
 that can be compared to a large set of known non-oligomerising proteins. The current
 work sidesteps this issue by comparing single-pass proteins with simple TMHs, which
-tend to be simple anchors (as shown in previous work [38, 62]), against datasets that
+tend to be simple anchors (as shown in previous work [38, 39]), against datasets that
 contain TMHs that will form intra-membrane bundles. Bluntly, the simple/complex
 status of a TMH can be easily computed from its sequence with TMSOC whereas
 the oligomerisation state of most membrane proteins still needs to be experimentally
@@ -6022,12 +6038,12 @@ that the tyrosine’s preference for the inside interface region also appears to
 with anchorage and this trend is somewhat true for tryptophan, too.
 Finally, our findings corroborate earlier reports that many multi-pass TMHs are
 much less hydrophobic than typical single-pass TMH and about 30% of them fail the
-hydrophobicity requirements of ∆G TMH insertion prediction (“missing hydrophobicity”) [59, 108, 231, 232]. We also find that the leucine skew and the hydrophobic
+hydrophobicity requirements of ∆G TMH insertion prediction (“missing hydrophobicity”) [60, 108, 231, 232]. We also find that the leucine skew and the hydrophobic
 asymmetry towards the cytosolic leaflet of the membrane is more pronounced in simple,
 single-pass TMHs than in complex or multi-pass ones; thus, it appears to be another
 anchoring feature. It was found previously that the hydrophobic profiles of TMHs of
 multi-pass proteins share similar hydrophobicity profiles on average irrespective of the
-number of TMHs and TMHs from single-pass proteins have been found to be typically more hydrophobic than TMHs from multi-pass proteins [62]. Sharpe et al. [72]
+number of TMHs and TMHs from single-pass proteins have been found to be typically more hydrophobic than TMHs from multi-pass proteins [38]. Sharpe et al. [72]
 report an asymmetric hydrophobic length for single-pass TMHs. Our study reiterates
 the hydrophobic asymmetry and attributes it mainly to the leucine distribution. The
 leucine asymmetry might be linked to the different lipid composition of either leaflet
@@ -6095,7 +6111,7 @@ Greater net
 positive charge
 
 Figure 2.10: Residue distributions of transmembrane anchors. A view showing additional residue distribution features that TMHs with an anchorage function display.a The
-more classic model of a TMH showing the “positive-inside” rule [106], the hydrophobic core [58], the
+more classic model of a TMH showing the “positive-inside” rule [106], the hydrophobic core [59], the
 polar enrichment that flanks the hydrophobic stretch [102] and the aromatic belt [109]. b Simple
 anchors may display additional features that conform to the membrane biophysical constraints: further suppression of charge in the hydrophobic core (Table 2.1), intra-membrane leucine asymmetry
 that likely causes hydrophobic skew [72] (Table 2.4, Figure 2.6), a higher preference for cysteine on
@@ -6130,7 +6146,7 @@ Datasets
 
 Databases.
 All datasets used for analysis are listed in Table 2.1. Transmembrane protein sequences
-and annotations were taken from TOPDB [221] and UniProt [60]. UniProt derived
+and annotations were taken from TOPDB [221] and UniProt [61]. UniProt derived
 datasets are the most comprehensive datasets built with (i) robust transmembrane
 prediction methods providing the limit of todays achievable accuracy with regard to
 hydrophobic core localisation and (ii) subcellular location annotation that can be used
@@ -6144,10 +6160,10 @@ representative proteome), UniCress (Arabidopsis thaliana, otherwise known as mou
 eared cress, representative proteome), UniER (human endoplasmic reticulum representative proteome), UniPM (human plasma membrane representative proteome),
 UniGolgi (human Golgi representative proteome). To enforce a level of quality control,
 the queries were restricted to manually reviewed records and transmembrane proteins
-with manually asserted TRANSMEM annotation [60]. Proteins were then sorted into
+with manually asserted TRANSMEM annotation [61]. Proteins were then sorted into
 multi-pass and single-pass groups according to having more than one or exactly one
-TRANSMEM region respectively. TRANSMEM regions are validated by either experimental evidence [60], or according to a robust transmembrane consensus of the
-predictors TMHMM [52], Memsat [51], Phobius [56, 201] and the hydrophobic moment plot method of Eisenberg and co-workers [135]. TMHs and flanking regions were
+TRANSMEM region respectively. TRANSMEM regions are validated by either experimental evidence [61], or according to a robust transmembrane consensus of the
+predictors TMHMM [53], Memsat [52], Phobius [57, 201] and the hydrophobic moment plot method of Eisenberg and co-workers [135]. TMHs and flanking regions were
 oriented according to UniProt TOPO DOM annotation according to the keyword “cytoplasmic”. If a “cytoplasmic” TOPO DOM was found in the previous TOPO DOM
 relative to the TRANSMEM region then the sequence remained the same. If “cytoplasmic” was found in the next TOPO DOM, relative to the TRANSMEM section
 
@@ -6728,12 +6744,12 @@ allows the average TMH boundary transition to become apparent.
 Separating simple and complex single-pass helices.
 
 Single-pass helices from ExpAll and UniHuman datasets helices were split into two
-groups: simple and complex following a previously described classification [38, 62]
+groups: simple and complex following a previously described classification [38, 39]
 to roughly distinguish simple hydrophobic anchors and TMHs with additional structural/functional roles.
 
 Simple and complex helices were determined using TM-
 
-SOC [38]. The complexity class is determined by calculating the hydrophobicity
+SOC [39]. The complexity class is determined by calculating the hydrophobicity
 and sequence entropy. The resulting coordinates cluster with anchors being more
 hydrophobic and less complex whilst more complex and more polar TMHs are associated with non-anchorage functions. In UniHuman there were 889 simple helices and
 570 complex TMHs. In ExpAll there were 769 simple helices and 570 complex helices.
@@ -6858,7 +6874,7 @@ Figure 2.12: Relative percentage heatmaps from the predictive datasets calculate
 fractions of the absolute maximum and by the relative percentage of a given amino acid
 type.The residue position aligned to the centre of the TMH is on the horizontal axis, and the residue
 type is on the vertical axis. Amino acid types are listed in order of decreasing hydrophobicity according
-to the Kyte and Doolittle scale [58]. The flank lengths in the TMH segments were restricted to up
+to the Kyte and Doolittle scale [59]. The flank lengths in the TMH segments were restricted to up
 to ±5 residues. The scales for each heatmap are shown beneath the respective subfigure. All TMHs
 and flank lengths are from the UniHuman dataset. (A) The heatmap has been coloured according
 to a scale that uses column-wise normalisations used in previous studies [72]. See Equation 2.1. As
@@ -6879,7 +6895,7 @@ as the leucines are quite evenly spread over many positions.
 Hydrophobicity calculations
 
 Hydrophobicity profiles were calculated using the Kyte & Doolittle hydrophobicity
-scale [58] and validated with the Eisenberg scale [135], the Hessa biological scale [108],
+scale [59] and validated with the Eisenberg scale [135], the Hessa biological scale [108],
 and the White and Wimley whole residue scale [130](Figure 2.7). The hydrophobicity
 
 2.6. METHODS
@@ -7198,7 +7214,7 @@ the ER and mitochondrial localised TA proteins [63]. However, the tremendous div
 factor applied en masse may be able to distinguish the TMH recognition factors and
 investigation into this area is becoming increasingly complex [63].
 By regenerating a list of likely TMHs [248] and using a manually curated list of TA
-proteins [60], this investigation aims to find relationships between biochemical factors
+proteins [61], this investigation aims to find relationships between biochemical factors
 and a disposition to a certain insertion mechanism and terminal localisations. Here,
 we also present evidence for a conserved polar strip along the spontaneously inserting
 TA protein TMHs, which may be the key to the initial interaction of these TMHs with
@@ -7317,14 +7333,14 @@ results and is available as supplementary material. For the dataset size and mor
 the methods section text.
 
 SwissProt Tail Anchored Dataset According to Filters
-There were 557012 protein records downloaded from SwissProt via UniProt [60] (downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between 76953
+There were 557012 protein records downloaded from SwissProt via UniProt [61] (downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between 76953
 
 3.3. METHODS
 
 109
 
 records (annotation:(type:transmem)ANDreviewed:no). This keyword is contained
-in a record according to either experimental evidence [60] or a conservative metaanalysis of TMH prediction using TMHMM [52], Memsat [51], Phobius [56, 201] and
+in a record according to either experimental evidence [61] or a conservative metaanalysis of TMH prediction using TMHMM [53], Memsat [52], Phobius [57, 201] and
 the hydrophobic moment plot method of Eisenberg and co-workers [135]. 11141 of
 those records had only a single TMH. 11110 of those TMHs were within the length
 thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms
@@ -7402,7 +7418,7 @@ them an unsuitable dataset for statistical analysis.
 Remapping The Previous Dataset
 189 of the 411 proteins from the previous Kalbfleisch et al., 2007 study [248] were
 successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the
-RefSeq Protein to UniProtKB option [60].
+RefSeq Protein to UniProtKB option [61].
 Tail Anchor Protein Chaperone Interactors
 As discussed in the introduction text, there is evidence surrounding the TMH biochemical factors that determine which chaperone will interact with a given TA protein. To
 gain a more quantitative understanding of the relationship between the TA protein
@@ -7452,7 +7468,7 @@ Windowed hydrophobicity was calculated using a window length of 5 residues, and 
 windows were permitted. Average hydrophobicity takes the total of the raw amino
 acid hydrophobicity values and divides them by the number of amino acids in the
 slice. Unless explicitly stated, values reported in the results are based on the Kyte &
-Doolittle scale [58] which is based on the water–vapour transfer free energy and the
+Doolittle scale [59] which is based on the water–vapour transfer free energy and the
 interior-exterior distribution of individual amino acids.
 
 3.3.3
@@ -7469,7 +7485,7 @@ of a sequence. Sequence complexity can be used to analyse DNA sequences [138–
 113
 
 anchoring of a TMH; an increase in complexity is associated with increased likelihood
-of function [38, 62, 191]. Here we focus on the analysis of the complexity of a string
+of function [38, 39, 191]. Here we focus on the analysis of the complexity of a string
 of characters in protein sequences.
 Broadly speaking, the information theory entropy of a linguistic string can be
 defined as in equation 3.1, and we treat the protein sequence TMH as a string with or
@@ -7553,9 +7569,9 @@ structures for the TM domain or the nearby flanking regions. Instead of a global
 model derived from a single sequence alignment of 5NAO based on the TMH±6 (the
 length of the C-terminal tail) residues of PTP1b. The ProSA Z-Score was 0.08 which
 is well within the acceptable range for proteins of that length [299].
-Both these TMH regions were verified by a consensus of sequence TMH predictions (Scampi seq [57], Phobius [56], TMHMM [52], MEMSAT3 [51], TMpred [301],
-HMMTOP [53], DAS–TMfilter [203], MINNOU [302], OCTOPUS [55], PRODIV [54],
-PRO–S [54], S–TMHMM [54], and proteus [303]). However, it should be noted that
+Both these TMH regions were verified by a consensus of sequence TMH predictions (Scampi seq [58], Phobius [57], TMHMM [53], MEMSAT3 [52], TMpred [301],
+HMMTOP [54], DAS–TMfilter [203], MINNOU [302], OCTOPUS [56], PRODIV [55],
+PRO–S [55], S–TMHMM [55], and proteus [303]). However, it should be noted that
 not all these predictions unanimously agreed. For PTP1b, several methods identified
 
 3.4. RESULTS AND DISCUSSION
@@ -7620,8 +7636,8 @@ Figure 3.3: A Venn diagram showing tail-anchored protein UniProt ids present in 
 of the datasets as well as those present in multiple datasets. The number of ids present in
 redundant versions of i) the supplementary materials table of a previous study predicting the complete
 set of human tail-anchored proteins denote by S1 [248] in red, ii) and in green is the SwissProt dataset
-filtered according to typical TA features limited to the Homo sapiens proteome [60], and iii) in blue is
-the UniProt curated list of TA proteins [60]. Note that to avoid losing IDs to redundancy reduction
+filtered according to typical TA features limited to the Homo sapiens proteome [61], and iii) in blue is
+the UniProt curated list of TA proteins [61]. Note that to avoid losing IDs to redundancy reduction
 this diagram was generated without the use of CD-HIT [241, 295], which is applied in the later
 statistical analysis.
 
@@ -7630,7 +7646,7 @@ statistical analysis.
 117
 
 Figure 3.3 shows that S1 has 175 record ids of 222 records (78.8%) which do not
-share overlap the up-to-date manually curated UniProt dataset [60]. Of the 170 unique
+share overlap the up-to-date manually curated UniProt dataset [61]. Of the 170 unique
 records of that S1 dataset, 4 were manually annotated as not belonging to the Homo
 sapiens proteome, 20 have the C-terminal as annotated being cytoplasmic, only 125
 had TRANSMEM annotation indicating a bona fide TMH. If we apply equivalent filters,
@@ -7674,7 +7690,7 @@ cress, yeast, bacteria, and Homo sapien datasets [191]. We would expect to see a
 assuming a zero-difference hypothesis, in these TMH TA protein datasets we cannot
 observe any species-level differences between the datasets at this sample size for TMH
 hydrophobicity.
-When comparing the average Kyte & Doolittle [58] hydrophobicity values for
+When comparing the average Kyte & Doolittle [59] hydrophobicity values for
 the TMHs from Homo sapiens and Mus musculus, A. thaliana, and S. cerevisiae, we
 can see little difference between the mean values. All of the mean values lie between
 2.3-2.6 when we only consider the TMH and at 1.3-1.6 when considering residues in
@@ -7689,7 +7705,7 @@ proteins (Homo sapiens N=46 and Mus musculus N=48) to A. thaliana (N=49) represe
 and S. cerevisiae (N=24) representing yeasts. The hydrophobicity was predicted as the mean average
 of the values of the sequences of the TMH, as well another group including up to ±5 flanking residues,
 since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity
-scale [58]. The Test column refers to the statistical score obtained from the test; H statistic for the
+scale [59]. The Test column refers to the statistical score obtained from the test; H statistic for the
 Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 P is the P-value of that statistical score. B refers to the Bahadur slope, an interpretation of the
 P-value that accounts for the sample size powering the test [223, 224].
@@ -7815,7 +7831,7 @@ SwissProt Filtered Set
 
 Figure 3.4: Average values of species datasets from UniProt manually curated set and
 SwissProt automatically filtered dataset.
-The average hydrophobicity values from the Kyte & Doolittle scale [58].for both the TMH and the
+The average hydrophobicity values from the Kyte & Doolittle scale [59].for both the TMH and the
 TMH±5 residues. Values are shown for both the UniProt manually curated set and the SwissProt
 filtered set. In the UniProt manually curated set we compare the mammalian set of TA proteins
 (Homo sapiens N=30 and Mus musculus N=30) to A. thaliana (N=57) representing plants and S.
@@ -7845,7 +7861,7 @@ B)
 
 Figure 3.5: Average sequence-based biochemical values of organelle datasets from
 UniProt manually curated set and SwissProt automatically filtered dataset.
-A) The average hydrophobicity values from the Kyte & Doolittle scale [58], B) the average information
+A) The average hydrophobicity values from the Kyte & Doolittle scale [59], B) the average information
 entropy [141] (see methods) for both the TMH and the TMH±5 residues. Values are shown for both
 the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated
 set we compare TA proteins from the ER (N=400) to the Golgi (N=82), the PM (N=37), and the
@@ -7863,7 +7879,7 @@ plants in the UniProt Curated Dataset. Here, we compare a mammalian set of TA pr
 cerevisiae (N=27) representing yeasts. The hydrophobicity was predicted as the mean average of
 the values of the sequences of the TMH, as well another group including up to ±5 flanking residues,
 since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity
-scale [58]. The Test column refers to the statistical score obtained from the test; H statistic for the
+scale [59]. The Test column refers to the statistical score obtained from the test; H statistic for the
 Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
 P is the P-value of that statistical score. B refers to the Bahadur slope, an interpretation of the
 P-value that accounts for the sample size powering the test [223, 224].
@@ -7956,7 +7972,7 @@ scores range from 1.7 in mitochondria to 2.7 in the PM (Figure 3.5A).
 Table 3.3: Statistical comparisons between TMH sequences from organelles in the
 UniProt Curated Dataset. Here, we compare an organelle subset from the UniProt curated
 dataset of TA proteins. We compare ER (N=397) to Golgi (N=83), PM (N=31), and the mitochondria (N=426). The hydrophobicity was predicted as the mean average of the values of the sequences
-of the TMH, as well another group including up to ±5 flanking residues, since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity scale [58]. The linguistic
+of the TMH, as well another group including up to ±5 flanking residues, since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity scale [59]. The linguistic
 information entropy was calculated according to the methods section [141]. The Test column refers to
 the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic
 for the Kolmogorov Smirnov test (KS), and the t-statistic for the student’s T-test (T-test). P is the
@@ -8200,7 +8216,7 @@ Figure 3.6: The normalised skews of each amino acids from TA proteins grouped by
 localisation from the UniProt manually curated dataset.
 The residue position aligned with the centre of the TMH is on the horizontal axis, and the residue type
 is on the vertical axis. Amino acid types are listed in order of decreasing hydrophobicity according
-to the Kyte and Doolittle scale [58]. Flank lengths were restricted to ±5 residues. The edge residues
+to the Kyte and Doolittle scale [59]. Flank lengths were restricted to ±5 residues. The edge residues
 from proteins with flank lengths and TMH lengths that exceeded the plotted 31 residues were still
 included in the normalisation calculations despite not being plotted. The colour scale represents the
 relative percentage of a particular amino acid and is shown with dark blue as 0, white as the 50th
@@ -8223,7 +8239,7 @@ at the inside. This results in a strong net positive-outside charge signal since
 are more positively charged residues on the outer flank uncountered by the negatively
 charged residues, which are skewed with a preference for the inside flank.
 Information entropy has been known to identify cryptic function in TMHs when
-considered along with hydrophobicity [38, 62]. In terms of information entropy, there
+considered along with hydrophobicity [38, 39]. In terms of information entropy, there
 is a marked decrease in entropy in the PM subset (mean entropy = 3.15 in the TMH,
 2.67 including ±5 flanking residues) from the UniProt curated dataset compared to
 the other organelle datasets (entropy > 3.29 and > 2.85 including the flanks). However, this stark difference between TMHs from PM bound TA proteins and the other
@@ -8290,7 +8306,7 @@ Figure 3.7: The normalised skews of each amino acids from TA proteins grouped by
 localisation from the SwissProt automatically filtered dataset
 Similarly to figure 3.6, the residue position aligned with the centre of the TMH is on the horizontal
 axis, and the residue type is on the vertical axis. Amino acid types are listed in order of decreasing
-hydrophobicity according to the Kyte and Doolittle scale [58]. Flank lengths were restricted to ±5
+hydrophobicity according to the Kyte and Doolittle scale [59]. Flank lengths were restricted to ±5
 residues. The edge residues from proteins with flank lengths and TMH lengths that exceeded the
 plotted 31 residues were still included in the normalisation calculations despite not being plotted.
 The colour scale represents the relative percentage of a particular amino acid and is shown with
@@ -8309,7 +8325,7 @@ filtered dataset of TA proteins. We compare ER (N=98) to Golgi (N=82), PM (N=157
 mitochondria referred to as “mito” (N=65). The hydrophobicity was predicted as the mean average
 of the values of the sequences of the TMH, as well another group including up to ±5 flanking residues,
 since predicting the boundary of TMHs is difficult, according to the Kyte & Doolittle hydrophobicity
-scale [58]. The linguistic information entropy was calculated according to the methods section [141].
+scale [59]. The linguistic information entropy was calculated according to the methods section [141].
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal
 Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student’s T-test (T-test). P is the P-value of that statistical score. B refers to the Bahadur slope, an
 interpretation of the P-value that accounts for the sample size powering the test [223, 224].
@@ -8684,7 +8700,7 @@ The TMHs of cytochrome b5 and PTP1b are among the least hydrophobic of the TA
 proteins and in theory misses the ∆G requirements of a TMH due to their relatively
 polar TMHs [252, 253]. Indeed the TMH is so polar that it is not trivial to predict
 and is not found in either dataset prepared herein. Structural modelling and analysis
-thereof reveal features that may explain the “missing hydrophobicity” [59, 108, 231,
+thereof reveal features that may explain the “missing hydrophobicity” [60, 108, 231,
 232] of these particular TMHs.
 The electrostatic surfaces are prototypical of a TMH anchor with large “positive-inside” patches [72, 102, 103, 106, 107, 191] and a strong “negative-outside” charge
 [191](Figure 3.9C). Once in the membrane, this may allow it to be an effective anchor despite such poor hydrophobicity since it satisfies electrostatic coupling to the
@@ -9088,7 +9104,7 @@ sequentially next to typically hydrophobic TMHs. Analysis can only be done if th
 number of TMHs is conserved across the family since different mechanisms are utilised
 to transmit a signal or transport a molecule across the membrane.
 Datasets were attained by querying the UniProt database for controlled vocabulary
-keywords (Table 4.1) [60]. After filtering out redundant proteins using UniRef50, the
+keywords (Table 4.1) [61]. After filtering out redundant proteins using UniRef50, the
 datasets were stratified according to the total number of TMHs per protein. Only
 families with a total N >20 were included in the analysis, for example, there are ion
 channels with 12 TMHs, but only 16 examples fitted the criteria and were omitted
@@ -9196,7 +9212,7 @@ CHAPTER 4. COOPERATION BETWEEN TMHS...
 
 GPCR subfamilies
 The 7TMR list is a list distributed by UniProt containing GPCRs available at
-http://www.uniprot.org/docs/7tmrlist.txt [60]. The entire list contains 3115
+http://www.uniprot.org/docs/7tmrlist.txt [61]. The entire list contains 3115
 UniProt IDs which mapped to 3092 records on the date of download (12/9/2017).
 After removing redundant records using UniRef50 to identify cluster representatives,
 1142 records made the final dataset. The original list is also sub categorised by function. Here, we also looked at opsins, the T2R taste receptors, frizzled/smooth GPCRs,
@@ -9210,7 +9226,7 @@ After limiting all these sets to records containing 7 TRANSMEM features, there
 were 39 opsins, 38 frizzled smooth GPCRs, 9 fungal mating GPCRs, 41 metabolic
 glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor GPCR
 proteins. TRANSMEM is an annotation by UniProt denoting a TMH evidenced by
-experimental documentation or a robust TMH prediction method [60].
+experimental documentation or a robust TMH prediction method [61].
 
 4.3.2
 77153
@@ -9222,7 +9238,7 @@ records
 
 matched
 
-ANDreviewed:yes in UniProt [60].
+ANDreviewed:yes in UniProt [61].
 
 the
 
@@ -9238,7 +9254,7 @@ transmembrane dataset to PANTHER and used their pie chart visualisation [330].
 We also submitted a constricted list of the non-redundant SwissProt transmembrane
 dataset to PANTHER by sorting the list according to proteins with sequentially
 adjacent TMHs that had the greatest difference in Kyte & Doolittle hydrophobicity
-[58]. This consisted of the top 102 pairs from a list of 101604 (the top 0.1%) TMH
+[59]. This consisted of the top 102 pairs from a list of 101604 (the top 0.1%) TMH
 
 4.3. METHODS
 
@@ -9251,13 +9267,13 @@ functions.
 
 Complexity and hydrophobic estimation
 
-Primarily we used the Kyte & Doolittle scale in this work [58]. We verified this scale
+Primarily we used the Kyte & Doolittle scale in this work [59]. We verified this scale
 with the Eisenberg scale [135], the Hessa biological scale [108], and the White and
 Wimley scale [130]. The Eisenberg scale is potentially double counted for many of these
 proteins since it is used by UniProt during their automatic TMH annotation where
 experimental evidence is not available. The Hessa biological scale originally reported
 positional dependencies that affected the hydrophobicity values which were refined in
-a later version of the scale [59], however, this later version was not programmatically
+a later version of the scale [60], however, this later version was not programmatically
 available to us.
 When stratifying TMHs by hydrophobicity and sequence information entropy, there
 is a clear distinction between anchoring TMHs and those with a function beyond anchoring. The TMSOC z-score quantifies this relationship and is calculated by equation
@@ -9308,7 +9324,7 @@ Large contrasts in TMH hydrophobicity occurs in channels and receptors.
 
 In order to identify which type of TMP may contain potentially cooperative TMHs,
 the hydrophobicities for TMHs from 30045 records in a non-redundant version of
-SwissProt were calculated according to the Kyte & Dolittle hydropathy scale [58].
+SwissProt were calculated according to the Kyte & Dolittle hydropathy scale [59].
 The absolute difference between each sequentially adjacent TMH was calculated. The
 full list, along with the 0.1% TMH pair were submitted to PANTHER [330]. We
 found that transporters were by far the most abundant in this sub-list relative to the
@@ -9378,7 +9394,7 @@ PDB codes 1u19 (rhodopsin) [338], 2z73 (rhodopsin) [339], 2vt4 (β1-adrenergic r
 Even in a relatively small dataset of functionally varied GPCRs, we can see structural conservation of the TMH arrangement (Figure 4.4A Figure 4.4C). Hydrophobic
 patterns are hard to identify structurally beyond the clear membrane boundary where
 we would expect to see hydrophobic residues in the TMH (Figure 4.4B). TMSOC [38,
-62] is an algorithm that takes into account the White and Wimley hydrophobicity
+39] is an algorithm that takes into account the White and Wimley hydrophobicity
 [130] and the information entropy of the TMH sequence. The resulting z-score has
 been shown to be able to scrutinise between TMHs that serve as anchors and those
 that have a function beyond TMP anchoring. The lower the z-score (low sequence
@@ -9442,7 +9458,7 @@ similar to D, however, the datasets are from non-redundant UniProt GPCR sequence
 1016 GPCR records that contained the annotation for 7 TMHs. The data is represented by a violin
 plot, the thickness indicating the distribution of the data. The mean average is the dash in black,
 and the median is the dash in orange. F) As in E, however, the vertical axis is Kyte & Doolittle
-hydrophobicity [58].
+hydrophobicity [59].
 
 and TMH5 indicate they are more optimal anchors [191].
 When we consider much larger sequence datasets containing 1016 TMHs at each
@@ -9466,7 +9482,7 @@ Smirnov P-value = 1.06E-174) and so are TMH2 and TMH3 (Welch’s t-test P-value 
 3.66E-39, Kruskal Wallis P-value = 2.70E-36, Kolmogorov Smirnov P-value = 1.06E-31). We also find it difficult to observe any significant differences between TMH2
 and TMH6 (Welch’s t-test P-value >0.99, Kruskal Wallis P-value = 0.99, Kolmogorov
 Smirnov P-value = 0.07).
-As expected, these trends are mirrored in the Kyte & Doolittle [58] hydrophobicity
+As expected, these trends are mirrored in the Kyte & Doolittle [59] hydrophobicity
 plots. Where there is a high TMSOC z-score, there is a low hydrophobicity score.
 However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity = 1.13) are very different (Welch’s t-test P-value = 3.95E-163), the difference
 between TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity =
@@ -9522,7 +9538,7 @@ D) Olfactory
 F) Taste receptors
 
 Figure 4.6: The hydrophobicity of TMHs in GPCR subfamilies. Violin plots of the Kyte &
-Doolittle hydrophobicity [58] of TMHs of GPCRs after selecting a non-exhaustive sample of GPCR
+Doolittle hydrophobicity [59] of TMHs of GPCRs after selecting a non-exhaustive sample of GPCR
 subfamilies with a wide variety of molecular functions. A) Opsins (N=39). B) Frizzled-smooth
 GPCRs (N=38). C) Fungal mating GPCR proteins (N=9). D) Olfactory receptor proteins (N=263).
 E) Metabolic glutamate receptor (N=41). F) T2R taste receptors (N=45)
@@ -9693,7 +9709,7 @@ to TMH16 (P-value = 1.79E-23), TMH16 to TMH17 (P-value = 1.67E-27), TMH21
 to TMH22 (P-value = 1.64E-9), and TMH22 to TMH23 (P-value = 3.42E-31).
 Oddly, as a trend, the TMSOC z-score was not sensitive to detecting function in
 the extremely hydrophobic TMH4 (Figure 4.9). This is due to the other component
-of the z-score, the sequence information entropy [38, 62]. The relative probability of a
+of the z-score, the sequence information entropy [38, 39]. The relative probability of a
 polar/charged residue is so high in TMH4 that it apparently has the same expectancy
 as the hydrophobic residues, and the “simple” entropy mutes somewhat the effect of
 the extreme hydrophobicity. This is compounded by the fact that the White and
@@ -9705,7 +9721,7 @@ A)
 
 B)
 
-Figure 4.9: Sequence entropy is unsuitable for assessing function in TMH4 of ion channels. A) The TMSOC z-score [38, 62] of TMHs from the ion channel dataset used in Figure ??A. B)
+Figure 4.9: Sequence entropy is unsuitable for assessing function in TMH4 of ion channels. A) The TMSOC z-score [38, 39] of TMHs from the ion channel dataset used in Figure ??A. B)
 The sequence information entropy of those same TMHs.
 
 4.5. SUMMARY
@@ -9742,7 +9758,7 @@ TMH2 (hydrophobicity = 1.05) to TMH3 (hydrophobicity = 1.50) (Welch’s t-test P
 Summary
 
 Marginally hydrophobic TMHs are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage, and widely
-prevalent among TMPs [59]. However, this presents a significant biophysical and
+prevalent among TMPs [60]. However, this presents a significant biophysical and
 
 156
 
@@ -9823,7 +9839,7 @@ tunnel [315] or in the translocon tunnel [345]. This was observed in a potassium
 345].
 
 Here, we have shown that high discrepancy of TMSOC z-score (simple-complex
-score) [38, 62], and several hydrophobicity scales [58, 108, 130, 135] can be used to
+score) [38, 39], and several hydrophobicity scales [59, 108, 130, 135] can be used to
 identify TMH groups that must work cooperatively to incorporate the marginally hydrophobic TMHs. Here we have shown that the hydrophobic relationships between
 these cooperatively inserted TMHs are conserved throughout their larger families indicating that cooperative insertion may be a routine mechanism for the insertion of some
 families of TMPs. So far, this method has shown that the TMH7 of GPCRs is a conserved marginally hydrophobic TMH with the typically hydrophobic TMH6 preceding
@@ -9988,85 +10004,85 @@ of nascent-chain movement through the SecYEG translocon. Nature Structural
 and Molecular Biology 22, 145–149 (2015).
 37. Hessa, T., Sharma, A., Mariappan, M., Eshleman, H. D., Gutierrez, E. & Hegde,
 R. S. Protein targeting and degradation are coupled for elimination of mislocalized proteins. Nature 475, 394–399 (2011).
-38. Wong, W.-C., Maurer-Stroh, S., Schneider, G. & Eisenhaber, F. Transmembrane
+38. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. Not all transmembrane helices
+are born equal: Towards the extension of the sequence homology concept to
+membrane proteins. Biology Direct 6, 57 (2011).
+39. Wong, W.-C., Maurer-Stroh, S., Schneider, G. & Eisenhaber, F. Transmembrane
 helix: simple or complex. Nucleic Acids Research 40, W370–W375 (2012).
-39. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
+40. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. More Than 1,001 problems
 with protein domain databases: Transmembrane regions, signal peptides and the
 issue of sequence homology. PLoS Computational Biology 6 (ed Bourne, P. E.)
 6 (2010).
-40. Drew, D., Slotboom, D.-J., Friso, G., Reda, T., Genevaux, P., Rapp, M., MeindlBeinker, N. M., Lambert, W., Lerch, M., Daley, D. O., Van Wijk, K.-J., Hirst,
+41. Drew, D., Slotboom, D.-J., Friso, G., Reda, T., Genevaux, P., Rapp, M., MeindlBeinker, N. M., Lambert, W., Lerch, M., Daley, D. O., Van Wijk, K.-J., Hirst,
 J., Kunji, E. & De Gier, J.-W. A scalable, GFP-based pipeline for membrane
 protein overexpression screening and purification. Protein Science 14, 2011–
 2017 (2005).
-41. Kawate, T. & Gouaux, E. Fluorescence-Detection Size-Exclusion Chromatography for Precrystallization Screening of Integral Membrane Proteins. Structure
+42. Kawate, T. & Gouaux, E. Fluorescence-Detection Size-Exclusion Chromatography for Precrystallization Screening of Integral Membrane Proteins. Structure
 14, 673–681 (2006).
-42. Cornvik, T., Dahlroth, S.-L., Magnusdottir, A., Herman, M. D., Knaust, R.,
+43. Cornvik, T., Dahlroth, S.-L., Magnusdottir, A., Herman, M. D., Knaust, R.,
 Ekberg, M. & Nordlund, P. Colony filtration blot: a new screening method for
 soluble protein expression in Escherichia coli. Nature Methods 2, 507–509 (2005).
-43. Frauenfeld, J., Gumbart, J., van der Sluis, E. O., Funes, S., Gartmann, M.,
+44. Frauenfeld, J., Gumbart, J., van der Sluis, E. O., Funes, S., Gartmann, M.,
 Beatrix, B., Mielke, T., Berninghausen, O., Becker, T., Schulten, K. & Beckmann, R. Cryo-EM structure of the ribosomeSecYE complex in the membrane
 environment. Nature Structural & Molecular Biology 18, 614–621 (2011).
-44. Duan, H., Civjan, N. R., Sligar, S. G. & Schuler, M. A. Co-incorporation of
-heterologously expressed Arabidopsis cytochrome P450 and P450 reductase into
-soluble nanoscale lipid bilayers. Archives of Biochemistry and Biophysics 424,
-141–153 (2004).
 
 BIBLIOGRAPHY
 
 165
 
-45. Borch, J. & Hamann, T. The nanodisc: A novel tool for membrane protein
+45. Duan, H., Civjan, N. R., Sligar, S. G. & Schuler, M. A. Co-incorporation of
+heterologously expressed Arabidopsis cytochrome P450 and P450 reductase into
+soluble nanoscale lipid bilayers. Archives of Biochemistry and Biophysics 424,
+141–153 (2004).
+46. Borch, J. & Hamann, T. The nanodisc: A novel tool for membrane protein
 studies. Biological Chemistry 390, 805–814 (2009).
-46. Vinothkumar, K. R. Membrane protein structures without crystals, by single
+47. Vinothkumar, K. R. Membrane protein structures without crystals, by single
 particle electron cryomicroscopy. Current Opinion in Structural Biology 33,
 103–114 (2015).
-47. Raunser, S. & Walz, T. Electron Crystallography as a Technique to Study the
+48. Raunser, S. & Walz, T. Electron Crystallography as a Technique to Study the
 Structure on Membrane Proteins in a Lipidic Environment. Annual Review of
 Biophysics 38, 89–105 (2009).
-48. Vinothkumar, K. R. & Henderson, R. Structures of membrane proteins. Quarterly Reviews of Biophysics 43, 65–158 (2010).
-49. Grant, T. & Grigorieff, N. Measuring the optimal exposure for single particle
+49. Vinothkumar, K. R. & Henderson, R. Structures of membrane proteins. Quarterly Reviews of Biophysics 43, 65–158 (2010).
+50. Grant, T. & Grigorieff, N. Measuring the optimal exposure for single particle
 cryo-EM using a 2.6 Å reconstruction of rotavirus VP6. eLife 4 (2015).
-50. Bartesaghi, A., Merk, A., Banerjee, S., Matthies, D., Wu, X., Milne, J. L. S.
+51. Bartesaghi, A., Merk, A., Banerjee, S., Matthies, D., Wu, X., Milne, J. L. S.
 & Subramaniam, S. 2.2 Å resolution cryo-EM structure of β-galactosidase in
 complex with a cell-permeant inhibitor. Science (New York, N.Y.) 348, 1147–
 51 (2015).
-51. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
-52. Krogh, A., Larsson, B., Von Heijne, G. & Sonnhammer, E. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of Molecular Biology 305, 567–580 (2001).
-53. Tusnády, G. E. & Simon, I. The HMMTOP transmembrane topology prediction
+52. Jones, D. T. Improving the accuracy of transmembrane protein topology prediction using evolutionary information. Bioinformatics 23, 538–544 (2007).
+53. Krogh, A., Larsson, B., Von Heijne, G. & Sonnhammer, E. L. Predicting transmembrane protein topology with a hidden Markov model: Application to complete genomes. Journal of Molecular Biology 305, 567–580 (2001).
+54. Tusnády, G. E. & Simon, I. The HMMTOP transmembrane topology prediction
 server. Bioinformatics 17, 849–850 (2001).
-54. Viklund, H. & Elofsson, A. Best α-helical transmembrane protein topology predictions are achieved using hidden Markov models and evolutionary information.
+55. Viklund, H. & Elofsson, A. Best α-helical transmembrane protein topology predictions are achieved using hidden Markov models and evolutionary information.
 Protein Science 13, 1908–1917 (2004).
-55. Viklund, H. & Elofsson, A. OCTOPUS: Improving topology prediction by
-two-track ANN-based preference scores and an extended topological grammar.
-Bioinformatics 24, 1662–1668 (2008).
 
 166
 
 BIBLIOGRAPHY
 
-56. Käll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology and signal peptide prediction method. Journal of Molecular Biology 338,
+56. Viklund, H. & Elofsson, A. OCTOPUS: Improving topology prediction by
+two-track ANN-based preference scores and an extended topological grammar.
+Bioinformatics 24, 1662–1668 (2008).
+57. Käll, L., Krogh, A. & Sonnhammer, E. L. L. A combined transmembrane topology and signal peptide prediction method. Journal of Molecular Biology 338,
 1027–1036 (2004).
-57. Bernsel, A., Viklund, H., Falk, J., Lindahl, E., von Heijne, G. & Elofsson, A.
+58. Bernsel, A., Viklund, H., Falk, J., Lindahl, E., von Heijne, G. & Elofsson, A.
 Prediction of membrane-protein topology from first principles. Proceedings of
 the National Academy of Sciences 105, 7177–7181 (2008).
-58. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
+59. Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic
 character of a protein. Journal of Molecular Biology 157, 105–132 (1982).
-59. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & Von Heijne, G. Molecular code for
+60. Hessa, T., Meindl-Beinker, N. M., Bernsel, A., Kim, H., Sato, Y., LerchBader, M., Nilsson, I., White, S. H. & Von Heijne, G. Molecular code for
 transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
 1030 (2007).
-60. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212 (2015).
-61. Petersen, T. N., Brunak, S., Von Heijne, G. & Nielsen, H. SignalP 4.0: Discriminating signal peptides from transmembrane regions. Nature Methods 8, 785–786
+61. Bateman, A. et al. UniProt: A hub for protein information. Nucleic Acids Research 43, D204–D212 (2015).
+62. Petersen, T. N., Brunak, S., Von Heijne, G. & Nielsen, H. SignalP 4.0: Discriminating signal peptides from transmembrane regions. Nature Methods 8, 785–786
 (2011).
-62. Wong, W. C., Maurer-Stroh, S. & Eisenhaber, F. Not all transmembrane helices
-are born equal: Towards the extension of the sequence homology concept to
-membrane proteins. Biology Direct 6, 57 (2011).
 63. Guna, A. & Hegde, R. S. Transmembrane Domain Recognition during Membrane Protein Biogenesis and Quality Control. Current Biology 28, R498–R511
 (2018).
-64. Coskun, Ü. & Simons, K. Cell Membranes: The Lipid Perspective. Structure 19,
-1543–1548 (2011).
-65. Stansfeld, P. J., Goose, J. E., Caffrey, M., Carpenter, E. P., Parker, J. L., Newstead, S. & Sansom, M. S. MemProtMD: Automated Insertion of Membrane
+64. Stansfeld, P. J., Goose, J. E., Caffrey, M., Carpenter, E. P., Parker, J. L., Newstead, S. & Sansom, M. S. MemProtMD: Automated Insertion of Membrane
 Protein Structures into Explicit Lipid Membranes. English. Structure 23, 1350–
 1361 (2015).
+65. Coskun, Ü. & Simons, K. Cell Membranes: The Lipid Perspective. Structure 19,
+1543–1548 (2011).
 
 BIBLIOGRAPHY
 
