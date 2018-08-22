@@ -16,6 +16,7 @@
 
 \usepackage{graphicx} %use [!ht] (which means ignore sensible protocols and place here) not [h] (which means place here-ish) for figures otherwise they end up at the end of the chapter.
 \usepackage{amsmath}
+%\usepackage{siunitx}
 \usepackage{csquotes}
 \usepackage{longtable}
 \usepackage[font=footnotesize,labelfont=bf,justification=justified,format=plain,up,textfont=up]{caption} %\usepackage{tabularx}
@@ -29,6 +30,7 @@
 %Special commands
 \newcommand{\specialcell}[2][c]{%
   \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+\newcommand{\angstrom}{\textup{\AA}}
 
 \addbibresource{references.bib} % This is the file containing all your bibtex references. All reference managers can export to this format.
 \graphicspath{{images/}} %Store all your figures here
