@@ -106,7 +106,7 @@ Here, we also present evidence for a conserved polar strip along the spontaneous
 
 \section{Methods}
 
-\subsection{Building a List of Tail-Anchors}
+\subsection{Building a list of tail-anchors}
 Steps carried out by Kalbfleisch \textit{et al.} (Traffic 8: 1687\-1694) to generate a list of all \gls{ta} proteins in the human proteome ~\cite{Kalbfleisch2007} were recreated using up to date tools and applied to other model representative species.
 Whilst their study focused on the human proteome, here we take into account the entire TrEMBL and SwissProt database and then stratify the datasets by the organism at the end of the pipeline.
 An overview of the generation of these datasets is shown in Figure \ref{fig:dataset-overview}.
@@ -121,7 +121,7 @@ An overview of the generation of these datasets is shown in Figure \ref{fig:data
 \label{fig:dataset-overview}
 \end{figure}
 
-\subsubsection{SwissProt Tail Anchored Dataset According to Filters}
+\subsubsection{SwissProt tail anchored dataset according to filters}
 There were 557012 protein records downloaded from SwissProt via UniProt~\cite{TheUniProtConsortium2014} (downloaded 24--04--2018).
 106149~\gls{tmh}s (\url{TRANSMEM} annotation) were found between 76953 records (\url{annotation:(type:transmem) AND reviewed:no}).
 This keyword is contained in a record according to either experimental evidence~\cite{TheUniProtConsortium2014} or a conservative meta-analysis of~\gls{tmh} prediction using TMHMM~\cite{Krogh2001}, Memsat~\cite{Jones2007}, Phobius~\cite{Kall2004,Kall2007} and the hydrophobic moment plot method of Eisenberg and co-workers~\cite{Eisenberg1984}.
@@ -140,7 +140,7 @@ When counting proteomes with greater than 20 records, 49 belonged to the \textit
 Only 16 records were found for the peroxisome (query \url{locations:(location:"Endoplasmic reticulum [SL-0204]"}) which is not high enough a sample size for accurate statistical analysis.
 
 
-\subsubsection{TrEMBL Tail Anchored Dataset According to Filters}
+\subsubsection{TrEMBL tail anchored dataset according to filters}
 111425234 records were stored in the TrEMBL database at the time of download (downloaded 25--04--2018).
 22107826 of those contained \url{TRANSMEM} annotation (\url{annotation:(type:transmem) AND reviewed:no}).
 18053 of these were single\--pass proteins.
@@ -151,7 +151,7 @@ All of these were within the length restrictions of between 16 and 35 residues f
 When considering which species these records come from, no more than 1 record belonged to any given species.
 To avoid representing a well\--annotated SwissProt record that includes species annotation by a poorly annotated TrEMBL record without species annotation, these TrEMBL records were omitted from the sequence redundancy protocol and further analysis.
 
-\subsubsection{UniProt Curated List}
+\subsubsection{UniProt curated list}
 A query for \url{locations:(location:"Single\--pass type IV membrane protein [SL-9908]")} was used in UniProt which returned 2633 UniProtKB IDs; 463 SwissProt results and 2170 TrEMBL results.
 Type IV anchors are sometimes split into two topological groups; A (A cytosolic facing N terminal domain) and B (The N terminal is targeted to the lumen), however, the UniProt nomenclature is strictly N terminal being cytosolic.
 This manually created list contained some \gls{ta} proteins that didn't exactly fit the generally accepted definition of a \gls{ta} protein and were excluded from further analysis.
@@ -170,10 +170,10 @@ Proteomes represented by more than 20 records include \textit{A. thaliana} (53 r
 Two subcellular location datasets had no automatically ascribed records and only contained manually annotated SwissProt records; 31 in the \gls{pm} (query \url{locations:(location:"Cell membrane [SL-0039]")}, and 83 in the Golgi (query \url{locations:(location:"Golgi apparatus [SL-0132]")}).
 There were only 8 \gls{ta} proteins located in the peroxisome (\url{locations:(location:"Golgi apparatus [SL-0204]")}), making them an unsuitable dataset for statistical analysis.
 
-\subsubsection{Remapping The Previous Dataset}
+\subsubsection{Remapping the previous dataset}
 189 of the 411 proteins from the previous Kalbfleisch \textit{et al.,} 2007 study~\cite{Kalbfleisch2007} were successfully mapped to 222 UniProtKB IDs using the UniProt mapping tools with the RefSeq Protein to UniProtKB option~\cite{TheUniProtConsortium2014}.
 
-\subsubsection{Tail Anchor Protein Chaperone Interactors}
+\subsubsection{Tail anchor protein chaperone interactors}
 As discussed in the introduction text,  there is evidence surrounding the \gls{tmh} biochemical factors that determine which chaperone will interact with a given \gls{ta} protein.
 To gain a more quantitative understanding of the relationship between the \gls{ta} protein \gls{tmh} and the potential chaperones, it would be ideal to have a large \gls{ta} dataset stratified by known chaperone interactions.
 
@@ -202,13 +202,13 @@ The human SRP54 (Biogrid ID 112607) had 37 interactors which mapped to 85 UniPro
 On the other hand, the yeast SRP54 (BioGrid ID 36258) had 270 interactors which mapped to 273 UniProt records.
 4 of those were found in our \gls{ta} lists.
 
-\subsection{Calculating Hydrophobicity}
+\subsection{Calculating hydrophobicity}
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half windows were permitted.
 Average hydrophobicity takes the total of the raw amino acid hydrophobicity values and divides them by the number of amino acids in the slice.
 Unless explicitly stated, values reported in the results are based on the Kyte \& Doolittle scale~\cite{Kyte1982} which is based on the water\---vapour transfer free energy and the interior-exterior distribution of individual amino acids.
 %Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
 
-\subsection{Calculating Sequence Information Entropy}
+\subsection{Calculating sequence information entropy}
 Information entropy is essentially an estimate of the linguistic entropy of a string.
 In the context of biology, it can be thought of as an estimation of the non-randomness of a sequence.
 Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002} and is a component of the TMSOC z-score which can predict function beyond anchoring of a \gls{tmh}; an increase in complexity is associated with increased likelihood of function~\cite{Wong2011, Wong2012, Baker2017}.
@@ -245,7 +245,7 @@ This aims to answer the question of ``if we have a certain amino acid, which pos
 $a_i$ is the total abundance of residues of a specific amino acid type ($i$) of an aligned set of~\gls{tmh}-containing segments.
 Peaks in $q_{i,r}$ as a function of $r$ (the position index) reveal the preferred positions of residues of type $i$.
 
-\subsection{Modelling Cytochrome b5 and PTP1b}
+\subsection{Modelling cytochrome b5 and PTP1b}
 The HHpred web server was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding2005}.
 Homologues were queried using three iterations of HHblitscd against the sequence database version uniprot20\_2016\_02 to generate the query Hidden Markov Model.
 The choice of templates was driven by the quality and coverage of the alignments and of the quality of the models that resulted.
@@ -306,9 +306,9 @@ Consurf \cite{Ashkenazy2010} was used to map the conservation scores based on 5 
 Hydrophobicity was mapped according to the Eisenberg aggregated hydrophicity scale \cite{Eisenberg1984} using a script accessed at \url{https://pymolwiki.org/index.php/Color_h}.
 
 
-\section{Results And Discussion}
+\section{Results and discussion}
 
-\subsection{A Comparison Of Up-To-Date Tail-Anchored Protein Datasets}
+\subsection{A comparison of up-to-date tail-anchored protein datasets}
 Here, we use two sources for \gls{ta} protein datasets.
 One dataset is based on a previous method~\cite{Kalbfleisch2007} to obtain \gls{ta} datasets and consists of 9296 \gls{tmh} residues (13279 including up to $\pm$5 flanking residues) from 443 SwissProt entries with 90\% redundancy removal.
 Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90\% redundancy removal.
@@ -356,7 +356,7 @@ Ultimately, this points to the idea that datasets are a moving target as they ar
 
 
 
-\subsection{It Is Difficult To Observe Any Hydrophobic Variation Of TA Protein TMHs From Different Species}
+\subsection{It is difficult to observe any hydrophobic variation of tail\--anchored protein transmembrane helices from different species}
 
 In single\--pass proteins of eukaryotic species, there are typically various adaptations of the \gls{tmh} to adhere to the membrane constraints of the specific membrane.
 For single\--pass proteins, previous studies have observed differences in terms of \gls{tmh} hydrophobicity between \textit{Saccharomyces cerevisiae} and \textit{Homo sapiens} \gls{tmp}s~\cite{Sharpe2010}, or in cress, yeast, bacteria, and \textit{Homo sapien} datasets~\cite{Baker2017}.
@@ -438,7 +438,7 @@ Here, we are dealing with datasets at least an order of magnitude smaller than t
 However, this only goes to show that if there is a biochemically distinct effect in \gls{ta} proteins in terms of hydrophobicity between species, it is indeed weak.
 
 
-\subsection{There Are Biochemical Differences Between Tail-Anchored TMHs From Different Organelles}
+\subsection{There are biochemical differences between tail\--anchored transmembrane helices from different organelles}
 
 Although the species datasets appeared to have no significant differences between them in terms of hydrophobicity, we also investigated the subcellular membranes.
 We see clear differences in the biochemistry of the \gls{tmh} (Figure \ref{fig:average_organelle_factors_ta}).
@@ -503,8 +503,8 @@ This gap in hydrophobicity appears to be due to a trend of the \gls{er}, \gls{pm
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/UniProt-heatmaps}
-\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
-{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the UniProt manually curated dataset.}
+\captionof{figure}[The normalised skews of each amino acids from tail\--anchored proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from tail\--anchored proteins grouped by localisation from the UniProt manually curated dataset.}
 
 The residue position aligned with the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
 Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
@@ -542,8 +542,8 @@ This results in a strong net positive\--outside charge signal since there are mo
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/SwissProt-heatmaps}
-\captionof{figure}[The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset.]
-{\textbf{The normalised skews of each amino acids from TA proteins grouped by localisation from the SwissProt automatically filtered dataset}
+\captionof{figure}[The normalised skews of each amino acids from tail\--anchored proteins grouped by localisation from the SwissProt automatically filtered dataset.]
+{\textbf{The normalised skews of each amino acids from tail\--anchored proteins grouped by localisation from the SwissProt automatically filtered dataset}
 
 Similarly to figure \ref{fig:uniprot-heatmap}, the residue position aligned with the centre of the TMH is on the horizontal axis, and the residue type is on the vertical axis.
 Amino acid types are listed in order of decreasing hydrophobicity according to the Kyte and Doolittle scale \cite{Kyte1982}.
@@ -570,8 +570,8 @@ As a trend, the information entropy mirrors the hydrophobicity albeit with less 
 
     \begin{table}[htbp]
     \centering
-    \captionof{table}[Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.]
-    {\textbf{Statistical comparisons between TMH sequences from organelles in the SwissProt Filtered Dataset.}
+    \captionof{table}[Statistical comparisons between transmembrane helix sequences from organelles in the SwissProt Filtered Dataset.]
+    {\textbf{Statistical comparisons between transmembrane helix sequences from organelles in the SwissProt Filtered Dataset.}
     Here, we compare organelle subsets from the SwissProt automatically filtered dataset of \gls{ta} proteins.
     We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria referred to as ``mito'' (N=65).
     The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
@@ -648,7 +648,7 @@ But this must be tempered by noting that the spontaneously inserting cytochrome 
 In summary, the mitochondria located \gls{ta} protein \gls{tmh}s typically have a preference for alanine over leucine unlike their secretory counterparts and have a negative\--inside positive\--outside tendency counter to the overwhelming majority of \gls{tmp}s.
 It is unclear if these features are a biophysical adaptation or part of a biological sorting process.
 
-\subsection{More annotation is required to identify chaperone interaction factors of the TMH.}
+\subsection{More annotation is required to identify chaperone interaction factors of the transmembrane helix.}
 
 \gls{ta} proteins known to interact with certain chaperones were acquired by filtering the interactor partner IDs for chaperones from BioGrid through the redundant versions of these UniProt manually curated lists and SwissProt automatically generated lists.
 
@@ -686,8 +686,8 @@ However, this method demonstrates a potential way that this chaperone\--interact
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/interaction-profile}
-\captionof{figure}[The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.]
-{\textbf{The profile of TMH and flanks hydrophobicity from TA protein groups stratified by chaperone interactors.}
+\captionof{figure}[The profile of transmembrane helix and flanks hydrophobicity from tail\--anchored protein groups stratified by chaperone interactors.]
+{\textbf{The profile of transmembrane helix and flanks hydrophobicity from tail\--anchored protein groups stratified by chaperone interactors.}
 On the horizontal axis is the position relative to the central TMH residue defined by UniProt.
 On the vertical axis is the Kyte \& Doolittle hydrophobicity windowed across 5 residues allowing for half windows.
 The chaperone interactors are colour coded according to the key.
@@ -696,7 +696,7 @@ The chaperone interactors are colour coded according to the key.
 \label{fig:interaction-profile}
 \end{figure}
 
-\subsection{Spontaneous Insertion May Be Achieved by Polar Strips in the TMH of Tail-Anchored Proteins}
+\subsection{Spontaneous insertion may be achieved by polar strips in the transmembrane helix of tail-anchored proteins}
 
 The \gls{tmh}s of cytochrome b5 and PTP1b are among the least hydrophobic of the \gls{ta} proteins and in theory misses the $\Delta$G requirements of a \gls{tmh} due to their relatively polar \gls{tmh}s \cite{Rabu2008, Rabu2009}.
 Indeed the \gls{tmh} is so polar that it is not trivial to predict and is not found in either dataset prepared herein.
@@ -751,7 +751,7 @@ Once integrated, the \gls{tmh} charged flanking regions help sustain integration
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=1\textwidth]{TA_chapter/spont-insertion-patch}
-        \captionof{figure}[A cartoon of a potential method the cytochrome b5 and PTP1b TMH could integrate spontaneously into the membrane.]{\textbf{A cartoon of a potential method the cytochrome b5 and PTP1b TMH could integrate spontaneously into the membrane.}
+        \captionof{figure}[A cartoon of a potential method the cytochrome b5 and PTP1b transmebrane helix could integrate spontaneously into the membrane.]{\textbf{A cartoon of a potential method the cytochrome b5 and PTP1b transmembrane helix could integrate spontaneously into the membrane.}
         A) The marginally hydrophobic \gls{tmh} in teal cannot approach the membrane interface.
         B) Although the average hydrophobicity is the same as the teal \gls{tmh}, by having a more hydrophobic side (blue), and a more polar side (green), the \gls{ta} protein now has a \gls{tmh} surface that may interact more favourably with the interfacial region.
         Once interacting with the membrane sufficiently close to the interfacial region, the hydrophobic face is still being entropically driven by water molecules from the cytosol, which would lead to partitioning into the membrane.
