@@ -12,6 +12,13 @@ makeglossaries chapter_tailanchor
 makeglossaries chapter_predictfunction
 makeglossaries chapter_conclusions
 pdflatex thesis.tex
+makeglossaries thesis
+makeglossaries chapter_introduction
+makeglossaries chapter_tmcomposition
+makeglossaries chapter_tailanchor
+makeglossaries chapter_predictfunction
+makeglossaries chapter_conclusions
+pdflatex thesis.tex
 pdflatex thesis.tex
 
 pdftotext thesis.pdf
