@@ -25,8 +25,8 @@ Additionally, within the~\gls{ta} class of proteins are a set of vesicle fusion 
 The idea that \gls{snare} proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome\--based drug delivery.
 Furhtermore, this could can aid future research for testing complex biological molecular networks~\cite{Allen2013, Nordlund2014}.
 
-The \gls{ta} protein's \gls{tmh} is unusual in that it is both the anchor and the targeting factor for the \gls{er} \cite{Kutay1993}.
-Furthermore, the hydrophobicity appears to be a determining factor in the delivery pathway that~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that there are several mechanisms of translocation~\cite{Rabu2009, Johnson2013}(Figure \ref{fig:biogenesis-overview}).
+The \gls{ta} protein's \gls{tmh} is both the anchor and the targeting factor for the \gls{er} \cite{Kutay1993}.
+Furthermore, the hydrophobicity appears to be a determining factor in the delivery pathway that~\gls{ta} proteins use for insertion~\cite{Rabu2008, Rabu2009}, for which there is evidence demonstrating that there are several mechanisms of protein membrane integration~\cite{Rabu2009, Johnson2013}(Figure \ref{fig:biogenesis-overview}).
 %Alternative mechanisms (Kutay et al., 1995; Nyathi et al., 2013; Chartron et al., 2012)
 
 \begin{sidewaysfigure}
@@ -56,13 +56,15 @@ Nevertheless, this suggests the possibility of at least one insertion mechanism 
 Most likely is that \gls{srp} binds to the \gls{ta} protein after it is released from the ribosome and chaperones it until it is close enough to the established post translational machinery \cite{Casson2017} (Figure \ref{fig:biogenesis-overview}iii).
 
 A second redundant system is also known to be involved in \gls{ta} protein biogenesis and is referred to as the TRC40 (also known as Asna1) pathway in mammals (Figure \ref{fig:biogenesis-overview}i).
-A conserved homologue was found in \textit{Saccharomyces cerevisiae}, Get3 \cite{Schuldiner2008}, and so in yeast, this mechanism is generally referred to as the Get pathway.
+A conserved homologue was found in \textit{Saccharomyces cerevisiae}, Get3 \cite{Schuldiner2008}, named after the action it has in the GET pathway.
 Unlike co-translational insertion, the post\--translational chaperone proteins do not couple with the ribosome, so the \gls{ta} protein must be exposed to the cytosolic environment for at least some time \cite{Guna2018}.
 At some point after the \gls{ta} protein emerges from the ribosomal exit tunnel, the \gls{ta} protein \gls{tmh} associates with Sgt2 (SGTA in mammals).
 An \textit{in vitro} assay revealed that Sgt2 associates with Get5  \cite{Wang2010} (UBL4A) as part of a dimerised Get4 (TRC35) and Get5 complex (two copies of each)\cite{Chang2010, Chang2012, Chartron2010, Chartron2012}.
-At this point Sgt2 either associates with preferential Get3 which targets the \gls{ta} protein for \gls{er} membrane biogenesis or if there are excess \gls{ta} proteins Sgt2 also associates with Bag6 which targets the \gls{ta} protein for degradation \cite{Shao2017}.
-This ``race'' between Bag6 and Get3 ensures a level of quality control within the system.
-Assuming the \gls{ta} protein is not targeted for degradation, Get3 associates first with this complex via an interaction with the N-terminal of Get4 \cite{Wang2010}.
+
+In mammals, at this point SGTA either associates with preferential TRC40 which targets the \gls{ta} protein for \gls{er} membrane biogenesis or if there are excess \gls{ta} proteins SGTA also associates with Bag6 which targets the \gls{ta} protein for degradation \cite{Shao2017}.
+This ``race'' between Bag6 and TRC40 ensures a level of quality control within the system.
+
+Get3 associates first with the Sgt2\--Get4\--Get5 complex via an interaction with the N-terminal of Get4 \cite{Wang2010}.
 A dimerised ADP-bound Get3 \cite{Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2010} associates with and shields the C\--terminal region of the \gls{ta} protein \cite{Stefanovic2007, Schuldiner2008, Favaloro2008}.
 This shielding may be especially important since Get3 is involved in the folding of any nascent \gls{ta} proteins, which would be an unviable hydrophobic in the cytosol \cite{Jonikas2009}.
 Fluorescence studies revealed that tagged Get3 appears at both the cytosol and the \gls{er} membrane so apparently shuttles the \gls{ta} protein between the transmembrane complex of Get1 and Get 2 (WRB and CAML in mammalian cells), that contains cytosolic domains that receive the Get3, Get4, Get5, Sgt2 complex \cite{Huh2003, Zalisko2017}.
@@ -70,36 +72,37 @@ Yet it is an interesting note that a single molecule fluorescence study revealed
 The Get pathway exclusively delivers \gls{ta} proteins to the \gls{er} membrane, and indeed has been recently shown to be responsible for some of the mislocalisation of mitochondrial \gls{ta} proteins during overexpression or signal masking to the \gls{er} \cite{Vitali2018}.
 The significance of this is that the Get machinery can recognise and tolerate integration of non\--\gls{er} proteins.
 Yet there is also evidence that the deep groove of Get3 \cite{Mariappan2011, Stefer2011} predisposes it to only effectively integrating the more hydrophobic \gls{tmh}s of \gls{ta} proteins \cite{Wang2010, Rao2016}.
-As an example, increasing the hydrophobicity of the \gls{ta} protein squaline synthase in a TRC40 inhibited system reduced the biogenesis of the protein, where the wild\--type was unaffected by TRC40 inhibition \cite{Guna2018a}.
+As an example, increasing the hydrophobicity of the \gls{tmh} in squalene synthase (an \gls{er} \gls{ta} \gls{tmp} involved in sterol synthesis) in a TRC40 inhibited system reduced the biogenesis of the protein, where the wild\--type was unaffected by TRC40 inhibition \cite{Guna2018a}.
 Around a half of \gls{ta} proteins are estimated to not use the TRC pathway \cite{Guna2018a}.
 
 Redundancy of the Get/TRC40 pathway and \gls{srp} pathway may be explained in part by a novel \gls{srp} and Get independent pathway.
-This pathway utilises the Snd protein pathway and was discovered in yeast \cite{Aviram2016} (Figure \ref{fig:biogenesis-overview}ii).
+This pathway utilises the Snd pathway and was discovered in yeast \cite{Aviram2016} (Figure \ref{fig:biogenesis-overview}ii).
 Snd1 binds to the \gls{ta} protein after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane\--bound complex which integrates the \gls{ta} protein into the membrane.
-So far only the homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity \cite{Haßdenteufel2017}.
+So far only the human homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity \cite{Haßdenteufel2017}.
 However, it is suspected that functional mammalian homologues exist for Snd1 and Snd3 also, albeit with low sequence similarity.
 
 Even more recently identified as a \gls{ta} protein insertase was the \gls{emc} \cite{Guna2018a} (Figure \ref{fig:biogenesis-overview}iv).
-In the interaction study, squaline synthase did not effectively crosslink with any TRC pathway machinery.
-Calmodulin sufficiently prevented aggregation and acted as a chaperone in \gls{er} microsomes in a chaperone free \textit{E. coli} translation system with purified translation factors.
-In this system, calmodulin acted similarly to SGTA, and although in native cytosol calmodulin was preferred, SGTA could also be used by the protein.
-By contrast VAMP2, a \gls{ta} protein known to interact with TRC40 \cite{Shao2017}, was unable to insert in this system.
-Abolition by knock outs of the \gls{emc} components greatly reduced the insertion potential of squaline synthase, along with five mutants thereof, and six other TRC40 independent proteins in \gls{er} membranes from semi-permeabilised cultured cells, but not that of VAMP2.
-Insertion of Sec61$\beta$ was partially dependent on both systems, perhaps indicating the midway point between the two \cite{Guna2018a} (Figure \ref{fig:biogenesis-overview}).
+In the interaction study, squalene synthase did not effectively crosslink with any TRC pathway machinery.
+Calmodulin (a eukaryotic highly conserved calcium\--sensing globular protein with a flexible symmetrical structure that performs a variety of functions) sufficiently prevented aggregation and acted as a chaperone in \gls{er} microsomes in a chaperone free \textit{E. coli} translation system with purified translation factors.
+In this system, calmodulin acted similarly to the mammalian chaperone protein SGTA, and although in native cytosol calmodulin was preferred, SGTA could also be used by the protein.
+By contrast VAMP2 (a \gls{ta} protein involved in vesicle binding), which is known to interact with TRC40 as a chaperone \cite{Shao2017}, was unable to insert in this system.
+Abolition by knock outs of the \gls{emc} components greatly reduced the insertion potential of squalene synthase, along with five mutants thereof, and six other TRC40 independent proteins in \gls{er} membranes from semi-permeabilised cultured cells, but not that of VAMP2.
+Insertion of Sec61$\beta$ (a post translaitonally inserted protein ) was partially dependent on both systems, perhaps indicating the midway point between the two \cite{Guna2018a} (Figure \ref{fig:biogenesis-overview}).
 
-In the absence of the mitochondrial TIM-TOM insertion machinery and Get machinery, Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006}.
-In biological systems, this is possibly used for mitochondrial delivery \cite{Kemper2008} (Figure \ref{fig:biogenesis-overview} (v)).
-Chimeric synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of this spontaneous insertion if the tail anchor domain is replaced by the~\gls{tm} domains belonging to a protein of known spontaneously inserting domains, i.e spontaneous insertion is a property of the \gls{tmh}, not of the rest of the protein \cite{Nordlund2014}.
+Some \gls{ta} proteins, for example BCL\--2 involved in apoptosis, are targetted to the \gls{mom} instead of the \gls{er}, however the mitochondrial mechanism of membrane integration works independently from the \gls{tom} \cite{Setoguchi2006, Kemper2008}.
+In the absence of the mitochondrial inner and outer translocons and their associated machinery, insertion machinery and GET/TRC machinery, heat shock proteins Hsp40 and Hsc70 chaperones along with ATP are also sufficient for enough biogenesis of \gls{ta} proteins for viable cell growth \cite{Rabu2008, Rabu2009, Ngosuwan2003, Colombo2009, Kemper2008, Meineke2008, Setoguchi2006, Kemper2008} (Figure \ref{fig:biogenesis-overview} (v)).
+Synaptobrevin, one of the first identified~ \gls{snare} proteins, is capable of spontaneous insertion if the naturally occuring \gls{ta} domain is replaced by the~\gls{tm} that is known to be able to spontanously insert into the \gls{er}.
+One can therefore conclude that spontaneous insertion is a property of the \gls{tmh}, not of the rest of the protein \cite{Nordlund2014}.
 Molecular dynamics simulations showed that direct insertion \gls{tmh}s thermodynamically mimics the energies of \gls{tmh}s integrated by the translocon \cite{Ulmschneider2014} so in theory, no integration machinery is strictly necessary if the \gls{tmh} can ``correctly'' interact with the membrane interface.
 Further, it was revealed that scrambling the \gls{tmh} sequence, but maintaining hydrophobicity, reduced the insertion potential of spontaneously inserting \gls{tmh}s \cite{Brambillasca2006}.
 This phenomenon cannot, therefore, be explained entirely by the marginal hydrophobicity of the \gls{tmh}.
 
 The few peroxisomal \gls{ta} proteins first associate with Pex19 which forms a complex with the membrane\--anchored Pex3 protein from which the \gls{ta} protein is integrated into the membrane \cite{Chen2014, Yagita2013, Costello2017}(Figure \ref{fig:biogenesis-overview}vi).
 
-Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targeted via the \gls{srp} pathway, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 and PTP1b can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40.
+Given a ``choice'', it is speculated that hydrophobicity determines the integration pathway since Sec61$\beta$ has a hydrophobic \gls{tmh} and is targeted via the \gls{srp} pathway to the \gls{er}, whereas marginally hydrophobic \gls{ta} proteins like cytochrome b5 and PTP1b can spontaneously insert \textit{in vitro} and biologically only rely on Hsp70 and Hsc40 \cite{Costa2018, Rabu2008, Rabu2009}.
 Altering the hydrophobicity, at least in the case of the spontaneously inserting PTP1b, also determines the localisation of the \gls{ta} protein to either the mitochondrial membrane or the \gls{er} membrane, or rather a more hydrophobic \gls{ta} protein \gls{tmh} is less likely to localise to the mitochondrial membrane \cite{Fueller2015}.
 Broader analysis has shown that hydrophobicity \cite{White1999} stratified by TM tendency score \cite{Zhao2006} can distinguish between the \gls{er} and mitochondrial localised \gls{ta} proteins \cite{Guna2018}.
-However, the tremendous diversity and known biogenesis redundancy of these proteins may mean that no single factor applied en masse may be able to distinguish the \gls{tmh} recognition factors and investigation into this area is becoming increasingly complex \cite{Guna2018}.
+However, the diversity and known biosynthetic redundancy of these proteins may mean that no single factor applied en masse is able to distinguish the \gls{tmh} recognition factors and investigation into this area is becoming increasingly complex \cite{Guna2018}.
 
 By regenerating a list of likely \gls{tmh}s \cite{Kalbfleisch2007} and using a manually curated list of \gls{ta} proteins \cite{TheUniProtConsortium2014}, this investigation aims to find relationships between biochemical factors and a disposition to a certain insertion mechanism and terminal localisations.
 Here, we also present evidence for a conserved polar strip along the spontaneously inserting \gls{ta} protein \gls{tmh}s, which may be the key to the initial interaction of these \gls{tmh}s with the membrane interface.
@@ -198,6 +201,7 @@ The \textit{Homo sapiens} Pex19 (BioGrid ID 111782) contained 230 interaction pa
 When the \gls{ta} list filters were applied, 2 \textit{Homo sapiens} and 7 \textit{Saccharomyces cerevisiae} records were found.
 
 For SRP54, ideally the plant version of the protein was required, for which there is more precedent for post\--translational protein interaction and biogenesis into the chloroplasts \cite{Abell2004}, however, of the 3 plant \gls{srp}s available on Biogrid, between them only 10 interactor pairs were available, none of which were common with our \gls{ta} lists.
+It is also worth noting that plants have two forms of SRP; one for the chloroplastic and one cytoplasmic which would have to be compared separately.
 The human SRP54 (Biogrid ID 112607) had 37 interactors which mapped to 85 UniProt IDs, but again, none of which were in our \gls{ta} lists.
 On the other hand, the yeast SRP54 (BioGrid ID 36258) had 270 interactors which mapped to 273 UniProt records.
 4 of those were found in our \gls{ta} lists.
@@ -328,7 +332,7 @@ Note that to avoid losing IDs to redundancy reduction this diagram was generated
 \label{fig:tadatasetoverlap}
 \end{figure}
 
-In order to get an understanding of the consistency of the datasets, before removing redundant proteins, we compared these two datasets to a dataset remapped set of proteins from a previous 2007 method~\cite{Kalbfleisch2007}.
+In order to get an understanding of the consistency of the datasets, before removing redundant proteins, we compared these two datasets to a remapped set of proteins from a previous 2007 method~\cite{Kalbfleisch2007}.
 The S1 dataset was built with an aim to gather \gls{ta} proteins in the human genome from the NCBI.
 The greatest source of uncertainty here is that the original S1 list includes 411 records, however, only 222 of these were successfully mapped to the UniProt dataset.
 This figure is closer to the 202 proteins from the original S1 list that excluded proteins that were either hypothetical or splice isoforms.
@@ -620,7 +624,7 @@ Furthermore, the \gls{pm} contains densely packed sphingolipids and sterols~\cit
 Mitochondria have bacterial lipids in their membrane and uniquely contain cardiolipin \cite{Choi2005}, which is also present in the mitochondrial outer membrane \cite{Gebert2009}.
 
 %Need mitochondria reference, and numbers for the UniER etc.
-Hydrophobic differences in the have already been observed in the mitochondria localised \gls{ta} protein \gls{tmh}s \cite{Borgese2003}.
+The hydrophobicity of \gls{tmh}s in \gls{ta} proteins is lower in proteins targetted to the mitochondria compared to those targetted to the \gls{er} \cite{Borgese2007}.
 Here we observe that average biochemical features are evidently of significance.
 Furthermore, we see that the typically positive\--inside negative outside tandem in positively and negatively charged residues is reversed in the mitochondria to positive\--outside negative\--inside.
 This variation in \gls{tmh} hydrophobicity and charged residue skew reversal may be yet another nuance of the system which goes some way to explaining how signals are maintained in local environments even when the average values are ambiguous.
@@ -634,15 +638,16 @@ However, whilst those numbers go some way to satisfy the flanking charge reversa
 Furthermore, these obseved membrane potential values are by their nature not fixed values.
 Not only would this be most striking in the nerve and muscle cells of course, but also would contrast between resting and stimulated secretory cells.
 
-It has been known for some time that both the charge and the hydrophobic length of the \gls{ta} protein \gls{tmh} region determine subcellular targeting of the protein \cite{Borgese2003}.
+It has been known for some time that both the charge and the hydrophobic length of the \gls{ta} protein \gls{tmh} region are indicative of subcellular targeting of the protein \cite{Borgese2007}.
+\gls{er} localised \gls{ta} proteins typically have a more hydrophobic \gls{tmh} than those targetted to the \gls{mom} \cite{Wang2010}.
 The C\--terminal tail charge is particularly important for determining subcellular localisation, and can even override the hydrophobic signal if strong enough \cite{Costello2017}.
 Here we see that while hydrophobicity is statistically different between the subcellular membranes, there is overlap.
 Whilst there are differences in total average charge at the C\--terminal flank, this is not an absolute rule.
-Perhaps these \gls{ta} protein anchors are similar to that of signal anchored proteins.
-Signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
+Perhaps these \gls{ta} protein anchor \gls{tmh}s are mechanistically similar to those of the signal anchor proteins.
+Mitochondrial signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
 Signal anchored proteins, along with some \gls{ta} proteins, have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
 
-Nevertheless, it is tempting to conclude that these biochemical differences between localised \gls{ta} proteins are an adaptation to the membrane composition and environment.
+Nevertheless, it is tempting to conclude that these biochemical differences between differently localised \gls{ta} proteins are an adaptation to the membrane composition and environment.
 But this must be tempered by noting that the spontaneously inserting cytochrome b5 localises to the mitochondrial membrane in the absence of cytosol, and to the \gls{er} in the presence of cytosol \cite{Costa2018}; there are also biological factors determining localisation.
 
 In summary, the mitochondria located \gls{ta} protein \gls{tmh}s typically have a preference for alanine over leucine unlike their secretory counterparts and have a negative\--inside positive\--outside tendency counter to the overwhelming majority of \gls{tmp}s.
@@ -671,15 +676,12 @@ So although these average values differ and overlap between various chaperone sy
 Similarly, whilst a clear dip in hydrophobicity at position +5 in Get3 from ~2-3 across the rest of the \gls{tmh} core to 0.32, there is no such spike for TRC40 meaning this is probably not of any functional importance, but rather an artefact of overrepresented proteins in the Get3 dataset.
 Snd1 also lies among these values, reinforcing Snd1 as a biological redundancy system \cite{Rabu2009, Johnson2013, Schuldiner2008}.
 
-As expected, the human Pex19 interactors are as a trend among the most polar throughout the \gls{tmh} core, however, when we consider the yeast Pex19, this trend is less clear.
+As expected, the human Pex19 interactors are as a trend among the most polar throughout the \gls{tmh} core, however, when we consider the yeast Pex19, this trend is less clear (Figure \ref{fig:interaction-profile}). In figure \ref{fig:interaction-profile},at least at a handful of locations (-3, 3, 4 and 5) the SRP54 interactors have the most hydrophobic \gls{tmh} cores.
 
-At least at a handful of locations (-3, 3, 4 and 5) the SRP54 interactors have the most hydrophobic \gls{tmh} cores.
-
-TRC40 has the highest \gls{tmh} hydrophobicities at 3.9 at position -1, however, the yeast homologue Get3 doesn't appear to have any preference for especially hydrophobic \gls{tmh}s.
+TRC40 has the highest \gls{tmh} hydrophobicities at 3.9 at position -1, however, the yeast homologue Get3 doesn't appear to have any preference for especially hydrophobic \gls{tmh}s (Figure \ref{fig:interaction-profile}).
 
 In order to remove redundant proteins and investigate this further, more records with greater levels of accurate annotation need to be available to both BioGrid and UniProt.
-We also observe a great deal of overlap between the profiles, indicating that as a trend this is more complex than hydrophobicity alone, or at least polarity is not the absolute determinant of subcellular targeting.
-Hydrophobicity alone would have resulted in stark contrasts between chaperone interactor pairs, even with low sample sizes.
+We also observe a great deal of overlap between the profiles, indicating that as a trend this is more complex than hydrophobicity alone and that net/average \gls{tmh} polarity is not the absolute determinant of chaperone association.
 
 However, this method demonstrates a potential way that this chaperone\--interaction problem can be investigated to verify that indeed hydrophicity plays a deterministic role in chaperone selection.
 
@@ -698,18 +700,20 @@ The chaperone interactors are colour coded according to the key.
 
 \subsection{Spontaneous insertion may be achieved by polar strips in the transmembrane helix of tail-anchored proteins}
 
-The \gls{tmh}s of cytochrome b5 and PTP1b are among the least hydrophobic of the \gls{ta} proteins and in theory misses the $\Delta$G requirements of a \gls{tmh} due to their relatively polar \gls{tmh}s \cite{Rabu2008, Rabu2009}.
+The \gls{tmh}s of cytochrome b5 and PTP1b are among the least hydrophobic of the \gls{ta} proteins \cite{Rabu2008, Rabu2009}.
 Indeed the \gls{tmh} is so polar that it is not trivial to predict and is not found in either dataset prepared herein.
 Structural modelling and analysis thereof reveal features that may explain the ``missing hydrophobicity''~\cite{Hessa2005, Hedin2010, Hessa2007, Ojemalm2012} of these particular \gls{tmh}s.
 
-The electrostatic surfaces are prototypical of a \gls{tmh} anchor with large ``positive\--inside'' patches \cite{VonHeijne1989, Andersson1992, Sharpe2010, Baeza-Delgado2013, Pogozheva2013, Baker2017} and a strong ``negative\--outside'' charge \cite{Baker2017}(Figure \ref{fig:cytb5-biochemistry}C).
-Once in the membrane, this may allow it to be an effective anchor despite such poor hydrophobicity since it satisfies electrostatic coupling to the membrane potential.
+A positive patch can be seen on the cytoplasmic side of either protein \gls{tmh}, and a negative patch on the lumenal tip at the C\--terminus.
+These electrostatic surfaces are prototypical of a \gls{tmh} anchor with large ``positive\--inside'' patches \cite{VonHeijne1989, Andersson1992, Sharpe2010, Baeza-Delgado2013, Pogozheva2013, Baker2017} and a strong ``negative\--outside'' charge \cite{Baker2017}(Figure \ref{fig:cytb5-biochemistry}C).
+Once in the membrane, this may allow the \gls{tmh} to be an effective anchor despite such poor hydrophobicity since it satisfies electrostatic coupling to the membrane potential.
 
-Furthermore, there is the question of overcoming the unfavourable interaction most \gls{tmh}s would face when coming into contact with the highly polar membrane interface.
+Furthermore, there is the question of overcoming the unfavourable interaction most \gls{tmh}s would hypothetically face when coming into contact with the highly polar membrane interface without the presence of membrane integration machinery.
 We observe a highly conserved strip of relatively polar / non-hydrophobic residues on one side of the \gls{tmh} core (in cytochrome b5 these are N112, P116, A120, A124 Y127, and R128).
 Similarly, a polar face exists for the PTP1b \gls{tmh} (R430, N434, Y426, T422, and T419).
 These polar faces would not be as repulsed by the interfacial environment as either a more hydrophobic \gls{tmh} or an equally hydrophobic \gls{tmh} with a different sequence and structure order (Figure \ref{fig:cytb5-biochemistry} and Figure \ref{fig:ptp1b-biochemistry}).
-Scrambling the cytochrome b5 \gls{tmh} sequence whilst maintaining the same hydrophobicity (DSNSS W W T N W V I P A I S A L I V A L M YR to DSNSS W W A S A I I A T M I P L L V N V W YR) reduces the insertion potential \cite{Brambillasca2006}; there is more to it than hydrophobicity alone.
+Scrambling the cytochrome b5 \gls{tmh} sequence whilst maintaining the same hydrophobicity (DSNSS W W T N W V I P A I S A L I V A L M YR to DSNSS W W A S A I I A T M I P L L V N V W YR) reduces the insertion potential \cite{Brambillasca2006}.
+Therefore we can conclude that there is more to thie phenomenon than hydrophobicity alone.
 It becomes apparent that the 3D arrangement of these relatively polar \gls{tmh} residues is conserved and is probably the key to spontaneous insertion of \gls{tmh}s.
 
 \begin{figure}[!ht]
@@ -744,9 +748,9 @@ It becomes apparent that the 3D arrangement of these relatively polar \gls{tmh} 
 \label{fig:ptp1b-biochemistry}
 \end{figure}
 
-We speculate that this polar face allows the unassisted approach to the membrane's polar phospholipid head groups, and once in sufficiently close proximity, the hydrophobic side of the helix is entropically driven by the water environment into the membrane (Figure \ref{fig:spont-insertion-patch}).
+We speculate that this polar face allows the unassisted approach to the membrane's polar phospholipid head groups, and once in sufficiently close proximity, the hydrophobic side of the helix is entropically driven by the water environment into the membrane core (Figure \ref{fig:spont-insertion-patch}).
 This close proximity is less likely to be achieved if there is no side of the \gls{tmh} to favourably interact with the lipid head groups, even though average hydrophobicity could be similar.
-Once integrated, the \gls{tmh} charged flanking regions help sustain integration in lieu of a more hydrophobic \gls{tmh} core.
+Once integrated, the charged \gls{tmh} flanking regions help sustain integration in lieu of a more hydrophobic \gls{tmh} core.
 
 \begin{figure}[!ht]
 \centering
@@ -764,19 +768,17 @@ Once integrated, the \gls{tmh} charged flanking regions help sustain integration
 
 \section{Summary}
 
-Here, we have observed a large biochemical distinction between \gls{ta} proteins with different terminal subcellular destinations.
-Previously it was known that both hydrophobicity and charge are involved in targeting \cite{Costello2017}.
-In this study, we find that the location of the charge along and around the \gls{tmh} differs among subcellular compartments.
+Here, we have observed a clear biochemical distinction between \gls{ta} proteins with different terminal subcellular destinations.
+Previously it was known that both hydrophobicity and charge are involved in targeting to distinct subcellular locations \cite{Costello2017}.
+In this study, we find that the location of the charge along and around the \gls{tmh} of \gls{ta} proteins differs among subcellular compartments.
 Crucially, there is a shift in the charged residue inside\--outside tandem in the \gls{tmh} flanking residues in different organelles.
-In the secretory pathway, the ``positive\--inside'' ``negative\--outside'' skew adheres to the membrane\--potential for electrostatic coupling, but in the mitochondrial outer membrane where there is no membrane potential, positively charged residues are skewed outside the cytoplasm, and the negatively charged residues are preferentially found inside the cytoplasm.
+In the secretory pathway, the ``positive\--inside'' ``negative\--outside'' skew adheres to the membrane\--potential for electrostatic coupling, but in the \gls{mom} where there is no membrane potential, positively charged residues are skewed to be located outside the cytoplasm, and the negatively charged residues are preferentially found inside the cytoplasm.
 Furthermore, the missing hydrophobicity of mitochondrial \gls{ta} proteins can be in part attributed to the high abundance of alanine rather than leucine or isoleucine in the \gls{tmh}; it is not solely the tolerance of polar residues in the \gls{tmh}.
 We expected to see evolutionary adaptations of \gls{tmh} hydrophobicity to species-specific membranes, even within eukaryotes~\cite{Baker2017, Sharpe2010}.
 In this study using both a manually curated dataset from UniProt and an automatically filtered list using SwissProt annotation, we do not observe any strong differences.
 Since we could not scrutinise a difference in the species, the strong hydrophobic differences between organelle \gls{tmh}s are indicative of a stronger adaptation pressure than between species as a whole.
 These differences are likely to be partially adaptations to the organelle location membrane type and also possible cryptic biological factors that play a role in their targeting via chaperone\--binding affinity.
-This could be a functional similarity to the signal-anchored proteins.
-
-We could not find any clear trends or perform statistical work on the interactor datasets due to the small sample sizes, however, as the databases are enriched, this same method will be able to answer the questions about chaperone affinity with more accuracy in the future.
+We could not find any clear trends or perform statistical work on the chaperone interactor datasets due to the small sample sizes, however, as the databases are enriched, this same method will be able to answer the questions about chaperone affinity with more accuracy in the future.
 
 Furthermore, the spontaneously inserting \gls{ta} proteins PTP1b and cytochrome b5 appear to share a polar face that emerges in structural models and a strong ``positive\--inside'' ``negative\--outside'' electrostatic surface.
 The polar face may be responsible for the promotion insertion potential in the absence of insertion proteins since when the sequence is scrambled, the insertion potential is reduced \cite{Brambillasca2006}.
