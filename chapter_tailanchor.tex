@@ -5,16 +5,16 @@
 
 \section{Abstract}
 
-\gls{ta} proteins are a functionally diverse group of post\--translationally inserted membrane proteins that have a cytosolic N-terminal, a transmembrane $\alpha$ helix, and a short C\--terminal tail.
-The \gls{tmh} and flanking regions of the \gls{ta} protein have been shown to contain sufficient information for subcellular targeting.
-Here, we built datasets based on sequence definitions of plausible \gls{ta} proteins using the  UniProt database.
-We show that any statistical differences between the hydrophobicity of the \gls{tmh} between \gls{ta} proteins belonging to mammalian, plant, or yeast organisms are, if at all present, small.
-Yet, the hydrophobicity of \gls{tmh}s from different subcellular locations is, on average, different between the mitochondria and other membranes along the secretory pathway.
+Tail\--anchored proteins are a functionally diverse group of post\--translationally inserted membrane proteins that have a cytosolic N-terminal, a transmembrane $\alpha$ helix, and a short C\--terminal tail.
+The transmembrane helix and flanking regions of the tail\--anchored protein have been shown to contain sufficient information for subcellular targeting.
+Here, we built datasets based on sequence definitions of plausible tail\--anchored proteins using the  UniProt database.
+We show that any statistical differences between the hydrophobicity of the transmembrane helix between tail\--anchored proteins belonging to mammalian, plant, or yeast organisms are, if at all present, small.
+Yet, the hydrophobicity of transmembrane helices from different subcellular locations is, on average, different between the mitochondria and other membranes along the secretory pathway.
 Notably, in the case of mitochondria, this appears to be a difference in the hydrophobic residue preference of alanine instead of leucine or isoleucine and does not seem to be an increase of intramembrane polar residues.
-In the \gls{er}, Golgi, and \gls{pm} there are positively charged residues inside the cytoplasm and negatively charged residues outside.
-Yet we identify a charge skew reversal of the ``positive\--inside'' and ``negative\--outside'' rules in the mitochondrial \gls{ta} proteins to negative\--inside and positive\--outside.
-Whether these differences are the result of membrane environment adaptations or biological features useful for the biogenesis and accurate localisation of the protein remains unclear.
-Furthermore, structural homology modelling of the spontaneously inserting \gls{tmh}s of PTP1b and cytochrome b5 revealed that \gls{ta} proteins may gain their ability to integrate into the membrane unaided due to a strip of conserved relatively polar residues and strong flanking charge that would allow effective membrane coupling and anchoring.
+In the endoplasmic reticulum, Golgi, and plasma membrane there are positively charged residues inside the cytoplasm and negatively charged residues outside.
+Yet we identify a charge skew reversal of the ``positive\--inside'' and ``negative\--outside'' rules in the mitochondrial tail\--anchored proteins to negative\--inside and positive\--outside.
+It is unclear to what extent these differences are the result of membrane environment adaptations or biological features useful for the biogenesis and accurate localisation of the protein.
+Furthermore, structural homology modelling of the spontaneously inserting transmembrane helices of PTP1b and cytochrome b5 revealed that tail\--anchored proteins may gain their ability to integrate into the membrane unaided due to a strip of conserved relatively polar residues and strong flanking charge that would allow effective membrane coupling and anchoring.
 
 \section{Introduction}
 
@@ -260,7 +260,7 @@ The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite
 The coverage and alignment quality of PTP1b was, however, not as good quality.
 Although UniProt holds 145 associated PDB structures for PTP1b, these structures cover at least some part of the globular domains of the protein.
 There are no PDB structures for the \gls{tm} domain or the nearby flanking regions.
-Instead of a global protein model, only the \gls{tmd} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C\--terminal tail) residues of PTP1b.
+Instead of a global protein model, only the \gls{tms} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C\--terminal tail) residues of PTP1b.
 The ProSA Z-Score was 0.08 which is well within the acceptable range for proteins of that length \cite{Wiederstein2007}.
 
 
@@ -643,8 +643,8 @@ It has been known for some time that both the charge and the hydrophobic length 
 The C\--terminal tail charge is particularly important for determining subcellular localisation, and can even override the hydrophobic signal if strong enough \cite{Costello2017}.
 Here we see that while hydrophobicity is statistically different between the subcellular membranes, there is overlap.
 Whilst there are differences in total average charge at the C\--terminal flank, this is not an absolute rule.
-Perhaps these \gls{ta} protein anchor \gls{tmh}s are mechanistically similar to those of the signal anchor proteins.
-Mitochondrial signal anchored proteins contain a single hydrophobic segment that serves as both a mitochondrial targeting signal and a membrane anchor.
+Perhaps these \gls{ta} protein anchor \gls{tmh}s are mechanistically similar to those of the signal anchor proteins, a group of singlepass \gls{tmp}s containing an uncleaved \gls{sp} that remains in the membrane.
+The single hydrophobic segment in mitochondrial signal anchored proteins serves as both a mitochondrial targeting signal and a membrane anchor.
 Signal anchored proteins, along with some \gls{ta} proteins, have been shown to be able to spontaneously insert into the membrane independently from the translocon~\cite{Elisa2012, Lan2000, Colombo2009}.
 
 Nevertheless, it is tempting to conclude that these biochemical differences between differently localised \gls{ta} proteins are an adaptation to the membrane composition and environment.

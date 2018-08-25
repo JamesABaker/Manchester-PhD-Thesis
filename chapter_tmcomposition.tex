@@ -1,20 +1,27 @@
 \chapter{The ``negative-outside'' rule}
 \sloppy
-The description of a~\gls{tmh} remains incomplete.
-The understanding of~\gls{tmp} topology is erroneous, and despite a wealth of structures, the general model of helix-helix and helix-lipid interactions remains speculative and requires a great deal of intensive analysis to generate a working model of a particular~\gls{tmp}.
 
-The work presented in this chapter is an expanded version of published work~\cite{Baker2017}.
-We use advanced statistical analysis to analyse large sequence datasets that have rich topological annotation.
-By analysing these sequences in the context of anchorage, we find that some~\gls{tmh}s are confined to biological constraints of the membrane, whereas others that likely contain function beyond anchorage, are less conforming to the membrane.
-Specifically, there is further elaboration of statistical definitions in the methods than in the published paper.
+The work presented in this chapter is a version of published work presented in Baker \textit{et al.,} 2017 titled ``Charged residues next to transmembrane regions revisited: ``Positive\--inside rule'' is complemented by the ``negative inside depletion/outside enrichment rule''''~\cite{Baker2017}.
+Here we include the supplementary information in the text.
 
 \section{Summary}
-As the idea of positive residues inside the cytoplasm emerged during the late 1980s, so did the idea of negative residues working in concert with~\gls{tmh} orientation.
-It was shown that removing a single lysine residue reversed the topology of a model \textit{erichia coli} protein, whereas much higher numbers of negatively charged residues are needed to reverse topology~\cite{Nilsson1990}.
-One would also expect to see a skew in negatively charged distribution if a cooperation between oppositely charged residues orientated a~\gls{tmh}, however there is no conclusive evidence in the literature for an opposing negatively charged skew~\cite{Granseth2005, Nilsson2005a, Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
-However, in \textit{E.
-coli} negative residues do experience electrical pulling forces when travelling through the SecYEG translocon indicating that negative charges are biologically relevant~\cite{Ismail2015}.
-In this chapter, we explore the literature surrounding charged residue distribution in the~\gls{tmh}, and demonstrate that the ``negative-outside'' skew exists in anchoring~\gls{tmh}s
+
+\subsection{Background}
+
+Transmembrane helices frequently occur amongst protein architectures as means for proteins to attach to or embed into biological membranes.
+Physical constraints such as the membrane’s hydrophobicity and electrostatic potential apply uniform requirements to transmembrane helices and their flanking regions; consequently, they are mirrored in their sequence patterns (in addition to transmembrane helices being a span of generally hydrophobic residues) on top of variations enforced by the specific protein’s biological functions.
+
+\subsection{Results}
+
+With statistics derived from a large body of protein sequences, we demonstrate that, in addition to the positive charge preference at the cytoplasmic inside (positive\--inside rule), negatively charged residues preferentially occur or are even enriched at the non\--cytoplasmic flank or, at least, they are suppressed at the cytoplasmic flank (negative\--not\--inside/negative\--outside rule).
+As negative residues are generally rare within or near transmembrane helices, the statistical significance is sensitive with regard to details of transmembrane helix alignment and residue frequency normalisation and also to dataset size; therefore, this trend was obscured in previous work.
+We observe variations amongst taxa as well as for organelles along the secretory pathway.
+The effect is most pronounced for transmembrane helices from single-pass transmembrane (bitopic) proteins compared to those with multiple transmembrane helices (polytopic proteins) and especially for the class of simple transmembrane helices that evolved for the sole role as membrane anchors.
+
+\subsection{Conclusions}
+
+The charged-residue flank bias is only one of the transmembrane helix sequence features with a role in the anchorage mechanisms, others apparently being the leucine intra-helix propensity skew towards the cytoplasmic side, tryptophan flanking as well as the cysteine and tyrosine inside preference.
+These observations will stimulate new prediction methods for transmembrane helices and protein topology from a sequence as well as new engineering designs for artificial membrane proteins.
 
 \section{Introduction}
 
@@ -32,7 +39,7 @@ These biological dispositions are exploitable in terms of~\gls{tm} region predic
 The prediction accuracy for true positives and negatives is reported to be close to 100\% and the remaining main cause of false positive prediction are hydrophobic \(\alpha\)--helices completely buried in the hydrophobic core of proteins.
  To note, reliable prediction of~\gls{tmh}s and protein topology is a strong restriction for protein function of even otherwise non\-characterised proteins~\cite{Eisenhaber2016, Eisenhaber2012, Sherman2015} and thus, very valuable information.
 
-The ``positive\-inside rule'' reported by von Heijne~\cite{VonHeijne2006,VonHeijne1989} postulates the preferential occurrence of positively charged residues (lysine and arginine) at the cytoplasmic edge of~\gls{tmh}s.
+The ``positive\-inside rule'' reported by von Heijne~\cite{VonHeijne2006, VonHeijne1989} postulates the preferential occurrence of positively charged residues (lysine and arginine) at the cytoplasmic edge of~\gls{tmh}s.
 The practical value of positively charged residue sequence clustering in topology prediction of~\gls{tmh} was first shown for the plasmalemma in bacteria~\cite{VonHeijne1989, Sipos1993}.
 As a trend, the ``positive-inside rule'' has since been confirmed with statistical observations for most membrane proteins and biological membrane types~\cite{Baeza-Delgado2013, Gavel1991, Nilsson2005a, Wallin1998}.
 However, more recent evidence suggests that, in thylakoid membranes, the ``positive-inside rule'' is less applicable due to the co-occurrence of aspartic acid and glutamic acid residues together with positively charged residues~\cite{Pogozheva2013}.
@@ -47,7 +54,7 @@ This dampening factor is the result of protein-lipid interactions with net zero 
 This effect favours cytoplasmic retention of positively charged residues~\cite{Bogdanov2014}.
 
 The recent accumulation of~\gls{tmp} sequences and structures allowed revisiting the problem of charged residue distribution in~\gls{tmh}s (see also \url{http://blanco.biomol.uci.edu/mpstruc/}).
-For example, whilst \(\beta\)--sheets contain charged residues in the~\gls{tm} region, α-helices generally do not (38).
+For example, whilst \(\beta\)--sheets contain charged residues in the~\gls{tm} region, $\alpha$\--helices generally do not \cite{Ulmschneider2001}.
 Large-scale sequence analysis of~\gls{tmh} from various organelle membrane surfaces in eukaryotic proteomes confirm the clustering of positive charge having a statistical bias for the cytosolic side of the membrane.
 At the same time, there are many~\gls{tmh} exception examples to the positive-inside rule; however as a trend, topology can be determined by simply looking for the most positive loop region between helices~\cite{Sharpe2010, Baeza-Delgado2013}.
 
@@ -1332,7 +1339,7 @@ The leucine hotspot is no longer very pronounced, as the leucines are quite even
 \subsection{Hydrophobicity calculations}
 
 Hydrophobicity profiles were calculated using the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982} and validated with the Eisenberg scale~\cite{Eisenberg1984}, the Hessa biological scale~\cite{Hessa2005}, and the White and Wimley whole residue scale~\cite{White1999}(Figure~\ref{fig:hydrophobicity_scale_comparison}).
-The hydrophobicity profile uses un-weighted windowing of the residue hydrophobicity scores from end to end of the TMD slice.
+The hydrophobicity profile uses un-weighted windowing of the residue hydrophobicity scores from end to end of the \gls{tms} slice.
 Three residues were used as full window lengths and partial windows were permitted.
 
 \subsection{Normalised net charge calculations}
