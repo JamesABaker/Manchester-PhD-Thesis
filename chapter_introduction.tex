@@ -7,11 +7,11 @@ Despite progress over the last decade, the understanding of the relationship bet
 
 In this chapter we will place the \gls{tmh} problem in context, then describe the important biological aspects of the \gls{tmh}, and discuss tools and methods that allow us to analyse and describe the nuanced differences between these \gls{tmh} sequences.
 
-\section{Membrane proteins}
+\section{Transmembrane proteins}
 
-\subsection{A brief history of the discovery and exploration of the membrane proteins}
+\subsection{A brief history of the discovery and exploration of the transmembrane proteins}
 
-Due to the remarkable ability to segregate biochemical environments, the cellular barrier has been described as one of the fundamental pillars of life as we know it~\cite{Ladokhin2015}.
+Due to the ability to segregate biochemical environments, the cellular barrier has been described as one of the fundamental pillars of life as we know it~\cite{Ladokhin2015}.
 The significance of the cellular barrier was first noted in 1665 with the dawn of the microscope when Robert Hooke described the cell wall of the cork plant (Figure \ref{fig:history}A), with the clear distinction of the barrier giving rise to the term ``cell'' \cite{Donaldson2010, hooke1961micrographia}.
 
 %Some waffle about Hooke, Schwan, and Virchow
@@ -28,7 +28,7 @@ The significance of the cellular barrier was first noted in 1665 with the dawn o
 		This is a model of the 7\gls{tm} bacteriorhodopsin single protein from the purple membrane viewed roughly parallel to the plane of the membrane.
 		From Henderson \& Unwin, 1975 \cite{Henderson1975}.
 		C) The electron density map of the first crystal structure of a \gls{tmp} \cite{Deisenhofer1984}.
-		The image shows 11 layers with contours representing 1.2\angstrom~between layers at 3\angstrom resolution.
+		The image shows 11 layers with contours representing 1.2\angstrom~between layers at 3\angstrom~resolution.
 		As in B, this structure is from phototrophic purple bacteria.
 		The chromophores are made up of cytochrome (can be seen at the top of the image) and the H\--subunit (which can be seen at the bottom).
 		From Deisenhofer \textit{et al.,} 1984.
@@ -52,37 +52,49 @@ The advent of x\--ray crystallography through the first half of the 20th century
 Dorothy Hodgekin was awarded the Nobel prize for chemistry in 1964 for the elucidation of these complex structures \cite{NobelMedia2018a}.
 7 years after the creation of the \gls{pdb} \cite{Bernstein1978}, the first \gls{tmp} was successfully solved by x\--ray crystallography in 1984 \cite{Deisenhofer1984} (Figure \ref{fig:history}C).
 Because of this discovery Johann Deisenhofer, Robert Huber, and Hartmut Michel won the Nobel prize in chemistry in 1988 for solving with atomistic resolution the 3D structure of a photosynthetic reaction centre \cite{NobelMedia2018}.
-In the following decades, x\--ray crystallography of \gls{tmp}s, despite the challenges therein, remained the predominant method of understanding the structure and function of \gls{tmp}s \cite{Carpenter2008}.
+In the following decades, x\--ray crystallography of \gls{tmp}s, despite the challenges therein, remained the predominant method of generating the structure of \gls{tmp}s \cite{Carpenter2008}.
 Currently, we are in a revolution of \gls{tmp} structural acquisition, which will be discussed further in section \ref{section:revolution}.
 
 \subsection{Transmembrane proteins in disease}
-Membrane-bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration.
+Membrane\--bound proteins underpin almost every biological process directly, or indirectly, from photosynthesis to respiration.
 Integral \gls{tmp}s are encoded by between a third to a half of the genes in the human genome~\cite{Hopkins2002, Almen2009, Wang2013} and account for 40\% of drug targets \cite{Overington2006} which reflects their biological and physiological importance.
 \gls{tmp}s allow biochemical pathways that traverse the various biological membranes used in life, either by transporting molecules or transducing signals across the bilayer.
 Misfolding of these proteins during the complex process of translocation is common in both normal and diseased cells and the mechanisms of folding are actively studied even recently revealing new systems of translocation \cite{Shurtleff2018}.
 Mutations tend to cluster in the \gls{tmh} regions of the genes \cite{Sanders2004}, which can cause the misfolding.
-Glycine to arginine mutations occurs statistically more frequently in \gls{tmh}s than their globular $\alpha$\--helix counterparts \cite{Partridge2002}.
+Glycine to arginine mutations occur statistically more frequently in \gls{tmh}s compared to their globular $\alpha$\--helix counterparts \cite{Partridge2002}.
 This can result in a range of diseases including but not limited to cystic fibrosis caused by mutations in the cystic fibrosis conductance regulator \cite{Riordan1989}, Charcot\--Marie\---Tooth disease caused by mutations in the PMP22 gene \cite{Roa1993} and the connexin 32 gene \cite{Fairweather1994}, diabetes insipidus caused by mutations the aquaporin 2 water channel \cite{vanLieburg1994}, retinitis pigmentosa caused by a point mutation in rhodopsin \cite{Dryja1990}, and Niemann\--Pick disease that contains over 200 disease\--causing mutations identified \cite{Gelsthorpe2008, Park2003, Scott2004, Fernandez-Valero2005}.
 
 \subsection{The transmembrane protein problem}
-% Needs references and a figure showing rate of globular proteins and membrane proteins.
-Because of the experimental hindrance, \gls{tmp} biology has been relatively slow to emerge.
+
+In a laboratory experiment \gls{tmp}s typically present several challenges for studying them \cite{Seddon2004}.
+\gls{tmp}s are typically difficult to obtain in a useful quantity.
+They do not exist in high enough quantities naturally, and overexpression often results in aggregation in the cytoplasm.
+Also, the complexity of their native environments limits structural studies.
+Even relatively simple lipid bilayers cannot be probed by conventional structural techniques, so study in the native state by traditional structural methods is difficult and involves suspending the protein in detergent or lipid environments, leading to difficulties in sample preparations.
+Their insolubility in aqueous solutions also leads to the requirement of speciaised synthetic \textit{in vitro} systems to be used, which have been difficult to introduce purified proteins into \cite{Seddon2004}.
+
+In addition to the difficulties in studying \gls{tmp}s, it has become clear that they have a rich structural diversity.
 Throughout the 1990s the concept of a \gls{tmh} was simple and fairly assured: they were greasy peptides of around 30{\AA} in length, often bundled together and oriented perpendicularly to the membrane \cite{VonHeijne2006}.
 By 2007, crystallography had elucidated 368 \gls{tmp} structures from 148 unique proteins \cite{Carpenter2008}.
 Whilst this accumulation of structures was exponential, at the same time, there were in excess of 50,000 protein structures in the PDB.
-Although the classic \gls{tmh} structures were broadly prevalent, these structures contained a plethora of unusual \gls{tmh}s.
+What became clear when examining the newly avaiable large number of \gls{tmp}s was that although the classic \gls{tmh} structures were broadly prevalent, these structures contained a plethora of unusual \gls{tmh}s \cite{VonHeijne2006}.
 \gls{tms}s are capable of partial spanning of the membrane, spanning using oblique angles, and even lying flat on the membrane surface~\cite{VonHeijne2006, Elofsson2007}; the classical model was incomplete.
-Even recently, there is a contingency in the  membrane biology field that despite progress over the last decade there is still a lack of information regarding the relationship between \gls{tmh} sequences and function, \gls{tmh} structure, intra-membrane \gls{tmp} assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s~\cite{Ladokhin2015}.
+Even recently, there is a contingency in the  \gls{tmp} biology field that despite progress over the last decade there is still a lack of information regarding the relationship between \gls{tmh} sequences and function, \gls{tmh} structure, intra-membrane \gls{tmp} assembly, and the behaviour of \gls{tmh}s in the lipid bilayer; the native biological environment of \gls{tmh}s~\cite{Ladokhin2015}.
 
 Furthermore, the insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions~\cite{Cymer2015, Elisa2012, Ismail2015}.
 As well as being a biophysically convoluted system, \gls{tmh}s are biologically functional beyond anchoring in many cases.
 \gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchoring can be revealed by sensitive, careful analysis of the sequence information alone~\cite{Wong2011, Wong2012}.
 
-When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar.
-For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non-polar residue patterns.
-Sequence analysis of non-globular \gls{tmp}s has not been studied to nearly the same extent yet homology paradigms are silently extended and applied to them \cite{Wong2010}.
-In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry.
-Worryingly, because of this oversight, it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
+There is also an issue of silent homology extension from $\alpha$\--helices \cite{Wong2010}.
+\gls{tmh}s share composition similarities due to membrane requirements and restraints, not necessarily due to common ancestry which underpins homology\--based domain libraries like Pfam \cite{Finn2016} and SMART \cite{Letunic2012}.
+It was found that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are positive hits that were misreported as homologous among distantly related proteins in Pfam \cite{Wong2010}.
+%When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar.
+%For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non\--polar residue patterns.
+%\cite{Wong2010}.
+%In the case of \gls{sp}s or \gls{tms}s the physical constraints are similar for all \gls{tmp}s and so matching is indeed merely a reflection of the physical environment of the bilayer, not the common ancestry.
+%it appears that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are indeed false positive results~\cite{Wong2010}.
+
+
 
 \subsection{The transmembrane protein revolution}\label{section:revolution}
 Over the last decade or so, several significant steps have been made toward overcoming the challenges in finding the structure of \gls{tmp}s.
@@ -127,8 +139,8 @@ Unsatisfied with a statistical approach, Scampi seq \cite{Bernsel2008} uses a fi
 
 Predicting the presence of a typical \gls{tmh} based on a protein sequence is currently a fairly trivial task and typically relies on a consensus of several prediction programs, such as the automated TRANSMEM annotation used by UniProt \cite{TheUniProtConsortium2014}.
 Yet several challenges remain in separating \gls{sp}s from \gls{tmh}s \cite{Petersen2011} and correctly predicting the topology of a \gls{tmp}.
-There is also an issue of silent homology extension from $\alpha$\--helices \cite{Wong2010}.
-\gls{tmh}s share composition similarities due to membrane requirements and restraints, not necessarily due to common ancestry, and it was found that many are often misreported as homologous among distantly related proteins in Pfam \cite{Wong2010}.
+
+
 Despite being able to identify \gls{tmh}s, our understanding of the specific biochemical role they play in the cell often requires intense study.
 As more data is becoming available bioinformatic methods that use multiple biochemical traits in conjunction with hydrophobicity are starting to be able to understand if a \gls{tmh} has a functional role beyond anchoring \cite{Wong2011, Wong2012}, and the protein trafficking signals held within some \gls{tmh}s \cite{Guna2018}.
 
@@ -136,7 +148,7 @@ Despite the advances in the availability of \gls{tmp} structures over the last d
 The relationship between the membrane and \gls{tmp}s is underpinned by complex thermodynamic and  electrostatic equilibrium \cite{Cymer2015}.
 Once inserted the protein does not leave the membrane as a result of the \gls{tmh} being very hydrophobic.
 This hydrophobicity of \gls{tmh}s and the hydrophobicity of the lipid tails means that they self\--associate and this association is entropically driven by water.
-Another way of describing it is that they fiercely dissociate from the water.
+Another way of describing it is that they dissociate from the water.
 The overall $\Delta G$ for a \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~\cite{Cymer2015}; the association of the helix in the membrane is typically spontaneous but complex owing to interactions with other \gls{tmh}s in the membrane as well as \gls{tmp}\--lipid interactions.
 Although sometimes there are bound lipids and detergents included in the crystal lattice, or the \gls{tmp}s are integrated into a micelle or bicelle environment this is often insufficient to account for the complex lipodynamics of the membrane\--\gls{tmh} interactions \cite{Coskun2011, Stansfeld2015}.
 
@@ -287,13 +299,13 @@ However, it still remains unclear if this is to do with anchoring or translocon 
 
 A study of conserved tryptophan residues during folding of integrin $\alpha$II$\beta$3 \gls{tm} complex demonstrated the anchoring effects of tryptophan (0.4 kcal/mol contribution to membrane stability) in \gls{tmh}s is greater than the other residues~\cite{Situ2018}. It was suggested that it's wide amphiphilic range (it's stabilising energetic contribution in either hydrophobic or polar sites) complements the heterogeneity and asymmetry of mammalian membrane lipids in particular.
 
-The Tyrosine side chain is a six-membered aromatic ring with an –OH group attached.
+The tyrosine side chain is a six-membered aromatic ring with an –OH group attached.
 Tryptophan has two aromatic rings that are fused into one large hydrophobic ring-structure.
 Phenylalanine, although aromatic, is completely hydrophobic, and is found in the transmembrane part rather than the interfacial parts of \gls{tmh}s.
-The classical explanation for the preference of Tyrosine and Tryptophan to reside in the interfacial regions is their dipolar character.
+The classical explanation for the preference of tyrosine and tryptophan to reside in the interfacial regions is their dipolar character.
 The side chain must simply seek compromise.
 This can be achieved by burying the aromatic ring close to, or within, the hydrophobic core, while the hydrophilic part can interact with the polar lipid head-groups at the interface.
-Other factors such as the aromaticity, size, rigidity and shape of Tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference.
+Other factors such as the aromaticity, size, rigidity and shape of tryptophan, rather than its dipolar character, has also been suggested as the primary reasons for its interfacial preference.
 %Perhaps, as suggested by You \textit{et al.}, it is a balance of all these forces that explains the interfacial preference of Tyrosine and Tryptophan. %This NEEDS referencing!
 
 \subsubsection{Snorkelling}
@@ -468,7 +480,7 @@ SecA is an ATPase and a membrane channel that can clamp translocating substrates
 	 B) The translocating state of the translocon coloured similarly to A, but the plug has moved to allow translocation through the channel, the constriction ring has widened, and the lateral gate opens to allow hydrophobic \gls{tmh}s into the membrane environment.
 	 C) A sphere representation of the translocon-ribosome complex structure during translocation.
 	 Highlighted are the Sec61 translocon (orange) the ribosome made up of the large 60s subunit and the small 40S subunit and the peptidyl transferase centre (denoted by PTC), the site of translation (PDB 3J7R \cite{Voorhees2014}).
-	 Part C adapted from Voorhees \textit{et al.,} 2014 \cite{Voorhees2014}.
+	 Part C redrawn from Voorhees \textit{et al.,} 2014 \cite{Voorhees2014}.
 
 	 }
 \label{fig:Translocon}
@@ -500,7 +512,7 @@ Like \gls{tmh}s they translocate into the membrane due to their hydrophobic $\al
 \includegraphics[width=1\textwidth]{Intro/sp}
 		\captionof{figure}[The key components of a signal peptide.]{\textbf{The key components of a signal peptide.}
 		Signal peptides consist of between 1\--5 hydrophilic charged residues (in blue) at the N terminal, a 7-15 residue hydrophobic region (in green), and a c-region of 3-7 residues that invites cleavage by specific signal peptidase (in red).
-	Adapted from von Heijne, 1990 \cite{VonHeijne1990}.
+	Redrawn from von Heijne, 1990 \cite{VonHeijne1990}.
 		}
 \label{fig:sp}
 \end{figure}
@@ -528,11 +540,11 @@ Whilst the focus of this thesis is primarily on \gls{tmh}s it is important to ac
 		\captionof{figure}[Cartoons showing the structural differences of the outer membrane $\protect\beta$\--barrel proteins, transmembrane $\protect\alpha$\--helix channels, and transmembrane $\protect\alpha$\--helix signal transducers in the membrane.]{\textbf{Cartoons showing the structural differences of the outer membrane proteins, transmembrane helix channels, and transmembrane helix signal transducers in the membrane.}
 		The top row shows the proteins traversing the membrane with the interfacial regions denoted by the black lines.
 		A) A porous outer membrane protein using $\protect\beta$\--sheets to form a pore\--forming protein structure.
-		PDB code 2JQY.
+		PDB code 2JQY \cite{Liang2007}.
 		B) A highly selective ion channel made up of membrane\--spanning \gls{tmh}s.
-		PDB code 4HYO.
+		PDB code 4HYO \cite{Posson2013}.
 		C) A 7\--\gls{tmh} \gls{gpcr} that receives a signal on one side of the membrane which causes a conformational change influencing the structural arrangement of the tertiary structure on the opposing side of the membrane.
-		PDB code 1F88.
+		PDB code 1F88 \cite{Palczewski2000}.
 		Note the pore in the $\protect\beta$ barrel protein not present in either the \gls{tmh} channel or the \gls{tmh} transducer.
 		}
 \label{fig:barrel-versus-helix}
@@ -565,7 +577,7 @@ Once at the inner surface, the BAM complex assembles and integrates the $\beta$ 
 		The BAM machinery integrates the protein into the membrane.
 		B) After ribosomal translation, the nascent peptide is transported across the \gls{mom} by the \gls{tom} machinery.
 		Several Tim recognition molecules then attach to the protein and present it to the TOB insertion machinery, which integrates the protein into the membrane.
-		Adapted from Ulrich \& Rapoport, 2015 \cite{Ulrich2015}.
+		Redrawn from Ulrich \& Rapoport, 2015 \cite{Ulrich2015}.
 
 		}
 \label{fig:beta-mito-versus-bacteria}
@@ -585,17 +597,19 @@ Besides the differences in biogenesis between $\beta$ barrel \gls{tmp}s and \gls
 Membrane\--spanning $\beta$ sheets exhibit a ``positive\--outside'' distribution of positively charged residues \cite{Pogozheva2013}, as opposed to the much more typical positive\--inside distribution \cite{VonHeijne1989, Andersson1992, Pogozheva2013, Sharpe2010, Baeza-Delgado2013}.
 Typically, $\beta$ sheets are less hydrophobic than \gls{tmh}s \cite{Tamm2004} as a result of their amphiphilic nature.
 
-\section{The aims of this thesis.}
+\section{The aims of this thesis}
 
 In this thesis, we explore three ideas surrounding the role of \gls{tmh}s in the membrane.
 
 In chapter 2 we explore the sequence composition of large datasets of \gls{tmh}s stratifying them by species, organelle, single\--pass and multi\--pass.
-After considering the rarity of certain amino acid types, we show a ``negative\--outside'' tendency in concert with the positive\--inside rule.
-We go on to further divide the single\--pass group into complex and simple \gls{tmh}s according to TMSOC.
+After considering the rarity of certain amino acid types, we show a ``negative\--outside'' tendency in concert with the ``positive\--inside'' rule.
+We go on to further divide the single\--pass \gls{tmp}s into complex and simple \gls{tmh}s according to TMSOC.
 This reveals that simple \gls{tmh}s have amino acid distribution features along the helix that would optimise for anchoring, however complex \gls{tmh}s are more akin to \gls{tmh}s from multi\--pass \gls{tmp}s.
 
 In chapter 3 we generate an up to date dataset of post\--translationally inserted \gls{ta} proteins based on previous methods and compare the \gls{tmh}s within to a manually curated \gls{ta} protein dataset from UniProt.
-This cross\--examination revealed \gls{tmh} adaptations to mitochondrial membranes such as a reversal of the ``positive\--inside'' rule and a reduction in hydrophobicity caused by an abundance of alanine residues in lieu of leucine rather than an increase of polar residues.
+This cross\--examination revealed  adaptations in the \gls{tmh} sequences to mitochondrial membranes.
+This is likely to play a role in trafficking of the \gls{ta} \gls{tmp} as well as being an adaptation to the differences in the biological composition of the mitochondrial membrane.
+% There was as a reversal of the ``positive\--inside'' rule and a reduction in hydrophobicity caused by an abundance of alanine residues in lieu of leucine rather than an increase of polar residues.
 We also generate homology models of two spontaneously inserting \gls{tmh}s from \gls{ta} proteins and show that they have an amphipathic surface which may be key to their insertion.
 
 In chapter 4 we look at families of \gls{tmp}s that exhibit a high hydrophobic discrepancy between sequentially adjacent \gls{tmh}s.
