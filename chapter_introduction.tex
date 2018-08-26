@@ -489,7 +489,7 @@ When translocation is not occurring and the protein is idle, the hydrophobic cor
 During translation the 6 polypeptide single RNA ribonucleoprotein complex \gls{srp} binds to hydrophobic signal sequences, typically at the N\--terminal of the nascent peptide, emerging from the ribosomal exit tunnel and translation elongation is slowed \cite{Walter1981}.
 The \gls{srp} targets the ribosome\--\gls{srp} complex to the target membrane (either the \gls{pm} in bacteria or the \gls{er} in eukaryotes) \cite{Rapoport2007, Pool2005}.
 The \gls{srp} engages with the membrane bound \gls{sr}, which mediates the association of the ribosome and the translocon \cite{Song2000}.
-As the ribosome binds with the translocon and the signal sequence is released \cite{Fulga2001}, SRP54 moves away from the ribosomal protein L23a\cite{Pool2002}, the nascent peptide is brought into proximity of the translocon \cite{Shan2005} and translocation begins (Figure \ref{fig:post-versus-co-translation}).
+As the ribosome binds with the translocon and the signal sequence is released \cite{Fulga2001}, SRP54 moves away from the ribosomal protein L23a \cite{Pool2002}, the nascent peptide is brought into proximity of the translocon \cite{Shan2005} and translocation begins (Figure \ref{fig:post-versus-co-translation}).
 
 During translocation the plug exits the pore, the constriction ring is opened, and a lateral gate opens between TMH2 and TMH3, and TMH7 and TMH8 to integrate hydrophobic stretches of nascent peptide into the membrane~\cite{Berg2004, Petriman2018, Hizlan2012, Bischoff2014, Gogala2014, Egea2010, Niesen2018} (Figure \ref{fig:Translocon}).
 Mutation experiments on these three features (the plug, constriction ring, and lateral gate) destabilised the closed state of the translocon and resulted in a protein localisation phenotype that suppressed inactivating mutations in signal sequences~\cite{Emr1981, Veenendaal2004, Li2007, Junne2007} and even caused transient channel openings in bacteria~\cite{Saparov2007}.
@@ -498,10 +498,20 @@ The \gls{emc} can act as a post\--translational \gls{ta} protein insertase \cite
 Furthermore, recently it was shown that the \gls{emc} was also able to act cooperatively with the Sec translocon during cotranslational insertion on a subset of multipass \gls{tmp}s in both yeast and human cells \cite{Shurtleff2018}.
 Proximity specific ribosome profiling in yeast confirmed that the \gls{emc} engages the translocating multipass \gls{tmp}s, especially those containing charged residues in the \gls{tmh}.
 This would explain why it also interacts with \gls{ta} proteins \gls{tmh}s \cite{Guna2018, Shurtleff2018}.
-Pulldown experiments revealed that the \gls{emc} stabilised the synthesised \gls{tmp}s and recruited chaperones (both substrate specific and general) that allowed unstable \gls{tmp}s to achieve viable conformations allowing function in the \gls{er} and transport to the Golgi.
-In the absence of the \gls{emc}, UPS (a proteasome) degrades the membrane proteins.
+Pulldown experiments revealed that the \gls{emc} stabilised the synthesised \gls{tmp}s and recruited chaperones (both substrate specific and general) that allowed unstable \gls{tmp}s to achieve viable conformations allowing function in the \gls{er} and transport to the Golgi \cite{Shurtleff2018}.
+In the absence of the \gls{emc}, UPS (a proteasome) degrades the membrane proteins \cite{Shurtleff2018}.
 
 This dual function of the \gls{emc} is analogous with YidC \cite{Shurtleff2018} in bacteria which has the role of an insertase \cite{Samuelson2000, Drew2003, Dalbey2014} as well as interacting with SecYEG to stabilise translocated \gls{tmp}s \cite{Nagamori2004}.
+
+Additional proteins associated in cotranslational insertion during the \gls{tmp} integration by Sec61 are the membrane\--bound TRAP and TRAM protein complexes.
+TRAP, otherwise known as the translocon\--associated protein complex, is a multi\--subunit complex.
+The TRAP complex facilitates the translocation of \gls{tmh}s by moderating the ``positive\--inside'' rule, but does not seem to play a role in the integration of very hydrophobic \gls{tmh}s \cite{Sommer2013}.
+TRAM, also called the translocating chain-associated membrane protein, is critical to the efficient translocation of \gls{tmp}s \cite{Voigt1996}, but has yet to be fully structurally solved \cite{Conti2015}.
+During translocation, the association between TRAM, TRAP and the Sec61 translocon is strengthened \cite{Conti2015}.
+
+Another group capable of Sec61 \gls{tmp} integration are the membrane\--bound Sec62 and Sec63 proteins in mammals which associate with Sec61 and facilitate membrane integration independently from the \gls{srp}\--ribosome complex \cite{Meyer2000}.
+Post translational translocation in this case involves ATP hydrolysis driven Hsp70 chaperones delivering the unfolded \gls{tmp} \cite{Chirico1988, Deshaies1988} to the Sec61\--Sec62\--Sec63 machinery \cite{Steel2004}.
+However, it was shown using crosslinking and co\--translational and post\--translational translocation assays that \gls{sr} displaces Sec62 which returns the Sec61 to the \gls{srp} dependent insertion pathway; Sec62 and ribosomal association with Sec61 is mutually exclusive \cite{Jadhav2015}.
 
 \subsection{Signal peptides}
 \gls{sp}s are short peptide sequences present at the N-terminus of most secretory pathway destined proteins in both prokaryotes and eukaryotes.
@@ -517,7 +527,6 @@ Like \gls{tmh}s they translocate into the membrane due to their hydrophobic $\al
 		}
 \label{fig:sp}
 \end{figure}
-
 
 Once the protein is fully translocated and at the correct location within the cell, a three domain signal peptidase cleaves the \gls{sp} from the rest of the protein.
 \gls{sp}s can also be experimentally interchanged to proteins from different organisms to target them to cellular locations \cite{Izard1994, Gierasch1989}.
