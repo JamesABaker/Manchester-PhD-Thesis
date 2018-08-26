@@ -134,12 +134,14 @@ Traditionally, the role of bioinformatics has been to predict \gls{tm} regions o
 There are countless methods that can perform this.
 Many rely on statistical patterns to identify \gls{tmh}s such as the neural network approach of MEMSAT3 \cite{Jones2007} Hidden Markov models used in TMHMM \cite{Krogh2001}, HMMTOP \cite{Tusnady2001}, S\--TMHMM \cite{Viklund2004}, OCTOPUS \cite{Viklund2008}, Phobius \cite{Kall2004}.
 Unsatisfied with a statistical approach, Scampi seq \cite{Bernsel2008} uses a first principals method following the Kyte \& Doolittle suggestion 26 years previously that a biophysical scale can predict \gls{tmh}s \cite{Kyte1982} and applies a score based on the von Heijne biological scale \cite{Hessa2007}.
-
 Predicting the presence of a typical \gls{tmh} based on a protein sequence is currently a fairly trivial task and typically relies on a consensus of several prediction programs, such as the automated TRANSMEM annotation used by UniProt \cite{TheUniProtConsortium2014}.
 Yet several challenges remain in separating \gls{sp}s from \gls{tmh}s \cite{Petersen2011} and correctly predicting the topology of a \gls{tmp}.
 
-Despite being able to identify \gls{tmh}s, our understanding of the specific biochemical role they play in the cell often requires intense study.
-As more data is becoming available bioinformatic methods that use multiple biochemical traits in conjunction with hydrophobicity are starting to be able to understand if a \gls{tmh} has a functional role beyond anchoring \cite{Wong2011, Wong2012}, and the protein trafficking signals held within some \gls{tmh}s \cite{Guna2018}.
+Due to the under\--representation of \gls{tmp} structures, understanding the biochemical role \gls{tmh}s play within the membrane from sequence alone is often desirable.
+As more data is becoming available bioinformatic methods that use multiple biochemical traits are being developed.
+Sequence information entropy in conjunction with hydrophobicity can predict the presence of a functional role of the \gls{tmh} beyond anchoring \cite{Wong2011, Wong2012}.
+Machine learning approaches have allowed prediction of which residues could be involved in pore lining from sequence alone \cite{Nugent2012a}.
+Protein trafficking signals from a combination of hydrophobicity and charged residues may be involved in the localisation of \gls{tmh}s belonging to post\--translational \gls{ta} proteins \cite{Guna2018}.
 
 Despite the advances in the availability of \gls{tmp} structures over the last decade, most are obtained from membrane free environments via x\--ray diffraction of crystals, single\--molecule cryo\--\gls{em} and NMR \cite{Vinothkumar2015, Stansfeld2015}.
 The relationship between the membrane and \gls{tmp}s is underpinned by complex thermodynamic and  electrostatic equilibrium \cite{Cymer2015}.
@@ -445,16 +447,16 @@ In this thesis we focus on co\--translation via the Sec pathway, and on the post
 \includegraphics[width=1\textwidth]{Intro/post-versus-co-translation}
 		\captionof{figure}[A simplified schematic of the co\--translational Sec pathway and the post\--translational pathway.]{\textbf{A simplified schematic of the co\--translational Sec pathway and the post\--translational pathway.}
 		The ribosome translates \gls{rna} to a nascent polypeptide chain.
-		In the case of post\--translational insertion (the left\--path), the nascent peptide is released, albeit briefly, to the cytosol.
+		In the case of post\--translational insertion (the left\--hand\--path), the nascent peptide is released, albeit briefly, to the cytosol.
 		Chaperones of various types then shield the protein \gls{tmh} and bring it into contact with various \gls{tm} bound translocation machinery.
-		In the case of co\--translation (the right path), the \gls{srp} binds to the emerging signal sequence of the nascent peptide, which slows protein synthesis of the ribosome.
+		In the case of co\--translation (the right\--hand\--path), the \gls{srp} binds to the emerging signal sequence of the nascent peptide, which slows protein synthesis of the ribosome.
 		\gls{srp} then targets the ribosome protein complex to the \gls{sr}, which then moves into contact with the translocon.
 		As the nascent protein is inserted into the translocon, \gls{sr} and \gls{srp} detach from the complex and translocation begins.
 		}
 \label{fig:post-versus-co-translation}
 \end{figure}
 
-The Sec pathway is conserved across all life~\cite{Cao2003} and is facilitated by the heterotrimeric SecYEG (prokaryotic) and Sec61 (eukaryotic) translocons.
+The Sec pathway is conserved across all life~\cite{Cao2003} and is facilitated by the heterotrimeric SecYEG (prokaryotic) and Sec61$\alpha\beta\gamma$ (eukaryotic) translocons.
 SecYEG targets proteins to the \gls{pm} (inner membrane) of bacteria.
 In bacteria, nearly all \gls{tmp}s are inserted by either the Sec pathway via  SecYEG machinery, or by the structurally unrelated the 5\--fold more abundant YidC machinery \cite{Drew2003, Dalbey2014}, and proteins can often use either pathway.
 Sec61 targets proteins to the \gls{er} of eukaryotic cells.
@@ -484,7 +486,12 @@ Whilst ultimately the translocon machinery is built of multiple subunits, the \g
 When translocation is not occurring and the protein is idle, the hydrophobic core is constricted~\cite{Junne2010} and a lumenal plug is in place over the pore resulting in a seal across the \gls{tmp} pore~\cite{Tam2005, Junne2006} that protects the membrane from ion flow \cite{Park2011} (Figure \ref{fig:Translocon}).
 \gls{sp}s in stalled nascent chains crosslinked to the lipid and to the translocon machinery \cite{Martoglio1995}, showing that there may be a holding space which exposes the \gls{tmh} to the membrane  interfacial environment before insertion is complete and this was verified by more recent \gls{em} structural study \cite{Gogala2014, Park2012}.
 
-During translocation the plug exits the pore, the constriction ring is opened, and a lateral gate opens between TMH2 and TMH3, and TMH7 and TMH8 to integrate \gls{tmh}s to the membrane~\cite{Berg2004, Petriman2018, Hizlan2012, Bischoff2014, Gogala2014, Egea2010} (Figure \ref{fig:Translocon}).
+During translation the 6 polypeptide single RNA ribonucleoprotein complex \gls{srp} binds to hydrophobic signal sequences, typically at the N\--terminal of the nascent peptide, emerging from the ribosomal exit tunnel and translation elongation is slowed \cite{Walter1981}.
+The \gls{srp} targets the ribosome\--\gls{srp} complex to the target membrane (either the \gls{pm} in bacteria or the \gls{er} in eukaryotes) \cite{Rapoport2007, Pool2005}.
+The \gls{srp} engages with the membrane bound \gls{sr}, which mediates the association of the ribosome and the translocon \cite{Song2000}.
+As the ribosome binds with the translocon and the signal sequence is released \cite{Fulga2001}, SRP54 moves away from the ribosomal protein L23a\cite{Pool2002}, the nascent peptide is brought into proximity of the translocon \cite{Shan2005} and translocation begins (Figure \ref{fig:post-versus-co-translation}).
+
+During translocation the plug exits the pore, the constriction ring is opened, and a lateral gate opens between TMH2 and TMH3, and TMH7 and TMH8 to integrate hydrophobic stretches of nascent peptide into the membrane~\cite{Berg2004, Petriman2018, Hizlan2012, Bischoff2014, Gogala2014, Egea2010, Niesen2018} (Figure \ref{fig:Translocon}).
 Mutation experiments on these three features (the plug, constriction ring, and lateral gate) destabilised the closed state of the translocon and resulted in a protein localisation phenotype that suppressed inactivating mutations in signal sequences~\cite{Emr1981, Veenendaal2004, Li2007, Junne2007} and even caused transient channel openings in bacteria~\cite{Saparov2007}.
 
 The \gls{emc} can act as a post\--translational \gls{ta} protein insertase \cite{Guna2018}.
