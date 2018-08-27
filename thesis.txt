@@ -413,7 +413,7 @@ helix pairs/groups indicative of conserved cooperative insertion . 153
 
 4.4.4
 
-The prevalence of the high hydrophobic discrepancy of transmembrane helices amongst other common “transporter” transmembrane protein classes
+The prevalence of the high hydrophobic discrepancy of transmembrane helices amongst other common ‘transporter’ transmembrane protein classes
 
 4.5
 
@@ -423,7 +423,7 @@ Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
 
 5 Conclusions and outlook
 
-162
+161
 
 Word count 63,689
 5
@@ -748,34 +748,34 @@ families. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 11
 
 Acronyms
-AP Arrest Peptide. 139–142, 160, 163
-EM Electron Microscopy. 21, 22, 25–27, 40, 160, 163
-EMC ER Membrane protein Complex. 23, 42, 105, 107, 159, 163
+AP Arrest Peptide. 139–142, 160, 162
+EM Electron Microscopy. 21, 22, 25–27, 40, 160, 162
+EMC ER Membrane protein Complex. 23, 42, 105, 107, 159, 162
 ER Endoplasmic Reticulum. 29–31, 36, 39, 40, 42, 53, 84, 85, 104–108, 110–112,
 122–129, 138, 142, 151
-GPCR G protein-coupled receptor. 28, 45, 143, 144, 147–153, 160, 163
+GPCR G protein-coupled receptor. 28, 45, 143, 144, 147–153, 160, 162
 K-S Kolmogorov-Smirnov. 75, 77–79, 100, 114
 K-W Kruskal-Wallis. 61, 62, 66, 75, 77–79, 100, 114
-MD Molecular Dynamics. 27, 29, 34, 163
+MD Molecular Dynamics. 27, 29, 34, 162
 MOM Mitochondrial Outer Membrane. 44, 46, 107, 128, 129, 135
 PDB Protein Data Bank. 22, 28, 32, 53
 PM Plasma Membrane. 39, 40, 84, 85, 110, 112, 122, 123, 127–129
 POPC Palmitoyloleoylphosphatidylcholine. 37, 71
 RNA Ribonucleic Acid. 40, 138–140
 SNARE Soluble N-ethylmaleimide-sensitive factor attachment protein receptor. 103,
-107, 162
+107, 161
 SP Signal Peptide. 24, 26, 40, 43–47, 110, 111, 129
 12
 
 SR Signal Recognition Particle Receptor. 40, 41, 43, 104, 138, 139
 SRP Signal Recognition Particle. 40, 43, 104–106, 113, 138, 139
 TA Tail Anchor. 27, 36, 39, 42, 47, 48, 103–108, 111–113, 116–123, 125, 127–131,
-134–136, 162, 163
+134–136, 161, 162
 TM Transmembrane. 20, 21, 26, 28, 33, 38–40, 51–54, 67, 70, 75, 83, 96, 107, 115
 TMH Transmembrane Helix. 20, 23–29, 31–45, 47, 48, 50–58, 60–76, 79–89, 91, 92,
-94–100, 103–108, 110–112, 114–116, 118–136, 138–155, 157–160, 162–164
+94–100, 103–108, 110–112, 114–116, 118–136, 138–155, 157–163
 TMP Transmembrane Protein. 20–27, 29, 31, 34, 39, 42–44, 47, 48, 50, 52–54, 57,
-58, 67, 70, 72, 80–84, 106, 119, 129, 130, 138–141, 146–148, 153, 159–164
+58, 67, 70, 72, 80–84, 106, 119, 129, 130, 138–141, 146–148, 153, 159–163
 TMS Transmembrane Segment. 24, 31, 100, 115, 141
 TOM Translocase of the Outer Membrane. 46, 107
 
@@ -9830,14 +9830,14 @@ to TMH16 (P-value = 1.79E-23), TMH16 to TMH17 (P-value = 1.67E-27), TMH21
 
 to TMH22 (P-value = 1.64E-9), and TMH22 to TMH23 (P-value = 3.42E-31).
 As a trend, the TMSOC z-score was not sensitive to detecting function in the
-extremely hydrophobic TMH4 (Figure 4.9). This is due to the other component of
-the z-score, the sequence information entropy [44, 45]. The relative probability of a
-polar/charged residue is so high in TMH4 that it apparently has the same expectancy
-as the hydrophobic residues, and the “simple” entropy mutes somewhat the effect of
-the extreme hydrophobicity. This is compounded by the fact that the White and
-Wimley scale (used to generate the z-score) is already less sensitive to the relative
-polarity difference between TMH3 and TMH4 than the Kyte & Doolittle scale (Figure
-4.7A, Figure 4.8A).
+extremely hydrophobic TMH4 (Figure 4.9). This is due to the other component of the
+z-score, the sequence information entropy from SEG [44, 45, 143, 147]. The relative
+probability of a polar/charged residue is so high in TMH4 that it apparently has
+the same expectancy as the hydrophobic residues, and the “simple” entropy mutes
+somewhat the effect of the extreme hydrophobicity. This is compounded by the fact
+that the White and Wimley scale (used to generate the z-score) is already less sensitive
+to the relative polarity difference between TMH3 and TMH4 than the Kyte & Doolittle
+scale (Figure 4.7A, Figure 4.8A).
 A)
 
 B)
@@ -9848,7 +9848,7 @@ B) The sequence information entropy of those same TMHs.
 4.4.4
 
 The prevalence of the high hydrophobic discrepancy of
-transmembrane helices amongst other common “transporter” transmembrane protein classes
+transmembrane helices amongst other common ‘transporter’ transmembrane protein classes
 
 Whilst the gene ontology recognises “transporters” as having disproportionately more
 highly different hydrophobic sequential pairs, the list is predominantly ion channels,
@@ -9933,17 +9933,18 @@ residues [24]. There is also evidence to suggest that multipass TMH arrangements
 work cooperatively during translocation and insertion to achieve correct folding of
 marginally hydrophobic TMHs [40, 264, 349, 357–360, 376–380] (Figure 4.11).
 Here, we have shown that high discrepancy of TMSOC z-score (simple-complex
-score) [44, 45], and several hydrophobicity scales [72, 113, 136, 141], between sequentially adjacent TMHs corroborates TMH groups known to insert cooperatively [40, 376,
-377, 379]. The hydrophobic relationships between these cooperatively inserted TMHs
-may be conserved throughout their larger families indicating that cooperative insertion
+score) [44, 45], and several hydrophobicity scales [72, 113, 136, 141], between sequentially adjacent TMHs corroborates TMH groups known to insert cooperatively [40,
+376, 377, 379]. The hydrophobic relationships between these cooperatively inserted
+TMHs may be conserved throughout their larger families indicating that cooperative
 
 160
 
 CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
+Less hydrophobic
+
 More hydrophobic
 
-Less hydrophobic
 Translocon
 A)
 
@@ -9966,61 +9967,56 @@ residues. The marginally hydrophobic TMH can associate with the typical hydropho
 ribosomal exit tunnel [349] or in the translocon tunnel [377]. This was observed in a potassium ion
 channel [40, 349, 377].
 
-may be a routine mechanism for the insertion of some families of TMPs. So far, this
-method has shown that the TMH7 of GPCRs is a conserved marginally hydrophobic
-TMH with the typically hydrophobic TMH6 preceding it. In opsins, TMH5-TMH7
-are incorporated into the membrane together simultaneously by staying in association
-with the translocon until TMH7 emerges [376]. We see this pattern across several
-GPCR sub-families and the GPCR family as a whole. Furthermore, we found that the
-charged TMH4 of 6TMH ion channels has a typically hydrophobic TMH3 preceding
-it and a more hydrophobic TMH5 following it. Indeed there is evidence that TMH3
-and TMH4 cannot incorporate alone [379], that TMH3 and TMH4 can insert as a pair
-from the translocon simultaneously [40, 377].
+insertion may be a routine mechanism for the insertion of some families of TMPs.
+So far, this method has shown that the TMH7 of GPCRs is a conserved marginally
+hydrophobic TMH with the typically hydrophobic TMH6 preceding it. In opsins,
+TMH5-TMH7 are incorporated into the membrane together simultaneously by staying in association with the translocon until TMH7 emerges [376]. We see this pattern
+across several GPCR sub-families and the GPCR family as a whole.
+Furthermore, we found that the charged TMH4 of 6TMH ion channels has a typically hydrophobic TMH3 preceding it and a more hydrophobic TMH5 following it.
+Indeed there is evidence that TMH3 and TMH4 cannot incorporate alone [379], that
+TMH3 and TMH4 can insert as a pair from the translocon simultaneously [40, 377].
 Advanced cross-linking experiments, single molecule cryoEM, and APs can probe
 energetics and TMH-TMH interactions and associations dynamically during ribosomal
 translation and membrane insertion. These methods could explore the TMH-TMH relationships such as cooperation during insertion in more detail with temporal contextualisation. Understanding the biogenesis of TMPs is essential to solving misfolding in
-
-4.5. SUMMARY
-
-161
-
-disease phenotypes, and for developing viable TMP chassis in synthetic biology [381,
-382].
+disease phenotypes, and for developing viable TMP chassis in synthetic biology [381].
 
 Chapter 5
 Conclusions and outlook
-As the idea of positive residues inside the cytoplasm emerged during the late 1980s,
-so did the idea of negative residues working in concert with TMH orientation. It was
-shown that removing a single lysine residue reversed the topology of a model E. coli
-protein, whereas much higher numbers of negatively charged residues are needed to
-reverse topology [244]. Furthermore, there was no conclusive evidence in the literature
-for an opposing negatively charged skew [84, 107, 108, 114, 115]. Yet these previous
-studies in various ways did not account for the rarity of the negatively charged residues
-relative to the more abundant residues. In E. coli negative residues do experience
-electrical pulling forces when travelling through the SecYEG translocon indicating
-that negative charges are biologically relevant [42], and as mentioned, they did to an
-extent have the ability to reverse topology [244]. In this thesis, we have demonstrated
-that the “negative-outside” skew exists in anchoring TMHs. Additionally, we have
-made observations regarding how anchoring TMHs are optimised to their membranes.
-This new insight into the behaviour of TMHs will not only help us understand specific
-cases in biology, but can also inform synthetic biology regarding TMPs.
+As the evidence of positive residues preferentially localising to the inside the cytoplasm
+emerged during the late 1980s [111], so did the idea of negative residues working in
+concert with the positive residues for TMH orientation. It was shown that removing
+a single lysine residue reversed the topology of a model E. coli protein, whereas much
+higher numbers of negatively charged residues are needed to reverse topology [244].
+However, there was no conclusive evidence in the literature for an opposing negatively
+charged skew [84, 107, 108, 114, 115]. Yet these previous studies in various ways
+did not account for the rarity of the negatively charged residues relative to the more
+abundant residues. In E. coli negative residues do experience electrical pulling forces
+when travelling through the SecYEG translocon indicating that negative charges are
+biologically relevant [42], and as mentioned, they did to an extent have the ability
+to reverse topology [244]. In this thesis, we have demonstrated that the “negative-outside” skew exists in anchoring TMHs. Additionally, we have made observations
+regarding how anchoring TMHs are optimised to their membranes. This new insight
+into the behaviour of TMHs will not only help us understand specific cases in biology,
+but can also inform synthetic biology regarding TMPs [381–383].
 Post-translationally inserted TA proteins integrate into the membrane independently of the co-translational ribosome-translocon complex insertion machinery. They
 are also of interest as a liposome drug delivery system due to the role of TA SNARE
 proteins in membrane fusion [279, 281, 282]. We found compositional differences between the mitochondrial and secretory localised TMHs of TA proteins. Alanine is used
 more commonly in the mitochondrial TMHs, perhaps even more so than isoleucine and
-162
+161
 
-163
+162
+
+CHAPTER 5. CONCLUSIONS AND OUTLOOK
+
 leucine. We also observed a reversal of the positive-inside and negative-outside distributions of charged TMH flanking residues in mitochondrially localised TA proteins.
 This re-emphasises the notion that there is more to TA protein trafficking than the
-hydrophobicity of the TMH alone [25], and could inform more specific studies of individual proteins. Still, several important questions remain unanswered that limit
-our understanding of TA protein biosynthesis. How truly redundant are the different
-pathways? What are the precise biophysical and biological signatures of TA proteins
-that determine their path? Why do some post-translationally inserted TA proteins
-have C-terminal tail lengths exceeding the traditional 25 residue length, whereas other
-proteins with far shorter tails than this cut-off are co-translationally inserted? Ultimately, for these questions to be more thoroughly answered, as we have demonstrated,
-annotation of the protein databases must be completed.
-Whilst we have identified amphipathic TMHs that may contribute to the spontaneous insertion of some TA proteins, MD simulations of the interactions between
+hydrophobicity of the TMH alone [25], and could inform more specific studies of individual proteins. Still, several important questions remain unanswered that limit our
+understanding of TA protein biosynthesis. How truly redundant are the different pathways? What are the precise biophysical and biological signatures of TA proteins that
+determine their path? Why do some post-translationally inserted TA proteins have
+C-terminal tail lengths exceeding the traditional 25 residue length, whereas other proteins with far shorter tails than this cut-off are co-translationally inserted? Ultimately,
+as we have demonstrated, annotation of the protein databases must be completed for
+these questions to be more thoroughly answered.
+We have identified amphipathic TMHs that may contribute to the spontaneous
+insertion of some TA proteins. However, MD simulations of the interactions between
 the membrane and the anchoring TMH of spontaneously inserting TA proteins would
 be needed to reveal the molecular energetic contributions involved in the spontaneous
 insertion.
@@ -10035,21 +10031,18 @@ pairs are capable of inserting cooperatively [40, 376–379]. It remains unclear
 extent the newly discovered role of the EMC integration of marginally hydrophobic
 TMHs [24] works in respect to cooperatively inserted TMHs.
 Understanding cooperative TMH insertion and the integration of marginally hydrophobic TMHs will require a much more thorough understanding of the temporal
-and energetic aspects of the process. It appears that the relatively new technologies
-of single molecule EM and APs may be able to grant insight into the energetics and
+and energetic aspects of the process. It appears that the relatively new technologies of
+single molecule EM and APs may be able to grant insight into the energetics and dynamics of the structures throughout the process of TMP integration. Understanding
 
-164
-
-CHAPTER 5. CONCLUSIONS AND OUTLOOK
-
-dynamics of the structures throughout the process of TMP integration. Understanding the relationship TMHs have with one another is critical for developing complex
-synthetic TMPs.
+163
+the relationship TMHs have with one another, particularly the temporal and spacial
+contextualisation, is critical for developing complex synthetic TMPs.
 More generally, there are several challenges still facing our understanding of TMPs.
-The description of a TMH remains incomplete; it remains difficult to interpret the role
-of a TMH in the membrane beyond anchoring. Furthermore, the prediction of TMP
-topology is often erroneous and requires experimental validation. Despite a wealth of
-structures the general model of helix-helix and helix-lipid interactions remains speculative and requires intensive analysis to generate a working model of a particular TMP.
-Nevertheless, progress is being made in our general understanding of TMPs.
+The description of a TMH remains incomplete. Therefore, it remains difficult to interpret the role of a TMH in the membrane beyond anchoring. Furthermore, the
+prediction of TMP topology is often erroneous and requires experimental validation.
+Despite a wealth of structures the general model of helix-helix and helix-lipid interactions remains speculative and requires intensive analysis to generate a working model
+of a particular TMP. Nevertheless, progress is being made in our general understanding
+of TMPs.
 
 Bibliography
 1. Ladokhin, A. S. Membrane Protein Folding & Lipid Interactions: Theory &
@@ -10075,11 +10068,11 @@ of the Blood. The Journal of experimental medicine 41, 439–443 (1925).
 9. Danielli, J. F. & Davson, H. A contribution to the theory of permeability of thin
 films. Journal of Cellular and Comparative Physiology 5, 495–508 (1935).
 
+164
+
+BIBLIOGRAPHY
+
 165
-
-166
-
-BIBLIOGRAPHY
 
 10. Lonsdale, K. The Structure of the Benzene Ring : Abstract : Nature. Nature
 122, 810 (1928).
@@ -10107,9 +10100,9 @@ human membrane proteome: A majority of the human membrane proteins can
 be classified according to function and evolutionary origin. BMC Biology 7, 50
 (2009).
 
-BIBLIOGRAPHY
+166
 
-167
+BIBLIOGRAPHY
 
 21. Wang, X., Wang, R., Zhang, Y. & Zhang, H. Evolutionary survey of druggable
 protein targets with respect to their subcellular localizations. Genome Biology
@@ -10139,9 +10132,9 @@ Charcot-Marie-Tooth Disease Type 1A – Association with a Spontaneous Point
 Mutation in the PMP22 Gene. New England Journal of Medicine 329, 96–101
 (1993).
 
-168
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+167
 
 30. Fairweather, N., Bell, C., Cochrane, S., Chelly, J., Wang, S., L.Mostacciuolo,
 M., P.Monaco, A. & E.Haites, N. Mutations in the connexin 32 gene in X-linked
@@ -10169,9 +10162,9 @@ importance of <i>PTC1</i> -like domains in <i>NPC1</i>. Human Mutation 22, 313�
 Pineda, M & Coll, M. Identification of 25 new mutations in 40 unrelated Spanish Niemann-Pick type C patients: genotype-phenotype correlations. Clinical
 Genetics 68, 245–254 (2005).
 
-BIBLIOGRAPHY
+168
 
-169
+BIBLIOGRAPHY
 
 37. Seddon, A. M., Curnow, P. & Booth, P. J. Membrane proteins, lipids and detergents: not just a soap opera. Biochimica et Biophysica Acta (BBA) - Biomembranes 1666, 105–117 (2004).
 38. Von Heijne, G. Membrane-protein topology. Nature Reviews Molecular Cell Biology 7, 909–918 (2006).
@@ -10197,9 +10190,9 @@ with protein domain databases: Transmembrane regions, signal peptides and the
 issue of sequence homology. PLoS Computational Biology 6 (ed Bourne, P. E.)
 6 (2010).
 
-170
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+169
 
 47. Finn, R. D., Coggill, P., Eberhardt, R. Y., Eddy, S. R., Mistry, J., Mitchell,
 A. L., Potter, S. C., Punta, M., Qureshi, M., Sangrador-Vegas, A., Salazar,
@@ -10228,9 +10221,9 @@ subpopulations occur? Micron 32, 75–90 (2001).
 55. Bayburt, T. H., Grinkova, Y. V. & Sligar, S. G. Self-Assembly of Discoidal Phospholipid Bilayer Nanoparticles with Membrane Scaffold Proteins. Nano Letters
 2, 853–856 (2002).
 
-BIBLIOGRAPHY
+170
 
-171
+BIBLIOGRAPHY
 
 56. Duan, H., Civjan, N. R., Sligar, S. G. & Schuler, M. A. Co-incorporation of
 heterologously expressed Arabidopsis cytochrome P450 and P450 reductase into
@@ -10259,9 +10252,9 @@ complex with a cell-permeant inhibitor. Science (New York, N.Y.) 348, 1147–
 67. Tusnády, G. E. & Simon, I. The HMMTOP transmembrane topology prediction
 server. Bioinformatics 17, 849–850 (2001).
 
-172
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+171
 
 68. Viklund, H. & Elofsson, A. Best α-helical transmembrane protein topology predictions are achieved using hidden Markov models and evolutionary information.
 Protein Science 13, 1908–1917 (2004).
@@ -10286,9 +10279,9 @@ transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
 Protein Structures into Explicit Lipid Membranes. English. Structure 23, 1350–
 1361 (2015).
 
-BIBLIOGRAPHY
+172
 
-173
+BIBLIOGRAPHY
 
 78. Coskun, Ü. & Simons, K. Cell Membranes: The Lipid Perspective. Structure 19,
 1543–1548 (2011).
@@ -10316,9 +10309,9 @@ hydrophobic matching hypothesis revisited. Biochimica et Biophysica Acta Biomemb
 87. Kauko, A., Hedin, L. E., Thebaud, E., Cristobal, S., Elofsson, A. & von Heijne, G. Repositioning of Transmembrane α-Helices during Membrane Protein
 Folding. Journal of Molecular Biology 397, 190–201 (2010).
 
-174
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+173
 
 88. Kalvodova, L., Kahya, N., Schwille, P., Ehehalt, R., Verkade, P., Drechsel, D. &
 Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
@@ -10343,9 +10336,9 @@ designed transmembrane peptides: Role of hydrophobic matching and interfacial
 anchoring (Review). en. Molecular Membrane Biology 20, 271–284 (2003).
 97. Feiner, A.-S. & McEvoy, A. J. The Nernst Equation. Journal of Chemical Education 71, 493 (1994).
 
-BIBLIOGRAPHY
+174
 
-175
+BIBLIOGRAPHY
 
 98. Qin, Y., Dittmer, P. J., Park, J. G., Jansen, K. B. & Palmer, A. E. Measuring
 steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences 108,
@@ -10373,9 +10366,9 @@ and Selection 18, 295–308 (2005).
 107. Baeza-Delgado, C., Marti-Renom, M. A. & Mingarro, I. Structure-based statistical analysis of transmembrane helices. European Biophysics Journal 42, 199–
 207 (2013).
 
-176
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+175
 
 108. Pogozheva, I. D., Tristram-Nagle, S., Mosberg, H. I. & Lomize, A. L. Structural adaptations of proteins to different biological membranes. Biochimica et
 Biophysica Acta - Biomembranes 1828, 2592–2608 (2013).
@@ -10399,9 +10392,9 @@ Biochemistry 38, 9778–9782 (1999).
 117. Situ, A. J., Kang, S. M., Frey, B. B., An, W., Kim, C. & Ulmer, T. S. Membrane Anchoring of α-Helical Proteins: Role of Tryptophan. Journal of Physical
 Chemistry B 122, 1185–1194 (2018).
 
-BIBLIOGRAPHY
+176
 
-177
+BIBLIOGRAPHY
 
 118. Yau, W. M., Wimley, W. C., Gawrisch, K. & White, S. H. The preference of
 tryptophan for membrane interfaces. Biochemistry 37, 14713–14718 (1998).
@@ -10426,9 +10419,9 @@ biology of the cell 21, 1662–70 (2010).
 128. Chothia, C. The nature of the accessible and buried surfaces in proteins. Journal
 of Molecular Biology 105, 1–12 (1976).
 
-178
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+177
 
 129. Wolfenden, R. V., Cullis, P. M. & Southgate, C. C. Water, protein folding, and
 the genetic code. Science (New York, N.Y.) 206, 575–7 (1979).
@@ -10460,9 +10453,9 @@ Amino Acid Side Chains for Solvent Water. Biochemistry 20, 849–855 (1981).
 140. Von Heijne, G. & Blomberg, C. Transmembrane Translocation of Proteins: The
 Direct Transfer Model. European Journal of Biochemistry 97, 175–181 (1979).
 
-BIBLIOGRAPHY
+178
 
-179
+BIBLIOGRAPHY
 
 141. Eisenberg, D. Three-Dimensional Structure of Membrane and Surface Proteins.
 Annual Review of Biochemistry 53, 595–623 (1984).
@@ -10488,9 +10481,9 @@ Acta (BBA) - Biomembranes 1610, 3–10 (2003).
 Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 1843, 1489–
 1496 (2014).
 
-180
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+179
 
 152. Park, S. H., Das, B. B., Casagrande, F., Tian, Y., Nothnagel, H. J., Chu, M.,
 Kiefer, H., Maier, K., De Angelis, A. A., Marassi, F. M. & Opella, S. J. Structure
@@ -10520,9 +10513,9 @@ Sec61p Is Important for Efficient Protein Translocation, but Is Not Essential
 for Cell Viability. Molecular Biology of the Cell 17 (ed Gilmore, R.) 4063–4068
 (2006).
 
-BIBLIOGRAPHY
+180
 
-181
+BIBLIOGRAPHY
 
 162. Park, E. & Rapoport, T. A. Preserving the membrane barrier for small molecules
 during bacterial protein translocation. Nature 473, 239–242 (2011).
@@ -10543,9 +10536,9 @@ modes of signal recognition particle interaction with the ribosome. Science (New
 York, N.Y.) 297, 1345–8 (2002).
 171. Shan, S. O. & Walter, P. Co-translational protein targeting by the signal recognition particle. FEBS Letters 579, 921–926 (2005).
 
-182
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+181
 
 172. Petriman, N.-A., Jauß, B., Hufnagel, A., Franz, L., Sachelaru, I., Drepper, F.,
 Warscheid, B. & Koch, H.-G. The interaction network of the YidC insertase with
@@ -10574,9 +10567,9 @@ channel SecYEG. Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 16
 The Plug Domain of the SecY Protein Stabilizes the Closed State of the Translocation Channel and Maintains a Membrane Seal. Molecular Cell 26, 511–521
 (2007).
 
-BIBLIOGRAPHY
+182
 
-183
+BIBLIOGRAPHY
 
 181. Junne, T., Schwede, T., Goder, V. & Spiess, M. Mutations in the Sec61p channel
 affecting signal sequence recognition and membrane protein topology. Journal
@@ -10603,9 +10596,9 @@ stimulate protein translocation into microsomes. Nature 332, 805–810 (1988).
 190. Deshaies, R. J., Koch, B. D., Werner-Washburne, M., Craig, E. A. & Schekman, R. A subfamily of stress proteins facilitates translocation of secretory and
 mitochondrial precursor polypeptides. Nature 332, 800–805 (1988).
 
-184
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+183
 
 191. Steel, G. J., Fullerton, D. M., Tyson, J. R. & Stirling, C. J. Coordinated activation of Hsp70 chaperones. Science (New York, N.Y.) 303, 98–101 (2004).
 192. Jadhav, B., McKenna, M., Johnson, N., High, S., Sinning, I. & Pool, M. R.
@@ -10634,9 +10627,9 @@ Structural Biology 13, 404–411 (2003).
 203. Gray, M. W., Burger, G & Lang, B. F. Mitochondrial evolution. Science (New
 York, N.Y.) 283, 1476–81 (1999).
 
-BIBLIOGRAPHY
+184
 
-185
+BIBLIOGRAPHY
 
 204. Fischer, K, Weber, A, Brink, S, Arbinger, B, Schünemann, D, Borchert, S, Heldt,
 H. W., Popp, B, Benz, R & Link, T. A. Porins from plants. Molecular cloning
@@ -10666,9 +10659,9 @@ M. P. Role of the periplasmic chaperones Skp, SurA, and DegQ in outer membrane p
 214. Wu, T., Malinverni, J., Ruiz, N., Kim, S., Silhavy, T. J. & Kahne, D. Identification of a Multicomponent Complex Required for Outer Membrane Biogenesis
 in Escherichia coli. Cell 121, 235–245 (2005).
 
-186
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+185
 
 215. Hagan, C. L., Kim, S. & Kahne, D. Reconstitution of outer membrane protein
 assembly from purified components. Science 328, 890–892 (2010).
@@ -10695,9 +10688,9 @@ proteins. Biochimica et Biophysica Acta (BBA) - Biomembranes 1666, 250–263
 223. Baker, J. A., Wong, W. C., Eisenhaber, B., Warwicker, J. & Eisenhaber, F. Erratum to: Charged residues next to transmembrane regions revisited: ’Positiveinside rule” is complemented by the ’negative inside depletion/outside enrichment rule’ [BMC Biology 15, (2017) (16)] DOI: 10.1186/s12915-017-0404-4.
 BMC Biology 15 (2017).
 
-BIBLIOGRAPHY
+186
 
-187
+BIBLIOGRAPHY
 
 224. Moon, C. P., Zaccai, N. R., Fleming, P. J., Gessmann, D. & Fleming, K. G.
 Membrane protein thermodynamic stability may serve as the energy sink for
@@ -10725,9 +10718,9 @@ predicting transmembrane helices in protein sequences. Proceedings 6, 175–182
 232. Käll, L., Krogh, A. & Sonnhammer, E. L. L. Advantages of combined transmembrane topology and signal peptide prediction-the Phobius web server. Nucleic
 Acids Research 35 (2007).
 
-188
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+187
 
 233. Cserzö, M., Eisenhaber, F., Eisenhaber, B. & Simon, I. On filtering false positive
 transmembrane protein predictions. Protein Engineering, Design and Selection
@@ -10758,9 +10751,9 @@ from eubacterial, archaean, and eukaryotic organisms. Protein Science 7, 1029–
 orientation of a signal-anchor sequence. Journal of Biological Chemistry 266,
 973–978 (1991).
 
-BIBLIOGRAPHY
+188
 
-189
+BIBLIOGRAPHY
 
 243. Kida, Y., Morimoto, F., Mihara, K. & Sakaguchi, M. Function of positive charges
 following signal-anchor sequences during translocation of the N-terminal domain. Journal of Biological Chemistry 281, 1152–1158 (2006).
@@ -10787,9 +10780,9 @@ of Sciences 86, 5786–5790 (1989).
 insertion orientation in yeast depends on the charge difference across transmembrane segments, their total hydrophobicity, and its distribution. Journal of
 Biological Chemistry 273, 24963–24971 (1998).
 
-190
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+189
 
 252. Sato, M., Hresko, R. & Mueckler, M. Testing the charge difference hypothesis
 for the assembly of a eucaryotic multispanning membrane protein. Journal of
@@ -10815,9 +10808,9 @@ translocon-mediated membrane protein assembly. EMBO Reports 7, 1111–1116
 261. Oger, P. M. & Cario, A. Adaptation of the membrane in Archaea. Biophysical
 Chemistry 183, 42–56 (2013).
 
-BIBLIOGRAPHY
+190
 
-191
+BIBLIOGRAPHY
 
 262. Rutz, C., Rosenthal, W. & Schülein, R. A single negatively charged residue affects the orientation of a membrane protein in the inner membrane of Escherichia
 coli only when it is located adjacent to a transmembrane domain. Journal of
@@ -10843,9 +10836,9 @@ growth in human HeLa cells. Journal of Biological Chemistry 282, 17537–17547
 dynamics. Nature 443, 651–657 (2006).
 271. Killian, J. A. & von Heijne, G. How proteins adapt to a membrane-water interface. English. Trends in Biochemical Sciences 25, 429–434 (2000).
 
-192
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+191
 
 272. Kuznetsov, V., Lee, H. K., Maurer-Stroh, S., Molnár, M. J., Pongor, S., Eisenhaber, B. & Eisenhaber, F. How bioinformatics influences health informatics:
 usage of biomolecular sequences, expression profiles and automated microscopic
@@ -10874,9 +10867,9 @@ to identifying tail-anchored proteins in the human genome. Traffic 8, 1687–169
 281. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
 clinical applications. Advanced Drug Delivery Reviews 65, 36–48 (2013).
 
-BIBLIOGRAPHY
+192
 
-193
+BIBLIOGRAPHY
 
 282. Nordlund, G., Brzezinski, P. & Von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artificial membranes. Nature Communications 5, 4303 (2014).
 283. Kutay, U., Hartmann, E. & Rapoport, T. A. A class of membrane proteins with
@@ -10903,12 +10896,12 @@ the SEC machinery. Biochemistry 41, 11914–11920 (2002).
 Makarow, M. Translocation of the C terminus of a tail-anchored protein across
 the endoplasmic reticulum membrane in yeast mutants defective in signal
 
-194
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+193
+
 peptide-driven translocation. Journal of Biological Chemistry 278, 3489–3496
 (2003).
-
 292. Casson, J., McKenna, M., Haßdenteufel, S., Aviram, N., Zimmerman, R. &
 High, S. Multiple pathways facilitate the biogenesis of mammalian tail-anchored
 proteins. Journal of Cell Science 130, 3851–3861 (2017).
@@ -10936,9 +10929,9 @@ basis for a molecular triage reaction. Science 355, 298–302 (2017).
 R. S. & Keenan, R. J. The structural basis of tail-anchored membrane protein
 recognition by Get3. Nature 461, 361–366 (2009).
 
-BIBLIOGRAPHY
+194
 
-195
+BIBLIOGRAPHY
 
 301. Hu, J., Li, J., Qian, X., Denic, V. & Sha, B. The Crystal Structures of Yeast Get3
 Suggest a Mechanism for Tail-Anchored Protein Membrane Insertion. PLoS
@@ -10969,9 +10962,9 @@ Nature 425, 686–691 (2003).
 Protein Insertion by a Single Get1/2 Heterodimer. Cell Reports 20, 2287–2293
 (2017).
 
-196
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+195
 
 310. Vitali, D. G., Sinzel, M., Bulthuis, E. P., Kolb, A., Zabel, S., Mehlhorn, D. G.,
 Costa, B. F., Farkas, Á., Clancy, A., Schuldiner, M., Grefen, C., Schwappach,
@@ -11001,9 +10994,9 @@ cells. FEBS Letters 591, 3211–3224 (2017).
 317. Setoguchi, K., Otera, H. & Mihara, K. Cytosolic factor- and TOM-independent
 import of C-tail-anchored mitochondrial outer membrane proteins. EMBO Journal 25, 5635–5647 (2006).
 
-BIBLIOGRAPHY
+196
 
-197
+BIBLIOGRAPHY
 
 318. Kemper, C., Habib, S. J., Engl, G., Heckmeyer, P., Dimmer, K. S. & Rapaport,
 D. Integration of tail-anchored proteins into the mitochondrial outer membrane
@@ -11033,9 +11026,9 @@ Wilmanns, M., Jedd, G., Islinger, M. & Schrader, M. Predicting the targeting of
 tail-anchored proteins to subcellular compartments in mammalian cells. Journal
 of Cell Science 130, 1675–1687 (2017).
 
-198
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+197
 
 326. Costa, E. A., Subramanian, K., Nunnari, J. & Weissman, J. S. Defining the
 physiological role of SRP in protein-targeting efficiency and specificity. Science
@@ -11062,9 +11055,9 @@ Cα geometry: φ,ψ and Cβ deviation. Proteins: Structure, Function and Genetic
 Frankfurt. Biological Chemistry Hoppe-Seyler 374, 143–170 (1993).
 335. Cao, B., Porollo, A., Adamczak, R., Jarrell, M. & Meller, J. Enhanced recognition of protein transmembrane domains with prediction-based structural profiles. Bioinformatics 22, 303–309 (2006).
 
-BIBLIOGRAPHY
+198
 
-199
+BIBLIOGRAPHY
 
 336. Montgomerie, S., Cruz, J. A., Shrivastava, S., Arndt, D., Berjanskii, M. &
 Wishart, D. S. PROTEUS2: a web server for comprehensive protein structure
@@ -11093,9 +11086,9 @@ Barth Syndrome. Current Biology 19, 2133–2139 (2009).
 and saturable but does not strictly require ATP or molecular chaperones. The
 Biochemical journal 349, 611–621 (2000).
 
-200
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+199
 
 345. Saraogi, I. & Shan, S.-o. Molecular Mechanism of Co-translational Protein Targeting by the Signal Recognition Particle. Traffic 12, 535–542 (2011).
 346. Raoult, D. & Forterre, P. Redefining viruses: lessons from Mimivirus. Nature
@@ -11120,9 +11113,9 @@ gate. eLife 2014 (2014).
 355. Li, L., Park, E., Ling, J. J., Ingram, J., Ploegh, H. & Rapoport, T. A. Crystal structure of a substrate-engaged SecY protein-translocation channel. Nature
 531, 395–399 (2016).
 
-BIBLIOGRAPHY
+200
 
-201
+BIBLIOGRAPHY
 
 356. Lu, J. & Deutsch, C. Electrostatics in the Ribosomal Tunnel Modulate Chain
 Elongation Rates. Journal of Molecular Biology 384, 73–86 (2008).
@@ -11150,9 +11143,9 @@ Seshagiri, S. & Gutkind, J. S. The emerging mutational landscape of G proteins
 and G-protein-coupled receptors in cancer. Nature Reviews Cancer 13, 412–424
 (2013).
 
-202
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+201
 
 366. Singh, A., Nunes, J. J. & Ateeq, B. Role and therapeutic potential of G-protein
 coupled receptors in breast cancer progression and metastases. European Journal
@@ -11179,9 +11172,9 @@ Garcia, K. C. Structural biology. Structural basis for chemokine recognition and
 activation of a viral G protein-coupled receptor. Science (New York, N.Y.) 347,
 1113–7 (2015).
 
-BIBLIOGRAPHY
+202
 
-203
+BIBLIOGRAPHY
 
 375. Thompson, A. A., Liu, W., Chun, E., Katritch, V., Wu, H., Vardy, E., Huang,
 X.-P., Trapella, C., Guerrini, R., Calo, G., Roth, B. L., Cherezov, V. & Stevens,
@@ -11203,7 +11196,9 @@ channel, KAT1. Journal of Biological Chemistry 278, 13227–13234 (2003).
 380. Tu, L., Wang, J., Helm, A., Skach, W. & Deutsch, C. Transmembrane biogenesis
 of Kv1. 3. Biochemistry 39, 824–836 (2000).
 381. Kang, M.-K. & Tullman-Ercek, D. Engineering expression and function of membrane proteins. Methods (2018).
-382. Lu, P., Min, D., DiMaio, F., Wei, K. Y., Vahey, M. D., Boyken, S. E., Chen, Z.,
+382. Findlay, H. E. & Booth, P. J. The folding, stability and function of lactose permease differ in their dependence on bilayer lipid composition. Scientific Reports
+7, 13056 (2017).
+383. Lu, P., Min, D., DiMaio, F., Wei, K. Y., Vahey, M. D., Boyken, S. E., Chen, Z.,
 Fallas, J. A., Ueda, G., Sheffler, W., Mulligan, V. K., Xu, W., Bowie, J. U. &
 Baker, D. Accurate computational design of multipass transmembrane proteins.
 Science 359, 1042–1046 (2018).
