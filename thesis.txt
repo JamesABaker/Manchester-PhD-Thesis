@@ -292,13 +292,13 @@ Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
 
 3.3
 
-Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
 
 3.4
 
 3.3.1
 
-Building a list of tail-anchors . . . . . . . . . . . . . . . . . . . 109
+Building a list of tail-anchors . . . . . . . . . . . . . . . . . . . 108
 
 3.3.2
 
@@ -318,7 +318,7 @@ Modelling cytochrome b5 and PTP1b . . . . . . . . . . . . . . . 115
 
 3.3.6
 
-Availability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Availability of materials . . . . . . . . . . . . . . . . . . . . . . 116
 
 Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
 3.4.1
@@ -336,7 +336,7 @@ There are biochemical differences between tail-anchored transmembrane helices fr
 3.4.4
 
 More annotation is required to identify chaperone interaction
-factors of the transmembrane helix. . . . . . . . . . . . . . . . . 129
+factors of the transmembrane helix. . . . . . . . . . . . . . . . . 130
 
 3.4.5
 
@@ -345,71 +345,71 @@ transmembrane helix of tail-anchored proteins . . . . . . . . . . 131
 
 3.5
 
-Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 132
+Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
 4
 
 4 Sequence analysis of polarity in transmembrane helices suggests that
 translocation of marginally hydrophobic helices could be facilitated
 by neighbouring typically hydrophobic helices
 
-136
+137
 
 4.1
 
-Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+Abstract . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
 
 4.2
 
-Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
 4.2.1
 
 The ribosome-translocon complex in the biogenesis of membrane
-proteins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+proteins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
 
 4.2.2
 
-Cooperative transmembrane helix insertion by the transloconribosome complex . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+Cooperative transmembrane helix insertion by the transloconribosome complex . . . . . . . . . . . . . . . . . . . . . . . . . . 141
 
 4.3
 
 4.4
 
-Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+Methods . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
 4.3.1
 
-Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+Datasets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
 
 4.3.2
 
-Gene ontology . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Gene ontology . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
 
 4.3.3
 
-Complexity and hydrophobic estimation . . . . . . . . . . . . . 144
+Complexity and hydrophobic estimation . . . . . . . . . . . . . 145
 
 4.3.4
 
-Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+Statistics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
 
 4.3.5
 
-Availability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+Availability . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
 
-Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
 4.4.1
 
 Large contrasts in transmembrane helix hydrophobicity occur in
-channels and receptors . . . . . . . . . . . . . . . . . . . . . . . 145
+channels and receptors . . . . . . . . . . . . . . . . . . . . . . . 146
 
 4.4.2
 
 GPCRs contain conserved relatively polar TMH7, which follows
-the typically hydrophobic TMH6 . . . . . . . . . . . . . . . . . 147
+the typically hydrophobic TMH6 . . . . . . . . . . . . . . . . . 148
 
 4.4.3
 
 6TMH ion channels contain polar-hydrophobic transmembrane
-helix pairs/groups indicative of conserved cooperative insertion . 152
+helix pairs/groups indicative of conserved cooperative insertion . 153
 
 4.4.4
 
@@ -417,13 +417,13 @@ The prevalence of the high hydrophobic discrepancy of transmembrane helices amon
 
 4.5
 
-. . . . . . . . . . . . . . . . . . . . . 157
+. . . . . . . . . . . . . . . . . . . . . 158
 
-Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
 
 5 Conclusions and outlook
 
-161
+162
 
 Word count 63,689
 5
@@ -482,17 +482,17 @@ Records with INTRAMEM and TRANSMEM flanking region overlap. .
 3.1
 
 Hydrophobicity statistical comparisons between mouse and human,
-yeast, and plants in the SwissProt Filtered Dataset. . . . . . . . . . . . 119
+yeast, and plants in the SwissProt Filtered Dataset. . . . . . . . . . . . 120
 
 3.2
 
 Hydrophobicity statistical comparisons between mouse and human,
-yeast, and plants in the UniProt Curated Dataset. . . . . . . . . . . . . 121
+yeast, and plants in the UniProt Curated Dataset. . . . . . . . . . . . . 120
 
 3.3
 
 Statistical comparisons between TMH sequences from organelles in the
-UniProt Curated Dataset. . . . . . . . . . . . . . . . . . . . . . . . . . 121
+UniProt Curated Dataset. . . . . . . . . . . . . . . . . . . . . . . . . . 123
 
 3.4
 
@@ -503,7 +503,7 @@ organelles in the SwissProt Filtered Dataset. . . . . . . . . . . . . . . . 127
 4.1
 
 Dataset sizes of common transmembrane protein families of transporters
-and channels. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+and channels. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
 
 7
 
@@ -659,20 +659,20 @@ An overview of the biogenesis of tail-anchored proteins. . . . . . . . . . 105
 
 3.2
 
-The sources, methods, and filters applied to the sequences in the datasets.110
+The sources, methods, and filters applied to the sequences in the tailanchored protein datasets. . . . . . . . . . . . . . . . . . . . . . . . . . 109
 
 3.3
 
 A Venn diagram showing tail-anchored protein UniProt ids present in
 each of the datasets as well as those present in multiple datasets. . . . . 117
-
-3.4
-
-Average values of species datasets from UniProt manually curated set
-and SwissProt automatically filtered dataset. . . . . . . . . . . . . . . . 120
 9
 
-3.5
+3.4
+
+Average values of species datasets from UniProt manually curated set
+and SwissProt automatically filtered dataset. . . . . . . . . . . . . . . . 121
+
+3.5
 
 Average sequence-based biochemical values of organelle datasets from
 UniProt manually curated set and SwissProt automatically filtered
@@ -690,93 +690,93 @@ grouped by localisation from the SwissProt automatically filtered dataset.126
 
 3.8
 
-The profile of transmembrane helix and flanks hydrophobicity from tailanchored protein groups stratified by chaperone interactors. . . . . . . 131
+The profile of transmembrane helix and flanks hydrophobicity from tailanchored protein groups stratified by chaperone interactors. . . . . . . 132
 
 3.9
 
 Structural biochemical analysis of a homology model of cytochrome b5. 133
 
 3.10 Structural biochemical analysis of a homology model of PTP1b. . . . . 134
-3.11 A cartoon of a potential method the cytochrome b5 and PTP1b transmebrane helix could integrate spontaneously into the membrane. . . . . 135
+3.11 A cartoon of a potential method the cytochrome b5 and PTP1b transmembrane helix could integrate spontaneously into the membrane. . . . 135
 4.1
 
-A cartoon showing the generally accepted schematic of sequential multipass transmembrane helix insertion into the membranes. . . . . . . . 137
+A cartoon showing the generally accepted schematic of sequential multipass transmembrane helix insertion into the membranes. . . . . . . . 138
 
 4.2
 
 A cartoon of the ribosome in association with the translocon during
-insertion. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 139
+insertion. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
 
 4.3
 
 Pie charts of a non-redundant list of transmembrane proteins compared
 to a list of transmembrane proteins containing the most hydrophobically
-different transmembrane helix pairs. . . . . . . . . . . . . . . . . . . . . 146
+different transmembrane helix pairs. . . . . . . . . . . . . . . . . . . . . 147
 
 4.4
 
-The hydrophobicity and complexity of GPCR transmembrane helices. . 148
+The hydrophobicity and complexity of GPCR transmembrane helices. . 149
 
 4.5
 
 The hydrophobic difference observed between TMH6 and TMH7 in
-GPCRs is not due to the choice of hydrophobic scale. . . . . . . . . . . 150
+GPCRs is not due to the choice of hydrophobic scale. . . . . . . . . . . 151
 
 4.6
 
-The hydrophobicity of transmembrane helices in GPCR subfamilies. . . 151
+The hydrophobicity of transmembrane helices in GPCR subfamilies. . . 152
 
 4.7
 
-The hydrophobicity of transmembrane helices in ion channels. . . . . . 154
+The hydrophobicity of transmembrane helices in ion channels. . . . . . 155
 
 4.8
 
 The hydrophobic difference observed between TMH4 and the neighbouring transmembrane helices in 6TMH ion channels is not due to the
-choice of hydrophobic scale. . . . . . . . . . . . . . . . . . . . . . . . . 155
+choice of hydrophobic scale. . . . . . . . . . . . . . . . . . . . . . . . . 156
 
 4.9
 
 Sequence entropy is unsuitable for assessing function in TMH4 of ion
-channels. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+channels. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
 10
 
 4.10 High polarity discrepancy between sequentially adjacent transmembrane helices is not present in all transmembrane protein transporter
-families. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
-4.11 A cartoon of potential cooperative transmembrane helix insertion methods. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+families. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+4.11 A cartoon of potential cooperative transmembrane helix insertion methods. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
 
 11
 
 Acronyms
-AP Arrest Peptide. 138–141, 160, 162
-EM Electron Microscopy. 21, 22, 25–27, 40, 162
-EMC ER Membrane protein Complex. 23, 42, 105, 107, 159, 162
-ER Endoplasmic Reticulum. 29–31, 36, 39, 40, 42, 53, 84, 85, 104–108, 110, 112,
-121–124, 126–129, 137, 141, 142, 150
-GPCR G protein-coupled receptor. 28, 45, 143, 144, 146–152, 159, 160, 162
+AP Arrest Peptide. 139–142, 161, 163
+EM Electron Microscopy. 21, 22, 25–27, 40, 163
+EMC ER Membrane protein Complex. 23, 42, 105, 107, 160, 163
+ER Endoplasmic Reticulum. 29–31, 36, 39, 40, 42, 53, 84, 85, 104–108, 110–112,
+122–129, 138, 142, 143, 151
+GPCR G protein-coupled receptor. 28, 45, 144, 145, 147–153, 160, 161, 163
 K-S Kolmogorov-Smirnov. 75, 77–79, 100, 114
 K-W Kruskal-Wallis. 61, 62, 66, 75, 77–79, 100, 114
-MD Molecular Dynamics. 27, 29, 34, 162
-MOM Mitochondrial Outer Membrane. 44, 46, 107, 128, 132
+MD Molecular Dynamics. 27, 29, 34, 163
+MOM Mitochondrial Outer Membrane. 44, 46, 107, 128, 129, 135
 PDB Protein Data Bank. 22, 28, 32, 53
-PM Plasma Membrane. 39, 40, 84, 85, 109, 112, 121–123, 125, 127, 128
+PM Plasma Membrane. 39, 40, 84, 85, 110, 112, 122, 123, 127–129
 POPC Palmitoyloleoylphosphatidylcholine. 37, 71
-RNA Ribonucleic Acid. 40, 137–139
+RNA Ribonucleic Acid. 40, 138–140
 SNARE Soluble N-ethylmaleimide-sensitive factor attachment protein receptor. 103,
-107, 161
-SP Signal Peptide. 24, 26, 40, 43–47, 109, 111, 129
+107, 162
+SP Signal Peptide. 24, 26, 40, 43–47, 110, 111, 129
 12
 
-SR Signal Recognition Particle Receptor. 40, 41, 43, 104, 137, 138
-SRP Signal Recognition Particle. 40, 43, 104–106, 108, 113, 137, 138
-TA Tail Anchor. 27, 36, 39, 42, 47, 48, 103–109, 111–113, 116–123, 125, 127–135,
-161, 162
-TM Transmembrane. 20, 21, 26, 28, 33, 38–40, 51–54, 67, 70, 75, 83, 96, 107, 116
+SR Signal Recognition Particle Receptor. 40, 41, 43, 104, 138, 139
+SRP Signal Recognition Particle. 40, 43, 104–106, 113, 138, 139
+TA Tail Anchor. 27, 36, 39, 42, 47, 48, 103–108, 111–113, 116–123, 125, 127–131,
+134–136, 162, 163
+TM Transmembrane. 20, 21, 26, 28, 33, 38–40, 51–54, 67, 70, 75, 83, 96, 107, 115
 TMH Transmembrane Helix. 20, 23–29, 31–45, 47, 48, 50–58, 60–76, 79–89, 91, 92,
-94–100, 103–109, 111, 112, 114–135, 137–142, 144–163
+94–100, 103–108, 110–112, 114–116, 118–136, 138–143, 145–164
 TMP Transmembrane Protein. 20–27, 29, 31, 34, 39, 42–44, 47, 48, 50, 52–54, 57,
-58, 67, 70, 72, 80–84, 106, 119, 129, 137–140, 142, 145–147, 152, 157–163
-TMS Transmembrane Segment. 24, 31, 100, 116
+58, 67, 70, 72, 80–84, 106, 119, 129, 130, 138–141, 143, 146–148, 153, 158–164
+TMS Transmembrane Segment. 24, 31, 100, 115
 TOM Translocase of the Outer Membrane. 46, 107
 
 13
@@ -1424,7 +1424,7 @@ Over the last 50 years or so, there have been many attempts to use hydrophobicit
 amounts of scales, major efforts have been made to compare them to identify which
 ones are better for which tasks of identifying structural elements [126, 127]. Simm
 et al. 2016 [126] compared 98 scales and found that the accuracy of a scale for secondary structure prediction depends on the spacing of the hydrophobicity values of
-certain amino acids but generally that the methods behind the scales don’t affect the
+certain amino acids but generally that the methods behind the scales do not affect the
 separation capacity between β sheets or α helices.
 Throughout this thesis, several scales are used to evaluate and estimate the hydrophobic values of peptide chains. All the scales aim for quantifying the hydrophobic
 
@@ -7055,39 +7055,38 @@ Introduction
 TA proteins are defined by their single carboxy-terminal TMH with a cytosolic facing
 amino-terminus and are a topologically distinct class of intracellular proteins. The
 integration of TA proteins into the membrane is post-translational rather than cotranslational; the ribosome is not in complex with the membrane bound insertion
-machinery.
-
-TA proteins are involved in a range of key cellular functions such as
-
-translocation [277] (Sec61β and Sec61γ) and apoptosis (Bcl-2 apoptotic protein family) [278]. Additionally, within the TA class of proteins are a set of vesicle fusion
+machinery. TA proteins are involved in a range of key cellular functions such as
+translocation (Sec61β and Sec61γ) [277] and apoptosis (Bcl-2 apoptotic protein family) [278]. Additionally, within the TA class of proteins are a set of vesicle fusion
 proteins called Soluble N-ethylmaleimide-sensitive factor attachment protein receptor
 (SNARE) proteins [279], which contain typically hydrophobic TMHs [280]. The idea
-that SNARE proteins are modular and capable of spontaneous insertion has significant implications for both biomedical application in liposome-based drug delivery.
+that SNARE proteins are modular and capable of spontaneous insertion has significant
+implications for biomedical application in liposome-based drug delivery. Furthermore,
+this could aid future research for testing complex biological molecular networks [281,
 
 104
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
-Furhtermore, this could can aid future research for testing complex biological molecular networks [281, 282].
-The TA protein’s TMH is both the anchor and the targeting factor for the ER
-[283]. Furthermore, the hydrophobicity appears to be a determining factor in the
-delivery pathway that TA proteins use for insertion [284, 285], for which there is
-evidence demonstrating that there are several mechanisms of protein membrane integration [285, 286](Figure 3.1).
-TA proteins have several pathways for biogenesis in the ER membrane. TA proteins
-were originally thought to be inserted into the membrane via different machinery than
-the co-translational machinery, but unexpectedly SRP was found to be a factor for
-post-translational targeting confirmed by both cross-linking studies [287] and an in
-vitro pull-down experiment [288]. SRP would deliver the TA protein to the membranebound SR in association with a highly conserved Sec translocon. Further cross-linking
-experiments suggested Sec61 is also involved during TA protein membrane insertion
-[289]. Previous studies had shown the Sec61 translocon is not necessary for TA protein
-membrane integration by biochemical reconstitution experiments [283] and conditional
-mutants in yeast [290, 291]. So whilst it is hard to determine if Sec61 can be part
-of the post-translational pathway, we can conclude that it is certainly not essential,
-indeed almost no observable impact on biogenesis is had when it is removed [283, 290,
-291]. Nevertheless, this suggests the possibility of at least one insertion mechanism
-that is related to the co-translational method of insertion. Most likely is that SRP
-binds to the TA protein after it is released from the ribosome and chaperones it until
-it is close enough to the established post translational machinery [292] (Figure 3.1iii).
+282].
+The TA protein’s TMH is both the anchor and the targeting factor for the ER [283].
+Furthermore, the hydrophobicity of the TMH appears to be a determining factor in
+the delivery pathway that TA proteins use for insertion [284, 285], for which there
+is evidence demonstrating that there are several mechanisms of protein-membrane
+integration [285, 286](Figure 3.1).
+TA proteins have several pathways for biogenesis in the ER membrane. TA proteins were originally thought to be inserted into the membrane via different machinery
+than the co-translational machinery, but unexpectedly SRP was found to be a factor
+for post-translational targeting confirmed by both cross-linking studies [287] and an in
+vitro pull-down experiment [288]. It was shown that SRP could deliver the TA protein
+to the membrane-bound SR in association with a highly conserved Sec translocon.
+Further cross-linking experiments confirmed Sec61 is also involved during TA protein
+membrane insertion [289]. Previous studies had shown the Sec61 translocon is not necessary for TA protein membrane integration by biochemical reconstitution experiments
+[283] and conditional mutants in yeast [290, 291]. So whilst it is hard to determine if
+Sec61 can be part of the post-translational pathway, we can conclude that it is certainly not essential, indeed almost no observable impact on biogenesis is had when it
+is removed [283, 290, 291]. Nevertheless, this suggests the possibility of at least one
+insertion mechanism that is related to the co-translational method of insertion. Most
+likely is that SRP binds to the TA protein after it is released from the ribosome and
+chaperones it until it is close enough to the established post translational machinery
+[292] (Figure 3.1iii).
 A second redundant system is also known to be involved in TA protein biogenesis
 and is referred to as the TRC40 (also known as Asna1) pathway in mammals (Figure
 3.1i). A conserved homologue was found in Saccharomyces cerevisiae, Get3 [293],
@@ -7190,7 +7189,7 @@ Ribosome
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
-and Get5 complex (two copies of each)[295–298].
+and Get5 (Ubl4A) complex (two copies of each)[295–298].
 In mammals, at this point SGTA either associates with preferential TRC40 which
 targets the TA protein for ER membrane biogenesis or if there are excess TA proteins
 SGTA also associates with Bag6 which targets the TA protein for degradation [299].
@@ -7200,37 +7199,36 @@ Get3 associates first with the Sgt2-Get4-Get5 complex via an interaction with th
 N-terminal of Get4 [294]. A dimerised ADP-bound Get3 [300–304] associates with
 and shields the C-terminal region of the TA protein [293, 305, 306]. This shielding
 may be especially important since Get3 is involved in the folding of any nascent TA
-proteins, which would be an unviable hydrophobic in the cytosol [307]. Fluorescence
-studies revealed that tagged Get3 appears at both the cytosol and the ER membrane
-so apparently shuttles the TA protein between the transmembrane complex of Get1
-and Get 2 (WRB and CAML in mammalian cells), that contains cytosolic domains
-that receive the Get3, Get4, Get5, Sgt2 complex [308, 309]. Yet it is an interesting
-note that a single molecule fluorescence study revealed that the minimum machinery
-required for TA protein insertion from this system is a Get1 and Get2 heterodimer
-[309]. The Get pathway exclusively delivers TA proteins to the ER membrane, and
-indeed has been recently shown to be responsible for some of the mislocalisation of
-mitochondrial TA proteins during overexpression or signal masking to the ER [310].
-The significance of this is that the Get machinery can recognise and tolerate integration
-of non-ER proteins. Yet there is also evidence that the deep groove of Get3 [311,
-312] predisposes it to only effectively integrating the more hydrophobic TMHs of TA
-proteins [294, 313]. As an example, increasing the hydrophobicity of the TMH in
-squalene synthase (an ER TA TMP involved in sterol synthesis) in a TRC40 inhibited
-system reduced the biogenesis of the protein, where the wild-type was unaffected by
-TRC40 inhibition [314]. Around a half of TA proteins are estimated to not use the
-TRC pathway [314].
-Redundancy of the Get/TRC40 pathway and SRP pathway may be explained in
-part by a novel SRP and Get independent pathway. This pathway utilises the Snd
-pathway and was discovered in yeast [315] (Figure 3.1ii). Snd1 binds to the TA protein
-after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane-bound
+proteins, which would be an unviable in the cytosol due to their hydrophobicity [307].
+Fluorescence studies revealed that tagged Get3 appears at both the cytosol and the
+ER membrane so apparently shuttles the TA protein between the transmembrane
+complex of Get1 and Get 2 (WRB and CAML in mammalian cells), that contains
+cytosolic domains that receive the Get3, Get4, Get5, Sgt2 complex [308, 309]. Yet
+it is an interesting note that a single molecule fluorescence study revealed that the
+minimum machinery required for TA protein insertion from this system is a Get1 and
+Get2 heterodimer [309]. The Get pathway exclusively delivers TA proteins to the
+ER membrane, and indeed has been recently shown to be responsible for some of the
+mislocalisation of mitochondrial TA proteins during overexpression or signal masking
+to the ER [310]. The significance of this is that the Get machinery can recognise and
+tolerate integration of non-ER proteins. Yet there is also evidence that the deep groove
+of Get3 [311, 312] predisposes it to only effectively integrating the more hydrophobic
+TMHs of TA proteins [294, 313]. As an example, increasing the hydrophobicity of
+the TMH in squalene synthase (an ER TA TMP involved in sterol synthesis) in a
+TRC40 inhibited system reduced the biogenesis of the protein, where the wild-type
+was unaffected by TRC40 inhibition [314]. Around a half of TA proteins are estimated
+to not use the TRC40 pathway [314].
+Redundancy of the GET/TRC40 pathway and SRP pathway may be explained
+in part by a novel SRP and Get independent pathway. This pathway utilises the
+Snd pathway and was discovered in yeast [315] (Figure 3.1ii). Snd1 binds to the TA
 
 3.2. INTRODUCTION
 
 107
 
-complex which integrates the TA protein into the membrane. So far only the human
-homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity
-[316]. However, it is suspected that functional mammalian homologues exist for Snd1
-and Snd3 also, albeit with low sequence similarity.
+protein after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane-bound complex which integrates the TA protein into the membrane. So far only the
+human homologue of Snd2 has been identified (hSnd2) with relatively low sequence
+identity [316]. However, it is suspected that functional mammalian homologues exist
+for Snd1 and Snd3 also, albeit with low sequence similarity.
 Even more recently identified as a TA protein insertase was the EMC [314] (Figure
 3.1iv). In the interaction study, squalene synthase did not effectively crosslink with any
 TRC pathway machinery. Calmodulin (a eukaryotic highly conserved calcium-sensing
@@ -7239,51 +7237,44 @@ in a chaperone free E. coli translation system with purified translation factors
 this system, calmodulin acted similarly to the mammalian chaperone protein SGTA,
 and although in native cytosol calmodulin was preferred, SGTA could also be used by
 the protein. By contrast VAMP2 (a TA protein involved in vesicle binding), which is
-known to interact with TRC40 as a chaperone [299], was unable to insert in this system. Abolition by knock outs of the EMC components greatly reduced the insertion
+known to interact with TRC40 as a chaperone [299], was unable to insert in this system. Abolition by knock-outs of the EMC components greatly reduced the insertion
 potential of squalene synthase, along with five mutants thereof, and six other TRC40
 independent proteins in ER membranes from semi-permeabilised cultured cells, but
-not that of VAMP2. Insertion of Sec61β (a post translaitonally inserted protein ) was
+not that of VAMP2. Insertion of Sec61β (a post-translationally inserted protein ) was
 partially dependent on both systems, perhaps indicating the midway point between
 the two [314] (Figure 3.1).
-Some TA proteins, for example BCL-2 involved in apoptosis, are targetted to the
+Some TA proteins, for example BCL-2 involved in apoptosis, are targeted to the
 MOM instead of the ER, however the mitochondrial mechanism of membrane integration works independently from the TOM [317, 318]. In the absence of the mitochondrial inner and outer translocons and their associated machinery, insertion machinery
 and GET/TRC machinery, heat shock proteins Hsp40 and Hsc70 chaperones along
 with ATP are also sufficient for enough biogenesis of TA proteins for viable cell growth
-[284, 285, 317–321] (Figure 3.1 (v)). Synaptobrevin, one of the first identified SNARE
-proteins, is capable of spontaneous insertion if the naturally occuring TA domain is
-replaced by the TM that is known to be able to spontanously insert into the ER.
-One can therefore conclude that spontaneous insertion is a property of the TMH, not
+[284, 285, 317–321] (Figure 3.1v). Synaptobrevin, one of the first identified SNARE
+proteins, is capable of spontaneous insertion if the naturally occurring TA domain is
+replaced by the TM that is known to be able to spontaneously insert into the ER.
+One can, therefore, conclude that spontaneous insertion is a property of the TMH, not
 of the rest of the protein [282]. Molecular dynamics simulations showed that direct
-insertion TMHs thermodynamically mimics the energies of TMHs integrated by the
 
 108
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
+insertion TMHs thermodynamically mimics the energies of TMHs integrated by the
 translocon [322] so in theory, no integration machinery is strictly necessary if the TMH
-can “correctly” interact with the membrane interface. Further, it was revealed that
-scrambling the TMH sequence, but maintaining hydrophobicity, reduced the insertion
-potential of spontaneously inserting TMHs [135]. This phenomenon cannot, therefore,
-be explained entirely by the marginal hydrophobicity of the TMH.
-
+can “correctly” interact with the membrane interface. Furthermore, it was revealed
+that scrambling the TMH sequence, but maintaining hydrophobicity, reduced the insertion potential of spontaneously inserting TMHs [135]. This phenomenon cannot,
+therefore, be explained entirely by the marginal hydrophobicity of the TMH.
 The few peroxisomal TA proteins first associate with Pex19 which forms a complex
 with the membrane-anchored Pex3 protein from which the TA protein is integrated
 into the membrane [323–325](Figure 3.1vi).
-
 Given a “choice”, it is speculated that hydrophobicity determines the integration
-pathway since Sec61β has a hydrophobic TMH and is targeted via the SRP pathway to
-the ER, whereas marginally hydrophobic TA proteins like cytochrome b5 and PTP1b
-can spontaneously insert in vitro and biologically only rely on Hsp70 and Hsc40 [284,
-285, 326]. Altering the hydrophobicity, at least in the case of the spontaneously
-inserting PTP1b, also determines the localisation of the TA protein to either the
-mitochondrial membrane or the ER membrane, or rather a more hydrophobic TA
-protein TMH is less likely to localise to the mitochondrial membrane [327]. Broader
+pathway [284, 285, 326]. Altering the hydrophobicity, at least in the case of the
+spontaneously inserting PTP1b, also determines the localisation of the TA protein to
+either the mitochondrial membrane or the ER membrane, or rather a more hydrophobic
+TA protein TMH is less likely to localise to the mitochondrial membrane [327]. Broader
 analysis has shown that hydrophobicity [136] stratified by TM tendency score [230] can
 distinguish between the ER and mitochondrial localised TA proteins [25]. However,
 the diversity and known biosynthetic redundancy of these proteins may mean that no
 single factor applied en masse is able to distinguish the TMH recognition factors and
 investigation into this area is becoming increasingly complex [25].
-
 By regenerating a list of likely TMHs [280] and using a manually curated list of TA
 proteins [74], this investigation aims to find relationships between biochemical factors
 and a disposition to a certain insertion mechanism and terminal localisations. Here,
@@ -7291,12 +7282,8 @@ we also present evidence for a conserved polar strip along the spontaneously ins
 TA protein TMHs, which may be the key to the initial interaction of these TMHs with
 the membrane interface.
 
-3.3. METHODS
-
 3.3
 3.3.1
-
-109
 
 Methods
 Building a list of tail-anchors
@@ -7304,34 +7291,14 @@ Building a list of tail-anchors
 Steps carried out by Kalbfleisch et al. (Traffic 8: 16871694) to generate a list of all
 TA proteins in the human proteome [280] were recreated using up to date tools and
 applied to other model representative species. Whilst their study focused on the human
+
+3.3. METHODS
+
+109
+
 proteome, here we take into account the entire TrEMBL and SwissProt database and
 then stratify the datasets by the organism at the end of the pipeline. An overview of
 the generation of these datasets is shown in Figure 3.2.
-
-SwissProt tail anchored dataset according to filters
-There were 557012 protein records downloaded from SwissProt via UniProt [74] (downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between 76953
-records (annotation:(type:transmem)ANDreviewed:no). This keyword is contained
-in a record according to either experimental evidence [74] or a conservative metaanalysis of TMH prediction using TMHMM [66], Memsat [65], Phobius [70, 232] and
-the hydrophobic moment plot method of Eisenberg and co-workers [141]. 11141 of
-those records had only a single TMH. 11110 of those TMHs were within the length
-thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms
-according to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL).
-4332 of those had annotation (based on TOPO_DOM annotation) that the N terminal was
-cytoplasmic. 615 of those had the TMH within 25 residues of the C-terminal, the same
-threshold used by Kalbfleisch et al., [280]. Running CD-Hit 4.5.3 on the WebMGA
-web-server [273, 328] at 90% identical sequence at 90% coverage thresholds resulted
-in 443 representative proteins. This threshold was chosen as a compromise between
-avoiding over-representation of a certain protein and maintaining a viable sample size.
-From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were
-eukaryotic and 11 came from dsDNA viruses. When counting proteomes with greater
-than 20 records, 49 belonged to the A. thaliana proteome, 48 to Mus musculus
-(Mouse), 46 to the Homo sapiens proteome, 24 to S.cerevisiae.
-65 were annotated under the mitochondrion location (query locations:
-(location:"Mitochondrion[SL-0173]")), 157 in the PM (query locations:
-
-110
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
 SwissProt and
 TrEMBL
@@ -7422,61 +7389,92 @@ yeast
 ER, Golgi, PM,
 Miochondria
 
-Figure 3.2: The sources, methods, and filters applied to the sequences in the datasets.
-From top to bottom are the sources of the sequences and the filters and methods applied to each of the
-datasets of sequences. The database symbol is used to denote when the dataset was used to capture
-results and is available as supplementary material. For the dataset size and more information, see
-the methods section text.
+Figure 3.2: The sources, methods, and filters applied to the sequences in the tail-anchored protein datasets. From top to bottom are the sources of the sequences and the filters
+and methods applied to each of the datasets of sequences. The database symbol is used to denote
+when the dataset was used to capture results and is available as supplementary material. For the
+dataset size and more information, see the methods section text.
 
+110
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
+SwissProt tail anchored dataset according to filters
+There were 557012 protein records downloaded from SwissProt via UniProt [74] (downloaded 24–04–2018). 106149 TMHs (TRANSMEM annotation) were found between 76953
+records (annotation:(type:transmem)ANDreviewed:no). This keyword is contained
+in a record according to either experimental evidence [74] or a conservative metaanalysis of TMH prediction using TMHMM [66], Memsat [65], Phobius [70, 232] and
+the hydrophobic moment plot method of Eisenberg and co-workers [141]. 11141 of
+those records had only a single TMH. 11110 of those TMHs were within the length
+thresholds of 16 to 30 residues (None of those had the annotation for splice isoforms
+according to NON_TER annotation). 5548 of those had had no SP annotation (SIGNAL).
+4332 of those had annotation (based on TOPO_DOM annotation) that the N terminal was
+cytoplasmic. 615 of those had the TMH within 25 residues of the C-terminal, the same
+threshold used by Kalbfleisch et al., [280]. Running CD-Hit 4.5.3 on the WebMGA
+web-server [273, 328] at 90% identical sequence at 90% coverage thresholds resulted
+in 443 representative proteins. This threshold was chosen as a compromise between
+avoiding over-representation of a certain protein and maintaining a viable sample size.
+From this representative list, 46 were Archaeal, 66 were bacterial, and 320 were
+eukaryotic and 11 came from dsDNA viruses. When counting proteomes with greater
+than 20 records, 49 belonged to the A. thaliana proteome, 48 to Mus musculus
+(Mouse), 46 to the Homo sapiens proteome, 24 to S.cerevisiae.
+65 were annotated under the mitochondrion location (query locations:
+(location:"Mitochondrion[SL-0173]")), 157 in the PM (query locations:
 (location:"Cellmembrane[SL-0039]"),
 
 82 in the Golgi (query locations:
 
 (location:"Golgiapparatus[SL-0132]")), and 98 in the ER (query locations:
 (location:"Endoplasmicreticulum[SL-0095]"). Only 16 records were found for
-
-3.3. METHODS
-
-111
-
 the peroxisome (query locations:(location:"Endoplasmicreticulum[SL-0204]")
 which is not high enough a sample size for accurate statistical analysis.
 TrEMBL tail anchored dataset according to filters
 111425234 records were stored in the TrEMBL database at the time of download (downloaded 25–04–2018). 22107826 of those contained TRANSMEM annotation
 (annotation:(type:transmem)ANDreviewed:no). 18053 of these were single-pass
+
+3.3. METHODS
+
+111
+
 proteins. All of these were within the length restrictions of between 16 and 35 residues
 for the TMH region. 17973 of those did not contain a signal sequence when looking
 for SIGNAL annotation. 5157 of those contained a cytoplasmically located N terminal according to TOPO_DOM annotation. 155 records had a TMH within 25 residues
 of the C-terminal residue. When considering which species these records come from,
-no more than 1 record belonged to any given species. To avoid representing a well-annotated SwissProt record that includes species annotation by a poorly annotated
+no more than 1 record belonged to any given species. To avoid representing a well
+annotated SwissProt record that includes species annotation by a poorly annotated
 TrEMBL record without species annotation, these TrEMBL records were omitted from
 the sequence redundancy protocol and further analysis.
+
 UniProt curated list
 A query for locations:(location:"Single\--passtypeIVmembraneprotein[SL-9908]
 ") was used in UniProt which returned 2633 UniProtKB IDs; 463 SwissProt results
 and 2170 TrEMBL results. Type IV anchors are sometimes split into two topological
 groups; A (A cytosolic facing N terminal domain) and B (The N terminal is targeted
 to the lumen), however, the UniProt nomenclature is strictly N terminal being
-cytosolic. This manually created list contained some TA proteins that didn’t exactly
-fit the generally accepted definition of a TA protein and were excluded from further
-analysis. These could be examples of misannotation in the databases or exceptional
-TA proteins that behave as post-translationally inserted TA proteins despite not
-matching the exact criteria. 101 exceeded the TA length restrictions of 25 residues
-between the TMH and the terminal residue. 8 contained annotation for SIGNAL,
-indicating an SP, inconsistent with the TA protein definition. 20 were multipass
-proteins. A full list of which records exceeded these limits and by how much is
-included in the supplementary files. Running these records through CD-HIT at 90%
+cytosolic.
+
+This manually created list contained some TA proteins that did not
+
+exactly fit the generally accepted definition of a TA protein and were excluded from
+further analysis.
+
+These could be examples of misannotation in the databases or
+
+exceptional TA proteins that behave as post-translationally inserted TA proteins
+despite not matching the exact criteria. 101 exceeded the TA length restrictions
+of 25 residues between the TMH and the terminal residue. 8 contained annotation
+for SIGNAL, indicating an SP, inconsistent with the TA protein definition. 20 were
+multipass proteins. A full list of which records exceeded these limits and by how
+much is included in the supplementary files. Running these records through CD-HIT
+at 90% redundancy yielded 956 clusters; 269 SwissProt records and 687 TrEMBL
+records [273, 328]. No further filters were applied to this list. Proteomes represented
+by more than 20 records include A. thaliana (53 records), Human (30), Mus musculus
+(30), and S. cerevisiae (27).
+426 were annotated under the mitochondrion location (query locations:
+(location:"Mitochondrion[SL-0173]")) 47 from SwissProt and 379 automatically assigned in TrEMBL. 397 in the ER (query locations:(location:
 
 112
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
-redundancy yielded 956 clusters; 269 SwissProt records and 687 TrEMBL records [273,
-328]. No further filters were applied to this list. Proteomes represented by more than
-20 records include A. thaliana (53 records), Human (30), Mus musculus (30), and S.
-cerevisiae (27).
-426 were annotated under the mitochondrion location (query locations:
-(location:"Mitochondrion[SL-0173]")) 47 from SwissProt and 379 automatically assigned in TrEMBL. 397 in the ER (query locations:(location:
 "Endoplasmicreticulum[SL-0095]")), 88 from SwissProt and 308 automatically annotated in TrEMBL. 1 TrEMBL record (UniProt ID A0A1E5RT24) in the ER set
 contained an “X” residue in the C-terminal flank and was omitted from the analyses. Two subcellular location datasets had no automatically ascribed records and only
 contained manually annotated SwissProt records; 31 in the PM (query locations:
@@ -7497,19 +7495,19 @@ Known interactor lists from BioGrid from the chaperones were checked against the
 SwissProt automatically filtered and the UniProt curated TA protein datasets. There
 were 91 interaction pairs for Hsp40 (Biogrid ID 119699) which mapped to 206 UniProt
 records. Hsc70 (Biogrid ID 109544) had 534 interaction pairs 61 of which were mapped
-
-3.3. METHODS
-
-113
-
 to 91 UniProt records. Hsp40 and Hsc70 both returned 0 record hits after filtering the
 UniProt records IDs through the UniProt manually curated list and the automatically
 generated SwissProt list both before redundancy removal.
 Snd1 (Biogrid ID 32240) had 237 interaction pairs which mapped to 239 records.
 Snd1 returned 15 hits when filtering it through the TA datasets.
-SGT2 (BioGrid ID 34410) had 260 BioGrid interactor ids which mapped to 264
+Sgt2 (BioGrid ID 34410) had 260 BioGrid interactor ids which mapped to 264
 UniProt records. SGTA (BioGrid ID 112347) had 155 interactor ids from BioGrid,
-153 of which were mapped to 274 records. SGT2 and SGTA returned 14 and 5 hits
+
+3.3. METHODS
+
+113
+
+153 of which were mapped to 274 records. Sgt2 and SGTA returned 14 and 5 hits
 respectively.
 50 BioGrid ids from TRC40 (Biogrid ID 106931) interaction pairs were mapped to
 90 UniProt records. Get3 (BioGrid ID 31962) had 456 Biogrid interactor ids, which
@@ -7537,17 +7535,16 @@ Calculating hydrophobicity
 
 Windowed hydrophobicity was calculated using a window length of 5 residues, and half
 windows were permitted. Average hydrophobicity takes the total of the raw amino
-
-114
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
 acid hydrophobicity values and divides them by the number of amino acids in the
 slice. Unless explicitly stated, values reported in the results are based on the Kyte &
 Doolittle scale [72] which is based on the water–vapour transfer free energy and the
 interior-exterior distribution of individual amino acids.
 
+114
+
 3.3.3
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
 Calculating sequence information entropy
 
@@ -7589,11 +7586,6 @@ To note, the K-S test scrutinises for significant maximal absolute differences b
 distribution curves; the K-W test is after skews between distributions and the student
 T-test statistical test checks the average difference between distributions.
 Since the P value is a product of a fraction of test statistics obtained from a permutated set of the samples, it exponentially increases as N increases; the P -value is
-
-3.3. METHODS
-
-115
-
 a strong function of N . We rely on the Bahadur slope (B) as a measure of distance
 between two distributions [223, 255–257]. A larger Bahadur slope shows a greater
 difference between the two distributions.
@@ -7604,6 +7596,10 @@ B=
 N
 
 (3.2)
+
+3.3. METHODS
+
+115
 
 In the heatmaps (Figure 3.6, Figure 3.7), the relative percentage normalisation was
 used rather than a fraction of the absolute value. This aims to answer the question of
@@ -7636,18 +7632,17 @@ and 2MMU covering the TMH. Modeller was run from within the HHPRED server
 to generate the homology model [330, 331]. The model was confirmed to be of high
 quality using ProSA (Z-Score: -4.61) [332], Ramachandran plot on the RAMPAGE
 web server (98% allowed residues, including all TMH residues) [333].
-The coverage and alignment quality of PTP1b was, however, not as good quality.
-Although UniProt holds 145 associated PDB structures for PTP1b, these structures
-cover at least some part of the globular domains of the protein. There are no PDB
+The coverage and alignment quality of PTP1b was, however, not as good quality as
+that of the cytochrome b5 TMH. Although UniProt holds 145 associated PDB structures for PTP1b, these structures cover at least some part of the globular domains of
+the protein. There are no PDB structures for the TM domain or the nearby flanking
+regions. Instead of a global protein model, only the TMS was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH±6
+(the length of the C-terminal tail) residues of PTP1b. The ProSA Z-Score was 0.08
+which is well within the acceptable range for proteins of that length [332].
 
 116
 
 CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 
-structures for the TM domain or the nearby flanking regions. Instead of a global
-protein model, only the TMS was modelled using a homology model derived from
-a single sequence alignment of 5NAO based on the TMH±6 (the length of the C-terminal tail) residues of PTP1b. The ProSA Z-Score was 0.08 which is well within
-the acceptable range for proteins of that length [332].
 Both these TMH regions were verified by a consensus of sequence TMH predictions (Scampi seq [71], Phobius [70], TMHMM [66], MEMSAT3 [65], TMpred [334],
 HMMTOP [67], DAS–TMfilter [234], MINNOU [335], OCTOPUS [69], PRODIV [68],
 PRO–S [68], S–TMHMM [68], and proteus [336]). However, it should be noted that
@@ -7664,7 +7659,7 @@ at https://pymolwiki.org/index.php/Color_h.
 
 3.3.6
 
-Availability
+Availability of materials
 
 The scripts and datasets associated with this study can be accessed at https://
 github.com/JamesABaker/TA-protein-seq.
@@ -7678,6 +7673,10 @@ datasets
 
 Here, we use two sources for TA protein datasets. One dataset is based on a previous
 method [280] to obtain TA datasets and consists of 9296 TMH residues (13279 including up to ±5 flanking residues) from 443 SwissProt entries with 90% redundancy
+removal. Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90% redundancy removal. This dataset contains 20528 TMH residues
+(27950 including up to ±5 flanking residues) from 956 UniProt protein records.
+In order to get an understanding of the consistency of the datasets, before removing
+redundant proteins, we compared these two datasets to a remapped set of proteins from
 
 3.4. RESULTS AND DISCUSSION
 
@@ -7709,58 +7708,51 @@ the UniProt curated list of TA proteins [74]. Note that to avoid losing IDs to r
 this diagram was generated without the use of CD-HIT [273, 328], which is applied in the later
 statistical analysis.
 
-removal. Another dataset contains the UniProt curated set of Type IV membrane proteins again with 90% redundancy removal. This dataset contains 20528 TMH residues
-(27950 including up to ±5 flanking residues) from 956 UniProt protein records.
-In order to get an understanding of the consistency of the datasets, before removing
-redundant proteins, we compared these two datasets to a remapped set of proteins from
+118
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
 a previous 2007 method [280]. The S1 dataset was built with an aim to gather TA
 proteins in the human genome from the NCBI. The greatest source of uncertainty
 here is that the original S1 list includes 411 records, however, only 222 of these were
 successfully mapped to the UniProt dataset. This figure is closer to the 202 proteins
 from the original S1 list that excluded proteins that were either hypothetical or splice
 isoforms. That being said, this mapping step prevents us from directly comparing the
-
-118
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
 entire original S1 dataset. We compared the up-to-date datasets to S1 to see how
 many records are shared, how many are now obsolete, and how many are unique.
-
 Figure 3.3 shows that S1 has 175 record ids of 222 records (78.8%) which do not
 share overlap the up-to-date manually curated UniProt dataset [74]. Of the 170 unique
 records of that S1 dataset, 4 were manually annotated as not belonging to the Homo
 sapiens proteome, 20 have the C-terminal as annotated being cytoplasmic, only 125
 had TRANSMEM annotation indicating a bona fide TMH. If we apply equivalent filters,
 only 42 have annotation verifying that they are TA proteins.
-
 Equivalent criteria to the original Kalbfleisch et al., 2007 [280] study was applied
 to the entire SwissProt database and then restricted to the human proteome dataset.
 24 of these 47 records (51.1%) are in the curated UniProt TA dataset. 21 of the 49
 (44.7%) records from SwissProt filtered Homo sapiens dataset can be found in the
 original S1 list.
-
 The same method applied to an up-to-date dataset overlaps more with a manually
 curated dataset. There is also a large degree of what we now believe to be mistakes
 that occurred in the older prediction tools and datasets, even when using similar
 methods. As a trend, this shows that up-to-date datasets improve the reliability of
-this automated predicted method. These automated criteria still do not fully align with
-the manually curated list. Of 2633 records in the manually curated list, only 2241 have
-the TRANSMEM annotation. Further is not only the transmembrane annotation itself but
-also the type of transmembrane protein. Small integral membrane protein 1 is a blood
-group antigen ( UniProt ID B2RUZ4) that is just one example of a protein we know
-to be a post-translationally inserted TA protein, and yet in UniProt it is annotated
-as a type II, not type IV, transmembrane protein. As a result of which it appears in
-the SwissProt automatically filtered list and not the manually curated list. In an ideal
-database, where there are instances of discrepancy, a note on post-translational or cotranslational biogenesis would address this issue. Ultimately, this points to the idea
-that datasets are a moving target as they are constantly updated with more accurate
-information using evermore reliable tools and methods.
+this automated predicted method. These automated criteria still do not fully align
+with the manually curated list. Of 2633 records in the manually curated list, only
+2241 have the TRANSMEM annotation. Furthermore, it is not only the transmembrane
+annotation itself but also the type of transmembrane protein. Small integral membrane
+protein 1 is a blood group antigen (UniProt ID B2RUZ4) that is just one example of a
+protein we know to be a post-translationally inserted TA protein, and yet in UniProt it
+is annotated as a type II, not a type IV, transmembrane protein. As a result of which
+it appears in the SwissProt automatically filtered list and not the manually curated
 
 3.4. RESULTS AND DISCUSSION
 
-3.4.2
-
 119
+
+list. In an ideal database, where there are instances of discrepancy, a note on post-translational or co-translational biogenesis would address this issue. Ultimately, this
+points to the idea that datasets are a moving target as they are constantly updated
+with more accurate information using evermore reliable tools and methods.
+
+3.4.2
 
 It is difficult to observe any hydrophobic variation of
 tail-anchored protein transmembrane helices from different species
@@ -7773,14 +7765,21 @@ assuming a zero-difference hypothesis, in these TMH TA protein datasets we canno
 observe any species-level differences between the datasets at this sample size for TMH
 hydrophobicity.
 When comparing the average Kyte & Doolittle [72] hydrophobicity values for
-the TMHs from Homo sapiens and Mus musculus, A. thaliana, and S. cerevisiae, we
-can see little difference between the mean values. All of the mean values lie between
-2.3-2.6 when we only consider the TMH and at 1.3-1.6 when considering residues in
-close proximity to the TMH (±5 residues) (Figure 3.4).
-Indeed, we see no strong observable statistical differences in hydrophobicity (P >
-3.35E − 1 in the SwissProt automatically filtered list Table 3.1, and P > 2.40E − 1
-in the UniProt curated list Table 3.2). There are also no consistent trends among the
-absolute Bahadur slopes; no datasets are greatly different from any other.
+the TMHs from Homo sapiens and Mus musculus, A. thaliana, and S. cerevisiae,
+we can see little difference between the mean values. All of the mean values lie between 2.3-2.6 when we only consider the TMH and at 1.3-1.6 when also considering
+flanking residues in close proximity to the TMH (±5 residues) (Figure 3.4). Indeed, we
+see no strong observable statistical differences in hydrophobicity (P > 3.35E −1 in the
+SwissProt automatically filtered list Table 3.1, and P > 2.40E − 1 in the UniProt curated list Table 3.2). There are also no consistent trends among the absolute Bahadur
+slopes; no datasets are greatly different from any other.
+Here, we are dealing with datasets at least an order of magnitude smaller than
+those broad studies [84, 223] which could explain the absence of the effect. However,
+this only goes to show that if there is a biochemically distinct effect in TA proteins in
+terms of hydrophobicity between species, it is indeed weak.
+
+120
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
 Table 3.1: Hydrophobicity statistical comparisons between mouse and human, yeast,
 and plants in the SwissProt Filtered Dataset. Here, we compare a mammalian set of TA
 proteins (Homo sapiens N=46 and Mus musculus N=48) to A. thaliana (N=49) representing plants
@@ -7873,62 +7872,6 @@ B
 8.50E-1
 2.22E-3
 
-Here, we are dealing with datasets at least an order of magnitude smaller than
-
-120
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
-3.50
-TMH
-3.00
-
-Kyte & Doolittle
-Hydrophobicity
-
-2.50
-2.00
-1.50
-1.00
-0.50
-
-TMH
-and flanks
-
-0.00
-Mammal
-
-Plant
-
-Yeast Mammal
-
-UniProt Curated Set
-
-Plant
-
-Yeast
-
-SwissProt Filtered Set
-
-Figure 3.4: Average values of species datasets from UniProt manually curated set and
-SwissProt automatically filtered dataset.
-The average hydrophobicity values from the Kyte & Doolittle scale [72].for both the TMH and the
-TMH±5 residues. Values are shown for both the UniProt manually curated set and the SwissProt
-filtered set. In the UniProt manually curated set we compare the mammalian set of TA proteins
-(Homo sapiens N=30 and Mus musculus N=30) to A. thaliana (N=57) representing plants and S.
-cerevisiae (N=27) representing yeasts. For the SwissProt filtered set we compare the mammalian set
-of TA proteins (Homo sapiens N=46 and Mus musculus N=48) to A. thaliana (N=49) representing
-plants and S. cerevisiae (N=24) representing yeasts. Error bars are shown at ±1σ from the mean of
-the respective dataset.
-
-those broad studies [84, 223] which could explain the absence of the effect. However,
-this only goes to show that if there is a biochemically distinct effect in TA proteins in
-terms of hydrophobicity between species, it is indeed weak.
-
-3.4. RESULTS AND DISCUSSION
-
-121
-
 Table 3.2: Hydrophobicity statistical comparisons between mouse and human, yeast, and
 plants in the UniProt Curated Dataset. Here, we compare a mammalian set of TA proteins
 (Homo sapiens N=30 and Mus musculus N=30) to A. thaliana (N=53) representing plants and S.
@@ -7944,16 +7887,12 @@ TMH
 
 TMH and flanks
 
-3.4.3
-
 KW
 KS
 T-test
 KW
 KS
 T-test
-
-There
 
 Test
 0.71
@@ -7962,8 +7901,6 @@ Test
 1.37
 0.19
 -1.17
-
-are
 
 Mammal and Plant
 P
@@ -7989,8 +7926,6 @@ Test
 0.14
 -0.79
 
-biochemical
-
 Mammal and Yeast
 P
 B
@@ -8006,8 +7941,6 @@ B
 2.38E-03
 4.35E-01
 9.58E-03
-
-differences
 
 Test
 0.57
@@ -8033,6 +7966,62 @@ B
 8.43E-01
 2.14E-03
 
+3.4. RESULTS AND DISCUSSION
+
+121
+
+3.50
+TMH
+3.00
+
+Kyte & Doolittle
+Hydrophobicity
+
+2.50
+2.00
+1.50
+1.00
+TMH
+and flanks
+
+0.50
+0.00
+
+Mammal
+
+Plant
+
+Yeast Mammal
+
+UniProt Curated Set
+
+Plant
+
+Yeast
+
+SwissProt Filtered Set
+
+Figure 3.4: Average values of species datasets from UniProt manually curated set and
+SwissProt automatically filtered dataset.
+The average hydrophobicity values from the Kyte & Doolittle scale [72].for both the TMH and the
+TMH±5 residues. Values are shown for both the UniProt manually curated set and the SwissProt
+filtered set. In the UniProt manually curated set we compare the mammalian set of TA proteins
+(Homo sapiens N=30 and Mus musculus N=30) to A. thaliana (N=57) representing plants and S.
+cerevisiae (N=27) representing yeasts. For the SwissProt filtered set we compare the mammalian set
+of TA proteins (Homo sapiens N=46 and Mus musculus N=48) to A. thaliana (N=49) representing
+plants and S. cerevisiae (N=24) representing yeasts. Error bars are shown at ±1σ from the mean of
+the respective dataset.
+
+3.4.3
+
+There
+
+are
+
+biochemical
+
+differences
+
 between
 
 tail-
@@ -8042,6 +8031,29 @@ Although the species datasets appeared to have no significant differences betwee
 in terms of hydrophobicity, we also investigated the subcellular membranes. We see
 clear differences in the biochemistry of the TMH (Figure 3.5).
 In the UniProt manually curated dataset, the Kyte & Doolittle hydrophobicity
+
+122
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
+A)
+
+B)
+
+Figure 3.5: Average sequence-based biochemical values of organelle datasets from
+UniProt manually curated set and SwissProt automatically filtered dataset.
+A) The average hydrophobicity values from the Kyte & Doolittle scale [72], B) the average information
+entropy [148] (see methods) for both the TMH and the TMH±5 residues. Values are shown for both
+the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated
+set we compare TA proteins from the ER (N=400) to the Golgi (N=82), the PM (N=37), and the
+mitochondria (N=401). For the SwissProt filtered set we compare TA proteins from the ER (N=98)
+to the Golgi (N=82), the PM (N=157), and the mitochondria (N=65). Error bars are shown at ±1σ
+from the mean of the respective dataset.
+
+3.4. RESULTS AND DISCUSSION
+
+123
+
 scores range from 1.7 in mitochondria to 2.7 in the PM (Figure 3.5A).
 Table 3.3: Statistical comparisons between TMH sequences from organelles in the
 UniProt Curated Dataset. Here, we compare an organelle subset from the UniProt curated
@@ -8203,29 +8215,6 @@ B
 
 In the UniProt curated list, there are clear hydrophobic differences between all the
 organelle TMH datasets excluding flanks (P < 2.98E − 6) which as a trend becomes
-
-122
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
-A)
-
-B)
-
-Figure 3.5: Average sequence-based biochemical values of organelle datasets from
-UniProt manually curated set and SwissProt automatically filtered dataset.
-A) The average hydrophobicity values from the Kyte & Doolittle scale [72], B) the average information
-entropy [148] (see methods) for both the TMH and the TMH±5 residues. Values are shown for both
-the UniProt manually curated set and the SwissProt filtered set. In the UniProt manually curated
-set we compare TA proteins from the ER (N=400) to the Golgi (N=82), the PM (N=37), and the
-mitochondria (N=401). For the SwissProt filtered set we compare TA proteins from the ER (N=98)
-to the Golgi (N=82), the PM (N=157), and the mitochondria (N=65). Error bars are shown at ±1σ
-from the mean of the respective dataset.
-
-3.4. RESULTS AND DISCUSSION
-
-123
-
 less clear when considering the TMH±5 flanking residues except for mitochondria
 which increases in significance when considering the flanks also (Table 3.3). The
 ER and mitochondrial tests are very significant (P < 4.22E − 82). Consistently the
@@ -8235,25 +8224,13 @@ for by the larger sample size. This gap in hydrophobicity appears to be due to a
 trend of the ER, PM, and Golgi using isoleucine, valine, and leucine as their most
 common TMH residues, whereas in the case mitochondrial located TA proteins, the
 most common residue type is alanine in the UniProt manually curated dataset (16.3%
-of total residues) followed by valine (12% total residues)(Figure 3.6).
-Similarly, alanine is the second most common residue in mitochondrial located TA
-proteins from the SwissProt automatically generated dataset at 11.9% of the total
-residues after leucine which is 13.4% of the total residues(Figure 3.7).
+of total residues) followed by valine (12% total residues)(Figure 3.6). Similarly, alanine
+is the second most common residue in mitochondrial located TA proteins from the
+SwissProt automatically generated dataset at 11.9% of the total residues after leucine
+which is 13.4% of the total residues(Figure 3.7).
 Analysis from 16 TA proteins with known subcellular locations showed that both
 the C-terminal tail charge and hydrophobicity are determinants of the terminal destination to the ER, mitochondria, and the peroxisome intracellular subcellular locations
 [325]. They found that less hydrophobicity and more charge in the “tail” determined
-the TA protein for the mitochondria rather than the ER. This corroborates what we
-see in terms of hydrophobicity (Figure 3.5A). When we consider charge difference between organelles on larger datasets, we see trends that reinforce this idea, however,
-rather than net charge, we see charge distribution along the TMH and the neighbouring flanks. In the SwissProt automatically filtered dataset, in the ER 9.4% of the
-residues are positively charged, and 2.5% are negatively charged. Most of the positively charged residues cluster following the “positive-inside” rule between positions
--15 and -10 for R and K, but so do the negatively charged residues D and E, effectively
-reducing this local charge by 2.5%. In mitochondria, we find that the proportion of
-charge is similar (10.4% R and K, 3.3% D and E) however the negatively charged
-residues cluster on the N flank (-15 to -8) and the positively charged residues cluster
-more strongly on the outside flank (positions 9 to 15) (Figure 3.7).
-In the UniProt manually curated ER set, 6.6% of residues are positively charged
-and 3.3% of residues are negatively charged. K clusters strongly on the inside flank
-as expected, yet R clusters strongly between positions 7 to 15 and rather weakly at
 
 124
 
@@ -8317,35 +8294,37 @@ datasets are more thoroughly outlined in the methods section.
 
 125
 
+the TA protein for the mitochondria rather than the ER. This corroborates what we
+see in terms of hydrophobicity (Figure 3.5A). When we consider charge difference between organelles on larger datasets, we see trends that reinforce this idea, however,
+rather than net charge, we see differences in charge distribution along the TMH and
+the neighbouring flanks. In the SwissProt automatically filtered dataset, in the ER
+9.4% of the residues are positively charged, and 2.5% are negatively charged. Most
+of the positively charged residues cluster following the “positive-inside” rule between
+positions -15 and -10 for R and K, but so do the negatively charged residues D and
+E, effectively reducing this local charge by 2.5%. In mitochondria, we find that the
+proportion of charge is similar (10.4% R and K, 3.3% D and E) however the negatively
+charged residues cluster on the N flank (-15 to -8) and the positively charged residues
+cluster more strongly on the outside flank (positions 9 to 15) (Figure 3.7).
+In the UniProt manually curated ER set, 6.6% of residues are positively charged
+and 3.3% of residues are negatively charged. K clusters strongly on the inside flank
+as expected, yet R clusters strongly between positions 7 to 15 and rather weakly at
 the inside flank (positions -15 to -10) (Figure 3.6). Similarly to the SwissProt sets,
 D prefers the inside flank but is tolerated in the outside flank. The more abundant
 E residues behave very unusually and cluster at positions 5-10. Generally, charged
-residues are suppressed in the TMH core [84, 107], especially in anchoring TMHs
-[223]. It is unclear why this is observed, yet, altogether the 313 glutamic acid residues
-and 397 arginine residues that appear unusually deep in the TMH core may be to an
-extent neutralising one another in the folded TMH arrangement, but are ultimately
-not that abundant compared to the total number of residues in this organelle dataset
-(11351 total residues). In mitochondria, 1413 positively charged residues (11% of the
-total residues in the mitochondrial dataset) were preferentially located at the outside
-flank and somewhat into the core (positions 6 to 15) than the expected “inside” flank
-(positions -15 to -5). The 221 negatively charged residues (1.7%) unusually cluster
-at the inside. This results in a strong net positive-outside charge signal since there
-are more positively charged residues on the outer flank uncountered by the negatively
-charged residues, which are skewed with a preference for the inside flank.
+residues are suppressed in the TMH core [84, 107], especially in anchoring TMHs [223].
+It is unclear why this is observed, yet, altogether the 313 glutamic acid residues and
+397 arginine residues that appear unusually deep in the TMH core may be to an extent
+neutralising one another in the compacted TMH arrangement, but are ultimately not
+that abundant compared to the total number of residues in this organelle dataset
+(11351 total residues).
+In mitochondria, 1413 positively charged residues (11% of the total residues in the
+mitochondrial dataset) were preferentially located at the outside flank and somewhat
+into the core (positions 6 to 15) than the expected “inside” flank (positions -15 to
+-5). The 221 negatively charged residues (1.7%) unusually cluster at the inside. This
+results in a strong net positive-outside charge signal since there are more positively
+charged residues on the outer flank un-countered by the negatively charged residues,
+which are skewed with a preference for the inside flank.
 Information entropy has been known to identify cryptic function in TMHs when
-considered along with hydrophobicity [44, 45]. In terms of information entropy, there
-is a marked decrease in entropy in the PM subset (mean entropy = 3.15 in the TMH,
-2.67 including ±5 flanking residues) from the UniProt curated dataset compared to
-the other organelle datasets (entropy > 3.29 and > 2.85 including the flanks). However, this stark difference between TMHs from PM bound TA proteins and the other
-organelle datasets cannot be observed in the SwissProt set (Figure 3.5).
-No clear significant differences can be observed for the information entropy (P >
-6.33E − 2). This is unsurprising given that the hydrophobic nature of the TMHs demands that certain residues must be over-represented, which lowers the information
-entropy. In this case, we have a highly hydrophobic set, the PM UniProt set, which
-likely contains a higher proportion of the most hydrophobic residues. As a trend,
-the information entropy mirrors the hydrophobicity albeit with less range between
-dataset means (2.67-3.15 in the TMH for information entropy, 1.72-2.74 for hydrophobicity)(Figure 3.5).
-Similarly, in the SwissProt filtered dataset, the mean TMH hydrophobicity for
-mitochondria is the lowest at 1.9, but it appears to be the Golgi apparatus that is the
 
 126
 
@@ -8409,6 +8388,17 @@ the mitochondria. These datasets are more thoroughly outlined in the methods sec
 
 127
 
+considered along with hydrophobicity [44, 45]. In terms of information entropy, there
+is a marked decrease in entropy in the PM subset (mean entropy = 3.15 in the TMH,
+2.67 including ±5 flanking residues) from the UniProt curated dataset compared to
+the other organelle datasets (entropy > 3.29 and > 2.85 including the flanks). However, this stark difference between TMHs from PM bound TA proteins and the other
+organelle datasets cannot be observed in the SwissProt set (Figure 3.5).
+No clear significant differences can be observed for the information entropy (P >
+6.33E − 2). This is unsurprising given that the hydrophobic nature of the TMHs demands that certain residues must be over-represented, which lowers the information
+entropy. In this case, we have a highly hydrophobic set, the PM UniProt set, which
+likely contains a higher proportion of the most hydrophobic residues. As a trend,
+the information entropy mirrors the hydrophobicity albeit with less range between
+dataset means (2.67-3.15 in the TMH for information entropy, 1.72-2.74 for hydrophobicity)(Figure 3.5).
 Table 3.4: Statistical comparisons between transmembrane helix sequences from organelles in the SwissProt Filtered Dataset. Here, we compare organelle subsets from the
 SwissProt automatically filtered dataset of TA proteins. We compare ER (N=98) to Golgi (N=82),
 PM (N=157), and the mitochondria referred to as “mito” (N=65). The hydrophobicity was predicted
@@ -8607,8 +8597,15 @@ T-test
 1.69E-2
 2.44E-3
 
+Similarly, in the SwissProt filtered dataset, the mean TMH hydrophobicity for
+mitochondria is the lowest at 1.9. It appears to be the Golgi apparatus that is the
 peak at 2.4. In the SwissProt dataset, when we compare each subset of only the TMH
 to the ER subset, we find significance between the ER and the Golgi (P < 1.98E − 3),
+
+128
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
 and the ER and the mitochondria (P < 4.62E − 3), however, the ER and PM are
 more similar considering the Bahadur values are < 6.44E − 4, two orders of magnitude
 smaller than the other sets (Bahadur values > 3.3E − 2) (Table 3.4). When we take
@@ -8618,21 +8615,19 @@ and ER and mitochondria become more significant.
 The information entropy of the TMH string was also examined. No significance
 was observed in any consideration of the information entropy, but similarly to the
 UniProt subset, as a trend, the entropy mirrors the hydrophobicity (Figure 3.5).
-The known lipid asymmetry caused by sphingomyelin and glycosphingolipids on the
-non-cytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic leaflet in the Golgi and PM and lack of asymmetry in the ER [265, 266], or that
-sphingomyelin is not present in the ER but is present in the Golgi [268] and PM [180,
-269]. Furthermore, the PM contains densely packed sphingolipids and sterols [270].
-Mitochondria have bacterial lipids in their membrane and uniquely contain cardiolipin
-[341], which is also present in the mitochondrial outer membrane [342].
-
-128
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
-The hydrophobicity of TMHs in TA proteins is lower in proteins targetted to the
-mitochondria compared to those targetted to the ER [343]. Here we observe that average biochemical features are evidently of significance. Furthermore, we see that the
+Lipid asymmetry is caused by sphingomyelin and glycosphingolipids on the noncytosolic leaflet and phosphatidylserine and phosphatidylethanolamine in the cytosolic
+leaflet in the Golgi and PM, however, this asymmetry is not present in the ER [265,
+266]. Another consideration is that sphingomyelin is not present in the ER but is
+present in the Golgi [268] and PM [180, 269]. Furthermore, the PM contains densely
+packed sphingolipids and sterols [270]. Mitochondria have bacterial lipids in their
+membrane and uniquely contain cardiolipin [341], which is also confirmed to be present
+in the MOM [342]. The compositional differences of the membrane environments
+inevitably places different constraints on the TMHs, which may drive the observed
+variations in their biochemistry.
+The hydrophobicity of TMHs in TA proteins is lower in proteins targeted to the
+mitochondria compared to those targeted to the ER [343]. Here we observe that average biochemical features are evidently of significance. Furthermore, we see that the
 typically positive-inside negative outside tandem in positively and negatively charged
-residues is reversed in the mitochondria to positive-outside negative-inside. This variation in TMH hydrophobicity and charged residue skew reversal may be yet another
+residues is reversed in the mitochondria to positive-outside negative-inside. This variation in TMH hydrophobicity and the charged residue skew reversal may be yet another
 nuance of the system which goes some way to explaining how signals are maintained
 in local environments even when the average values are ambiguous. We also identify
 that alanine is a key reason behind the hydrophobic difference between subcellular
@@ -8640,35 +8635,34 @@ organelles, with alanine being highly selected, if not favoured over other hydro
 residues like leucine, in mitochondrial TA proteins compared to the ER, the Golgi, and
 the PM. This could be an adaptation to the mitochondrial membrane, which contains
 a higher level of cardiolipins than other membranes [90, 342]. Regarding the charged
+
+3.4. RESULTS AND DISCUSSION
+
+129
+
 residue distribution, there should also be a consideration of membrane potential. Although membrane potentials are in flux, typically, the PM has a potential of 70mV
 with the negativity being on the cytoplasmic side. It has been shown that the ER
 is again between 75-95mV with negativity on the lumenal side [98, 99]. There is no
 detectable potential across the Golgi [101], and the mitochondrial inner membrane has
 a potential of 150-180 with negativity on the matrix side [100]. However, whilst those
 numbers go some way to satisfy the flanking charge reversal we see, they do not apply
-to the mitochondrial outer membrane in which the TA proteins are localised; porins on
-the mitochondrial outer membrane effectively diminish the membrane potential across
-the membrane. Furthermore, these obseved membrane potential values are by their
+to the MOM in which the TA proteins are localised; β barrel porins on the MOM allow
+passive ion and water transfer across the membrane effectively diminishing the membrane potential. Furthermore, these observed membrane potential values are by their
 nature not fixed values. Not only would this be most striking in the nerve and muscle
 cells of course, but also would contrast between resting and stimulated secretory cells.
 It has been known for some time that both the charge and the hydrophobic length
 of the TA protein TMH region are indicative of subcellular targeting of the protein
 [343]. ER localised TA proteins typically have a more hydrophobic TMH than those
-targetted to the MOM [294]. The C-terminal tail charge is particularly important for
+targeted to the MOM [294]. The C-terminal tail charge is particularly important for
 determining subcellular localisation, and can even override the hydrophobic signal if
 strong enough [325]. Here we see that while hydrophobicity is statistically different
 between the subcellular membranes, there is overlap. Whilst there are differences in
-
-3.4. RESULTS AND DISCUSSION
-
-129
-
 total average charge at the C-terminal flank, this is not an absolute rule. Perhaps these
 TA protein anchor TMHs are mechanistically similar to those of the signal anchor
 proteins, a group of singlepass TMPs containing an uncleaved SP that remains in
-the membrane. The single hydrophobic segment in mitochondrial signal anchored
+the membrane. The single hydrophobic segment in mitochondrial signal-anchored
 proteins serves as both a mitochondrial targeting signal and a membrane anchor.
-Signal anchored proteins, along with some TA proteins, have been shown to be able to
+Signal-anchored proteins, along with some TA proteins, have been shown to be able to
 spontaneously insert into the membrane independently from the translocon [41, 320,
 344].
 Nevertheless, it is tempting to conclude that these biochemical differences between
@@ -8676,6 +8670,11 @@ differently localised TA proteins are an adaptation to the membrane composition 
 environment. But this must be tempered by noting that the spontaneously inserting
 cytochrome b5 localises to the mitochondrial membrane in the absence of cytosol, and
 to the ER in the presence of cytosol [326]; there are also biological factors determining
+
+130
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
 localisation.
 In summary, the mitochondria located TA protein TMHs typically have a preference for alanine over leucine unlike their secretory counterparts and have a negative-inside positive-outside tendency counter to the overwhelming majority of TMPs. It
 is unclear if these features are a biophysical adaptation or part of a biological sorting
@@ -8693,11 +8692,6 @@ of annotation regarding TA proteins with these chaperons probably due to the rel
 interact with.
 Snd1 has 15 records that were in our TA lists. The average Kyte & Doolittle
 hydrophobicity of these records was 2.60 in the TMH itself and 1.58 including ± 5
-
-130
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
 flanking residues. Sgt2, with 14 records, had a TMH hydrophobicity of 2.47 and 1.51
 including the flanks. 5 records were captured for SGTA with a TMH hydrophobicity of
 2.27 and 1.19 including the flanks. TRC40 had the highest TMH hydrophicity of 2.77
@@ -8710,32 +8704,52 @@ interactors had an average TMH of 2.43 and 1.98 including the flanking residues.
 At the time of the investigation, these sample sizes are not statistically viable
 for analysis. Whilst it appears TRC40 interactors have notably hydrophobic TMHs,
 TRC40s yeast homologue Get3 has interactors with much more polar TMHs, yet SGTA
-was lower than SGT2 on average. So although these average values differ and overlap
+was lower than Sgt2 on average. So although these average values differ and overlap
+
+3.4. RESULTS AND DISCUSSION
+
+131
+
 between various chaperone systems, we tried to identify clearer patterns from the TMH
 hydrophobic profiles (Figure 3.8). Similarly, whilst a clear dip in hydrophobicity at
-position +5 in Get3 from 2-3 across the rest of the TMH core to 0.32, there is no such
-spike for TRC40 meaning this is probably not of any functional importance, but rather
-an artefact of overrepresented proteins in the Get3 dataset. Snd1 also lies among these
-values, reinforcing Snd1 as a biological redundancy system [285, 286, 293].
+position +5 in Get3 from between 2-3 across the rest of the TMH core to 0.32, there is
+no such spike for TRC40 meaning this is probably not of any functional importance,
+but rather an artefact of overrepresented proteins in the Get3 dataset. Snd1 also lies
+among these values, reinforcing Snd1 as a biological redundancy system [285, 286,
+293].
 As expected, the human Pex19 interactors are as a trend among the most polar
 throughout the TMH core, however, when we consider the yeast Pex19, this trend is
-less clear (Figure 3.8). In figure 3.8,at least at a handful of locations (-3, 3, 4 and 5)
+less clear (Figure 3.8). In figure 3.8, at least at a handful of locations (-3, 3, 4 and 5)
 the SRP54 interactors have the most hydrophobic TMH cores.
-TRC40 has the highest TMH hydrophobicities at 3.9 at position -1, however, the
-yeast homologue Get3 doesn’t appear to have any preference for especially hydrophobic
-TMHs (Figure 3.8).
+TRC40 has the highest TMH mean average hydrophobicities at a given point at
+3.9 at position -1. However, the yeast homologue Get3 does not appear to have any
+preference for especially hydrophobic TMHs (Figure 3.8).
 In order to remove redundant proteins and investigate this further, more records
 with greater levels of accurate annotation need to be available to both BioGrid and
 UniProt. We also observe a great deal of overlap between the profiles, indicating that
 as a trend this is more complex than hydrophobicity alone and that net/average TMH
 polarity is not the absolute determinant of chaperone association.
 However, this method demonstrates a potential way that this chaperone-interaction
+problem can be investigated to verify that indeed hydrophicity plays a deterministic
+role in chaperone selection.
 
-3.4. RESULTS AND DISCUSSION
+3.4.5
 
-131
+Spontaneous insertion may be achieved by polar strips
+in the transmembrane helix of tail-anchored proteins
 
+The TMHs of cytochrome b5 and PTP1b are among the least hydrophobic of the TA
+proteins [284, 285]. Indeed the TMH is so polar that it is not trivial to predict and is
+not found in either dataset prepared herein. Structural modelling and analysis thereof
+reveal features that may explain the “missing hydrophobicity” [73, 113, 263, 264] of
+these particular TMHs.
+A positive patch can be seen on the cytoplasmic side of either protein TMH, and
+
+132
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
 5
+
 Kyte and Doolittle
 Hydrophobicity
 
@@ -8786,32 +8800,13 @@ position relative to the central TMH residue defined by UniProt. On the vertical
 & Doolittle hydrophobicity windowed across 5 residues allowing for half windows. The chaperone
 interactors are colour coded according to the key.
 
-problem can be investigated to verify that indeed hydrophicity plays a deterministic
-role in chaperone selection.
-
-3.4.5
-
-Spontaneous insertion may be achieved by polar strips
-in the transmembrane helix of tail-anchored proteins
-
-The TMHs of cytochrome b5 and PTP1b are among the least hydrophobic of the TA
-proteins [284, 285]. Indeed the TMH is so polar that it is not trivial to predict and is
-not found in either dataset prepared herein. Structural modelling and analysis thereof
-reveal features that may explain the “missing hydrophobicity” [73, 113, 263, 264] of
-these particular TMHs.
-A positive patch can be seen on the cytoplasmic side of either protein TMH, and
 a negative patch on the lumenal tip at the C-terminus. These electrostatic surfaces
 are prototypical of a TMH anchor with large “positive-inside” patches [84, 107, 108,
-111, 112, 223] and a strong “negative-outside” charge [223](Figure 3.9C). Once in
+111, 112, 223] and a strong “negative-outside” charge [223] (Figure 3.9C). Once in
 the membrane, this may allow the TMH to be an effective anchor despite such poor
 hydrophobicity since it satisfies electrostatic coupling to the membrane potential.
 Furthermore, there is the question of overcoming the unfavourable interaction most
 TMHs would hypothetically face when coming into contact with the highly polar
-
-132
-
-CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
-
 membrane interface without the presence of membrane integration machinery. We
 observe a highly conserved strip of relatively polar / non-hydrophobic residues on one
 side of the TMH core (in cytochrome b5 these are N112, P116, A120, A124 Y127, and
@@ -8822,31 +8817,15 @@ sequence and structure order (Figure 3.9 and Figure 3.10). Scrambling the cytoch
 b5 TMH sequence whilst maintaining the same hydrophobicity (DSNSS W W T N W
 V I P A I S A L I V A L M YR to DSNSS W W A S A I I A T M I P L L V N V
 W YR) reduces the insertion potential [135]. Therefore we can conclude that there is
-more to thie phenomenon than hydrophobicity alone. It becomes apparent that the
+more to this phenomenon than hydrophobicity alone. It becomes apparent that the
 3D arrangement of these relatively polar TMH residues is conserved and is probably
-the key to spontaneous insertion of TMHs.
-We speculate that this polar face allows the unassisted approach to the membrane’s
-polar phospholipid head groups, and once in sufficiently close proximity, the hydrophobic side of the helix is entropically driven by the water environment into the membrane
-core (Figure 3.11). This close proximity is less likely to be achieved if there is no side
-of the TMH to favourably interact with the lipid head groups, even though average
-hydrophobicity could be similar. Once integrated, the charged TMH flanking regions
-help sustain integration in lieu of a more hydrophobic TMH core.
 
-3.5
-
-Summary
-
-Here, we have observed a clear biochemical distinction between TA proteins with
-different terminal subcellular destinations. Previously it was known that both hydrophobicity and charge are involved in targeting to distinct subcellular locations
-[325]. In this study, we find that the location of the charge along and around the
-TMH of TA proteins differs among subcellular compartments. Crucially, there is a
-shift in the charged residue inside-outside tandem in the TMH flanking residues in different organelles. In the secretory pathway, the “positive-inside” “negative-outside”
-skew adheres to the membrane-potential for electrostatic coupling, but in the MOM
-where there is no membrane potential, positively charged residues are skewed to be
-
-3.5. SUMMARY
+3.4. RESULTS AND DISCUSSION
 
 133
+
+the key to spontaneous insertion of TMHs.
+
 C)
 
 B)
@@ -8886,15 +8865,12 @@ is the least. Note the correlation between the highly and modestly conserved TMH
 relatively polar residues. Another observable feature is the very strong “positive inside” [84, 107,
 108, 111, 112] and “negative outside” features which are associated with anchoring [223].
 
-located outside the cytoplasm, and the negatively charged residues are preferentially
-found inside the cytoplasm. Furthermore, the missing hydrophobicity of mitochondrial TA proteins can be in part attributed to the high abundance of alanine rather
-than leucine or isoleucine in the TMH; it is not solely the tolerance of polar residues
-in the TMH. We expected to see evolutionary adaptations of TMH hydrophobicity
-to species-specific membranes, even within eukaryotes [84, 223]. In this study using
-both a manually curated dataset from UniProt and an automatically filtered list using SwissProt annotation, we do not observe any strong differences. Since we could
-not scrutinise a difference in the species, the strong hydrophobic differences between
-organelle TMHs are indicative of a stronger adaptation pressure than between species
-as a whole. These differences are likely to be partially adaptations to the organelle
+We speculate that this polar face allows the unassisted approach to the membrane’s
+polar phospholipid head groups, and once in sufficiently close proximity, the hydrophobic side of the helix is entropically driven by the water environment into the membrane
+core (Figure 3.11). This close proximity is less likely to be achieved if there is no side
+of the TMH to favourably interact with the lipid head groups, even though average
+hydrophobicity could be similar. Once integrated, the charged TMH flanking regions
+help sustain integration in lieu of a more hydrophobic TMH core.
 
 134
 
@@ -8930,12 +8906,14 @@ patches are negatively charged whilst blue is positively charged. Note the one h
 the TMH and the opposing relatively polar face. Another observable feature is the “positive inside”
 [84, 107, 108, 111, 112] and “negative outside” features which are associated with anchoring [223].
 
-location membrane type and also possible cryptic biological factors that play a role in
-their targeting via chaperone-binding affinity. We could not find any clear trends or
-perform statistical work on the chaperone interactor datasets due to the small sample
-sizes, however, as the databases are enriched, this same method will be able to answer
-the questions about chaperone affinity with more accuracy in the future.
-Furthermore, the spontaneously inserting TA proteins PTP1b and cytochrome b5
+3.5
+
+Summary
+
+Here, we have observed a clear biochemical distinction between TA proteins with
+different terminal subcellular destinations. Previously it was known that both hydrophobicity and charge are involved in targeting to distinct subcellular locations
+[325]. In this study, we find that the location of the charge along and around the
+TMH of TA proteins differs among subcellular compartments. Crucially, there is a
 
 3.5. SUMMARY
 
@@ -8958,10 +8936,34 @@ which would lead to partitioning into the membrane. Once integrated, the strong 
 “negative-outside” charges on the TMH flanks compensate for the lack of hydrophobicity in the core
 of the TMH.
 
+shift in the charged residue inside-outside tandem in the TMH flanking residues in different organelles. In the secretory pathway, the “positive-inside” “negative-outside”
+skew adheres to the membrane-potential for electrostatic coupling, but in the MOM
+where there is no membrane potential, positively charged residues are skewed to be
+located outside the cytoplasm similarly to β barrels [108] which are also located on the
+MOM, and the negatively charged residues are preferentially found inside the cytoplasm. Furthermore, the missing hydrophobicity of mitochondrial TA proteins can be
+in part attributed to the high abundance of alanine rather than leucine or isoleucine in
+the TMH; it is not solely the tolerance of polar residues in the TMH. We expected to
+see evolutionary adaptations of TMH hydrophobicity to species-specific membranes,
+even within eukaryotes [84, 223]. In this study using both a manually curated dataset
+from UniProt and an automatically filtered list using SwissProt annotation, we do
+not observe any strong differences. Since we could not scrutinise a difference in the
+
+136
+
+CHAPTER 3. COLLATION AND ANALYSIS OF TAIL-ANCHORED...
+
+species, the strong hydrophobic differences between organelle TMHs are indicative of
+a stronger adaptation pressure than between species as a whole. These differences are
+likely to be partially adaptations to the organelle location membrane type and also
+possible cryptic biological factors that play a role in their targeting via chaperonebinding affinity. We could not find any clear trends or perform statistical work on the
+chaperone interactor datasets due to the small sample sizes, however, as the databases
+are enriched, this same method will be able to answer the questions about chaperone
+affinity with more accuracy in the future.
+Furthermore, the spontaneously inserting TA proteins PTP1b and cytochrome b5
 appear to share a polar face that emerges in structural models and a strong “positive-inside” “negative-outside” electrostatic surface. The polar face may be responsible
 for the promotion insertion potential in the absence of insertion proteins since when
 the sequence is scrambled, the insertion potential is reduced [135]. The positively and
-negatively charged residues are distributed like an ideal anchoring TMH [223] which
+negatively charged residues are distributed like an ideal anchoring TMH [223], which
 could allow the marginally hydrophobic TMH to perform as a suitable membrane
 anchoring feature.
 
@@ -8982,11 +8984,11 @@ intra-membrane molecular biochemistry. However, due to their relatively polar co
 the membrane efficiently via the translocon. Other elements of the sequence context,
 such as other transmembrane helices or flexible loop regions, allow the marginally hydrophobic transmembrane regions to integrate into the membrane environment. Here
 we analyse large numbers of multipass transmembrane protein sequences stratified by
-136
-
-4.2. INTRODUCTION
-
 137
+
+138
+
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 protein families and molecular functions to show that there are conserved stark differences between sequentially adjacent transmembrane helices in terms of hydrophobicity and TMSOC complexity. Not all classes of transmembrane protein have these
 highly polar-hydrophobic pairs. In the instances of GPCRs and ion channels, there
@@ -9030,9 +9032,9 @@ The overwhelming majority of TMPs use the co-translational method of translocati
 and attaching to the nascent peptide chain whilst it is still associated with the ribosome, and the SRP then targets the peptide and ribosome to an SR in association
 with the membrane insertion machinery on the ER membrane [113, 167].
 
-138
+4.2. INTRODUCTION
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+139
 
 Crystal structures showed the SRP targets the nascent peptide chain for membrane insertion via a GTPase in both the SRP and the membrane bound translocon associated SR [171]. the SRP-ribosome-nascent peptide complex associates with
 the translocon-SR complex thus bringing the nascent peptide chain in proximity to
@@ -9064,9 +9066,9 @@ APs are typically 10-15 residues long that bind to the upper end of the ribosoma
 exit tunnel. Once a specific mRNA codon is recognised, ribosomal stalling is induced
 [351] and the translation is halted unless a strong enough pulling force from the downstream insertion is acting on the nascent chain at that time [352]. Several “strengths”
 
-4.2. INTRODUCTION
+140
 
-139
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 PTC
 40S
@@ -9111,9 +9113,9 @@ species [353]. Therefore APs are a technique that can be used to measure precise
 forces acting on a specific part of the nascent chain during co-translational membrane
 protein integration allowing the study of TMP kinetics during insertion and folding.
 
-140
+4.2. INTRODUCTION
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+141
 
 Indeed the force profile of a single residue can now be obtained in vivo [249]. In an
 idealised TMH segment composed of alanine and leucine being inserted into E. coli
@@ -9146,9 +9148,9 @@ Ribosomal folding of the TMHs in Kv 1.3, a potassium channel, is maintained in t
 translocon [348]. Therefore, some of the final structural folding of the voltage sensor
 domain occur within the ribosomal exit tunnel.
 
-4.2. INTRODUCTION
+142
 
-141
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 Furthermore, it has recently been suggested that larger structures fold as the ribosomal exit tunnel widens [350]. This size-dependent folding was observed by using the
 SecM translational AP. Two ribosome mutants of deleted uL23 and a uL24 variant
@@ -9175,9 +9177,9 @@ open the gate fully, an intermediate stage observed in a SecY crystal structure 
 Sixteen marginally hydrophobic TMHs were screened and revealed that independently they did not efficiently insert via the translocon into the ER [263]. The study
 showed that in the presence of the neighbouring loops and TMHs, insertion often became sufficient with the exception of two of the marginally hydrophobic TMHs. The
 
-142
+4.3. METHODS
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+143
 
 orientational preference of neighbouring TMHs was shown to increase insertion efficiency into the ER of a marginally hydrophobic TMH [264]. A glycosylation study
 of three relatively polar TMHs revealed that proteins have even evolved to exhibit
@@ -9212,9 +9214,9 @@ families with a total N >20 were included in the analysis, for example, there ar
 channels with 12 TMHs, but only 16 examples fitted the criteria and were omitted
 from the study.
 
-4.3. METHODS
+144
 
-143
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 Table 4.1: Dataset sizes of common transmembrane protein families of transporters and
 channels. The type column refers to the family name. The keyword identifier column refers to the
@@ -9327,9 +9329,9 @@ fungal mating proteins, represented by 9 after UniRef50. 560 olfactory records w
 mapped to 274 records after Uniref50.
 After limiting all these sets to records containing 7 TRANSMEM features, there
 
-144
+4.3. METHODS
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+145
 
 were 39 opsins, 38 frizzled smooth GPCRs, 9 fungal mating GPCRs, 41 metabolic
 glutamate receptors, 45 t2r taste receptor proteins, and 263 olfactory receptor GPCR
@@ -9382,14 +9384,14 @@ When stratifying TMHs by hydrophobicity and sequence information entropy, there
 is a clear distinction between anchoring TMHs and those with a function beyond anchoring. The TMSOC z-score quantifies this relationship and is calculated by equation
 4.1.
 
-4.4. RESULTS AND DISCUSSION
+146
 
-145
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 "
-s
-
 z(xΦ , xc ) = (−1)
+
+s
 
 (xΦ − µΦ )2 (xc − µc )2
 +
@@ -9405,9 +9407,12 @@ the mean and standard deviation of the sequence entropy and hydrophobicity of th
 functional TMH sets.
 Broadly speaking, the information theory entropy of a linguistic string can be
 defined as in equation 4.2.
+
+H(S) = −
+
 n
 X
-H(S) = −
+
 pi logs (pi )
 
 (4.2)
@@ -9443,9 +9448,9 @@ occur in channels and receptors
 Large differences in sequenctially adjacent TMHs could indicate cooperative insertion
 mechanisms of marginally hydrophobic TMHs. In order to identify which type of TMP
 
-146
+4.4. RESULTS AND DISCUSSION
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+147
 
 may contain cooperative TMHs, the hydrophobicities for TMHs from 30045 records in
 a non-redundant version of SwissProt were calculated according to the Kyte & Dolittle hydropathy scale [72]. The absolute difference between each sequentially adjacent
@@ -9492,11 +9497,11 @@ between TMHs within the protein. This gives us an idea of search space where hig
 polar TMHs are proximally adjacent to typically hydrophobic TMHs; GPCRs and
 membrane transporters.
 
-4.4. RESULTS AND DISCUSSION
+148
 
 4.4.2
 
-147
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 GPCRs contain conserved relatively polar TMH7,
 which follows the typically hydrophobic TMH6
@@ -9527,12 +9532,10 @@ among the structures with an average of 1.96 for TMH1, 2.30 for TMH2, 2.43 for
 TMH3, 2.34 for TMH4, 2.05 for TMH5, 2.24 for TMH 6 and 2.83 for TMH7 (Figure
 4.4D). TMH3 and TMH7 are therefore the most likely to contain function beyond anchorage, whilst the low z-scores of TMH1 and TMH5 indicate they are more optimal
 
-148
-
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
-
+4.4. RESULTS AND DISCUSSION
 A)
 
+149
 B)
 
 180°
@@ -9590,9 +9593,9 @@ When we consider much larger sequence datasets containing 1016 TMHs at each
 TMH number from non-redundant GPCRs obtained from UniProt, the trend remains
 the same: that TMH3 (mean z-score of 2.52) and TMH7 (mean z-score of 2.55) have the
 
-4.4. RESULTS AND DISCUSSION
+150
 
-149
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 highest z-score, whilst TMH1 (mean z-score of 2.09) and TMH5 (mean z-score of 2.20)
 have the lowest (Figure 4.4E). To investigate the statistical differences between the zscore of the TMHs, we applied the Kruskal Wallis and 2-sample Kolmogorov Smirnov
@@ -9621,10 +9624,10 @@ In order to determine if this is conserved through the GPCR subfamilies, a varie
 hydrophobicity. When considering different GPCR subfamilies, we see a consistent
 difference between hydrophobicities between TMH6 and TMH7 besides metabolic glutamate GPCRs (Welch’s t-test P-value = 0.90) and Frizzled-smooth GPCRs (Welch’s
 
-150
+4.4. RESULTS AND DISCUSSION
 A)
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+151
 B)
 
 C)
@@ -9646,16 +9649,16 @@ between TMH6 and TMH7 (Welch’s t-test P-value = 2.89E-12).
 Opsins are a group of light-sensitive GPCRs that exhibit the TMH6-TMH7 hydrophobic discrepancy (Figure 4.6A). It was shown by cross-linking studies that opsin
 TMHs 5-7 are retained in the ER translocon and only partition into the membrane
 
-4.4. RESULTS AND DISCUSSION
+152
 A)
 
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 Opsins
 
 C) Fungal mating
 
 E) Metabolic Glutamate
 
-151
 B) Frizzled smooth
 
 D) Olfactory
@@ -9674,9 +9677,9 @@ within the protein. Although artificially extending the C-terminal did not resul
 the release of the TMHs, by replacing native TMH7 with a more hydrophobic TMH,
 the speed of insertion was decreased. TMHs 1-4 are inserted independently, and the
 
-152
+4.4. RESULTS AND DISCUSSION
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+153
 
 5-7 TMHs partition into the membrane at the same time.
 Since lowering the difference in hydrophobicity between TMH6 and TMH7 impedes
@@ -9711,9 +9714,9 @@ while TMH4 did not initiate insertion, it did have insertion potential and that 
 constructs contained multiple TMHs, membrane insertion efficiency increased [380].
 Without the ability to stop the translation through the translocon and form a TMH,
 
-4.4. RESULTS AND DISCUSSION
+154
 
-153
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 it was suggested that a different means was needed than classic sequential insertion,
 and even that TMH3 and TMH4 are integrated by the translocon at the same time
@@ -9742,11 +9745,10 @@ potassium channels, the difference is even greater between TMH3 (mean hydrophobi
 2.52E-19) in potassium ion channels (Figure 4.7F).
 The observed difference between TMH3 and TMH4 is somewhat independent of
 
-154
-
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+4.4. RESULTS AND DISCUSSION
 A)
 
+155
 B)
 
 Ion channels
@@ -9794,9 +9796,9 @@ G) The general schematic of an ion channel. P indicates the pore-forming area of
 is integrated into the membrane but is not a membrane-spanning unit. In the case of the 24 class,
 this pattern is repeated 4 times.
 
-4.4. RESULTS AND DISCUSSION
+156
 
-155
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 the scale chosen (Figure 4.8), however, the Kyte & Doolittle scale is the most sensitive
 to the hydrophobic differences between TMH3 and TMH4. Statistical significance was
@@ -9820,9 +9822,9 @@ scale. Three different scales were applied to the same dataset used in figure 4.
 observed differences were not caused by the choice of scale. A) The White and Wimley biophysical
 scale [136] B) The Eisenberg consensus scale [141]. C) The von Heijne/Hessa biological scale [113].
 
-156
+4.4. RESULTS AND DISCUSSION
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+157
 
 24TMH class is essentially a modular variant of the 6TMH class, and has even
 more extreme discrepancies between the equivalent 4 TMHs (Figure 4.7B). In the
@@ -9850,11 +9852,11 @@ B)
 Figure 4.9: Sequence entropy is unsuitable for assessing function in TMH4 of ion channels. A) The TMSOC z-score [44, 45] of TMHs from the ion channel dataset used in Figure 4.7A.
 B) The sequence information entropy of those same TMHs.
 
-4.5. SUMMARY
+158
 
 4.4.4
 
-157
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 The prevalence of the high hydrophobic discrepancy of
 transmembrane helices amongst other common “transporter” transmembrane protein classes
@@ -9887,9 +9889,9 @@ Summary
 Marginally hydrophobic TMHs are often essential physiological components for carrying out complex intra-membrane tasks beyond membrane anchorage, and widely
 prevalent among TMPs [73]. However, this presents a significant biophysical and biological challenge; how to incorporate and maintain such necessarily relatively polar
 
-158
+4.5. SUMMARY
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+159
 E)
 
 A)
@@ -9933,9 +9935,9 @@ in table 4.1
 
 TMHs into the membrane. We show that among certain classes of TMPs that this is
 
-4.5. SUMMARY
+160
 
-159
+CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
 
 a conserved issue. It was recently discovered that the EMC protein assists the translocon with the marginally hydrophobic TMHs, particularly those containing charged
 residues [24]. There is also evidence to suggest that multipass TMH arrangements
@@ -9977,9 +9979,9 @@ TMH with the typically hydrophobic TMH6 preceding it. In opsins, TMH5-TMH7
 are incorporated into the membrane together simultaneously by staying in association
 with the translocon until TMH7 emerges [376]. We see this pattern across several
 
-160
+4.5. SUMMARY
 
-CHAPTER 4. SEQUENCE ANALYSIS OF POLARITY...
+161
 
 GPCR sub-families and the GPCR family as a whole. Furthermore, we found that the
 charged TMH4 of 6TMH ion channels has a typically hydrophobic TMH3 preceding
@@ -10018,12 +10020,9 @@ Post-translationally inserted TA proteins integrate into the membrane independen
 are also of interest as a liposome drug delivery system due to the role of TA SNARE
 proteins in membrane fusion [279, 281, 282]. We found compositional differences between the mitochondrial and secretory localised TMHs of TA proteins. Alanine is used
 more commonly in the mitochondrial TMHs, perhaps even more so than isoleucine and
-161
+162
 
-162
-
-CHAPTER 5. CONCLUSIONS AND OUTLOOK
-
+163
 leucine. We also observed a reversal of the positive-inside and negative-outside distributions of charged TMH flanking residues in mitochondrially localised TA proteins.
 This re-emphasises the notion that there is more to TA protein trafficking than the
 hydrophobicity of the TMH alone [25], and could inform more specific studies of individual proteins. Still, several important questions remain unanswered that limit
@@ -10051,7 +10050,10 @@ Understanding cooperative TMH insertion and the integration of marginally hydrop
 and energetic aspects of the process. It appears that the relatively new technologies
 of single molecule EM and APs may be able to grant insight into the energetics and
 
-163
+164
+
+CHAPTER 5. CONCLUSIONS AND OUTLOOK
+
 dynamics of the structures throughout the process of TMP integration. Understanding the relationship TMHs have with one another is critical for developing complex
 synthetic TMPs.
 More generally, there are several challenges still facing our understanding of TMPs.
@@ -10085,11 +10087,11 @@ of the Blood. The Journal of experimental medicine 41, 439–443 (1925).
 9. Danielli, J. F. & Davson, H. A contribution to the theory of permeability of thin
 films. Journal of Cellular and Comparative Physiology 5, 495–508 (1935).
 
-164
-
-BIBLIOGRAPHY
-
 165
+
+166
+
+BIBLIOGRAPHY
 
 10. Lonsdale, K. The Structure of the Benzene Ring : Abstract : Nature. Nature
 122, 810 (1928).
@@ -10117,9 +10119,9 @@ human membrane proteome: A majority of the human membrane proteins can
 be classified according to function and evolutionary origin. BMC Biology 7, 50
 (2009).
 
-166
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+167
 
 21. Wang, X., Wang, R., Zhang, Y. & Zhang, H. Evolutionary survey of druggable
 protein targets with respect to their subcellular localizations. Genome Biology
@@ -10149,9 +10151,9 @@ Charcot-Marie-Tooth Disease Type 1A – Association with a Spontaneous Point
 Mutation in the PMP22 Gene. New England Journal of Medicine 329, 96–101
 (1993).
 
-BIBLIOGRAPHY
+168
 
-167
+BIBLIOGRAPHY
 
 30. Fairweather, N., Bell, C., Cochrane, S., Chelly, J., Wang, S., L.Mostacciuolo,
 M., P.Monaco, A. & E.Haites, N. Mutations in the connexin 32 gene in X-linked
@@ -10179,9 +10181,9 @@ importance of <i>PTC1</i> -like domains in <i>NPC1</i>. Human Mutation 22, 313�
 Pineda, M & Coll, M. Identification of 25 new mutations in 40 unrelated Spanish Niemann-Pick type C patients: genotype-phenotype correlations. Clinical
 Genetics 68, 245–254 (2005).
 
-168
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+169
 
 37. Seddon, A. M., Curnow, P. & Booth, P. J. Membrane proteins, lipids and detergents: not just a soap opera. Biochimica et Biophysica Acta (BBA) - Biomembranes 1666, 105–117 (2004).
 38. Von Heijne, G. Membrane-protein topology. Nature Reviews Molecular Cell Biology 7, 909–918 (2006).
@@ -10207,9 +10209,9 @@ with protein domain databases: Transmembrane regions, signal peptides and the
 issue of sequence homology. PLoS Computational Biology 6 (ed Bourne, P. E.)
 6 (2010).
 
-BIBLIOGRAPHY
+170
 
-169
+BIBLIOGRAPHY
 
 47. Finn, R. D., Coggill, P., Eberhardt, R. Y., Eddy, S. R., Mistry, J., Mitchell,
 A. L., Potter, S. C., Punta, M., Qureshi, M., Sangrador-Vegas, A., Salazar,
@@ -10238,9 +10240,9 @@ subpopulations occur? Micron 32, 75–90 (2001).
 55. Bayburt, T. H., Grinkova, Y. V. & Sligar, S. G. Self-Assembly of Discoidal Phospholipid Bilayer Nanoparticles with Membrane Scaffold Proteins. Nano Letters
 2, 853–856 (2002).
 
-170
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+171
 
 56. Duan, H., Civjan, N. R., Sligar, S. G. & Schuler, M. A. Co-incorporation of
 heterologously expressed Arabidopsis cytochrome P450 and P450 reductase into
@@ -10269,9 +10271,9 @@ complex with a cell-permeant inhibitor. Science (New York, N.Y.) 348, 1147–
 67. Tusnády, G. E. & Simon, I. The HMMTOP transmembrane topology prediction
 server. Bioinformatics 17, 849–850 (2001).
 
-BIBLIOGRAPHY
+172
 
-171
+BIBLIOGRAPHY
 
 68. Viklund, H. & Elofsson, A. Best α-helical transmembrane protein topology predictions are achieved using hidden Markov models and evolutionary information.
 Protein Science 13, 1908–1917 (2004).
@@ -10296,9 +10298,9 @@ transmembrane-helix recognition by the Sec61 translocon. Nature 450, 1026–
 Protein Structures into Explicit Lipid Membranes. English. Structure 23, 1350–
 1361 (2015).
 
-172
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+173
 
 78. Coskun, Ü. & Simons, K. Cell Membranes: The Lipid Perspective. Structure 19,
 1543–1548 (2011).
@@ -10326,9 +10328,9 @@ hydrophobic matching hypothesis revisited. Biochimica et Biophysica Acta Biomemb
 87. Kauko, A., Hedin, L. E., Thebaud, E., Cristobal, S., Elofsson, A. & von Heijne, G. Repositioning of Transmembrane α-Helices during Membrane Protein
 Folding. Journal of Molecular Biology 397, 190–201 (2010).
 
-BIBLIOGRAPHY
+174
 
-173
+BIBLIOGRAPHY
 
 88. Kalvodova, L., Kahya, N., Schwille, P., Ehehalt, R., Verkade, P., Drechsel, D. &
 Simons, K. Lipids as modulators of proteolytic activity of BACE: Involvement
@@ -10353,9 +10355,9 @@ designed transmembrane peptides: Role of hydrophobic matching and interfacial
 anchoring (Review). en. Molecular Membrane Biology 20, 271–284 (2003).
 97. Feiner, A.-S. & McEvoy, A. J. The Nernst Equation. Journal of Chemical Education 71, 493 (1994).
 
-174
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+175
 
 98. Qin, Y., Dittmer, P. J., Park, J. G., Jansen, K. B. & Palmer, A. E. Measuring
 steady-state and dynamic endoplasmic reticulum and Golgi Zn2+ with genetically encoded sensors. Proceedings of the National Academy of Sciences 108,
@@ -10383,9 +10385,9 @@ and Selection 18, 295–308 (2005).
 107. Baeza-Delgado, C., Marti-Renom, M. A. & Mingarro, I. Structure-based statistical analysis of transmembrane helices. European Biophysics Journal 42, 199–
 207 (2013).
 
-BIBLIOGRAPHY
+176
 
-175
+BIBLIOGRAPHY
 
 108. Pogozheva, I. D., Tristram-Nagle, S., Mosberg, H. I. & Lomize, A. L. Structural adaptations of proteins to different biological membranes. Biochimica et
 Biophysica Acta - Biomembranes 1828, 2592–2608 (2013).
@@ -10409,9 +10411,9 @@ Biochemistry 38, 9778–9782 (1999).
 117. Situ, A. J., Kang, S. M., Frey, B. B., An, W., Kim, C. & Ulmer, T. S. Membrane Anchoring of α-Helical Proteins: Role of Tryptophan. Journal of Physical
 Chemistry B 122, 1185–1194 (2018).
 
-176
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+177
 
 118. Yau, W. M., Wimley, W. C., Gawrisch, K. & White, S. H. The preference of
 tryptophan for membrane interfaces. Biochemistry 37, 14713–14718 (1998).
@@ -10436,9 +10438,9 @@ biology of the cell 21, 1662–70 (2010).
 128. Chothia, C. The nature of the accessible and buried surfaces in proteins. Journal
 of Molecular Biology 105, 1–12 (1976).
 
-BIBLIOGRAPHY
+178
 
-177
+BIBLIOGRAPHY
 
 129. Wolfenden, R. V., Cullis, P. M. & Southgate, C. C. Water, protein folding, and
 the genetic code. Science (New York, N.Y.) 206, 575–7 (1979).
@@ -10470,9 +10472,9 @@ Amino Acid Side Chains for Solvent Water. Biochemistry 20, 849–855 (1981).
 140. Von Heijne, G. & Blomberg, C. Transmembrane Translocation of Proteins: The
 Direct Transfer Model. European Journal of Biochemistry 97, 175–181 (1979).
 
-178
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+179
 
 141. Eisenberg, D. Three-Dimensional Structure of Membrane and Surface Proteins.
 Annual Review of Biochemistry 53, 595–623 (1984).
@@ -10498,9 +10500,9 @@ Acta (BBA) - Biomembranes 1610, 3–10 (2003).
 Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 1843, 1489–
 1496 (2014).
 
-BIBLIOGRAPHY
+180
 
-179
+BIBLIOGRAPHY
 
 152. Park, S. H., Das, B. B., Casagrande, F., Tian, Y., Nothnagel, H. J., Chu, M.,
 Kiefer, H., Maier, K., De Angelis, A. A., Marassi, F. M. & Opella, S. J. Structure
@@ -10530,9 +10532,9 @@ Sec61p Is Important for Efficient Protein Translocation, but Is Not Essential
 for Cell Viability. Molecular Biology of the Cell 17 (ed Gilmore, R.) 4063–4068
 (2006).
 
-180
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+181
 
 162. Park, E. & Rapoport, T. A. Preserving the membrane barrier for small molecules
 during bacterial protein translocation. Nature 473, 239–242 (2011).
@@ -10553,9 +10555,9 @@ modes of signal recognition particle interaction with the ribosome. Science (New
 York, N.Y.) 297, 1345–8 (2002).
 171. Shan, S. O. & Walter, P. Co-translational protein targeting by the signal recognition particle. FEBS Letters 579, 921–926 (2005).
 
-BIBLIOGRAPHY
+182
 
-181
+BIBLIOGRAPHY
 
 172. Petriman, N.-A., Jauß, B., Hufnagel, A., Franz, L., Sachelaru, I., Drepper, F.,
 Warscheid, B. & Koch, H.-G. The interaction network of the YidC insertase with
@@ -10584,9 +10586,9 @@ channel SecYEG. Biochimica et Biophysica Acta (BBA) - Molecular Cell Research 16
 The Plug Domain of the SecY Protein Stabilizes the Closed State of the Translocation Channel and Maintains a Membrane Seal. Molecular Cell 26, 511–521
 (2007).
 
-182
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+183
 
 181. Junne, T., Schwede, T., Goder, V. & Spiess, M. Mutations in the Sec61p channel
 affecting signal sequence recognition and membrane protein topology. Journal
@@ -10613,9 +10615,9 @@ stimulate protein translocation into microsomes. Nature 332, 805–810 (1988).
 190. Deshaies, R. J., Koch, B. D., Werner-Washburne, M., Craig, E. A. & Schekman, R. A subfamily of stress proteins facilitates translocation of secretory and
 mitochondrial precursor polypeptides. Nature 332, 800–805 (1988).
 
-BIBLIOGRAPHY
+184
 
-183
+BIBLIOGRAPHY
 
 191. Steel, G. J., Fullerton, D. M., Tyson, J. R. & Stirling, C. J. Coordinated activation of Hsp70 chaperones. Science (New York, N.Y.) 303, 98–101 (2004).
 192. Jadhav, B., McKenna, M., Johnson, N., High, S., Sinning, I. & Pool, M. R.
@@ -10644,9 +10646,9 @@ Structural Biology 13, 404–411 (2003).
 203. Gray, M. W., Burger, G & Lang, B. F. Mitochondrial evolution. Science (New
 York, N.Y.) 283, 1476–81 (1999).
 
-184
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+185
 
 204. Fischer, K, Weber, A, Brink, S, Arbinger, B, Schünemann, D, Borchert, S, Heldt,
 H. W., Popp, B, Benz, R & Link, T. A. Porins from plants. Molecular cloning
@@ -10676,9 +10678,9 @@ M. P. Role of the periplasmic chaperones Skp, SurA, and DegQ in outer membrane p
 214. Wu, T., Malinverni, J., Ruiz, N., Kim, S., Silhavy, T. J. & Kahne, D. Identification of a Multicomponent Complex Required for Outer Membrane Biogenesis
 in Escherichia coli. Cell 121, 235–245 (2005).
 
-BIBLIOGRAPHY
+186
 
-185
+BIBLIOGRAPHY
 
 215. Hagan, C. L., Kim, S. & Kahne, D. Reconstitution of outer membrane protein
 assembly from purified components. Science 328, 890–892 (2010).
@@ -10705,9 +10707,9 @@ proteins. Biochimica et Biophysica Acta (BBA) - Biomembranes 1666, 250–263
 223. Baker, J. A., Wong, W. C., Eisenhaber, B., Warwicker, J. & Eisenhaber, F. Erratum to: Charged residues next to transmembrane regions revisited: ’Positiveinside rule” is complemented by the ’negative inside depletion/outside enrichment rule’ [BMC Biology 15, (2017) (16)] DOI: 10.1186/s12915-017-0404-4.
 BMC Biology 15 (2017).
 
-186
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+187
 
 224. Moon, C. P., Zaccai, N. R., Fleming, P. J., Gessmann, D. & Fleming, K. G.
 Membrane protein thermodynamic stability may serve as the energy sink for
@@ -10735,9 +10737,9 @@ predicting transmembrane helices in protein sequences. Proceedings 6, 175–182
 232. Käll, L., Krogh, A. & Sonnhammer, E. L. L. Advantages of combined transmembrane topology and signal peptide prediction-the Phobius web server. Nucleic
 Acids Research 35 (2007).
 
-BIBLIOGRAPHY
+188
 
-187
+BIBLIOGRAPHY
 
 233. Cserzö, M., Eisenhaber, F., Eisenhaber, B. & Simon, I. On filtering false positive
 transmembrane protein predictions. Protein Engineering, Design and Selection
@@ -10768,9 +10770,9 @@ from eubacterial, archaean, and eukaryotic organisms. Protein Science 7, 1029–
 orientation of a signal-anchor sequence. Journal of Biological Chemistry 266,
 973–978 (1991).
 
-188
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+189
 
 243. Kida, Y., Morimoto, F., Mihara, K. & Sakaguchi, M. Function of positive charges
 following signal-anchor sequences during translocation of the N-terminal domain. Journal of Biological Chemistry 281, 1152–1158 (2006).
@@ -10797,9 +10799,9 @@ of Sciences 86, 5786–5790 (1989).
 insertion orientation in yeast depends on the charge difference across transmembrane segments, their total hydrophobicity, and its distribution. Journal of
 Biological Chemistry 273, 24963–24971 (1998).
 
-BIBLIOGRAPHY
+190
 
-189
+BIBLIOGRAPHY
 
 252. Sato, M., Hresko, R. & Mueckler, M. Testing the charge difference hypothesis
 for the assembly of a eucaryotic multispanning membrane protein. Journal of
@@ -10825,9 +10827,9 @@ translocon-mediated membrane protein assembly. EMBO Reports 7, 1111–1116
 261. Oger, P. M. & Cario, A. Adaptation of the membrane in Archaea. Biophysical
 Chemistry 183, 42–56 (2013).
 
-190
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+191
 
 262. Rutz, C., Rosenthal, W. & Schülein, R. A single negatively charged residue affects the orientation of a membrane protein in the inner membrane of Escherichia
 coli only when it is located adjacent to a transmembrane domain. Journal of
@@ -10853,9 +10855,9 @@ growth in human HeLa cells. Journal of Biological Chemistry 282, 17537–17547
 dynamics. Nature 443, 651–657 (2006).
 271. Killian, J. A. & von Heijne, G. How proteins adapt to a membrane-water interface. English. Trends in Biochemical Sciences 25, 429–434 (2000).
 
-BIBLIOGRAPHY
+192
 
-191
+BIBLIOGRAPHY
 
 272. Kuznetsov, V., Lee, H. K., Maurer-Stroh, S., Molnár, M. J., Pongor, S., Eisenhaber, B. & Eisenhaber, F. How bioinformatics influences health informatics:
 usage of biomolecular sequences, expression profiles and automated microscopic
@@ -10884,9 +10886,9 @@ to identifying tail-anchored proteins in the human genome. Traffic 8, 1687–169
 281. Allen, T. M. & Cullis, P. R. Liposomal drug delivery systems: From concept to
 clinical applications. Advanced Drug Delivery Reviews 65, 36–48 (2013).
 
-192
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+193
 
 282. Nordlund, G., Brzezinski, P. & Von Ballmoos, C. SNARE-fusion mediated insertion of membrane proteins into native and artificial membranes. Nature Communications 5, 4303 (2014).
 283. Kutay, U., Hartmann, E. & Rapoport, T. A. A class of membrane proteins with
@@ -10913,12 +10915,12 @@ the SEC machinery. Biochemistry 41, 11914–11920 (2002).
 Makarow, M. Translocation of the C terminus of a tail-anchored protein across
 the endoplasmic reticulum membrane in yeast mutants defective in signal
 
-BIBLIOGRAPHY
+194
 
-193
-
+BIBLIOGRAPHY
 peptide-driven translocation. Journal of Biological Chemistry 278, 3489–3496
 (2003).
+
 292. Casson, J., McKenna, M., Haßdenteufel, S., Aviram, N., Zimmerman, R. &
 High, S. Multiple pathways facilitate the biogenesis of mammalian tail-anchored
 proteins. Journal of Cell Science 130, 3851–3861 (2017).
@@ -10946,9 +10948,9 @@ basis for a molecular triage reaction. Science 355, 298–302 (2017).
 R. S. & Keenan, R. J. The structural basis of tail-anchored membrane protein
 recognition by Get3. Nature 461, 361–366 (2009).
 
-194
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+195
 
 301. Hu, J., Li, J., Qian, X., Denic, V. & Sha, B. The Crystal Structures of Yeast Get3
 Suggest a Mechanism for Tail-Anchored Protein Membrane Insertion. PLoS
@@ -10979,9 +10981,9 @@ Nature 425, 686–691 (2003).
 Protein Insertion by a Single Get1/2 Heterodimer. Cell Reports 20, 2287–2293
 (2017).
 
-BIBLIOGRAPHY
+196
 
-195
+BIBLIOGRAPHY
 
 310. Vitali, D. G., Sinzel, M., Bulthuis, E. P., Kolb, A., Zabel, S., Mehlhorn, D. G.,
 Costa, B. F., Farkas, Á., Clancy, A., Schuldiner, M., Grefen, C., Schwappach,
@@ -11011,9 +11013,9 @@ cells. FEBS Letters 591, 3211–3224 (2017).
 317. Setoguchi, K., Otera, H. & Mihara, K. Cytosolic factor- and TOM-independent
 import of C-tail-anchored mitochondrial outer membrane proteins. EMBO Journal 25, 5635–5647 (2006).
 
-196
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+197
 
 318. Kemper, C., Habib, S. J., Engl, G., Heckmeyer, P., Dimmer, K. S. & Rapaport,
 D. Integration of tail-anchored proteins into the mitochondrial outer membrane
@@ -11043,9 +11045,9 @@ Wilmanns, M., Jedd, G., Islinger, M. & Schrader, M. Predicting the targeting of
 tail-anchored proteins to subcellular compartments in mammalian cells. Journal
 of Cell Science 130, 1675–1687 (2017).
 
-BIBLIOGRAPHY
+198
 
-197
+BIBLIOGRAPHY
 
 326. Costa, E. A., Subramanian, K., Nunnari, J. & Weissman, J. S. Defining the
 physiological role of SRP in protein-targeting efficiency and specificity. Science
@@ -11072,9 +11074,9 @@ Cα geometry: φ,ψ and Cβ deviation. Proteins: Structure, Function and Genetic
 Frankfurt. Biological Chemistry Hoppe-Seyler 374, 143–170 (1993).
 335. Cao, B., Porollo, A., Adamczak, R., Jarrell, M. & Meller, J. Enhanced recognition of protein transmembrane domains with prediction-based structural profiles. Bioinformatics 22, 303–309 (2006).
 
-198
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+199
 
 336. Montgomerie, S., Cruz, J. A., Shrivastava, S., Arndt, D., Berjanskii, M. &
 Wishart, D. S. PROTEUS2: a web server for comprehensive protein structure
@@ -11103,9 +11105,9 @@ Barth Syndrome. Current Biology 19, 2133–2139 (2009).
 and saturable but does not strictly require ATP or molecular chaperones. The
 Biochemical journal 349, 611–621 (2000).
 
-BIBLIOGRAPHY
+200
 
-199
+BIBLIOGRAPHY
 
 345. Saraogi, I. & Shan, S.-o. Molecular Mechanism of Co-translational Protein Targeting by the Signal Recognition Particle. Traffic 12, 535–542 (2011).
 346. Raoult, D. & Forterre, P. Redefining viruses: lessons from Mimivirus. Nature
@@ -11130,9 +11132,9 @@ gate. eLife 2014 (2014).
 355. Li, L., Park, E., Ling, J. J., Ingram, J., Ploegh, H. & Rapoport, T. A. Crystal structure of a substrate-engaged SecY protein-translocation channel. Nature
 531, 395–399 (2016).
 
-200
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+201
 
 356. Lu, J. & Deutsch, C. Electrostatics in the Ribosomal Tunnel Modulate Chain
 Elongation Rates. Journal of Molecular Biology 384, 73–86 (2008).
@@ -11160,9 +11162,9 @@ Seshagiri, S. & Gutkind, J. S. The emerging mutational landscape of G proteins
 and G-protein-coupled receptors in cancer. Nature Reviews Cancer 13, 412–424
 (2013).
 
-BIBLIOGRAPHY
+202
 
-201
+BIBLIOGRAPHY
 
 366. Singh, A., Nunes, J. J. & Ateeq, B. Role and therapeutic potential of G-protein
 coupled receptors in breast cancer progression and metastases. European Journal
@@ -11189,9 +11191,9 @@ Garcia, K. C. Structural biology. Structural basis for chemokine recognition and
 activation of a viral G protein-coupled receptor. Science (New York, N.Y.) 347,
 1113–7 (2015).
 
-202
+BIBLIOGRAPHY
 
-BIBLIOGRAPHY
+203
 
 375. Thompson, A. A., Liu, W., Chun, E., Katritch, V., Wu, H., Vardy, E., Huang,
 X.-P., Trapella, C., Guerrini, R., Calo, G., Roth, B. L., Cherezov, V. & Stevens,
