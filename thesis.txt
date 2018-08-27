@@ -4,7 +4,7 @@ AND INTERACTIONS OF NON-POLAR
 
 A thesis submitted to the University of Manchester
 for the degree of Doctor of Philosophy
-in the Faculty of Chemistry
+in the Faculty of Science and Engineering
 
 2018
 
@@ -364,11 +364,11 @@ Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
 4.2.1
 
 The ribosome-translocon complex in the biogenesis of membrane
-proteins. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+proteins . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
 
 4.2.2
 
-Cooperative transmembrane helix insertion by the transloconribosome complex. . . . . . . . . . . . . . . . . . . . . . . . . . 140
+Cooperative transmembrane helix insertion by the transloconribosome complex . . . . . . . . . . . . . . . . . . . . . . . . . . 140
 
 4.3
 
@@ -399,7 +399,7 @@ Results and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
 4.4.1
 
 Large contrasts in transmembrane helix hydrophobicity occur in
-channels and receptors. . . . . . . . . . . . . . . . . . . . . . . . 145
+channels and receptors . . . . . . . . . . . . . . . . . . . . . . . 145
 
 4.4.2
 
@@ -413,9 +413,11 @@ helix pairs/groups indicative of conserved cooperative insertion . 152
 
 4.4.4
 
-The prevalence of the high hydrophobic discrepancy of transmembrane helices amongst other common “transporter” transmembrane protein classes. . . . . . . . . . . . . . . . . . . . . . 156
+The prevalence of the high hydrophobic discrepancy of transmembrane helices amongst other common “transporter” transmembrane protein classes
 
 4.5
+
+. . . . . . . . . . . . . . . . . . . . . 156
 
 Summary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
 
@@ -790,8 +792,8 @@ August 27, 2018
 
 Abstract
 Non–polar helices feature prominently in structural biology. Transmembrane α helix
-containing proteins make up around a quarter of all proteins, represent around 40%
-of drug targets, and contain some of the most critical proteins required for life as we
+containing proteins make up around a third of all proteins, represent around 40% of
+drug targets, and contain some of the most critical proteins required for life as we
 know it. Yet they are fundamentally difficult to study experimentally. This is in part
 due to the very features that make them so biologically influential; their non–polar
 transmembrane helical regions.
@@ -806,7 +808,7 @@ Tail-anchored proteins are a group of post-translationally inserting proteins. I
 thesis we show adaptations of hydrophobicity and residue distributions through the
 transmembrane helices of tail-anchored proteins to different membrane environments
 within the cell (the mitochondria, endoplasmic reticulum, the Golgi, and the plasma
-membrane). However, we could not scrutinise a hydrophobic difference between global
+membrane). However, we could not detect a hydrophobic difference between global
 populations of tail-anchored proteins in different species (mammals, plants, and fungi).
 A handful of these proteins are capable of integrating into the membrane without
 the need for membrane integration proteins. Structural modelling of transmembrane
@@ -886,12 +888,11 @@ The University Library’s regulations (see http://www.manchester.ac.uk/library/
 I would like to thank all members of both the Eisenhaber research group, as well as
 the Curtis and Warwicker research group for their interesting and engaging discussions
 throughout my PhD. In particular I would like to acknowledge the patience, guidance,
-and exceptional supervision from Dr Jim Warwicker, and Professor Stephen High of the
-University of Manchester and Dr Frank Eisenhaber, and Dr Birgit Eisenhaber, from
-the Singapore Bioinformatics Institute. I also express my gratitude towards Dr Wing
-Cheong Wong and Dr Max Hebditch for working with me on many fiddly problems. I
-would also like to thank the University of Manchester and the ARAP programme at
-the A*STAR for funding the project.
+and exceptional supervision from Dr Jim Warwicker of the University of Manchester
+as well as Dr Frank Eisenhaber and Dr Birgit Eisenhaber from the Singapore Bioinformatics Institute. I also express my gratitude towards Dr Wing Cheong Wong and
+Dr Max Hebditch for working with me on many fiddly problems. I would also like to
+thank my advisor, Professor Stephen High, for his stimulating discussions and guidance throughout the project. I also thank the University of Manchester and the ARAP
+programme at the A*STAR for funding the project.
 I thank my mother, father, my brother Tim, and Emily for their unwavering support of me in undertaking a PhD based for two years on the otherside of the planet.
 Being so far from my family and loved ones was certainly the most challenging part
 of this process.
@@ -9063,7 +9064,7 @@ the TMH to the membrane (Figure 4.1) [38].
 4.2.1
 
 The ribosome-translocon complex in the biogenesis of
-membrane proteins.
+membrane proteins
 
 Ribosomes translate mRNA sequences into amino acid chains and are present in all
 living cells, and indeed the ribosomal complexes presence and activity is considered
@@ -9152,7 +9153,7 @@ in the nascent peptide chain [127, 177, 178](Figure 4.1).
 4.2.2
 
 Cooperative transmembrane helix insertion by the
-translocon-ribosome complex.
+translocon-ribosome complex
 
 Early evidence of secondary structure folding of the Kv ion channel showed that the
 S6 TMH (referred to later in this study as TMH6) is indeed compacted in the ribosomal tunnel by using pegylation and calmodulation of the tagged cysteine-scanned S6
@@ -9439,7 +9440,7 @@ github.com/JamesABaker/multipass_tmh_analysis.
 
 Results and discussion
 Large contrasts in transmembrane helix hydrophobicity
-occur in channels and receptors.
+occur in channels and receptors
 
 Large differences in sequenctially adjacent TMHs could indicate cooperative insertion
 mechanisms of marginally hydrophobic TMHs. In order to identify which type of TMP
@@ -9853,7 +9854,7 @@ B) The sequence information entropy of those same TMHs.
 4.4.4
 
 The prevalence of the high hydrophobic discrepancy of
-transmembrane helices amongst other common “transporter” transmembrane protein classes.
+transmembrane helices amongst other common “transporter” transmembrane protein classes
 
 Whilst the gene ontology recognises “transporters” as having disproportionately more
 highly different hydrophobic sequential pairs, the list is predominantly ion channels,
