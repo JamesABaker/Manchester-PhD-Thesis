@@ -210,6 +210,14 @@ z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\s
 
 $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy~\cite{Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} sets.
 
+Broadly speaking, the information theory entropy of a linguistic string can be defined as in equation~\ref{simpleentropy}.
+
+\begin{equation} \label{simpleentropy}
+	H(S)=-{\sum_{i=1}^n {p_i\log_s(p_i)}}
+\end{equation}
+
+Where H is the entropy of a sequence (S), and $p_i$ is the probability of a character $i$ through each position (n) in S. This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
+
 \subsection{Statistics}
 
 We used the Welch's t\--test to scrutinise the means of the datasets without assuming equal variance.
