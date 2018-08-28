@@ -10,6 +10,7 @@ in the Faculty of Science and Engineering
 
 James Alexander Baker
 orcid.org/0000-0003-0874-2298
+School of Chemistry
 
 Contents
 Abstract
@@ -1978,10 +1979,12 @@ scale than previously thought.
 
 Chapter 2
 The “negative-outside” rule
-The work presented in this chapter is a version of published work presented in Baker et
-al., 2017 titled ‘Charged residues next to transmembrane regions revisited: “Positive-inside rule” is complemented by the “negative inside depletion/outside enrichment
-rule”’ by James Alexander Baker, Wing-Cheong Wong, Birgit Eisenhaber, Jim Warwicker, and Frank Eisenhaber [224]. Here we include the supplementary information
-in the text.
+The work presented in this chapter is published work presented in Baker et al., 2017
+titled ‘Charged residues next to transmembrane regions revisited: “Positive-inside
+rule” is complemented by the “negative inside depletion/outside enrichment rule”’ by
+James Alexander Baker, Wing-Cheong Wong, Birgit Eisenhaber, Jim Warwicker, and
+Frank Eisenhaber [224]. Here we include the supplementary tables and figures in the
+text.
 
 2.1
 2.1.1
@@ -4183,19 +4186,21 @@ having window-averaged over 3 residues for each TMH) using the Kyte & Doolittle 
 
 CHAPTER 2. THE “NEGATIVE-OUTSIDE” RULE
 
-the Eisenberg hydrophobic moment consensus scale [142] (Supplementary Figure 2.7).
-The total set of TMHs was split into 15 sets of membrane-spanning proteins (1 set
-containing single-pass proteins, 13 sets each containing TMHs from 2-, 3-, 4-. . . 14TMPs and another of TMHs from proteins with 15 or more TMHs). In Figure 2.6B,
-we show the P-value at each sequence position by comparing the respective values
-from multi-pass and single-pass TMHs using the 2-sample t-test (Figure 2.6B). Strikingly, the inside flank of the single-pass TMHs is much more hydrophilic (e.g., see
-the Kyte & Doolittle score=-1.3 at position -18) than that of multi-pass TMHs (P-value=5.64e-103 at position -14). Most likely, the positive inside rule, along with
-the interfacial clustering of tryptophan and tyrosine, contribute to a strong polar inside flank in single-pass helices that is not present in multi-pass helices en masse.
-Further, multi-pass TMHs cluster remarkably closely within the TM core; the respective hydrophobicity is apparently not dependent on the number of TMHs in a given
-multi-pass TMP. On average, single-pass TMHs are more hydrophobic in the core
-than multi-pass TMHs (P-value<1.e-72 within positions -55 and P-value=5.92e-190
-at position 0). On the other hand, hydrophobicity differences between TMHs from
-single- and multi-pass proteins fade somewhat at the transition towards the flanks
-(P-value=1.85e-4 at position -10, and P-value=3.35e-31 at position 10).
+the Eisenberg hydrophobic moment consensus scale [142] (Figure 2.7). The total set
+of TMHs was split into 15 sets of membrane-spanning proteins (1 set containing singlepass proteins, 13 sets each containing TMHs from 2-, 3-, 4-. . . 14-TMPs and another
+of TMHs from proteins with 15 or more TMHs). In Figure 2.6B, we show the P-value at
+each sequence position by comparing the respective values from multi-pass and singlepass TMHs using the 2-sample t-test (Figure 2.6B). Strikingly, the inside flank of the
+single-pass TMHs is much more hydrophilic (e.g., see the Kyte & Doolittle score=-1.3
+at position -18) than that of multi-pass TMHs (P-value=5.64e-103 at position -14).
+Most likely, the positive inside rule, along with the interfacial clustering of tryptophan
+and tyrosine, contribute to a strong polar inside flank in single-pass helices that is not
+present in multi-pass helices en masse. Further, multi-pass TMHs cluster remarkably
+closely within the TM core; the respective hydrophobicity is apparently not dependent
+on the number of TMHs in a given multi-pass TMP. On average, single-pass TMHs
+are more hydrophobic in the core than multi-pass TMHs (P-value<1.e-72 within positions -55 and P-value=5.92e-190 at position 0). On the other hand, hydrophobicity
+differences between TMHs from single- and multi-pass proteins fade somewhat at the
+transition towards the flanks (P-value=1.85e-4 at position -10, and P-value=3.35e-31
+at position 10).
 Leucine is the most abundant residue in TMHs (Figure 2.1) and is considered one
 of the most hydrophobic residues by all hydrophobicity scales. Therefore, it plays a
 very influential role in TMH helix-helix and lipid-helix interactions in the membrane
