@@ -8,8 +8,8 @@ in the Faculty of Science and Engineering
 
 2018
 
-James Alexander Baker
-orcid.org/0000-0003-0874-2298
+James A. Baker
+
 School of Chemistry
 
 Contents
@@ -772,7 +772,7 @@ SP Signal Peptide. 24, 26, 40, 43–47, 110, 111, 129
 SRP Signal Recognition Particle. 40, 43, 104–106, 113, 138, 139
 TA Tail Anchor. 27, 36, 39, 42, 47, 48, 103–108, 111–113, 116–123, 125, 127–131,
 134–136, 161, 162
-TM Transmembrane. 20, 21, 26, 28, 33, 38–40, 51–54, 67, 70, 75, 83, 96, 107, 115
+TM Transmembrane. 21, 26, 28, 33, 38–40, 51–54, 67, 70, 75, 83, 96, 107, 115
 TMH Transmembrane Helix. 20, 23–29, 31–45, 47, 48, 50–58, 60–76, 79–89, 91, 92,
 94–100, 103–108, 110–112, 114–116, 118–136, 138–155, 157–163
 TMP Transmembrane Protein. 20–27, 29, 31, 34, 39, 42–44, 47, 48, 50, 52–54, 57,
@@ -783,7 +783,7 @@ TOM Translocase of the Outer Membrane. 46, 107
 13
 
 The University of Manchester
-James Alexander Baker
+James A. Baker
 Doctor of Philosophy
 Investigating the Recognition and Interactions of Non-Polar α Helices in
 Biology
@@ -904,16 +904,14 @@ challenging part of this process.
 
 Chapter 1
 Introduction
-Transmembrane (TM) biology is a huge and varied field that is ultimately the study of
-the interface between compartments of the cell. The Transmembrane Protein (TMP)
-group include some of the most critical to life proteins as well as a large number of drug
-targets. However, the experimental inaccessibility of the Transmembrane Helix (TMH)
+Membrane biology is a huge and varied field that is ultimately the study of the interface between compartments of the cell. The Transmembrane Protein (TMP) group
+include some of the most critical to life proteins as well as a large number of drug targets. However, the experimental inaccessibility of the Transmembrane Helix (TMH)
 has hampered the progress of study compared to their globular structural analogues.
 Despite progress over the last decade, the understanding of the relationship between
 the sequence and function of a TMH is incomplete.
 In this chapter we will place the TMH problem in context, discuss some of the tools
-and methods that allow us then describe and analyse the TMHs, describe the important biological aspects of the TMH, and discuss other membrane spanning protein
-segments.
+and methods that allow us to analyse the TMHs, describe the important biological
+aspects of the TMH, and discuss other membrane spanning protein segments.
 
 1.1
 1.1.1
@@ -924,20 +922,19 @@ transmembrane proteins
 
 Due to the ability to segregate biochemical environments, the cellular barrier and
 resultant compartmentalisation has been described as one of the fundamental pillars
-of life as we know it [1, 2]. The significance of the cellular barrier was first noted in
-1665 with the dawn of the microscope, when Robert Hooke described the cell wall of
-the cork plant (Figure 1.1A), with the clear distinction of the barrier giving rise to the
+of life as we know it [1, 2].
+The significance of the cellular barrier was first noted in 1665 with the dawn of
+the microscope, when Robert Hooke described the cell wall of the cork plant (Figure
+1.1A), with the clear distinction of the barrier giving rise to the term “cell” [3, 4].
 20
 
 1.1. TRANSMEMBRANE PROTEINS
 
-21
-
-term “cell” [3, 4].
-
 A)
 
 C)
+
+21
 
 B)
 
@@ -949,13 +946,13 @@ through an optical microscope drawn by Hooke circa 1665. Note the observable cel
 between what we now know to be the plant cells. (Below/“Fig 2”) The cork plant used in the
 microscope observations. From Hooke, republished in 1961 [4]. B) The first near-atomic resolution
 (7Å resolution map) structure of a TMP acquired by Electron Microscopy (EM). This is a model
-of the 7TM bacteriorhodopsin single protein from the purple membrane viewed roughly parallel to
-the plane of the membrane. From Henderson & Unwin, 1975 [5]. C) The electron density map
-of the first crystal structure of a TMP [6]. The image shows 11 layers with contours representing
-1.2Å between layers at 3Å resolution. As in B, this structure is from phototrophic purple bacteria.
-The chromophores are made up of cytochrome (can be seen at the top of the image) and the H-subunit
-(which can be seen at the bottom). From Deisenhofer et al., 1984. D) The first drawing in which the
-fluid mosaic model was presented in the bilayer. From Singer & Nicolson, 1972 [7]
+of the 7Transmembrane (TM) bacteriorhodopsin single protein from the purple membrane viewed
+roughly parallel to the plane of the membrane. From Henderson & Unwin, 1975 [5]. C) The electron
+density map of the first crystal structure of a TMP [6]. The image shows 11 layers with contours
+representing 1.2Å between layers at 3Å resolution. As in B, this structure is from phototrophic purple
+bacteria. The chromophores are made up of cytochrome (can be seen at the top of the image) and the
+H-subunit (which can be seen at the bottom). From Deisenhofer et al., 1984. D) The first drawing
+in which the fluid mosaic model was presented in the bilayer. From Singer & Nicolson, 1972 [7]
 
 Throughout the early 20th century several theories were explored regarding the
 
