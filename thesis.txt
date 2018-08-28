@@ -1979,7 +1979,7 @@ scale than previously thought.
 
 Chapter 2
 The “negative-outside” rule
-The work presented in this chapter is published work presented in Baker et al., 2017
+The research presented in this chapter is published work presented in Baker et al., 2017
 titled ‘Charged residues next to transmembrane regions revisited: “Positive-inside
 rule” is complemented by the “negative inside depletion/outside enrichment rule”’ by
 James Alexander Baker, Wing-Cheong Wong, Birgit Eisenhaber, Jim Warwicker, and
