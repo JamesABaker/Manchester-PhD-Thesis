@@ -7,7 +7,7 @@ Official releases will be linked here when appropriate.
 
 This thesis is a modified version of the latex template thesis available at [the University of Manchester website](http://www.maths.manchester.ac.uk/study/postgraduate/information-for-current-students/general-information/forms-policies-regulations/latextemplates/).
 
-Specifically the modifications allow multi-file chapter division and an additional command to handle `ORCID` IDs, now compulsory for all staff and students in the University of Manchester. See comments in the `muthesis.cls` file for more specific information.
+Generally, the modifications allow multi-file chapter division.
 
 This file has a history of it's own.
 
@@ -27,15 +27,25 @@ Modified by Chris Paul August 2013 to support duplex printed margins
 
 # Compiling.
 
-Run:
+Compiling has gotten out of hand with all the modules. I used the shell script within, however, here are the bare minumum commands needed for all the formatting and indexing to be performed correctly.
+
 ```
+
 pdflatex thesis.tex
 bibtex thesis.aux
 makeglossaries thesis
-makeglossaries chapter_tailanchor
 makeglossaries chapter_introduction
-makeglossaries chapter_conclusions
+makeglossaries chapter_tmcomposition
+makeglossaries chapter_tailanchor
 makeglossaries chapter_predictfunction
+makeglossaries chapter_conclusions
+pdflatex thesis.tex
+makeglossaries thesis
+makeglossaries chapter_introduction
+makeglossaries chapter_tmcomposition
+makeglossaries chapter_tailanchor
+makeglossaries chapter_predictfunction
+makeglossaries chapter_conclusions
 pdflatex thesis.tex
 pdflatex thesis.tex
 ```
