@@ -67,7 +67,7 @@ This ``race'' between Bag6 and TRC40 ensures a level of quality control within t
 
 Get3 associates first with the Sgt2\--Get4\--Get5 complex via an interaction with the N-terminal of Get4 \cite{Wang2010}.
 A dimerised ADP-bound Get3 \cite{Mateja2009, Hu2009, Bozkurt2009, Suloway2009, Yamagata2010} associates with and shields the C\--terminal region of the \gls{ta} protein \cite{Stefanovic2007, Schuldiner2008, Favaloro2008}.
-This shielding may be especially important since Get3 is involved in the folding of any nascent \gls{ta} proteins, which would be an unviable in the cytosol due to their hydrophobicity \cite{Jonikas2009}.
+This shielding may be especially important since Get3 is involved in reducing the misfolding of any nascent \gls{ta} proteins, the \gls{tmh} of which would be unviable in the cytosol due to their hydrophobicity \cite{Jonikas2009}.
 Fluorescence studies revealed that tagged Get3 appears at both the cytosol and the \gls{er} membrane so apparently shuttles the \gls{ta} protein between the transmembrane complex of Get1 and Get 2 (WRB and CAML in mammalian cells), that contains cytosolic domains that receive the Get3, Get4, Get5, Sgt2 complex \cite{Huh2003, Zalisko2017}.
 Yet it is an interesting note that a single molecule fluorescence study revealed that the minimum machinery required for \gls{ta} protein insertion from this system is a Get1 and Get2 heterodimer \cite{Zalisko2017}.
 The Get pathway exclusively delivers \gls{ta} proteins to the \gls{er} membrane, and indeed has been recently shown to be responsible for some of the mislocalisation of mitochondrial \gls{ta} proteins during overexpression or signal masking to the \gls{er} \cite{Vitali2018}.
@@ -79,7 +79,7 @@ Around a half of \gls{ta} proteins are estimated to not use the TRC40 pathway \c
 Redundancy of the GET/TRC40 pathway and \gls{srp} pathway may be explained in part by a novel \gls{srp} and Get independent pathway.
 This pathway utilises the Snd pathway and was discovered in yeast \cite{Aviram2016} (Figure \ref{fig:biogenesis-overview}ii).
 Snd1 binds to the \gls{ta} protein after it exits the ribosome and delivers it to the Snd2 and Snd3 membrane\--bound complex which integrates the \gls{ta} protein into the membrane.
-So far only the human homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity \cite{Haßdenteufel2017}.
+So far only the human homologue of Snd2 has been identified (hSnd2) with relatively low sequence identity \cite{Hassdenteufel2017}.
 However, it is suspected that functional mammalian homologues exist for Snd1 and Snd3 also, albeit with low sequence similarity.
 
 Even more recently identified as a \gls{ta} protein insertase was the \gls{emc} \cite{Guna2018a} (Figure \ref{fig:biogenesis-overview}iv).
@@ -214,18 +214,19 @@ Unless explicitly stated, values reported in the results are based on the Kyte \
 %Hydrophobicity values were also validated by the White and Wimley scale~\cite{White1999}, the Hessa scale~\cite{Hessa2005}, and the Eisenberg scale~\cite{Eisenberg1984}.
 
 \subsection{Calculating sequence information entropy}
-Information entropy is essentially an estimate of the linguistic entropy of a string.
-In the context of biology, it can be thought of as an estimation of the non-randomness of a sequence.
+Information entropy is essentially an estimate of the entropy of a string of characters.
+In the context of biology, it can be thought of as an estimation of the non\--randomness of a sequence.
 Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver1993, Troyanskaya2002} and is a component of the TMSOC z-score which can predict function beyond anchoring of a \gls{tmh}; an increase in complexity is associated with increased likelihood of function~\cite{Wong2011, Wong2012, Baker2017}.
 Here we focus on the analysis of the complexity of a string of characters in protein sequences.
 
-Broadly speaking, the information theory entropy of a linguistic string can be defined as in equation~\ref{simpleentropy2}, and we treat the protein sequence \gls{tmh} as a string with or without its flanking regions.
+Broadly speaking, the entropy of a string of characters in information theory can be defined as in equation~\ref{simpleentropy2}, and we treat the protein sequence \gls{tmh} as a string with or without its flanking regions.
 
 \begin{equation} \label{simpleentropy2}
-  H(S)=-\sum _{i=1}^{n}{\frac{{p}_{i}\cdot \log _{{p}_{i}}}{\log_{2}}}
+H \left( S \right)=-\sum _{ i=1 }^{ n }{ { P }\left({ s }_{ i }\right)\log _{ 2 }{ P } \left({ s }_{ i } \right)}
 \end{equation}
 
-Where $H$ is the entropy of a sequence $S$, and $p_i$ is the probability ($p$) of a character $i$ through each position ($n$) in $S$. This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
+Where $H$ is the entropy of a sequence $S$ with values $ \left\{ {s}_{1},\ldots, {s}_{n} \right\} $, and $P \left( s_i \right)$ is the probability ($P$) of a character $i$ through each position in $S$.
+This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
 
 \subsection{Statistics}
 
@@ -233,11 +234,11 @@ The null hypothesis of homogeneity of two distributions was examined with the Ko
 These tests were all ran through the Python SciPy stat v0.17 package~\cite{VanderWalt2011}.
 To note, the~\gls{ks} test scrutinises for significant maximal absolute differences between distribution curves; the~\gls{kw} test is after skews between distributions and the student T-test statistical test checks the average difference between distributions.
 
-Since the $P$\-‑value is a product of a fraction of test statistics obtained from a permutated set of the samples, it exponentially increases as $N$ increases; the $P$\--value is a strong function of $N$.
+Since the $p$\-‑value is a product of a fraction of test statistics obtained from a permutated set of the samples, it exponentially increases as $N$ increases; the $p$\--value is a strong function of $N$.
 We rely on the Bahadur slope ($B$) as a measure of distance between two distributions~\cite{Bahadur1967, Bahadur1971, Sunyaev1998, Baker2017}. A larger Bahadur slope shows a greater difference between the two distributions.
 
 \begin{equation} \label{eq:bahadur2}
-B=\frac{|\ln(P~value)|}{N}
+B=\frac{|\ln(p~value)|}{N}
 \end{equation}
 
 In the heatmaps (Figure \ref{fig:uniprot-heatmap}, Figure \ref{fig:swissprot-heatmap}), the relative percentage normalisation was used rather than a fraction of the absolute value.
@@ -249,23 +250,16 @@ This aims to answer the question of ``if we have a certain amino acid, which pos
 
 $a_i$ is the total abundance of residues of a specific amino acid type ($i$) of an aligned set of~\gls{tmh}-containing segments.
 Peaks in $q_{i,r}$ as a function of $r$ (the position index) reveal the preferred positions of residues of type $i$.
+\gls{tmh}s are oriented according to ``inside'' to ``outside'' from left to right respectively where ``inside'' refers to the cytoplasm.
 
 \subsection{Modelling cytochrome b5 and PTP1b}
-The HHpred web server was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding2005}.
+In order to assess the 3D arrangement of residues, the HHpred web server was used to query homologues of and model templates for Cytochrome b5 (UniProt accession code P00167) and PTP1b (UniProt accession code P18031)~\cite{Soding2005}.
 Homologues were queried using three iterations of HHblitscd against the sequence database version uniprot20\_2016\_02 to generate the query Hidden Markov Model.
-The choice of templates was driven by the quality and coverage of the alignments and of the quality of the models that resulted.
-For cytochrome b5, a multiple alignment was generated from PDB accession codes 2M33, 2KEO, 3X34, 1MJ4, 1MJ4, 2IBJ covering the globular domain, and PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
+For cytochrome b5, a multiple alignment was generated from PDB accession codes and residues positions were approximated for the \gls{tmh} regions based on those of PDB accession codes 5NAO, 5DOQ, 5NAM, and 2MMU covering the \gls{tmh}.
 Modeller was run from within the HHPRED server to generate the homology model \cite{Eswar2007, Webb2016}.
-The model was confirmed to be of high quality using ProSA (Z-Score: -4.61) \cite{Wiederstein2007}, Ramachandran plot on the RAMPAGE web server (98\% allowed residues, including all \gls{tmh} residues) \cite{Lovell2003}.
+Similarly for PTP1b, the \gls{tms} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C\--terminal tail) residues of PTP1b.
 
-The coverage and alignment quality of PTP1b was, however, not as good quality as that of the cytochrome b5 \gls{tmh}.
-Although UniProt holds 145 associated PDB structures for PTP1b, these structures cover at least some part of the globular domains of the protein.
-There are no PDB structures for the \gls{tm} domain or the nearby flanking regions.
-Instead of a global protein model, only the \gls{tms} was modelled using a homology model derived from a single sequence alignment of 5NAO based on the TMH$\pm$6 (the length of the C\--terminal tail) residues of PTP1b.
-The ProSA Z-Score was 0.08 which is well within the acceptable range for proteins of that length \cite{Wiederstein2007}.
-
-
-Both these \gls{tmh} regions were verified by a consensus of sequence \gls{tmh} predictions (Scampi seq \cite{Bernsel2008}, Phobius \cite{Kall2004}, TMHMM \cite{Krogh2001}, MEMSAT3 \cite{Jones2007}, TMpred \cite{Hofmann1993}, HMMTOP \cite{Tusnady2001},
+Both the \gls{tmh} regions for that of PTP1b and cytochrome 1b were verified by a consensus of sequence \gls{tmh} predictions (Scampi seq \cite{Bernsel2008}, Phobius \cite{Kall2004}, TMHMM \cite{Krogh2001}, MEMSAT3 \cite{Jones2007}, TMpred \cite{Hofmann1993}, HMMTOP \cite{Tusnady2001},
 DAS--TMfilter \cite{Cserzo2004}, MINNOU \cite{Cao2006}, OCTOPUS \cite{Viklund2008}, PRODIV \cite{Viklund2004}, PRO--S \cite{Viklund2004}, S--TMHMM \cite{Viklund2004}, and proteus \cite{Montgomerie2008}).
 However, it should be noted that not all these predictions unanimously agreed.
 For PTP1b, several methods identified more than 1 \gls{tmh} (HMMTOP, TMPred) whilst Memsat identified a short \gls{tmh} in a completely different region for the \gls{tmh} (35A to 45R).
@@ -328,7 +322,7 @@ This dataset contains 20528 \gls{tmh} residues (27950 including up to $\pm$5 fla
 \includegraphics[width=1\textwidth]{TA_chapter/database-overlap}
         \captionof{figure}[A Venn diagram showing tail-anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.]{\textbf{A Venn diagram showing tail-anchored protein UniProt ids present in each of the datasets as well as those present in multiple datasets.}
 The number of ids present in redundant versions of
-i) the supplementary materials table of a previous study predicting the complete set of human tail-anchored proteins denote by S1~\cite{Kalbfleisch2007} in red,
+i) the supplementary materials table of a previous study by Kalbfleisch \textit{et al.,} predicting the complete set of human tail-anchored proteins was mapped to UniProtKB and is denoted by ``S1''~\cite{Kalbfleisch2007} is in red,
 ii) and in green is the SwissProt dataset filtered according to typical~\gls{ta} features limited to the \textit{Homo sapiens} proteome~\cite{TheUniProtConsortium2014}, and
 iii) in blue is the UniProt curated list of~\gls{ta} proteins~\cite{TheUniProtConsortium2014}.
 Note that to avoid losing IDs to redundancy reduction this diagram was generated without the use of CD-HIT~\cite{Huang2010, Wu2011}, which is applied in the later statistical analysis.}
@@ -336,7 +330,7 @@ Note that to avoid losing IDs to redundancy reduction this diagram was generated
 \label{fig:tadatasetoverlap}
 \end{figure}
 
-In order to get an understanding of the consistency of the datasets, before removing redundant proteins, we compared these two datasets to a remapped set of proteins from a previous 2007 method~\cite{Kalbfleisch2007}.
+In order to get an understanding of the consistency of the datasets, before removing redundant proteins, we compared these two datasets to a remapped set of proteins from a previous 2007 method by Kalbfleisch \textit{et al.,} which aimed to predict \gls{ta} proteins from the NCBI database using predictive tools~\cite{Kalbfleisch2007} (see Figure \ref{fig:dataset-overview} for an overview of these methods).
 The S1 dataset was built with an aim to gather \gls{ta} proteins in the human genome from the NCBI.
 The greatest source of uncertainty here is that the original S1 list includes 411 records, however, only 222 of these were successfully mapped to the UniProt dataset.
 This figure is closer to the 202 proteins from the original S1 list that excluded proteins that were either hypothetical or splice isoforms.
@@ -397,14 +391,14 @@ There are also no consistent trends among the absolute Bahadur slopes; no datase
 Here, we compare a mammalian set of \gls{ta} proteins (\textit{Homo sapiens} N=46 and \textit{Mus musculus} N=48) to \textit{A. thaliana} (N=49) representing plants  and  \textit{S. cerevisiae} (N=24) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
-$P$ is the P\--value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+$p$ is the p\--value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the p\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
 \tiny
     % Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
 
     \begin{tabular}{clrrrrrrrrr}
           &       & \multicolumn{3}{c}{Mammal and Plant} & \multicolumn{3}{c}{Mammal and Yeast} & \multicolumn{3}{c}{Plant and Yeast} \\
-          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+          &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} \\
     \multirow{3}[0]{*}{TMH } &  KW & 0.93  & 3.35E-1 & 7.64E-3 & 0.10  & 7.56E-1 & 2.37E-3 & 0.84  & 3.60E-1 & 1.40E-2 \\
           &  KS & 0.13  & 6.36E-1 & 3.17E-3 & 0.12  & 9.24E-1 & 6.69E-4 & 0.19  & 5.28E-1 & 8.76E-3 \\
           &  T-test & -0.86 & 3.90E-1 & 6.58E-3 & 0.21  & 8.31E-1 & 1.57E-3 & 0.79  & 4.33E-1 & 1.15E-2 \\
@@ -423,8 +417,8 @@ $B$ refers to the Bahadur slope, an interpretation of the P\--value that account
 Here, we compare a mammalian set of \gls{ta} proteins (\textit{Homo sapiens} N=30 and \textit{Mus musculus} N=30) to \textit{A. thaliana} (N=53) representing plants  and  \textit{S. cerevisiae} (N=27) representing yeasts.
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis, the KS statistic for the Kolmogorov Smirnov test, and the t-statistic for the T-test.
-$P$ is the P\--value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+$p$ is the p\--value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the p\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
     \tiny
     % Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
 
@@ -479,8 +473,8 @@ We compare \gls{er} (N=397) to Golgi (N=83), \gls{pm} (N=31), and the mitochondr
 The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
 The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
 The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
-$P$ is the P\--value of that statistical score.
-$B$ refers to the Bahadur slope, an interpretation of the P\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+$p$ is the p\--value of that statistical score.
+$B$ refers to the Bahadur slope, an interpretation of the p\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
     \tiny
 
     \begin{tabular}{clrrrrrrrrr}
@@ -504,8 +498,8 @@ $B$ refers to the Bahadur slope, an interpretation of the P\--value that account
 
 In the UniProt curated list, there are clear hydrophobic differences between all the organelle \gls{tmh} datasets excluding flanks ($P<2.98E-6$) which as a trend becomes less clear when considering the \gls{tmh}$\pm$5 flanking residues except for mitochondria which increases in significance when considering the flanks also (Table~\ref{table:organellesuniprotstats}).
 The \gls{er} and mitochondrial tests are very significant ($P<4.22E-82$).
-Consistently the Bahadur slope is at least an order of magnitude greater in the \gls{er} and mitochondrial comparison than for the other considerations, so these differences cannot be accounted for by the larger sample size.
-This gap in hydrophobicity appears to be due to a trend of the \gls{er}, \gls{pm}, and Golgi using isoleucine, valine, and leucine as their most common \gls{tmh} residues, whereas in the case mitochondrial located \gls{ta} proteins, the most common residue type is alanine in the UniProt manually curated dataset (16.3\% of total residues) followed by valine (12\% total residues)(Figure \ref{fig:uniprot-heatmap}).
+Consistently the Bahadur slope is at least an order of magnitude greater in the \gls{er} and mitochondrially located protein comparison than for the other considerations, so these differences cannot be accounted for by the larger sample size.
+This gap in hydrophobicity appears to be due to a trend of the \gls{er}, \gls{pm}, and Golgi using isoleucine, valine, and leucine as their most common \gls{tmh} residues, whereas in the case mitochondrially located \gls{ta} proteins, the most common residue type is alanine in the UniProt manually curated dataset (16.3\% of total residues) followed by valine (12\% total residues)(Figure \ref{fig:uniprot-heatmap}).
 Similarly, alanine is the second most common residue in mitochondrial located \gls{ta} proteins from the SwissProt automatically generated dataset at 11.9\% of the total residues after leucine which is 13.4\% of the total residues(Figure \ref{fig:swissprot-heatmap}).
 
 \begin{figure}
@@ -567,7 +561,7 @@ These datasets are more thoroughly outlined in the methods section.
 
 Information entropy has been known to identify cryptic function in \gls{tmh}s when considered along with hydrophobicity \cite{Wong2011, Wong2012}.
 In terms of information entropy, there is a marked decrease in entropy in the \gls{pm} subset (mean entropy = 3.15 in the \gls{tmh}, 2.67 including $\pm$5 flanking residues) from the UniProt curated dataset compared to the other organelle datasets (entropy $>$ 3.29 and $>$ 2.85 including the flanks).
-However, this stark difference between \gls{tmh}s from \gls{pm} bound \gls{ta} proteins and the other organelle datasets cannot be observed in the SwissProt set (Figure~\ref{fig:average_organelle_factors_ta}).
+However, this stark difference in \gls{tmh}s from \gls{pm}\--bound \gls{ta} proteins and the other organelle datasets cannot be observed in the SwissProt set (Figure~\ref{fig:average_organelle_factors_ta}).
 
 No clear significant differences can be observed for the information entropy ($P>6.33E-2$).
 This is unsurprising given that the hydrophobic nature of the \gls{tmh}s demands that certain residues must be over-represented, which lowers the information entropy.
@@ -583,16 +577,16 @@ As a trend, the information entropy mirrors the hydrophobicity albeit with less 
     We compare \gls{er} (N=98) to Golgi (N=82), \gls{pm} (N=157), and the mitochondria referred to as ``mito'' (N=65).
     The hydrophobicity was predicted as the mean average of the values of the sequences of the \gls{tmh}, as well another group including up to $\pm$5 flanking residues, since predicting the boundary of \gls{tmh}s is difficult, according to the Kyte \& Doolittle hydrophobicity scale~\cite{Kyte1982}.
     The linguistic information entropy was calculated according to the methods section~\cite{Shannon1948}.
-    The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t-statistic for the student's T-test (T-test).
-    $P$ is the P\--value of that statistical score.
-    $B$ refers to the Bahadur slope, an interpretation of the P\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
+    The Test column refers to the statistical score obtained from the test; H statistic for the Kruskal Wallis (KW), the KS statistic for the Kolmogorov Smirnov test (KS), and the t\--statistic for the student's T\--test (T-test).
+    $p$ is the p\--value of that statistical score.
+    $B$ refers to the Bahadur slope, an interpretation of the p\--value that accounts for the sample size powering the test~\cite{Bahadur1967, Bahadur1971}.}
         \tiny
         % Table generated by Excel2LaTeX from sheet 'SwissProt filtered species'
 
         %\begin{tabular}{clrrrrrrrrr}
          \begin{tabular}{ccccccccccc}
                                 &       & \multicolumn{3}{c}{ER and Golgi} & \multicolumn{3}{c}{ER and PM} & \multicolumn{1}{l}{ER and mito} &       &  \\
-                                &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$P$} & \multicolumn{1}{l}{$B$} \\
+                                &       & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} & \multicolumn{1}{l}{Test} & \multicolumn{1}{l}{$p$} & \multicolumn{1}{l}{$B$} \\
 
         \midrule
         \multirow{3}[0]{*}{TMH Hydrophobicity} &  KW & 11.96 & 5.43E-4 & 4.18E-2 & 0.02  & 8.77E-1 & 5.14E-4 & 8.46  & 3.64E-3 & 3.45E-2 \\
@@ -617,7 +611,7 @@ As a trend, the information entropy mirrors the hydrophobicity albeit with less 
 
 Similarly, in the SwissProt filtered dataset, the mean \gls{tmh} hydrophobicity for mitochondria is the lowest at 1.9.
 It appears to be the Golgi apparatus that is the peak at 2.4.
-In the SwissProt dataset, when we compare each subset of only the \gls{tmh} to the \gls{er} subset, we find significance between the \gls{er} and the Golgi ($P<1.98E-3$), and the \gls{er} and the mitochondria ($P<4.62E-3$), however, the \gls{er} and \gls{pm} are more similar considering the Bahadur values are $<6.44E-4$, two orders of magnitude smaller than the other sets (Bahadur values $>3.3E-2$) (Table \ref{table:organellesswissstats}).
+In the SwissProt dataset, when we compare each subset of only the \gls{tmh} to the \gls{er} subset, we find significance between the \gls{er} and the Golgi ($p<1.98E-3$), and the \gls{er} and the mitochondria ($p<4.62E-3$), however, the \gls{er} and \gls{pm} are more similar considering the Bahadur values are $<6.44E-4$, two orders of magnitude smaller than the other sets (Bahadur values $>3.3E-2$) (Table \ref{table:organellesswissstats}).
 When we take into account the flanks, the \gls{er} and \gls{pm} dataset can be distinguished ($P<2.50E-3$), however, as a trend the other two comparisons, \gls{er} and Golgi become less significant, and \gls{er} and mitochondria become more significant.
 
 The information entropy of the \gls{tmh} string was also examined.
@@ -712,7 +706,8 @@ Indeed the \gls{tmh} is so polar that it is not trivial to predict and is not fo
 Structural modelling and analysis thereof reveal features that may explain the ``missing hydrophobicity''~\cite{Hessa2005, Hedin2010, Hessa2007, Ojemalm2012} of these particular \gls{tmh}s.
 
 A positive patch can be seen on the cytoplasmic side of either protein \gls{tmh}, and a negative patch on the lumenal tip at the C\--terminus.
-These electrostatic surfaces are prototypical of a \gls{tmh} anchor with large ``positive\--inside'' patches \cite{VonHeijne1989, Andersson1992, Sharpe2010, Baeza-Delgado2013, Pogozheva2013, Baker2017} and a strong ``negative\--outside'' charge \cite{Baker2017}~(Figure \ref{fig:cytb5-biochemistry}C).
+There are large ``positive\--inside'' patches \cite{VonHeijne1989, Andersson1992, Sharpe2010, Baeza-Delgado2013, Pogozheva2013, Baker2017} and a strong ``negative\--outside'' charge \cite{Baker2017}~(Figure \ref{fig:cytb5-biochemistry}C) at the respective flanks of the \gls{tmh}.
+Such a distribution of charge is typical of a \gls{tmh} anchor.
 Once in the membrane, this may allow the \gls{tmh} to be an effective anchor despite such poor hydrophobicity since it satisfies electrostatic coupling to the membrane potential.
 
 Furthermore, there is the question of overcoming the unfavourable interaction most \gls{tmh}s would hypothetically face when coming into contact with the highly polar membrane interface without the presence of membrane integration machinery.

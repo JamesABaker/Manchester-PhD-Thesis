@@ -45,7 +45,7 @@ These are the specific recognition of signal sequences on cargo proteins, the ta
 The prevailing view of membrane insertion by the translocon is that the \gls{tmh}s partition in the membrane one at a time as the translocon lateral gate opens, exposing the \gls{tmh} to the membrane (Figure \ref{fig:sequential-insertion})~\cite{Cymer2015}.
 
 \subsection{The ribosome-translocon complex in the biogenesis of membrane proteins}
-Ribosomes translate mRNA sequences into amino acid chains and are present in all living cells.
+A ribosome translates the mRNA into amino acid chains and are present in all living cells.
 Indeed the ribosomal complexes presence and activity is considered an important distinction in biology between ribosome\--encoding organisms and capsid encoding organisms \cite{Raoult2008}.
 They are a highly conserved \gls{rna}\--protein complex with a multitude of accessory proteins and targetting factors.
 
@@ -104,7 +104,7 @@ ADR1a, a 29\-- residue zinc finger motif, was found to fold deeper in uL23 mutan
 Two domain folds of 109 and 89 residues in length folded deeper in the uL24 mutant than in the wild\--type and the uL23 mutant.
 This shows that cotranslational folding can occur in the ribosomal exit tunnel once sufficient space is available \cite{Kudva2018}.
 
-The ribosomal tunnel also speeds up elongation of neutral and negatively-charged peptides.
+The ribosomal tunnel also slows down elongation of positively charged peptide segments.
 This is attributed to the sporadic negative patches within the ribosomal exit tunnel \cite{Lu2008}.
 
 The ribosome clearly has the potential to pre\--fold secondary structures and some motifs before translocon insertion into the membrane.
@@ -123,6 +123,13 @@ The nascent polypeptide in the cavity between the ribosome and the translocon ca
 alter the hydrophobic threshold of the translocon which therefore is dynamic and influenced by downstream flexible sequences \cite{Junne2017}.
 Sequence context is clearly an important factor for the efficient insertion of marginally hydrophobic \gls{tmh}s.
 These \gls{tmh}s rely on other components of their protein in order to incorporate into the membrane.
+
+\subsection{Aims}
+
+Marginally hydrophobic \gls{tmh}s often miss the energetic requirements of insertion via the translocon \cite{Hessa2007}.
+In the literature, there are examples of cooperative \gls{tmh} interactions during insertion of marginally hydrophobic \gls{tmh}s in 6TMH ion channels and \gls{gpcr}s \cite{Ismail2008, Virkki2014, Sadlish2005, Cross2009, Cymer2013, Sato2002, Sato2003, Zhang2007, Cymer2015, Tu2000, Tu2014, Ojemalm2012}.
+
+In this chapter, we investigate the relationship between biochemical sequence derived properties such as \gls{tmh} hydrophobicity and TMSOC z\--score \cite{Wong2011, Wong2012} of marginally hydrophobic \gls{tmh}s and their sequential neighbouring \gls{tmh}s to identify family wide patterns that may use a cooperative \gls{tmh} insertion folding mechanism.
 
 \section{Methods}
 \subsection{Datasets}
@@ -211,14 +218,16 @@ z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\s
 \end{equation}
 
 $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy determined by SEG \cite{WOOTTON1994269, Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} sets.
+$s$ is set to either zero or one depending on the the normal to the regression line between normalised hydrophobicity and complexity~\cite{Wong2011} (Equation ~\ref{equation:zscoretermsterm}, equation~\ref{equation:regressionlinezterm})
 
-Broadly speaking, the information theory entropy of a linguistic string can be defined as in equation~\ref{simpleentropy}, which we use to calculate the sequence information entropy of \gls{tmh}s.
+Broadly speaking, the information theory entropy of a string of characters can be defined as in equation~\ref{simpleentropy}, which we use to calculate the sequence information entropy of \gls{tmh} sequences.
 
 \begin{equation} \label{simpleentropy}
-	H(S)=-{\sum_{i=1}^n {p_i\log_s(p_i)}}
+H \left( S \right)=-\sum _{ i=1 }^{ n }{ { P }\left({ s }_{ i }\right)\log _{ 2 }{ P } \left({ s }_{ i } \right)}
 \end{equation}
 
-Where $H$ is the entropy of a sequence $(S)$, and $p_i$ is the probability of a character $i$ through each position ($n$) in $S$. This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
+Where $H$ is the entropy of a sequence $(S)$ with values $ \left\{ {s}_{1},\ldots, {s}_{n} \right\} $, and $P \left( s_i \right)$ is the probability of a character $i$ through each position in $S$.
+This allows us to quantify the average relative information density held within a string of information~\cite{Shannon1948}.
 
 \subsection{Statistics}
 
@@ -255,8 +264,9 @@ All these lists were predominantly made up of \gls{gpcr}s.
 \label{fig:good-bad-ontology}
 \end{figure}
 
-Since catalytic function decreased so much, as a trend we thought that the catalytic function of the \gls{tmp} may not be associated with a high hydrophobic discrepancy between \gls{tmh}s within the protein.
-This gives us an idea of search space where highly polar \gls{tmh}s are proximally adjacent to typically hydrophobic \gls{tmh}s; \gls{gpcr}s and membrane transporters.
+The relative proportion of GO terms for catalytic function decreased when considering the top 0.1\% of hydrophobic difference between sequential \gls{tmh} pairs.
+This trend suggests that a catalytic function of the \gls{tmp} may not be associated with a high hydrophobic discrepancy between \gls{tmh}s within the protein.
+Figure \ref{fig:good-bad-ontology} gives us an idea of search space where highly polar \gls{tmh}s are proximally adjacent to typically hydrophobic \gls{tmh}s; \gls{gpcr}s and membrane transporters.
 %Need percentage decreases
 
 \subsection{GPCRs contain conserved relatively polar TMH7, which follows the typically hydrophobic TMH6}
@@ -300,15 +310,15 @@ TMH3 and TMH7 are therefore the most likely to contain function beyond anchorage
 
 When we consider much larger sequence datasets containing 1016 \gls{tmh}s at each \gls{tmh} number from non-redundant \gls{gpcr}s obtained from UniProt, the trend remains the same; that TMH3 (mean z\--score of 2.52) and TMH7 (mean z\--score of 2.55) have the highest z\--score, whilst TMH1 (mean z\--score of 2.09) and TMH5 (mean z\--score of 2.20) have the lowest (Figure \ref{fig:GPCR-structures}E).
 To investigate the statistical differences between the z\--score of the \gls{tmh}s, we applied the Kruskal Wallis and 2-sample Kolmogorov Smirnov tests from each \gls{tmh} number to each other \gls{tmh} number.
-TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z\--score (Welch's t-test P\--value = 1.57E\--146, Kruskal Wallis P\--value = 1.66E\--132, Kolmogorov Smirnov P\--value = 1.38E\--105) as are TMH6 and TMH7 (P\--value = 1.48E\--51, Kruskal Wallis P\--value = 4.96E\--52, Kolmogorov Smirnov P\--value = 1.74E\--37).
+TMH5 and TMH7 are statistically significantly distinct in terms of TMSOC z\--score (Welch's t-test p\--value = 1.57E\--146, Kruskal Wallis p\--value = 1.66E\--132, Kolmogorov Smirnov p\--value = 1.38E\--105) as are TMH6 and TMH7 (p\--value = 1.48E\--51, Kruskal Wallis p\--value = 4.96E\--52, Kolmogorov Smirnov p\--value = 1.74E\--37).
 This is also mirrored in the relationship between the preceding \gls{tmh}s of TMH3.
-TMH1 and TMH3 are distinct (Welch's t-test P\--value = 3.12E\--229, Kruskal Wallis P\--value = 1.06E\--192, Kolmogorov Smirnov P\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test P\--value = 3.66E\--39, Kruskal Wallis P\--value = 2.70E\--36, Kolmogorov Smirnov P\--value = 1.06E\--31).
-We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test P\--value \textgreater 0.99, Kruskal Wallis P\--value = 0.99, Kolmogorov Smirnov P\--value = 0.07).
+TMH1 and TMH3 are distinct (Welch's t-test p\--value = 3.12E\--229, Kruskal Wallis p\--value = 1.06E\--192, Kolmogorov Smirnov p\--value = 1.06E\--174) and so are TMH2 and TMH3 (Welch's t-test p\--value = 3.66E\--39, Kruskal Wallis p\--value = 2.70E\--36, Kolmogorov Smirnov p\--value = 1.06E\--31).
+We also find it difficult to observe any significant differences between TMH2 and TMH6 (Welch's t\--test p\--value \textgreater 0.99, Kruskal Wallis p\--value = 0.99, Kolmogorov Smirnov p\--value = 0.07).
 
 As expected, these trends are mirrored in the Kyte \& Doolittle \cite{Kyte1982} hydrophobicity plots.
 Where there is a high TMSOC z\--score, there is a low hydrophobicity score.
-However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity = 1.13) are very different (Welch's t\--test P\--value = 3.95E\--163), the difference between TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity = 1.39) is less stark (Welch's t\--test P\--value = 0.12).
-Even though there is a discrepancy between the scales, the significant change in hydrophobicity  between TMH6 and TMH7 can be seen consistently across the Eisenberg consensus scale \cite{Eisenberg1984} (Welch's t\--test P\--value = 5.61E-130), the White and Wimley biophysical scale \cite{White1999} (Welch's t\--test P\--value = 5.21E-62), and the von Heijne/Hessa biological scale \cite{Hessa2005} (Welch's t\--test P\--value = 3.56E-210) emphasising the significance of this particular \gls{tmh} pair (Figure \ref{fig:gpcr-hydrophobicity-verification}).
+However, whereas TMH6 (mean hydrophobicity = 1.69) to TMH7 (mean hydrophobicity = 1.13) are very different (Welch's t\--test p\--value = 3.95E\--163), the difference between TMH2 (mean hydrophobicity = 1.42) and TMH3 (mean hydrophobicity = 1.39) is less stark (Welch's t\--test p\--value = 0.12).
+Even though there is a discrepancy between the scales, the significant change in hydrophobicity  between TMH6 and TMH7 can be seen consistently across the Eisenberg consensus scale \cite{Eisenberg1984} (Welch's t\--test p\--value = 5.61E-130), the White and Wimley biophysical scale \cite{White1999} (Welch's t\--test p\--value = 5.21E-62), and the von Heijne/Hessa biological scale \cite{Hessa2005} (Welch's t\--test p\--value = 3.56E-210) emphasising the significance of this particular \gls{tmh} pair (Figure \ref{fig:gpcr-hydrophobicity-verification}).
 
 \begin{figure}[!ht]
 \centering
@@ -323,12 +333,12 @@ Even though there is a discrepancy between the scales, the significant change in
 \end{figure}
 
 In order to determine if this is conserved through the \gls{gpcr} subfamilies, a variety of \gls{gpcr}s with different functions were examined in terms of Kyte \& Doolittle hydrophobicity \cite{Kyte1982}.
-When considering different \gls{gpcr} subfamilies, we see a consistent difference between the \gls{tmh} hydrophobicities of TMH6 and TMH7 besides metabolic glutamate \gls{gpcr}s (Welch's t\--test P\--value = 0.90) and Frizzled-smooth \gls{gpcr}s (Welch's t\--test P\--value = 0.07)~(Figure \ref{fig:KD-GPCR}).
-For opsins, Welch's t\--test P\--value is 5.62E-15 between TMH6 and TMH7.
+When considering different \gls{gpcr} subfamilies, we see a consistent difference between the \gls{tmh} hydrophobicities of TMH6 and TMH7 besides metabolic glutamate \gls{gpcr}s (Welch's t\--test p\--value = 0.90) and Frizzled-smooth \gls{gpcr}s (Welch's t\--test p\--value = 0.07)~(Figure \ref{fig:KD-GPCR}).
+For opsins, Welch's t\--test p\--value is 5.62E-15 between TMH6 and TMH7.
 After restricting the dataset to only those records with 7 \gls{tmh}s, fungal mating \gls{gpcr}s were reduced to a set of 9 proteins, however as a trend, they appear to be very typical \gls{gpcr}s in terms of \gls{tmh} hydrophobicity.
-They follow a very similar pattern to the much more popular olfactory \gls{gpcr}s (N=263) for which the TMH6 to TMH7 Welch's t\--test P\--value was 4.73E-35.
+They follow a very similar pattern to the much more popular olfactory \gls{gpcr}s (N=263) for which the TMH6 to TMH7 Welch's t\--test p\--value was 4.73E-35.
 For taste receptors, there are much bigger step changes between sequentially adjacent \gls{tmh}s than between TMH6 to TMH7.
-But there is still a real statistical difference between TMH6 and TMH7 (Welch's t\--test P\--value = 2.89E-12).
+But there is still a real statistical difference between TMH6 and TMH7 (Welch's t\--test p\--value = 2.89E-12).
 
 \begin{figure}[!ht]
 \centering
@@ -401,26 +411,26 @@ They achieve this in part because the previous \gls{tmh}s,  TMH1 and TMH2, form 
 \end{figure}
 
 In the 6TMH class of ion channels, we observe a conserved difference in the relatively polar TMH4 known to carry charged residues (Figure \ref{fig:KD-ion-channels}A).
-When using the Kyte \& Doolittle hydrophobic scale, the hydrophobic step change between TMH3 (mean hydrophobicity of 1.34) and TMH4 (mean hydrophobicity of 1.01) is statistically significantly different (Welch's t\--test P\--value = 1.83E\--8).
-This is the most significant step change besides TMH4 to TMH5 (mean hydrophobicity of 1.77, Welch's t\--test P\--value = 1.88E\--31).
+When using the Kyte \& Doolittle hydrophobic scale, the hydrophobic step change between TMH3 (mean hydrophobicity of 1.34) and TMH4 (mean hydrophobicity of 1.01) is statistically significantly different (Welch's t\--test p\--value = 1.83E\--8).
+This is the most significant step change besides TMH4 to TMH5 (mean hydrophobicity of 1.77, Welch's t\--test p\--value = 1.88E\--31).
 TMH5, the pore\--forming region, and TMH6 can be integrated independently into the membrane, but TMH3 and TMH4, at least in the case of KAT1, cannot \cite{Sato2002}.
 However, there is strong evidence that TMH3 and TMH4 cooperate with one another during membrane integration and are inserted at the same time \cite{Sato2002, Sato2003, Zhang2007, Cymer2015}.
 With this in mind, the hydrophobic gap here indicates a conserved cooperative role between TMH3 and TMH4 rather than TMH4 and TMH5.
 
 
 
-This statistical difference between the hydrophobicity of TMH3 and TMH4 holds true for voltage\--gated ion channels (Welch's t\--test P\--value = 1.57E-17) (Figure \ref{fig:KD-ion-channels}C).
+This statistical difference between the hydrophobicity of TMH3 and TMH4 holds true for voltage\--gated ion channels (Welch's t\--test p\--value = 1.57E-17) (Figure \ref{fig:KD-ion-channels}C).
 However, the pattern is more obscure in ligand\--gated ion channels (Welch's t\--test P\---value = 5.32E-2).
 The difference does appear to match the general pattern, however, albeit as a trend, in the 33 records; there is a decrease in the mean hydrophobicity from 1.31 to 1.03 (Figure \ref{fig:KD-ion-channels}D).
 
  The TMH3 TMH4 hydrophobic step also appears to be independent of the ion being transported.
- For calcium ion channels the drop from TMH3 (mean hydrophobicity 1.52) to TMH4 (mean hydrophobicity 1.21) is significant (Welch's t\--test P\--value = 3.57E-3) given the relatively low sample size (38 protein records) (Figure \ref{fig:KD-ion-channels}E).
-In potassium channels, the difference is even greater between TMH3 (mean hydrophobicity of 1.37) and TMH4 (mean hydrophobicity of 0.61) (Welch's t\--test P\--value = 2.52E-19) in potassium ion channels (Figure \ref{fig:KD-ion-channels}F).
+ For calcium ion channels the drop from TMH3 (mean hydrophobicity 1.52) to TMH4 (mean hydrophobicity 1.21) is significant (Welch's t\--test p\--value = 3.57E-3) given the relatively low sample size (38 protein records) (Figure \ref{fig:KD-ion-channels}E).
+In potassium channels, the difference is even greater between TMH3 (mean hydrophobicity of 1.37) and TMH4 (mean hydrophobicity of 0.61) (Welch's t\--test p\--value = 2.52E-19) in potassium ion channels (Figure \ref{fig:KD-ion-channels}F).
 
 The observed difference between TMH3 and TMH4 is somewhat independent of the scale chosen (Figure \ref{fig:ion-channel-hydrophobicity-verification}), however, the Kyte \& Doolittle scale is the most sensitive to the hydrophobic differences between TMH3 and TMH4.
-Statistical significance was found in the difference between TMH3 and TMH4 in the Eisenberg scale (Welch's t\--test P\--value = 4.74E-23) and the White and Wimley scale (Welch's t\--test P\--value = 1.26E-3).
-The Hessa/von Heijne biological scale was particularly insensitive to the mean difference (Welch's t\--test P\--value = 7.56E-2), but can scrutinise some difference in the skews of the data (Kolmogorov Smirnov test  P\--value = 1.56E-4, Kruskal Wallis P\--value = 4.00E-2) indicating that whilst biophysically the \gls{tmh}s are distinct, the translocon may not readily scrutinise the hydrophobicity between the two.
-All the scales however corroborate the large hydrophobic difference between TMH4 and TMH5 (Welch's t\--test P\--values for Hessa = 1.23E-35, White and Wimley = 4.82E-23, Eisenberg = 5.72E-41)
+Statistical significance was found in the difference between TMH3 and TMH4 in the Eisenberg scale (Welch's t\--test p\--value = 4.74E-23) and the White and Wimley scale (Welch's t\--test p\--value = 1.26E-3).
+The Hessa/von Heijne biological scale was particularly insensitive to the mean difference (Welch's t\--test p\--value = 7.56E-2), but can scrutinise some difference in the skews of the data (Kolmogorov Smirnov test  p\--value = 1.56E-4, Kruskal Wallis p\--value = 4.00E-2) indicating that whilst biophysically the \gls{tmh}s are distinct, the translocon may not readily scrutinise the hydrophobicity between the two.
+All the scales however corroborate the large hydrophobic difference between TMH4 and TMH5 (Welch's t\--test p\--values for Hessa = 1.23E-35, White and Wimley = 4.82E-23, Eisenberg = 5.72E-41)
 
 \begin{figure}[!ht]
 \centering
@@ -435,9 +445,9 @@ All the scales however corroborate the large hydrophobic difference between TMH4
 \end{figure}
 
 The 24TMH class is essentially a modular variant of the 6TMH class and has even more extreme discrepancies between the equivalent 4 TMHs (Figure \ref{fig:KD-ion-channels}B).
-In the first cluster, TMH3 (mean Kyte \& Doolittle hydrophobicity = 0.96) to TMH4 (mean hydrophobicity = 0.47) is different (Welch's t\--test P\--value = 5.16E-6), but even more so is the step up from TMH4 to TMH5 (hydrophobicity = 2.26, Welch's t\--test P\--value = 5.16E-32).
+In the first cluster, TMH3 (mean Kyte \& Doolittle hydrophobicity = 0.96) to TMH4 (mean hydrophobicity = 0.47) is different (Welch's t\--test p\--value = 5.16E-6), but even more so is the step up from TMH4 to TMH5 (hydrophobicity = 2.26, Welch's t\--test p\--value = 5.16E-32).
 The preceding step is weaker, and the proceeding step is greater throughout the 6TMH ``modules''.
-A similar step change is found between TMH9 and TMH10 (P\--value = 3.02E-13) and TMH10 to TMH11 (P\--value = 5.51E-44), TMH15 to TMH16 (P\--value = 1.79E-23), TMH16 to TMH17 (P\--value = 1.67E-27), TMH21 to TMH22 (P\--value = 1.64E-9), and TMH22 to TMH23 (P\--value = 3.42E-31).
+A similar step change is found between TMH9 and TMH10 (p\--value = 3.02E-13) and TMH10 to TMH11 (p\--value = 5.51E-44), TMH15 to TMH16 (p\--value = 1.79E-23), TMH16 to TMH17 (p\--value = 1.67E-27), TMH21 to TMH22 (p\--value = 1.64E-9), and TMH22 to TMH23 (p\--value = 3.42E-31).
 
 As a trend, the TMSOC  z\--score was not sensitive to detecting function in the extremely hydrophobic TMH4 (Figure \ref{fig:Ion-channel-information-entropy}).
 This is due to the other component of the  z\--score, the sequence information entropy from SEG \cite{Wootton1996, WOOTTON1994269, Wong2011, Wong2012}.
@@ -478,8 +488,8 @@ It also appears that ion transporters have no conserved hydrophobicity discrepan
 
 Another large family of transporters are the sugar transporters.
 In terms of the hydrophobic discrepancy between sequentially adjacent \gls{tmh} pairs, sugar transporters also have a few peaks and dips at TMH6 and TMH11 (Figure \ref{fig:other-groups-good-bad}A).
-TMH5 (mean hydrophobicity = 1.32) to TMH6 (mean hydrophobicity = 1.81) (Welch's t\--test P\---value = 3.09E-19) was less significant than TMH6 to TMH7 (mean hydrophobicity = 1.23) (Welch's t\--test P\--value = 8.75E-29).
-TMH10 (mean hydrophobicity = 1.66) to TMH11 (mean hydrophobicity = 1.23) (Welch's t\--test P\--value = 1.03E-14) was also less significant than TMH11 to TMH12 (mean hydrophobicity = 1.84) (Welch's t\--test P\--value = 3.22E-22).
+TMH5 (mean hydrophobicity = 1.32) to TMH6 (mean hydrophobicity = 1.81) (Welch's t\--test P\---value = 3.09E-19) was less significant than TMH6 to TMH7 (mean hydrophobicity = 1.23) (Welch's t\--test p\--value = 8.75E-29).
+TMH10 (mean hydrophobicity = 1.66) to TMH11 (mean hydrophobicity = 1.23) (Welch's t\--test p\--value = 1.03E-14) was also less significant than TMH11 to TMH12 (mean hydrophobicity = 1.84) (Welch's t\--test p\--value = 3.22E-22).
 
 The ion channel 4TMH class also has a discrepancy between TMH2 (Kyte \& Doolittle hydrophobicity = 1.49) and TMH3 (hydrophobicity = 1.81) (Welch's t\--test P\---value = 4.42E-10, from 234 records) (Figure \ref{fig:other-groups-good-bad}C).
 The largest family within the 4TMH class is the chloride channel 4TMH family.

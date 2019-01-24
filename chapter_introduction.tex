@@ -86,11 +86,12 @@ Even recently, there is a contingency in the  \gls{tmp} biology field that despi
 
 Furthermore, the insertion and formation of the unusually orientated \gls{tmh}s and of the more traditional \gls{tmh}s have been shown to be underpinned by complex thermodynamic equilibrium and electrostatic interactions~\cite{Cymer2015, Elisa2012, Ismail2015}.
 As well as being a biophysically convoluted system, \gls{tmh}s are biologically functional beyond anchoring in many cases.
-\gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s broadly exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchoring can be revealed by sensitive analysis of the sequence information alone~\cite{Wong2011, Wong2012}.
+\gls{tms}s have been identified as regulators of protein quality control and trafficking mechanisms, shifting the idea away from \gls{tmh}s exclusively functioning as anchors~\cite{Hessa2011}, and crucially this function beyond anchoring can be revealed by sensitive analysis of the sequence information alone~\cite{Wong2011, Wong2012}.
 
 There is also an issue of silent homology extension from $\alpha$\--helices \cite{Wong2010}.
 \gls{tmh}s often share sequence composition similarities due to membrane requirements and restraints, not necessarily due to common ancestry which underpins homology\--based domain libraries like Pfam \cite{Finn2016} and SMART \cite{Letunic2012}.
 It was found that between 2.1\% and 13.6\% of Pfam hits for \gls{sp}s or \gls{tms}s are positive hits that were misreported as homologous among distantly related proteins in Pfam \cite{Wong2010}.
+
 %When predicting the function of any protein, one follows the dicta that function is facilitated by form, and form is determined by the sequence; the more similar the sequences, the more likely that the function is similar.
 %For globular soluble proteins having the same folds induces strict biochemical restrictions on the packing of a hydrophobic protein core which requires similarity of non\--polar residue patterns.
 %\cite{Wong2010}.
@@ -128,6 +129,7 @@ Although many \gls{tmp}s readily formed low\--resolution 2D crystals for cryo\--
 
 In a full circle from the \gls{em} studies of the fluid mosaic model in the 1970s \cite{Singer1972}, once more \gls{em} techniques were applied to \gls{tmp}s albeit now in single molecule systems.
 This method escapes the need for \gls{tmp} crystals \cite{Vinothkumar2015}.
+The resolution and dynamics of structures have been captured in unprecedented detail in \gls{em} systems in recent years thanks, in part, to the development of direct electron detectors which are radiation hardened CMOS sensors that have deposed as the highest quality \gls{em} method plate cameras and CCD detectors \cite{Murata2018}.
 The elucidation of the sub 3\angstrom~ structures utilising this method \cite{Grant2015, Bartesaghi2015} have exceeded the near atomistic resolutions that were called a revolution in \gls{tmp} biology not a year earlier \cite{Kuhlbrandt2014}.
 
 
@@ -138,9 +140,10 @@ Due to the experimental difficulties of working with \gls{tmp}s, often it is onl
 Traditionally, the role of bioinformatics has been to predict \gls{tm} regions of a protein.
 There are countless methods that can perform this.
 Many rely on statistical patterns to identify \gls{tmh}s such as the neural network approach of MEMSAT3 \cite{Jones2007} and the Hidden Markov models used in TMHMM \cite{Krogh2001}, HMMTOP \cite{Tusnady2001}, S\--TMHMM \cite{Viklund2004}, OCTOPUS \cite{Viklund2008}, Phobius \cite{Kall2004}.
-Unsatisfied with a statistical approach, Scampi seq \cite{Bernsel2008} uses a first principals method following the Kyte \& Doolittle suggestion 26 years previously that a biophysical scale can predict \gls{tmh}s \cite{Kyte1982} and applies a score based on the von Heijne biological scale \cite{Hessa2007} (scales described in section \ref{section:hydrophobicityscales}).
+Unsatisfied with a statistical approach, Scampi seq \cite{Bernsel2008} uses a first principles method following the Kyte \& Doolittle suggestion 26 years previously that a biophysical scale can predict \gls{tmh}s \cite{Kyte1982} and applies a score based on the von Heijne biological scale \cite{Hessa2007} (scales described in section \ref{section:hydrophobicityscales}).
 Predicting the presence of a typical \gls{tmh} based on a protein sequence is currently a fairly trivial task and typically relies on a consensus of several prediction programs, such as the automated TRANSMEM annotation used by UniProt \cite{TheUniProtConsortium2014}.
 Yet several challenges remain in separating \gls{sp}s from \gls{tmh}s \cite{Petersen2011} and correctly predicting the topology of a \gls{tmp}.
+Generally, topology prediction algorithms score, using various scoring methods, the likelihood of all possible combinations of \gls{tmh} topologies within the \gls{tmp}, and pick the highest scoring viable conformation.
 
 Due to the under\--representation of \gls{tmp}s among protein structures, understanding the biochemical role \gls{tmh}s play within the membrane from sequence alone is often desirable.
 As more data is becoming available, bioinformatic methods that use multiple biochemical traits are being developed.
@@ -225,7 +228,7 @@ The Nernst equation can be derived directly from the simplified thermodynamic pr
 It is defined as:
 
 \begin{equation}
-{E}_{m}=\frac{RT}{F}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
+{E}_{m}=\frac{RT}{zF}\times \ln { \frac{{c}_{out}}{{c}_{in}} }
 \end{equation}
 
 Where charge ${E}_{m}$ is the membrane potential, $z$ is the ion charge, $c$ is the concentration of an ion in that cell environment, $R$ is the ideal gas constant, $T$ is the temperature (Kelvin), and $F$ is the Faraday constant per molecule.
@@ -244,6 +247,7 @@ No notable membrane potential has been identified in the Golgi~\cite{Schapiro200
 
 \subsection{Transmembrane helix sequence composition}
 
+\gls{tmh}s are $ \alpha $ helix structural elements of membrane proteins that span the membrane.
 Measurements of the \gls{tmh} regions have found that they are roughly 20 residues in length; 17.3$\pm$3.1 from 160 \gls{tmh}s~\cite{Hildebrand2004}, 27.1$\pm$5.4 residues based on 129 \gls{tmh}s~\cite{Ulmschneider2001}, 26.4 residues based on 45 \gls{tmh}s~\cite{Bowie1997}, 25.3$\pm$6.0 residues based on 702 \gls{tmh}s~\cite{Cuthbertson2005a}, 24.6$\pm$5.6 from 837 \gls{tmh}s~\cite{Baeza-Delgado2013}, and 28.6$\pm$1.6\AA~to 33.5~$\pm$3.1\AA~from 191 proteins depending on membrane types~\cite{Pogozheva2013}.
 There are a couple of reasons for this variation.
 Primarily is that the boundaries of \gls{tmh}s are extremely hard to precisely identify since it is unclear exactly how far the \gls{tmh} rises into the water interface region~\cite{VonHeijne2006}.
@@ -282,10 +286,23 @@ The abundance of serines in the region following the lumenal end of Golgi \gls{t
 
 \subsubsection{The ``positive\--inside'' rule}
 
-Two publications by von Heijne coined the ``positive-inside'' rule demonstrated the practical value of positively charged residue sequence clustering in topology prediction of \gls{tmh}s in bacteria~\cite{VonHeijne1989,Andersson1992}.
-It was clearly defined and shown that positively charged residues more commonly were found on the ``inside'' of the cytoplasm rather than the periplasm of \textit{ E.
-coli}.
-More recently still large-scale sequence analysis of \gls{tmh}s from different organelle membrane surfaces in eukaryotic proteomes, show the clustering of positive charge being cytosolic~\cite{Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
+Two publications by von Heijne coined the ``positive-inside'' rule demonstrated the practical value of positively\--charged residue sequence clustering in topology prediction of \gls{tmh}s in bacteria~\cite{VonHeijne1989,Andersson1992}.
+It was clearly defined and shown that positively\--charged residues more commonly were found on the ``inside'' of the cytoplasm rather than the periplasm of \textit{ E. coli}.
+This holds true in the human, where the ``inside'' is the cytoplasm.
+In the case of the mitochondria, net positive charge was found to localise in the matrix \cite{Rojo1999} and so the intermembrane space is considered ``outside'' and the matrix can be considered ``inside'' (Figure ~\ref{fig:cell-drawing}).
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1\textwidth]{Intro/cell-drawing}
+		\captionof{figure}[A cartoon of the topological clustering of positively\--charged residues near transmembrane helices in relation to subcellular location.]{\textbf{A cartoon of the topological clustering of positively\--charged residues near transmembrane helices in relation to subcellular location.}
+		First identified across the inner bacterial membrane from the periplasm to the cytoplasm, the ``positive\--inside'' rule generally is in relation to inside the cytoplasm and outside the cell across the cellular membrane.
+		The clustering pattern also applies to other cellular locations denoted by ``inside'' and their opposing environment across a membrane shown by the ``outside'' annotation.
+		Throughout this thesis, ``inside'' and ``outside'' generally refer to inside and outside the cytoplasm unless explicitly stated otherwise.
+		}
+\label{fig:cell-drawing}
+\end{figure}
+
+More recently still, large-scale sequence analysis of \gls{tmh}s from different organelle membrane surfaces in eukaryotic proteomes, show the clustering of positive charge being cytosolic~\cite{Sharpe2010, Baeza-Delgado2013, Pogozheva2013}.
 
 \subsubsection{The aromatic belt}
 
@@ -308,7 +325,7 @@ Other factors such as the aromaticity, size, rigidity and shape of tryptophan, r
 Broadly speaking, \gls{tmh}s are non-polar.
 However, some contain polar and charged residues in the helix itself.
 Whilst this might seem thermodynamically unstable at first glance, a molecular dynamic feature called the ``snorkel'' effect explains in part how this is possible~\cite{Chamberlain2004, Strandberg2003}.
-Simply put, the snorkelling effect involves the long flexible side chain of leucine reaching out of the inner core of the membrane environment to the water interface region to interact with the polar head-groups of the bilayer even when the $\alpha$ helix backbone is pulled into the hydrophobic layer~\cite{Krishnakumar2007}.
+Simply put, the snorkelling effect involves the long flexible side chain of lysine reaching out of the inner core of the membrane environment to the water interface region to interact with the polar head-groups of the bilayer even when the $\alpha$ helix backbone is pulled into the hydrophobic layer~\cite{Krishnakumar2007}.
 This has also been suggested to allow helices to adapt to varying thicknesses of the membrane~\cite{Kandasamy2006}.
 More recently it was found that although in simulations the energetic cost of arginine at the centre of the \gls{tmh} is large, \textit{in vivo} experimentation with the Sec61 translocon reveals a much smaller penalty~\cite{Ulmschneider2017}.
 That same study also found that in \gls{md} simulations, snorkelling, bilayer deformation, and peptide tilting combined to be sufficient to lower the thermodynamic stability penalty of arginine insertion so that hydrophobic \gls{tmh}s with a central arginine residue will readily insert into the membrane.
@@ -322,7 +339,8 @@ More recently the hydrophobic group region has been associated with cell localis
 Once inserted the protein does not leave the membrane as a result of the \gls{tmh} being very hydrophobic.
 This hydrophobicity of \gls{tmh}s and the hydrophobicity of the lipid tails means that they self\--associate and this association is entropically driven by water.
 Another way of describing it is that they dissociate from the water.
-The overall $\Delta G$ for an ideal \gls{tmh} in the membrane is -12kcal${mol}^{\--1}$~\cite{Cymer2015}; the association of the helix in the membrane is typically spontaneous but complex owing to interactions with other \gls{tmh}s in the membrane as well as \gls{tmp}\--lipid interactions.
+The overall $\Delta G$ for an ideal \gls{tmh} in the membrane is -12 kcal/mol~\cite{Cymer2015};
+the association of the helix in the membrane is typically spontaneous but complex owing to interactions with other \gls{tmh}s in the membrane as well as \gls{tmp}\--lipid interactions.
 
 Over the last 50 years or so, there have been many attempts to use hydrophobicity scales of residues to predict structural classifications of proteins.
 Due to the vast amounts of scales, major efforts have been made to compare them to identify which ones are better for which tasks of identifying structural elements~\cite{Simm2016, Peters2014}.
@@ -384,7 +402,7 @@ The automatic TRANSMEM annotation currently used in UniProt is according to TMHM
 
 \subsection{Sequence complexity}
 Whilst identifying \gls{tmh} presence in a protein is somewhat trivial with modern tools, the role a \gls{tmh} plays within the membrane is more difficult to determine.
-Sequence properties that can be analysed by bioinformatics, the sequence information complexity and hydrophobicity, of the \gls{tmh} have been used to predict the role of the \gls{tmh} as either functional or structural, and as a discrete cluster from other SCOP annotated helices~\cite{Wong2012}.
+Sequence properties that can be analysed by bioinformatics, the sequence information complexity and hydrophobicity, of the \gls{tmh} have been used to predict the role of the \gls{tmh} as either functional or structural, and as a discrete cluster from other SCOP\--annotated helices~\cite{Wong2012}.
 Those findings demonstrated that the sequence of the \gls{tmh} holds valuable information regarding biological roles, and forms the basis of our interest in the link between the polarity of a helix and functional activity beyond structural anchoring.
 
 TMSOC's z-score is able to distinguish between functionally active~\gls{tmh}s and those only associated with anchoring~\cite{Wong2011, Wong2012}.
@@ -414,6 +432,18 @@ z({x}_{\Phi},{x}_{c})={(-1)}^{s}\left[\frac{{({x}_{\Phi}-{\mu}_{\Phi})}^{2}}{{\s
 \end{equation}
 
 Where $x_c$ and $x_\Phi$ are moving window averages of c, the sequence entropy~\cite{Wootton1996}. $\Phi$ is the White and Wimley hydrophobicity~\cite{White1999} for a given segment and $\mu$ and $\sigma$ are the mean and standard deviation of the sequence entropy and hydrophobicity of the functional~\gls{tmh} set, that is those~\gls{tmh}s containing active residues.
+$s$ is set to equal to one if equation~\ref{equation:zscoretermsterm} is true, and zero otherwise.
+
+\begin{equation} \label{equation:zscoretermsterm}
+\frac { { x }_{ \Phi  }-{ \mu  }_{ \Phi  } }{ { \sigma  }_{ \Phi  } } \ge -\frac { 1 }{ { \rho  }_{ c,\Phi  } } \frac { { x }_{ c }-{ \mu  }_{ c } }{ {\sigma}_c  }
+\end{equation}
+
+Where ${ \rho  }_{ c,\Phi  }$ is the correlation between sequence complexity and normalised hydrophobicity.
+Equation~\ref{equation:zscoretermsterm}, above, is the normal to the regression line between  that can be read as in equation~\ref{equation:regressionlinezterm}.
+
+\begin{equation} \label{equation:regressionlinezterm}
+\frac { { x }_{ \Phi  }-{ \mu  }_{ \Phi  } }{ { \sigma  }_{ \Phi  } } = { \rho  }_{ c,\Phi  } \frac { { x }_{ c }-{ \mu  }_{ c } }{ {\sigma}_c  }
+\end{equation}
 
 Sequence entropy is essentially an estimate of the linguistic entropy of a string.
 In the context of biology can be thought of as an estimation of the non-randomness of a sequence.
@@ -421,17 +451,18 @@ Sequence complexity can be used to analyse DNA sequences~\cite{Pinho2013, Oliver
 
 %The compositional complexity is measured over sequence windows.
 %The total number of sequences can be calculated by dividing a factorial of the length by the product of the compositions, i.e\  $ N = L!/\Pi{n}_i $ possible sequences given an amino acid composition $\{{{n}_{i}}{\}}_{i}={\min{i}},\ldots,{\max{i}}$ with a window length of $L=\Sigma {n}_i $.
-The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} identifies sub-segments of the raw region which have the lowest probability.
-The algorithm searches for and concatenates sub-threshold segments for the Shannon entropy-like term \cite{Shannon1948}, which identifies regions with high information entropy density.
-By altering the window lengths, and the thresholds SEG can be optimised to search for subtle compositional deviations, such as coil-coiled regions.
-However, sequence complexity alone fails to fully discriminate in the low complexity high hydrophobicity search space \cite{Wong2010}, hence the requirement for the hydrophobic scoring contribution (Figure \ref{fig:complexity}).
+The SEG algorithm~\cite{WOOTTON1994269, Wootton1996} finds stretches of non-random amino acids; sub-segment regions of the protein which have the lowest probability of occuring.
+It uses a Shannon entropy-like term \cite{Shannon1948} which identifies regions with high information entropy density.
+It can distinguish between globular and non\--globular regions of a protein sequence \cite{WOOTTON1994269}.
+Furthermore, by altering the window lengths and thresholds SEG can be optimised to search for subtle compositional deviations, such as coil-coiled regions \cite{Lupas1991}.
+However, sequence complexity alone fails to fully discriminate in the low complexity high hydrophobicity search space of \gls{tmh}s \cite{Wong2010}, hence the requirement for the hydrophobic scoring contribution (Figure \ref{fig:complexity}).
 
 
 \section{Biogenesis of transmembrane proteins}
 %Depth of secretion pathway (talk about translocons in depth here) & outline post-translational insertion
 \subsection{An overview of translocation}
 %There are, broadly speaking, 3 types of translocation; BiP-mediated eukaryotic post-translational translocation, bacterial post-translational insertion using the Tat system for folded proteins and the Sec system for unfolded proteins, and co-translational insertion in bacteria through the~\gls{htl} protein complex or its individual components.
-In this thesis we focus on co\--translation via the Sec pathway, and on the post\--translational pathway of \gls{ta} proteins in eukaryotic systems (Figure \ref{fig:post-versus-co-translation}).
+In this thesis we focus on cotranslational protein translocation and insertion via the Sec pathway, and on the post\--translational pathway of \gls{ta} proteins in eukaryotic systems (Figure \ref{fig:post-versus-co-translation}).
 
 \begin{figure}[ht]
 \centering
@@ -452,6 +483,7 @@ SecYEG targets proteins to the \gls{pm} (inner membrane) of bacteria.
 In bacteria, nearly all \gls{tmp}s are inserted by either the Sec pathway via  SecYEG machinery, or by the structurally unrelated the 5\--fold more abundant YidC machinery \cite{Drew2003, Dalbey2014}, and proteins can often use either pathway.
 Sec61 targets proteins to the \gls{er} of eukaryotic cells.
 Broadly speaking, these proteins translocate hydrophilic peptides across a membrane whilst also integrating sufficiently hydrophobic sequences to the membrane~\cite{Junne2010, Park2012, Shao2011, Cymer2015}.
+SecYEG and Sec61 also translocate soluble proteins.
 In bacteria, the SecY protein is partly encircled by SecE (Sec61$\gamma$ in eukaryotes) which enhances its stability in the membrane \cite{Kihara1995}.
 SecG is made up of two \gls{tmh}s and a cytosolic loop.
 It has been associated with SecA dependent translocation of secretory proteins \cite{Duong1997, Koch2000}.
@@ -594,7 +626,7 @@ Whereas mitochondria originated from the ancestral incorporation of $\alpha$\--p
 Similarly to mitochondrial $\beta$ barrel proteins, there is no cleavable targeting \gls{sp} for the chloroplast since they integrate on the internal side of the membrane, however much less is known about the precise insertion machinery of $\beta$ barrel proteins at a molecular level in chloroplasts \cite{Ulrich2015}.
 
 Besides the differences in biogenesis between $\beta$ barrel \gls{tmp}s and \gls{tmp}s with \gls{tmh}s as the membrane\--spanning units, there are also biophysical differences.
-Membrane\--spanning $\beta$ sheets exhibit a ``positive\--outside'' distribution of positively charged residues \cite{Pogozheva2013}, as opposed to the much more typical positive\--inside distribution \cite{VonHeijne1989, Andersson1992, Pogozheva2013, Sharpe2010, Baeza-Delgado2013}.
+Membrane\--spanning $\beta$ sheets exhibit a ``positive\--outside'' distribution of positively\--charged residues \cite{Pogozheva2013}, as opposed to the much more typical positive\--inside distribution \cite{VonHeijne1989, Andersson1992, Pogozheva2013, Sharpe2010, Baeza-Delgado2013}.
 Typically, $\beta$ sheets are less hydrophobic than \gls{tmh}s \cite{Tamm2004} as a result of their amphiphilic nature.
 
 \section{The aims of this thesis}
