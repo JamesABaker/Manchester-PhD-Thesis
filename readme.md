@@ -3,6 +3,7 @@ The most up to date draft version can be found here: [PDF download](https://gith
 
 Official releases will be linked here when appropriate.
 
+<!--
 # About
 
 This thesis is a modified version of the latex template thesis available at [the University of Manchester website](http://www.maths.manchester.ac.uk/study/postgraduate/information-for-current-students/general-information/forms-policies-regulations/latextemplates/).
@@ -22,8 +23,9 @@ Further modified by David Carlisle (DPC) September 1994. Add [PhD] option (defau
 Further modified by Graham Gough at various dates Added [MPhil option.
 Modified William Dyke (WBD) July 1997 so that declaration is correct for use in departments other than Computer Science
 Modified by Chris Paul March 2006 to reflect new University Schools and Faculty setup
-Modified by Chris Paul August 2013 to support duplex printed margins
+Modified by Chris Paul August 2013 to support duplex printed margins 
 ```
+
 
 # Compiling.
 
@@ -49,3 +51,4 @@ makeglossaries chapter_conclusions
 pdflatex thesis.tex
 pdflatex thesis.tex
 ```
+-->
