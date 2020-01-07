@@ -1,7 +1,7 @@
 # Thesis Download
 The most up to date draft version can be found here: [PDF download](https://github.com/jbkr/Manchester-PhD-Thesis/blob/master/thesis.pdf).
 
-Official releases will be linked here when appropriate.
+Official releases are available from the [releases section](https://github.com/JamesABaker/Manchester-PhD-Thesis/releases).
 
 <!--
 # About
